@@ -2564,7 +2564,7 @@
 
 	</Projectile>	
 
-	<!-- Epicenter -->
+	<!-- Epicenter? -->
 
 	<Weapon
 		Name="Epicenter"
@@ -4032,7 +4032,7 @@
 		>
 	</Projectile>
 
-	<!-- Heal a.k.a. Tap() 不是Help()-->
+	<!-- Heal a.k.a. Tap()? 不是Help()-->
 	
 	<Weapon
 		Name="Heal"
