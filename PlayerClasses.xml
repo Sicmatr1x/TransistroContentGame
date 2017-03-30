@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<PlayerClasses>
+
+	<!-- Unassigned Special Weapons -->
+	<!--
+	AreaRoot
+	FreezeCone
+	PlayerFullHeal
+	PlayerFullArmor
+	Flamethrower
+	DeployCrossbowTurret
+	-->
+
+	<!-- Unused in Demo
+	
+	<PlayerClass
+		Id="HammerAndBlank"
+		PrimaryWeapon="Hammer"
+		SecondaryWeapon="null"
+		SpecialWeapon="Hammer_Execution"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+	
+	<PlayerClass
+		Id="RepeaterAndBlank"
+		PrimaryWeapon="Repeater"
+		SecondaryWeapon="null"
+		SpecialWeapon="AreaRoot"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+	
+	<PlayerClass
+		Id="LongbowAndBlank"
+		PrimaryWeapon="Longbow"
+		SecondaryWeapon="null"
+		SpecialWeapon="TriggerFanGun"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+	
+	<PlayerClass
+		Id="SpearAndBlank"
+		PrimaryWeapon="Spear"
+		SecondaryWeapon="null"
+		SpecialWeapon="Flamethrower"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+	-->
+
+	<!-- Hammer and ______ -->
+
+	<PlayerClass
+		Id="HammerAndLongbow"
+		Icon="GUI\\Icons\\fletcher_symbol"
+		PrimaryWeapon="Longbow"
+		SecondaryWeapon="Hammer"
+		SpecialWeapon="RocketLauncher"
+		Upgrade="DemoHealth"
+		Level1Sound="1-2Narration37"
+		Level2Sound="1-2Narration39"
+		Level3Sound="1-2Narration41"
+		Level4Sound="1-2Narration40"
+		>
+	</PlayerClass>
+
+	<PlayerClass
+		Id="HammerAndRepeater"
+		Icon="GUI\\Icons\\breaker_symbol"
+		PrimaryWeapon="Repeater"
+		SecondaryWeapon="Hammer"
+		SpecialWeapon="Whirlwind"
+		Upgrade="DemoSpeed"
+		Level1Sound="1-2Narration47"
+		>
+	</PlayerClass>
+
+	<PlayerClass
+		Id="HammerAndSpear"
+		Icon="GUI\\Icons\\graver_symbol"
+		PrimaryWeapon="Hammer"
+		SecondaryWeapon="Spear"
+		SpecialWeapon="Nova"
+		Upgrade="PlusHealthRegenMinusHealth"
+		>
+	</PlayerClass>
+
+	<!-- Repeater And ______ -->
+
+	<PlayerClass
+		Id="RepeaterAndLongbow"
+		Icon="GUI\\Icons\\handler_symbol"
+		PrimaryWeapon="Longbow"
+		SecondaryWeapon="Repeater"
+		SpecialWeapon="SpawnPlayerBeast"
+		Upgrade="DemoMagnetism"
+		>
+	</PlayerClass>
+
+	<PlayerClass
+		Id="RepeaterAndSpear"
+		Icon="GUI\\Icons\\brusher_symbol"
+		PrimaryWeapon="Repeater"
+		SecondaryWeapon="Spear"
+		SpecialWeapon="PlayerStealth"
+		Upgrade="DemoLifeSteal"
+		Level1Sound="1-3Narration65"
+		Level3Sound="1-3Narration66"
+		>
+	</PlayerClass>
+
+	<!-- Longbow And ______ -->
+
+	<PlayerClass
+		Id="LongbowAndSpear"
+		Icon="GUI\\Icons\\paler_symbol"
+		PrimaryWeapon="Longbow"
+		SecondaryWeapon="Spear"
+		SpecialWeapon="ChainLightning"
+		Upgrade="PlusDamageMinusHealthRegen"
+		>
+	</PlayerClass>
+
+	<!-- Spear And ______ -->
+
+	
+	<!-- Unused for Demo -->
+
+	<!--
+	<PlayerClass
+		Id="HammerAndCrossbow"
+		PrimaryWeapon="Hammer"
+		SecondaryWeapon="Crossbow"
+		SpecialWeapon="SpawnPlayerDevourer"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+	-->
+
+	<!-- Crossbow And ______ -->
+
+	<!--
+	<PlayerClass
+		Id="CrossbowAndBlank"
+		PrimaryWeapon="Crossbow"
+		SecondaryWeapon="null"
+		SpecialWeapon="Blink"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+
+	<PlayerClass
+		Id="CrossbowAndLongbow"
+		PrimaryWeapon="Crossbow"
+		SecondaryWeapon="Longbow"
+		SpecialWeapon="AreaStun"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+
+	<PlayerClass
+		Id="CrossbowAndRepeater"
+		PrimaryWeapon="Crossbow"
+		SecondaryWeapon="Repeater"
+		SpecialWeapon="DamageField"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+
+	<PlayerClass
+		Id="CrossbowAndBlunderbuss"
+		PrimaryWeapon="Crossbow"
+		SecondaryWeapon="Blunderbuss"
+		SpecialWeapon="PlayerStealth"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+	-->
+
+	<!-- Blunderbuss And ______ -->
+
+	<!--
+	<PlayerClass
+		Id="BlunderbussAndBlank"
+		PrimaryWeapon="Blunderbuss"
+		SecondaryWeapon="null"
+		SpecialWeapon="DeployCrossbowTurret"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+
+	<PlayerClass
+		Id="BlunderbussAndRepeater"
+		PrimaryWeapon="Blunderbuss"
+		SecondaryWeapon="Repeater"
+		SpecialWeapon="LandMine"
+		Upgrade="Health"
+		>
+	</PlayerClass>
+	-->
+	
+</PlayerClasses>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MapAreas>
+	<MapArea
+		Name="VirusMapArea"
+		BorderGraphic="Particles\particle_green_glow_02"
+		BorderSpacing="2"
+		BorderObstacle="VirusWall"
+		BorderObstacleHorizontal="VirusWallHorizontal"
+		BorderObstacleVertical="VirusWallVertical"
+		BorderTraceFx="VirusBorderTrace"
+		BorderTraceFxSpawnInterval="0.0166666"
+		BorderTraceSpeed="800"
+		BorderFirstTraceSpeed="1500"
+		BorderTraceCount="2"
+		BorderTraceSpawnTime="7"
+		BorderTraceBidirectional="false"
+		BorderScale="0.5"
+		BorderFadeTime="0.75"
+		BorderMaterial="Emissive"
+		BorderWidth="40"
+		>
+	</MapArea>
+
+
+</MapAreas>

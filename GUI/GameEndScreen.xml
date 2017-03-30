@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameEndScreens>
+
+	<GameEndScreen
+		Platform="default"
+		OpenSound="null"
+		CloseSound="null"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="0"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="GameEndBackground" Justification="Left" VerticalJustification="Top"/>
+		
+		<TitleText X="960" Y="150" Justification="Center" VerticalJustification="Center"
+				   Font="JuliusSansOne48"
+				   OutlineThickness="0"	Scale="0.0"
+				   TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+
+		<NewGamePlusButton X="600" Y="930" Justification="Center" VerticalJustification="Center"
+					Graphic="null" SelectedGraphic="GameEndReticle"
+					Scale="1.0" AlwaysUpperCase="true" OutlineThickness="0"
+					HelpTextId="GameEndScreen_NewGamePlusAlt" Font="RalewayMedium26"
+					Width="500" Height="80" Spacing="80"
+					TextRed="0.67" TextGreen="0.29" TextBlue="0.05" TextScale="1.0"
+					SelectedTextRed="1.0" SelectedTextGreen="0.85" SelectedTextBlue="0.39"
+					SelectedTextScale="1.0"
+					NonEnglishScaleModifier="0.94"/>
+		
+		<ExitButton X="1390" Y="930"  Justification="Center" VerticalJustification="Center"
+					Graphic="null" SelectedGraphic="GameEndReticle"
+					Scale="1.0" AlwaysUpperCase="true" OutlineThickness="0"
+					HelpTextId="GameEndScreen_Exit" Font="RalewayMedium26"
+					Width="500" Height="80" Spacing="80"
+					TextRed="0.67" TextGreen="0.29" TextBlue="0.05" TextScale="1.0"
+					SelectedTextRed="1.0" SelectedTextGreen="0.85" SelectedTextBlue="0.39"
+					SelectedTextScale="1.0"
+					NonEnglishScaleModifier="0.94"
+					PressSound="/SFX/Menu Sounds/PanelSlideIn"/>
+
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.4"/>
+		<InfoPanel X="960" Y="540" Justification="Left" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="830"/>
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="GameEndScreen_Confirm"
+			PressSound="/SFX/Menu Sounds/PowerSelecting" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="320" Y="920"
+			/>
+		
+		<CancelButton Scale="0.0" TextScale="0.0"/>
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+
+	</GameEndScreen>
+	
+</GameEndScreens>

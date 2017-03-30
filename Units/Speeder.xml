@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Speeder / "BadCell" -->
+	
+	<Npc
+        Name="Speeder"
+        InheritFrom="1_BaseAttacker"
+		PhaseInSound="SFX/Enemy Sounds/Speeder/SpeederOnSpawn"
+        ClearWeapons="true"
+        ClearAI="true"
+        RotationSpeed="1200"
+        CollideWithUnits="false"
+        Speed="800"
+		Acceleration="1600"
+		VisionRange="600"
+        ScoreValue="0"
+        OnHitWeapon="null"
+        CollisionWeapon="null"
+        OnDeathWeapon="SpeederAreaDebuff"
+        FootprintFx="null"
+        SquadName="SHOOTERS"
+		EnemyStatName="Speeder"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Thing
+			Graphic="SpeederIdle"
+			ActivateGraphic="SpeederPhaseIn"
+			Grip="5.0"
+			OffsetZ="40"
+			OnTouchdownFxAnim="null"
+			TouchdownSound="null"
+			OverheadOffset="95"
+			Scale="1.0"
+			MinScale="0.4"
+			MaxScale="0.5"
+            SelectionWidth="180"
+			SelectionHeight="240"
+			SelectionTouchBonus="40"
+            SelectionShiftY="-30"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="32"/>
+			<Point X="64" Y="0"/>
+			<Point X="0" Y="-32"/>
+			<Point X="-64" Y="0"/>
+		</Thing>
+		<Life
+			Health="10"
+			Armor="0.0"
+			HitGraphic="SpeederGlitch"
+			DeathFx="ClusterbombExplode"
+			DeathGraphic="SpeederAttack"
+			HitSound="GenericEnemyGettingHit"
+			DeathSound="SFX/Enemy Sounds/Speeder/SpeederDeath"
+			Decal="Decals\\Health_Circle_Large"
+			DamageDecal="null"
+			DeathShakeSpeed="0"
+			DeathShakeDistance="0"
+			Material="METAL"
+			LastStandEnabled="false"
+			HasLastStandFx="SpeederShield"
+			>
+		</Life>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="true"
+			TargetLock="true"
+			MaxDistance="900"
+            DamagedVisionRange="1500"
+			TargetAcquiredDisable="1.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="SFX/Enemy Sounds/Speeder/SpeederSight"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetLostDisable="1.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			TargetLostGraphic="null"
+			FindHealerHealthFraction="0.5">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="3.0"
+			RandomTurnIntervalMax="4.0"
+			SpeedFraction="10.0"
+			TetherDistance="250"
+			FootprintSpawnInterval="0.5"
+			FootprintBlockDistance="78"
+			StopToAttack="true"
+			>
+		</MoveAI>
+		<MoveAI
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="true"
+			SuccessDistance="100"
+			LookAheadDistance="512"
+			MaxChasers="1"
+			DisengageTime="1.0"
+			StopWhenDisengaged="false"
+			CoverSearchWhenDisengaged="0"
+			OldTargetLocationWhenDisengaged="0.0"
+			FlankDistanceWhenDisengaged="550"
+			StayOnCamera="false"
+			>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true"
+			CanAttackWhileMoving="false"
+			OnlyAimAtDestination="true"
+			RangeBufferMin="0.9"
+			RangeBufferMax="1.0">
+		</AttackAI>
+		<Weapon Name="Speeder"/>
+
+		<Upgrade Name="SpeederLevel2">
+			<Rank>
+				<Change HelpTextId="SpeederLevel2"/>
+				<Change ValueChangeType="ABSOLUTE" Speed="1000"/>
+				<Change ValueChangeType="ABSOLUTE" RotationSpeed="2400"/>
+				<Change ValueChangeType="ABSOLUTE" RangeBufferMin="0.2"/>
+				<Change ValueChangeType="ABSOLUTE" RangeBufferMax="0.2"/>
+				<Change ValueChangeType="ABSOLUTE" MoveGraphic="SpeederFastMove"/>
+				<Change ValueChangeType="ABSOLUTE" MaxChasers="1"/>
+				<!--
+				<Change ValueChangeType="ABSOLUTE" FacedByTargetWeapon="SpeederDodge"/>
+				-->
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="SpeederLevel3">
+			<Rank>
+				<Change HelpTextId="SpeederLevel3"/>
+				<Change ValueChangeType="ADD" LastStandHealth="9"/>
+				<Change ValueChangeType="ADD" LastStandEnabled="true"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="SpeederLevel4">
+			<Rank>
+				<Change HelpTextId="SpeederLevel4"/>
+				<Change ValueChangeType="ADD" LastStandHealth="10"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>			
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.5"/>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="2"/>
+				<Change ValueChangeType="ADD" LastStandHealth="2"/>
+			</Rank>
+		</Upgrade>
+		
+	</Npc>
+
+	<Npc
+		Name="Asher"
+		InheritFrom="Speeder"
+		Speed="0.0"
+		Acceleration="0"
+		Deceleration="0">
+		>
+	</Npc>
+
+	<Npc
+		Name="Grant"
+		InheritFrom="Speeder"
+		Speed="0.0"
+		Acceleration="0"
+		Deceleration="0">
+		>
+	</Npc>
+
+	<Npc
+		Name="SpeederFast"
+		InheritFrom="Speeder"
+		RotationSpeed="999"
+		Speed="800.0"
+		Acceleration="0"
+		Deceleration="0"
+		VisionRange="600">
+		>
+	</Npc>
+
+	<Npc
+		Name="FriendlySpeeder"
+		InheritFrom="Speeder"
+		PlayerOwned="true"
+		PermanentTraitor="true"
+		ClearUpgrades="true">
+		>
+		<Life
+			HealthRegen="-1.25"
+			HealthRegenDelay="0.0"
+			ShowHealNumbers="false"
+			ShowDamageNumbers="false"
+			>
+		</Life>
+	</Npc>
+
+	<Npc
+		Name="FlyingSpeeder"
+		InheritFrom="Speeder"
+		RotationSpeed="0"
+		Speed="0.0"
+		Acceleration="0"
+		Deceleration="0"
+		VisionRange="2500"
+		OnDeathWeapon="null"
+		CollideWithUnits="false"
+        CollisionWeapon="FlyingSpeederSelfDestruct"
+		ClearWeapons="true"
+		ClearAI="true"
+		SpawnFacingPlayer="false"
+		DefaultAngle="0">
+		>
+		<Thing
+			Gravity="0"
+			ZShiftGeometry="true"
+			ClearGeometry="true">
+			<Point X="-70" Y="-21"/>
+			<Point X="-1" Y="41"/>
+			<Point X="68" Y="-20"/>
+			<Point X="-2" Y="-98"/>
+		</Thing>
+		<Life
+			Decal="null"
+			DeathFx="ExpandingCircleBuff">
+		</Life>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="false"
+			TargetLock="true"
+			MaxDistance="9999"
+			MaxZ="9999"
+			TargetAcquiredDisable="1.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="null"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetLostDisable="1.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			TargetLostGraphic="null">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="false"
+			CanAttackWhileMoving="false"
+			OnlyAimAtDestination="false">
+		</AttackAI>
+		<Weapon Name="FlyingSpeeder"/>
+	</Npc>
+
+</Npcs>

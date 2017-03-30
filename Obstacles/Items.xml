@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Id="WeaponPurchaseItem"
+		InheritFrom="1_BaseInvulnerableLowObstacle"
+		>
+		<Thing
+			Graphic="Obstacles\\CityTileset\\City_CrateLongbow01"
+			Grip="0.0"
+			NeverObscuresPlayer="true">
+			<Point X="-70" Y="17"/>
+			<Point X="-9" Y="52"/>
+			<Point X="66" Y="12"/>
+			<Point X="-3" Y="-19"/>
+		</Thing>
+		<Interact
+			OpenMenu="ItemPurchaseScreen"
+			NoEnemiesInDistance="0"
+			Distance="150"
+			DestroyOnUse="true"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Id="WeaponUpgradeItem"
+		InheritFrom="1_BaseInvulnerableLowObstacle"
+		>
+		<Thing
+			Graphic="Obstacles\\CityTileset\\City_Box01"
+			OffsetY="-16"
+			Grip="0.0"
+			NeverObscuresPlayer="true"
+			>
+			<Point X="-40" Y="9"/>
+			<Point X="21" Y="20"/>
+			<Point X="57" Y="2"/>
+			<Point X="57" Y="-5"/>
+			<Point X="16" Y="-20"/>
+			<Point X="-40" Y="0"/>
+		</Thing>
+		<Interact
+			OpenMenu="WeaponUpgradeScreen"
+			CounterSet="GENERAL"
+			CounterName="UPGRADE_POINTS"
+			CounterAddValue="1"
+			Distance="150"
+			DestroyOnUse="true"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Id="Drops01"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		Magnetism="1.0"
+		MaxMagnetismZ="425"
+		>
+		<Thing
+			Graphic="EggHelicopter"
+			Grip="0.0"
+			NeverObscuresPlayer="true"
+			TerminalVelocityMin="180"
+			TerminalVelocityMax="220"
+			PitFallSpeedMultiplier="1.0"
+			PitDrawLayer="FLYING"
+			TouchdownSound="FragmentTouchdown"
+			FallInShadow="null"
+			Flying="false"
+			>
+			<Point X="-43" Y="28"/>
+			<Point X="12" Y="71"/>
+			<Point X="61" Y="28"/>
+			<Point X="54" Y="-53"/>
+			<Point X="2" Y="-84"/>
+			<Point X="-51" Y="-46"/>
+		</Thing>
+		<Life
+			DeathFx="MemorialTurnIn"
+			DeathSound="WhispDeath"
+		></Life>
+		<Interact
+			CounterSet="GENERAL"
+			CounterName="MONEY"
+			CounterAddValue="0"
+			RequiresTouch="true"
+			AutoActivate="true"
+			DestroyOnUse="true"
+			MaxZ="700"
+			ShowInfo="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Id="Drops02"
+		InheritFrom="Drops01"
+		Magnetism="0.0"
+		>
+		<Thing
+			Graphic="SpeederAttack"
+			MinScale="0.7"
+			MaxScale="0.7"
+			StartAngle="180">
+		</Thing>
+		<Life
+			DeathFx="ExpandingCircleBuff"
+			DeathSound="SFX/Player Sounds/WeaponDetonate4"
+		></Life>
+	</Obstacle>
+	
+	<Obstacle
+		Id="Drop_Draw"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="DropGlow1"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0"/>
+		</Thing>
+		<Life
+			DeathFx="ButtonPress"
+			DeathSound="WhispDeath"
+		></Life>
+		<Interact
+			Distance="75"
+			DestroyOnUse="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Id="Drop_Expand"
+		InheritFrom="Drop_Draw"
+		>
+		<Thing
+			Graphic="DropGlow2">
+			<Color Red="1.0" Green="0.0" Blue="0.0"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Drop_Card"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="CardPickup"
+			Grip="5"
+			Drag="0.6"
+			FallSpeedMultiplier="7.5"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="SPRITE"
+			ShadowScale="0.25"
+			ShadowOffsetY="13"
+			VisibleInPlanning="true">
+		</Thing>
+		<Life
+			DeathFx="CardFound"
+			DeathSound="SFX/Menu Sounds/PowerUpgrade"
+		></Life>
+		<Interact
+			Distance="150"
+			DestroyOnUse="true"
+		></Interact>
+	</Obstacle>
+
+
+	<Obstacle
+		Id="Drop_Heal"
+		InheritFrom="Drop_Draw"
+		>
+        <Thing
+			Graphic="DropGlow2">
+            <Color Red="0.25" Green="1.0" Blue="0.25"/>
+        </Thing>
+        <Interact
+            Distance="150"
+            DestroyOnUse="true"
+            HealAmount="5"
+		></Interact>
+    </Obstacle>
+
+
+</Obstacles>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SlotSelectionDialogs>
+
+	<SlotSelectionDialog
+		Platform="default"
+		TransitionOnTime="0.2"
+		TransitionOffTime="0.2"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		SelectionSound="/SFX/Menu Sounds/PowerToggleNEW"
+		CloseSound="/SFX/Menu Sounds/CardFlip">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.90"/>
+		<Background X="960" Y="540" Graphic="GUI\\Backgrounds\\background_meta_slot_upgrade" Justification="Center" VerticalJustification="Center"/>
+		<TitleIcon X="390" Y="260" Graphic="GUI\\Widgets\\title_rect_mem" Justification="Left" VerticalJustification="Center"/>
+		<TitleLine AttachTo="TitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline_metaslot" Justification="Left" VerticalJustification="Center"/>
+		<TitleText AttachTo="TitleIcon" OffsetX="20" OffsetY="2" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="SlotSelectionDialog_Title" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" AlwaysUpperCase="true"/>
+
+		<SlotChoice X="510" Y="470" Spacing="300" Justification="Center" VerticalJustification="Center"
+					SelectedGraphic="GUI\\HUD\\Power_Selected_Reticle"
+					Scale="1.0" Width="500" Height="34"
+					Font="RalewaySemiBold22"
+					TextRed="0.5" TextGreen="0.5" TextBlue="0.5"
+					SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+					SelectedTextScale="1.0"/>
+
+		<ActiveHighlight Graphic="GUI\\Widgets\\Selection_Reticle_MetaSlotUpgrade" OffsetX="8" OffsetY="22" Justification="Center" VerticalJustification="Center" MoveSpeed="2000"/>
+
+		<AButtonSlotBack X="550" Y="480" Graphic="GUI\\Slot_Icon_Back_Large" Justification="Center" VerticalJustification="Center"/>
+		<AButtonSlot AttachTo="AButtonSlotBack" OffsetY="-20"
+					 Graphic="GUI\\Slot_Icon_Front_Cross_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_1_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_1_Large"
+					 Justification="Center" VerticalJustification="Center"
+					 SelectedGraphic="ActivePowerHighlight" HighlightOffsetX="52" HighlightOffsetY="150"/>
+		<AButtonUpgradesBack AttachTo="AButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<AButtonUpgradesFront AttachTo="AButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		<AButtonUpgradeTwoIcon AttachTo="AButtonUpgradesBack" OffsetX="52" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Lock" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<AButtonHotkey AttachTo="AButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-65" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+
+		<BButtonSlotBack X="800" Y="480" Graphic="GUI\\Slot_Icon_Back_Large" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<BButtonSlot AttachTo="BButtonSlotBack" OffsetY="-20"
+					 Graphic="GUI\\Slot_Icon_Front_Circle_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_2_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_2_Large"
+					 Justification="Center" VerticalJustification="Center"
+					 SelectedGraphic="ActivePowerHighlight" HighlightOffsetX="52" HighlightOffsetY="150"/>
+		<BButtonUpgradesBack AttachTo="BButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<BButtonUpgradesFront AttachTo="BButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		<BButtonUpgradeTwoIcon AttachTo="BButtonUpgradesBack" OffsetX="52" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Lock" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<BButtonHotkey AttachTo="BButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-65" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+
+		<XButtonSlotBack X="1050" Y="480" Graphic="GUI\\Slot_Icon_Back_Large" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<XButtonSlot AttachTo="XButtonSlotBack" OffsetY="-20"
+					 Graphic="GUI\\Slot_Icon_Front_Square_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_3_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_3_Large"
+					 Scale="1.0" Justification="Center" VerticalJustification="Center"
+					 SelectedGraphic="ActivePowerHighlight" HighlightOffsetX="52" HighlightOffsetY="150"/>
+		<XButtonUpgradesBack AttachTo="XButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<XButtonUpgradesFront AttachTo="XButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		<XButtonUpgradeTwoIcon AttachTo="XButtonUpgradesBack" OffsetX="52" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Lock" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<XButtonHotkey AttachTo="XButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-65" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+
+		<YButtonSlotBack X="1300" Y="480" Graphic="GUI\\Slot_Icon_Back_Large" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<YButtonSlot AttachTo="YButtonSlotBack" OffsetY="-20"
+					 Graphic="GUI\\Slot_Icon_Front_Triangle_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_4_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_4_Large"
+					 Scale="1.0" Justification="Center" VerticalJustification="Center"
+					 SelectedGraphic="ActivePowerHighlight" HighlightOffsetX="52" HighlightOffsetY="150"/>
+		<YButtonUpgradesBack AttachTo="YButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<YButtonUpgradesFront AttachTo="YButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		<YButtonUpgradeTwoIcon AttachTo="YButtonUpgradesBack" OffsetX="52" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Lock" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<YButtonHotkey AttachTo="YButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-65" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+
+		<ConfirmButton
+			X="880" Y="740"
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="Shell_Confirm"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="1.0" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0.0" TextOutlineGreen="0.0" TextOutlineBlue="0.0"
+			PressSound="/SFX/Menu Sounds/PanelSlideIn"/>
+
+		<CancelButton Scale="0.0"/>
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+		
+	</SlotSelectionDialog>
+	
+	
+</SlotSelectionDialogs>

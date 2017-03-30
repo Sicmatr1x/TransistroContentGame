@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+	
+	<Npc
+		Name="Summoner"
+		InheritFrom="1_BaseAttacker"
+		ScoreValue="0"
+		PhaseInTimeMin="1.0"
+		PhaseInTimeMax="1.0"
+		PhaseInGraphic="SummonerPhaseIn"
+		PhaseInFx="null"
+		PhaseInSound="null"
+		VisionRange="2000"
+		RotationSpeed="9999"
+		SpawnFacingPlayer="false"
+		IgnoreTargetCollision="false"
+		CollideWithUnits="true"
+		CheckShadow="false"
+		OnDeathWeapon="null"
+		FootprintFx="null"
+		DamageField="null"
+		OnHitWeapon="null"
+		ContinuousWeapon="null"
+		ImmuneToStun="true"
+		ImmuneToCharm="true"
+		StunBreakModifier="999"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Thing
+			Graphic="SummonerIdle"
+			AmbientSound="/SFX/Enemy Sounds/Summoner/SummonerAmbience"
+ 			FallSound="null"
+			FlyingGraphic="null"
+			OverheadOffset="220"
+			SelectionWidth="1050"
+			SelectionHeight="1300"
+            SelectionShiftY="210"
+			FallSpeedMultiplier="16.0"
+			Grip="999999.0"
+			OffsetZ="0"
+			RotateGeometry="false"
+			Scale="0.20"
+			AttachedFxScale="7.0"
+			>
+			<Point X="-466" Y="-5"/>
+			<Point X="10" Y="225"/>
+			<Point X="464" Y="-32"/>
+			<Point X="4" Y="-238"/>
+		</Thing>
+		<Life
+			Health="800"
+			HitGraphic="SummonerOnHit"
+			DeathFx="SummonerDeath"
+			DeathGraphic="null"
+			HitSound="/SFX/Enemy Sounds/Summoner/SummonerOnHit"
+			DeathSound="/SFX/Enemy Sounds/Summoner/SummonerOnDeath"
+			Decal="null"
+			DeathShakeSpeed="150"
+			DeathShakeDistance="5"
+			DamageShakeDistance="0.0"
+			Material="METAL"
+			DamageFlashMin="0.4"
+			DamageFlashMax="0.6"
+			NumDeathLines="48"
+			>
+		</Life>		
+		<Weapon Name="BlankWeapon"/>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="FRIENDS"
+			TargetAcquiredSound="null"
+			RequiresCanAttack="false"
+			RequiresCanAttackIfImmobile="true"
+			MaxDistance="1200"
+			IgnoreFullHealth="true"
+			IgnoreSameType="true"
+			Retaliate="false">
+			<SortType Heuristic="LOWEST_HEALTH"/>
+		</TargetAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			CanAttackWhileMoving="true">
+		</AttackAI>
+
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+</Npcs>

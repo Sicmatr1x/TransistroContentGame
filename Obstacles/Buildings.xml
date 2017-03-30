@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TerrainTiles>
+
+	<Obstacle
+		Name="Auden_Iso_Concept"
+		InheritFrom="1_BaseTerrainTile">
+		<Thing
+			Graphic="TerrainTiles\\CityTileset\\Auden_Iso_Concept">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Iso_Concept_02"
+		InheritFrom="1_BaseTerrainTile">
+		<Thing
+			Graphic="TerrainTiles\\CityTileset\\Auden_Iso_Concept_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutCityscape_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Cityscape_03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Building_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Building_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Building_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Building_02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Building_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Building_03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Building_04"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Building_04"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BuildingTrans01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="TransitionTest01Glow"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BuildingTrans02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="TransitionTest02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BuildingVirus01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Building_Virus_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BuildingVirus01Squish01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="BuildingVirus01Squish01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BuildingVirus02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Building_Virus_02"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BuildingVirus03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Building_Virus_03"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+</TerrainTiles>

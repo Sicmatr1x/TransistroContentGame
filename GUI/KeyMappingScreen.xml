@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<KeyMappingScreens>
+
+	<KeyMappingScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="/SFX/Menu Sounds/InfoPanelLeave"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="WarningBackgroundLoop" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackgroundTop X="960" Y="460" Graphic="ShellBackgroundMainIntroB" Justification="Center" VerticalJustification="Center"/>
+
+		<TitleText 
+			X="960" Y="150" Justification="Center" VerticalJustification="Center"
+			HelpTextId="KeyMappingScreen_Title" Font="JuliusSansOne48Titling"
+			OutlineThickness="0"
+			Scale="0.9"
+			TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"
+			/>
+
+		<Name X="420" Y="570" Justification="Left" VerticalJustification="Top"
+			HelpTextId="Blank" Font="RalewayBold24"
+			OutlineThickness="0"
+			AlwaysUpperCase="true"
+			Scale="0.75"
+			TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+			  />
+
+		<RemapInstructions
+			X="960" Y="980" Justification="Center" VerticalJustification="Center" HelpTextId="Menu_PressAnyButton" MouseHelpTextId="Menu_PressAnyKey" Font="RalewaySemiBold22" TextRed="1" TextGreen="1" TextBlue="1"
+			FlashMin="0.5" FlashMax="1.0" FlashSpeed="2.0" FlashRed="1.0" FlashGreen="1.0" FlashBlue="1.0"
+			Scale="1.0" AlwaysUpperCase="false"
+			/>
+
+
+		<Description 
+			AttachTo="Name" OffsetX="-10" OffsetY="30" Width="400" Height="480" Justification="Left" VerticalJustification="Top"
+			TextRed="0.03" TextGreen="0.97" TextBlue="0.6" Font="RalewaySemiBold22" Scale="0.66" HelpTextId="Blank"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.9"
+		/>
+
+		<MouseTab
+			AttachTo="TitleText" OffsetX="-469" OffsetY="239"
+			Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\Shell\\controller_icon_mouse" SelectedGraphic="GUI\\Shell\\controller_type_selection"
+			Scale="1.0" Width="80" Height="80"
+			Font="RalewaySemiBold22"
+			TextRed="0.5" TextGreen="0.5" TextBlue="0.5"
+			SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+			SelectedTextScale="1.0"/>
+
+		<GamepadTab
+			AttachTo="MouseTab" OffsetX="173" OffsetY="-1"
+			Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\Shell\\controller_icon_controller" AlternateGraphic="GUI\\Shell\\controller_icon_ps4" SelectedGraphic="GUI\\Shell\\controller_type_selection"
+			Scale="1.0" Width="80" Height="80"
+			Font="RalewaySemiBold22"
+			TextRed="0.5" TextGreen="0.5" TextBlue="0.5"
+			SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+			SelectedTextScale="1.0"/>
+
+		<InstantFireLabel
+			AttachTo="MouseTab" OffsetX="316" OffsetY="440" Justification="Left" VerticalJustification="Center"
+			HelpTextId="KeyMappingScreen_InstantFireLabel" Font="RalewayBold32"
+			Scale="0.45" TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.1" FadeDelayMax="0.15" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.78"
+			/>
+
+		<InstantFireButton
+			AttachTo="InstantFireLabel" OffsetX="270" Justification="Right" VerticalJustification="Center"
+			Graphic="GUI\\Shell\\settings_toggle_on" AlternateGraphic="GUI\\Shell\\settings_toggle_off" SelectedGraphic="GUI\\Shell\\selection_reticle_controls"
+			Width="350" Height="34" AreaOffsetX="70"
+			HelpTextId="On" AlternateHelpTextId="Off" Font="RalewayBold32"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" TextOffsetX="14" HighlightOffsetX="80"
+			HighlightOffsetY="-2"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			TextScale="0.45"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.15" FadeDelayMax="0.2" FadeSpeed="10.0"
+			PressSound="/SFX/Menu Sounds/MenuDenied"
+			/>
+
+		<ControlLabel
+			AttachTo="TitleText" OffsetX="-153" OffsetY="200" Spacing="60" LineSpacingRight="400"
+			X="1594" Y="328" Justification="Left" VerticalJustification="Center"
+			Font="RalewayBold32"
+			AlwaysUpperCase="true"
+			Scale="0.45"
+			OutlineThickness="2"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0"
+			NonEnglishFont="RalewayBold32"
+			NonEnglishScaleModifier="0.9"
+		/>
+
+		<ControlButton
+			AttachTo="TitleText" OffsetX="158" OffsetY="200" Spacing="60" LineSpacingRight="400"
+			Justification="Center" VerticalJustification="Center" TextJustification="Right"
+			Graphic="null" SelectedGraphic="GUI\\Shell\\selection_reticle_controls"
+			Scale="1.0" Width="300" Height="34" AreaOffsetX="-130"
+			Font="RalewayBold18"
+			TextRed="1.0" TextGreen="0.65" TextBlue="0.3"
+			SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+			SelectedTextScale="1.0"
+			TextScale="0.8"
+			TextOffsetX="10"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+			HighlightOffsetX="-148"
+			HighlightOffsetY="-3"
+			/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.4"/>
+		<InfoPanel X="960" Y="540" Justification="Left" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="830"/>
+
+		<!-- Controls -->
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="ProfileScreen_SwitchProfile" AlternateHelpTextId="KeyMappingScreen_Confirm"
+			PressSound="/SFX/Menu Sounds/PowerSelecting" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			TextOffsetX="30"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="550" Y="980"
+			AlwaysUpperCase="true"
+			/>
+
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Shell_back"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="1330" Y="980"
+			AlwaysUpperCase="true"
+			MouseOffsetX="-160"
+			MouseOffsetY="-30"
+			/>
+
+		<XButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerSquare" HelpTextId="KeyMappingScreen_RestoreDefaults"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			PressSound="/SFX/Menu Sounds/PowerSelecting"
+			X="890" Y="980"
+			AlwaysUpperCase="true"
+			MouseOffsetX="-140"
+			MouseOffsetY="-30"
+			/>
+		
+		<YButton Scale="0.0"/>
+
+	</KeyMappingScreen>
+	
+</KeyMappingScreens>

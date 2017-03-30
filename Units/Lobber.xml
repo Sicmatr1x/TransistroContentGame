@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Lobber -->
+
+	<Npc
+        Name="Lobber"
+        InheritFrom="1_BaseAttacker"
+		Speed="400.0"
+		Acceleration="200"
+		Deceleration="100"
+		RotationSpeed="600"
+        ScoreValue="0"
+        PhaseInTimeMin="0.5"
+		PhaseInTimeMax="0.5"
+		MoveGraphic="LobberRun"
+		RotateGraphic="null"
+		CollisionWeapon="null"
+		CollideWithUnits="false"
+		PhaseInSound="/SFX/Enemy Sounds/Lobber/LobberOnSpawn"
+		CheckShadow="false"
+		VisionRange="1500"
+		OnDeathWeapon="LobberEggSpawn"
+		FootprintFx="null"
+		SquadName="SHOOTERS"
+		CloakFx="null"
+		RagDollOnDeath="false"
+		EnemyStatName="Lobber"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Thing
+			Graphic="LobberIdle"
+			ActivateGraphic="LobberPhaseIn"
+			OverheadOffset="115"
+			Width="256"
+			Height="128"
+			Scale="0.6"
+            SelectionWidth="235"
+			SelectionHeight="315"
+            SelectionShiftY="70"
+			Grip="5.0"
+			SpinFactor="2.0"
+			OcclusionOutlineThreshold="0.7"
+
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="-50" Y="5"/>
+			<Point X="3" Y="38"/>
+			<Point X="55" Y="7"/>
+			<Point X="0" Y="-20"/>
+		</Thing>
+		<Life
+			Health="300"
+			Armor="0.0"
+			HitGraphic="LobberGlitch"
+			HitSound="/SFX/Enemy Sounds/Lobber/LobberOnHit"
+			DeathSound="/SFX/Enemy Sounds/Lobber/LobberOnDeath"
+			Decal="null"
+			DamageDecal="null"
+			Material="METAL"
+			ShrinksOnDamaged="false"
+			DeathFx="EnemyDeathSplatter"
+			ArmorCoverage="240"
+			Vulnerability="1.5"
+			>
+		</Life>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			TargetAcquiredDisable="0.7"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="/SFX/Enemy Sounds/Lobber/LobberTargetSighted"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetLostDisable="0.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			TargetLostGraphic="null"
+			RequiresLoS="false"
+			MaxDistance="1500"
+			FindHealerHealthFraction="0.6"
+			OutOfCombatVisionModifier="0.4"
+			>
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+        <MoveAI
+            Algorithm="RANDOM"
+            RandomTurnIntervalMin="1.0"
+            RandomTurnIntervalMax="3.0"
+            SpeedFraction="0.2"
+            TetherDistance="150"
+            FootprintSpawnInterval="0.35"
+            FootprintBlockDistance="66"
+			>
+        </MoveAI>
+		<MoveAI
+			Algorithm="PATHFIND"
+			StopToRotate="true"
+			StopToAttack="true"
+			CoverSearchArea="1000"
+			SuccessDistance="50"
+            MaxChasers="1"
+			DisengageTime="1.5"
+			CoverSearchWhenDisengaged="600">
+			<RetreatFromUnit Name="_PlayerUnit"/>
+		</MoveAI>
+
+		<MoveAI
+			Name="LobberDirect"
+			Algorithm="PATHFIND"
+			NodeSuccessDistance="16"
+			StopToAttack="false"
+			RequiresLoS="false"
+			SuccessDistance="50"
+			LookAheadDistance="3000"
+			OnFailBehavior="GOTO_NEAREST_TO_GOAL"
+			StayOnCamera="false"
+			>
+		</MoveAI>
+		
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true"
+			CanAttackWhileMoving="false"
+			CanAttackWhileRetreating="false"
+			OnlyAimAtDestination="false"
+			LeadTarget="true">
+		</AttackAI>
+		<Weapon Name="Bomber"/>
+
+		<Upgrade Name="LobberLevel2">
+			<Rank>
+				<Change HelpTextId="LobberLevel2"/>
+				<Change ValueChangeType="REPLACE_IF_NULL" MovingWeapon="LobberTrail"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="LobberLevel3">
+			<Rank>
+				<Change HelpTextId="LobberLevel3"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="LobberLevel4">
+			<Rank>
+				<Change HelpTextId="LobberLevel4"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+</Npcs>

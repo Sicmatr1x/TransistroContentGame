@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HandScreens>
+
+	<HandScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/HandScreenOpen"
+		CloseSound="/SFX/Menu Sounds/HandScreenClose"
+		SelectionSound=""
+		TransitionOnTime="0.01"
+		TransitionOffTime="0.33">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="0"/>
+
+			<!-- Formats -->
+		<TextTitleA TextRed="0.92" TextGreen="0.92" TextBlue="0.92" Font="RalewayLight45" Scale="1.1" AlwaysUpperCase="true"/>
+		<TextTitleB TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66"/>
+		<TextSubtitleA TextRed="0.28" TextGreen="0.91" TextBlue="0.6" Font="RalewayRegular32" Scale="0.77" AlwaysUpperCase="true"/>
+		<TextSubtitleB TextRed="0.28" TextGreen="0.91" TextBlue="0.6" Font="UbuntuMono32" Scale="0.64"/>
+		<TextBodyA TextRed="0.93" TextGreen="0.93" TextBlue="0.93" Font="RalewaySemiBold22" Scale="0.66"/>
+		<TextBodyB TextRed="0.68" TextGreen="0.68" TextBlue="0.68" Font="UbuntuMono16" Scale="1.0"/>
+		<TextCommentA TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMono32" Scale="0.56" AlwaysUpperCase="true"/>
+		<TextCommentB TextRed="0.68" TextGreen="0.68" TextBlue="0.68" Font="UbuntuMono32" Scale="0.64"/>
+		<TextStat TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewaySemiBold22" Scale="0.66"/>
+
+			<!-- Components -->
+		<Background X="0" Y="0" Scale="0.0" Graphic="GUI\\Backgrounds\\Background_Gradient_Cover" Justification="Left" VerticalJustification="Top"/>
+		<BackgroundSword X="0" Y="0" Graphic="HandScreenIn" AlternateGraphic="HandScreenOut" TertiaryGraphic="HandScreenInFast" Justification="Left" VerticalJustification="Top"/>
+
+		<CardListTitleIcon X="270" Y="100" Graphic="GUI\\Widgets\\title_rect_functions" Justification="Left" VerticalJustification="Center"
+						   FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0" FadeDelayMax="0.6" FadeSpeed="3"
+						   />
+		<CardListTitleLine AttachTo="CardListTitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"
+						   FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0" FadeDelayMax="0.6" FadeSpeed="3"
+						   />
+		<CardListTitleText AttachTo="CardListTitleIcon" OffsetX="20" OffsetY="2" Justification="Left" VerticalJustification="Center"
+						   HelpTextId="HandScreen_CardListTitle" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+						   FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0" FadeDelayMax="0.6" FadeSpeed="3"
+						   />
+
+		<SupplyTitleIcon X="100" Y="100" Graphic="GUI\\Widgets\\title_rect_mem" Justification="Left" VerticalJustification="Center"
+						 FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0" FadeDelayMax="0.6" FadeSpeed="3"
+						 />
+		<SupplyTitleLine AttachTo="SupplyTitleIcon" OffsetY="24" Graphic="GUI\\Widgets\\title_underline_mem" Justification="Left" VerticalJustification="Center"
+						 FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0" FadeDelayMax="0.6" FadeSpeed="3"
+						 />
+		<SupplyTitleText AttachTo="SupplyTitleIcon" OffsetX="19" OffsetY="2" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="HandScreen_SupplyTitle" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+					 FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0" FadeDelayMax="0.6" FadeSpeed="3"
+						 />
+		
+		<!-- Supply Bar -->
+
+		<SupplyBottom AttachTo="SupplyTitleLine" OffsetX="48" OffsetY="70" Graphic="GUI\\HUD\\Supply_Bar_Bottom" Scale="1.0" Justification="Center" VerticalJustification="Center"
+		FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.6" FadeDelayMax="0.61" FadeSpeed="12"
+		/>
+		<SupplyPips AttachTo="SupplyBottom" OffsetX="1" OffsetY="-8" Spacing="16" Graphic="GUI\\HUD\\Supply_Bar_Pip" Scale="1.0" Justification="Center" VerticalJustification="Center"
+					FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.6" FadeDelayMax="0.61" FadeSpeed="12"
+					/>
+		<SupplyPipsFill AttachTo="SupplyBottom" OffsetX="0" OffsetY="-8" Spacing="16" Graphic="GUI\\HUD\\Supply_Bar_Pip_Limiter" AlternateGraphic="GUI\\HUD\\Supply_Bar_Pip_Fill" Scale="1.0" Justification="Center" VerticalJustification="Center"
+						FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.6" FadeDelayMax="0.61" FadeSpeed="12"
+						/>
+		<SupplyPipsIncrease AttachTo="SupplyPipsFill" OffsetX="0" Spacing="16" Graphic="GUI\\HUD\\Supply_Bar_Pip_Increase" AlternateGraphic="GUI\\HUD\\Supply_Bar_Pip_Over_Capacity" Scale="1.0" Justification="Center" VerticalJustification="Center"
+							StartFlashing="true" FlashSpeed="0.06" FlashMin="0.0" FlashMax="0.4"
+						FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.6" FadeDelayMax="0.61" FadeSpeed="12"
+							/>
+		<SupplyTop AttachTo="SupplyBottom" OffsetX="1" OffsetY="6" Graphic="GUI\\HUD\\Supply_Bar_Top" Scale="1.0" Justification="Center" VerticalJustification="Center"
+				   FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.6" FadeDelayMax="0.61" FadeSpeed="12"
+				   />
+
+		<SupplyUsedText AttachTo="SupplyBottom" OffsetY="80" Justification="Center" VerticalJustification="Center" TextRed="1" TextGreen="1.0" TextBlue="1"
+						ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0" Font="RalewayBold32" Scale="0.66"
+						FlashMin="0.0" FlashMax="1.0" FlashSpeed="8.0" FlashRed="1.0" FlashGreen="0.0" FlashBlue="0.0"
+						FadeOpacity="0.0" FadeTarget="0.8" FadeDelayMin="1" FadeDelayMax="1.5" FadeSpeed="8"
+						NonEnglishScaleModifier="0.9"
+						/>
+		<SupplyUsedImage AttachTo="SupplyBottom" OffsetX="50" OffsetY="103" Graphic="GUI\\Icons\\Iconographic\\icon_mem_1" Justification="Left" VerticalJustification="Center"
+						 FlashMin="0.0" FlashMax="1.0" FlashSpeed="8.0" FlashRed="1.0" FlashGreen="0.0" FlashBlue="0.0"
+					 FadeOpacity="0.0" FadeTarget="0.8" FadeDelayMin="1" FadeDelayMax="1.5" FadeSpeed="8"
+						 />
+
+		<!--
+		<SupplyIncrementText AttachTo="SupplyBottom" Justification="Left" VerticalJustification="Top" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" HelpTextId="+1" FadeSpeed="1.0" ScaleSpeed="16.0"
+						ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0" Font="RalewayBold32" Scale="0.66" />
+		-->
+		
+		<!-- Cards -->
+
+		<CardSlot X="350" Y="254" Spacing="188" MoveSpeed="1200" StretchSpeed="6.0" SelectOnMouseOver="false" SelectOnClick="true" SelectionSound="/SFX/Menu Sounds/PowerToggleNEW" MouseOverSound="null"/>
+
+		<IconBack
+			SelectedScale="1.2" ScaleSpeed="2.0" Scale="0.85" Graphic="GUI\\HUD\\Card_Back" AlternateGraphic="GUI\\HUD\\Card_Back_Disabled" TertiaryGraphic="GUI\\HUD\\Card_Back_Equipped"
+			Justification="Center" VerticalJustification="Center" OffsetX="5" OffsetY="3" ActionSound="/SFX/Menu Sounds/PowerToggle" 
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0" FadeDelayMax="1" FadeSpeed="3"
+			Alpha="0.5" SelectedAlpha="1.0"
+			Width="150" Height="150"
+			/>
+		<Icon SelectedScale="1.2" ScaleSpeed="2.0" Scale="0.6" Justification="Center" VerticalJustification="Center" 
+			  FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0" FadeDelayMax="1" FadeSpeed="3"
+			  FlashMin="0.0" FlashMax="0.8" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="1.0" FlashBlue="1.0" ActionSound="/SFX/Menu Sounds/NewFunctionAvailable2"/>
+
+		<IconFront SelectedScale="1.2" ScaleSpeed="2.0" Scale="0.85" Graphic="GUI\\HUD\\Card_Front" AlternateGraphic="GUI\\HUD\\Card_Front_Disabled" TertiaryGraphic="GUI\\HUD\\Card_Front_Equipped"
+				   Justification="Center" VerticalJustification="Center" OffsetX="-5" OffsetY="-4"
+			   FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0" FadeDelayMax="1" FadeSpeed="3"
+				   Alpha="1.0" SelectedAlpha="1.0"
+				   />
+		<CardFx AlternateGraphic="NewCardHighlight" Scale="2.0"/>
+		
+		<SelectionHighlight Graphic="GUI\\HUD\\Power_Selected_Reticle" Justification="Center" VerticalJustification="Center"/>
+		<!--
+		<UnplayableMarker Graphic="Cinematic\\cut_frame_target" Justification="Center" VerticalJustification="Center" SelectedScale="1.2" Scale="0.3"/>
+		-->
+		<CostImage OffsetX="-88" OffsetY="-68" Justification="Center" VerticalJustification="Top" SelectedScale="1.2" ScaleSpeed="2.0"/>
+
+		<!-- Description Panel -->
+
+		<DescriptionTitleIcon X="270" Y="570" Graphic="GUI\\Widgets\\title_rect_details" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleLine AttachTo="DescriptionTitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleText AttachTo="DescriptionTitleIcon" OffsetX="17" OffsetY="1" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+					HelpTextId="EnemyUpgradeScreen_DescriptionPanelTitle" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<SelectionName AttachTo="DescriptionTitleIcon" OffsetX="20" OffsetY="68" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold48" Scale="0.6"/>
+		<SelectionType AttachTo="DescriptionTitleIcon" OffsetX="22" OffsetY="100" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" Scale="0.6"/>
+		<SelectionDescription AttachTo="DescriptionTitleIcon" OffsetX="11" OffsetY="110" Width="320" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.69" TextGreen="1.0" TextBlue="0.92" Font="RalewayMedium26" Scale="0.66" HelpTextId="Blank"
+					FlashMin="0.4" FlashMax="0.9" FlashSpeed="2.0" FlashRed="1.0" FlashGreen="0.0" FlashBlue="0.0"
+						  NonEnglishScaleModifier="0.85"
+							  />
+		
+		<ActiveDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="364" OffsetY="68" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+					HelpTextId="CardBuyScreen_ActiveDescriptionTitle" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"
+					FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0" FlashRed="0.94" FlashGreen="0.97" FlashBlue="0.53"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+								NonEnglishScaleModifier="0.8"
+		/>
+		<ActiveDescription AttachTo="ActiveDescriptionTitle" OffsetX="-10" OffsetY="13" Width="365" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewayMedium26" Scale="0.58"
+					FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0" FlashRed="0.94" FlashGreen="0.97" FlashBlue="0.53"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+					NonEnglishScaleModifier="0.95"
+		/>
+		<ActiveIcon AttachTo="ActiveDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_active"
+					 FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"/>
+
+		<UpgradeDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="752" OffsetY="68" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+					HelpTextId="CardBuyScreen_UpgradeDescriptionTitle" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"
+					FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0" FlashRed="0.94" FlashGreen="0.97" FlashBlue="0.53"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"						 
+					NonEnglishScaleModifier="0.8"
+		/>
+		<UpgradeDescription AttachTo="UpgradeDescriptionTitle" OffsetX="-10" OffsetY="13" Width="365" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewayMedium26" Scale="0.58"
+					FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0" FlashRed="0.94" FlashGreen="0.97" FlashBlue="0.53"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+					NonEnglishScaleModifier="0.95"
+		/>
+		<UpgradeIcon AttachTo="UpgradeDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_upgrade"
+					 FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"/>
+
+		<PassiveDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="1144" OffsetY="68" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+					HelpTextId="CardBuyScreen_PassiveDescriptionTitle" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"
+					FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0" FlashRed="0.94" FlashGreen="0.97" FlashBlue="0.53"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+					NonEnglishScaleModifier="0.8"
+		/>
+		<PassiveDescription AttachTo="PassiveDescriptionTitle" OffsetX="-10" OffsetY="13" Width="320" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewayMedium26" Scale="0.58"
+					FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0" FlashRed="0.94" FlashGreen="0.97" FlashBlue="0.53"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+					NonEnglishScaleModifier="0.95"
+		/>
+		<PassiveIcon AttachTo="PassiveDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_passive"
+					 FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"/>
+		
+		<DescriptionPanel AttachTo="DescriptionTitleIcon" OffsetX="-58" OffsetY="-4" Graphic="GUI\\Backgrounds\\panel_description_handscreen" Justification="Left" VerticalJustification="Top"
+						  
+						  FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0" FadeDelayMax="0.1" FadeSpeed="1"
+						  />
+
+		<ElbowLineEnd AttachTo="DescriptionTitleIcon" OffsetX="-10" OffsetY="80" Graphic="GUI\\Widgets\\elbowline_03_end" Justification="Center" VerticalJustification="Center"
+					  FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+					  />
+		<ElbowLineVertical AttachTo="ElbowLineEnd" OffsetX="-9" Graphic="GUI\\Widgets\\elbowline_03_segment_vertical" ScaleY="3.03" Justification="Center" VerticalJustification="Bottom"
+						   FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+						   />
+		<ElbowLineHorizontal OffsetY="96" Graphic="GUI\\Widgets\\elbowline_03_segment_horizontal" Justification="Right" VerticalJustification="Bottom"
+							 FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+							 />
+		<ElbowLineStart OffsetY="96" Graphic="GUI\\Widgets\\elbowline_03_start" Justification="Center" VerticalJustification="Bottom"
+						FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.65" FadeDelayMax="0.75" FadeSpeed="3"
+						/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.65"/>
+		<InfoPanel X="960" Y="540" Justification="Center" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="870" Font="RalewayRegular32" NonEnglishScaleModifier="0.95"/>
+		<InfoInstructionText
+			X="960" Y="640" Justification="Center" VerticalJustification="Center"
+			Font="RalewaySemiBold22"
+			HelpTextId="InfoInstructionText"
+			NonEnglishScaleModifier="1.0"
+			TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+
+		<!-- Controls -->
+		
+		<UpArrow X="1005" Y="145" Scale="1.0" Graphic="ArrowAnimUp" Angle="0" Justification="Center" VerticalJustification="Center"
+				 />
+		<DownArrow X="1005" Y="556" Scale="1.0" Graphic="ArrowAnimDown" Angle="0" Justification="Center" VerticalJustification="Center"
+				   />
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="HandScreen_Confirm" AlternateHelpTextId="HandScreen_AlreadyInstalled"
+			PressSound="/SFX/Menu Sounds/PowerSelecting" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.527" TextJustification="Left"
+			Font="RalewaySemiBold32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="320" Y="770"
+			MouseOffsetX="120"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="1" FadeDelayMax="1.5" FadeSpeed="8"
+			FlashMin="0.3" FlashMax="0.8" FlashSpeed="1.0" FlashRed="0.2" FlashGreen="1.0" FlashBlue="0.8"
+			NonEnglishFont="RalewaySemiBold32" NonEnglishScaleModifier="0.9"
+			/>
+		
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="HandScreen_Exit"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.527" TextJustification="Left"
+			Font="RalewaySemiBold32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="1600" Y="860"
+			FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.3" FadeDelayMax="0.5" FadeSpeed="8"
+			FlashMin="0.3" FlashMax="0.8" FlashSpeed="1.0" FlashRed="0.2" FlashGreen="1.0" FlashBlue="0.8"
+			NonEnglishFont="RalewaySemiBold32" NonEnglishScaleModifier="0.9"
+			MouseOffsetX="-35"
+			/>
+
+		<XButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerSquare" HelpTextId="HandScreenSlotDialog_DiscardSlot" AlternateHelpTextId="HandScreenSlotDialog_DiscardSlot_Limiter" MouseAlternateHelpTextId="HandScreenSlotDialog_DiscardSlotShort_Limiter"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.527" TextJustification="Left"
+			Font="RalewaySemiBold32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			PressSound="/SFX/Menu Sounds/FunctionUninstalled"
+			ActionSound="/SFX/Menu Sounds/PowerFallOut2"
+			X="632" Y="770"
+			MouseOffsetX="170"
+			FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.3" FadeDelayMax="0.5" FadeSpeed="8"
+			NonEnglishFont="RalewaySemiBold32" NonEnglishScaleModifier="0.9"
+			/>
+
+		<YButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerTriangle" HelpTextId="HandScreen_Inspect" AlternateHelpTextId="HandScreen_InspectUpdated" MouseAlternateHelpTextId="HandScreen_InspectUpdatedShort"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.527" TextJustification="Left"
+			Font="RalewaySemiBold32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FlashMin="0.3" FlashMax="0.8" FlashSpeed="1.0" FlashRed="0.2" FlashGreen="1.0" FlashBlue="0.8"
+			X="1019" Y="770"
+			MouseOffsetX="160"
+			FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.3" FadeDelayMax="0.5" FadeSpeed="8"
+			NonEnglishFont="RalewaySemiBold32" NonEnglishScaleModifier="0.9"
+			/>
+
+		<ShrineButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerR2"
+			HelpTextId="HandScreen_OpenEnemyUpgradeScreen" MouseHelpTextId="HandScreen_OpenEnemyUpgradeScreenShort"
+			AlternateHelpTextId="HandScreen_OpenEnemyUpgradeScreenNew" MouseAlternateHelpTextId="HandScreen_OpenEnemyUpgradeScreenNewShort"
+			Scale="0.4" Justification="Center" VerticalJustification="Center"
+			TextScale="0.527" TextJustification="Left"
+			Font="RalewaySemiBold32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FlashMin="0.3" FlashMax="0.8" FlashSpeed="1.0" FlashRed="0.2" FlashGreen="1.0" FlashBlue="0.8"
+			X="1405" Y="770"
+			UseMouseGraphics="true" MouseOffsetX="160"
+			FadeOpacity="0.0" FadeTarget="1" FadeDelayMin="0.3" FadeDelayMax="0.5" FadeSpeed="8"
+			NonEnglishFont="RalewaySemiBold32" NonEnglishScaleModifier="0.9"
+			/>
+
+		<YButtonIndicator AttachTo="YButton" AlternateGraphic="NewBioIndicatorLoop" TertiaryGraphic="NewBioIndicatorButton"/>
+		<ShrineButtonIndicator AttachTo="ShrineButton" AlternateGraphic="NewLimiterIndicatorLoop" TertiaryGraphic="NewLimiterIndicatorButton"/>
+
+	</HandScreen>
+	
+</HandScreens>

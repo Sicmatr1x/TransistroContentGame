@@ -1,0 +1,2157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Name="VirusWall"
+		InheritFrom="1_BaseInvulnerableObstacle"
+        StopsUnits="true"
+		StopsProjectiles="true"
+		MinCollisionInterval="1.3"
+		CollisionFx="VirusRipple02"
+		CollisionFxShift="-100"
+		Tallness="999999"
+		IsMapAreaWall="true"
+		>
+		<Thing
+			Graphic="Obstacles\\_Impassable_Tile64Iso"
+			Invisible="true"
+			RotateGeometry="true"
+			NeverObscuresPlayer="true"
+			VisibleInPlanning="true"
+			MeshType="Vertical"
+			Grip="999999.0"
+			>
+			<Point X="-40" Y="-1"/>
+			<Point X="-40" Y="1"/>
+			<Point X="40" Y="1"/>
+			<Point X="40" Y="-1"/>
+		</Thing>
+		<Life
+			Invulnerable="true"
+			Material="INVINCIBLE"
+			ShowDamageNumbers="false"
+			ReflectFx="BlockSparks3"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallHorizontal"
+		InheritFrom="VirusWall"
+		CollisionFx="VirusRipple01"
+	></Obstacle>
+
+	<Obstacle
+		Name="VirusWallVertical"
+		InheritFrom="VirusWall"
+		CollisionFx="VirusRipple01"
+	></Obstacle>
+
+	<Obstacle
+		Name="VirusWall01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusWall01"
+			NeverObscuresPlayer="true"
+			Scale="0.5">
+			<Point X="-58" Y="4"/>
+			<Point X="-32" Y="34"/>
+			<Point X="56" Y="-6"/>
+			<Point X="28" Y="-36"/>
+		</Thing>
+		<Life
+			Material="NONE"
+			DeathFx="VirusWall01Death"
+			DeathSound="SFX/Enemy Sounds/EnemyDeath">
+		</Life>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VirusWall01a"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusWall01a"
+			NeverObscuresPlayer="true"
+			Scale="0.5">
+			<Point X="-58" Y="4"/>
+			<Point X="-32" Y="34"/>
+			<Point X="56" Y="-6"/>
+			<Point X="28" Y="-36"/>
+		</Thing>
+		<Life
+			Material="NONE"
+			DeathFx="VirusWall01Death"
+			DeathSound="SFX/Enemy Sounds/EnemyDeath">
+		</Life>
+	</Obstacle>
+
+
+	<Obstacle
+		  Name="VirusPath01"
+		  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+				Graphic="VirusPath01"
+				NeverObscuresPlayer="true">
+			<Point X="-29" Y="2"/>
+			<Point X="-16" Y="17"/>
+			<Point X="28" Y="-3"/>
+			<Point X="14" Y="-18"/>
+		</Thing>
+		<Life
+				Material="NONE">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumn01"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="VirusColumn01"
+			ActivateGraphic="VirusColumn01_Activate"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			NeverObscuresPlayer="false"
+			VisibleInPlanning="true">
+			<Point X="-94" Y="10"/>
+			<Point X="-20" Y="67"/>
+			<Point X="29" Y="69"/>
+			<Point X="95" Y="13"/>
+			<Point X="-6" Y="-39"/>
+			<Color Red="1.0" Green="0.83" Blue="0.57"  Opacity="0.65"/>
+		</Thing>
+		<Life
+			Health="800"
+			HealthFractionRegen="0.03"
+			RespawnTimeMin="25.0"
+			RespawnTimeMax="30.0"
+			DeathFx="VirusWallDeath"
+			HitSound="null"
+			DeathSound="SFX/Enemy Sounds/VirusColumnDestroy"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			Material="ICE"
+			NumDeathLines="8"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumn02"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="VirusColumn02"
+			ActivateGraphic="VirusColumn02_Activate"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			NeverObscuresPlayer="false"
+			VisibleInPlanning="true">
+			<Point X="-49" Y="1"/>
+			<Point X="-3" Y="25"/>
+			<Point X="45" Y="-1"/>
+			<Point X="-2" Y="-22"/>
+			<Color Red="1.0" Green="0.83" Blue="0.57"  Opacity="0.65"/>
+		</Thing>
+		<Life
+			Health="400"
+			HealthFractionRegen="0.03"
+			RespawnTimeMin="15.0"
+			RespawnTimeMax="25.0"
+			DeathFx="VirusWallDeath"
+			HitSound="/SFX/Enemy Sounds/VirusColumnOnHit"
+			DeathSound="/SFX/Enemy Sounds/VirusColumnDestroy"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			Material="ICE"
+			NumDeathLines="4"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumn03"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="VirusColumn03"
+			ActivateGraphic="VirusColumn03_Activate"
+			ActivateSound="/SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			NeverObscuresPlayer="false"
+			VisibleInPlanning="true"
+			SelectionWidth="180"
+			SelectionHeight="280"
+            SelectionShiftY="40"
+			>
+			<Point X="-73" Y="-2"/>
+			<Point X="1" Y="38"/>
+			<Point X="73" Y="1"/>
+			<Point X="-3" Y="-32"/>
+		</Thing>
+		<Metering>
+			<Entry Field="Scale" MeteringChannel="Lighting" MeterMax="0.3" MeterMin="0.05" MultMax="1.05" />
+			<Entry Field="MaterialAmbient" MeteringChannel="Lighting" MeterMax="0.3" MeterMin="0.05" AddMax="-0.25" />
+		</Metering>
+		<Life
+			Health="150"
+			HealthFractionRegen="0.06"
+			RespawnTimeMin="10.0"
+			RespawnTimeMax="12.0"
+			DeathGraphic="VirusColumn03_Death"
+			HitFx="VirusColumn03_GlitchB"
+			HitFxInterval="0.4"
+			NoHitFxWhileActivating="true"
+			HitSound="/SFX/Enemy Sounds/VirusColumnOnHit"
+			DeathSound="/SFX/Enemy Sounds/VirusColumnDestroy"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			Material="ORGANIC"
+			NumDeathLines="8"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="CradeGate"
+		InheritFrom="VirusColumn03"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/FairviewDoorAmbience"
+			Scale="1.0"
+			Graphic="CradleGate"
+			ActivateGraphic="null"
+			ActivateSound="/SFX/Enemy Sounds/VirusColumnSpawnLarge">
+		</Thing>
+		<Life
+			Health="150"
+			HealthFractionRegen="0"
+			RespawnTimeMin="99999"
+			RespawnTimeMax="99999"
+			DeathGraphic="CradleGateOpen"
+			HitFx="null"
+			DeathSound="/SFX/Enemy Sounds/VirusColumnDestroy"
+			NumDeathLines="0"
+			>
+		</Life>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusColumn03Spawned"
+		InheritFrom="VirusColumn03"
+		>
+		<Thing
+			Scale="0.5">
+		</Thing>
+		<Life
+			Health="150"
+			HealthFractionRegen="0"
+			RespawnTimeMin="9999.0"
+			RespawnTimeMax="9999.0"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumn03NoRespawn"
+		InheritFrom="VirusColumn03"
+		>
+		<Life
+			Health="150"
+			HealthFractionRegen="0"
+			RespawnTimeMin="9999.0"
+			RespawnTimeMax="9999.0"
+			>
+		</Life>
+	</Obstacle>
+  
+	<Obstacle
+		Name="VirusColumn03FastRespawn"
+		InheritFrom="VirusColumn03"
+		>
+		<Life
+			RespawnTimeMin="8.0"
+			RespawnTimeMax="9.0"
+			>
+		</Life>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VirusColumn03LowHealth"
+		InheritFrom="VirusColumn03"
+		>
+		<Life
+			Health="5"
+			RespawnTimeMin="15"
+			RespawnTimeMax="20"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumnWeak01"
+		InheritFrom="VirusColumn02"
+		>
+		<Thing
+			Scale="0.7"
+			Graphic="VirusColumn02"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnSmall">
+			<Color Red="0.45" Green="0.83" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life
+			Health="10"
+			RespawnTimeMin="4.0"
+			RespawnTimeMax="5.0"
+			NumDeathLines="3"
+			HitSound="null"
+			DeathSound="SFX/Enemy Sounds/VirusColumnDestroy"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumnNoRespawn01"
+		InheritFrom="VirusColumn01"
+		>
+		<Thing
+			Scale="1.1"
+			Graphic="VirusColumnNoRespawn01"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			NeverObscuresPlayer="true">
+			<Color Red="1.0" Green="0.83" Blue="0.57"  Opacity="0.65"/>
+		</Thing>
+		<Life
+			Health="128"
+			HealthFractionRegen="0.0"
+			RespawnTimeMin="0.0"
+			RespawnTimeMax="0.0"
+			NumDeathLines="8"
+			HitSound="null"
+			DeathSound="SFX/Enemy Sounds/VirusColumnDestroy"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumnNoRespawn02"
+		InheritFrom="VirusColumn02"
+		>
+		<Thing
+			Scale="1.1"
+			Graphic="VirusColumnNoRespawn02"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			NeverObscuresPlayer="true">
+			<Color Red="1.0" Green="0.83" Blue="0.57" Opacity="0.65"/>
+		</Thing>
+		<Life
+			Health="64"
+			HealthFractionRegen="0.0"
+			RespawnTimeMin="0.0"
+			RespawnTimeMax="0.0"
+			NumDeathLines="4"
+			HitSound="null"
+			DeathSound="SFX/Enemy Sounds/VirusColumnDestroy"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusChest01"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="DropGlow3"
+			OffsetZ="120"
+			ActivateGraphic="null"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			NeverObscuresPlayer="true"
+			VisibleInPlanning="true"
+			Shadow="Decals\\Health_Circle_Medium"
+			Material="Emissive">
+			<Point X="-73" Y="-2"/>
+			<Point X="1" Y="38"/>
+			<Point X="73" Y="1"/>
+			<Point X="-3" Y="-32"/>
+		</Thing>
+		<Life
+			Health="50"
+			DeathFx="VirusCritRings"
+			HitSound="SFX/Enemy Sounds/ProjectileImpact"
+			DeathSound="SFX/Enemy Sounds/VirusColumnDestroy"
+			Material="ORGANIC"
+			NumDeathLines="8"
+			>
+		</Life>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusImprintColumn_01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="Tilesets\\Virus\\virus_imprintable_01"
+			OffsetY="-120"
+			NeverObscuresPlayer="false">
+			<Point X="8" Y="40"/>
+			<Point X="66" Y="11"/>
+			<Point X="8" Y="-29"/>
+			<Point X="-59" Y="4"/>
+		</Thing>
+		<Interact
+			Distance="75"
+			UserFx="null"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusImprintColumnUnusable_01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="Tilesets\\Virus\\virus_imprintable_01"
+			OffsetY="-120"
+			NeverObscuresPlayer="false">
+			<Point X="8" Y="40"/>
+			<Point X="66" Y="11"/>
+			<Point X="8" Y="-29"/>
+			<Point X="-59" Y="4"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusGate01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			AmbientSound="SFX/World Sounds/VirusGateAmbience"
+			OffsetZ="60"
+			Scale="1.0"
+			Graphic="VirusGate"
+			Shadow="null"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			Material="Emissive">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="-74" Y="-14"/>
+			<Point X="70" Y="47"/>
+			<Point X="81" Y="9"/>
+			<Point X="-65" Y="-43"/>
+		</Thing>
+		<Life
+			DeathFx="VirusGateDeath"
+			DeathSound="SFX/Enemy Sounds/EnemyDeath">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusGate01A"
+		InheritFrom="VirusGate01"
+		>
+		<Life
+			DeathFx="VirusGateDeathB">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusGate02"
+		InheritFrom="VirusGate01"
+		>
+		<Thing
+			OffsetZ="60"
+			Scale="1.0"
+			Graphic="VirusGate02"
+			Shadow="Decals\\Health_Circle_Medium"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life
+			DeathFx="VirusGate02Death"
+			DeathSound="SFX/Enemy Sounds/EnemyDeath">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusGate03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			AmbientSound="SFX/World Sounds/VirusGateAmbience"
+			OffsetZ="60"
+			Scale="1.0"
+			Graphic="VirusGateRipple"
+			Shadow="Decals\\Health_Circle_Medium"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			Material="Emissive">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="-74" Y="-14"/>
+			<Point X="70" Y="47"/>
+			<Point X="81" Y="9"/>
+			<Point X="-65" Y="-43"/>
+		</Thing>
+		<Life
+			DeathFx="null"
+			DeathSound="null">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusLock01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Scale="0.5"
+			Graphic="VirusLock"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			OverheadOffset="50"
+			VisibleInPlanning="true"
+			Material="Emissive">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Interact
+			Distance="120"
+			UserFx="null"
+			UserFaceTarget="true"
+			DestroyOnUse="false"
+			AutoUseDistance="65"
+			UnuseableAnimation="VirusLockNoFlash"
+		></Interact>
+		<Life
+			DeathFx="VirusLockDeath"
+			DeathSound="SFX/Enemy Sounds/EnemyDeathSmall">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusLock01_NoPlanning"
+		InheritFrom="VirusLock01"
+		>
+		<Thing
+			HelpTextId="VirusLock01">
+		</Thing>
+		<Interact
+			UseableInPlanning="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBarrier01"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Scale="0.3"
+			Graphic="Tilesets\\Virus\\virus_wall_06A"
+			OffsetY="-204"
+			OffsetZ="60"
+			NeverObscuresPlayer="true">
+			<Point X="-207" Y="-21"/>
+			<Point X="219" Y="208"/>
+			<Point X="317" Y="97"/>
+			<Point X="-115" Y="-127"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBarrier02"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Scale="0.3"
+			Graphic="Tilesets\\Virus\\virus_wall_06B"
+			OffsetY="-180"
+			OffsetZ="60"
+			NeverObscuresPlayer="true">
+			<Point X="-306" Y="84"/>
+			<Point X="307" Y="89"/>
+			<Point X="307" Y="-48"/>
+			<Point X="-303" Y="-48"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusBib01"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_bib_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBib02"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_bib_02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		Tallness="9999"
+		MinCollisionInterval="1.3"
+		CollisionFx="VirusRipple01"
+		CollisionFxShift="-100">
+		<Thing
+			Scale="0.3"
+			ClearGeometry="true"
+			NeverObscuresPlayer="true"
+			Graphic="VirusBorder01_Active"
+			ActivateGraphic="VirusBorder01_Activating"
+			DeactivateGraphic="VirusBorder01_Deactivating"
+			VisibleInPlanning="true">
+		</Thing>
+		<Life
+			Invulnerable="true"
+			DeathFx="VirusBorder01_Death"
+			Material="INVINCIBLE"
+			ShowDamageNumbers="false"
+			ReflectFx="BlockSparks3"			
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder02"
+		InheritFrom="VirusBorder01"
+		CollisionFx="VirusRipple02">
+		>
+		<Thing
+			Graphic="VirusBorder02_Active"
+			ActivateGraphic="VirusBorder02_Activating"
+			DeactivateGraphic="VirusBorder02_Deactivating"
+			VisibleInPlanning="true">
+			<Point X="-351" Y="73"/>
+			<Point X="-188" Y="218"/>
+			<Point X="446" Y="-56"/>
+			<Point X="270" Y="-158"/>
+		</Thing>
+		<Life
+			DeathFx="VirusBorder02_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder03"
+		InheritFrom="VirusBorder01"
+		CollisionFx="VirusRipple02">
+		>
+		<Thing
+			Graphic="VirusBorder03_Active"
+			ActivateGraphic="VirusBorder03_Activating"
+			DeactivateGraphic="VirusBorder03_Deactivating"
+			VisibleInPlanning="true">
+		</Thing>
+		<Life
+			DeathFx="VirusBorder03_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder04"
+		InheritFrom="VirusBorder01">
+		>
+		<Thing
+			Graphic="VirusBorder04_Active"
+			ActivateGraphic="VirusBorder04_Activating"
+			DeactivateGraphic="VirusBorder04_Deactivating"
+			VisibleInPlanning="true">
+		</Thing>
+		<Life
+			DeathFx="VirusBorder04_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder05"
+		InheritFrom="VirusBorder01"
+		CollisionFx="VirusRipple02">
+		<Thing
+			Graphic="VirusBorder05_Active"
+			ActivateGraphic="VirusBorder05_Activating"
+			DeactivateGraphic="VirusBorder05_Deactivating"
+			VisibleInPlanning="true">
+			<Point X="-843" Y="302"/>
+			<Point X="-606" Y="444"/>
+			<Point X="915" Y="-338"/>
+			<Point X="655" Y="-414"/>
+		</Thing>
+		<Life
+			DeathFx="VirusBorder05_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder06"
+		InheritFrom="VirusBorder01"
+		CollisionFx="VirusRipple02">
+		<Thing
+			Graphic="VirusBorder06_Active"
+			ActivateGraphic="VirusBorder06_Activating"
+			DeactivateGraphic="VirusBorder06_Deactivating"
+			VisibleInPlanning="true">
+		</Thing>
+		<Life
+			DeathFx="VirusBorder06_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder07"
+		InheritFrom="VirusBorder01">
+		<Thing
+			Graphic="VirusBorder07_Active"
+			ActivateGraphic="VirusBorder07_Activating"
+			DeactivateGraphic="VirusBorder07_Deactivating"
+			VisibleInPlanning="true">
+		</Thing>
+		<Life
+			DeathFx="VirusBorder07_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder08"
+		InheritFrom="VirusBorder01"
+		CollisionFx="VirusRipple02">
+		<Thing
+			Graphic="VirusBorder08_Active"
+			ActivateGraphic="VirusBorder08_Activating"
+			DeactivateGraphic="VirusBorder08_Deactivating"
+			VisibleInPlanning="true">
+			<Point X="-329" Y="115"/>
+			<Point X="-176" Y="233"/>
+			<Point X="361" Y="-51"/>
+			<Point X="176" Y="-159"/>
+		</Thing>
+		<Life
+			DeathFx="VirusBorder08_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBorder09"
+		InheritFrom="VirusBorder01"
+		CollisionFx="VirusRipple02">
+		>
+		<Thing
+			Graphic="VirusBorder09_Active"
+			ActivateGraphic="VirusBorder09_Activating"
+			DeactivateGraphic="VirusBorder09_Deactivating"
+			VisibleInPlanning="true">
+		</Thing>
+		<Life
+			DeathFx="VirusBorder09_Death"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBridge01"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			OffsetY="-147"
+			Graphic="Tilesets\\Virus\\virus_bridge_01"
+			NeverObscuresPlayer="true">
+			<Point X="401" Y="112"/>
+			<Point X="-285" Y="-218"/>
+			<Point X="-411" Y="-161"/>
+			<Point X="274" Y="185"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusCube01"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			OffsetZ="60"
+			Graphic="Cube01"
+			ActivateGraphic="null"
+			NeverObscuresPlayer="true"
+			Grip="1.0"
+			SpinFactor="2.0"
+			RotateGeometry="false">
+			<Point X="-57" Y="8"/>
+			<Point X="-1" Y="35"/>
+			<Point X="58" Y="3"/>
+			<Point X="-2" Y="-28"/>
+		</Thing>
+		<Life
+			Health="500"
+			HealthFractionRegen="0.03"
+			DeathFx="VirusWallDeath"
+			DeathSound="IceBreak"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			Material="ICE"
+			NumDeathLines="4"
+			Decal="Decals\\Health_Circle_Large"
+			OverPitDecal="Decals\\Dotted_Circle_Large"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="SandboxCube01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			OffsetZ="0"
+			Graphic="BeachBallIdle"
+			FlyingGraphic="BeachBall"
+			ActivateGraphic="null"
+			OverheadOffset="76"
+			NeverObscuresPlayer="true"
+			Grip="5.0"
+			SpinFactor="0.0"
+			Gravity="1500"
+			BounceMultiplier="0.5"
+			RotateGeometry="false"
+			OnTouchdownFxAnim="BeachBallLand"
+			VisibleInPlanning="true">
+			<Point X="-57" Y="8"/>
+			<Point X="-1" Y="35"/>
+			<Point X="58" Y="3"/>
+			<Point X="-2" Y="-28"/>
+		</Thing>
+		<Life
+			DeathFx="VirusWallDeath"
+			DeathSound="IceBreak"
+			Material="ICE"
+			NumDeathLines="4"
+			Decal="Decals\\Health_Circle_Large"
+			OverPitDecal="Decals\\Dotted_Circle_Large"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="SandboxCube02"
+		InheritFrom="SandboxCube01"
+		>
+		<Thing
+			TouchdownSound="/SFX/Player Sounds/FootstepsSand">
+		</Thing>
+		<Interact
+			Distance="150"
+			NoUpwardVelocity="false"
+			MaxZ="50"
+			AudioFx="/SFX/World Sounds/BeachBall"
+			UserFx="null"
+			DestroyOnUse="false"
+			OffsetY="10"
+			UserFaceTarget="true"
+			UseableInPlanning="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusCornerGlow01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_cornerGlow_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusGrid01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="DisruptionCubeGridBase2"
+			VisibleInPlanning="true"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusGrid02"
+		InheritFrom="1_BaseVulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="DisruptionCubeGridBase"
+			VisibleInPlanning="true"
+			Material="Emissive">
+		</Thing>
+
+		<Life
+			Health="5"
+			HealthRegen="-1"
+			HealthRegenDelay="0.0"
+		></Life>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VirusDecal01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_Decal_01">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VirusWallDecal01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_wallPiece_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallDecal02"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_wallPiece_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallDecal03"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_wallPiece_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallDecal04"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_wallStrip_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusColumnBib01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_cover_bib01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDitch04"
+		InheritFrom="1_BaseDecalObstacle"
+		StopsUnits="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_ditch_04"
+			>
+			<Point X="76" Y="57"/>
+			<Point X="107" Y="39"/>
+			<Point X="-77" Y="-57"/>
+			<Point X="-106" Y="-41"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDitch05"
+		InheritFrom="1_BaseDecalObstacle"
+		StopsUnits="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_ditch_05"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusPlant01"
+		InheritFrom="1_BaseVulnerableObstacle"
+		CollisionSound="Rustling"
+		DieOnCollision="true"
+		StopsUnits="false"
+		AutoLockable="false">
+		<Thing
+			MinScale="0.5"
+			MaxScale="0.75"
+			Graphic="VirusPlant01"
+			ActivateGraphic="VirusPlant01_Activate"
+			SkipActivateAtMapStart="true"
+			Shadow="null"
+			OffsetY="0"
+			NeverObscuresPlayer="true">
+			<Point X="26" Y="-2"/>
+			<Point X="1" Y="-12"/>
+			<Point X="-22" Y="1"/>
+			<Point X="2" Y="15"/>
+		</Thing>
+		<Life
+			Health="10"
+			DamageFlashSpeed="5.0"
+			DamageFlashSeconds="0.2"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			DeathGraphic="VirusPlant01_Death"
+			DeathFx="null"
+			DeathSound="/SFX/Enemy Sounds/VirusPlantDeath"
+			Material="METAL"
+			ShowDamageNumbers="false"
+			DeathLineGraphic="Particles\\particle_line_03"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusPlant01Optimized"
+		InheritFrom="VirusPlant01"
+		CollisionSound="null">
+		<Life
+			DeathGraphic="VirusPlant01_Death"
+			DeathFx="null"
+			DeathSound="null"
+			DeathLineGraphic="null"
+			SkipScriptOnDeath="true"
+			>
+		</Life>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="LobberStatic01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="LobberStatic"
+			Scale="0.6"
+			HelpTextId="Lobber">
+			<Point X="-50" Y="5"/>
+			<Point X="3" Y="38"/>
+			<Point X="55" Y="7"/>
+			<Point X="0" Y="-20"/>
+		</Thing>
+	</Obstacle>
+			
+		
+<!-- Jen's prototype obstacles...need to fix extents??-->
+	
+<!-- Terrainy Things-->	
+	
+	<Obstacle
+		Name="VirusGoldDecal01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_goldDecal_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusGoldDecal02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_goldDecal_02">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusGoldTexture01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_goldTexture_01">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusTerrain01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain05"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_05">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain06"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_06">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain07"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_07">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain08"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_08">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrain09"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_09">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusTerrain10"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_terrain_10">
+		</Thing>
+	</Obstacle>
+	<!-- Wallish things -->
+	
+	<Obstacle
+		Name="VirusWall02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_wall_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWall03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_wall_03">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusWall04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_wall_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWall05"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusWall05">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWall05a"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusWall05a">
+		</Thing>
+	</Obstacle>
+		
+	<Obstacle
+		Name="VirusWall07"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\Virus_Wall_07">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWall07B"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\Virus_Wall_07B">
+		</Thing>
+	</Obstacle>
+	
+	
+	<Obstacle
+		Name="VirusKeyhole01B"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusKeyhole01B">
+		</Thing>
+	</Obstacle>
+	
+	<!-- Obstacley things-->
+	
+	<Obstacle
+		Name="VirusBlock01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusBlock01"
+			NeverObscuresPlayer="true">
+			<Point X="-340" Y="-52"/>
+			<Point X="103" Y="170"/>
+			<Point X="330" Y="55"/>
+			<Point X="-112" Y="-165"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusBlock02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusBlock02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusBlock03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_block_03"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusCube01a"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCube01a"
+			NeverObscuresPlayer="true">
+			<Point X="-461" Y="0"/>
+			<Point X="0" Y="222"/>
+			<Point X="456" Y="-19"/>
+			<Point X="0" Y="-227"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusCube01b"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCube01b"
+			NeverObscuresPlayer="true">
+			<Point X="458" Y="-34"/>
+			<Point X="0" Y="-294"/>
+			<Point X="-448" Y="-26"/>
+			<Point X="8" Y="199"/>
+			
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusCube03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCube03"
+			NeverObscuresPlayer="true">
+			<Point X="-377" Y="-40"/>
+			<Point X="103" Y="202"/>
+			<Point X="373" Y="65"/>
+			<Point X="-89" Y="-165"/>
+		</Thing>
+	</Obstacle>
+
+
+	<!-- Miscellaneous Things-->
+	<Obstacle
+		Name="VirusEye01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusEye01">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusEye02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_eye_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusNumber01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_number_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusNumber02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_number_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusLine01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_line_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusVictim01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		CanPenetrateIfInvulnerable="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_person_01"
+			NeverObscuresPlayer="true"
+			Scale="0.5"
+			OffsetY="-40"
+			OverheadOffset="80"
+			VisibleInPlanning="false"
+			Material="Emissive">
+			<Point X="-66" Y="87"/>
+			<Point X="70" Y="42"/>
+			<Point X="130" Y="-5"/>
+			<Point X="122" Y="-100"/>
+			<Point X="86" Y="-110"/>
+			<Point X="-133" Y="35"/>
+		</Thing>
+		<Life
+			Material="INVINCIBLE"
+			NumDeathLines="8"
+			DeathSound="SFX/Player Sounds/WeaponCharge3"
+			DeathFx="VirusVictim01Death">
+		</Life>
+		<Interact
+			Distance="150"
+			UserFx="null"
+			DestroyOnUse="false"
+			OffsetY="-20"
+			UserFaceTarget="true"
+			UseableInPlanning="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusVictim02"
+		InheritFrom="VirusVictim01"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_person_02"
+			ClearGeometry="true"
+			OffsetY="-11">
+			<Point X="-106" Y="48"/>
+			<Point X="-9" Y="88"/>
+			<Point X="97" Y="32"/>
+			<Point X="106" Y="-7"/>
+			<Point X="77" Y="-93"/>
+			<Point X="35" Y="-103"/>
+			<Point X="-43" Y="-60"/>
+		</Thing>
+		<Life
+			DeathFx="VirusVictim02Death">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusVictim03"
+		InheritFrom="VirusVictim01"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_person_03"
+			ClearGeometry="true"
+			OffsetY="32">
+			<Point X="-132" Y="-31"/>
+			<Point X="-96" Y="85"/>
+			<Point X="39" Y="142"/>
+			<Point X="133" Y="91"/>
+			<Point X="116" Y="12"/>
+			<Point X="-44" Y="-78"/>
+		</Thing>
+		<Life
+			DeathFx="VirusVictim03Death">
+		</Life>
+		<Interact
+			OffsetY="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallFormatDecalSideA"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusWallFormatDecalSideA"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallFormatDecalSideB"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusWallFormatDecalSideB"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallFormatDecalSideC"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusWallFormatDecalSideC"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallFormatDecalSideD"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="VirusWallFormatDecalSideD"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWallFormat"
+		InheritFrom="VirusWall05"
+		>
+		<Thing
+			Graphic="VirusWallFormat">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusWallFormatDrip"
+		InheritFrom="VirusWall05"
+		>
+		<Thing
+			Graphic="VirusWallFormatDrip">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusTerrainFormat"
+		InheritFrom="VirusTerrain01"
+		>
+		<Thing
+			Graphic="VirusTerrainFormat">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusTerrainFormatDrip"
+		InheritFrom="VirusTerrain01"
+		>
+		<Thing
+			Graphic="VirusTerrainFormatDrip">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusLight01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_light_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusLight02"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_light_02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusFlare01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_Red_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusFlare01Fade"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="VirusFlare01Fade"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusFlare01a"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_Red_01_secondary"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusFlare01aFade"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="VirusFlare01aFade"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusFlare02"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_White_01_secondary"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusFlare02Fade"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="VirusFlare02Fade"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusCluster01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCluster01"
+			NeverObscuresPlayer="true">
+			<Point X="-127" Y="3"/>
+			<Point X="-14" Y="62"/>
+			<Point X="32" Y="72"/>
+			<Point X="132" Y="26"/>
+			<Point X="-17" Y="-42"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusCluster02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCluster02"
+			NeverObscuresPlayer="true">
+			<Point X="-321" Y="-119"/>
+			<Point X="252" Y="153"/>
+			<Point X="296" Y="129"/>
+			<Point X="260" Y="68"/>
+			<Point X="-240" Y="-161"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="VirusCluster02A"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCluster02A"
+			NeverObscuresPlayer="true">
+			<Point X="6" Y="58"/>
+			<Point X="106" Y="-13"/>
+			<Point X="-30" Y="-84"/>
+			<Point X="-131" Y="-16"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusCluster03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCluster03"
+			NeverObscuresPlayer="true">
+			<Point X="38" Y="-13"/>
+			<Point X="-81" Y="-81"/>
+			<Point X="-182" Y="-28"/>
+			<Point X="-70" Y="37"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusCluster04"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-128"
+			Graphic="Tilesets\\Virus\\virus_cluster_04"
+			NeverObscuresPlayer="true">
+			<Point X="159" Y="24"/>
+			<Point X="-51" Y="-78"/>
+			<Point X="-166" Y="-15"/>
+			<Point X="51" Y="89"/>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VirusCluster05"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusCluster05"
+			NeverObscuresPlayer="true">
+			<Point X="141" Y="2"/>
+			<Point X="21" Y="-51"/>
+			<Point X="-66" Y="3"/>
+			<Point X="41" Y="64"/>
+		</Thing>
+	</Obstacle>
+	
+	<!-- Monster Assets-->
+	
+	<Obstacle
+		Name="VirusDecalDemolisher01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalDemolisher_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalEgg01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalEgg_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalEye01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalEye_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalEye02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusDecalEye02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalEye03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalEye_03"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalEye04"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalEye_04"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalEye05"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalEye_05"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalPopper01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalPopper_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalScale01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalScale_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalScale02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalScale_02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalSquares01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalSquares_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalStrand01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalStrand_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusDecalStrand02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusDecalStrand02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusDecalStrand03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalStrand_03"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDecalSuppressor01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_DecalSuppressor_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusBlackBlob01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusBlackBlob"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusFinalPlatform01A"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_finalPlatform_01A"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDoor01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusDoor01"
+			NeverObscuresPlayer="true">
+			<Point X="-194" Y="-40"/>
+			<Point X="184" Y="168"/>
+			<Point X="298" Y="111"/>
+			<Point X="-67" Y="-94"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDoor02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+
+			Graphic="VirusDoor02"
+			NeverObscuresPlayer="true">
+			<Point X="159" Y="59"/>
+			<Point X="-133" Y="-113"/>
+			<Point X="-202" Y="-70"/>
+			<Point X="120" Y="113"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDoor02A"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-489"
+			Graphic="VirusDoor02A"
+			NeverObscuresPlayer="true">
+			<Point X="161" Y="40"/>
+			<Point X="102" Y="10"/>
+			<Point X="64" Y="42"/>
+			<Point X="121" Y="64"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDoor02B"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-333"
+			Graphic="VirusDoor02B"
+			NeverObscuresPlayer="true">
+			<Point X="-104" Y="-8"/>
+			<Point X="-166" Y="-32"/>
+			<Point X="-204" Y="3"/>
+			<Point X="-136" Y="38"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDoor03A"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_door_03A"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDoor03B"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_door_03B"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDoor04"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_door_04"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusArch01A"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusArch01a"
+			NeverObscuresPlayer="true">
+			<Point X="-53" Y="-29"/>
+			<Point X="50" Y="44"/>
+			<Point X="68" Y="32"/>
+			<Point X="-37" Y="-40"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="VirusArch01B"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusArch01b"
+			NeverObscuresPlayer="true">
+			<Point X="36" Y="39"/>
+			<Point X="60" Y="18"/>
+			<Point X="-57" Y="-66"/>
+			<Point X="-67" Y="-29"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusButress01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusButtress01"
+			NeverObscuresPlayer="true">
+			<Point X="-134" Y="-75"/>
+			<Point X="-11" Y="65"/>
+			<Point X="24" Y="84"/>
+			<Point X="96" Y="51"/>
+			<Point X="-51" Y="-101"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusPillar01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusPillar01"
+			NeverObscuresPlayer="true">
+			<Point X="-177" Y="-35"/>
+			<Point X="-96" Y="76"/>
+			<Point X="-25" Y="117"/>
+			<Point X="133" Y="-4"/>
+			<Point X="-90" Y="-63"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusPillar02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-437"
+			Graphic="Tilesets\\Virus\\virus_pillar_02"
+			NeverObscuresPlayer="true">
+			<Point X="150" Y="-7"/>
+			<Point X="-7" Y="-73"/>
+			<Point X="-171" Y="-13"/>
+			<Point X="-2" Y="70"/>
+
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusPlatform01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_platform_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusPlatform02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_platform_02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VirusWindow01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_window_01"
+			NeverObscuresPlayer="true">
+
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VirusWindow02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusWindow02"
+			NeverObscuresPlayer="true">
+			<Point X="-172" Y="-58"/>
+			<Point X="128" Y="94"/>
+			<Point X="177" Y="58"/>
+			<Point X="-125" Y="-91"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusWindow03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_window_03"
+			NeverObscuresPlayer="true">
+
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusEdgeShimmer"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusEdgeShimmer"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusEdgeShimmerFade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusEdgeShimmerFade"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusPole01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="VirusPole01"
+			NeverObscuresPlayer="true">
+			<Point X="9" Y="-6"/>
+			<Point X="-14" Y="-15"/>
+			<Point X="-36" Y="-3"/>
+			<Point X="-6" Y="10"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusPole02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-88"
+			Graphic="Tilesets\\Virus\\virus_pole_02"
+			NeverObscuresPlayer="true">
+			<Point X="55" Y="-25"/>
+			<Point X="43" Y="-29"/>
+			<Point X="-62" Y="23"/>
+			<Point X="-55" Y="25"/>
+		
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="VirusTrim01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_trim_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FxDisruptionCubesAmbient"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="DisruptionCubeSpawner"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>	
+	
+
+</Obstacles>

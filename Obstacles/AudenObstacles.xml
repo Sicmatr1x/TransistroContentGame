@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Name="TestSnapshot"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="VirusColumn01"
+			ActivateGraphic="VirusColumn01_Activate"
+			ActivateSound="SFX/Enemy Sounds/VirusColumnSpawnLarge"
+			NeverObscuresPlayer="false"
+			VisibleInPlanning="true">
+			<Point X="-94" Y="10"/>
+			<Point X="-20" Y="67"/>
+			<Point X="29" Y="69"/>
+			<Point X="95" Y="13"/>
+			<Point X="-6" Y="-39"/>
+		</Thing>
+		<Life
+			Health="151"
+			HealthFractionRegen="0.03"
+			RespawnTimeMin="14.0"
+			RespawnTimeMax="17.0"
+			DeathFx="VirusWallDeath"
+			HitSound="null"
+			DeathSound="SFX/Enemy Sounds/VirusColumnDestroy"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			Material="ICE"
+			NumDeathLines="8"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="Crate01_A"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="Obstacles\\CityTileset\\Auden_Crate01_A"
+			OffsetY="-80"
+			NeverObscuresPlayer="true">
+			<Point X="-273" Y="33"/>
+			<Point X="8" Y="189"/>
+			<Point X="276" Y="13"/>
+			<Point X="4" Y="-128"/>
+		</Thing>
+		<Life
+			Health="233"
+			RespawnTime="30.0"
+			DeathFx="IceShatter_Large"
+			DeathSound="PeacemakerDeath"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="Obstacles\\CityTileset\\Auden_Crate01_A_DMG"
+			LowHealthTransitionEffect="IceShatter_Large"
+			Material="ICE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="Crate02_A"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="Obstacles\\CityTileset\\Auden_Crate02_A"
+			OffsetY="-110"
+			NeverObscuresPlayer="true">
+			<Point X="-93" Y="2"/>
+			<Point X="-1" Y="36"/>
+			<Point X="89" Y="5"/>
+			<Point X="-3" Y="-44"/>
+		</Thing>
+		<Life
+			Health="151"
+			RespawnTime="30.0"
+			DeathFx="IceShatter_Large"
+			DeathSound="PeacemakerDeath"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="Obstacles\\CityTileset\\Auden_Crate02_A_DMG"
+			LowHealthTransitionEffect="IceShatter_Large"
+			Material="ICE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="Crate02_A_Weak"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="0.6"
+			Graphic="Obstacles\\CityTileset\\Auden_Crate02_A"
+			OffsetY="-110"
+			NeverObscuresPlayer="true">
+			<Point X="-93" Y="2"/>
+			<Point X="-1" Y="36"/>
+			<Point X="89" Y="5"/>
+			<Point X="-3" Y="-44"/>
+		</Thing>
+		<Life
+			Health="100"
+			RespawnTime="30.0"
+			DeathFx="IceShatter_Large"
+			DeathSound="PeacemakerDeath"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="Obstacles\\CityTileset\\Auden_Crate02_A_DMG"
+			LowHealthTransitionEffect="IceShatter_Large"
+			Material="ICE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="Crate02_C"
+		InheritFrom="1_BaseVulnerableLowObstacle"
+		>
+		<Thing
+			Scale="0.45"
+			Graphic="Obstacles\\CityTileset\\Auden_Crate02_C"
+			OffsetY="-50"
+			NeverObscuresPlayer="true">
+			<Point X="-108" Y="13"/>
+			<Point X="-1" Y="63"/>
+			<Point X="108" Y="15"/>
+			<Point X="1" Y="-38"/>
+		</Thing>
+		<Life
+			Health="133"
+			RespawnTime="30.0"
+			DeathFx="IceShatter_Large"
+			DeathSound="PeacemakerDeath"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="IceShatter_Large"
+			Material="ICE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="DeadlyVirus_Impassable01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		CollisionDamage="8"
+		CollisionKnockback="800"
+		CollisionFx="PlayerHit"
+		MinCollisionInterval="0.25"
+		>
+		<Thing
+			Graphic="Obstacles\\EdgeTileset\\Edge_Decal_Snow02"
+			NeverObscuresPlayer="true">
+			<Point X="-226" Y="55"/>
+			<Point X="-4" Y="201"/>
+			<Point X="147" Y="59"/>
+			<Point X="152" Y="-100"/>
+			<Point X="-139" Y="-83"/>
+		</Thing>
+		<Life
+			Material="NONE">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="RiverWater_Impassable01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Obstacles\\EdgeTileset\\Edge_Decal_Snow02"
+			NeverObscuresPlayer="true">
+			<Point X="-298" Y="98"/>
+			<Point X="-53" Y="204"/>
+			<Point X="225" Y="76"/>
+			<Point X="171" Y="-114"/>
+			<Point X="-155" Y="-74"/>
+		</Thing>
+		<Life
+			Material="NONE">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="ArrowIndicator2"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="ArrowIndicator2">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+		Name="Test_Building01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		GridAreaInflation="4"
+		>
+		<Thing
+			Graphic="Obstacles\\CityTileset\\Test_Building01"
+			OffsetY="-551"
+			NeverObscuresPlayer="true">
+			<Point X="-112" Y="118"/>
+			<Point X="118" Y="-8"/>
+			<Point X="-133" Y="-119"/>
+			<Point X="-379" Y="-6"/>
+		</Thing>
+		<Life
+			Material="NONE">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="Test_Building02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		GridAreaInflation="4"
+		>
+		<Thing
+			Graphic="Obstacles\\CityTileset\\Test_Building02"
+			OffsetY="-287"
+			NeverObscuresPlayer="true">
+			<Point X="1" Y="144"/>
+			<Point X="253" Y="10"/>
+			<Point X="20" Y="-115"/>
+			<Point X="-241" Y="4"/>
+		</Thing>
+		<Life
+			Material="NONE">
+		</Life>
+	</Obstacle>
+	
+	<Obstacle
+		  Name="ArrowDecal"
+		  InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Arrow_01">
+		</Thing>
+	</Obstacle>
+  
+  <Obstacle
+		  Name="Foreground_Wires01"
+		  InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+				Graphic="ForegroundFlyers\\telephone_wires_01"
+				VisibleInPlanning="false">
+		</Thing>
+  </Obstacle>
+
+    <Obstacle
+           Name="Foreground_VignetteTest"
+           InheritFrom="1_BaseDecalObstacle"
+		>
+        <Thing
+				Graphic="Backgrounds\\vignette_test">
+        </Thing>
+    </Obstacle>   
+    
+  <Obstacle
+		Name="Shadow"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="ShadowIdle"
+ 			NeverObscuresPlayer="true"
+			PermaFlash="Orange"
+			OverheadOffset="210"
+			>
+			<Point X="-53" Y="-6"/>
+			<Point X="-49" Y="20"/>
+			<Point X="-28" Y="39"/>
+			<Point X="41" Y="40"/>
+			<Point X="48" Y="5"/>
+			<Point X="31" Y="-26"/>
+			<Point X="-26" Y="-26"/>
+		</Thing>
+		<Interact
+			Distance="280"
+			NumUses="999"
+			Cooldown="3.0"
+			AudioFx="ButtonPress"
+			OffsetY="-45"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="Test_Camerata01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-30"
+			Scale="1.2"
+			Graphic="MuseIdleNoJacket"
+			PermaFlash="AlmostWhite"
+			Width="104"
+			Height="64"
+			OverheadOffset="140"
+			NeverObscuresPlayer="true">
+			<Point X="0" Y="20"/>
+			<Point X="40" Y="0"/>
+			<Point X="0" Y="-20"/>
+			<Point X="-40" Y="0"/>
+		</Thing>
+		<Interact
+			Distance="120"
+			NumUses="999"
+			Cooldown="3.0"
+			AudioFx="ButtonPress"
+			OffsetY="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="FocusCircle"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="GUI\\HUD\\zoom_ellipse01"
+			NeverObscuresPlayer="true">
+			<Point X="-77" Y="-1"/>
+			<Point X="-8" Y="44"/>
+			<Point X="107" Y="-12"/>
+			<Point X="36" Y="-49"/>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="Shroud_Circle01"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="GUI\\Shroud_Circle01"
+			NeverObscuresPlayer="true">
+			<Point X="-17" Y="407"/>
+			<Point X="246" Y="238"/>
+			<Point X="335" Y="12"/>
+			<Point X="244" Y="-269"/>
+			<Point X="1" Y="-371"/>
+			<Point X="-302" Y="-228"/>
+			<Point X="-369" Y="-1"/>
+			<Point X="-262" Y="257"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Shroud_Rectangle01"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="GUI\\Shroud_Rect01"
+			NeverObscuresPlayer="true">
+			<Point X="800" Y="450"/>
+			<Point X="800" Y="-450"/>
+			<Point X="-800" Y="-450"/>
+			<Point X="-800" Y="450"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="Shroud_RectHole01"
+	InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="GUI\\Shroud_RectHole01"
+			NeverObscuresPlayer="true">
+			<Point X="800" Y="450"/>
+			<Point X="800" Y="-450"/>
+			<Point X="-800" Y="-450"/>
+			<Point X="-800" Y="450"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Motorcycle"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Scale="1.0"
+			Graphic="Cinematic\\Motorcycle_01"
+			OffsetY="-80"
+			NeverObscuresPlayer="true">
+			<Point X="-273" Y="33"/>
+			<Point X="8" Y="189"/>
+			<Point X="276" Y="13"/>
+			<Point X="4" Y="-128"/>
+		</Thing>
+		<Life
+			Health="233"
+			RespawnTime="30.0"
+			DeathFx="IceShatter_Large"
+			DeathSound="PeacemakerDeath"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="Obstacles\\CityTileset\\Auden_Crate01_A_DMG"
+			LowHealthTransitionEffect="IceShatter_Large"
+			Material="ICE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="Bridge_Tiling_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Bridge_Tiling_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Bridge_Tiling_01_blur"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Bridge_Tiling_01_blur">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Bridge_Tiling_02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Bridge_Tiling_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Wire_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Wire_01">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="Water_Tiling_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Temp_Water_Tiling_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Water_Tiling_02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Temp_Water_Tiling_02">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Boat_Spray_Front"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Boat01SprayFront">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Boat_Spray_Back"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Boat01SprayBack">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Cloud_Tiling_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Cloud_Tiling_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="LampPost01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\lamp_post">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Buoy01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Buoy">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Piling01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Piling">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Seagull01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Seagull_Flying">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Seagull02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Seagull_02">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="GiantMonster01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Monster_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Sign_Women"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Temp_Sign_Women">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Sign_Men"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Temp_Sign_Men">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Skyscraper_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Backgrounds\\Skyscraper_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Skyscraper_02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Backgrounds\\Skyscraper_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Skyscraper_03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Backgrounds\\Skyscraper_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Skyscraper_04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Backgrounds\\Skyscraper_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle Name="Skyline_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Backgrounds\\Telescope_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle Name="TestSnapshot02"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\test_snapshot">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle Name="CitySymbol_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\GreenCitySymbol">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle Name="CitySymbol_01_blur"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\GreenCitySymbolBlur">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle Name="Motorcycle_Rider01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\Mod_Woman_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle Name="Motorcycle_Hot01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\MotorcycleHot_01">
+		</Thing>
+	</Obstacle>
+
+    <Obstacle
+      Name="Transistor01"
+      InheritFrom="1_BaseInvulnerableObstacle"
+		>
+        <Thing
+			Graphic="Loot\\Transistor_01"
+ 			NeverObscuresPlayer="true"
+			OverheadOffset="210"
+			OffsetY="-58"
+			>
+            <Point X="-25" Y="-1"/>
+            <Point X="2" Y="15"/>
+            <Point X="10" Y="8"/>
+            <Point X="-16" Y="-9"/>
+        </Thing>
+        <Interact
+			Distance="200"
+			NumUses="999"
+			Cooldown="3.0"
+			AudioFx="null"
+		></Interact>
+    </Obstacle>
+
+	<Obstacle
+      Name="Transistor02"
+      InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Cinematic\\sideview_transistor_01"
+ 			NeverObscuresPlayer="true"
+			OverheadOffset="210"
+			AmbientSound="SFX/World Sounds/VirusGateAmbience"
+			Material="Emissive"
+			>
+			<Point X="35" Y="257"/>
+			<Point X="152" Y="206"/>
+			<Point X="-32" Y="-250"/>
+			<Point X="-140" Y="-254"/>
+			<Point X="-130" Y="-52"/>
+		</Thing>
+		<Interact
+			Distance="240"
+			NumUses="999"
+			Cooldown="3.0"
+			AudioFx="SFX/Enemy Sounds/VirusReveal"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+      Name="Heart01"
+      InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="HeartPulse1"
+ 			NeverObscuresPlayer="true"
+			OverheadOffset="210"
+			AmbientSound="SFX/World Sounds/VirusGateAmbience"
+			Material="Emissive"
+			>
+		</Thing>
+		<Interact
+			Distance="425"
+			NumUses="999"
+			Cooldown="3.0"
+			AudioFx="null"
+		></Interact>
+		<Life
+			DeathFx="HeartStop">
+		</Life>
+	</Obstacle>
+	
+	<Obstacle
+      Name="CardSpecialIcon01"
+      InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="GUI\\Icons\\Powers\\story_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Blackhole"
+		InheritFrom="1_BaseVulnerablePassableObstacle"
+		VacuumStrength="9000"
+		VacuumDistance="500"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="BlackHoleFx"
+			NeverObscuresPlayer="true"
+			VisibleInPlanning="true"
+			Scale="1.0">
+		</Thing>
+		<Life
+			Health="10"
+			HealthRegen="-10"
+			HealthRegenDelay="0.0"
+			DamageFlashSpeed="0"
+			DamageFlashSeconds="0"
+			DeathFx="BlackHoleFxEnd"
+		></Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="BlackholeBlink"
+		InheritFrom="Blackhole"
+		>
+		<Life
+			Health="6"
+			HealthRegen="-10"
+		></Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="PermanentBlackhole"
+		InheritFrom="Blackhole"
+		VacuumStrength="6250"
+		VacuumDistance="175"
+		>
+		<Life
+			Invulnerable="true"
+			HealthRegen="0"
+			HealthRegenDelay="0.0"
+		></Life>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="FakeBlackhole"
+		InheritFrom="Blackhole"
+		VacuumStrength="0"
+		VacuumDistance="0"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="BlackHoleFx"
+			VisibleInPlanning="false"
+			Scale="1.0">
+		</Thing>
+		<Life
+			Health="10"
+			HealthRegen="-15"
+			HealthRegenDelay="0.0"
+			DamageFlashSpeed="0"
+			DamageFlashSeconds="0"
+			DeathFx="BlackHoleFxEnd"
+		></Life>
+	</Obstacle>
+
+
+	<Obstacle
+    Name="Flashback"
+    InheritFrom="1_BaseVulnerablePassableObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+    >
+    <Thing
+      Graphic="FlashbackAnimation"
+      NeverObscuresPlayer="true"
+      VisibleInPlanning="true"
+	  Material="Emissive">
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+	  Name="CombatOver"
+	  InheritFrom="1_BaseVulnerablePassableObstacle"
+	  StopsUnits="false"
+	  StopsProjectiles="false"
+    >
+		<Thing
+		  Graphic="CombatOverEnter"
+		  NeverObscuresPlayer="true"
+		  VisibleInPlanning="true"
+		  Material="Emissive">
+		</Thing>
+		<Life
+			DeathGraphic="CombatOverExit"
+			>
+		</Life>
+	</Obstacle>
+	
+	<Obstacle
+      Name="GliderSwarm"
+      InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="GliderSwarm"
+		></Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="Music3DSource"
+	InheritFrom="1_BaseInvulnerablePassableObstacle"
+	DisplayInEditor="true"
+    >
+		<Thing
+		Graphic="Dev\\MusicIcon"
+		OverheadOffset="0.0"
+		AmbientSound="/SFX/World Sounds/Music3D"
+		Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+    Name="TransistorEye"
+    InheritFrom="InvisibleTarget"
+    >
+		<Thing
+			OverheadOffset="0.0"
+			HelpTextId="Transistor02"
+>
+		</Thing>
+  </Obstacle>
+
+
+ 
+</Obstacles>

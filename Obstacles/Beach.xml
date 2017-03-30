@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Obstacles>
+
+	<Obstacle
+		Name="BeachDoor01"
+		InheritFrom="1_BaseStandingDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Door_01"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachDoor02"
+		InheritFrom="1_BaseStandingDecalObstacle">
+		<Thing
+		  Graphic="BeachDoorAnim"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachDriftwood01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Driftwood_01"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BeachDriftwood02"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Driftwood_02"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachDriftwood03"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Driftwood_03"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachDriftwood04"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Driftwood_04"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachDriftwood05"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Driftwood_05"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BeachBoomBox01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="BeachBoomBox01">
+			<Point X="140" Y="8"/>
+			<Point X="-3" Y="-43"/>
+			<Point X="-146" Y="12"/>
+			<Point X="-5" Y="78"/>
+		</Thing>
+	</Obstacle>
+
+	
+	<Obstacle
+		Name="BeachCloud01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Cloud_01"
+		  Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+	
+		
+	<Obstacle
+		Name="BeachFish01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="BeachFish01"
+		  Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachFish02"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="BeachFish02"
+		  Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BeachHammock01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="BeachHammock01"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachHole01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Hole_01"
+		>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+	  Name="BeachLine01"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Line_01"
+		  Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BeachLine02"
+	InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Line_02"
+		  Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachLine03"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Line_03"
+		  Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		  Name="BeachPole01"
+		  InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Beach\\Beach_Pole_01"
+				NeverObscuresPlayer="true"
+				OffsetY="-148">
+			<Point X="14" Y="1"/>
+			<Point X="6" Y="-4"/>
+			<Point X="-6" Y="1"/>
+			<Point X="3" Y="7"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachRocks01"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Beach\\Beach_Rocks_01"
+				NeverObscuresPlayer="true"
+				OffsetY="-7">
+			<Point X="1" Y="-31"/>
+			<Point X="-62" Y="-16"/>
+			<Point X="-69" Y="14"/>
+			<Point X="-26" Y="46"/>
+			<Point X="41" Y="48"/>
+			<Point X="67" Y="-7"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachRocks02"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Beach\\Beach_Rocks_02"
+				NeverObscuresPlayer="true"
+				OffsetY="-65">
+			<Point X="-1" Y="-27"/>
+			<Point X="-53" Y="-17"/>
+			<Point X="-67" Y="3"/>
+			<Point X="-15" Y="28"/>
+			<Point X="42" Y="27"/>
+			<Point X="67" Y="-8"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachRocks03"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Beach\\Beach_Rocks_03"
+				NeverObscuresPlayer="true"
+				>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachSparkle01"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Sparkle_01"
+		  Material="Emissive"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachSparkle01Fade"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="BeachSparkleFade"
+		  Material="Emissive"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachStairs01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Stairs_01"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BeachStar01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Star_01"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BeachStarfish01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Starfish_01"
+		  Material="Default"
+		>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+	  Name="BeachTerrain01"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Terrain_01"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachTerrain02"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Terrain_02"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachTerrain03"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Terrain_03"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachTerrain04"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Terrain_04"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachTerrain05"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Terrain_05"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachUmbrella01"
+	  InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+		  Graphic="Tilesets\\Beach\\Beach_Umbrella_01"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachVirus01"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="Tilesets\\Beach\\Beach_Virus_01"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachVirus02"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="Tilesets\\Beach\\Beach_Virus_02"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachVirus03"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="Tilesets\\Beach\\Beach_Virus_03"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachVirus04"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="Tilesets\\Beach\\Beach_Virus_04"
+    >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachWheat01"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="Tilesets\\Beach\\Beach_Wheat_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="FXWaterfall"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="WaterfallFX01"
+		 AmbientSound="/SFX/World Sounds/WaterRushing"
+    >
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+	  Name="FXLightShaftSubtleShift"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="LightShaftSubtleShift">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="SandDrip"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="SandDrip"
+	>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachWaves"
+		InheritFrom="1_BaseTerrainDecalObstacle">
+		<Thing
+			Graphic="WaterWaves"
+	>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BeachWaterCausticRefraction"
+		InheritFrom="1_BaseTerrainDecalObstacle">
+		<Thing
+			Graphic="CausticRefraction"
+	>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BeachSandGlitter"
+		InheritFrom="1_BaseTerrainDecalObstacle">
+		<Thing
+			Graphic="SandGlitter"
+	>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachLine01Fade"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		  Graphic="BeachLine01Fade"
+		  Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachFlag01"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			OffsetY="-218"
+			Graphic="Tilesets\\Beach\\Beach_Flag_01">
+			<Point X="-2" Y="-27"/>
+			<Point X="-49" Y="-2"/>
+			<Point X="-4" Y="31"/>
+			<Point X="39" Y="4"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachFlareAnamorphic"
+	  InheritFrom="1_BaseFlyingDecalObstacle">
+		<Thing
+		 Graphic="Tilesets\\Lensflare\\Flare_cyan_anamorphic_01"
+		 Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachFlareAnamorphicFade"
+	  InheritFrom="1_BaseFlyingDecalObstacle">
+		<Thing
+		 Graphic="BeachFlareAnamorphicFade"
+		 Material="Emissive"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BeachSeaglass01"
+	  InheritFrom="1_BaseDecalObstacle">
+		<Thing
+		 Graphic="Tilesets\\Beach\\Beach_Seaglass_01">
+		</Thing>
+	</Obstacle>
+
+</Obstacles>

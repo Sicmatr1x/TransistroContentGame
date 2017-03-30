@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+	
+	<Obstacle
+		Name="Egg"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		StopsProjectiles="true"
+		Magnetism="1.0"
+		CanPenetrateIfInvulnerable="true"
+		AutoLockable="true"
+		CollisionSound="/SFX/Enemy Sounds/InvincibleOnHit"
+		Tallness="5"
+		MaxUpwardVelocityToCollide="5"
+		>
+		<Thing
+			Graphic="EggLegs"
+			ActivateGraphic="EggLegsSpawn"
+			ActivateSound="/SFX/Enemy Sounds/EggPhaseIn"
+			OverheadOffset="60"
+			TouchdownSound="/SFX/OLD SOUNDS/GrenadeBounce"
+			NeverObscuresPlayer="true"
+			Grip="5.0"
+            Drag="0.5"
+			FallSpeedMultiplier="3.0"
+			HatchTime="15.0"
+			HatchType="UNIT"
+			HatchIndicatorMaxDistance="2000"
+			AmbientSound="/SFX/Enemy Sounds/EggAmbience"
+			PreHatchSound="/SFX/Enemy Sounds/EggPreHatchAlt"
+			Shadow="Decals\\Health_Circle_Tiny"
+			SpawnAtRandomAngle="true"
+			VisibleInPlanning="true"
+			HelpTextId="Egg"
+			AllowInteractSpawn="false"
+			OcclusionOutlineRed="0.29"
+			OcclusionOutlineGreen="1.0"
+			OcclusionOutlineBlue="0.71"
+			OcclusionOutlineRadius="0.001"
+			OcclusionOutlineThreshold="0.9"
+			OcclusionOutlineDelay="0.0"
+			OcclusionOutlineOpacity="0.8"
+			OcclusionOutlineFadeSpeed="2"
+			SelectionWidth="80"
+			SelectionHeight="120"
+			SelectionTouchBonus="25"
+            SelectionShiftY="10"
+			MaxImpactForce="18000">
+			<Point X="0" Y="32"/>
+			<Point X="36" Y="0"/>
+			<Point X="0" Y="-32"/>
+			<Point X="-36" Y="0"/>
+		</Thing>
+		<Life
+			DeathFx="EggHatchSplatter"
+			DeathSound="/SFX/Enemy Sounds/EggHatchAlt"
+			Invulnerable="true"
+			Material="INVINCIBLE"
+		></Life>
+		<Interact
+			NumUses="1"
+			DeleteOnUse="true"
+            AutoActivate="true"
+			Distance="60"
+			MaxZ="80"
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+			AudioFx="/SFX/Enemy Sounds/EggCollect2"
+			UserFx="EggPickup"
+			SpawnType="UNIT"
+			SpawnName="FriendlySpeeder"
+			RequiresHitGraphic="EggShield"
+			HasCollisionWhenRequiresHit="true"
+			UnuseableInstructions="InteractInstructions"
+		></Interact>
+
+		<Upgrade Name="Egg_HatchTime" Graphic="GUI\\Icons\\Limiters\\limiter_icon_priest_gold">
+			<Rank Cost="0">
+				<Change ValueChangeType="ADD" HatchTime="-5"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield" Graphic="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold">
+			<Rank Cost="0">
+				<Change ValueChangeType="ADD" HatchTime="2.5"/>
+				<Change ValueChangeType="ADD" MagnetismRequireHit="true"/>
+				<Change ValueChangeType="ADD" InteractRequireHit="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Charm">
+			<Rank>
+				<Change ValueChangeType="ADD" AllowInteractSpawn="true"/>
+			</Rank>
+		</Upgrade>
+		
+	</Obstacle>
+	
+	<Obstacle
+		Name="FakeEgg"
+		InheritFrom="Egg"
+		Magnetism="0.0"
+		>
+		<Thing
+			Graphic="EggLegsCorrupt"
+			ActivateGraphic="EggLegsSpawnCorrupt"
+			HatchTime="7"
+			HatchType="UNIT"
+			HatchName="blank">
+		</Thing>
+		<Life
+			DeathSound="/SFX/Enemy Sounds/EggHatch">
+		</Life>
+		<Interact
+			CounterName="SUPPLY"
+			UserFx="EggPickupCorrupt"
+			AudioFx="/SFX/Enemy Sounds/Alert_Spotted"
+			CounterAddValue="0"
+			DamageAmount="10.0"
+		></Interact>		
+	</Obstacle>
+
+	<Obstacle
+		Name="PropEgg"
+		InheritFrom="Egg"
+		Magnetism="0.0"
+		ClearUpgrades="true"
+		>
+		<Thing
+			Graphic="EggLegsProp"
+			HatchTime="9999999"
+			HatchType="UNIT"
+			HatchName="null">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+			DamageAmount="0.0"
+		></Interact>		
+		<Life
+			DeathFx="EggHatchSplatter"
+			DeathSound="/SFX/Enemy Sounds/EggHatch"
+		></Life>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="PropInteractableEgg"
+		InheritFrom="Egg"
+		Magnetism="0.0"
+		>
+		<Thing
+			HatchTime="9999999"
+			HatchType="UNIT"
+			HatchName="null">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Interact
+			Distance="150"
+			UserFaceTarget="true"
+			UseableInPlanning="false"
+			Cooldown="2.5"
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+			DamageAmount="0.0"
+			NumUses="999"
+			DeleteOnUse="false"
+            AutoActivate="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="SpecialEgg_PowerUp"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="SocketClosed"
+			NeverObscuresPlayer="true"
+			Scale="0.375"
+			Grip="999"
+			Drag="0.5"
+			OverheadOffset="220"
+			AmbientSound="null"
+			VisibleInPlanning="false"
+			OffsetY="-200">
+			<Point X="-121" Y="23"/>
+			<Point X="-37" Y="70"/>
+			<Point X="22" Y="71"/>
+			<Point X="145" Y="9"/>
+			<Point X="145" Y="-19"/>
+			<Point X="48" Y="-70"/>
+			<Point X="2" Y="-70"/>
+			<Point X="-117" Y="-16"/>
+		</Thing>
+		<Interact
+			Distance="160"
+			AutoUseDistance="70"
+			DestroyOnUse="false"
+			AudioFx="null"
+			UserFaceTarget="true"
+			UserFx="null"
+			VisualFx="null"
+			UseableInPlanning="false"
+			Cooldown="1.65"
+			HealUntilFull="200.0">	
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="EnemyUpgradeOpener"
+		InheritFrom="SpecialEgg_PowerUp"
+		>
+		<Thing
+			VisibleInPlanning="true">
+			<Color Red="1.0" Green="0.25" Blue="0.20" Opacity="0.75"/>
+		</Thing>
+		<Interact
+			UseableInPlanning="true"
+			Cooldown="1.65"
+			HealFraction="0.0">
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="SpecialEgg_LevelUp"
+		InheritFrom="SpecialEgg_PowerUp"
+		>
+		<Thing
+			Scale="3.5"
+			Shadow="null"
+			OverheadOffset="260"
+			OffsetZ="100">
+		</Thing>
+		<Interact
+			Distance="200"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="SuppressorEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="Suppressor">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>		
+	</Obstacle>
+
+	<Obstacle
+		Name="FriendlySuppressorEgg"
+		InheritFrom="SuppressorEgg"
+		Magnetism="0.0"
+		>
+		<Thing
+			HatchType="UNIT"
+			HatchTime="3"
+			HatchName="Suppressor_Friendly"			
+		>
+		</Thing>
+		<Interact
+			NumUses="0"
+			Distance="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="SuppressorRTEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="Suppressor">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="SuppressorTutorialEgg"
+		InheritFrom="Egg"
+		Magnetism="0.0"
+		>
+		<Thing
+			HatchTime="1.25"
+			HatchType="UNIT"
+			HatchName="Suppressor"
+			HelpTextId="SuppressorTutorialEgg">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+			Distance="20"
+		></Interact>
+	</Obstacle>
+	
+	<!-- Haunter -->
+
+	<Obstacle
+		Name="HaunterMoverEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="HaunterMover">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="HaunterShooterEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="HaunterShooter">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="HaunterHealerEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="HaunterHealer">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="HaunterCloakerEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="HaunterCloaker">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+	
+	<!-- Flusher -->
+	
+	<Obstacle
+		Name="FlusherEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="Flusher">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="LobberEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="Lobber">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+			>
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="DemolisherEgg"
+		InheritFrom="Egg"
+		>
+    <Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="Demolisher">
+	</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0">
+		</Interact>
+	</Obstacle>
+
+  <Obstacle
+	   Name="PriestEgg"
+	   InheritFrom="Egg"
+		>
+    <Thing
+		HatchTime="10"
+		HatchType="UNIT"
+		HatchName="Priest">
+    </Thing>
+	  <Interact
+		CounterName="SUPPLY"
+		CounterAddValue="0">
+	  </Interact>
+  </Obstacle>
+
+	<Obstacle
+		 Name="PriestEggFast"
+		 InheritFrom="PriestEgg"
+		>
+		<Thing
+			Grip="4.0"
+            Drag="0.35"
+			HatchTime="0">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FriendlyPriestEgg"
+		InheritFrom="PriestEgg"
+		Magnetism="0.0"
+		>
+		<Interact
+			NumUses="0"
+			Distance="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="PlayerPetEgg"
+		InheritFrom="PriestEgg"
+		Magnetism="0.0"
+		>
+		<Thing
+			HatchTime="0"
+			HatchType="UNIT"
+			HatchName="PlayerPet">
+		</Thing>
+		<Interact
+			NumUses="0"
+			Distance="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="MoneySingleEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			Graphic="Egg_Sparkle"
+			HatchTime="999.0"
+			HatchType="UNIT"
+			HatchName="Ura_Ranged_Female">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="MoneyMultipleEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			Graphic="Egg_Sparkle"
+			HatchTime="999.0"
+			HatchType="UNIT"
+			HatchName="Ura_Ranged_Female">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HerderSpawnerPhoenixEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="2"
+			HatchType="UNIT"
+			HatchName="HerderSpawnerPhoenix">
+		</Thing>
+        <Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0">
+        </Interact>      
+	</Obstacle>
+
+	<Obstacle
+		Name="Phoenix_MiniEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="3"
+			HatchType="UNIT"
+			HatchName="Phoenix_Mini">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0">
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="WebberEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="2.0"
+			HatchType="UNIT"
+			HatchName="Webber">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="DeflectorEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="12"
+			HatchType="UNIT"
+			HatchName="Deflector">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="ZonerEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="Zoner">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="ZonerEggFast"
+		InheritFrom="ZonerEgg"
+		Magnetism="0"
+		>
+		<Thing
+			HatchTime="0"
+			HatchType="UNIT"
+			HatchName="Zoner">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="ShielderEgg"
+		InheritFrom="Egg"
+		>
+		<Thing
+			HatchTime="10"
+			HatchType="UNIT"
+			HatchName="Shielder">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="ShielderEggFast"
+		InheritFrom="ShielderEgg"
+		>
+		<Thing
+			Grip="4.0"
+            Drag="0.35"
+			HatchTime="0">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="SpeederEgg"
+		InheritFrom="Egg"
+		Magnetism="0.65"
+		ClearUpgrades="true"
+		>
+		<Thing
+			HatchTime="2.25"
+			HatchType="UNIT"
+			HatchName="Speeder">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+
+		<Upgrade Name="Egg_HatchTime" Graphic="GUI\\Icons\\Limiters\\limiter_icon_priest_gold">
+			<Rank Cost="0">
+				<Change ValueChangeType="ADD" HatchTime="-1"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield" Graphic="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold">
+			<Rank Cost="0">
+				<Change ValueChangeType="ADD" HatchTime="0.5"/>
+				<Change ValueChangeType="ADD" MagnetismRequireHit="true"/>
+				<Change ValueChangeType="ADD" InteractRequireHit="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Charm">
+			<Rank>
+				<Change ValueChangeType="ADD" AllowInteractSpawn="true"/>
+			</Rank>
+		</Upgrade>
+
+	</Obstacle>
+
+	<Obstacle
+		Name="SpeederEggSlow"
+		InheritFrom="Egg"
+		Magnetism="0.65"
+		>
+		<Thing
+			HatchTime="8"
+			HatchType="UNIT"
+			HatchName="Speeder">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="BerserkerEgg"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BerserkerTransitionB"
+			ActivateGraphic="null"
+			NeverObscuresPlayer="true"
+			PreHatchSound="SFX/Enemy Sounds/EggPreHatch"
+			VisibleInPlanning="true"
+			SpeechCapable="true"
+			SpeechMetering="true"
+			SpeechMeteringChannelName="Berserker"
+			HatchTime="4.5"
+			HatchType="UNIT"
+			HatchName="Berserker2"
+			OffsetZ="90"
+			Shadow="Decals\\Health_Circle_Tiny">
+			<Point X="-73" Y="-2"/>
+			<Point X="1" Y="38"/>
+			<Point X="73" Y="1"/>
+			<Point X="-3" Y="-32"/>
+		</Thing>
+		<Metering>
+			<Entry Field="Scale" MeteringChannel="Berserker" MeterMax="1.0" MeterMin="0.05" AddMax="0.025" />
+			<Entry Field="MaterialAmbient" MeteringChannel="Berserker" MeterMax="1.0" MeterMin="0.05" AddMax="-0.5" PulsePeriod="3.6" PulseIntensity="0.01" PulseIsMin="false" />
+		</Metering>
+		<Life
+			DeathSound="SFX/Enemy Sounds/EggCollect"
+			DeathFx="null"
+			Invulnerable="true"
+		></Life>		
+	</Obstacle>
+
+	<Obstacle
+		Name="Berserker2Egg"
+		InheritFrom="BerserkerEgg"
+		>
+		<Thing
+			HatchName="Berserker3">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Berserker3Egg"
+		InheritFrom="BerserkerEgg">
+		<Thing
+			HatchName="Berserker4">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Berserker4Egg"
+		InheritFrom="Egg"
+		ClearUpgrades="true">
+		<Thing
+			HatchName="null">
+		</Thing>
+		<Interact
+			CounterName="SUPPLY"
+			CounterAddValue="0"
+			SpawnName="null"
+		></Interact>
+	</Obstacle>
+	
+</Obstacles>

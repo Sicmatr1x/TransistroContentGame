@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Name="Torch"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\DiffuseSpotlight"
+			Invisible="true"
+			VisibleInPlanning="true"
+			>
+			<Point X="0" Y="16"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-16"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="LightRadial01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Radial_01"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="LightDoor01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Door_01"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Light_Rectangle"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Rectangle01"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+    Name="Light_TripleRectangle01"
+    InheritFrom="1_BaseFlyingDecalObstacle"
+    StopsUnits="false"
+    StopsProjectiles="false"
+		>
+    <Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_TripleRectangle01"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+	  Name="Light_TripleRectangle02"
+	  InheritFrom="1_BaseFlyingDecalObstacle"
+	  StopsUnits="false"
+	  StopsProjectiles="false"
+		>
+		<Thing
+				Graphic="Obstacles\\LightGeneric"
+				Light="Lights\\Light_TripleRectangle02"
+				Invisible="true"
+				VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="Light_BokehStrip"
+	  InheritFrom="1_BaseFlyingDecalObstacle"
+	  StopsUnits="false"
+	  StopsProjectiles="false"
+		>
+		<Thing
+				Graphic="Obstacles\\LightGeneric"
+				Light="Lights\\Light_BokehStrip"
+				Invisible="true"
+				VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+	  Name="Light_BokehSplatter"
+	  InheritFrom="1_BaseFlyingDecalObstacle"
+	  StopsUnits="false"
+	  StopsProjectiles="false"
+		>
+		<Thing
+				Graphic="Obstacles\\LightGeneric"
+				Light="Lights\\Light_BokehSplatter"
+				Invisible="true"
+				VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+	  Name="Light_BeachSparkle"
+	  InheritFrom="1_BaseFlyingDecalObstacle"
+	  StopsUnits="false"
+	  StopsProjectiles="false"
+		>
+		<Thing
+				Graphic="Obstacles\\LightGeneric"
+				Light="Lights\\Light_BeachSparkle"
+				Invisible="true"
+				VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+	  Name="Light Dappled01"
+	  InheritFrom="1_BaseFlyingDecalObstacle"
+	  StopsUnits="false"
+	  StopsProjectiles="false"
+		>
+		<Thing
+				Graphic="Obstacles\\LightGeneric"
+				Light="Lights\\Light_Dappled_01"
+				Invisible="true"
+				VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_Square"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Square01"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_Square2"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Square02"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_Square3"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Square03"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_Square4"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Square04"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Light_SquareShapes01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_SquareShapes01"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_SquareShapes02"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_SquareShapes02"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_SquareShapes03"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_SquareShapes03"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_SquareShapes04"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_SquareShapes04"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_SquareShapes05"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_SquareShapes05"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_Spot01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Spot01"
+			Invisible="true"
+			VisibleInPlanning="false"
+			>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Shadow02"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Shadow_02"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="ShadowTree01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Shadow_Tree_01"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+	<Obstacle
+		Name="Window01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Window_01"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Window02"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Window_02"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="LightRectangle02"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Rectangle02"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="LightShaft01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Shaft01"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="LightShaft02"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Shaft02"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+	
+		
+	<Obstacle
+		Name="LightShaft03"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\LightGeneric"
+			Light="Lights\\Light_Shaft03"
+			Invisible="true"
+			>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="1_BaseGodRay"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Glade_Godray01"
+			NeverObscuresPlayer="true"
+			Light="Circle"
+			Invisible="false"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Glade_Godray01"
+		InheritFrom="1_BaseGodRay"
+		>
+		<Thing Graphic="Glade_Godray01"
+			   Light="null"></Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Glade_Godray02"
+		InheritFrom="1_BaseGodRay"
+		>
+		<Thing Graphic="Glade_Godray02"></Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Glade_Godray03"
+		InheritFrom="1_BaseGodRay"
+		>
+		<Thing Graphic="Glade_Godray03"></Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Glade_Godray04"
+		InheritFrom="1_BaseGodRay"
+		>
+		<Thing Graphic="Glade_Godray04"></Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Glade_Godray05"
+		InheritFrom="1_BaseGodRay"
+		>
+		<Thing Graphic="Glade_Godray05"></Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Light3D"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		DisplayInEditor="true">
+		<Thing
+			Graphic="Dev\\3dLight"
+			Material="Emissive" 
+			MeshType="Vertical"
+			Invisible="true">
+		</Thing>
+		<Light3D
+			LightRadius="1000.0"
+			LightZ ="100.0">
+			<LightColor Red="1.0" Green="1.0" Blue="1.0"/>
+		</Light3D>
+	</Obstacle>
+
+	<Obstacle
+		Name="Light_3D_Test"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing OffsetZ="200.0"></Thing>
+		<Light3D LightRadius="1000.0">
+			<LightColor Red="1.0" Green="0.9" Blue="0.5"/>
+		</Light3D>
+	</Obstacle>
+	
+</Obstacles>

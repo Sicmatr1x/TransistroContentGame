@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProfileScreens>
+
+	<ProfileScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="/SFX/Menu Sounds/InfoPanelLeave"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		UseSelectionSoundWithMouse="false"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="WarningBackgroundLoop" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackgroundTop X="960" Y="430" Graphic="ShellBackgroundMainIntroQuick" Justification="Center" VerticalJustification="Center"/>
+		<AnimatedBackgroundIcons X="960" Y="480" Graphic="ShellIconsProfile" Justification="Center" VerticalJustification="Center"/>
+
+
+		<TitleText X="960" Y="150" Justification="Center" VerticalJustification="Center"
+				   HelpTextId="ProfileScreen_Title" Font="JuliusSansOne48Titling"
+				   AlwaysUpperCase="true"
+				   Scale="0.75"
+				   OutlineThickness="0"
+				   FadeOpacity="0.0" FadeTarget="0.0"
+				   TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+
+		<ProfileButton X="962" Y="320" Spacing="80" Justification="Center" VerticalJustification="Center"
+					Graphic="null" SelectedGraphic="GUI\\Shell\\selection_reticle_profiles"
+					Scale="1.0" Width="500" Height="34"
+					Font="RalewayMedium26"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+					SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+					TextOffsetY="4"
+					TextScale="0.9"
+					SelectOnMouseOver="false" SelectOnClick="true"
+					AlwaysUpperCase="true"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+		/>
+
+		<ActiveMarker OffsetX="0" Graphic="GUI\\Shell\\profile_active" Justification="Center" VerticalJustification="Center" Scale="1.0" OffsetY="3" MoveSpeed="8000"/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.4"/>
+		<InfoPanel X="960" Y="540" Justification="Left" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="830"/>
+		<SubTitle X="962" Y="760" Justification="Center" VerticalJustification="Center" Width="830" TextRed="0.31" TextGreen="0.52" TextBlue="0.48"/>
+		<Timestamp X="962" Y="800" Justification="Center" VerticalJustification="Center" Width="830" TextRed="0.31" TextGreen="0.52" TextBlue="0.48"/>
+
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="ProfileScreen_SwitchProfile"
+			PressSound="/SFX/Menu Sounds/PowerSelecting" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			AlwaysUpperCase="true"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="700" Y="940"
+			FadeOpacity="0.0" FadeTarget="0.0"
+			NonEnglishScaleModifier="0.7"
+			MouseOffsetX="80"
+			/>
+
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Shell_back"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			AlwaysUpperCase="true"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="1152" Y="940"
+			FadeOpacity="0.0" FadeTarget="0.0"
+			NonEnglishScaleModifier="0.7"
+			MouseOffsetX="-10"
+			/>
+		
+
+		<XButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerSquare" HelpTextId="ProfileScreen_StartNewGame"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			AlwaysUpperCase="true"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			PressSound="/SFX/Menu Sounds/PowerSelecting"
+			X="700" Y="940"
+			FadeOpacity="0.0" FadeTarget="0.0"
+			NonEnglishScaleModifier="0.7"
+			MouseOffsetX="80"
+			/>
+		
+		<YButton Scale="0.0"/>
+
+	</ProfileScreen>
+	
+</ProfileScreens>

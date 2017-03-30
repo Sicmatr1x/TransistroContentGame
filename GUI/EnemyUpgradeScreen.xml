@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EnemyUpgradeScreens>
+
+	<EnemyUpgradeScreen
+		Platform="default"
+		OpenSound="/UI/FocusBeginMENU"
+		CloseSound="/UI/FocusExecuteMENU"
+		SelectionSound="/SFX/Menu Sounds/PowerToggleNEW"
+		TransitionOnTime="0.2"
+		TransitionOffTime="0.2">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="0"/>
+
+
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="LimitersBackground" Justification="Left" VerticalJustification="Top"/>
+
+		<CitySymbolBack X="1505" Y="447" Graphic="GUI\\Widgets\\limiter_city_empty" Justification="Center" VerticalJustification="Center"/>
+		<CitySymbolFill X="1520" Y="470" OffsetY="160" Graphic="GUI\\Widgets\\limiter_city_fill" Justification="Center" VerticalJustification="Center" MoveSpeed="40"/>
+		<CitySymbol X="1500" Y="470" Graphic="GUI\\Backgrounds\\limiter_city_bg" Justification="Center" VerticalJustification="Center" Alpha="1.0"/>
+		<CitySymbolFillGlow X="1500" Y="470" Graphic="GUI\\Widgets\\limiter_city_fill_glow" Justification="Center" VerticalJustification="Center" FadeOpacity="0" FadeSpeed="0.2"/>
+		
+		<Sockets X="0" Y="0" Graphic="GUI\\Backgrounds\\limiter_sockets" Justification="Left" VerticalJustification="Top"/>
+
+		<TitleIcon X="250" Y="100" Graphic="GUI\\Widgets\\title_rect_limiters" Justification="Left" VerticalJustification="Center"/>
+		<TitleLine AttachTo="TitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"/>
+		<TitleText AttachTo="TitleIcon" OffsetX="19" OffsetY="2" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+				   HelpTextId="EnemyUpgradeScreen_Title" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+		
+		<!-- Upgrades -->
+
+		<Limiter SelectOnMouseOver="false" SelectOnClick="true" ScaleSpeed="40.0" SelectionSound="/SFX/Menu Sounds/PowerToggleNEW"/>
+		<Icon Justification="Center" VerticalJustification="Center" ToggleOnSound="/SFX/Menu Sounds/LimiterEnable" ToggleOffSound="/SFX/Menu Sounds/LimiterDisable"/>
+		<IconFront Graphic="GUI\\Widgets\\limiter_icon_active_front" Justification="Center" VerticalJustification="Center"/>
+		<InactiveIcon OffsetX="-76" OffsetY="50" Graphic="GUI\\Widgets\\limiter_light_inactive" Justification="Center" VerticalJustification="Center"/>
+		<ActiveIcon OffsetX="-76" OffsetY="-50" Graphic="GUI\\Widgets\\limiter_light_active" Justification="Center" VerticalJustification="Center"/>
+		<ActiveLine FadeSpeed="4.0" Justification="Left" VerticalJustification="Top"/>
+
+		<SelectionHighlight OffsetX="0" OffsetY="0" Scale="0.7" Graphic="GUI\\HUD\\Power_Selected_Reticle_Enemy" Justification="Center" VerticalJustification="Center"/>
+
+		<!-- Description Panel -->
+
+		<DescriptionTitleIcon X="250" Y="750" Graphic="GUI\\Widgets\\title_rect_limiters" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleLine AttachTo="DescriptionTitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleText AttachTo="DescriptionTitleIcon" OffsetX="17" OffsetY="1" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+				   HelpTextId="EnemyUpgradeScreen_DescriptionPanelTitle" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<DescriptionPanel AttachTo="DescriptionTitleIcon" OffsetX="-58" OffsetY="-4" Graphic="GUI\\Backgrounds\\panel_description_limiter" Justification="Left" VerticalJustification="Top"/>
+
+		<SelectionName AttachTo="DescriptionTitleIcon" OffsetX="20" OffsetY="64" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"/>
+		<SelectionType AttachTo="DescriptionTitleIcon" OffsetX="20" OffsetY="93" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="0.65" TextBlue="0.0" Font="RalewayBold18" Scale="0.8" AlwaysUpperCase="true" HelpTextId="EnemyUpgradeType"/>
+		<SelectionImage AttachTo="DescriptionTitleIcon" OffsetX="400" OffsetY="64" Graphic="GUI\\Icons\\Iconographic\\icon_limiter" Justification="Right" VerticalJustification="Center"/>
+		<SelectionDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="408" OffsetY="64" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+					Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" HelpTextId="CardBuyScreen_LimiterDescriptionTitle" FlashMin="1.0" FlashMax="1.0"
+					FlashSpeed="0.0"/>
+		<SelectionDescription AttachTo="DescriptionTitleIcon" OffsetX="398" OffsetY="76" Width="420" Height="300" Justification="Left" VerticalJustification="Top"
+					TextRed="1.0" TextGreen="0.65" TextBlue="0.0" Font="RalewaySemiBold22" Scale="0.66" FlashMin="0.4" FlashMax="1.0"
+					FlashSpeed="2.0" FlashRed="0.65" FlashGreen="0.0" FlashBlue="0.0"/>
+		
+		<!-- Summary -->
+
+		<SummaryTitle AttachTo="DescriptionTitleIcon" OffsetX="940" OffsetY="64" Justification="Left" VerticalJustification="Center" HelpTextId="EnemyUpgradeScreen_SummaryTitle"
+					Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" AlwaysUpperCase="true" Font="RalewayBold24"/>
+		<SummaryCount AttachTo="DescriptionTitleIcon" OffsetX="940" OffsetY="90" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="0.65" TextBlue="0.0" Font="RalewaySemiBold22" Scale="0.66"/>
+		<SummaryBonus AttachTo="DescriptionTitleIcon" OffsetX="940" OffsetY="113" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="0.65" TextBlue="0.0" Font="RalewaySemiBold22" Scale="0.66"/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.65"/>
+		<InfoPanel X="960" Y="540" Justification="Center" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="870" Font="RalewayRegular32" NonEnglishScaleModifier="0.95"/>
+		<InfoInstructionText
+			X="960" Y="640" Justification="Center" VerticalJustification="Center"
+			Font="RalewaySemiBold22"
+			HelpTextId="InfoInstructionText"
+			 NonEnglishScaleModifier="0.95"
+			TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+
+		<!-- Controls -->
+
+		<ConfirmButton Graphic="GUI\\PS4Controller\\ps4ControllerX"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			PressSound="null" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			X="320" Y="950"
+			NonEnglishScaleModifier="0.93"
+			MouseGraphicDefault="GUI\\pc_button_base_alt"
+			MouseGraphicHover="GUI\\pc_button_over_alt"
+			MouseGraphicPressed="GUI\\pc_button_down_alt"
+			MouseOffsetX="120"/>
+
+		<CancelButton Graphic="GUI\\PS4Controller\\ps4ControllerR2" HelpTextId="EnemyUpgradeScreen_Cancel"
+			Scale="0.4" Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			MouseGraphicDefault="GUI\\pc_button_base_alt"
+			MouseGraphicHover="GUI\\pc_button_over_alt"
+			MouseGraphicPressed="GUI\\pc_button_down_alt"
+			X="1520" Y="950"/>
+
+		<XButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerSquare" HelpTextId=""
+			Justification="Center" VerticalJustification="Center"
+			TextScale="1.0" TextJustification="Right"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			PressSound="null"
+			Scale="0.0"
+			MouseGraphicDefault="GUI\\pc_button_base_alt"
+			MouseGraphicHover="GUI\\pc_button_over_alt"
+			MouseGraphicPressed="GUI\\pc_button_down_alt"
+			/>
+
+		<YButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerTriangle"
+			HelpTextId="EnemyUpgradeScreen_Inspect" MouseHelpTextId="EnemyUpgradeScreen_InspectShort"
+			AlternateHelpTextId="EnemyUpgradeScreen_InspectUpdated" MouseAlternateHelpTextId="EnemyUpgradeScreen_InspectUpdatedShort"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FlashMin="0.8" FlashMax="1.0" FlashSpeed="2.0" FlashRed="1.0" FlashGreen="0.45" FlashBlue="0.15"
+			X="1100" Y="950"
+			MouseGraphicDefault="GUI\\pc_button_base_alt"
+			MouseGraphicHover="GUI\\pc_button_over_alt"
+			MouseGraphicPressed="GUI\\pc_button_down_alt"
+			/>
+		
+		<YButtonIndicator AttachTo="YButton" AlternateGraphic="NewLimiterIndicatorLoop" TertiaryGraphic="NewLimiterIndicatorButton"/>
+
+	</EnemyUpgradeScreen>
+	
+</EnemyUpgradeScreens>

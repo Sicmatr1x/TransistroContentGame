@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Screens>
+
+	<CardBuyScreen
+		Platform="default"
+		TransitionOnTime="0.25"
+		TransitionOffTime="0.5"
+		DoubleClickTime="0.22"
+		OpenSound="null"
+		CloseSound="null">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1"/>
+
+		<Background X="0" Y="0" Graphic="GUI\\Backgrounds\\Background_Gradient_Cover" Justification="Left" VerticalJustification="Top"/>
+		<BackgroundLineArt X="0" Y="5" Graphic="GUI\\Backgrounds\\background_card_buy" Justification="Left" VerticalJustification="Top"/>
+		<BackgroundTriangle X="0" Y="0" Graphic="GUI\\Backgrounds\\card_buy_triangle" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackground X="960" Y="540" Graphic="TerminalBGShimmerA" Red="0" Green="1" Blue="0.9" Alpha="0.5"/>
+		<LevelText X="290" Y="100" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="Level" Font="RalewayBold48" Scale="0.9" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+				   NonEnglishScaleModifier="0.85"/>
+		<TitleText X="290" Y="150" Justification="Left" VerticalJustification="Center" Scale="0.85"
+				   HelpTextId="CardBuyScreen_Title" Font="RalewayRegular32" TextRed="0.69" TextGreen="1.0" TextBlue="0.92"
+				   NonEnglishScaleModifier="0.85"/>
+
+		<CardListTitleIcon X="270" Y="220" Graphic="GUI\\Widgets\\title_rect_functions" Justification="Left" VerticalJustification="Center"/>
+		<CardListTitleLine AttachTo="CardListTitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"/>
+		<CardListTitleText AttachTo="CardListTitleIcon" OffsetX="17" OffsetY="1" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="CardBuyScreen_CardListTitle" AlwaysUpperCase="true" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<!-- Items-->
+
+		<CardPane X="160" Y="250" Width="1700" Height="800" Justification="Center" VerticalJustification="Center"
+					 LeftMargin="200" TopMargin="100" Spacing="185" ScrollSpeed="1000" SelectionSound="/SFX/Menu Sounds/PowerToggleNEW"/>
+		
+		<Card SelectOnClick="true"/>
+		<Idol SelectOnClick="true"/>
+		<MetaUpgrade SelectOnClick="true"/>
+		
+		<IconBack Scale="0.85" Alpha="0.5" SelectedRed="1.0" SelectedGreen="1.0" SelectedBlue="1.0" SelectedAlpha="1.0" Graphic="GUI\\HUD\\Card_Back" Justification="Center" VerticalJustification="Center" OffsetX="3" OffsetY="3"
+				  SelectedScale="1.2" ScaleSpeed="2.0" FadeSpeed="3.0" Width="140" Height="140"/>
+		<Icon Scale="0.6" Alpha="0.8" SelectedRed="1.0" SelectedGreen="1.0" SelectedBlue="1.0" SelectedAlpha="1.0" Justification="Center" VerticalJustification="Center"
+			  SelectedScale="1.2" ScaleSpeed="2.0" FlashSpeed="0.06" FlashMin="0.0" FlashMax="0.4" FadeSpeed="3.0"/>
+		<AnimatedIcon Scale="0.7" Alpha="0.5" SelectedRed="1.0" SelectedGreen="1.0" SelectedBlue="1.0" SelectedAlpha="1.0" Justification="Center" VerticalJustification="Center"
+			  SelectedScale="1.0" ScaleSpeed="2.0" FlashSpeed="0.06" FlashMin="0.0" FlashMax="0.4" FadeSpeed="3.0"/>
+		<IconFront Scale="0.85" Alpha="0.5" SelectedRed="1.0" SelectedGreen="1.0" SelectedBlue="1.0" SelectedAlpha="1.0" Graphic="GUI\\HUD\\Card_Front" Justification="Center" VerticalJustification="Center" OffsetX="-3" OffsetY="-2"
+				   SelectedScale="1.2" ScaleSpeed="2.0" FadeSpeed="3.0"/>
+		<CostImage OffsetX="-90" OffsetY="-78" Justification="Center" VerticalJustification="Top" SelectedScale="1.2" ScaleSpeed="2.0"/>
+		<TextHighlight Scale="0.84" Graphic="GUI\\HUD\\Power_Selected_Reticle" Justification="Center" VerticalJustification="Center" FadeSpeed="3.0"/>
+		
+		<ConfirmAnim AlternateGraphic="CardBuyFx"/>
+
+		<!-- Description Panel -->
+
+		<DescriptionTitleIcon X="250" Y="600" Graphic="GUI\\Widgets\\title_rect_details" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleLine AttachTo="DescriptionTitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleText AttachTo="DescriptionTitleIcon" OffsetX="17" OffsetY="1" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+				   HelpTextId="EnemyUpgradeScreen_DescriptionPanelTitle" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<SelectionName AttachTo="DescriptionTitleIcon" OffsetX="20" OffsetY="64" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" />
+		<SelectionType AttachTo="DescriptionTitleIcon" OffsetX="20" OffsetY="100" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="1.0" TextBlue="1.0" AlwaysUpperCase="true" Font="RalewayBold18" Scale="0.8"/>
+		<SelectionDescription AttachTo="DescriptionTitleIcon" OffsetX="10" OffsetY="106" Width="320" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.69" TextGreen="1.0" TextBlue="0.92" Font="RalewaySemiBold22" Scale="0.66"/>
+		
+		<ActiveDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="374" OffsetY="68" Justification="Left" VerticalJustification="Center" NonEnglishScaleModifier="0.88"
+					HelpTextId="CardBuyScreen_ActiveDescriptionTitle" AlternateHelpTextId="CardBuyScreen_MetaDescriptionTitle" AlwaysUpperCase="true" Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" />
+		<ActiveDescription AttachTo="ActiveDescriptionTitle" OffsetX="-10" OffsetY="13" Width="335" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66"/>
+		<ActiveIcon AttachTo="ActiveDescriptionTitle" OffsetX="-20"
+					Graphic="GUI\\Icons\\Iconographic\\icon_slot_active" AlternateGraphic="GUI\\Icons\\Iconographic\\icon_upgrade" TertiaryGraphic="GUI\\Icons\\Iconographic\\icon_limiter" FadeOpacity="1.0" FadeTarget="1.0"/>
+
+		<UpgradeDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="762" OffsetY="68" Justification="Left" VerticalJustification="Center" NonEnglishScaleModifier="0.88"
+					HelpTextId="CardBuyScreen_UpgradeDescriptionTitle" AlwaysUpperCase="true" Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" />
+		<UpgradeDescription AttachTo="UpgradeDescriptionTitle" OffsetX="-10" OffsetY="13" Width="335" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66"/>
+		<UpgradeIcon AttachTo="UpgradeDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_upgrade" FadeOpacity="1.0" FadeTarget="1.0"/>
+
+		<PassiveDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="1154" OffsetY="68" Justification="Left" VerticalJustification="Center" NonEnglishScaleModifier="0.88"
+					HelpTextId="CardBuyScreen_PassiveDescriptionTitle" AlwaysUpperCase="true" Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" FadeOpacity="0.0" FadeTarget="0.0"/>
+		<PassiveDescription AttachTo="PassiveDescriptionTitle" OffsetX="-10" OffsetY="13" Width="320" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66" FadeOpacity="0.0" FadeTarget="0.0"/>
+		<PassiveIcon AttachTo="PassiveDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_passive" FadeOpacity="0.0" FadeTarget="0.0"/>
+
+		<DescriptionPanel AttachTo="DescriptionTitleIcon" OffsetX="-58" OffsetY="-4" Graphic="GUI\\Backgrounds\\panel_description_handscreen" Justification="Left" VerticalJustification="Top"/>
+
+		<ElbowLineEnd AttachTo="DescriptionTitleIcon" OffsetX="-10" OffsetY="80" Graphic="GUI\\Widgets\\elbowline_03_end" Justification="Center" VerticalJustification="Center"/>
+		<ElbowLineVertical AttachTo="ElbowLineEnd" OffsetX="-9" Graphic="GUI\\Widgets\\elbowline_03_segment_vertical" ScaleY="1.93" Justification="Center" VerticalJustification="Bottom"/>
+		<ElbowLineHorizontal OffsetY="140" Graphic="GUI\\Widgets\\elbowline_03_segment_horizontal" Justification="Right" VerticalJustification="Bottom"/>
+		<ElbowLineStart OffsetY="140" Graphic="GUI\\Widgets\\elbowline_03_start" Justification="Center" VerticalJustification="Bottom"/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.65"/>
+		<InfoPanel X="960" Y="540" Justification="Center" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Center" VerticalJustification="Center"
+				  TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="700"/>
+		<InfoInstructionText
+			X="960" Y="640" Justification="Center" VerticalJustification="Center"
+			Font="RalewaySemiBold22"
+			HelpTextId="InfoInstructionText"
+			TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+
+		<!-- Controls -->
+
+		<ConfirmButton Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="CardBuyScreen_Accept"
+					   Scale="0.25" Justification="Center" VerticalJustification="Center"
+					   TextScale="0.62" TextJustification="Left" ActionSound="/SFX/Menu Sounds/LvUpPowerSelect"
+					   Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+					   X="310" Y="800"
+					   MouseOffsetX="120"
+					   />
+
+		<CancelButton Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId=""
+					  Scale="0.0" Justification="Center" VerticalJustification="Center"
+					  TextScale="0.62" TextJustification="Left" ActionSound="/SFX/Menu Sounds/MenuDenied"
+					  Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+
+	</CardBuyScreen>
+	
+</Screens>

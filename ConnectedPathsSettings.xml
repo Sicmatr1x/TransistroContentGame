@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConnectedData>
+    <!--
+        COST: MEMORIES
+        ==============
+        MinSegmentDist: 
+            The minimum distance each recorded point is from the last.
+            The smaller the value, the more accurate/smoother the path
+            at the cost of memory.
+            
+        MaxPathSegments:
+            This controls the length of recorded paths.  The larger the
+            the longer the path at the expense of memories.
+                   
+        COST: PERFORMANCE
+        =================
+        PathFx:
+            This controls which animation to use when playing back recorded
+            paths.  
+            
+            NOTE: The Duration of this animation will have performance
+            implications.  Longer durations = worse performance.
+
+        COST: FREE-ish?!
+        ================
+        PathSpeed:
+            This controls how fast it plays back recorded paths.  The larger
+            the faster.  There is NO performance or memory trade-off.
+
+        PathFadeTime:
+            This controls how long each path point lasts (AFTER the animation has stopped)
+            in seconds before it fades.
+            
+            TotalTime = PathFx.Duration + PathFadeTime
+            
+            While PathFx.Duration carries a performance penalty, PathFadeTime is "mostly" free.
+			
+		SpawnRadius:
+			This controls how close the start point of a path should be in order to draw.
+		
+		MaxDistance:
+			This controls how far away the end of path can be in order to keep drawing.  Paths
+			that move out of this range will fade away over PathFadeTime.
+    -->
+	<ConnectedPathsData
+		Name="Default"
+		MinSegmentDist="15"
+		MinPathSegments = "224"
+		MaxPathSegments="256"
+		PathFx="LivePathMarker"
+		PathSpeed="15"
+        PathFadeTime="0.1"
+		SpawnRadius="80"
+		MaxDistance="2048"
+		TimeBetweenMovingFx="0.032"
+		>
+	</ConnectedPathsData>
+
+    <ConnectedPathsData
+        Name="Test"
+        MinSegmentDist="15"
+		MinPathSegments = "224"
+        MaxPathSegments="256"
+        PathFx="LivePathMarker"
+        PathSpeed="10"
+        PathFadeTime="0.1"
+        SpawnRadius="200"
+        MaxDistance="1024"
+		TimeBetweenMovingFx="0.032"
+        >
+    </ConnectedPathsData>
+
+	<EnabledOnMap Name="Goldwalk01"/>
+	<EnabledOnMap Name="Goldwalk03"/>
+	<EnabledOnMap Name="Stage01"/>
+	<EnabledOnMap Name="Doors01"/>
+	<EnabledOnMap Name="Canals01"/>
+	<EnabledOnMap Name="Elevators01"/>
+	<EnabledOnMap Name="Monster01"/>
+	<EnabledOnMap Name="Rooftops01"/>
+	<EnabledOnMap Name="Rooftops02"/>
+	<EnabledOnMap Name="Rooftops03"/>
+	<EnabledOnMap Name="ReturnToStage01"/>
+	<EnabledOnMap Name="ReturnToGoldwalk01"/>
+	<EnabledOnMap Name="ReturnToWelcome01"/>
+	<EnabledOnMap Name="Fairview01"/>
+	<EnabledOnMap Name="Welcome01"/>
+	<EnabledOnMap Name="TestLighting"/>
+
+</ConnectedData>

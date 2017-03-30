@@ -1,0 +1,4254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+
+	<!-- Auden Animations -->
+
+	<Animation
+		Name="DropSpin" Type="CONSTANT" FilePath="Cinematic\\Drops01_old"
+		RotationSpeed="-540" Rotate="true" Mirror="true"
+		RandomScaleMin="0.4" RandomScaleMax="0.8"
+		RandomFlipVertical="true">
+	</Animation>
+	
+	<Animation
+		Name="VirusWall01" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_wallStrip_01"
+		OriginX="60" OriginY="896"
+		RiseWhenNearTargetDistance="275"
+		RandomDurationMin="3.0" RandomDurationMax="4.1" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.7" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="VirusWall01Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_wallStrip_01"
+		OriginX="60" OriginY="896"
+		ShakeSpeed="150" ShakeDistance="0.1" Mirror="true"
+		OffsetY="-71"
+		StartScale="1.0" EndScale="1.3"
+		StartOpacity="1.0" EndOpacity="0.0"
+		FlashSpeed="4.0" FlashMin="0.0" FlashMax="0.9"
+		Red="1.0" Green="0.84" Blue="0.0"
+		Duration="0.6"
+		Material="Emissive"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusWall01a" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_wallStrip_01"
+		OriginX="60" OriginY="896"
+		StartOpacity="1.0" EndOpacity="0.5" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusWall03_Shimmer" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_wall_03"
+		RandomDurationMin="10" RandomDurationMax="20" Loop="true"
+		StartOpacity="0" EndOpacity="1"  PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusPlant01" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_plant_01A"
+		OriginX="22" OriginY="182" Rotate="true"
+		RandomDurationMin="4.0" RandomDurationMax="8.0" Loop="true"
+		StartAngle="-4" EndAngle="4" PingPongAngle="true"
+		RandomStartFraction="true"
+		StartFraction="0.25"
+		OnlyWhenVisible="true"
+		ChildAnimation="VirusPlant01_Bulb2"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPlant01_Bulb2" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_plant_01D"
+		OriginX="225" OriginY="324" Rotate="true"
+		DefaultScale="1"
+		StartAngle="-4" EndAngle="4" PingPongAngle="true"
+		VisualFx="null" VisualFxIntervalMin="3.0" VisualFxIntervalMax="6.0" KeepVisualFxAttached="true"
+		OnlyWhenVisible="true"
+		UseParentFraction="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPlant01_Activate" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_plant_01A"
+		OriginX="22" OriginY="182" Rotate="true"
+		StartScaleY="0.0" EndScaleY="1.0"
+		RandomDurationMin="1.0" RandomDurationMax="1.5"
+		ChildAnimation="VirusPlant01_Bulb_Activate2"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPlant01_Bulb_Activate2" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_plant_01D"
+		OriginX="225" OriginY="220" Rotate="true"
+		DefaultScale="1" StartScale="0.8" EndScale="1.0"
+		StartOpacity="0.8" EndOpacity="1.0"
+		StartOffsetY="10" EndOffsetY="-104"
+		UseParentFraction="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="VirusPlant01_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_plant_01A"
+		OriginX="30" OriginY="182" Rotate="true"
+		StartScaleY="1.0" EndScaleY="0.0"
+		StartOpacity="1.0" EndOpacity="0.0" HoldStartColorFraction="0.8"
+		RandomDurationMin="0.5" RandomDurationMax="0.55"
+		OwnerHasNoCollision="true"
+		OnlyWhenVisible="true"
+		ChildAnimation="VirusPlant01_BulbDeath02" WaitForChildDeath="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPlant01_BulbDeath02" Type="BOOK" FilePath="Fx\\CubeShatterFront\\CubeShatterFront"
+		DurationFrames="60"
+		NumFrames="36"
+		DefaultScale="0.3"
+		RandomAngle="true"
+		OriginX="230" OriginY="182"
+		OffsetY="-104"
+		StartOpacity="1" EndOpacity="0" HoldStartColorFraction="0.7"
+		UseAttachedScale="true"
+		UpwardVelocityMin="500"
+		UpwardVelocityMax="600"
+		Gravity="1200"
+		DieOnTouchdown="true"
+		UseAttachedLocation="false" UseAttachedZLocation="false" OffsetFromParentZ="false"
+		ChildAnimation="null"
+		VisualFx="VirusPlant01_BulbDeath03" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.011" KeepVisualFxAttached="false" VisualFxCap="1.0"
+		ChainTo="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusPlant01_BulbDeath03" Type="BOOK" FilePath="Fx\\LobberEggPopSmall\\LobberEggPopSmall"
+		OffsetY="0"
+		Gravity="0"
+		NumFrames="59" DurationFrames="60"
+		Loop="false"
+		StartOpacity="0.5" EndOpacity="1"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="1.8"
+		RandomScaleMax="2.0"
+		DrawAsDecal="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPlant01_Particles" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		OffsetY="-23"
+		DefaultScale="2.0"
+		RandomDurationMin="2.0" RandomDurationMax="2.5"
+		StartOffsetZ="-20" EndOffsetZ="200"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true" StartColorFraction="0.1" EndColorFraction="0.3"
+		RandomOffsetX="0"
+		OnlyWhenVisible="true"
+		>
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+
+	<Animation
+		Name="VirusPath02" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_skewed_square01"
+		OriginX="0" OriginY="0"
+		RiseWhenNearTargetDistance="500"
+		RandomDurationMin="3.0" RandomDurationMax="4.1" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.5" PingPongColor="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPath01" Type="CONSTANT_NOUPDATE" FilePath="ForegroundFlyers\\particle_skewed_square01"
+		>
+	</Animation>
+
+	<Animation
+		Name="HeartPulse1" Type="CONSTANT" FilePath="Cinematic\\Temp_Heart_01"
+		Duration="0.5"
+		StartScale="0.86" EndScale="0.95" PingPongScale="true"
+		OffsetZ="70" ZWobbleDistance="8" ZWobbleSpeed="8"
+		Sound="/SFX/Enemy Sounds/Monster/MonsterHeartBeat"
+		ChainTo="HeartPulse2">
+	</Animation>
+
+	<Animation
+		Name="HeartPulse2" Type="CONSTANT" FilePath="Cinematic\\Temp_Heart_01"
+		Duration="0.25"
+		StartScale="0.86" EndScale="1.0"
+		OffsetZ="70" ZWobbleDistance="8" ZWobbleSpeed="8"
+		Sound="null"
+		ChainTo="HeartPulse3">
+	</Animation>
+
+	<Animation
+		Name="HeartPulse3" Type="CONSTANT" FilePath="Cinematic\\Temp_Heart_01"
+		Duration="2.8"
+		StartScale="1.0" EndScale="0.8"
+		OffsetZ="70" ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChainTo="HeartPulse1">
+	</Animation>
+	
+	<Animation
+		Name="HeartStop" Type="CONSTANT" FilePath="Cinematic\\Temp_Heart_01"
+		NumFrames="32" NumAngles="1"
+		OffsetY="-8" Duration="1.5"
+		DefaultScale="1.0"
+		StartScale="1.0" EndScale ="0.0"
+		FlashSpeed="10.0" FlashMin="0.0" FlashMax="0.9"
+		Red="1.0" Green="0.0" Blue="0.0"
+		StartOpacity="1.0" EndOpacity="0.0" PingPongColor="false"
+		Rotate="true" RotationSpeed="70"
+		ShakeSpeed="280" ShakeDistance="10"
+		Sound="/SFX/Enemy Sounds/Monster/MonsterHeartDeath">
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="VirusDecalStrand02" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_DecalStrand_02"
+		ZWobbleDistance="2" ZWobbleSpeed="2"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusDecalEye02" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_DecalEye_02"
+		RandomDurationMin="0.1" RandomDurationMax="5"
+		StartScaleX="1" EndScaleX="0.8"
+		StartScale="1" EndScale="0.9"
+		PingPongScale="true"
+		ZWobbleDistance="2" ZWobbleSpeed="2"
+		ReRandomizeOnLoop="true"
+		Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="DropGlow1" Type="CONSTANT" FilePath="Cinematic\\Drops01_old"
+		RandomDurationMin="0.8" RandomDurationMax="1.0"
+		RotationSpeed="-90" Rotate="true"
+		StartScale="0.4" EndScale="0.8" PingPongScale="true"
+		OffsetZ="70" ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="DropGlow2" Type="CONSTANT" FilePath="Cinematic\\Drops01_old"
+		RandomDurationMin="0.8" RandomDurationMax="1.0"
+		RotationSpeed="90" Rotate="true"
+		StartScale="0.4" EndScale="0.8" PingPongScale="true"
+		OffsetZ="70" ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="DropGlow3" Type="CONSTANT" FilePath="Cinematic\\Drops01_old"
+		RandomDurationMin="1.5" RandomDurationMax="1.51"
+		RotationSpeed="-90" Rotate="true"
+		StartScale="1.0" EndScale="0.9" PingPongScale="true"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="PlanningMuseParticleSpawner">
+	</Animation>
+	
+	<Animation
+		Name="BoxerIdle" Type="CONSTANT" FilePath="Characters\\boxer_dead_stabbed_02B"
+		OffsetY="-71"
+		>
+	</Animation>
+	
+	<Animation
+		Name="BoxerOnHit" Type="CONSTANT" FilePath="Characters\\boxer_dead_stabbed_02B"
+		ShakeSpeed="150" ShakeDistance="0.1" Mirror="true"
+		OffsetY="-71"
+		Duration="0.3"
+		>
+	</Animation>
+
+	<Animation
+		Name="BoxerDeath" Type="CONSTANT" FilePath="Characters\\boxer_dead_stabbed_02B"
+		ShakeSpeed="150" ShakeDistance="0.1" Mirror="true"
+		OffsetY="-71"
+		StartScale="1.0" EndScale="1.3"
+		StartOpacity="1.0" EndOpacity="0.0"
+		FlashSpeed="4.0" FlashMin="0.0" FlashMax="0.9"
+		Red="1.0" Green="0.84" Blue="0.0"
+		Duration="0.6"
+		>
+	</Animation>
+
+	<Animation
+		Name="TraceIdle" Type="CONSTANT" FilePath="Characters\\ghost_01"
+		ZWobbleDistance="10" ZWobbleSpeed="10"
+		OffsetY="-100"
+		Material="Emissive"
+		VisualFx="ChargeColumnGoldLines" VisualFxIntervalMin="0.4" VisualFxIntervalMax="0.4"
+		>
+	</Animation>
+
+	<Animaton
+		Name="InvisibleArtBox" Type="CONSTANT" FilePath="Dev\\WhiteBox"
+		Red="1" Blue="0" Green="0"
+		Material="Emissive"
+		>
+	</Animaton>
+			
+	<!-- VirusColumn01 -->
+
+	<Animation
+		Name="VirusColumn01" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01B"
+		OffsetY="-73"
+		OwnerDamageRed="184" OwnerDamageGreen="0" OwnerDamageBlue="0"
+		ChildAnimation="VirusColumn01_Outline"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn01_Outline" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01A"
+		OffsetY="-73"
+		VisualFx="VirusColumn01_Outline_Ghost" VisualFxIntervalMin="2.0" VisualFxIntervalMax="3.6" KeepVisualFxAttached="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn01_Outline_Ghost" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01A"
+		OffsetY="-73"
+		Duration="0.01"
+		Velocity="700"
+		RandomAngle="true"
+		ChainTo="VirusColumn01_Outline_Ghost_Fade"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn01_Outline_Ghost_Fade" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01A"
+		OffsetY="-73"
+		Duration="0.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="1.25"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn01_Damaged" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01B_dmg"
+		OffsetY="-73"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn01_Activate" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01B"
+		OffsetY="-73"
+		Opacity="0.0"
+		Duration="1.0"
+		ChildAnimation="VirusColumn01_Outline_Activate"
+		ChainTo="VirusColumn01_Activate_Fill" TransferChildren="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusColumn01_Activate_Fill" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01B"
+		OffsetY="-73"
+		StartOpacity="0.0" EndOpacity="1.0" Flicker="true"
+		Duration="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn01_Outline_Activate" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01A"
+		OffsetY="-73"
+		StartOpacity="0.0" EndOpacity="1.0" HoldEndColorFraction="0.6"
+		Duration="3.1"
+		>
+	</Animation>
+
+	<!-- VirusColumn02 -->
+
+	<Animation
+		Name="VirusColumn02" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02B"
+		OffsetY="-47"
+		OwnerDamageRed="184" OwnerDamageGreen="0" OwnerDamageBlue="0"
+		ChildAnimation="VirusColumn02_Outline"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn02_Outline" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02A"
+		OffsetY="-47"
+		VisualFx="VirusColumn02_Outline_Ghost" VisualFxIntervalMin="2.0" VisualFxIntervalMax="3.6" KeepVisualFxAttached="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn02_Outline_Ghost" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02A"
+		OffsetY="-47"
+		Duration="0.01"
+		Velocity="700"
+		RandomAngle="true"
+		ChainTo="VirusColumn02_Outline_Ghost_Fade"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn02_Outline_Ghost_Fade" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02A"
+		OffsetY="-47"
+		Duration="0.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="1.25"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn02_Damaged" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02B_dmg"
+		OffsetY="-47"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn02_Activate" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02B"
+		OffsetY="-47"
+		Opacity="0.0"
+		Duration="1.0"
+		ChildAnimation="VirusColumn02_Outline_Activate"
+		ChainTo="VirusColumn02_Activate_Fill" TransferChildren="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn02_Activate_Fill" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02B"
+		OffsetY="-47"
+		StartOpacity="0.0" EndOpacity="1.0" Flicker="true"
+		Duration="0.5"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn02_Outline_Activate" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02A"
+		OffsetY="-47"
+		StartOpacity="0.0" EndOpacity="1.0" HoldEndColorFraction="0.6"
+		Duration="3.1"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- VirusColumnNoRespawn01 -->
+
+	<Animation
+		Name="VirusColumnNoRespawn01" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01B"
+		OffsetY="-73"
+		OwnerDamageRed="184" OwnerDamageGreen="0" OwnerDamageBlue="0"
+		ChildAnimation="VirusColumnNoRespawn01_Outline"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumnNoRespawn01_Outline" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01A"
+		OffsetY="-73"
+		VisualFx="VirusColumnNoRespawn01_Outline_Ghost" VisualFxIntervalMin="2.2" VisualFxIntervalMax="4.4" KeepVisualFxAttached="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumnNoRespawn01_Outline_Ghost" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01A"
+		OffsetY="-73"
+		Duration="0.08"
+		Velocity="450"
+		RandomAngle="true"
+		ChainTo="VirusColumnNoRespawn01_Outline_Ghost_Fade"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumnNoRespawn01_Outline_Ghost_Fade" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_01A"
+		OffsetY="-73" ShakeSpeed="160" ShakeDistance="1.0"
+		Duration="0.93"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="1.05"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- VirusColumnNoRespawn02 -->
+
+	<Animation
+		Name="VirusColumnNoRespawn02" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02B"
+		OffsetY="-47"
+		OwnerDamageRed="184" OwnerDamageGreen="0" OwnerDamageBlue="0"
+		ChildAnimation="VirusColumnNoRespawn02_Outline"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumnNoRespawn02_Outline" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02A"
+		OffsetY="-47"
+		VisualFx="VirusColumnNoRespawn02_Outline_Ghost" VisualFxIntervalMin="2.2" VisualFxIntervalMax="4.4" KeepVisualFxAttached="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumnNoRespawn02_Outline_Ghost" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02A"
+		OffsetY="-47"
+		Duration="0.05"
+		Velocity="450"
+		RandomAngle="true"
+		ChainTo="VirusColumnNoRespawn02_Outline_Ghost_Fade"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumnNoRespawn02_Outline_Ghost_Fade" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_cover_02A"
+		OffsetY="-47" ShakeSpeed="160" ShakeDistance="1.0"
+		Duration="0.93"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="1.05"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- VirusColumn03 -->
+
+	<Animation
+		Name="VirusColumn03" Type="BOOK" FilePath="Animations\\Cube01\\Loop\\CubeLoop"
+		NumFrames="60" NumAngles="1" RandomDurationMin="1.5" RandomDurationMax="2.5"
+		OwnerDamageRed="1.0" OwnerDamageGreen="0.48" OwnerDamageBlue="0.48"
+		OffsetY="-77" Rotate="true"
+		UseAttachedScale="true" Mirror="true"
+		OnlyWhenVisible="true"
+		ChildAnimation="VirusColumn03_AmbientGlitch"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn03_Activate" Type="BOOK" FilePath="Animations\\Cube01\\Cube"
+		NumFrames="42" ChildAnimation="null" OffsetY="-77" Rotate="true"
+		UseAttachedScale="true" Mirror="true"
+		OwnerDamageRed="1.0" OwnerDamageGreen="0.48" OwnerDamageBlue="0.48"
+		RandomDurationMin="1.2" RandomDurationMax="1.7"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn03_Death" Type="BOOK" FilePath="Animations\\Cube01\\Cube"
+		NumFrames="42" ChildAnimation="null" OffsetY="-77" PlayBackwards="true" Rotate="true"
+		OwnerDamageRed="1.0" OwnerDamageGreen="0.48" OwnerDamageBlue="0.48"
+		UseAttachedScale="true" Mirror="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGate" Type="BOOK" FilePath="Fx\\CradleGate\\CradleGate"
+		NumFrames="30" DurationFrames="60"
+		Loop="true"
+		Material="Emissive"
+		OriginX="76"
+		OriginY="295"
+		ReRandomizeOnLoop="false"
+		TransferFrame="true"
+		ChildAnimation="CradleGateGlow"
+		VisualFx="CradleGateParticles" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.2"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateGlow" Type="CONSTANT" FilePath="Tilesets\Highrise\\Highrise_Glow_01"
+		DefaultAngle="45"
+		Material="Emissive"
+		Opacity="0.15"
+		OffsetY="-50"
+		StartGreen="0"
+		EndGreen="0.2"
+		Blue="0"
+		StartOpacity="0.7"
+		EndOpacity="1"
+		PingPongColor="true"
+		RandomDurationMin="2"
+		RandomDurationMax="3"
+		Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateGlowFadeOut" InheritFrom="CradleGateGlow"
+		StartOpacity="1"
+		EndOpacity="0"
+		StartGreen="0.2"
+		EndGreen="0"
+		Loop="false"
+		PingPongColor="false"
+		HoldLastFrame="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateGlowFadeIn" InheritFrom="CradleGateGlow"
+		StartOpacity="0"
+		EndOpacity="1"
+		StartGreen="0.2"
+		EndGreen="0"
+		Loop="false"
+		HoldLastFrame="true"
+		PingPongColor="false"
+		RandomDurationMin="0.4"
+		RandomDurationMax="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateParticles"
+		Type="RANDOM"
+		>
+		<Random Name="CradleGateParticleA"></Random>
+		<Random Name="CradleGateParticleB"></Random>
+		<Random Name="CradleGateParticleC"></Random>
+		<Random Name="CradleGateParticleD"></Random>
+		<Random Name="CradleGateParticleC"></Random>
+		<Random Name="CradleGateParticleD"></Random>
+		<Random Name="CradleGateParticleC"></Random>
+		<Random Name="CradleGateParticleD"></Random>
+
+	</Animation>
+
+	
+	<Animation
+		Name="CradleGateParticleA" Type="CONSTANT" FilePath="Particles\\particle_hex_bokeh"
+		StartOpacity="0"
+		EndOpacity="1"
+		OpacityMin="0"
+		OpacityMax="1"
+		RandomDurationMin="1"
+		RandomDurationMax="2"
+		RandomScaleMin="0.2"
+		RandomScaleMax="0.6"
+		Blue="0.1"
+		StartGreen="0.1"
+		EndGreen="0"
+		PingPongColor="true"
+		Material="Emissive"
+		RandomOffsetY="300"
+		OffsetY="-300"
+		RandomOffsetX="50"
+		VelocityMin="50"
+		VelocityMax="110"
+		RandomAngle="true"
+		RandomAngleMin="89.9"
+		RandomAngleMax="90.1"
+		Acceleration="5"
+		Loop="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateParticleB" InheritFrom="CradleGateParticleA"
+		StartGreen="1"
+		EndGreen="0.5"
+		Red="0.5"
+		RandomAngleMin="89.9"
+		RandomAngleMax="90.1"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateParticleC" InheritFrom="CradleGateParticleA"
+		FilePath="Particles\\particle_line_01"
+		RandomAngleMin="89.9"
+		RandomAngleMax="90.1"
+		DefaultAngle="90"
+		OpacityMax="0.5"
+		DefaultScale="1.3"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateParticleD" InheritFrom="CradleGateParticleB"
+		FilePath="Particles\\particle_line_01"
+		RandomAngleMin="89.9"
+		RandomAngleMax="90.1"
+		DefaultAngle="90"
+		StartGreen="0.7"
+		EndGreen="0.5"
+		Red="0.89"
+		OpacityMax="0.5"
+		DefaultScale="1.3"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateOpen" InheritFrom="CradleGate"
+		Duration="3.0"
+		PlaySpeed="30"
+		LoopFramesOnly="true"
+		StartGreen="1" EndGreen="0"
+		StartOpacity="1" EndOpacity="0"
+		TransferFrame="true"
+		VisualFx="null"
+		ChildAnimation="CradleGateGlowFadeOut"
+		ChainTo="CradleGateOpened"
+		>
+	</Animation>
+
+	<Animation
+		Name="CradleGateOpened" InheritFrom="CradleGate"
+		Opacity="0.0"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="CradleGateClose"
+		Type="BOOK" FilePath="Fx\\CradleGate\\CradleGate"
+		NumFrames="30"
+		Duration="0.5"
+		PlaySpeed="30"
+		StartOpacity="0" EndOpacity="1"
+		StartGreen="0" EndGreen="1"
+		ChainTo="CradleGate"
+		TransferFrame="true"
+		Loop="false"
+		Material="Emissive"
+		OriginX="76"
+		OriginY="295"
+		ReRandomizeOnLoop="false"
+		ChildAnimation="CradleGateGlowFadeIn"
+ 		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn03_AmbientGlitch" Type="CONSTANT" FilePath="blank"
+		DefaultScale="0"
+		Opacity="0" 
+		RandomDurationMin="8" RandomDurationMax="16" 
+		ChainTo="VirusColumn03_GlitchA"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusColumn03_GlitchA" Type="BOOK" FilePath="Animations\\Cube01\\GlitchA\\CubeGlitchA"
+		NumFrames="20" NumAngles="1" Loop="false"
+		OffsetY="-105"
+		OffsetX="-5"
+		DurationFrames="20"
+		DefaultScale="1.0"
+		Rotate="true"
+		Sound="null"
+		ChainTo="VirusColumn03_AmbientGlitch"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusColumn03_GlitchB" Type="SLIDE" FilePath="Animations\\Cube01\\GlitchB\\CubeGlitchB"
+		NumFrames="14" NumAngles="1" Loop="false"
+		OffsetY="-77"
+		OffsetX="2"
+		DurationFrames="28"
+		DefaultScale="1.0"
+		AttachToOwner="true"
+		Rotate="true"
+		>
+		<Material Ambient="0.6" Diffuse="0.5" Directionality="0.5"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+	</Animation>
+	
+	<!-- VirusDitch01 -->
+
+	<Animation
+		Name="VirusDitch01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_ditch_01"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+
+	<!-- Virus Clusters -->
+	<Animation
+		Name="VirusCluster01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\\virus_cluster_01"
+		OffsetY="-57"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCluster02" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_cluster_02"
+		OffsetY="-74"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCluster02A" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_cluster_02A"
+		OffsetY="-74"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCluster05" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_cluster_05"
+		OffsetY="-217"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<!-- Virus Blocks -->
+	<Animation
+		Name="VirusBlock01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_block_01"
+		OffsetY="-48"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBlock02" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_block_02"
+		Rotate="true" OnlyWhenVisible="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusCube01a" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_cube_01"
+		OffsetY="-387"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCube01b" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_cube_02"
+		OffsetY="-158"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+	
+	<!-- Virus Arches, Pillars, Windows -->
+
+	<Animation
+		Name="VirusArch01a" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_arch_01A"
+		OffsetY="-363"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusArch01b" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_arch_01B"
+		OffsetY="-352"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusButtress01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_buttress_01"
+		OffsetY="-70"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPillar01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_pillar_01"
+		OffsetY="-138"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusPole01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_pole_01"
+		OffsetY="-351"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusWindow02" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_window_02"
+		OffsetY="-321"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusDoor01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\\virus_door_01"
+		OffsetY="-501"
+		OnlyWhenVisible="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusDoor02" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_door_02"
+		OffsetY="-409"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusDoor02A" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_door_02A"
+		OffsetY="-453"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusDoor02B" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_door_02B"
+		OffsetY="-330"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+	
+	<!-- Virus Eyes-->
+	<Animation
+		Name="VirusEye01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_eye_01"
+		Rotate="true"
+		Loop="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!--Virus Wall-->
+	<Animation
+		Name="VirusWall05" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_wall_05"
+		StartOpacity="0.8" EndOpacity="1" RandomDurationMin="10" RandomDurationMax="15" ReRandomizeOnLoop="true" PingPongColor="true"
+		Loop="true" Rotate="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusWall05a" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_wall_05"
+		Rotate="true" OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- Virus Objects -->
+
+	<Animation
+		Name="VirusCluster03" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_cluster_03"
+		OffsetY="-235" Rotate="true" OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCube03" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_cube_03"
+		OffsetY="-403" Rotate="true" OnlyWhenVisible="true"
+		>
+	</Animation>
+	
+
+	<!-- BaysignWalls-->
+  <Animation
+		Name="BaysignWall03_Shimmer" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_wall_03"
+		RandomDurationMin="2.0" RandomDurationMax="2.4" Loop="true" ReRandomizeOnLoop="true"
+		StartBlue="1.0" EndBlue="0.2" StartGreen="1.0" EndGreen="0.2"
+		StartOpacity="1" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		>
+  </Animation>
+
+  <Animation
+    Name="BaysignWall03_Death" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_wall_03"
+    Duration="1.6"
+    StartScale="1.0" EndScale="1.3" UseAttachedScale="true"
+    ShakeSpeed="100" ShakeDistance="3"
+    StartOpacity="1.0" EndOpacity="0.0"
+    FlashSpeed="15.0" FlashMin="0.5" FlashMax="1.0"
+	Red="1.0" Green="1.0" Blue="1.0"
+	OnlyWhenVisible="true"
+		>
+  </Animation>
+
+  <Animation
+		Name="BaysignWall06_Shimmer" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_wall_06"
+		RandomDurationMin="2.4" RandomDurationMax="5" Loop="true"
+		StartOpacity="1" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+	
+
+	<!-- BaysignCube01 -->
+
+	<Animation
+		Name="BaysignCube01" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_01_shadow"
+		OffsetY="-212"
+		Rotate="true"
+		ChildAnimation="BaysignCube01_Block"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube01_Block" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_01"
+		OffsetY="-212"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- BaysignCube02 -->
+
+	<Animation
+		Name="BaysignCube02" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_02_shadow"
+		OffsetY="-150"
+		Rotate="true"
+		ChildAnimation="BaysignCube02_Block"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube02_Block" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_02"
+		OffsetY="-150"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- BaysignCube03 -->
+
+	<Animation
+		Name="BaysignCube03" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_03_shadow"
+		OffsetY="-150" Mirror="true"
+		ChildAnimation="BaysignCube03_Block"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube03_Block" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_03"
+		OffsetY="-150" Mirror="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- BaysignCube04 -->
+
+	<Animation
+		Name="BaysignCube04" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_04"
+		OffsetY="-90"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube05" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_05"
+		OffsetY="-248"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCubeNormals" Type="CONSTANT_NOUPDATE" FilePath="Lighting\\normal_test"
+		OffsetY="-248"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube06" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_06"
+		OffsetY="-291"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube07" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_07"
+		OffsetY="-119"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube08" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_08"
+		OffsetY="-138"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube09" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_09"
+		OffsetY="-148"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube10" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_10"
+		OffsetY="-90"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignCube11" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_cube_11"
+		OffsetY="-95"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignTree02" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Baysign\\baysign_tree_02"
+		OffsetY="-106"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<!-- Old -->
+	
+	<Animation
+		Name="Lush_Water01" Type="CONSTANT" FilePath="Obstacles\\LushTileset\\Lush_Water01"
+		DrawAsDecal="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Lush_PortalGlade_01" Type="CONSTANT" FilePath="Obstacles\\LushTileset\\Lush_PortalGlade_01"
+		OffsetY="-355"
+		ZWobbleDistance="16" ZWobbleSpeed="16"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain01_NoFizz" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Fountain01"
+		OffsetY="-83"
+		ChildAnimation="City_Fountain01_Water_NoFizz"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain01_Water_NoFizz" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Fountain01_Water"
+		OffsetY="-83" RefractAmount="0.5" RefractRate="0.25"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain01" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Fountain01"
+		OffsetY="-83"
+		ChildAnimation="City_Fountain01_Water"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain01_Water" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Fountain01_Water"
+		OffsetY="-83" RefractAmount="0.5" RefractRate="0.25"
+		ChildAnimation="City_Fountain_Fizz_1"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain_Fizz_1" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.0" RandomDurationMax="1.3"
+		RandomScaleMin="1.0" RandomScaleMax="1.1"
+		Red="1.0" Green="1.0" Blue="1.0"
+		StartOffsetY="-120" EndOffsetY="-260" PingPongShiftOverDuration="true"
+		RandomOffsetX="10" RandomOffsetY="10"
+		ChildAnimation="City_Fountain_Fizz_2"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain_Fizz_2" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.0" RandomDurationMax="1.3"
+		RandomScaleMin="1.0" RandomScaleMax="1.1"
+		Red="1.0" Green="1.0" Blue="1.0"
+		StartOffsetY="-120" EndOffsetY="-260" PingPongShiftOverDuration="true"
+		RandomOffsetX="10" RandomOffsetY="10"
+		ChildAnimation="City_Fountain_Fizz_3"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain_Fizz_3" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.0" RandomDurationMax="1.3"
+		RandomScaleMin="1.0" RandomScaleMax="1.1"
+		Red="1.0" Green="1.0" Blue="1.0"
+		StartOffsetY="-120" EndOffsetY="-260" PingPongShiftOverDuration="true"
+		RandomOffsetX="10" RandomOffsetY="10"
+		ChildAnimation="City_Fountain_Fizz_4"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain_Fizz_4" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.0" RandomDurationMax="1.3"
+		RandomScaleMin="1.0" RandomScaleMax="1.1"
+		Red="1.0" Green="1.0" Blue="1.0"
+		StartOffsetY="-120" EndOffsetY="-260" PingPongShiftOverDuration="true"
+		RandomOffsetX="10" RandomOffsetY="10"
+		ChildAnimation="City_Fountain_Fizz_5"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain_Fizz_5" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.0" RandomDurationMax="1.3"
+		RandomScaleMin="1.0" RandomScaleMax="1.1"
+		Red="1.0" Green="1.0" Blue="1.0"
+		StartOffsetY="-120" EndOffsetY="-260" PingPongShiftOverDuration="true"
+		RandomOffsetX="10" RandomOffsetY="10"
+		ChildAnimation="City_Fountain_Fizz_6"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain_Fizz_6" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.0" RandomDurationMax="1.3"
+		RandomScaleMin="1.0" RandomScaleMax="1.1"
+		Red="1.0" Green="1.0" Blue="1.0"
+		StartOffsetY="-120" EndOffsetY="-260" PingPongShiftOverDuration="true"
+		RandomOffsetX="10" RandomOffsetY="10"
+		ChildAnimation="City_Fountain_Fizz_7"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Fountain_Fizz_7" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.0" RandomDurationMax="1.3"
+		RandomScaleMin="1.0" RandomScaleMax="1.1"
+		Red="1.0" Green="1.0" Blue="1.0"
+		StartOffsetY="-120" EndOffsetY="-260" PingPongShiftOverDuration="true"
+		RandomOffsetX="10" RandomOffsetY="10"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Pool01" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Pool01"
+		OffsetY="0"
+		ChildAnimation="City_Pool01_Water"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Pool01_Water" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Pool01_Water"
+		OffsetY="0" RefractAmount="0.5" RefractRate="0.25"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Pool02" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Pool02"
+		OffsetY="0"
+		ChildAnimation="City_Pool02_Water"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Pool02_Water" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Pool02_Water"
+		OffsetY="0" RefractAmount="0.5" RefractRate="0.25"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Pool03" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Pool03"
+		OffsetY="0" Rotate="true"
+		ChildAnimation="City_Pool03_Water"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Pool03_Water" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Pool03_Water"
+		OffsetY="0" Rotate="true" RefractAmount="0.5" RefractRate="0.25"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Bocca_Left" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_BullBoccaLeft"
+		OffsetY="-262" OffsetZ="10"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Bocca_Right" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_BullBoccaRight"
+		OffsetY="-265" OffsetZ="10"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Button01_Off" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Button01_Off"
+		OffsetY="-0"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Button01_On" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Button01_On"
+		OffsetY="-0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Button01_Off" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Button01_Off"
+		OffsetY="-0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Button01_On" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Button01_On"
+		OffsetY="-0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="Edge_Button01_Off" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\EdgeTileset\\Edge_Button01_Off"
+		OffsetY="-0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Edge_Button01_On" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\EdgeTileset\\Edge_Button01_On"
+		OffsetY="-0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="Edge_Button02_Off" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\EdgeTileset\\Edge_Button02_Off"
+		OffsetY="-0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Edge_Button02_On" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\EdgeTileset\\Edge_Button02_On"
+		OffsetY="-0"
+		>
+	</Animation>
+	
+	<!-- City -->
+
+	<Animation
+		Name="City_Flag01" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Flag01_Pole"
+		OffsetY="-442"
+		ChildAnimation="City_Flag01_Cloth"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Flag01_Cloth" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Flag01_Cloth"
+		OffsetX="0" OffsetY="-364"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Brick01_StackOf5" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		ChildAnimation="City_Brick01_Brick2"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Brick01_Brick2" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetZ="50"
+		ChildAnimation="City_Brick01_Brick3"
+		>
+	</Animation>
+	<Animation
+		Name="City_Brick01_Brick3" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetZ="100"
+		ChildAnimation="City_Brick01_Brick4"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Brick01_Brick4" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetZ="150"
+		ChildAnimation="City_Brick01_Brick5"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Brick01_Brick5" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetZ="200"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_StatueBarkeep01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_StatueBarkeep01"
+		OffsetY="-65"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_StatueBarkeepLava01" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_StatueBarkeepLava01"
+		OffsetY="-65"
+		Duration="4.0" Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_StatueWoman01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_StatueWoman01"
+		OffsetY="-44"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_StatueWomanLava01" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_StatueWomanLava01"
+		OffsetY="-44"
+		Duration="4.0" Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="ashen_boy_01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\ashen_boy_01" OffsetY="-35">
+	</Animation>
+
+	<Animation
+		Name="ashen_man_01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\ashen_man_01" OffsetY="-58">
+	</Animation>
+
+	<Animation
+		Name="ashen_man_02" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\ashen_man_02" OffsetY="-51">
+	</Animation>
+
+	<Animation
+		Name="ashen_man_03" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\ashen_man_03" OffsetY="-51">
+	</Animation>
+
+	<Animation
+		Name="ashen_man_04" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\ashen_man_04" OffsetY="-58">
+	</Animation>
+
+	<Animation
+		Name="ashen_woman_01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\ashen_woman_01" OffsetY="-26">
+	</Animation>
+
+	<Animation
+		Name="ashen_woman_02" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\ashen_woman_02" OffsetY="-36">
+	</Animation>
+
+	<Animation
+		Name="tumbleweed_01" Type="CONSTANT" FilePath="ForegroundFlyers\\tumbleweed_01" OffsetY="-36"
+		RotationSpeed="-360" Rotate="true" Mirror="true"
+		RandomFlipVertical="true">
+	</Animation>
+
+	<Animation
+		Name="City_Bush03" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Bush03"
+		OriginX="68" OriginY="207"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Bush03_Sway" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Bush03"
+		OriginX="68" OriginY="207"
+		RandomDurationMin="4.0" RandomDurationMax="8.0" Loop="true"
+		StartAngle="-4" EndAngle="4" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<!-- Godrays -->
+
+	<Animation
+		Name="Glade_Godray01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\GladeTileset\\Glade_Godray01">
+	</Animation>
+
+	<Animation
+		Name="Glade_Godray02" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\GladeTileset\\Glade_Godray02">
+	</Animation>
+
+	<Animation
+		Name="Glade_Godray03" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\GladeTileset\\Glade_Godray03">
+	</Animation>
+
+	<Animation
+		Name="Glade_Godray04" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\GladeTileset\\Glade_Godray04">
+	</Animation>
+
+	<Animation
+		Name="Glade_Godray05" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\GladeTileset\\Glade_Godray05">
+	</Animation>
+	
+	<!-- Shadows -->
+
+	<Animation
+		Name="ObstacleFallInShadow" Type="CONSTANT" FilePath="Decals\\Health_Circle_Medium"
+		Duration="0.35"
+		DrawAsDecal="true"
+		StartOpacity="0.0" EndOpacity="1.0"
+		StartScale="0.75" EndScale="0.75"
+		>
+	</Animation>
+
+	<Animation
+		Name="fog_01" Type="CONSTANT" FilePath="Obstacles\\Environmental\\fog_01"
+		ShakeDistance="150" RandomShakeSpeedMin="100" RandomShakeSpeedMax="200" ShakeHorizontal="true"
+		OnlyWhenVisible="true"
+    >
+	</Animation>
+
+	<Animation
+		Name="fog_02" Type="CONSTANT" FilePath="Obstacles\\Environmental\\fog_02"
+		ShakeDistance="40" RandomShakeSpeedMin="4" RandomShakeSpeedMax="8" ShakeHorizontal="true"
+		OnlyWhenVisible="true"
+    >
+	</Animation>
+
+	<Animation
+		Name="fog_03" Type="CONSTANT" FilePath="Obstacles\\Environmental\\fog_03"
+		ShakeDistance="40" RandomShakeSpeedMin="4" RandomShakeSpeedMax="8" ShakeHorizontal="true"
+		OnlyWhenVisible="true"
+    >
+	</Animation>
+
+	<Animation
+		Name="TargetFruit" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Fruit01"
+		OffsetY="-56"
+		ChildAnimation="TargetFruit_Bullseye"
+		>
+	</Animation>
+	<!-- ZWobbleDistance="8" ZWobbleSpeed="8" -->
+
+	<Animation
+		Name="TargetFruit_Bullseye" Type="CONSTANT_NOUPDATE" FilePath="Decals\\Spray_Target01"
+		OffsetZ="16"
+		DefaultScale="1.25"
+		>
+	</Animation>
+	<!-- ZWobbleDistance="8" ZWobbleSpeed="8" -->
+
+	<Animation
+		Name="TargetFruit_PhaseIn" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Fruit01"
+		OffsetY="-56"
+		ChildAnimation="TargetFruit_Bullseye_PhaseIn"
+		StartOffsetZ="1600" EndOffsetZ="0"
+		>
+	</Animation>
+	<!-- ZWobbleDistance="8" ZWobbleSpeed="8" -->
+
+	<Animation
+		Name="TargetFruit_Bullseye_PhaseIn" Type="CONSTANT" FilePath="Decals\\Spray_Target01"
+		OffsetZ="16"
+		DefaultScale="1.25"
+		StartOffsetZ="1600" EndOffsetZ="0"
+		>
+	</Animation>
+	
+	<!-- Wild Bush 05 combined bulb and stem, flipped tree version -->
+
+	<Animation
+		Name="Wild_Bush05ab" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Bush05b"
+		DefaultScale="1.0"
+		OffsetY="-175"
+		ChildAnimation="Wild_Bush05ab_top"
+    >
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush05ab_top" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Bush05a"
+		OffsetY="-300"
+		DefaultScale="1.0"
+    >
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush05b_flipped" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Bush05b"
+		OffsetY="-95" StartAngle="180"
+		DefaultScale="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Tree01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Tree01"
+		OriginX="164" OriginY="394"
+		Mirror="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Tree01_Sway" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Tree01"
+		OriginX="164" OriginY="394"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true"
+		>
+	</Animation>
+	
+	<!-- Wild Tree Variants -->
+
+	<Animation
+		Name="Wild_Tree01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Tree01"
+		OriginX="140" OriginY="533"
+		Mirror="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree01_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Tree01"
+		OriginX="140" OriginY="533"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree02" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Tree02"
+		OriginX="76" OriginY="882"
+		Mirror="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree02_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Tree02"
+		OriginX="76" OriginY="882"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-0.5" EndAngle="0.5" PingPongAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03a" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Tree03"
+		OriginX="237" OriginY="593"
+		Mirror="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03a_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Tree03"
+		OriginX="237" OriginY="593"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-0.5" EndAngle="0.5" PingPongAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03b" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Tree03"
+		OriginX="238" OriginY="593"
+		Mirror="true" Rotate="true"
+		DefaultScale="1.0"
+		ChildAnimation="Wild_Tree03_FruitBunch"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03_FruitBunch" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Tree03_FruitBunch"
+		OriginX="238" OriginY="593"
+		OffsetY="-20"
+		Mirror="true" Rotate="true"
+		DefaultScale="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03b_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Tree03"
+		OriginX="238" OriginY="593"
+		DefaultScale="1.0"
+		ChildAnimation="Wild_Tree03_FruitBunch_Sway"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.15" RandomDurationMax="0.15"
+		StartAngle="-0.5" EndAngle="0.5" PingPongAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03_FruitBunch_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Tree03_FruitBunch"
+		OriginX="238" OriginY="593"
+		OffsetY="-20"
+		DefaultScale="1.0"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.15" RandomDurationMax="0.15"
+		StartAngle="-0.5" EndAngle="0.5" PingPongAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03c" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Tree03"
+		OriginX="238" OriginY="593"
+		Mirror="true" Rotate="true"
+		DefaultScale="1.0"
+		ChildAnimation="Wild_Tree03_Leaves"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03_Leaves" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Tree03_Leaves"
+		OriginX="238" OriginY="593"
+		OffsetY="30"
+		Mirror="true" Rotate="true"
+		DefaultScale="1.0"
+    >
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03c_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Tree03"
+		OriginX="238" OriginY="593"
+		DefaultScale="1.0"
+		ChildAnimation="Wild_Tree03_Leaves_Sway"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.15" RandomDurationMax="0.15"
+		StartAngle="-0.5" EndAngle="0.5" PingPongAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Tree03_Leaves_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Tree03_Leaves"
+		OriginX="238" OriginY="593"
+		OffsetY="30"
+		DefaultScale="1.0"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.15" RandomDurationMax="0.15"
+		StartAngle="-0.5" EndAngle="0.5" PingPongAngle="true"
+		>
+	</Animation>
+
+
+	<!-- Core Chain -->
+
+  <Animation
+		Name="CoreCage_Front" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Lantern02_F"
+		OffsetY="-137"
+		DefaultScale="1.0"
+		ChildAnimation="CoreCage_Link02"
+    >
+  </Animation>
+
+  <Animation
+		Name="CoreCage_Link02" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_02"
+		OffsetZ="558" DefaultScale="1"
+		ChildAnimation="CoreCage_Link04"
+		>
+  </Animation>
+
+  <Animation
+		Name="CoreCage_Link04" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_02"
+		OffsetZ="739" DefaultScale="1"
+		ChildAnimation="CoreCage_Link11"
+		>
+  </Animation>
+
+  <Animation
+		Name="CoreCage_Link11" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="1037" DefaultScale="0.9" OffsetX="86" StartAngle="6"
+		ChildAnimation="CoreCage_Link10"
+		>
+  </Animation>
+
+  <Animation
+		Name="CoreCage_Link10" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="943" DefaultScale="0.9" OffsetX="76" StartAngle="12"
+		ChildAnimation="CoreCage_Link09"
+		>
+  </Animation>
+
+  <Animation
+		Name="CoreCage_Link09" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="841" DefaultScale="0.9" OffsetX="50" StartAngle="22"
+		ChildAnimation="CoreCage_Link08"
+		>
+  </Animation>
+
+  <Animation
+		Name="CoreCage_Link08" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="1014" DefaultScale="0.9" OffsetX="-6"
+		ChildAnimation="CoreCage_Link07"
+		>
+	</Animation>
+
+	<Animation
+		Name="CoreCage_Link07" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="925" DefaultScale="0.9" OffsetX="-6"
+		ChildAnimation="CoreCage_Link06"
+		>
+	</Animation>
+
+	<Animation
+		Name="CoreCage_Link06" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="836" DefaultScale="0.6" OffsetX="-4"
+		ChildAnimation="CoreCage_Link05"
+		>
+	</Animation>
+
+	<Animation
+		Name="CoreCage_Link05" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="646" OffsetX="-14" DefaultScale="0.5"
+		ChildAnimation="CoreCage_Link03"
+		>
+	</Animation>
+
+	<Animation
+		Name="CoreCage_Link03" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="646" OffsetX="10" DefaultScale="0.5"
+		ChildAnimation="CoreCage_Link01"
+    >
+	</Animation>
+
+
+	<Animation
+		Name="CoreCage_Link01" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Chainlinks_01"
+		OffsetZ="434" OffsetX="-4" DefaultScale="0.9"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Cactus" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Cactus"
+		OffsetY="-38"
+		DefaultScale="1.0"
+		Loop="true" Rotate="true"
+		RandomDurationMin="1.5" RandomDurationMax="2.0"
+		StartScale="0.98" EndScale="1.01" PingPongScale="true"
+    OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="StabweedLobProjectile" Type="CONSTANT" FilePath="Obstacles\\CityTileset\\City_Cactus"
+		OffsetY="-38"
+		DefaultScale="1.0"
+		RotationSpeed="-720"
+		Mirror="true"
+		Loop="true" Rotate="true"
+		RandomDurationMin="1.5" RandomDurationMax="2.0"
+		StartScale="0.98" EndScale="1.01" PingPongScale="true"
+		>
+	</Animation>
+	
+	<!-- Wild Obstacles -->
+
+	<Animation
+		Name="Wild_Grass01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Grass01"
+		OriginX="75" OriginY="372"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Grass01_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Grass01"
+		OriginX="75" OriginY="372"
+		Mirror="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Grass02" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Grass02"
+		OriginX="100" OriginY="160"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Grass02_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Grass02"
+		OriginX="100" OriginY="160"
+		Mirror="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Bush01"
+		OriginX="108" OriginY="124"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush01_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Bush01"
+		OriginX="108" OriginY="124"
+		Mirror="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush02" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Bush02"
+		OriginX="209" OriginY="372"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush02_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Bush02"
+		OriginX="209" OriginY="372"
+		Mirror="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush03" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Bush03"
+		OriginX="159" OriginY="176"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush03_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Bush03"
+		OriginX="159" OriginY="176"
+		Mirror="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush04" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Bush04"
+		OriginX="111" OriginY="153"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Bush04_Sway" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Bush04"
+		OriginX="111" OriginY="153"
+		Mirror="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="GateDust" Type="BOOK" FilePath="Fx\\DustE\\DustE"
+		NumFrames="19"
+		OffsetY="0"
+		DefaultScale="0.7"
+		Loop="false"
+		RandomOffsetX="20" RandomOffsetY="4"
+		RandomFlipVertical="false" RandomFlipHorizontal="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="2.0"/>
+
+	<!-- Wild_Gate01 -->
+
+	<Animation
+		Name="Wild_Gate01_Raised" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Gate01"
+		OriginX="77" OriginY="400"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Gate01_Lower" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Gate01"
+		OriginX="77" OriginY="400"
+		StartOffsetY="0" EndOffsetY="403"
+		SourceRectangleHeight="455" SourceRectangleHeightEnd="20"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="Wild_Gate01_Lowered"
+		VisualFx="GateDust" VisualFxIntervalMin="0.02" VisualFxIntervalMax="0.03"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Gate01_Lowered" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\WildTileset\\Wild_Gate01"
+		OriginX="77" OriginY="400"
+		OffsetY="403"
+		SourceRectangleHeight="20"
+		Mirror="true"
+		Rotate="true"
+		OwnerHasNoCollision="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Gate01_Raise" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Gate01"
+		OriginX="77" OriginY="400"
+		StartOffsetY="403" EndOffsetY="0"
+		SourceRectangleHeight="20" SourceRectangleHeightEnd="455"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="Wild_Gate01_Raised"
+		VisualFx="GateDust" VisualFxIntervalMin="0.02" VisualFxIntervalMax="0.03"
+		>
+	</Animation>
+
+	<!-- Edge_Gate01 -->
+
+	<Animation
+		Name="Edge_Gate01_Raised" Type="CONSTANT_NOUPDATE" FilePath="TerrainTiles\\EdgeTileset\\Edge_Gate01"
+		OriginX="116" OriginY="594"
+		Mirror="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Edge_Gate01_Lower" Type="CONSTANT" FilePath="TerrainTiles\\EdgeTileset\\Edge_Gate01"
+		OriginX="116" OriginY="594"
+		StartOffsetY="0" EndOffsetY="585"
+		SourceRectangleHeight="628" SourceRectangleHeightEnd="1"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="Edge_Gate01_Lowered"
+		VisualFx="GateDust" VisualFxIntervalMin="0.02" VisualFxIntervalMax="0.03"
+		>
+	</Animation>
+
+	<Animation
+		Name="Edge_Gate01_Lowered" Type="CONSTANT_NOUPDATE" FilePath="TerrainTiles\\EdgeTileset\\Edge_Gate01"
+		OriginX="116" OriginY="594"
+		OffsetY="585"
+		SourceRectangleHeightEnd="1"
+		Mirror="true"
+		Rotate="true"
+		OwnerHasNoCollision="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Edge_Gate01_Raise" Type="CONSTANT" FilePath="TerrainTiles\\EdgeTileset\\Edge_Gate01"
+		OriginX="116" OriginY="594"
+		StartOffsetY="585" EndOffsetY="0"
+		SourceRectangleHeight="1" SourceRectangleHeightEnd="628"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="Edge_Gate01_Raised"
+		VisualFx="GateDust" VisualFxIntervalMin="0.02" VisualFxIntervalMax="0.03"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Campfire01_Burning" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Campfire01"
+		OffsetY="-23"
+		ChildAnimation="Wild_Campfire01_Burning_Fire"
+		>
+	</Animation>
+
+	<Animation
+		Name="Wild_Campfire01_Burning_Fire" Type="CONSTANT" FilePath="Obstacles\\WildTileset\\Wild_Campfire01_Fire"
+		OffsetY="-23"
+		Duration="2.0" Loop="true"
+		StartOpacity="0.5" EndOpacity="1.0" PingPongColor="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post02" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetY="-0" OffsetZ="0" DefaultScale="0.4"
+		ChildAnimation="City_Post02b"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post02b" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Post01"
+		OffsetY="-32" OffsetZ="16" DefaultScale="0.8"
+		ChildAnimation="City_Post02c"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post02c" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetY="-0" OffsetZ="103" DefaultScale="0.25"
+		ChildAnimation="City_Post02d"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post02d" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Post01"
+		OffsetY="-32" OffsetZ="110" DefaultScale="0.7"
+		ChildAnimation="City_Post02e"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post02e" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetY="-0" OffsetZ="187" DefaultScale="0.2"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post03" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetY="-0" OffsetZ="0" DefaultScale="0.5"
+		ChildAnimation="City_Post03b"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post03b" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Post01"
+		OffsetY="-32" OffsetZ="32" DefaultScale="1.0"
+		ChildAnimation="City_Post03c"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post03c" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Post01"
+		OffsetY="-0" OffsetZ="160" DefaultScale="0.8"
+		ChildAnimation="City_Post03d"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post03d" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Brick01"
+		OffsetY="-32" OffsetZ="174" DefaultScale="0.25"
+		ChildAnimation="City_Post03e"
+		>
+	</Animation>
+
+	<Animation
+		Name="City_Post03e" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\CityTileset\\City_Post01"
+		OffsetY="-0" OffsetZ="260" DefaultScale="0.6"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<!-- Town Props -->
+
+	<Animation
+		Name="Lush_Mailbox01" Type="CONSTANT_NOUPDATE" FilePath="Obstacles\\LushTileset\\Lush_Mailbox01"
+		OriginX="76" OriginY="212"
+		Mirror="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Lush_Mailbox01_Sway" Type="CONSTANT" FilePath="Obstacles\\LushTileset\\Lush_Mailbox01"
+		OriginX="76" OriginY="212"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		StartAngle="-1" EndAngle="1" PingPongAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Lush_Outhouse01" Type="CONSTANT_NOUPDATE" FilePath="TerrainTiles\\LushTileset\\Lush_Outhouse01"
+		OffsetY="-52"
+		Mirror="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Lush_Outhouse01_Shake" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Outhouse01"
+		OffsetY="-52"
+		Mirror="true" Rotate="true"
+		RandomDurationMin="0.14" RandomDurationMax="0.16"
+		ShakeDistance="1" RandomShakeSpeedMin="175" RandomShakeSpeedMax="200" ShakeHorizontal="true"
+		>
+	</Animation>
+
+	<!-- Auden -->
+
+	<Animation
+		Name="ShadowIdle" Type="SLIDE" FilePath="Animations\\Player\\PlayerIdle\\PlayerIdle"
+        OffsetX="0" OffsetY="-47"
+		NumFrames="16" NumAngles="16"
+		Rotate="false" Loop="true" PingPong="true" Mirror="false">
+
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="6"/>
+
+	</Animation>
+
+	<!-- Cube -->
+
+	<Animation
+		Name="Cube01" Type="BOOK" FilePath="Animations\\Enemies\\Cube_1\\Cube_1_"
+		OriginX="142" OriginY="144" OffsetZ="0"
+		DefaultScale="1.0" ZWobbleDistance="0" ZWobbleSpeed="0"
+		NumFrames="1" NumAngles="32" Loop="true"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="Guide01" Type="BOOK" FilePath="Animations\\Royce\\BotIdle\\BotIdle"
+		DefaultScale="1.0"
+		NumFrames="30" NumAngles="32" Loop="true"
+		Duration="2.0"
+		ChildAnimation="Guide01Light01"
+		VideoTexture="RoyceBotIdle"
+		TakeOwnerColor="false"
+		TransferFrame="true"
+		>
+		<Material Ambient="0.75" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="Guide01Light01" Type="BOOK" FilePath="Animations\\Royce\\BotIdleLight\\BotIdleLight"
+		DefaultScale="0.8" Opacity="0.5"
+		Duration="4.0"
+		NumFrames="30" NumAngles="32" Loop="true"
+		ChildAnimation="null"
+		Red="0.5" Green="1.0" Blue="0.8"
+		IgnoreRestoreDefaultColor="true"
+		Light="Lights\\DiffuseSpotlight"
+		>
+		<Material Ambient="0" Diffuse="1" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="Guide01_Darken" InheritFrom="Guide01"
+		Loop="false"
+		Duration="2.0"
+		StartRed="1.0" EndRed="0.3"
+		StartGreen="1.0" EndGreen="0.3"
+		StartBlue="1.0" EndBlue="0.3"
+		TransferFrame="true"
+		ChainTo="Guide01_Dark"
+		>
+	</Animation>
+
+	<Animation
+		Name="Guide01_Dark" InheritFrom="Guide01"
+		Red="0.3" Green="0.3" Blue="0.3"
+		>
+	</Animation>
+
+	<Animation
+		Name="Guide01Flipped" InheritFrom="Guide01" DefaultAngle="180" OffsetY="230" AngleNumOffset="16" Rotate="false"
+		ChildAnimation="Guide01Light01Flipped">
+	</Animation>
+
+	<Animation
+		Name="Guide01Light01Flipped" InheritFrom="Guide01Light01" DefaultAngle="180" OffsetY="230" AngleNumOffset="16" Rotate="false">
+	</Animation>
+	
+	<Animation
+		Name="CubeSpin01" Type="SLIDE" FilePath="Animations\\Enemies\\Cube_1\\Cube_1_"
+		OriginX="142" OriginY="144" OffsetZ="0"
+		DefaultScale="1.0" ZWobbleDistance="6" ZWobbleSpeed="45"
+		NumFrames="32" NumAngles="1"
+		ChildAnimation="null"
+		Loop="true"
+		>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+	</Animation>
+
+	<Animation
+		Name="Cube01_Lunge" Type="BOOK" FilePath="Animations\\Enemies\\Cube_1\\Cube_1_"
+		OriginX="142" OriginY="144" ShakeSpeed="190" ShakeDistance="1.5"
+		DefaultScale="1.0" GhostInterval="0.03" GhostDuration="0.2"
+		NumFrames="1" NumAngles="32" Loop="true"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="FlusherTemp01_Lunge" Type="BOOK" FilePath="Animations\\Flusher\\FlusherTemp0001"
+		OriginX="142" OriginY="144" ShakeSpeed="190" ShakeDistance="1.5"
+		DefaultScale="1.0" GhostInterval="0.03" GhostDuration="0.2"
+		NumFrames="1" NumAngles="32" Loop="true"
+		ChildAnimation="null"
+		Rotate="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="Cube01_Shake" Type="BOOK" FilePath="Animations\\Enemies\\Cube_1\\Cube_1_"
+		OriginX="142" OriginY="144" ShakeSpeed="280" ShakeDistance="1.4"
+		DefaultScale="1.0"
+		NumFrames="1" NumAngles="32" Loop="true"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="Cube01PhaseIn" Type="BOOK" FilePath="Animations\\Enemies\\Cube_1\\Cube_1_"
+		NumFrames="32" NumAngles="1"
+		OriginX="142" OriginY="144" OffsetZ="0"
+		StartScale="2.2" EndScale="1.0"
+		StartOpacity="0.0" EndOpacity="1.0"
+		UseAttachedScale="true"
+		Loop="false"
+		Duration="0.5"
+		FlashSpeed="15.0" FlashMin="0.5" FlashMax="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		VisualFx="Virus_ParticleFast" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.2"
+		>
+	</Animation>
+
+	<Animation
+		Name="Cube01Death" Type="BOOK" FilePath="Animations\\Enemies\\Cube_1\\Cube_1_"
+		OriginX="142" OriginY="144" OffsetZ="0"
+		DefaultScale="1.0" ZWobbleDistance="0" ZWobbleSpeed="0"
+		NumFrames="1" NumAngles="32"
+		Duration="0.4" HoldLastFrame="true"
+		StartOffsetY="0" EndOffsetY="-50"
+		StartScale="1.0" EndScale="0.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="CountryMem01Death" Type="CONSTANT" FilePath="Tilesets\\Country\\country_mem_01"
+		DefaultScale="1.0" ZWobbleDistance="0" ZWobbleSpeed="0"
+		OffsetY="-120"
+		ShakeSpeed="150" ShakeDistance="5.0"
+		StartRed="1.0" EndRed="0.0"
+		StartGreen="1.0" EndGreen="0.0"
+		StartBlue="1.0" EndBlue="0.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.65"
+		StartScaleY="1.0" EndScaleY="0.0"
+		StartOffsetY="0" EndOffsetY="150"
+		VisualFx="VirusOnHitRandom" VisualFxIntervalMin="0.07" VisualFxIntervalMax="0.07"
+		>
+	</Animation>
+	
+		<!-- Virus Victims -->
+
+	<Animation
+		Name="VirusVictim01Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_person_01"
+		Duration="2.0" UseAttachedScale="true" DrawAsDecal="true"
+		FlashSpeed="4.0" FlashMin="0.0" FlashMax="0.9"
+		Red="1.0" Green="0.84" Blue="0.0"
+		StartScale="1.0" EndScale="0.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ShakeSpeed="150" ShakeDistance="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusVictim01OnHit" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_person_01"
+		ShakeSpeed="150" ShakeDistance="0.1" Mirror="true" UseAttachedScale="true"
+		Duration="0.2" OffsetY="-40"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusVictim02Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_person_02"
+		Duration="2.0" UseAttachedScale="true" DrawAsDecal="true"
+		FlashSpeed="4.0" FlashMin="0.0" FlashMax="0.9"
+		Red="1.0" Green="0.84" Blue="0.0"
+		StartScale="1.0" EndScale="0.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ShakeSpeed="150" ShakeDistance="1.0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusVictim02OnHit" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_person_02"
+		ShakeSpeed="150" ShakeDistance="0.1" Mirror="true" UseAttachedScale="true"
+		Duration="0.2" OffsetY="-11"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusVictim03Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_person_03"
+		Duration="0.5" UseAttachedScale="true" OffsetY="14" DrawAsDecal="true"
+		ChainTo="VirusVictim03Death2">
+	</Animation>
+	
+	<Animation
+		Name="VirusVictim03Death2" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_person_03"
+		Duration="2.0" UseAttachedScale="true" DrawAsDecal="true"
+		FlashSpeed="4.0" FlashMin="0.0" FlashMax="0.9"
+		Red="1.0" Green="0.84" Blue="0.0"
+		StartScale="1.0" EndScale="0.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ShakeSpeed="150" ShakeDistance="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusVictim03OnHit" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_person_03"
+		ShakeSpeed="120" ShakeDistance="0.1" Mirror="true" UseAttachedScale="true"
+		Duration="0.2" OffsetY="32"
+		>
+	</Animation>
+	
+	<!-- Virus Gates -->
+
+	<Animation
+		Name="VirusGate" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01B"
+		OffsetY="-141"
+		ZWobbleDistance="8" ZWobbleSpeed="8" UseAttachedScale="true" Mirror="true"
+		Duration="5" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		Material="Emissive"
+		ChildAnimation="VirusGateRipple"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusGateUnlocked" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01D"
+		OffsetY="-200"
+		DefaultScale="1.5"
+		StartOffsetY="-300" EndOffsetY="0"
+		UseAttachedScale="true" Mirror="true"
+		Duration="4" Loop="true"
+		StartOpacity="0" EndOpacity="0.8" PingPongColor="true"
+		Material="Emissive"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusGateRipple" Type="BOOK" FilePath="Fx\\VirusBorderA\\VirusBorderA"
+		NumFrames="43" NumAngles="1" DurationFrames="86"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		RandomOffsetX="10" RandomOffsetY="10"
+		StartOffsetZ="150" EndOffsetZ="160"
+		StartOpacity="0.3" EndOpacity="0.8"
+		Mirror="true"
+		RandomDurationMin="0.9" RandomDurationMax="1.2"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		ChainTo="VirusGateRipple2"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusGateRipple2" Type="BOOK" FilePath="Fx\\VirusBorderA\\VirusBorderA"
+		NumFrames="43" NumAngles="1" DurationFrames="86"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		RandomOffsetX="10" RandomOffsetY="10"
+		StartOffsetZ="150" EndOffsetZ="160"
+		StartOpacity="0.3" EndOpacity="0.8"
+		Mirror="true"
+		RandomDurationMin="0.9" RandomDurationMax="1.2"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		PlayBackwards="true"
+		ChainTo="VirusGateRipple"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusGateDeath" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01D"
+		OffsetY="-200"
+		StartOffsetY="-100" EndOffsetY="-200"
+		DefaultScale="1.5"
+		Mirror="true"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="2.5"
+		FlashSpeed="9.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="1.0" Blue="0.8"
+		VisualFx="null" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.2"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusGateDeathB" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01B"
+		OffsetY="-141"
+		ZWobbleDistance="8" ZWobbleSpeed="70" Mirror="true"
+		ShakeSpeed="160" ShakeDistance="2.0"
+		Duration="0.5" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="1.8"
+		StartRed="1.0" EndRed="0.0" StartGreen="1.0" EndGreen="0.0" StartBlue="1.0" EndBlue="0.0"
+		FlashSpeed="9.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="1.0" Blue="1.0"
+		VisualFx="null" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.2"
+		ChildAnimation="VirusOnHitLarge"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusGateReset" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01B"
+		OffsetY="-141"
+		ZWobbleDistance="8" ZWobbleSpeed="70" Mirror="true"
+		ShakeSpeed="160" ShakeDistance="2.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="2.0"
+		FlashSpeed="9.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="1.0" Blue="1.0"
+		VisualFx="null" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.2"
+		Material="Emissive"
+		Sound="SFX/Enemy Sounds/EnemyDeath"
+		ChainTo="VirusGateReset2"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusGateReset2" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01B"
+		OffsetY="-141"
+		ZWobbleDistance="8" ZWobbleSpeed="70" Mirror="true"
+		ShakeSpeed="160" ShakeDistance="2.0"
+		Duration="0.5" UseAttachedScale="true"
+		StartOpacity="0.0" EndOpacity="1.0"
+		StartScale="2.0" EndScale="1.0"
+		FlashSpeed="12.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="1.0" Blue="1.0"
+		VisualFx="null" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.2"
+		Material="Emissive"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		ChainTo="VirusGate"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusGate02" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01C"
+		ZWobbleDistance="8" ZWobbleSpeed="8" UseAttachedScale="true" Mirror="true"
+		VisualFx="Virus_ParticleSlow" VisualFxIntervalMin="0.3" VisualFxIntervalMax="0.8"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusGate02Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01C"
+		ZWobbleDistance="8" ZWobbleSpeed="8" Mirror="true"
+		Duration="0.5" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="1.0" EndScale="1.3"
+		FlashSpeed="8.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="1.0" Blue="1.0"
+		VisualFx="Virus_ParticleFast" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.2"
+		Material="Emissive"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusLock" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01A"
+		UseAttachedScale="true" Mirror="true"
+		DrawAsDecal="true"
+		FlashSpeed="0.8" FlashMin="0.0" FlashMax="0.7" Red="1.0" Green="1.0" Blue="1.0"
+		Material="Emissive"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusLockNoFlash" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01A"
+		UseAttachedScale="true" Mirror="true"
+		DrawAsDecal="true"
+		Material="Emissive"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusLockDeath" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01A"
+		StartOpacity="1.0" EndOpacity="0.0" Mirror="true"
+		Duration="1.0" DrawAsDecal="true" UseAttachedScale="true"
+		FlashSpeed="6.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="1.0" Blue="1.0"
+		Material="Emissive"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Virus_ParticleSlow" Type="CONSTANT" FilePath="Particles\\particle_red_streak"
+		StartOpacity="1" EndOpacity="0" 
+		DefaultScale="0.65" Mirror="true"
+		DefaultAngle="90"
+		StartScale="0" EndScale="0.2"
+		StartScaleY="1.0" EndScaleY="6"
+		StartScaleX="1" EndScaleX="10"
+		RandomDurationMin="3" RandomDurationMax="3.5"
+		StartRed="1.0" StartGreen="1" StartBlue="1"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		HoldStartColorFraction="0.5"
+		RandomOffsetX="75" FlipHorizontal="true"
+		RandomOffsetY="75"
+		StartOffsetZ="80" EndOffsetZ="200"
+		ChildAnimation="Virus_ParticleSlow_flares"
+		Material="Emissive"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Virus_ParticleSlow_flares" Type="CONSTANT" FilePath="Particles\\particle_circle_05"
+		Duration="3"
+		Opacity="0"
+		StartOpacity="0" EndOpacity="1"
+		PingPongColor="true"
+		Mirror="true"
+		StartScaleY="1" EndScaleY="20" 
+		VisualFx="Virus_ParticleSlow_sparks"  VisualFxIntervalMin="1.5" VisualFxIntervalMax="2.2"
+		Material="Emissive"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Virus_ParticleSlow_sparks" Type="CONSTANT" FilePath="Particles\\particle_circle_05"
+		Duration="5"
+		Rotate="true"
+		StartOffsetY="100" EndOffsetY="-100"
+		StartOpacity="0" EndOpacity="1"
+		PingPongColor="true"
+		StartRed="0" EndRed="1" StartGreen="0" EndGreen="1" StartBlue="0" EndBlue="1"
+		RandomScaleMin="0.4" RandomScaleMax="1.5" Mirror="true"
+		Material="Emissive"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+
+
+
+	<Animation
+		Name="VirusKeyhole01B" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_keyhole_01B"
+		ZWobbleDistance="8" ZWobbleSpeed="8" UseAttachedScale="true" Mirror="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<!-- Virus Borders -->
+
+	<Animation
+		Name="VirusBorder01PhaseIn" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_01"
+		Mirror="true" RandomDurationMin="0.3" RandomDurationMax="0.7" OnlyWhenVisible="true"
+		StartOpacity="0.0" EndOpacity="1.0"
+		Material="Emissive"
+		>
+	</Animation>	
+	<Animation
+		Name="VirusBorder01_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderERROR_01"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder01_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_01"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder01_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder01_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderERROR_01"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder01_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_01"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder01_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder01_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_01"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		Mirror="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBorder02_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderERROR_02"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder02_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_02"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder02_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder02_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderERROR_02"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder02_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_02"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder02_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder02_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_02"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBorder03_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderERROR_03"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder03_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_03"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder03_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder03_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderERROR_03"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder03_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_03"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder03_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder03_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderERROR_03"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBorder04_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_01"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder04_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_01"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder04_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder04_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_01"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder04_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_01"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder04_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder04_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_01"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBorder05_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_02"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder05_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_02"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder05_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder05_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_02"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder05_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_02"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder05_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder05_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_02"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBorder06_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_03"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder06_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_03"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder06_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder06_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_03"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder06_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_03"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder06_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder06_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderRESTRICTED_03"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBorder07_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderSTOP_01"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder07_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_01"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder07_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder07_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderSTOP_01"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder07_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_01"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder07_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder07_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_01"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusBorder08_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderSTOP_02"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder08_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_02"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder08_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder08_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderSTOP_02"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder08_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_02"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder08_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder08_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_02"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusBorder09_Active" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderSTOP_03"
+		Mirror="true" Red="0.77" Green="0.0" Blue="0.0" DrawAsDecal="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder09_Deactivating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_03"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnDestroy"
+		ChainTo="VirusBorder09_Inactive"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder09_Inactive" Type="CONSTANT_NOUPDATE" FilePath="Tilesets\\Virus\\virus_borderSTOP_03"
+		Mirror="true" Red="1.0" Green="1.0" Blue="1.0" DrawAsDecal="true"
+		OwnerHasNoCollision="true"
+		RandomDurationMin="1.8" RandomDurationMax="2.4" Loop="true"
+		StartOpacity="1.0" EndOpacity="0.1" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder09_Activating" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_03"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0" DrawAsDecal="true"
+		EndRed="0.77" EndGreen="0.0" EndBlue="0.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="0.5"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		ChainTo="VirusBorder09_Active"
+		Material="Emissive"
+		>
+	</Animation>
+	<Animation
+		Name="VirusBorder09_Death" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_borderSTOP_03"
+		StartRed="0.77" StartGreen="0.0" StartBlue="0.0" DrawAsDecal="true"
+		EndRed="1.0" EndGreen="1.0" EndBlue="1.0"
+		ShakeHorizontal="true"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		Duration="1.0" UseAttachedScale="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Mirror="true"
+		Rotate="true"
+		Sound="SFX/Enemy Sounds/Alert_Hidden"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<!-- Virus Collision FX-->
+
+	<Animation
+		Name="VirusRipple01" Type="BOOK" FilePath="Fx\\VirusBorderB\\VirusBorderB"
+		NumFrames="44" NumAngles="1" DurationFrames="88"
+		OwnerHasNoCollision="true" RandomFlipHorizontal="true"
+		RandomScaleMin="0.8" RandomScaleMax="1.2"
+		RandomOffsetX="10" RandomOffsetY="10"
+		StartOffsetZ="0" EndOffsetZ="10"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusRipple02" Type="BOOK" FilePath="Fx\\VirusBorderA\\VirusBorderA"
+		NumFrames="43" NumAngles="1" DurationFrames="86"
+		OwnerHasNoCollision="true"
+		RandomScaleMin="0.8" RandomScaleMax="1.2"
+		RandomOffsetX="10" RandomOffsetY="10"
+		StartOffsetZ="-40" EndOffsetZ="-30"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+		<Angle MinAngle="0" MaxAngle="90" AngleNum="1" Mirror="true"/>
+		<Angle MinAngle="90" MaxAngle="180" AngleNum="1" Mirror="false"/>
+		<Angle MinAngle="180" MaxAngle="270" AngleNum="1" Mirror="true"/>
+		<Angle MinAngle="270" MaxAngle="360" AngleNum="1" Mirror="false"/>
+	</Animation>
+	
+	<Animation
+		Name="VirusRipple01A" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_wall_06B"
+		Red="1.0" Green="1.0" Blue="1.0"
+		OwnerHasNoCollision="true" RandomFlipHorizontal="true"
+		RandomScaleMin="0.2" RandomScaleMax="0.4"
+		RandomOffsetX="10" RandomOffsetY="10"
+		StartOffsetZ="0" EndOffsetZ="10"
+		RandomDurationMin="0.8" RandomDurationMax="0.8"
+		StartOpacity="0.0" EndOpacity="0.6" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusRipple02A" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_wall_06A"
+		Red="1.0" Green="1.0" Blue="1.0"
+		OwnerHasNoCollision="true" RandomFlipHorizontal="true"
+		RandomScaleMin="0.2" RandomScaleMax="0.4"
+		RandomOffsetX="10" RandomOffsetY="10"
+		StartOffsetZ="0" EndOffsetZ="10"
+		RandomDurationMin="0.8" RandomDurationMax="0.8"
+		StartOpacity="0.0" EndOpacity="0.6" PingPongColor="true"
+		OnlyWhenVisible="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusBlackBlob" Type="CONSTANT" FilePath="Tilesets\\Virus\\virus_blackBlob_01"
+		Rotate="true" Mirror="true" Loop="true"
+		StartScale="1.0" EndScale="1.075" PingPongScale="true"
+		RandomDurationMin="6.3" RandomDurationMax="8.1"
+		>
+	</Animation>
+	
+	<!-- Particles -->
+
+	<Animation
+		Name="Virus_ParticleFast" Type="CONSTANT" FilePath="Particles\\particle_redLines_01"
+		StartOpacity="0.0" EndOpacity="0.65" PingPongColor="true"
+		DefaultScale="0.65"
+		StartScaleY="1.0" EndScaleY="0.0"
+		RandomDurationMin="0.5" RandomDurationMax="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		RandomOffsetX="75" FlipHorizontal="true"
+		StartOffsetZ="0" EndOffsetZ="700"
+		ChildAnimation="null"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="Virus_ParticleSmall" Type="CONSTANT" FilePath="Particles\\particle_redLines_01"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		DefaultScale="0.35"
+		StartScaleY="1.0" EndScaleY="0.0"
+		RandomDurationMin="0.5" RandomDurationMax="0.7"
+		Red="1.0" Green="1.0" Blue="1.0"
+		RandomOffsetX="10" FlipHorizontal="true"
+		StartOffsetZ="30" EndOffsetZ="100"
+		ChildAnimation="null"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="Virus_ParticleHigh" Type="CONSTANT" FilePath="Particles\\particle_redLines_01"
+		StartOpacity="0.0" EndOpacity="0.8" PingPongColor="true"
+		DefaultScale="0.8"
+		StartScaleY="1.0" EndScaleY="0.0"
+		RandomDurationMin="0.5" RandomDurationMax="0.8"
+		Red="1.0" Green="1.0" Blue="1.0" Mirror="true"
+		RandomOffsetX="50" FlipHorizontal="true"
+		StartOffsetZ="100" EndOffsetZ="700"
+		ChildAnimation="null"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="Virus_ParticleDrop" Type="CONSTANT" FilePath="Particles\\particle_redLines_01"
+		StartOpacity="0.0" EndOpacity="0.5"
+		DefaultScale="0.8"
+		StartScaleY="1.0" EndScaleY="0.8"
+		RandomDurationMin="0.4" RandomDurationMax="0.5"
+		Red="0.85" Green="0.0" Blue="0.0"
+		RandomOffsetX="30"
+		StartOffsetZ="700" EndOffsetZ="100"
+		ChildAnimation="null"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<!-- Card Found -->
+	
+	<Animation
+		Name="CardPickup" Type="CONSTANT" FilePath="GUI\\HUD\\deck_01"
+		DefaultScale="0.25"
+		OffsetZ="100" ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="BleedBubbles"
+		Material="Emissive">
+	</Animation>
+
+	<Animation
+		Name="CardFound" Type="CONSTANT" FilePath="GUI\\HUD\\deck_01"
+		OwnerHasNoCollision="true"
+		OffsetZ="70"
+		StartScale="1.5" EndScale="0.25"
+		StartOpacity="0.1" EndOpacity="0.8"
+		Duration="0.2"
+		ChainTo="CardFound2" Material="Emissive">
+	</Animation>
+
+	<Animation
+		Name="CardFound2" Type="CONSTANT" FilePath="GUI\\HUD\\deck_01"
+		OwnerHasNoCollision="true" UseAttachedScale="true"
+		StartScale="0.25" EndScale="0.5"
+		StartOffsetZ="0" EndOffsetZ="170"
+		Duration="2.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		FlashSpeed="7.0" FlashMin="0.3" FlashMax="0.5" Red="1.0" Green="1.0" Blue="1.0"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	
+	<!-- Portraits -->
+		
+	<Animation
+		Name="PortraitMuse" Type="CONSTANT" FilePath="Cinematic\\Muse_Portrait_01"
+		OwnerHasNoCollision="true"
+		StartScale="2.0" EndScale="1.0"
+		StartOpacity="0.1" EndOpacity="1.0"
+		Duration="0.2" TransferChildren="true" TransferFrame="true"
+		ChainTo="PortraitMuse2" Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="PortraitMuse2" Type="CONSTANT" FilePath="Cinematic\\Muse_Portrait_01"
+		Duration="2.40" TransferChildren="true" TransferFrame="true"
+		ChainTo="PortraitMuse3" Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="PortraitMuse3" Type="CONSTANT" FilePath="Cinematic\\Muse_Portrait_01"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.25" TransferChildren="true" TransferFrame="true"
+		Material="Unlit">
+	</Animation>
+
+
+	<Animation
+		Name="PortraitRoyce" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Royce_02"
+		OwnerHasNoCollision="true"
+		StartScale="2.0" EndScale="1.0"
+		StartOpacity="0.1" EndOpacity="1.0"
+		Duration="0.2" TransferChildren="true" TransferFrame="true"
+		ChainTo="PortraitRoyce2" Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="PortraitRoyce2" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Royce_02"
+		Duration="1.25" TransferChildren="true" TransferFrame="true"
+		ChainTo="PortraitRoyce3" Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="PortraitRoyce3" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Royce_02"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.25" TransferChildren="true" TransferFrame="true"
+		Material="Unlit">
+	</Animation>
+	
+	
+	<!-- Motorcycle -->
+
+	<Animation
+		Name="MotorcycleLightsOn" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_cycle_01B"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.8" OffsetY="-61"
+		HoldLastFrame="true"
+		ChainTo="null"
+		Material="Unlit"
+		AttachToOwner="true"
+		>
+	</Animation>
+
+	<!-- ElevatorButton -->
+
+	<Animation
+		Name="ElevatorButton" Type="CONSTANT" FilePath="Tilesets\\Highrise\\Highrise_ElevatorButton_01"
+		OffsetY="-195"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<!-- Terminal -->
+
+	<Animation
+		Name="TerminalOffline" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_terminal_01B"
+		OffsetY="-179"
+		UseAttachedScale="true"
+		HoldLastFrame="true"
+		ChildAnimation="null"
+		AttachToOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalFar" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_terminal_01A"
+		OffsetY="-179"
+		UseAttachedScale="true"
+		HoldLastFrame="true"
+		ChildAnimation="TerminalLoginPortraitFade"
+		AttachToOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalNear" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_terminal_01A"
+		OffsetY="-179"
+		UseAttachedScale="true"
+		HoldLastFrame="true"
+		ChildAnimation="TerminalLoginPortrait"
+		AttachToOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalLoginPortrait" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_screen_01"
+		Duration="3.0" Loop="true" PingPongColor="true"
+		OffsetY="-179" OffsetX="0" Mirror="true"
+		StartOpacity="0.1" EndOpacity="1.0"
+		ChainTo="null"
+		AttachToOwner="true"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalLoginPortraitFade" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_screen_01"
+		OffsetY="-179" OffsetX="0"
+		StartOpacity="0.4" EndOpacity="0"
+		Duration="0.5"
+		ChainTo="null"
+		AttachToOwner="true"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_MascotLogo01" Type="CONSTANT" FilePath="GUI\\logo_ovc_01"
+		DefaultScale="0.75"
+		OffsetX="60" OffsetY="-110"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		ChainTo="Terminal_MascotLogo02"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="Terminal_MascotLogo02" Type="CONSTANT" FilePath="GUI\\logo_ovc_01"
+		InheritFrom="Terminal_MascotLogo01"
+		RandomDurationMin="4" RandomDurationMax="6" Loop="true"
+		StartOpacity="1" EndOpacity="0.85" 
+		StartRed="1.0" EndRed="0.8"
+		PingPongColor="true"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_MascotLogo03" Type="CONSTANT" FilePath="GUI\\logo_ovc_01"
+		InheritFrom="Terminal_MascotLogo01"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.5"
+		HoldLastFrame="true"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_RestaurantLogo01" Type="CONSTANT" FilePath="GUI\\logo_junctionJans_01"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		ChainTo="Terminal_RestaurantLogo02"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_RestaurantLogo02" Type="CONSTANT" FilePath="GUI\\logo_junctionJans_01"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_RestaurantLogo03" Type="CONSTANT" FilePath="GUI\\logo_junctionJans_01"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.35"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_CloudbankLogo01" Type="CONSTANT" FilePath="GUI\\logo_cloudbank_01"
+		OffsetY="-260" OffsetX="20"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		ChainTo="Terminal_CloudbankLogo02"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_CloudbankLogo02" Type="CONSTANT" FilePath="GUI\\logo_cloudbank_01"
+		OffsetY="-260" OffsetX="20"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_CloudbankLogo03" Type="CONSTANT" FilePath="GUI\\logo_cloudbank_01"
+		OffsetY="-260" OffsetX="20"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.35"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_CamerataLogo01" Type="CONSTANT" FilePath="GUI\\logo_camerata_01"
+		OffsetY="-140" OffsetX="20"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		ChainTo="Terminal_CamerataLogo02"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_CamerataLogo02" Type="CONSTANT" FilePath="GUI\\logo_camerata_01"
+		OffsetY="-140" OffsetX="20"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_CamerataLogo03" Type="CONSTANT" FilePath="GUI\\logo_camerata_01"
+		OffsetY="-140" OffsetX="20"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.35"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_FashionWeek01" Type="CONSTANT" FilePath="Cinematic\\logo_fashionweek_01"
+		OffsetY="-175" OffsetX="12"
+		DefaultScale="0.85"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		StartRed="0.4" EndRed="1" StartGreen="0.2" EndGreen="1" StartBlue="0.7" EndBlue="1"
+		ChainTo="Terminal_FashionWeek02"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_FashionWeek02" Type="CONSTANT" FilePath="Cinematic\\logo_fashionweek_01"
+		DefaultScale="0.85" RandomDurationMin="4" RandomDurationMax="6" Loop="true"
+		StartOpacity="1" EndOpacity="0.85" 
+		StartRed="1.0" EndRed="0.8"
+		PingPongColor="true"
+		OffsetY="-175" OffsetX="12"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_FashionWeek03" Type="CONSTANT" FilePath="Cinematic\\logo_fashionweek_01"
+		DefaultScale="0.85"
+		OffsetY="-175" OffsetX="12"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.35"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="Terminal_AsherPortrait01" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Asher_01"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		OffsetX="330" OffsetY="-200"
+		ChainTo="Terminal_AsherPortrait02"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		OffsetX="330" OffsetY="-200"
+		Name="Terminal_AsherPortrait02" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Asher_01"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_AsherPortrait03" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Asher_01"
+		OffsetX="330" OffsetY="-200"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.35"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="Terminal_RoycePortrait01" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Royce_01"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		OffsetX="-40" OffsetY="-40"
+		ChainTo="Terminal_RoycePortrait02"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_RoycePortrait02" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Royce_01"
+		OffsetX="-40" OffsetY="-40"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_RoycePortrait03" Type="CONSTANT" FilePath="Cinematic\\Camerata_Portraits_Royce_01"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.35"
+		OffsetX="-40" OffsetY="-40"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_AmeliaPortrait01" Type="CONSTANT" FilePath="Cinematic\\potrait_amelia_01"
+		OffsetY="-160" OffsetX="20"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.35"
+		ChainTo="Terminal_AmeliaPortrait02"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Terminal_AmeliaPortrait02" Type="CONSTANT" FilePath="Cinematic\\potrait_amelia_01"
+		OffsetY="-160" OffsetX="20"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Terminal_AmeliaPortrait03" Type="CONSTANT" FilePath="Cinematic\\potrait_amelia_01"
+		OffsetY="-160" OffsetX="20"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.35"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<!-- Transistor Eye -->
+
+	<Animation
+		Name="TransistorEyeFlare" Type="CONSTANT" FilePath="Tilesets\\Lensflare\\Flare_Small_Red_01"
+		Material="Unlit"
+		
+		>
+	</Animation>
+	
+	
+	<!-- Beach -->
+
+	<Animation
+		Name="BeachHammock01" Type="CONSTANT" FilePath="Tilesets\\Beach\\Beach_Hammock_01"
+		PingPongShiftOverDuration="true"
+		DefaultScale="1"
+		StartOffsetX="0" EndOffsetX="20"
+		StartAngle="2" EndAngle="0" PingPongAngle="true"
+		RandomDurationMin="2.0" RandomDurationMax="5.0" Loop="true">
+	</Animation>
+
+	<!-- Boat -->
+
+	<Animation
+		Name="BoatIdle" Type="CONSTANT" FilePath="Tilesets\\Baysign\\temp_boat_01"
+		StartOffsetX="0" EndOffsetX="10" PingPongShiftOverDuration="true"
+		DefaultScale="1"
+		ZWobbleDistance="1" ZWobbleSpeed="1"
+		StartAngle="1" EndAngle="0" PingPongAngle="true"
+		RandomDurationMin="8.0" RandomDurationMax="10.0" Loop="true">
+	</Animation>
+
+	<Animation
+		Name="Blackhole" Type="CONSTANT" FilePath="GUI\\Icons\\Powers\\story_01">
+	</Animation>
+
+	<!-- Flashback Cutscene -->
+
+	<Animation
+		Name="FlashbackAnimation" Type="BOOK" FilePath="Animations\\Flashback\\Flashback"
+		OffsetZ="0"
+		DefaultScale="1.0" OffsetY="0"
+		NumFrames="1920" NumAngles="1" Loop="false"
+		ChildAnimation="null"
+		Duration="64"
+		VideoTexture="Flashback"
+		HoldLastFrame="true"
+		>
+	    <Material Ambient="0.0" Diffuse="0.0" Directionality="0.0"/>
+	</Animation>
+
+	<!-- Transistor Animated Logo -->
+
+	<Animation
+		Name="LogoAnimation" Type="BOOK" FilePath="Animations\\Logo\\Transistor_Logo_Final_"
+		OffsetZ="0"
+		DefaultScale="1.0" OffsetY="0"
+		NumFrames="299" NumAngles="1" Loop="false"
+		EditorFrame="200"
+		DurationFrames="598"
+		ChildAnimation="null"
+		VideoTexture="Logo"
+		HoldLastFrame="true"
+		>
+		<Material Ambient="0.0" Diffuse="0.0" Directionality="0.0"/>
+	</Animation>
+	
+		<!-- Combat Over Screen -->
+
+	<Animation
+		  Name="CombatOverEnter" Type="SLIDE" FilePath="Screens\\CombatOver\\CombatOverIn\\CombatOverIn"
+		  OffsetZ="0"
+		  DefaultScale="1.0" OffsetY="0"
+		  NumFrames="18" NumAngles="1" Loop="false"
+		  ChildAnimation="null"
+		  HoldLastFrame="true"
+		  VideoTexture="CombatOverIn"
+		>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		
+		<Material Ambient="0.0" Diffuse="0.0" Directionality="0.0"/>
+	</Animation>
+
+	<Animation
+		  Name="CombatOverExit" Type="SLIDE" FilePath="Screens\\CombatOver\\CombatOverOut\\CombatOverOut"
+		  OffsetZ="0"
+		  DefaultScale="1.0" OffsetY="0"
+		  NumFrames="11" NumAngles="1" Loop="false"
+		  ChildAnimation="null"
+		  HoldLastFrame="false"
+		  VideoTexture="CombatOverOut"
+		>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+
+		<Material Ambient="0.0" Diffuse="0.0" Directionality="0.0"/>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Checkoff" Type="SLIDE" FilePath="GUI\\Widgets\\CombatOverEnemyCheck\\CombatOverEnemyCheck"
+		DefaultScale="1.0"
+		NumFrames="7" NumAngles="1"
+		HoldLastFrame="true"
+		Material="Unlit">
+		
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_CheckoffBig" Type="SLIDE" FilePath="GUI\\Widgets\\CombatOverEnemyCheck\\CombatOverEnemyCheck"
+		DefaultScale="1.32"
+		NumFrames="7" NumAngles="1"
+		HoldLastFrame="true"
+		Material="Unlit">
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+	</Animation>
+
+	<!-- SKEW: Terrain Decals to Standing Decals -->
+	
+	<Animation
+		Name="BaysignSlab06FrontFacing" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_slab_06"
+		DefaultScale="1.0" 
+		DefaultAngle="45"
+		Rotate="true" Mirror="true"
+		ScaleY="2"
+		ScaleX="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignSlab06Standing" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_slab_06"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		DefaultAngle="122"
+		ScaleY="1.7"
+		ScaleX="1.4"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignTrim04FrontFacing" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_trim_04"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		DefaultAngle="45"
+		ScaleY="2"
+		ScaleX="1"
+			>
+	</Animation>
+
+	<Animation
+		Name="BaysignTrim04Standing" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_door_04A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		DefaultAngle="122"
+		ScaleY="1.7"
+		ScaleX="1.4"
+		>
+	</Animation>
+
+	<!-- Standing Decals to Terrain Decals-->
+
+	<Animation
+		Name="BaysignDoor04AFrontFacing" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_door_04A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		DefaultAngle="45"
+		ScaleY="2"
+		ScaleX="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="BaysignDoor04AStanding" Type="CONSTANT" FilePath="Tilesets\\Baysign\\baysign_door_04A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		>
+	</Animation>
+	
+	<!-- Glider Buildings-->
+	<Animation
+		Name="BuildingVirus01Squish01" Type="CONSTANT" FilePath="Cinematic\\Building_Virus_01"
+		DefaultScale="1.0"
+		ScaleY="0.5"
+		>
+	</Animation>
+
+	<!-- Beach Ball-->
+
+	<Animation
+		Name="BeachBall" Type="BOOK" FilePath="Animations\\BeachBall\\BeachBall"
+		NumFrames="60" NumAngles="32" Loop="true"
+		DefaultScale="1.0"
+		OffsetY="-40"
+		Rotate="true"
+		Sound="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="BeachBallIdle"
+		InheritFrom="BeachBall"
+		Loop="true"
+		StartFrame="1"
+		EndFrame="1"
+		>
+	</Animation>
+	
+	<!-- Lab Vials -->
+	<!-- Popper -->
+	<Animation
+		OffsetY="-356"
+		Name="HighriseVial01" Type="CONSTANT" FilePath="Tilesets\\Highrise\\highrise_vial_01B"
+		Rotate="true" Mirror="true"
+		OffsetFromParentZ="false"
+		DefaultScale="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="OpenPopper" Type="CONSTANT" FilePath="Animations\\Popper\\Death\\PopperDeath0278"
+		Rotate="true" Mirror="true"
+		OffsetY="-294"
+		ZWobbleSpeed="6" ZWobbleDistance="8"
+		DefaultScale="2.0"
+		Material="Emissive"
+		ChildAnimation="HighriseVial01"
+		>
+	</Animation>
+
+	<Animation
+		OffsetY="-356"
+		Name="HighriseVialPopper" Type="CONSTANT" FilePath="Tilesets\\Highrise\\highrise_vial_01A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		ChildAnimation="OpenPopper"
+		>
+	</Animation>
+
+	<!-- Demolisher -->
+
+	<Animation
+		Name="DemolisherArmVial" Type="CONSTANT" FilePath="Animations\\Demolisher\\Death\\DemolisherArm02"
+		Rotate="true" Mirror="true"
+		OffsetY="-330" OffsetX="270"
+		ZWobbleSpeed="8" ZWobbleDistance="8"
+		Material="Emissive"
+		DefaultScale="2.2"
+		ChildAnimation="HighriseVial01"
+		>
+	</Animation>
+
+	<Animation
+		OffsetY="-356"	
+		Name="HighriseVialDemolisher" Type="CONSTANT" FilePath="Tilesets\\Highrise\\highrise_vial_01A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		ChildAnimation="DemolisherArmVial"
+		>
+	</Animation>
+
+	<!-- Suppressor -->
+
+	<Animation
+		Name="SuppressorEyeVial" Type="CONSTANT" FilePath="Animations\\Suppressor\\Dead\\SuppressorEyeDead01"
+		Mirror="true"
+		OffsetY="-290" OffsetX="-35"
+		DefaultAngle="50"
+		ZWobbleSpeed="5" ZWobbleDistance="8"
+		DefaultScale="1.5"
+		Material="Emissive"
+		ChildAnimation="HighriseVial01"
+		>
+	</Animation>
+
+	<Animation
+		Name="SuppressorLeg1Vial" Type="CONSTANT" FilePath="Animations\\Suppressor\\Dead\\SuppressorLeg01"
+		Rotate="true" Mirror="true"
+		OffsetY="-200" OffsetX="-15"
+		ZWobbleSpeed="4" ZWobbleDistance="8"
+		DefaultScale="1.2"
+		DefaultAngle="300"
+		Material="Emissive"
+		ChildAnimation="SuppressorEyeVial"
+		>
+	</Animation>
+
+	<Animation
+		Name="SuppressorLeg2Vial" Type="CONSTANT" FilePath="Animations\\Suppressor\\Dead\\SuppressorLeg02"
+		Rotate="true" Mirror="true"
+		OffsetY="-200" OffsetX="20"
+		ZWobbleSpeed="5" ZWobbleDistance="8"
+		DefaultScale="2.2"
+		DefaultAngle="20"
+		Material="Emissive"
+		ChildAnimation="SuppressorLeg1Vial"
+		>
+	</Animation>
+
+	<Animation
+		Name="SuppressorLeg3Vial" Type="CONSTANT" FilePath="Animations\\Suppressor\\Dead\\SuppressorLeg03"
+		Rotate="true" Mirror="true"
+		OffsetY="-330" OffsetX="27"
+		ZWobbleSpeed="4" ZWobbleDistance="8"
+		DefaultScale="2.2"
+		Material="Emissive"
+		ChildAnimation="SuppressorLeg2Vial"
+		>
+	</Animation>
+
+	<Animation
+		OffsetY="-356"
+		Name="HighriseVialSuppressor" Type="CONSTANT" FilePath="Tilesets\\Highrise\\highrise_vial_01A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		ChildAnimation="SuppressorLeg3Vial"
+		>
+	</Animation>
+
+	<!-- Glider -->
+
+	<Animation
+		Name="VialSwarm" Type="BOOK" FilePath="Animations\\GliderSwarm\\GliderSwarm"
+		NumFrames="60" RandomDurationMin="3.8" RandomDurationMax="5.0" NumAngles="1"
+		Loop="true"
+		Mirror="true"
+		OffsetY="-300" OffsetX="10"
+		DefaultAngle="270"
+		Material="Emissive"
+		DefaultScale="0.65"
+		ChildAnimation="HighriseVial01"
+		>
+	</Animation>
+
+	<Animation
+		OffsetY="-356"
+		Name="HighriseVialSwarm" Type="CONSTANT" FilePath="Tilesets\\Highrise\\highrise_vial_01A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		ChildAnimation="VialSwarm"
+		>
+	</Animation>
+
+	<Animation
+		OffsetY="-356"
+		Name="HighriseVialEmpty" Type="CONSTANT" FilePath="Tilesets\\Highrise\\highrise_vial_01A"
+		Rotate="true" Mirror="true"
+		DefaultScale="1.0"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<!-- End Vials-->
+	
+	<!-- Highrise Obstacles-->
+
+
+	<Animation
+		Name="HighriseBall01" Type="CONSTANT" FilePath="Tilesets\\Highrise\\Highrise_Ball_01"
+		Rotate="true" Mirror="true"
+		RotationSpeed="5"
+		DefaultScale="1.0"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<!-- Countryside Obstacles-->
+	
+	<Animation
+		Name="CountrySunset01" Type="CONSTANT" FilePath="Tilesets\\Beach\\Beach_Star_01"
+		StartScale="1" EndScale="1" Duration="60"
+		StartRed="1" EndRed="1"
+		StartGreen="1" EndGreen="0.44"
+		StartBlue="1" EndBlue="0"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="CountrySunset01Flare" Type="CONSTANT" FilePath="Particles\\particle_flare_orange_huge"
+		Rotate="true"
+		>
+	</Animation>
+
+
+	
+	
+	<!--Bird-->
+
+	<Animation
+		Name="BirdIdle" Type="CONSTANT" FilePath="Animations\\Bird\\Idle\\BirdIdle0001"
+		Rotate="false" Mirror="true"
+		DefaultScale="0.5"
+		ChildAnimation="null"
+		RandomDurationMin="2.0" RandomDurationMax="4.0"
+		ChainTo="BirdFidget"
+		>
+	</Animation>
+
+	<Animation
+		Name="BirdFidget" Type="CONSTANT" FilePath="Animations\\Bird\\Fidget\\BirdFidget"
+		Rotate="false" Mirror="true"
+		DefaultScale="0.5"
+		Duration="0.075"
+		ChildAnimation="null"
+		ChainTo="BirdIdle"
+		>
+	</Animation>
+
+	<Animation
+		Name="BirdFly" Type="SLIDE" FilePath="Animations\\Bird\\Fly\\BirdFly"
+		NumFrames="3" NumAngles="1" Loop="true"
+		Rotate="true" Mirror="true"
+		DefaultScale="0.5"
+		ChildAnimation="null"
+		>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		
+	</Animation>
+
+	
+	<!--Animated Rooftop Fans-->
+
+	<Animation
+		Name="RooftopFan" Type="SLIDE" FilePath="Animations\\RooftopFan\\RooftopFan"
+		NumFrames="6" NumAngles="1" Loop="true"
+		OffsetY="-80"
+		Rotate="false" Mirror="false"
+		DefaultScale="1"
+		ChildAnimation="null"
+		PauseInPlanning="true"
+		>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		
+	</Animation>
+	
+</Animations>
+
+

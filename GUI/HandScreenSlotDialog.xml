@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Screens>
+
+	<HandScreenSlotDialog
+		Platform="default"
+		TransitionOnTime="0.2"
+		TransitionOffTime="0.2"
+		SelectionSound="/SFX/Menu Sounds/PowerToggleNEW">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.9"/>
+
+			<!-- Formats -->
+		<TextTitleA TextRed="0.92" TextGreen="0.92" TextBlue="0.92" Font="RalewayLight45" Scale="1.1" AlwaysUpperCase="true"/>
+		<TextTitleB TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66"/>
+		<TextSubtitleA TextRed="0.28" TextGreen="0.91" TextBlue="0.6" Font="RalewayRegular32" Scale="0.77" AlwaysUpperCase="true"/>
+		<TextSubtitleB TextRed="0.28" TextGreen="0.91" TextBlue="0.6" Font="UbuntuMono32" Scale="0.64"/>
+		<TextBodyA TextRed="0.93" TextGreen="0.93" TextBlue="0.93" Font="RalewaySemiBold22" Scale="0.66"/>
+		<TextBodyB TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="UbuntuMono16" Scale="1.0"/>
+		<TextCommentA TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMono32" Scale="0.56" AlwaysUpperCase="true"/>
+		<TextCommentB TextRed="0.68" TextGreen="0.68" TextBlue="0.68" Font="UbuntuMono32" Scale="0.64"/>
+		<TextStat TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewaySemiBold22" Scale="0.66"/>
+
+			<!-- Components -->
+		<CardListTitleIcon X="270" Y="100" Graphic="GUI\\Widgets\\title_rect_functions" Justification="Left" VerticalJustification="Center"/>
+		<CardListTitleLine AttachTo="CardListTitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"/>
+		<CardListTitleText AttachTo="CardListTitleIcon" OffsetX="20" OffsetY="2" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="HandScreenSlotDialog_Title" AlwaysUpperCase="true" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<SupplyTitleIcon X="100" Y="100" Graphic="GUI\\Widgets\\title_rect_mem" Justification="Left" VerticalJustification="Center"/>
+		<SupplyTitleLine AttachTo="SupplyTitleIcon" OffsetY="24" Graphic="GUI\\Widgets\\title_underline_mem" Justification="Left" VerticalJustification="Center"/>
+		<SupplyTitleText AttachTo="SupplyTitleIcon" OffsetX="19" OffsetY="2" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="HandScreen_SupplyTitle" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+		
+		<!--
+		<LeftArrow OffsetX="-146" OffsetY="0" Scale="1.0" Graphic="GUI\\Card_Buy_Scroll_Up" Angle="90" Justification="Center" VerticalJustification="Center"/>
+		<RightArrow OffsetX="146" OffsetY="0" Scale="1.0" Graphic="GUI\\Card_Buy_Scroll_Up" Angle="270" Justification="Center" VerticalJustification="Center"/>
+		-->
+		
+		<!-- Weapon Slots -->
+
+		<!-- Slot A-->
+
+		<AButtonSlotBack X="550" Y="300" Graphic="GUI\\Slot_Icon_Back_Large" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<AButtonWeaponImage AttachTo="AButtonSlotBack" Scale="0.75" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" OffsetY="0" OffsetX="1"/>
+		<AButtonSlot AttachTo="AButtonSlotBack" OffsetY="-13"
+					 Graphic="GUI\\Slot_Icon_Front_Cross_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_1_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_1_Large"
+					 Scale="1.0" Justification="Center" VerticalJustification="Center" Width="150" Height="250" AreaOffsetY="50"/>
+		<AButtonHotkey AttachTo="AButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-66" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" Scale="0.85"/>
+
+		<AButtonUpgradesBack AttachTo="AButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<AButtonUpgradeOneConnector AttachTo="AButtonUpgradesBack" OffsetX="-30" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Left" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<AButtonUpgradeOneIcon AttachTo="AButtonUpgradesBack" OffsetX="-52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<AButtonUpgradeTwoConnector AttachTo="AButtonUpgradesBack" OffsetX="32" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Right" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<AButtonUpgradeTwoIcon AttachTo="AButtonUpgradesBack" OffsetX="52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<AButtonUpgradesFront AttachTo="AButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		
+		<!-- Slot B -->
+
+		<BButtonSlotBack X="800" Y="300" Graphic="GUI\\Slot_Icon_Back_Large" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<BButtonWeaponImage AttachTo="BButtonSlotBack" Scale="0.75" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" OffsetY="0" OffsetX="1"/>
+		<BButtonSlot AttachTo="BButtonSlotBack" OffsetY="-13"
+					 Graphic="GUI\\Slot_Icon_Front_Circle_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_2_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_2_Large"
+					 Justification="Center" VerticalJustification="Center" Width="150" Height="250" AreaOffsetY="50"/>
+		<BButtonHotkey AttachTo="BButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-66" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" Scale="0.85"/>
+
+		<BButtonUpgradesBack AttachTo="BButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<BButtonUpgradeOneConnector AttachTo="BButtonUpgradesBack" OffsetX="-30" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Left" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<BButtonUpgradeOneIcon AttachTo="BButtonUpgradesBack" OffsetX="-52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<BButtonUpgradeTwoConnector AttachTo="BButtonUpgradesBack" OffsetX="32" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Right" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<BButtonUpgradeTwoIcon AttachTo="BButtonUpgradesBack" OffsetX="52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<BButtonUpgradesFront AttachTo="BButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		
+		<!-- Slot X -->
+
+		<XButtonSlotBack X="1050" Y="300" Graphic="GUI\\Slot_Icon_Back_Large" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<XButtonWeaponImage AttachTo="XButtonSlotBack" Scale="0.75" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" OffsetY="0" OffsetX="1"/>
+		<XButtonSlot AttachTo="XButtonSlotBack" OffsetY="-13"
+					 Graphic="GUI\\Slot_Icon_Front_Square_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_3_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_3_Large"
+					 Scale="1.0" Justification="Center" VerticalJustification="Center" Width="150" Height="250" AreaOffsetY="50"/>
+		<XButtonHotkey AttachTo="XButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-66" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" Scale="0.85"/>
+		
+		<XButtonUpgradesBack AttachTo="XButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<XButtonUpgradeOneConnector AttachTo="XButtonUpgradesBack" OffsetX="-30" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Left" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<XButtonUpgradeOneIcon AttachTo="XButtonUpgradesBack" OffsetX="-52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<XButtonUpgradeTwoConnector AttachTo="XButtonUpgradesBack" OffsetX="32" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Right" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<XButtonUpgradeTwoIcon AttachTo="XButtonUpgradesBack" OffsetX="52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<XButtonUpgradesFront AttachTo="XButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		
+		<!-- Slot Y -->
+
+		<YButtonSlotBack X="1300" Y="300" Graphic="GUI\\Slot_Icon_Back_Large" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<YButtonWeaponImage AttachTo="YButtonSlotBack" Scale="0.75" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" OffsetY="0" OffsetX="1"/>
+		<YButtonSlot AttachTo="YButtonSlotBack" OffsetY="-13"
+					 Graphic="GUI\\Slot_Icon_Front_Triangle_Large" AlternateGraphic="GUI\\Slot_Icon_Front_Key_4_Large" TertiaryGraphic="GUI\\Slot_Icon_Front_Joystick_4_Large"
+					 Scale="1.0" Justification="Center" VerticalJustification="Center" Width="150" Height="250" AreaOffsetY="50"/>
+		<YButtonHotkey AttachTo="YButtonSlot" Font="UbuntuMonoBold32" OffsetX="0" OffsetY="-66" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" Scale="0.85"/>
+
+		<YButtonUpgradesBack AttachTo="YButtonSlotBack" OffsetY="124" Graphic="GUI\\Slot_Upgrades_Back" Justification="Center" VerticalJustification="Center"/>
+		<YButtonUpgradeOneConnector AttachTo="YButtonUpgradesBack" OffsetX="-30" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Left" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<YButtonUpgradeOneIcon AttachTo="YButtonUpgradesBack" OffsetX="-52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<YButtonUpgradeTwoConnector AttachTo="YButtonUpgradesBack" OffsetX="32" OffsetY="-40" Graphic="GUI\\Slot_Upgrades_Connector_Glow_Right" Justification="Center" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<YButtonUpgradeTwoIcon AttachTo="YButtonUpgradesBack" OffsetX="52" OffsetY="8" AlternateGraphic="GUI\\Slot_Upgrades_Lock" Scale="0.31" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"/>
+		<YButtonUpgradesFront AttachTo="YButtonUpgradesBack" OffsetY="8" Graphic="GUI\\Slot_Upgrades_Front" Justification="Center" VerticalJustification="Center"/>
+		
+		<!-- Passives -->
+
+		<LeftPassivesBack AttachTo="AButtonSlotBack" OffsetX="-200" Graphic="GUI\\Slot_Passives_Back" Justification="Center" VerticalJustification="Center"/>
+		<RightPassivesBack AttachTo="YButtonSlotBack" OffsetX="200" Graphic="GUI\\Slot_Passives_Back" Justification="Center" VerticalJustification="Center"/>
+
+		<PassiveOneIcon AttachTo="LeftPassivesBack" OffsetY="-65" AlternateGraphic="GUI\\Slot_Passives_Lock" Scale="0.44" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" Width="220" Height="220"/>
+		<PassiveTwoIcon AttachTo="LeftPassivesBack" OffsetY="65" AlternateGraphic="GUI\\Slot_Passives_Lock" Scale="0.44" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" Width="220" Height="220"/>
+		<PassiveThreeIcon AttachTo="RightPassivesBack" OffsetY="-65" AlternateGraphic="GUI\\Slot_Passives_Lock" Scale="0.44" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" Width="220" Height="220"/>
+		<PassiveFourIcon AttachTo="RightPassivesBack" OffsetY="65" AlternateGraphic="GUI\\Slot_Passives_Lock" Scale="0.44" Justification="Center" VerticalJustification="Center" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" Width="220" Height="220"/>
+
+		<LeftPassivesFront AttachTo="LeftPassivesBack" Graphic="GUI\\Slot_Passives_Front" Justification="Center" VerticalJustification="Center"/>
+		<RightPassivesFront AttachTo="RightPassivesBack" Graphic="GUI\\Slot_Passives_Front" Justification="Center" VerticalJustification="Center"/>
+		
+		<!-- Other -->
+
+		<SlotUpperHighlight AttachTo="AButtonWeaponImage" OffsetX="0" OffsetY="-100" Graphic="GUI\\Widgets\\slot_upper_highlight" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+
+		<SelectionReticleTL AttachTo="AButtonWeaponImage" OffsetX="-110" OffsetY="-150" Graphic="GUI\\Widgets\\Selection_Reticle_TL" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+		<SelectionReticleTM AttachTo="AButtonWeaponImage" OffsetX="0" OffsetY="-150" Graphic="GUI\\Widgets\\Selection_Reticle_TM" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+		<SelectionReticleTR AttachTo="AButtonWeaponImage" OffsetX="110" OffsetY="-150" Graphic="GUI\\Widgets\\Selection_Reticle_TR" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+
+		<SelectionReticleML AttachTo="AButtonWeaponImage" OffsetX="-110" OffsetY="40" Graphic="GUI\\Widgets\\Selection_Reticle_ML" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+		<SelectionReticleMR AttachTo="AButtonWeaponImage" OffsetX="110" OffsetY="0" Graphic="GUI\\Widgets\\Selection_Reticle_MR" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+
+		<SelectionReticleBL AttachTo="AButtonWeaponImage" OffsetX="-110" OffsetY="150" Graphic="GUI\\Widgets\\Selection_Reticle_BL" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+		<SelectionReticleBM AttachTo="AButtonWeaponImage" OffsetX="0" OffsetY="150" Graphic="GUI\\Widgets\\Selection_Reticle_BM" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+		<SelectionReticleBR AttachTo="AButtonWeaponImage" OffsetX="110" OffsetY="150" Graphic="GUI\\Widgets\\Selection_Reticle_BR" Justification="Center" VerticalJustification="Center" MoveSpeed="99999" FadeOpacity="0.0"/>
+
+		<NewSlotHighlight Graphic="ActivePowerHighlightFlash" Scale="1.0" Justification="Center" VerticalJustification="Center" FadeSpeed="16.0" FadeOpacity="0.0"
+						  HelpTextId="HandScreenSlotDialog_NewUpgradeSlotUnlocked" AlternateHelpTextId="HandScreenSlotDialog_NewPassiveSlotUnlocked"/>
+
+		<MouseOverPreviewHighlight AlternateGraphic="ActivePowerHighlightHUD_MouseOver"/>
+
+		<SlotFx AlternateGraphic="HandScreenSlotInstalled" TertiaryGraphic="HandScreenSlotRemoved"/>
+
+		<!--
+		<SelectedSlotGlow OffsetY="-75" Graphic="GUI\\Slot_Connecting_Line_Active_Glow" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<SelectedSlotUpgradeGlow OffsetX="13" Graphic="GUI\\Slot_Plugin_Pip_Selected" FadeSpeed="999" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<SlotUpgradeAnim Graphic="SlotUpgrade" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		-->
+
+		<!-- Description Panel -->
+
+		<DescriptionTitleIcon X="270" Y="530" Graphic="GUI\\Widgets\\title_rect_details" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleLine AttachTo="DescriptionTitleIcon" OffsetY="10" Graphic="GUI\\Widgets\\title_underline" Justification="Left" VerticalJustification="Center"/>
+		<DescriptionTitleText AttachTo="DescriptionTitleIcon" OffsetX="20" Justification="Left" VerticalJustification="Center" AlwaysUpperCase="true"
+					HelpTextId="EnemyUpgradeScreen_DescriptionPanelTitle" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+							  />
+
+		<SelectionName AttachTo="DescriptionTitleIcon" OffsetX="20" OffsetY="64" Justification="Left" VerticalJustification="Center"
+					TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"
+				   NonEnglishScaleModifier="0.78"/>
+		<SelectionType AttachTo="DescriptionTitleIcon" OffsetX="20" OffsetY="93" Justification="Left" VerticalJustification="Center"
+					AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold18" Scale="0.8"
+					NonEnglishScaleModifier="0.8"
+					   />
+		<SelectionImageBack AttachTo="SelectionName" OffsetX="120" OffsetY="220" Scale="0.8" Graphic="GUI\\HUD\\Card_Back" Justification="Center" VerticalJustification="Center"/>
+		<SelectionImage AttachTo="SelectionImageBack" Scale="0.6" Justification="Center" VerticalJustification="Center"/>
+		<SelectionImageFront AttachTo="SelectionImageBack" Scale="0.8" Graphic="GUI\\HUD\\Card_Front" Justification="Center" VerticalJustification="Center"/>
+		<SelectionImageCost AttachTo="SelectionImageBack" OffsetX="-85" OffsetY="-37" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<SelectionDescription AttachTo="DescriptionTitleIcon" OffsetX="10" OffsetY="106" Width="320" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.69" TextGreen="1.0" TextBlue="0.92" Font="RalewaySemiBold22" Scale="0.66"
+					NonEnglishScaleModifier="0.9"/>
+
+		<ActiveDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="354" OffsetY="68" Justification="Left" VerticalJustification="Center"
+					AlwaysUpperCase="true" Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"
+					FlashRed="0.69" FlashGreen="1.0" FlashBlue="0.72"/>
+		<ActiveDescription AttachTo="ActiveDescriptionTitle" OffsetX="-25" OffsetY="13" Width="500" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66" FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0"
+					FlashRed="0.69" FlashGreen="1.0" FlashBlue="0.72"
+					DynamicLineScaleWidth="360"
+		/>
+		<ActiveIcon AttachTo="ActiveDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_active" AlternateGraphic="GUI\\Icons\\Iconographic\\icon_slot_passive"/>
+		
+		<UpgradeOneDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="742" OffsetY="68" Justification="Left" VerticalJustification="Center"
+					HelpTextId="HandScreenSlotDialog_AvailableUpgradeSlot" AlternateHelpTextId="HandScreenSlotDialog_LockedUpgradeSlot"
+					AlwaysUpperCase="true" Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0"
+					FlashRed="0.5" FlashGreen="1" FlashBlue="0.8"
+					NonEnglishScaleModifier="0.82"
+									/>
+		<UpgradeOneDescription AttachTo="UpgradeOneDescriptionTitle" OffsetX="-25" OffsetY="13" Width="500" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66" FlashMin="0.4" FlashMax="0.7" FlashSpeed="2.0"
+					FlashRed="0.5" FlashGreen="1" FlashBlue="0.8"
+					DynamicLineScaleWidth="360"
+					/>
+		<UpgradeOneIcon AttachTo="UpgradeOneDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_upgrade"/>
+		
+		<UpgradeTwoDescriptionTitle AttachTo="DescriptionTitleIcon" OffsetX="1134" OffsetY="68" Justification="Left" VerticalJustification="Center"
+					HelpTextId="HandScreenSlotDialog_AvailableUpgradeSlot" AlternateHelpTextId="HandScreenSlotDialog_LockedUpgradeSlot"
+					AlwaysUpperCase="true" Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" FlashMin="0.7" FlashMax="1.0" FlashSpeed="2.0"
+					FlashRed="0.5" FlashGreen="1" FlashBlue="0.8"
+					NonEnglishScaleModifier="0.82"
+					/>
+		<UpgradeTwoDescription AttachTo="UpgradeTwoDescriptionTitle" OffsetX="-25" OffsetY="13" Width="500" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66" FlashMin="0.4" FlashMax="0.7" FlashSpeed="2.0"
+					FlashRed="0.5" FlashGreen="1" FlashBlue="0.8"
+					DynamicLineScaleWidth="360"
+					/>
+		<UpgradeTwoIcon AttachTo="UpgradeTwoDescriptionTitle" OffsetX="-20" Graphic="GUI\\Icons\\Iconographic\\icon_slot_upgrade"/>
+		
+		<DescriptionPanel AttachTo="DescriptionTitleIcon" OffsetX="-107" OffsetY="-54" Graphic="GUI\\Backgrounds\\panel_details_slot" Justification="Left" VerticalJustification="Top"/>
+
+		<CannotEquipTitleIcon AttachTo="ActiveDescriptionTitle" OffsetX="-25" OffsetY="150" Graphic="GUI\\Widgets\\title_slot_cannot_equip_label" Justification="Left" VerticalJustification="Center" FadeOpacity="0.0"/>
+		<CannotEquipTitleText AttachTo="CannotEquipTitleIcon" OffsetX="14" OffsetY="-2" Justification="Left" VerticalJustification="Center" FadeOpacity="0.0" FlashMin="0.5" FlashMax="0.9" FlashSpeed="2.0"
+					FlashRed="1.0" FlashGreen="0.5" FlashBlue="0.0"
+					AlwaysUpperCase="true" Font="RalewayRegular32" Scale="0.54" TextRed="0.5" TextGreen="0.5" TextBlue="0.5"
+					HelpTextId="HandScreenSlotDialog_CannotEquip_SlotFull"/>
+		<CannotEquipDescription AttachTo="CannotEquipTitleIcon" OffsetX="0" OffsetY="20" Width="500" Height="140" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66" FlashMin="0.5" FlashMax="0.9" FlashSpeed="2.0"
+					FlashRed="1.0" FlashGreen="0.1" FlashBlue="0.1"/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.65"/>
+		<InfoPanel X="960" Y="540" Justification="Center" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="700" Font="RalewayRegular32"/>
+		<InfoInstructionText
+			X="960" Y="640" Justification="Center" VerticalJustification="Center"
+			Font="RalewaySemiBold22"
+			HelpTextId="InfoInstructionText"
+			TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+
+		<!-- Controls -->
+
+		<ConfirmButton
+			AttachTo="DescriptionPanel" OffsetX="159" OffsetY="460"
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="HandScreenSlot_PlacePower" DisabledPressSound="/SFX/Menu Sounds/CannotInstall"
+			Scale="0.25" ScaleSpeed="4.0" Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			MouseOffsetX="120"
+			NonEnglishFont="RalewaySemiBold32"
+			NonEnglishScaleModifier="0.67"
+			/>
+
+		<CancelButton
+			AttachTo="ConfirmButton" OffsetX="1240"
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="HandScreenSlot_Exit"
+			Scale="0.25" ScaleSpeed="4.0" Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left" PressSound="/SFX/Menu Sounds/MenuBackOut"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" FlashRed="0.69" FlashGreen="1.0" FlashBlue="0.72"
+			NonEnglishFont="RalewaySemiBold32"
+			NonEnglishScaleModifier="0.85"
+			/>
+
+		<XButton
+			AttachTo="ConfirmButton" OffsetX="300"
+			Graphic="GUI\\PS4Controller\\ps4ControllerSquare" HelpTextId="HandScreenSlotDialog_DiscardSlot" AlternateHelpTextId="HandScreenSlotDialog_DiscardSlot_Limiter" MouseAlternateHelpTextId="HandScreenSlotDialog_DiscardSlotShort_Limiter"
+			Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			PressSound="/SFX/Menu Sounds/FunctionUninstalled"
+			ActionSound="/SFX/Menu Sounds/PowerFallOut2"
+			Scale="0.25"
+			MouseOffsetX="120"
+			NonEnglishFont="RalewaySemiBold32"
+			NonEnglishScaleModifier="0.85"
+			/>
+		
+		<YButton Scale="0.0"/>
+
+	</HandScreenSlotDialog>
+	
+</Screens>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MiscSettingsScreens>
+
+	<MiscSettingsScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="/SFX/Menu Sounds/InfoPanelLeave"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		UseSelectionSoundWithMouse="false"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="WarningBackgroundLoop" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackgroundTop X="960" Y="430" Graphic="ShellBackgroundMainIntroQuick" Justification="Center" VerticalJustification="Center"/>
+
+		<TitleText
+			X="960" Y="150" Justification="Center" VerticalJustification="Center"
+			HelpTextId="SettingsScreen_General" Font="JuliusSansOne48Titling"
+			OutlineThickness="0"
+			Scale="0.75"
+			AlwaysUpperCase="true"
+			NonEnglishScaleModifier="0.8"
+			TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+		
+		<!-- Sliders -->
+
+		<BrightnessSlider
+			X="1065" Y="284" HelpTextId="MiscSettingsScreen_Brightness" Font="RalewayMedium26" Justification="CENTER" Width="300" Height="40"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0" TextOffsetX="-170" HighlightOffsetX="-160"
+			BackGraphic="GUI\\Shell\\settings_bar_bg" FillGraphic="GUI\\Shell\\settings_bar_fill" ContainerGraphic="GUI\\Shell\\settings_bar_bg" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			AlwaysUpperCase="true"
+			TextJustification="Right"
+			OffsetX="60"
+			TextScale="0.75"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.05" FadeDelayMax="0.1" FadeSpeed="10.0"
+			/>
+
+		<BrightnessBox AttachTo="BrightnessSlider" OffsetX="400" Justification="Center" VerticalJustification="Center" Width="100" Height="133"/>
+		<BrightnessBoxImage AttachTo="BrightnessBox" Justification="Center" VerticalJustification="Center" Graphic="GUI\\Shell\\brightness_box" Scale="0"/>
+		
+		<MusicSlider
+			AttachTo="BrightnessSlider" OffsetY="80" HelpTextId="MiscSettingsScreen_MusicVolume" Font="RalewayMedium26" Justification="CENTER" Width="300" Height="40"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0" TextOffsetX="-170" HighlightOffsetX="-160"
+			BackGraphic="GUI\\Shell\\settings_bar_bg" FillGraphic="GUI\\Shell\\settings_bar_fill" ContainerGraphic="GUI\\Shell\\settings_bar_bg" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			AlwaysUpperCase="true"
+			TextJustification="Right"
+			TextScale="0.75"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.1" FadeSpeed="10.0"
+			ActionSound="UI/TurnMoveMENU"
+			/>
+		
+		<SfxSlider
+			AttachTo="MusicSlider" OffsetY="80" HelpTextId="MiscSettingsScreen_SfxVolume" Font="RalewayMedium26" Justification="CENTER" Width="300" Height="40"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0" TextOffsetX="-170" HighlightOffsetX="-160"
+			BackGraphic="GUI\\Shell\\settings_bar_bg" FillGraphic="GUI\\Shell\\settings_bar_fill" ContainerGraphic="GUI\\Shell\\settings_bar_bg" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			AlwaysUpperCase="true"
+			TextJustification="Right"
+			TextScale="0.75"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.05" FadeSpeed="10.0"
+			ActionSound="/SFX/Menu Sounds/MenuBackOut"
+			/>
+		
+		<DialogueSlider
+			AttachTo="SfxSlider" OffsetY="80" HelpTextId="MiscSettingsScreen_DialogueVolume" Font="RalewayMedium26" Justification="CENTER" Width="300" Height="40"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0" TextOffsetX="-170" HighlightOffsetX="-160"
+			BackGraphic="GUI\\Shell\\settings_bar_bg" FillGraphic="GUI\\Shell\\settings_bar_fill" ContainerGraphic="GUI\\Shell\\settings_bar_bg" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			AlwaysUpperCase="true"
+			TextJustification="Right"
+			TextScale="0.75"
+			ActionSound="/VO/Rooftops_100"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.05" FadeDelayMax="0.1" FadeSpeed="10.0"
+			/>
+		
+		<!-- Toggles -->
+
+		<SubtitlesLabel
+			AttachTo="DialogueSlider" OffsetY="80" OffsetX="-170" Justification="Right" VerticalJustification="Center"
+			HelpTextId="MiscSettingsScreen_SubtitlesLabel" Font="RalewayMedium26"
+			Scale="0.75" TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.1" FadeDelayMax="0.15" FadeSpeed="10.0"
+			/>
+
+		<SubtitlesButton
+			AttachTo="SubtitlesLabel" OffsetX="56" Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\Shell\\settings_toggle_on" AlternateGraphic="GUI\\Shell\\settings_toggle_off" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			Width="500" Height="34"
+			HelpTextId="On" AlternateHelpTextId="Off" Font="RalewayMedium26"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" TextOffsetX="64" HighlightOffsetX="-44"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.15" FadeDelayMax="0.2" FadeSpeed="10.0"
+			PressSound="/SFX/Menu Sounds/MenuDenied"
+			/>
+
+		<VibrationLabel
+			AttachTo="SubtitlesLabel" OffsetY="80" Justification="Right" VerticalJustification="Center"
+			HelpTextId="MiscSettingsScreen_VibrationLabel" Font="RalewayMedium26"
+			Scale="0.75" TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.2" FadeDelayMax="0.25" FadeSpeed="10.0"
+			/>
+
+		<VibrationButton
+			AttachTo="VibrationLabel" OffsetX="56" Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\Shell\\settings_toggle_on" AlternateGraphic="GUI\\Shell\\settings_toggle_off" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			Width="500" Height="34"
+			HelpTextId="On" AlternateHelpTextId="Off" Font="RalewayMedium26"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" TextOffsetX="64" HighlightOffsetX="-44"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.25" FadeDelayMax="0.3" FadeSpeed="10.0"
+			PressSound="/SFX/Menu Sounds/MenuDenied"
+			/>
+
+		<GamepadAudioLabel
+			AttachTo="VibrationLabel" OffsetY="80" Justification="Right" VerticalJustification="Center"
+			HelpTextId="MiscSettingsScreen_GamepadAudioLabel" Font="RalewayMedium26"
+			Scale="0.75" TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.35" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.76"
+			/>
+
+		<GamepadAudioButton
+			AttachTo="GamepadAudioLabel" OffsetX="56" Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\Shell\\settings_toggle_on" AlternateGraphic="GUI\\Shell\\settings_toggle_off" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			Width="500" Height="34"
+			HelpTextId="On" AlternateHelpTextId="Off" Font="RalewayMedium26"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" TextOffsetX="64" HighlightOffsetX="-44"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.35" FadeDelayMax="0.4" FadeSpeed="10.0"
+			PressSound="/SFX/Menu Sounds/MenuDenied"
+			/>
+
+		<FullScreenLabel
+			AttachTo="VibrationLabel" OffsetY="80" Justification="Right" VerticalJustification="Center"
+			HelpTextId="Fullscreen" Font="RalewayMedium26"
+			Scale="0.75" TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.35" FadeSpeed="10.0"
+					/>
+
+		<FullScreenButton
+			AttachTo="FullScreenLabel" OffsetX="56" Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\Shell\\settings_toggle_on" AlternateGraphic="GUI\\Shell\\settings_toggle_off" SelectedGraphic="GUI\\Shell\\selection_reticle_settings"
+			Width="500" Height="34"
+			HelpTextId="On" AlternateHelpTextId="Off" Font="RalewayMedium26"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48" TextOffsetX="64" HighlightOffsetX="-44"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			SelectedTextScale="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.35" FadeDelayMax="0.4" FadeSpeed="10.0"
+			PressSound="/SFX/Menu Sounds/MenuDenied"
+			/>
+
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.4"/>
+		<InfoPanel X="960" Y="540" Justification="Left" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="830"/>
+
+		<!-- Controls -->
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId=""
+			PressSound="/SFX/Menu Sounds/PowerSelecting"
+			Scale="0.0" MouseScale="0.0" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="320" Y="920"
+			AlwaysUpperCase="true"
+			/>
+
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="HandScreen_Exit"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="1170" Y="940"
+			AlwaysUpperCase="true"
+			MouseOffsetX="-30"
+			MouseOffsetY="20"
+			/>
+
+		<XButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerSquare" HelpTextId="MiscSettingsScreen_RestoreDefaults"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			PressSound="/SFX/Menu Sounds/PowerSelecting"
+			X="680" Y="940"
+			AlwaysUpperCase="true"
+			MouseOffsetX="106"
+			MouseOffsetY="20"
+			/>
+
+		<YButton Scale="0.0"/>
+
+	</MiscSettingsScreen>
+	
+</MiscSettingsScreens>

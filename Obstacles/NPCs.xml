@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Id="1_BaseNpc"
+		DisplayInEditor="false"
+		>
+		<Thing
+			Grip="999999"
+			>
+		</Thing>
+		<Life
+			Invulnerable="true"
+			Material="NONE">
+		</Life>
+		<Interact
+			Distance="100"
+			ConversationAvailableFx="ConversationAlertIndicator">
+		</Interact>
+	</Obstacle>
+
+	<!-- Characters -->
+
+	<Obstacle
+		Name="AsherDead01"
+		InheritFrom="1_BaseNpc"
+		>
+		<Thing
+		  Scale="1.0"
+		  Graphic="Characters\\asher_dead_01"
+		  NeverObscuresPlayer="true"
+		  >
+		</Thing>
+		<Life
+		  Health="100"
+		  DeathFx="null"
+		  DeathSound="SFX/Enemy Sounds/EnemyDeathLarge"
+		  Material="INVINCIBLE"
+			>
+		</Life>
+		<Interact
+			Distance="125"
+			UserFaceTarget="true"
+			ConversationAvailableFx="ConversationAlertIndicator">
+		</Interact>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BoxerDead"
+		InheritFrom="1_BaseNpc"
+		>
+		<Thing
+		  Scale="1.0"
+		  Graphic="BoxerIdle"
+		  OffsetY="-71"
+		  NeverObscuresPlayer="true"
+		  OverheadOffset="95">
+			<Point X="-153" Y="-45"/>
+			<Point X="-84" Y="47"/>
+			<Point X="39" Y="62"/>
+			<Point X="136" Y="-7"/>
+			<Point X="-61" Y="-103"/>
+		</Thing>
+		<Life
+		  Health="100"
+		  DeathFx="null"
+		  DeathGraphic="BoxerDeath"
+		  DeathSound="SFX/Enemy Sounds/EnemyDeathLarge"
+		  Material="INVINCIBLE"
+			>
+		</Life>
+		<Interact
+			Distance="125"
+			UserFaceTarget="false"
+			ConversationAvailableFx="ConversationAlertIndicator">
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="BoxerJacket"
+		InheritFrom="BoxerDead"
+		>
+		<Thing
+		  Graphic="Characters\\boxer_dead_jacket"
+		  NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="GrantDead01"
+		InheritFrom="1_BaseNpc"
+		>
+		<Thing
+		  Scale="1.0"
+		  Graphic="Characters\\grant_dead_01"
+		  NeverObscuresPlayer="true"
+		  >
+		</Thing>
+		<Life
+		  Health="100"
+		  DeathFx="null"
+		  DeathSound="SFX/Enemy Sounds/EnemyDeathLarge"
+		  Material="INVINCIBLE"
+			>
+		</Life>
+		<Interact
+			Distance="125"
+			UserFaceTarget="true"
+			ConversationAvailableFx="ConversationAlertIndicator">
+		</Interact>
+	</Obstacle>
+
+  <Obstacle
+    Name="SybilDead01"
+    InheritFrom="1_BaseInvulnerableObstacle"
+		CanPenetrateIfInvulnerable="true"
+		>
+    <Thing
+		Graphic="Characters\\sybil_dead_01"
+		OffsetY="-28"
+		OverheadOffset="105"
+		SpeechCapable="true"
+		SpeechMetering="true"
+		SpeechMeteringChannelName="Berserker"
+		Material="VirusUnit"
+		NeverObscuresPlayer="true">
+      <Point X="-94" Y="22"/>
+      <Point X="-44" Y="57"/>
+      <Point X="42" Y="39"/>
+      <Point X="73" Y="-6"/>
+      <Point X="48" Y="-45"/>
+      <Point X="-22" Y="-65"/>
+      <Point X="-86" Y="-20"/>
+	</Thing>
+    <ColorMask>
+		<Color Red="1" Green="0.0" Blue="0.0" Opacity="0.85"/>
+		<Emissive Red="1" Green ="1" Blue ="1" Opacity="1"/>
+    </ColorMask>
+    <Metering>
+		<Entry Field="ColorMaskEmissiveRatio" MeteringChannel="Berserker" MeterMin="0.00" MeterMax="1.0" AddMin="0.0" AddMax="0.25" PulsePeriod="3.6" PulseIntensity="0.1" PulseIsMin="true" />
+		<Entry Field="ColorMaskRatio" MeteringChannel="Berserker" MeterMin="0.00" MeterMax="1.0" AddMin="0.0" AddMax="0.5"  PulsePeriod="3.6" PulseIntensity="0.4" PulseIsMin="true" />
+    </Metering>
+	<Life
+		Material="INVINCIBLE">
+    </Life>
+    <Interact
+			Distance="200"
+			UserFaceTarget="true"
+			UserFx="null"
+			DestroyOnUse="false"
+			UseableInPlanning="false"
+		></Interact>
+  </Obstacle>
+	  
+	<Obstacle
+		Name="BoxerStabbed"
+		InheritFrom="BoxerDead"
+		>
+		<Thing
+			Graphic="Characters\\boxer_dead_stabbed_02A"
+			OverheadOffset="75"
+			SpeechCapable="true"
+			SpeechMetering="true"
+			SpeechMeteringChannelName="Boxer">
+    </Thing>
+    <ColorMask>
+		<Color Red="0.29" Green="1.0" Blue="0.71" Opacity="0.85"/>
+		<Emissive Red="1.0" Green ="1.0" Blue ="1.0" Opacity="0.0"/>
+    </ColorMask>
+    <Metering>
+		<Entry Field="ColorMaskEmissiveRatio" MeteringChannel="Boxer" MeterMin="0.00" MeterMax="1.0" AddMin="0.0" AddMax="0.5" PulsePeriod="3.6" PulseIntensity="0.4" PulseIsMin="true" />
+		<Entry Field="ColorMaskRatio" MeteringChannel="Boxer" MeterMin="0.00" MeterMax="1.0" AddMin="0.0" AddMax="1.0"  PulsePeriod="3.6" PulseIntensity="0.4" PulseIsMin="true" />
+    </Metering>
+  </Obstacle>
+
+	<Obstacle
+		Name="BoxerPuddleDecal"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Characters\\boxer_dead_blood"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BoxerJacketDecal"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Characters\\jacket_ground"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BoxerDressDecal"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Characters\\muse_tornDress"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Trace01"
+		InheritFrom="1_BaseNpc"
+		>
+		<Thing
+		  Scale="0.5"
+		  Graphic="TraceIdle"
+		  Material="Emissive"
+		  NeverObscuresPlayer="false"
+		  OffsetY="-49"
+		  VisibleInPlanning="true">
+			<Point X="-56" Y="162"/>
+			<Point X="33" Y="206"/>
+			<Point X="120" Y="153"/>
+			<Point X="29" Y="100"/>
+		</Thing>
+		<Life
+		  Health="100"
+		  Material="INVINCIBLE"
+			>
+		</Life>
+		<Interact
+			Distance="200"
+			UserFaceTarget="true">
+		</Interact>
+	</Obstacle>
+
+
+</Obstacles>

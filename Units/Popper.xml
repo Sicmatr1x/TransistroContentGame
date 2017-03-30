@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Popper / "Prom Queen"-->
+
+	<Npc
+        Name="Popper"
+        InheritFrom="1_BaseAttacker"
+		ClearWeapons="true"
+		ClearAI="true"
+		RotationSpeed="1400"
+		Speed="400.0"
+		Acceleration="1200"
+		Deceleration="800"
+		StopOnDime="false"
+        VisionRange="950"
+		ScoreValue="0"
+		CollisionWeapon="PopperOnTouched"
+		OnDeathWeapon="MegaEggLauncher"
+		FootprintFx="null"
+		SquadName="SHOOTERS"	
+		CollideWithUnits="true"
+		AlertFriendsOnDeathDistance="1200"
+		DormantOnDeath="true"
+		RemoveOnIdleAfterDormant="true"
+		WobbleDistance="20"
+		WobbleSpeed="35"
+		OnHitWeapon="PopperBlink"
+		OnHitWeaponFaceSource="true"
+		OnHitWeaponHealthFraction="1.0"
+		OnHitWeaponTotalDamage="14"
+		FacedByTargetWeapon="null"
+		ImmuneToStun="false"
+		StunBreakModifier="2.0"
+		KillSpawnsOnDeathInterval="0.2"
+		EnemyStatName="Popper"
+		>
+		<Life
+			Health="250"
+			HitSound="SFX/Enemy Sounds/Popper/PopperOnHit"
+			HitGraphic="PopperGlitch"
+			Material="METAL"
+			DeathGraphic="PopperDeath"
+			ImpactGraphicOffset="65"
+			Decal="Decals\\Health_Circle_Medium"
+			DeathSound="SFX/Enemy Sounds/Popper/PopperDeathAlt2"
+			ClearLoot="true"
+			ArmorCoverage="240"
+			Vulnerability="1.5">
+		</Life>
+		<Thing
+			Graphic="PopperAsleep"
+			ActivateGraphic="PopperPhaseIn"
+			OnTouchdownFxAnim="null"
+			AmbientSound="/SFX/Enemy Sounds/Demolisher/DemolisherAmbience"
+			TouchdownSound="null"
+			ClearGeometry="true"
+			AttachedFxScale="0.8"
+			OverheadOffset="215"
+			Grip="5.0"
+			Scale="1.0"
+			OffsetZ="135"
+            SelectionWidth="195"
+			SelectionHeight="255"
+            SelectionShiftY="-10">
+			<Point X="0" Y="16"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-16"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+		<TargetAI
+			TargetAcquiredSound="SFX/Enemy Sounds/Popper/PopperTargetSighted"
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="PopperAwake"
+			TargetLostDisable="0.3"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			TargetLostGraphic="PopperAsleep"
+			MaxDistance="2000"
+			RequiredNearbyFriends="0"
+			FindHealerHealthFraction="0.9">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="0.9"
+			RandomTurnIntervalMax="2.9"
+			SpeedFraction="0.33"
+			TetherDistance="250"
+			RetreatFromDistance="200"
+			RetreatToDistance="300"
+			RetreatDuration="1.5"
+			StopToAttack="true"
+			MaxChasers="99"
+			FootprintSpawnInterval="0.5"
+			FootprintBlockDistance="85">
+			<RetreatFromUnit Name="_PlayerUnit"/>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			LeadTarget="false"
+			RequiresLoS="false"
+			RequiresHeadOnCamera="true"
+			CanAttackWhileMoving="true"
+			CanAttackWhileRetreating="true"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true">
+		</AttackAI>
+		<Weapon Name="PopperBeam"/>
+
+		<Upgrade Name="PopperLevel2">
+			<Rank>
+				<Change HelpTextId="PopperLevel2"/>
+				<Change ValueChangeType="ABSOLUTE" Health="500"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PopperLevel3">
+			<Rank>
+				<Change HelpTextId="PopperLevel3"/>
+				<Change ValueChangeType="ABSOLUTE" Health="750"/>
+				<Change ValueChangeType="REPLACE_IF_NULL" ContinuousWeapon="PopperEggLay"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PopperLevel4">
+			<Rank>
+				<Change HelpTextId="PopperLevel4"/>
+				<Change ValueChangeType="ADD" Health="250"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+	<Npc
+        Name="PopperIllusion"
+        InheritFrom="Popper"
+		OnHitWeapon="null"
+		OnDeathWeapon="null"
+		ClearWeapons="true"
+		DormantOnDeath="false"
+		RagDollOnDeath="false"
+		PhaseInTimeMin="0.2"
+		PhaseInTimeMax="0.2"
+		PhaseInGraphic="PopperIllusionPhaseIn"
+		SpawnFacingPlayer="true"
+		KillSpawnsOnDeathInterval="0.0"
+		ClearUpgrades="true"
+		EnemyStatName=""
+		>
+		<Life
+			Health="1"
+			DeathFx="PopperIllusionDeath"
+			DeathGraphic="null"
+			DeathSound="/SFX/Enemy Sounds/EnemyDeathSmall"
+			>
+		</Life>
+		<Thing
+			ActivateGraphic="null">
+			<Color Red="0.0" Green="0.0" Blue="0.0" Opacity="0.55"/>
+		</Thing>
+		<Weapon Name="PopperIllusionBeam"/>
+
+		<Upgrade Name="PopperLevel2">
+			<Rank>
+				<Change HelpTextId="PopperIllusionLevel2"/>
+				<Change ValueChangeType="ABSOLUTE" MaxChasers="2"/>
+				<Change ValueChangeType="REPLACE_IF_NULL" ContinuousWeapon="PopperBlinkRandom"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PopperLevel3">
+			<Rank>
+				<Change HelpTextId="PopperIllusionLevel3"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+
+<Npc
+        Name="PopperProp"
+        InheritFrom="Popper"
+		ClearWeapons="true"
+		ClearAI="true"
+		Speed="900.0"
+        VisionRange="950"
+		SquadName="PROPSHOOTERS"
+		CollideWithUnits="true"
+		ContinuousWeapon="PropperPropEggLay"
+		>
+		<TargetAI
+			TargetAcquiredSound="SFX/Enemy Sounds/Popper/PopperTargetSighted"
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="PopperAwake"
+			TargetLostDisable="0.5"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			TargetLostGraphic="PopperAsleep"
+			MaxDistance="2000"
+			RequiredNearbyFriends="0"
+			FindHealerHealthFraction="0.9">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="5.9"
+			RandomTurnIntervalMax="7.9"
+			SpeedFraction="1.0"
+			TetherDistance="375"
+			RetreatFromDistance="200"
+			RetreatToDistance="300"
+			StopToAttack="true"
+			MaxChasers="10"
+			FootprintSpawnInterval="0.5"
+			FootprintBlockDistance="85">
+			<RetreatFromUnit Name="_PlayerUnit"/>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			LeadTarget="false"
+			RequiresLoS="false"
+			CanAttackWhileMoving="true"
+			CanAttackWhileRetreating="true"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true">
+		</AttackAI>
+		<Weapon Name="PopperBeam"/>
+
+		<Upgrade Name="PopperLevel2">
+			<Rank>
+				<Change HelpTextId="PopperLevel2"/>
+				<Change ValueChangeType="ABSOLUTE" Health="500"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PopperLevel3">
+			<Rank>
+				<Change HelpTextId="PopperLevel3"/>
+				<Change ValueChangeType="ABSOLUTE" Health="750"/>
+				<Change ValueChangeType="REPLACE_IF_NULL" ContinuousWeapon="PopperEggLay"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PopperLevel4">
+			<Rank>
+				<Change HelpTextId="PopperLevel4"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+</Npcs>

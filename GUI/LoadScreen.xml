@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LoadScreens>
+
+	<LoadScreen
+		Platform="default"
+		ShowCursor="false"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<Background X="960" Y="540" Graphic="Launch\\load_bg2" Justification="Center" VerticalJustification="Center"/>
+		<AnimatedBackground  X="960" Y="540"  Graphic="LoadSpinner" Justification="Center" VerticalJustification="Center"/>
+		<ProgressBar X="960" Y="1000" Justification="Center" VerticalJustification="Center" Width="600" Height="10"
+			 Red="0" Green="1" Blue="0.75" Alpha="0.25"/>
+
+	</LoadScreen>
+	
+</LoadScreens>

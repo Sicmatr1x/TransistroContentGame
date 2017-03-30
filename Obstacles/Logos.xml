@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TerrainTiles>
+
+	<Obstacle
+		Name="Auden_CutLogo_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="GUI\\logo_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutLogoAnimated_01"
+		InheritFrom="1_BaseVulnerablePassableObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false">
+		<Thing
+			Graphic="LogoAnimation"
+			NeverObscuresPlayer="true"
+			VisibleInPlanning="true"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CloudbankMascot_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="GUI\\logo_ovc_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CamerataSymbol_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="GUI\\logo_camerata_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_RestaurantSymbol_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="GUI\\logo_junctionJans_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CloudbankSymbol_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Launch\\map_character"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CountrySymbol_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+			<Thing
+				Graphic="GUI\\logo_countrySide_01"
+				Material="Unlit">
+			</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_FashionWeekSymbol_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\logo_fashionweek_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+</TerrainTiles>

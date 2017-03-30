@@ -1,0 +1,5929 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+
+	<!-- Auden FX -->
+
+	
+	<Animation
+		Name="VirusCritCubeSpawner" Type="CONSTANT" FilePath="Particles\\particle_circle_04"
+		Opacity="0.0"
+		Duration="0.1"
+		VisualFx="VirusCritCubes" VisualFxIntervalMin="0.005" VisualFxIntervalMax="0.005"
+		AttachToOwner="true"
+		UseAttachedAngle="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCritCubes" Type="BOOK" FilePath="Fx\\VirusCube\\VirusCube"
+		DurationFrames="60"
+		NumFrames="30"
+		Loop="true"
+		AngleOffsetMin="-10"
+		AngleOffsetMax="10"
+		RandomRotation="true"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		DefaultScale="0.33"
+		VelocityMin="500"
+		VelocityMax="1200"
+		UpwardVelocityMin="500"
+		UpwardVelocityMax="1100"
+		Gravity="6000"
+		DieOnTouchdown="true"
+		ChainTo="VirusCritSplatterRandom"
+	>
+	</Animation>
+
+
+	<Animation
+		Name="VirusCritSplatterRandom" Type="RANDOM"
+		>
+		<Random Name="VirusCritSplatterA"/>
+		<Random Name="VirusCritSplatterB"/>
+		<Random Name="VirusCritSplatterC"/>
+		<Random Name="VirusCritSplatterD"/>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterA" Type="SLIDE" FilePath="Fx\\VirusSplatterA\\VirusSplatterA"
+		NumFrames="8"
+		RandomFlipHorizontal="true"
+		DrawAsDecal="true"
+		DefaultScale="1.0"
+		RandomScaleMin="0.4"
+		RandomScaleMax="1.0"
+		Sound="SFX/Enemy Sounds/VirusBlood"
+		Material="Unlit"
+		>
+	    <Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide RandomDurationFramesMin="150"  RandomDurationFramesMax="210"/>
+	    <Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>		
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterB" Type="SLIDE" FilePath="Fx\\VirusSplatterB\\VirusSplatterB"
+		NumFrames="8"
+		RandomFlipHorizontal="true"
+		DrawAsDecal="true"
+		RandomScaleMin="0.4"
+		RandomScaleMax="1.0"
+		DefaultScale="1.0"
+		Sound="SFX/Enemy Sounds/VirusBlood"
+		Material="Unlit"
+		>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide RandomDurationFramesMin="150"  RandomDurationFramesMax="210"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterC" Type="SLIDE" FilePath="Fx\\VirusSplatterC\\VirusSplatterC"
+		NumFrames="8"
+		RandomFlipHorizontal="true"
+		DrawAsDecal="true"
+		DefaultScale="1.0"
+		RandomScaleMin="0.4"
+		RandomScaleMax="1.0"
+		Sound="SFX/Enemy Sounds/VirusBlood"
+		Material="Unlit"
+		>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide RandomDurationFramesMin="150"  RandomDurationFramesMax="210"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterD" Type="SLIDE" FilePath="Fx\\VirusSplatterD\\VirusSplatterD"
+		NumFrames="8"
+		RandomFlipHorizontal="true"
+		DrawAsDecal="true"
+		DefaultScale="1.0"
+		RandomScaleMin="0.4"
+		RandomScaleMax="1.0"
+		Sound="SFX/Enemy Sounds/VirusBlood"
+		Material="Unlit"
+		>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide RandomDurationFramesMin="150"  RandomDurationFramesMax="210"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterRandomB" Type="RANDOM"
+		>
+		<Random Name="VirusCritSplatterA2"/>
+		<Random Name="VirusCritSplatterB2"/>
+		<Random Name="VirusCritSplatterC2"/>
+		<Random Name="VirusCritSplatterD2"/>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterA2" InheritFrom="VirusCritSplatterA" OffsetX="-20"  OffsetY="130"
+		Type="BOOK" NumFrames="8" HoldLastFrame="true" PlaySpeed="30" RandomDurationMin="6" RandomDurationMax="8"
+		StartOpacity="1" EndOpacity="0" HoldStartColorFraction="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterB2" InheritFrom="VirusCritSplatterB" OffsetX="-20"  OffsetY="130"
+		Type="BOOK" NumFrames="8" HoldLastFrame="true" PlaySpeed="30" RandomDurationMin="6" RandomDurationMax="8"
+		StartOpacity="1" EndOpacity="0" HoldStartColorFraction="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterC2" InheritFrom="VirusCritSplatterC" OffsetX="-20" OffsetY="130"
+		Type="BOOK" NumFrames="8" HoldLastFrame="true" PlaySpeed="30" RandomDurationMin="6" RandomDurationMax="8"
+		StartOpacity="1" EndOpacity="0" HoldStartColorFraction="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCritSplatterD2" InheritFrom="VirusCritSplatterD" OffsetX="-20" OffsetY="130"
+		Type="BOOK" NumFrames="8" HoldLastFrame="true" PlaySpeed="30" RandomDurationMin="6" RandomDurationMax="8"
+		StartOpacity="1" EndOpacity="0" HoldStartColorFraction="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCritRings" Type="BOOK" FilePath="Fx\\VirusCritRings\\VirusCritRings"
+		Material="Unlit"
+		DefaultScale="1.5"
+		DurationFrames="18"
+		NumFrames="9"
+		RandomRotation="false"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		Loop="false"
+		ChildAnimation="VirusCritFlareDirectional"
+		DieWithOwner="false"
+		AttachToOwner="true"
+		UseAttachedAngle="false"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusCritFlareDirectional" Type="BOOK" FilePath="Fx\\VirusCritFlareDirectional\\VirusCritFlareDirectional"
+		Material="Unlit"
+		DurationFrames="10"
+		NumFrames="5"
+		Rotate="true"
+		AngleOffsetMin="-0.1"
+		AngleOffsetMax="0.1"
+		Loop="false"
+		DefaultScale="1.5"
+		ChildAnimation="VirusCritFlareHuge"
+		Duration="0.25"
+		StartScaleY="1.0"
+		EndScaleY="0.25"
+		DieWithOwner="false"
+		UseAttachedAngle="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusCritFlareHuge" Type="CONSTANT" FilePath="Particles\\particle_flare_orange_huge"
+		Material="Unlit"
+		Duration="0.1"
+		StartScale="2.0"
+		EndScale="0.5"
+		StartOpacity="1.0"
+		EndOpacity="0.1"
+		RandomFlipHorizontal="true"
+		DieWithOwner="false"
+		UseAttachedAngle="false"
+		ChildAnimation="VirusCritCubeSpawner"
+		VisualFx="VirusCritParticles" VisualFxIntervalMin="0.001" VisualFxIntervalMax="0.002"
+		>
+	</Animation>
+	
+	<Animation
+		Name="VirusCritParticles" Type="CONSTANT" FilePath="Particles\\particle_square_plain"
+		Material="Emissive"
+		RandomDurationMin="0.25" RandomDurationMax="0.5"
+		RandomAngle="false" Rotate="true"
+		AngleOffsetMin="-10"
+		AngleOffsetMax="10"
+		Velocity="1000"	Acceleration="-5000"
+		VelocityMin="300"
+		VelocityMax="2500"
+		Gravity="1000"
+		StartScaleX="1.0" EndScaleX="0.03"
+		StartScaleY="0.1" EndScaleY="0.03"
+		RandomScaleMin="0.5" RandomScaleMax="1.0"
+		StartOpacity="1.0"
+		EndOpacity="0.0"
+		StartRed="1" EndRed="1"
+		StartGreen="1" EndGreen="0.5"
+		StartBlue="1" EndBlue="0"
+	/>
+
+	<Animation
+		Name="PlayerOnHitLonger" Type="CONSTANT" FilePath="blank_invisible"
+		Duration="1.5"
+		RandomOffsetX="8" RandomOffsetY="8"
+		ChildAnimation="ShowdownTransistorShock"
+		AttachToOwner="true"
+		Loop="false"
+		OffsetY="-100"
+		VisualFx="PlayerOnHitShowdown" VisualFxIntervalMin="0.3" VisualFxIntervalMax="0.3"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerOnHitShowDown" Type="BOOK" FilePath="Fx\\PlayerHit\PlayerHit"
+		Material="Emissive"
+		DrawAsDecal="false"
+		DurationFrames="40"
+		NumFrames="20"
+		DefaultScale="1.0"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomRotation="true"
+		RandomFlipHorizontal="true"
+		ChildAnimation="null"
+		AttachToOwner="true"
+		OffsetZ="60"
+		OffsetFromParentZ="false"
+		VisualFx="ShowdownTransistorShock" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.3" VisualFxCap="5">
+	</Animation>
+
+	<Animation
+		Name="ShowdownTransistorShock" Type="RANDOM"
+		>
+		<Random Name="TransistorShockA"></Random>
+		<Random Name="TransistorShockB"></Random>
+		<Random Name="TransistorShockC"></Random>
+	</Animation>
+
+	<Animation
+		Name="TransistorShockA" Type="BOOK" FilePath="Fx\\TransistorShockA\\TransistorShockA"
+		NumFrames="10"
+		RandomDurationMin="0.07" RandomDurationMax="0.30"
+		Material="Unlit"
+		RandomAngle="true" Rotate="true"
+		RandomScaleMin="0.25"
+		RandomScaleMax="1.05"
+		RandomOffsetY="40"
+		OffsetZ="60"
+		OffsetFromParentZ="false"
+		RandomOffsetX="8"
+		OpacityMin="0.8" OpacityMax="1.0"
+		ChildAnimation="TransistorShockLight"
+		VisualFx="TransistorShockParticles" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.02" VisualFxCap="2"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorShockParticles" Type="CONSTANT" FilePath="Particles\\particle_line_01"
+		Material="Unlit"
+		VelocityMin="600" VelocityMax="1800"
+		Acceleration="-2600"
+		RandomDurationMin="0.1"
+		RandomDurationMax="0.4"
+		StartScaleX="3" EndScaleX="0"
+		StartScaleY="0.5" EndScaleY="0"
+		Rotate="true"
+		RandomAngle="true"
+		OpacityMin="0.2"
+		OpacityMax="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorShockLight" FilePath="blank_invisible" Type="CONSTANT"
+		Red="0.2"
+		StartOpacity="0.3" EndOpacity="0" Duration="0.15"
+		Light="Lights\\DiffuseSpotlight"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorShockB" InheritFrom="TransistorShockA"
+		FilePath="Fx\\TransistorShockB\\TransistorShockB"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorShockC" InheritFrom="TransistorShockA"
+		FilePath="Fx\\TransistorShockC\\TransistorShockC"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerOnHit" Type="BOOK" FilePath="Fx\\PlayerHit\PlayerHit"
+		Material="Emissive"
+		DrawAsDecal="false"
+		DurationFrames="40"
+		NumFrames="20"
+		DefaultScale="1.0"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomRotation="true"
+		RandomFlipHorizontal="true"
+		ChildAnimation="null"
+		AttachToOwner="true"
+		OffsetY="30"
+		VisualFx="PlayerHitParticles" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.05" VisualFxCap="5">
+	</Animation>
+
+	<Animation
+		Name="PlayerLifeLostSparks" InheritFrom="PlayerOnHit"
+		DurationFrames="21"
+		Opacity="0"
+		VisualFx="PlayerHitParticlesB" VisualFxCap="9999">
+	</Animation>
+	
+	<Animation
+		Name="VirusOnHit" Type="BOOK" FilePath="Fx\\VirusHit\VirusHit"
+		Material="Emissive"
+		DrawAsDecal="false"
+		DurationFrames="40"
+		NumFrames="40"
+		DefaultScale="1.0"
+		RandomOffsetX="15" RandomOffsetY="25"
+		RandomRotation="true"
+		RandomFlipHorizontal="true"
+		AttachToOwner="true"
+		ChildAnimation="VirusOnHitFlare">
+	</Animation>
+
+  <Animation
+		Name="VirusOnHitFlare" Type="CONSTANT" FilePath="Particles\\particle_red_flare"
+		Material="Unlit"
+		Duration="0.2"
+		StartScale="2.0"
+		OffsetY="90"
+		EndScale="0.0"
+		RandomFlipHorizontal="true"
+		AttachToOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="VirusOnHitRandom" Type="BOOK" FilePath="Fx\\VirusHit\\VirusHit"
+		Material="Emissive"
+		DrawAsDecal="false"
+		DurationFrames="40"
+		NumFrames="40"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.5" RandomScaleMax="0.8"
+		RandomOffsetX="55" RandomOffsetY="55"
+		RandomRotation="true"
+		RandomFlipHorizontal="true"
+		AttachToOwner="true">
+	</Animation>
+
+	<Animation
+		Name="VirusOnHitLarge" Type="BOOK" FilePath="Fx\\VirusHit\\VirusHit"
+		Material="Emissive"
+		DrawAsDecal="false"
+		DurationFrames="90"
+		NumFrames="40"
+		DefaultScale="1.3"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomRotation="true"
+		RandomFlipHorizontal="true">
+	</Animation>
+	
+	<Animation
+		Name="DebuffBack" Type="BOOK" FilePath="Fx\\debuff\\back\\DebuffBack"
+		Material="Emissive"
+		NumFrames="40" PlaySpeed="30" Loop="true"
+		DefaultScale="1.0"
+		OffsetY="-20"
+		PauseInPlanning="true"
+		ChainTo="DebuffDissipateBack">
+	</Animation>
+
+	<Animation
+		Name="DebuffFront" Type="BOOK" FilePath="Fx\\debuff\\front\\DebuffFront"
+		Material="Emissive"
+		NumFrames="40" PlaySpeed="30" Loop="true"
+		DefaultScale="1.0"
+		OffsetY="-20"
+		PauseInPlanning="true"
+		ChildAnimation="DebuffStartFlare"
+		ChainTo="DebuffDissipateFront">
+	</Animation>
+
+	<Animation
+		Name="DebuffDissipateBack" Type="BOOK" FilePath="Fx\\DebuffDissipateBack\\DebuffDissipateBack"
+		Material="Emissive"
+		NumFrames="12" PlaySpeed="30"
+		DefaultScale="1.0"
+		OffsetY="-20">
+	</Animation>
+
+	<Animation
+		Name="DebuffDissipateFront" Type="BOOK" FilePath="Fx\\DebuffDissipateFront\\DebuffDissipateFront"
+		Material="Emissive"
+		NumFrames="12" PlaySpeed="30"
+		DefaultScale="1.0"
+		OffsetY="-20">
+	</Animation>
+	
+	<Animation
+		Name="DebuffStartFlare" Type="CONSTANT" FilePath="Particles\\particle_gold_flare_column"
+		Material="Unlit"
+		Duration="0.2"
+		DefaultScale="1.2"
+		OffsetY="-120"
+		StartScaleX="1.0"
+		EndScaleX="0.25"
+		EndScaleY="1.1">
+	</Animation>
+
+	<Animation
+		Name="WaterRipple" Type="BOOK" FilePath="Fx\\WaterRipple\\WaterRipple"
+		Material="Emissive"
+		DrawAsDecal="true"
+		NumFrames="60"
+		DefaultScale="1.0"
+		RandomDurationMin="2.0" RandomDurationMax="3.0"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="WaterWaves" Type="BOOK" FilePath="Fx\\WaterWaves\\WaterWaves"
+		Material="Emissive"
+		DrawAsDecal="true"
+		NumFrames="40"
+		DefaultScale="1.0"
+		RandomDurationMin="2.0" RandomDurationMax="3.0"
+		RandomStartFrame="true"
+		ReRandomizeOnLoop="false"
+		Loop="true"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CausticRefraction" Type="BOOK" FilePath="Fx\\CausticRefraction\\CausticRefraction"
+		Material="Emissive"
+		DrawAsDecal="true"
+		NumFrames="40"
+		DefaultScale="1.0"
+		RandomDurationMin="1.0" RandomDurationMax="2.5"
+		Rotate="true"
+		ChildAnimation="null"
+		OnlyWhenVisible="true"
+		RandomStartFrame="true"
+		ReRandomizeOnLoop="false"
+		Loop="true"
+		>
+	</Animation>
+	
+	<!-- Auden Prototype -->
+
+	<Animation
+		  Name="WaterSpray" Type="BOOK" FilePath="Fx\\BurstA\BurstA"
+		  NumFrames="19" RandomOffsetX="5" RandomOffsetY="5"
+		  StartOffsetX="0" EndOffsetX="-300"
+		  RandomAngle="true" RandomFlipHorizontal="true"
+		  StartScale="0.75" EndScale="1.0"
+		  ChildAnimation="WaterSpray2">
+	</Animation>
+
+	<Animation
+		  Name="WaterSpray2" InheritFrom="WaterSpray"
+		  StartOffsetX="100" EndOffsetX="0"
+		  StartScale="0.5" EndScale="0.75"
+		  ChildAnimation="WaterSpray3">
+	</Animation>
+
+	<Animation
+		  Name="WaterSpray3" InheritFrom="WaterSpray2"
+		  StartOffsetX="200" EndOffsetX="100"
+		  ChildAnimation="WaterSpray4">
+	</Animation>
+
+	<Animation
+		  Name="WaterSpray4" InheritFrom="WaterSpray2"
+		  StartOffsetX="300" EndOffsetX="200"
+		  ChildAnimation="WaterSpray5">
+	</Animation>
+
+	<Animation
+		  Name="WaterSpray5" InheritFrom="WaterSpray2"
+		  StartOffsetX="400" EndOffsetX="300"
+		  OffsetY="-30"
+		  DefaultScale="0.75"
+		  ChildAnimation="WaterSpray6">
+	</Animation>
+	
+	<Animation
+		  Name="WaterSpray6" InheritFrom="WaterSpray2"
+		  StartScale="0.75" EndScale="1.0"
+		  StartOffsetX="415" EndOffsetX="115"
+		  OffsetY="-40"
+		  ChildAnimation="null">
+	</Animation>
+
+	<Animation
+		  Name="WaterSplash" InheritFrom="WaterSpray2"
+		  StartScale="0.75" EndScale="2.0"
+		  Duration="0.66"
+		  OffsetX="200" OffsetY="60"
+		  ChildAnimation="null">
+	</Animation>
+
+	<Animation
+		Name="ClampWallCollision" Type="BOOK" FilePath="Fx\\BurstSquareA\BurstSquareA"
+		DrawAsDecal="false"
+		NumFrames="28" DurationFrames="28"
+		DefaultScale="0.5"
+		Red="0" Green="0" Blue="0">
+	</Animation>
+
+	<Animation
+		  Name="HerderSpawnerFireFX" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		  NumFrames="60" DurationFrames="60" Opacity="0.65" RandomFlipHorizontal="true" OffsetZ="0"
+		  RandomScaleMin="1.0" RandomScaleMax="1.2"
+		  Red="1.0" Green="0.0" Blue="0.0" RandomAngle="true" Rotate="true"/>
+
+	<Animation
+		Name="Epicenter" Type="BOOK" FilePath="Fx\\GroundBlastB\\GroundBlastB"
+		DrawAsDecal="true"
+		NumFrames="60" DurationFrames="30"
+		DefaultScale="1.0"
+		ScaleRadius="155"
+		Red="0.62" Green="0.31" Blue="0.5"
+		ChildAnimation="LassoLandDust"
+		>
+	</Animation>
+
+	<Animation
+		Name="SteamJetSpawner" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_waterdroplet_01"
+		Opacity="0.0"
+		VisualFx="SteamJetParticle" VisualFxIntervalMin="0.02" VisualFxIntervalMax="0.03" KeepVisualFxAttached="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="SteamJetParticle" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_waterdroplet_01"
+		Velocity="600"
+		RandomScaleMin="0.4" RandomScaleMax="0.6"
+		RandomAngleMin="75" RandomAngleMax="105"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true" StartColorFraction="0.1" EndColorFraction="0.7"
+		RandomDurationMin="0.4" RandomDurationMax="0.5" TransferChildren="true"
+		>
+	</Animation>
+
+  <Animation
+		Name="CastChargeFx" Type="SLIDE" FilePath="Fx\\Charge_Up\\Charge_up" DrawAsDecal="true"
+		OffsetY="-0"
+		DefaultScale="1.0" StartOpacity="1.0" EndOpacity="0.0"
+		VisualFx="null" VisualFxIntervalMin="0.0167" VisualFxIntervalMax="0.0167"
+		>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1" PlayBackwards="false" NumDirectionSets="99999"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0" PlayBackwards="true" NumDirectionSets="99999"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+
+  </Animation>
+
+	<Animation
+		Name="CloudkillCloud_PhaseIn" Type="CONSTANT" FilePath="Animations\\Stinkweed\\stinkweed_aoe"
+		Rotate="false"
+		Duration="2.0" StartGreen="0.1" EndGreen="1.0"
+		StartScale="0.1" EndScale="3.8"
+		StartOpacity="0.0" EndOpacity="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="CloudkillCloud" Type="CONSTANT" FilePath="Animations\\Stinkweed\\stinkweed_aoe"
+		Rotate="false" ScaleRadius="80" OffsetY="-20"
+		Duration="5.0"
+		ShakeSpeed="10" ShakeDistance="5" ShakeVertical="true" HoldLastFrame="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CloudkillCloud_Death" Type="CONSTANT" FilePath="Animations\\Stinkweed\\stinkweed_aoe"
+		Rotate="false" ScaleRadius="80"
+		Duration="1.0" StartScale="1.0" EndScale="0.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="ChargeUp" Type="BOOK" FilePath="Fx\\CircleA\CircleA"
+		NumFrames="25" RandomFlipHorizontal="false"
+		StartScale="1.0" EndScale="0.5" PlayBackwards="true"
+		StartOpacity="0.1" EndOpacity="1.0" DrawAsDecal="true"
+		Red="1.0" Green="1" Blue="1"
+		ChildAnimation="null">
+	</Animation>
+
+	<Animation
+		Name="ChargeUpEnemy" Type="BOOK" FilePath="Fx\\CircleA\CircleA"
+		NumFrames="25" Duration="1.5" RandomFlipHorizontal="false"
+		StartScale="1.0" EndScale="0.5" PlayBackwards="true"
+		StartOpacity="0.1" EndOpacity="1.0" DrawAsDecal="true"
+		Red="1.0" Green="0.0" Blue="1.0" OffsetZ="-40"
+		ChildAnimation="null">
+	</Animation>
+
+	<Animation
+		Name="ChargeUpEnemyFast" Type="BOOK" FilePath="Fx\\CircleA\CircleA"
+		NumFrames="25" Duration="0.3" RandomFlipHorizontal="false"
+		StartScale="1.0" EndScale="0.5" PlayBackwards="true"
+		StartOpacity="0.1" EndOpacity="1.0" DrawAsDecal="true"
+		Red="1.0" Green="0.0" Blue="1.0" OffsetZ="-50"
+		ChildAnimation="null">
+	</Animation>
+	
+	<Animation
+		Name="PlayerFireCrater" Type="CONSTANT" FilePath="Decals\\Crater_01"
+		DrawAsDecal="true"
+		Duration="0.5"
+		DefaultScale="0.65" VisualFx="null"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="FireRing" Type="BOOK" FilePath="Fx\\CircleA\CircleA"
+		NumFrames="25" Duration="0.5" RandomFlipHorizontal="false"
+		StartScale="0.5" EndScale="1.0" DrawAsDecal="true"
+		StartOpacity="0.1" EndOpacity="0.3"
+		Red="1.0" Green="1" Blue="1"
+		ChildAnimation="null">
+	</Animation>
+
+	<Animation
+		Name="TransistorStrike" Type="CONSTANT" FilePath="Particles\\particle_sword_01"
+		OffsetY="-200" DefaultScale="1.5"
+		StartOffsetY="262" EndOffsetY="0"
+		StartOpacity="0.0" EndOpacity="0.7"
+		DefaultAngle="270"
+		SourceRectangleHeight="1032" SourceRectangleHeightEnd="2000"
+		Duration="0.1" OffsetX="-20"
+		VisualFx="Virus_ParticleHigh" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.05"
+		ChainTo="TransistorStrikeHold"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorStrikeHold" Type="CONSTANT" FilePath="Particles\\particle_sword_01"
+		OffsetY="-200" DefaultScale="1.5" StartOpacity="0.7" EndOpacity="0.8"
+		DefaultAngle="270" 
+		Duration="0.5" OffsetX="-20"
+		ShakeSpeed="200" ShakeDistance="1.0"
+		VisualFx="Virus_ParticleHigh" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.05"
+		ChildAnimation="Transistor_ExpandingCircle"
+		ChainTo="TransistorStrikeFinish"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorStrikeFinish" Type="CONSTANT" FilePath="Particles\\particle_sword_01"
+		OffsetY="-200" DefaultScale="1.5" StartOpacity="0.8" EndOpacity="0.0"
+		StartOffsetY="0" EndOffsetY="130" OffsetX="-20"
+		DefaultAngle="270"
+		SourceRectangleHeight="1032" SourceRectangleHeightEnd="3000"
+		Duration="0.2"
+		OwnerUntargetable="true"
+		VisualFx="Virus_ParticleHigh" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.05"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorCharge" Type="BOOK" FilePath="Fx\\BurstSquareB\BurstSquareB"
+		DrawAsDecal="true" PlayBackwards="true"
+		NumFrames="28" DurationFrames="40"
+		DefaultScale="1.5" OffsetY="50"
+		PingPong="false"
+		Red="1" Green="1" Blue="1"
+		VisualFx="Virus_ParticleDrop" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.1"
+		ChildAnimation="TransistorCharge_RetractingCircle">
+	</Animation>
+
+	<Animation
+		Name="TransistorCharge_RetractingCircle" Type="BOOK" FilePath="Fx\\CircleA\CircleA"
+		DrawAsDecal="true" PlayBackwards="true"
+		NumFrames="25" DurationFrames="30" RandomFlipHorizontal="false"
+		StartScale="1" EndScale="2.0" OffsetY="50"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Red="0.0" Green="1" Blue="1"
+		ChildAnimation="Transistor_BurstSquare">
+	</Animation>
+
+	<Animation
+		Name="Transistor_BurstSquare" Type="BOOK" FilePath="Fx\\BurstSquareA\BurstSquareA"
+		DrawAsDecal="true" PlayBackwards="true" StartOpacity="1.0" EndOpacity="0.0"
+		NumFrames="28" DurationFrames="30"
+		DefaultScale="2.0"
+		PingPong="false"
+		Red="1" Green="0" Blue="0">
+	</Animation>
+
+	<Animation
+		Name="Transistor_ExpandingCircle" Type="BOOK" FilePath="Fx\\CircleA\CircleA"
+		DrawAsDecal="true" OffsetX="-10"
+		NumFrames="25" DurationFrames="30" RandomFlipHorizontal="false"
+		StartScale="1" EndScale="2.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Red="0.0" Green="1" Blue="1">
+	</Animation>
+
+	<!-- Temp Design FX-->
+
+	<Animation
+		Name="ShatterBeam" Type="BOOK" FilePath="Fx\\SuppressorBeam\\SuppressorBeam"
+		UseAttachedLocation="false"
+		ScaleX="1.0"
+		ScaleRadius="160"
+		StartScale="10"
+		EndScale="10"
+		Material="Emissive"
+		Rotate="true"
+		NumFrames="30"
+		PlaySpeed="60"
+		RandomStartFrame="false"
+		Loop="true"
+		VisualFx="ShatterBeamParticles" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.1"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShatterBeamParticles" Type="CONSTANT" FilePath="Particles\\particle_square_02"
+		Material="Emissive"
+		RandomAngle="true"
+		VelocityMin="50"
+		VelocityMax="100"
+		Acceleration="-50"
+		StartScale="10.1"
+		EndScale="0.0"
+		RandomDurationMin="0.25"
+		RandomDurationMax="1.5"
+		AngleChangeSpeedMin="-250"
+		AngleChangeSpeedMax="250"
+		AngleChangeAcceleration="-70"
+		OpacityMin="0.1"
+		OpacityMax="0.5"
+		>
+	</Animation>
+
+	<!-- Auden Motorcycle Prototype -->
+  	
+  <Animation
+    Name="SpeedLines1" Type="SLIDE" FilePath="Fx\\SpeedLinesA\\SpeedLinesA" DrawAsDecal="true"
+    RandomOffsetX="4" RandomOffsetY="4" Loop="true" PlayBackwards="true"
+    Red="1.0" Green="1.0" Blue="1.0" StartOpacity="0.7" EndOpacity="0.0"
+    NumFrames="34" DefaultScale="1.0">
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+  </Animation>
+
+  <Animation
+  Name="MotoDust1" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsDecal="true"
+  RandomOffsetX="4" RandomOffsetY="4"
+  Red="0.0" Green="0.0" Blue="0.0"
+  Loop="true" OffsetX="-10" OffsetY="-40"
+  NumFrames="20" DefaultScale="0.85"
+  ChildAnimation="MotoDust2">
+
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+  <Slide DurationFrames="2"/>
+
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+  <Slide DurationFrames="0"/>
+
+</Animation>
+	
+  <Animation
+  Name="MotoDust2" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsDecal="true"
+  Red="0.0" Green="0.0" Blue="0.0"
+  RandomOffsetX="4" RandomOffsetY="4"
+  OffsetX="-38" OffsetY="-40" Loop="true"
+  NumFrames="30" DefaultScale="0.75">
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+  </Animation>
+
+	<Animation
+		Name="MotoDust3" InheritFrom="MotoDust1"
+		OffsetX="0" Mirror="true"
+		ChildAnimation="MotoDust4">
+	</Animation>
+
+	<Animation
+		Name="MotoDust4" InheritFrom="MotoDust2"
+		OffsetX="33" Mirror="true">
+	</Animation>
+
+	<Animation
+	  Name="MotoDustBig" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsDecal="true"
+	  RandomOffsetX="4" RandomOffsetY="4"
+	  Opacity="0.75"
+	  Red="0.5" Green="0.15" Blue="0.0"
+	  OffsetX="-55" OffsetY="50" NumFrames="30" DefaultScale="1.0">
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+	</Animation>
+
+	<Animation
+	  Name="MotoDustBig02" InheritFrom="MotoDustBig"
+	  OffsetX="0" OffsetY="60">
+	</Animation>
+
+
+	<Animation
+		Name="CycleExhaustTrail" Type="BOOK" FilePath="Fx\\CycleExhaust\\CycleExhaust"
+		StartOffsetX="0"
+		EndOffsetX="-285"
+		OffsetY="38"
+		NumFrames="45"
+		PlaySpeed="30"
+		Duration="0.1"
+		Material="Emissive"
+		RandomStartFrame="true"
+		TransferFrame="true"
+		StartScaleY="0.5"
+		StartScaleX="0"
+		EndScaleX="1"
+		EndScaleY="1"
+		ScaleX="2"
+		ChainTo="CycleExhaustTrailLoop"
+		Loop="false"
+		LoopFramesOnly="true"
+		RandomFlipVertical="true"
+		ChildAnimation="CycleExhaustGlow"
+		TransferChildren="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CycleExhaustTrailReverse" InheritFrom="CycleExhaustTrail"
+		StartOffsetX="0"
+		EndOffsetX="305"
+		OffsetY="38"
+		ChainTo="CycleExhaustTrailLoopReverse"
+		>
+	</Animation>
+	
+	<Animation
+		Name="CycleExhaustTrailLoop" Type="BOOK" FilePath="Fx\\CycleExhaust\\CycleExhaust"
+		ScaleX="2"
+		OffsetX="-285" OffsetY="38"
+		NumFrames="45"
+		DurationFrames="90"
+		Material="Emissive"
+		TransferFrame="true"
+		Loop="true"
+		VisualFx="CycleExhaustTrailParticles" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.2"
+		RandomFlipVertical="true"
+		ChildAnimation="CycleExhaustGlowLoop"
+		TransferChildren="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CycleExhaustTrailLoopReverse" InheritFrom="CycleExhaustTrailLoop"
+		OffsetX="305" OffsetY="38"
+		VisualFx="CycleExhaustTrailParticlesReverse" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.2"
+		ChildAnimation="CycleExhaustGlowLoop"
+		>
+	</Animation>
+
+	<Animation
+		Name="CycleExhaustTrailEnd" Type="BOOK" FilePath="Fx\\CycleExhaust\\CycleExhaust"
+		ScaleX="2"
+		OffsetX="-285" OffsetY="38"
+		NumFrames="45"
+		PlaySpeed="30"
+		Duration="0.2"
+		Material="Emissive"
+		TransferFrame="true"
+		StartScaleY="1"
+		EndScaleY="0.6"
+		StartOpacity="1"
+		EndOpacity="0"
+		StartGreen="1"
+		EndGreen="0.3"
+		StartBlue="1"
+		EndBlue="0"
+		Loop="false"
+		LoopFramesOnly="true"
+		TransferChildren="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CycleExhaustTrailEndReverse" InheritFrom="CycleExhaustTrailEnd"
+		OffsetX="305" OffsetY="38"
+		>
+	</Animation>
+
+	<Animation
+		Name="CycleExhaustGlow" Type="CONSTANT" FilePath="Fx\\CycleExhaust\\Flare_warm_02"
+		Duration="0.1"
+		StartScale="3"
+		EndScale="2"
+		StartOpacity="1"
+		EndOpacity="1"
+		Mirror="true"
+		Material="Emissive"		
+		>
+	</Animation>
+	
+	<Animation
+		Name="CycleExhaustGlowLoop" Type="CONSTANT" FilePath="Fx\\CycleExhaust\\Flare_warm_02"
+		Duration="0.8"
+		StartScale="2.0"
+		EndScale="1"
+		StartOpacity="0.5"
+		EndOpacity="0.25"
+		Loop="true"
+		Mirror="true"
+		PingPongScale="true"
+		PingPongColor="true"
+		Material="Emissive"
+		OffsetX="50"
+		OffsetY="200"
+		>
+	</Animation>
+
+	<Animation
+		Name="CycleExhaustTrailParticles" Type="CONSTANT" FilePath="Particles\\particle_circle_04"
+		OffsetX="35" OffsetY="38"
+		RandomDurationMin="0.6"
+		RandomDurationMax="1.2"
+		Material="Emissive"
+		Loop="false"
+		Mirror="true"
+		VelocityMin="500"
+		VelocityMax="800"
+		Acceleration="-200"
+		RandomAngle="true"
+		RandomAngleMin="179"
+		RandomAngleMax="181"
+		RandomScaleMin="0.25"
+		RandomScaleMax="0.6"
+		StartScale="1.0"
+		EndScale="0.25"
+		ScaleX="3"
+		ScaleY="1"
+		StartGreen="1"
+		EndGreen="0.4"
+		StartBlue="1"
+		EndBlue="0"
+		RandomOffsetY="10"
+		>
+	</Animation>
+
+	<Animation
+		Name="CycleExhaustTrailParticlesReverse" InheritFrom="CycleExhaustTrailParticles"
+		OffsetX="35" OffsetY="38"
+		VelocityMin="500"
+		VelocityMax="800"
+		Acceleration="-200"
+		>
+	</Animation>
+	
+	<!-- New Mike C Effects -->
+
+  <Animation
+		Name="DustC" Type="BOOK" FilePath="Fx\\DustC\\DustC"
+		NumFrames="30"
+		DefaultScale="1.0" RandomOffsetX="30" RandomOffsetY="30"/>
+
+  <Animation
+		Name="DustC_Decal" Type="BOOK" FilePath="Fx\\DustC\\DustC" DrawAsDecal="true"
+		NumFrames="30"
+		DefaultScale="1.0" RandomOffsetX="30" RandomOffsetY="30"/>
+
+  <Animation
+		Name="DustC_Loop" Type="BOOK" FilePath="Fx\\DustC\\DustC"
+		NumFrames="30"
+		DefaultScale="1.0" RandomOffsetX="30" RandomOffsetY="30" Loop="true"/>
+
+  <Animation
+		Name="TerrainDust" Type="BOOK" FilePath="Fx\\DustC\\DustC"
+		NumFrames="30"
+		DefaultScale="0.5" RandomOffsetX="10" RandomOffsetY="10" Opacity="0.75"/>
+
+  <Animation
+		Name="TouchdownDust" Type="BOOK" FilePath="Fx\\DustC\\DustC"
+		NumFrames="30"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="StructureTouchdownDust" Type="BOOK" FilePath="Fx\\DustC\\DustC"
+		NumFrames="30" DrawAsDecal="false"
+		DefaultScale="4.0"/>
+
+  <Animation
+		Name="ObstacleTouchdownDust" Type="BOOK" FilePath="Fx\\DustC\\DustC"
+		NumFrames="30" DrawAsDecal="false"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="HitA_Small" Type="BOOK" FilePath="Fx\\HitA\\HitA"
+		DefaultScale="1.0" RandomOffsetX="30" RandomOffsetY="30" RandomFlipHorizontal="true"
+		NumFrames="16" DurationFrames="10"/>
+
+  <Animation
+		Name="HitA_Medium" Type="BOOK" FilePath="Fx\\HitA\\HitA"
+		DefaultScale="1.5" RandomOffsetX="30" RandomOffsetY="30" RandomFlipHorizontal="true"
+		NumFrames="16" DurationFrames="10"/>
+
+  <Animation
+		Name="HitA_Large" Type="BOOK" FilePath="Fx\\HitA\\HitA"
+		DefaultScale="2.0" RandomOffsetX="30" RandomOffsetY="30" RandomFlipHorizontal="true"
+		NumFrames="16" DurationFrames="10"/>
+
+  <Animation
+		Name="HitB_Small" Type="BOOK" FilePath="Fx\\HitB\\HitB"
+		OriginX="228" OriginY="238" DefaultScale="1.0" RandomOffsetX="30" RandomOffsetY="30" RandomFlipHorizontal="true"
+		NumFrames="15" DurationFrames="10"/>
+
+  <Animation
+		Name="HitB_Medium" Type="BOOK" FilePath="Fx\\HitB\\HitB"
+		OriginX="228" OriginY="238" DefaultScale="1.25" RandomOffsetX="30" RandomOffsetY="30" RandomFlipHorizontal="true"
+		NumFrames="15" DurationFrames="10"/>
+
+  <Animation
+		Name="HitB_Large" Type="BOOK" FilePath="Fx\\HitB\\HitB"
+		OriginX="228" OriginY="238" DefaultScale="1.5" RandomOffsetX="30" RandomOffsetY="30" RandomFlipHorizontal="true"
+		NumFrames="15" DurationFrames="10"/>
+
+  <Animation
+		Name="LevelUpA" Type="SLIDE" FilePath="Fx\\LevelUpA\\LevelUpA"
+		OriginX="64" OriginY="64" OffsetY="-64" DefaultScale="2.0"
+		StartFrame="2">
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="3"/>
+
+  </Animation>
+
+
+  <Animation
+		Name="PlayerLevelUp" Type="BOOK" FilePath="Fx\\GroundBlastB\\GroundBlastB"
+		DrawAsDecal="true"
+		NumFrames="60" DurationFrames="60"
+		DefaultScale="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		>
+  </Animation>
+
+  <Animation
+		Name="PlayerCorePickUp" Type="BOOK" FilePath="Fx\\GroundBlastB\\GroundBlastB"
+		DrawAsDecal="true"
+		NumFrames="60" DurationFrames="60"
+		DefaultScale="0.65"
+		Red="1.0" Green="1.0" Blue="1.0"
+		>
+  </Animation>
+
+  <Animation
+   Name="LevelUpFX_Container" Type="CONSTANT" FilePath="Loot\\Orb"
+   Rotate="true"
+   Opacity="0.0"
+   VisualFx="LevelUpSpark" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.1">
+  </Animation>
+
+  <Animation
+    Name="LevelUpSpark" Type="CONSTANT" FilePath="Loot\\Orb"
+    StartOffsetY="0" EndOffsetY="50"
+    Duration="3"
+    Velocity="300" RotationSpeed="3000"
+    Rotate="false" RandomAngle="true"
+    RandomScaleMin="0.8" RandomScaleMax="1"
+    RandomDurationMin="0.5" RandomDurationMax="0.8"
+    StartOpacity="1.0" EndOpacity="0.0"
+    StartScale="3" EndScale="3">
+  </Animation>
+
+  <Animation
+		Name="MapScreenSparkle" Type="BOOK" FilePath="Fx\\GroundBlastB\\GroundBlastB"
+		DrawAsDecal="true"
+		NumFrames="60" Duration="1.9"
+		DefaultScale="0.85" Loop="true" OffsetX="0" OffsetY="25"
+		Red="1.0" Green="1.0" Blue="1.0"
+		>
+  </Animation>
+
+  <Animation
+		Name="WarpA" Type="BOOK" FilePath="Fx\\WarpA\\WarpA"
+		DefaultScale="1.0" NumFrames="31">
+  </Animation>
+
+  <!-- Impact -->
+
+  <Animation
+		Name="BlockSparks" Type="BOOK" FilePath="Animations\\Sparks03b\\Sparks03b"
+		OriginX="3" OriginY="20"
+		OffsetZ="50"
+		NumFrames="30" DurationFrames="30"
+		StartOpacity="1.0" EndOpacity="0.0"
+		DefaultAngle="225"
+		DefaultScale="1.5" Mirror="false"/>
+
+  <Animation
+		Name="BlockSparks2" Type="BOOK" FilePath="Fx\\DeathA\\DeathA"
+		OriginX="240" OriginY="246" NumFrames="20" DurationFrames="20"
+		OffsetZ="50"
+		StartOpacity="1.0" EndOpacity="0.4"
+		DefaultScale="0.75" RandomOffsetX="0" RandomOffsetY="0"/>
+
+  <Animation
+		Name="BlockSparks3" Type="BOOK" FilePath="Fx\\HitE\\HitE"
+		NumFrames="46"
+		RandomOffsetX="4" RandomOffsetY="4"
+		DefaultScale="0.65" RandomFlipHorizontal="true"
+		DrawOnGround="true"
+		Sound="/SFX/Enemy Sounds/InvincibleOnHit"
+		Material="Unlit"
+		Green="1.0" Red="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="PlayerLastStandSparks" Type="BOOK" FilePath="Fx\\HitE\\HitE"
+		NumFrames="46" Loop="true"
+		Opacity="0.0"
+		Material="Unlit"
+		VisualFx="PlayerLastStandSpark" VisualFxIntervalMin="0.04" VisualFxIntervalMax="0.07"/>
+
+  <Animation
+		Name="PlayerLastStandSpark" Type="BOOK" FilePath="Fx\\HitE\\HitE"
+		NumFrames="46"
+		DurationFrames="23"
+		OffsetZ="-50"
+		RandomOffsetX="16" RandomOffsetY="16"
+		DefaultScale="0.65" RandomFlipHorizontal="true"
+		DrawOnGround="true"
+		DieWithOwner="true"
+		Material="Unlit"
+		AttachToOwner="true"/>
+
+  <Animation
+		Name="CriticalImpact" Type="BOOK" FilePath="Fx\\BurstB\BurstB"
+		NumFrames="14"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"
+		RandomOffsetX="8" RandomOffsetY="8"
+		DefaultScale="0.8"/>
+
+  <Animation
+	  Name="CannonImpactBurst" Type="BOOK" FilePath="Fx\\BurstB\BurstB"
+	  NumFrames="14"
+	  RandomFlipVertical="true" RandomFlipHorizontal="true"
+	  Red="0.99" Green="0.27" Blue="0.0"
+	  RandomOffsetX="8" RandomOffsetY="8"
+	  DefaultScale="0.6"/>
+
+  <!-- Death -->
+
+  <Animation
+		Name="DeathC" Type="BOOK" FilePath="Fx\\DeathC\\DeathC"
+		NumFrames="39"
+		OffsetY="-65"
+		DefaultScale="1.5" ScaleRadius="100"
+		RandomOffsetX="4" RandomOffsetY="4"
+		RandomFlipHorizontal="true"
+		Opacity="1.0"/>
+
+  <Animation
+		Name="DeathC_Small" Type="BOOK" FilePath="Fx\\DeathC\\DeathC"
+		NumFrames="39" StartFrame="15" EndFrame="39"
+		OffsetY="-65"
+		DefaultScale="1.1" ScaleRadius="100"
+		RandomOffsetX="4" RandomOffsetY="4"
+		RandomFlipHorizontal="true"
+		Opacity="1.0"/>
+
+	<Animation
+		Name="DeathC_Large" Type="BOOK" FilePath="Fx\\DeathC\\DeathC"
+		NumFrames="39"
+		OffsetY="-85"
+		DefaultScale="1.75" ScaleRadius="100"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomFlipHorizontal="true"
+		Opacity="1.0"/>
+
+  <Animation
+		Name="Ash_Small" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60"
+		Opacity="0.8" RandomFlipHorizontal="true" OffsetY="-10"
+		RandomScaleMin="0.6" RandomScaleMax="0.8"
+		RandomAngle="true" Rotate="true"/>
+
+  <!-- Charge Animations -->
+
+  <Animation
+		Name="HammerChargeFx" Type="SLIDE" FilePath="Fx\\WeaponChargeC\\WeaponChargeC" DrawAsDecal="true"
+		OriginX="252" OriginY="228" OffsetY="-14"
+		NumFrames="30"
+		DefaultScale="0.35" Opacity="0.9"
+		>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2" PlayBackwards="false" NumDirectionSets="99999"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2" PlayBackwards="true" NumDirectionSets="99999"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+  </Animation>
+
+  <Animation
+		Name="ShieldChargeFx" Type="SLIDE" FilePath="Fx\\Charge_Up\\Charge_up" DrawAsDecal="true"
+		OffsetY="-0"
+		DefaultScale="1.0" Opacity="1.0"
+		>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1" PlayBackwards="false" NumDirectionSets="99999"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1" PlayBackwards="true" NumDirectionSets="99999"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+  </Animation>
+
+  <Animation
+		Name="CannonChargeFx" Type="SLIDE" FilePath="Fx\\Charge_Up\\Charge_up" DrawAsDecal="true"
+		OffsetY="-0"
+		DefaultScale="1.0" Opacity="1.0"
+		VisualFx="null" VisualFxIntervalMin="0.0167" VisualFxIntervalMax="0.0167"
+		>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1" PlayBackwards="false" NumDirectionSets="99999"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1" PlayBackwards="true" NumDirectionSets="99999"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+  </Animation>
+
+  <Animation
+		Name="CannonChargeFxParticles" Type="CONSTANT" FilePath="ForegroundFlyers\\cinder_2"
+		StartOffsetZ="800" EndOffsetZ="0"
+		Duration="0.5"
+		StartOpacity="1.0" EndOpacity="0.0" HoldStartColorFraction="0.7"
+		RandomOffsetX="40" RandomOffsetY="16"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RandomAngle="false"
+		RandomScaleMin="0.5" RandomScaleMax="0.6"
+		>
+  </Animation>
+
+	<Animation
+		Name="ShieldCounter" Type="BOOK" FilePath="Fx\\HitE\\HitE"
+		NumFrames="46"
+		OffsetZ="-50"
+		RandomOffsetX="4" RandomOffsetY="4"
+		DefaultScale="0.8" RandomFlipHorizontal="true"
+		Green="1.0" Red="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="TurtleCharge" Type="BOOK" FilePath="Fx\\WeaponChargeA\\WeaponChargeA"
+		OffsetX="-8" OffsetZ="80.0"
+		NumFrames="25" AllowRestart="true"
+		DefaultScale="1.0" Red="1.0" Green="0.5" Blue="0.0"/>
+
+	<Animation
+		  Name="TurtleChargeBlack" Type="BOOK" FilePath="Fx\\WeaponChargeA\\WeaponChargeA"
+		  OffsetX="-8" OffsetZ="80.0"
+		  NumFrames="25" AllowRestart="true"
+		  DefaultScale="1.0" Red="0.0" Green="0.0" Blue="0.0"/>
+
+	<Animation
+		  Name="TurtleChargeGold" Type="BOOK" FilePath="Fx\\WeaponChargeA\\WeaponChargeA"
+		  OffsetX="-8" DefaultScale="1.4" Loop="true"
+		  NumFrames="25"
+		  Red="1.0" Green="0.77" Blue="0.0"/>
+	
+	<Animation
+		Name="TurretGrow" Type="BOOK" FilePath="Fx\\DustF\\DustF"
+		NumFrames="34"
+    OffsetY="25"
+		DefaultScale="1.0" Red="0.4" Green="0.4" Blue="0.4" />
+
+  <Animation
+		Name="TurtleGrow" Type="BOOK" FilePath="Fx\\DustCloud_Small\\DustCloud_Small"
+		OriginX="222" OriginY="232" NumFrames="60"
+		DefaultScale="0.5" Red="1.0" Green="1.0" Blue="1.0" RandomOffsetX="30" RandomOffsetY="30"/>
+
+
+	<Animatoin
+		Name="WalkDustNew" Type="BOOK" FilePath="Fx\\ShielderDust\\ShielderDust"
+		NumFrames="38"
+		DurationFrames="38"
+		Rotate="true"
+		>
+	</Animatoin>
+	
+  <Animation
+		Name="WalkDust" Type="BOOK" FilePath="Fx\\ShielderDust\\ShielderDust" DrawAsDecal="true"
+		OriginX="107" OriginY="32" RandomOffsetX="10" RandomOffsetY="10"
+		Material="Unlit"
+		DurationFrames="57"
+		RandomFlipVertical="true"
+		FlipHorizontal="true"
+		Rotate="true"
+		Opacity="0.5"
+		StartOpacity="1" EndOpacity="0.25"
+		SortVisualFx="true"
+		NumFrames="38" DefaultScale="1">
+
+	</Animation>
+
+  <Animation
+		Name="ColdBreath" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsDecal="true"
+		RandomOffsetX="4" RandomOffsetY="4"
+		NumFrames="30" DefaultScale="0.35">
+
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+
+  </Animation>
+
+	<Animation
+		Name="DigitalScarf" Type="CONSTANT" FilePath="ForegroundFlyers\virus_wallPiece_small"
+		Rotate="false"
+		Loop="false"
+		Duration="1.0"
+		DefaultScale="1.0"
+		StartScale="0" EndScale="1"
+		PingPongScale="true"
+		RandomAngle="false"
+		RandomFlipHorizontal="false"
+		RandomDurationMin="2.1" RandomDurationMax="2.1"
+		StartRed="1.0" EndRed="1"
+		StartGreen="1.0" EndGreen="0.8"
+		StartBlue="0.9" EndBlue="0.0"
+		RandomScaleMin="0" RandomScaleMax="0"
+		RandomOffsetX="0" RandomOffsetY="0"
+		StartOffsetZ="0" EndOffsetZ="80"
+		StartOffsetY="50" EndOffsetY="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPath" Type="CONSTANT" FilePath="ForegroundFlyers\cinder_4_no_glow"
+		Material="Unlit"
+		Rotate="true"
+		Loop="false"
+		DrawAsDecal="true"
+		Duration="1.0"
+		DefaultScale="1.5"
+		StartScale="1" EndScale="1"
+		StartScaleX="4.0" EndScaleX="4.01"
+		StartScaleY="0.7" EndScaleY="0.71"
+		PingPongScale="false"
+		RandomAngle="true"
+		RandomFlipHorizontal="false"
+		RandomDurationMin="3.0" RandomDurationMax="3.01"
+		StartRed="1.0" EndRed="0.0"
+		StartGreen="0.5" EndGreen="0.5"
+		StartBlue="1.0" EndBlue="0.7"
+		RandomScaleMin="0" RandomScaleMax="0"
+		RandomOffsetX="0" RandomOffsetY="0"
+		StartOffsetZ="0" EndOffsetZ="0"
+		StartOffsetY="0" EndOffsetY="0"
+		FlashSpeed="2.0" FlashMin="0.5" FlashMax="1.0" FlashExpireAfterCycle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPath2" Type="CONSTANT" FilePath="Particles\\particle_isoSquare_01"
+		Rotate="false"
+		RandomAngle="false"
+		Loop="false"
+		DrawAsDecal="true"
+		DefaultScale="6"
+		Velocity="-30"
+		Duration="1.5"
+		StartOpacity="0.3" EndOpacity="1"
+		HoldStartColorFraction="0.6"
+        StartRed="0" EndRed="1"
+        StartGreen="1" EndGreen="0.5"
+        StartBlue="0.8" EndBlue="0"
+		StartOffsetY="5" EndOffsetY="-20"
+		RandomOffsetX="30" RandomOffsetY="30"
+		RandomDurationMin="0.1" RandomDurationMax="3"
+		RandomScaleMin="0.01" RandomScaleMax="0.1"
+		>
+        <Material Ambient="1" Diffuse="1" Directionality="0"/>
+	</Animation>
+
+
+	<Animation
+		  Name="TransistorSpark" Type="CONSTANT" FilePath="Particles\\particle_spark"
+		  Loop="false"
+		  DrawAsDecal="false" Material="Emissive"
+		  RandomDurationMin="0.25"
+		  RandomDurationMax="1.0"
+		  StartOpacity="1.0" EndOpacity="0.3"
+		  StartScaleY="1.0"
+		  EndScaleY="0.1"
+		  StartScaleX="1.0"
+		  EndScaleX="0.1"
+		  RandomScaleMin="0.3"
+		  RandomScaleMax="0.6"
+		  FlipVertical="true"
+		  VelocityMin="100"
+		  VelocityMax="200"
+		  UpwardVelocityMin="100"
+		  UpwardVelocityMax="200"
+		  Rotate="true"
+		  Gravity="1000"
+		  RandomAngle="true"
+		  RandomRotation="false"
+		  RotateWithGravity="true"
+		  Acceleration="-200"
+		  DieOnTouchdown="true"
+		  UseAttachedLocation="false" UseAttachedZLocation="false" OffsetFromParentZ="false"
+	>
+	</Animation>
+	
+	<Animation 
+		Name="TransistorPathCenter" Type="SLIDE"
+		FilePath="Fx\\TransistorPathCenter\\TransistorPathCenter"
+		NumFrames="50"
+		RandomDurationMin="0.5"
+		RandomDurationMax="1.0"
+		Material="Emissive"
+		DrawAsDecal="false"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1.0"
+		VelocityMin="0"
+		VelocityMax="2"
+		Acceleration="-2000"
+		RandomOffsetX="2"
+		RandomOffsetY="2"
+		DefaultScale="1"
+		StartOpacity="1"
+		EndOpacity="0"
+		ChildAnimation="TransistorPathCenterLine"
+			   >
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathLights" FilePath="blank_invisible" Type="CONSTANT"
+		Light="Lights\\DiffuseSpotlight"
+		RandomDurationMin="0.33"
+		RandomDurationMax="0.75"
+		RandomScaleMin="0.15"
+		RandomScaleMax="0.33"
+		StartOpacity="0.15"
+		EndOpacity="0"
+		StartScale="1.0"
+		EndScale="2.5"
+		StartRed="1" StartGreen="1" StartBlue="1"
+		EndRed="0.25" EndGreen="1" EndBlue="1"
+		Rotate="true"
+		RandomAngle="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathSelector" Type="RANDOM"
+		Sound="null"
+		>
+		<Random Name="TransistorPathA"/>
+		<Random Name="TransistorPathB"/>
+		<Random Name="TransistorPathC"/>
+	</Animation>
+	
+	<Animation
+		  Name="TransistorPathSelector2" Type="RANDOM"
+		>
+		<Random Name="TransistorPathA1"/>
+		<Random Name="TransistorPathB1"/>
+		<Random Name="TransistorPathC1"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+
+	</Animation>
+	<Animation
+		  Name="TransistorPathSelector3" Type="RANDOM"
+		>
+		<Random Name="TransistorPathA2"/>
+		<Random Name="TransistorPathB2"/>
+		<Random Name="TransistorPathC2"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorSparkSelector" Type="RANDOM"
+		>
+		<Random Name="TransistorSpark"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathEnd" Type="CONSTANT" FilePath="blank_invisible"
+		Duration="0.1"
+		DefaultScale="0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="TransistorPathA" Type="SLIDE" FilePath="Fx\\TransistorPath\\TransistorPath"
+		NumFrames="20"
+		Rotate="false"
+		RandomAngle="false"
+		Loop="false"
+		DrawAsDecal="true"
+		DefaultScale="1"
+		Material="Emissive"
+		RandomOffsetX="0"
+		RandomOffsetY="0"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1.0"
+		OpacityMin="0.25"
+		OpacityMax="1"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		ChildAnimation="TransistorPathCenter"
+		VisualFx="TransistorPathSelector2" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.1" VisualFxCap="1"
+		StartRed="1"
+		EndRed="0"
+		StartGreen="1"
+		EndGreen="0.5"
+		StartOpacity="1"
+		EndOpacity="0.25"
+		HoldStartColorFraction="0.1"
+		>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="24"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathCenterLine" Type="SLIDE" FilePath="Fx\\TransistorPathCenterLine\\TransistorPathCenterLine"
+		NumFrames="20"
+		Rotate="true"
+		RandomAngle="false"
+		Loop="false"
+		DrawAsDecal="true"
+		DefaultScale="0.75"
+		Material="Emissive"
+		StartRed="1"
+		EndRed="0"
+		StartGreen="1"
+		EndGreen="0.5"
+		StartOpacity="1"
+		EndOpacity="0"
+		HoldStartColorFraction="0.1"
+		StartScaleY="1"
+		EndScaleY="0.1"
+		ChildAnimation="null"
+		VisualFx="TransistorSparkSelector" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.011" VisualFxCap="1"
+		KeepVisualFxAttached="true"
+		>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="15"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+	</Animation>
+	
+	<Animation
+		Name="TransistorPathA1" Type="SLIDE" InheritFrom="TransistorPathA"
+		RandomAngle="false"
+		UseAttachedScale="true"
+		DefaultScale="0.8"
+		RandomOffsetX="32"
+		RandomOffsetY="32"
+		RandomFlipVertical="true"
+		VisualFx="TransistorPathSelector3" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.01" VisualFxCap="1"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathA2" Type="SLIDE" InheritFrom="TransistorPathA1"
+		VisualFx="null"
+		RandomOffsetX="32"
+		RandomOffsetY="32"
+		DefaultScale="0.4"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathB" InheritFrom="TransistorPathA" FilePath="Fx\\TransistorPathB\\TransistorPathB"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathB1" InheritFrom="TransistorPathA1" FilePath="Fx\\TransistorPathB\\TransistorPathB"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathB2" InheritFrom="TransistorPathA2" FilePath="Fx\\TransistorPathB\\TransistorPathB"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathC" InheritFrom="TransistorPathA" FilePath="Fx\\TransistorPathC\\TransistorPathC"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathC1" InheritFrom="TransistorPathA1" FilePath="Fx\\TransistorPathC\\TransistorPathC"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathC2" InheritFrom="TransistorPathA2" FilePath="Fx\\TransistorPathC\\TransistorPathC"
+		Sound="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="TurretMuzzleSmoke" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsOverlay="true"
+		OffsetZ="100"
+		NumFrames="30" DefaultScale="0.2">
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+  </Animation>
+
+  <Animation
+		Name="TurretFlameMuzzleSmoke" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsOverlay="true"
+		OffsetZ="100"
+		Red="0.1" Green="0.1" Blue="0.1"
+		Duration="0.5"
+		StartOffsetZ="0" EndOffsetZ="125"
+		RandomOffsetX="6" RandomOffsetY="6"
+		RandomFlipHorizontal="true" RandomFlipVertical="true"
+		NumFrames="30" DefaultScale="0.3">
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+  </Animation>
+
+  <Animation
+		Name="TurretMuzzleFlash" Type="SLIDE" FilePath="Fx\\MuzzleFlashA\\MuzzleFlashA" DrawAsOverlay="true"
+		OffsetZ="100" NumAngles="32"
+		DefaultScale="3.0">
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+  </Animation>
+
+  <Animation
+		Name="RifleMuzzleSmoke" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsOverlay="true"
+		OffsetZ="80"
+		Red="0.3" Green="0.3" Blue="0.3"
+		NumFrames="30" DefaultScale="0.5"
+		StartOffsetZ="0" EndOffsetZ="100">
+
+    <Slide DurationFrames="5"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+  </Animation>
+
+  <Animation
+		Name="RifleMuzzleFlash" Type="SLIDE" FilePath="Fx\\MuzzleFlashA\\MuzzleFlashA" DrawAsOverlay="true"
+		OffsetZ="80" NumAngles="32"
+		DefaultScale="4.0">
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+  </Animation>
+
+  <Animation
+		Name="RevolverMuzzleSmoke" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsOverlay="true"
+		OffsetZ="80"
+		Red="0.4" Green="0.4" Blue="0.4"
+		NumFrames="30" DefaultScale="0.35"
+		StartOffsetZ="0" EndOffsetZ="100"
+		RandomOffsetX="5" RandomOffsetY="5">
+
+    <Slide DurationFrames="5"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+  </Animation>
+
+  <Animation
+		Name="RevolverMuzzleFlash" Type="SLIDE" FilePath="Fx\\MuzzleFlashA\\MuzzleFlashA" DrawAsOverlay="true"
+		OffsetZ="80" NumAngles="32"
+		DefaultScale="2.5">
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+  </Animation>
+
+  <Animation
+		Name="RepeaterMuzzleSmoke" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsOverlay="true"
+		OffsetZ="80" Red="0.4" Green="0.4" Blue="0.4"
+		NumFrames="30" DefaultScale="0.2"
+		RandomOffsetX="5" RandomOffsetY="5">
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+  </Animation>
+
+  <Animation
+		Name="RepeaterMuzzleFlash" Type="SLIDE" FilePath="Fx\\MuzzleFlashA\\MuzzleFlashA" DrawAsOverlay="true"
+		OffsetZ="80" NumAngles="32"
+		DefaultScale="1.0">
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+  </Animation>
+
+  <Animation
+		Name="MortarMuzzleSmoke" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsOverlay="true"
+		OffsetZ="70" Red="0.6" Green="0.6" Blue="0.6"
+		NumFrames="30" DefaultScale="0.7" Rotate="true"
+		RandomOffsetX="5" RandomOffsetY="5">
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+
+  </Animation>
+
+  <!-- Other -->
+
+  <Animation
+		Name="EnergizeMonument" Type="SLIDE" FilePath="Fx\\WarpA\\WarpA"
+		Opacity="0.9" DrawAsOverlay="true"
+		StartScale="0.0" EndScale="9.0"
+		>
+
+    <Slide DurationFrames="1" Rumble="0.15"/>
+    <Slide DurationFrames="1" Rumble="0.15"/>
+    <Slide DurationFrames="1" Rumble="0.15"/>
+    <Slide DurationFrames="1" Rumble="0.15"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+
+    <Slide DurationFrames="1" Rumble="0.5"/>
+    <Slide DurationFrames="1" Rumble="0.5"/>
+    <Slide DurationFrames="1" Rumble="0.5"/>
+    <Slide DurationFrames="1" Rumble="1"/>
+    <Slide DurationFrames="1" Rumble="1"/>
+    <Slide DurationFrames="1" Rumble="1"/>
+    <Slide DurationFrames="1" Rumble="1"/>
+    <Slide DurationFrames="1" Rumble="0.5"/>
+    <Slide DurationFrames="1" Rumble="0.5"/>
+    <Slide DurationFrames="1" Rumble="0.5"/>
+
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.25"/>
+    <Slide DurationFrames="1" Rumble="0.15"/>
+    <Slide DurationFrames="1" Rumble="0.15"/>
+    <Slide DurationFrames="1" Rumble="0.15"/>
+    <Slide DurationFrames="1" Rumble="0.15"/>
+
+    <Slide DurationFrames="1" Rumble="0.15"/>
+
+  </Animation>
+
+  <Animation
+		Name="LightMeleeSpawnerBubbles" Type="BOOK" FilePath="Fx\\BigSupportBubbles\\BigSupportBubbles"
+		OriginX="46" OriginY="316"
+		OffsetY="-184"
+		NumFrames="28"
+		DurationFrames="28"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="LightMeleeSpawnerLargeBubbles" Type="BOOK" FilePath="Fx\\BigSupportBubbles\\BigSupportBubbles"
+		OriginX="46" OriginY="316"
+		OffsetY="-384"
+		NumFrames="28"
+		DurationFrames="28"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="BigSupportAttackBubbles" Type="BOOK" FilePath="Fx\\BigSupportBubbles\\BigSupportBubbles"
+		OriginX="46" OriginY="316"
+		OffsetY="-0" OffsetZ="80"
+		NumFrames="28"
+		DurationFrames="28"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="SpearSwoosh" Type="CONSTANT" FilePath="Fx\\spear_fx"
+		Rotate="true"
+		Loop="true"
+		Duration="1.0"
+		DefaultScale="1.0"
+		StartOpacity="1.0" EndOpacity="1.0"
+		>
+  </Animation>
+
+  <Animation
+		Name="Hammer_Ground_Blast" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true"
+		NumFrames="38"
+		DefaultScale="0.5"
+		Red="1.0" Green="1.0" Blue="1.0"
+		FlipVertical="true"
+		>
+  </Animation>
+
+  <Animation
+		Name="Hammer_Charge_Ground_Blast" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true" ScaleRadius="105"
+		NumFrames="38"
+		DefaultScale="0.6"
+		Red="1.0" Green="0.5" Blue="0.5"
+		FlipVertical="true"
+		>
+  </Animation>
+
+	<Animation
+		Name="Fast_Ground_Blast" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true" ScaleRadius="105"
+		NumFrames="38" DurationFrames="19"
+		DefaultScale="0.6"
+		Red="1.0" Green="0.2" Blue="1.0"
+		FlipVertical="true"
+		>
+	</Animation>
+	
+  <Animation
+		Name="Hammer_GroundPound_Crater" Type="CONSTANT" FilePath="Decals\\Crater_01"
+		DrawAsDecal="true"
+		Duration="1.5"
+		DefaultScale="0.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ChildAnimation="Hammer_GroundPound_Blast"
+		>
+  </Animation>
+
+  <Animation
+		Name="Hammer_GroundPound_Blast" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true"
+		NumFrames="38"
+		DefaultScale="1.0"
+		StartRed="0.0" EndRed="1.0"
+		FlipVertical="true"
+		>
+  </Animation>
+
+  <Animation
+		Name="HeavyMeleeSlamGroundBlast" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true"
+		NumFrames="38"
+		DefaultScale="1.0"
+		Red="0.4" Green="0.4" Blue="0.4"
+		FlipVertical="true"
+		>
+  </Animation>
+
+  <Animation
+		Name="RamPoundGroundBlast" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true"
+		NumFrames="38"
+		DefaultScale="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		FlipVertical="true"
+		>
+  </Animation>
+
+  <Animation
+		Name="BullActivateFx" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true"
+		NumFrames="38"
+		DefaultScale="0.6"
+		Red="0.9" Green="0.7" Blue="0.7"
+		FlipVertical="true"
+		>
+  </Animation>
+
+  <Animation
+		Name="BullDeactivateFx" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true"
+		NumFrames="38"
+		DefaultScale="0.6"
+		Red="0.9" Green="0.7" Blue="0.7"
+		FlipVertical="true"
+		PlayBackwards="true"
+		>
+  </Animation>
+
+	<Animation
+		Name="UraCaptainFx" Type="SLIDE" FilePath="Fx\\Charge_Up\\Charge_up"
+		OffsetY="-0"
+		DrawAsDecal="true"
+		DefaultScale="1.0" Opacity="1.0"
+		AttachToOwner="true"
+		DieWithOwner="true"
+		>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1" PlayBackwards="false" NumDirectionSets="99999"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1" PlayBackwards="true" NumDirectionSets="99999"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+	</Animation>
+
+  <!-- Andre's FX -->
+
+  <Animation
+		Name="DustD" Type="BOOK" FilePath="Fx\\DustD\DustD"
+		NumFrames="80"
+		DrawAsDecal="false" Opacity="0.8" RandomFlipHorizontal="true" OffsetY="-55" DefaultScale="2.0"
+		Red="1.0" Green="1.0" Blue="1.0"/>
+
+	<Animation
+		Name="DustDBlack" Type="BOOK" FilePath="Fx\\DustD\DustD"
+		NumFrames="80"
+		DrawAsDecal="false" Opacity="0.2" RandomFlipHorizontal="true" OffsetY="-55" DefaultScale="0.5"
+		Red="0.0" Green="0.0" Blue="0.0"
+		  ChildAnimation="ShrinkingCircleC"/>	
+
+  <Animation
+	    Name="FireA" Type="BOOK" FilePath="Fx\\FireA\FireA"
+		NumFrames="24" DurationFrames="24"
+	    DrawAsDecal="false" Opacity="0.8" RandomFlipHorizontal="true" RandomAngle="true" Rotate="true" DefaultScale="1.0"
+	    Red="1.0" Green="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="BuffB" Type="BOOK" FilePath="Fx\\BuffB\BuffB"
+		NumFrames="30" DurationFrames="30"
+		DrawAsDecal="false" StartOpacity="0.3" RandomFlipHorizontal="true" EndOpacity="0.9" OffsetY="-35" DefaultScale="1.0"
+		Material="Unlit"
+	    Red="1.0" Green="1.0" Blue="1.0"/>
+
+  <Animation
+          Name="BuffBblue" Type="BOOK" FilePath="Fx\\BuffB\BuffB"
+          NumFrames="30" DurationFrames="30"
+          DrawAsDecal="false" StartOpacity="0.3" RandomFlipHorizontal="true" EndOpacity="0.9" OffsetY="-35" DefaultScale="1.0"
+          Red="0.0" Green="0.0" Blue="1.0"/>    
+
+	<Animation
+		Name="FruitHeal" Type="BOOK" FilePath="Fx\\BuffB\BuffB"
+		NumFrames="30" DurationFrames="30"
+		DefaultScale="0.7"
+		DrawAsDecal="false" StartOpacity="0.3" RandomFlipHorizontal="true" EndOpacity="0.9" OffsetY="-35"
+		AttachToOwner="true"/>
+
+  <Animation
+	    Name="ExplosionA" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+	    NumFrames="60" DurationFrames="60"
+		RandomScaleMin="1.8" RandomScaleMax="2.2"
+	    RandomDurationMin="0.9" RandomDurationMax="1.1"
+	    DrawAsDecal="false" StartOpacity="0.9" EndOpacity="0.2" RandomFlipHorizontal="true" OffsetY="-190" DefaultScale="1.0"
+	    Red="1.0" Green="1.0" Blue="1.0"/>
+
+  <Animation
+    Name="ExplosionA_CannonBomblettes" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+    NumFrames="60" DurationFrames="60"
+    RandomScaleMin="0.7" RandomScaleMax="1.6"
+    RandomDurationMin="0.9" RandomDurationMax="1.1"
+    DrawAsDecal="false" StartOpacity="0.9" EndOpacity="0.2" RandomFlipHorizontal="true" OffsetY="-190" DefaultScale="1.0"
+    Red="1.0" Green="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="MultiExplosion" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+		NumFrames="60" DurationFrames="60"
+		RandomScaleMin="2.0" RandomScaleMax="2.4"
+		RandomDurationMin="0.9" RandomDurationMax="1.1"
+		DrawAsDecal="false" StartOpacity="0.9" EndOpacity="0.2" RandomFlipHorizontal="true" OffsetY="-120"
+		RandomOffsetX="15" RandomOffsetY="5"
+		ChildAnimation="MultiExplosionB"/>
+
+  <Animation
+		Name="MultiExplosionB" Type="BOOK" FilePath="Fx\\DustCloud_Small\DustCloud_Small"
+		NumFrames="53" DurationFrames="20" DrawAsDecal="false" StartOpacity="0.7" EndOpacity="0.1" RandomScaleMin="0.8" RandomScaleMax="1.2"
+		RandomAngle="true" Rotate="true"
+		ChainTo="MultiExplosionC"/>
+
+  <Animation
+		Name="MultiExplosionC" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+		NumFrames="60" DurationFrames="60"
+		RandomScaleMin="2.0" RandomScaleMax="2.4"
+		RandomDurationMin="0.9" RandomDurationMax="1.1"
+		DrawAsDecal="false" StartOpacity="0.9" EndOpacity="0.2" RandomFlipHorizontal="true" OffsetY="-120"
+		RandomOffsetX="15" RandomOffsetY="5"
+		ChildAnimation="MultiExplosionD"/>
+
+  <Animation
+		Name="MultiExplosionD" Type="BOOK" FilePath="Fx\\DustCloud_Small\DustCloud_Small"
+		NumFrames="53" DrawAsDecal="false" StartOpacity="0.7" EndOpacity="0.1" RandomScaleMin="0.8" RandomScaleMax="1.2"
+		RandomAngle="true" Rotate="true"
+		ChildAnimation="null"/>
+
+  <Animation
+		Name="ExplosionB" Type="BOOK" FilePath="Fx\\ExplosionB\ExplosionB"
+	    NumFrames="80" DurationFrames="80"
+	    DrawAsDecal="false" StartOpacity="0.3" EndOpacity="1.0" RandomFlipHorizontal="true" DefaultScale="2.0"
+		Red="1.0" Green="1.0" Blue="1.0"/>
+
+  <Animation
+    Name="ExplosionB_MortarBarrage" Type="BOOK" FilePath="Fx\\ExplosionB\ExplosionB"
+    NumFrames="20" 
+    DrawAsDecal="false" StartOpacity="1" EndOpacity="0.0" Duration="0.6" RandomFlipHorizontal="true" DefaultScale="1.5"
+    Red="1" Green="1" Blue="1"/>
+
+
+  <Animation
+	    Name="MortarExplosion" Type="BOOK" FilePath="Fx\\ExplosionB\ExplosionB"
+	    NumFrames="20"
+	    RandomFlipHorizontal="false" DefaultScale="1.0" ScaleRadius="90"
+	    Red="1.0" Green="1.0" Blue="1.0"
+		ChainTo="MortarExplosion_Fade"/>
+
+  <Animation
+		Name="MortarExplosion_Fade" Type="SLIDE" FilePath="Fx\\ExplosionB\ExplosionB"
+		RandomFlipHorizontal="false" DefaultScale="1.0" ScaleRadius="90"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		Duration="0.33">
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+
+  </Animation>
+
+	<Animation
+		  Name="MortarImplosion" Type="BOOK" FilePath="Fx\\ExplosionB\ExplosionB"
+		  NumFrames="20" StartOpacity="0.2" EndOpacity="1.0"
+		  RandomFlipHorizontal="false" DefaultScale="1.0" ScaleRadius="90"
+		  Red="1.0" Green="1.0" Blue="1.0" PlayBackwards="true"
+		  ChainTo="null"/>
+
+	<Animation
+		  Name="SquirtLanding" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		  NumFrames="60" DurationFrames="60"
+		  RandomOffsetX="10" RandomOffsetY="10"
+		  DrawAsDecal="false" Opacity="0.4" RandomFlipHorizontal="true" OffsetY="-10" DefaultScale="0.9"
+		  Red="0.1" Green="0.6" Blue="1.0" RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="WindbagImpact" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60"
+		RandomOffsetX="20" RandomOffsetY="20"
+		DrawAsDecal="false" Opacity="0.4" RandomFlipHorizontal="true" OffsetY="-10" DefaultScale="1.1"
+		Red="0.1" Green="0.6" Blue="1.0" RandomAngle="true" Rotate="true"
+		ChildAnimation="WindbagHitSpark"/>
+
+  <Animation
+		Name="InvincibleHitSpark" Type="SLIDE" FilePath="Fx\\HitSparkSwirl\\HitSparkSwirl"
+		NumFrames="29"
+		RandomDurationMin="0.3"
+		RandomDurationMax="0.75"
+		RandomAngle="true"
+		Rotate="true"
+		DefaultScale="1.0"
+		RandomScaleMin="0.2"
+		RandomScaleMax="1.0"
+		RandomOffsetX="10"
+		RandomOffsetY="10"
+		Material="Unlit"
+		Green="1.0" Red="1.0" Blue="1.0"
+	>
+	<Slide DurationFrames="1" VisualFx="InvincibleHitSpark_Particles"/>
+	<Slide DurationFrames="1" VisualFx="InvincibleHitSpark_Particles"/>/>
+	<Slide DurationFrames="1"/>/>
+	<Slide DurationFrames="1"/>/>
+	<Slide DurationFrames="1"/>/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="1"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	</Animation>
+
+		
+	
+	<Animation
+		Name="InvincibleHitSpark_Particles" Type="CONSTANT" FilePath="Particles\\particle_circle_04"
+		Material="Emissive"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomAngle="true" Rotate="true"
+		Velocity="1000"	Acceleration="-1500"
+		VelocityMin="350"
+		VelocityMax="700"
+		OffsetY="-80"
+		Gravity="250"
+		StartScaleX="1.0" EndScaleX="0.0"
+		StartScaleY="0.5" EndScaleY="0.0"
+		RandomScaleMin="0.5" RandomScaleMax="1.0"
+		StartOpacity="1.0"
+		EndOpacity="0.0"
+		StartRed="1" EndRed="1"
+		StartGreen="1" EndGreen="0.5"
+		StartBlue="1" EndBlue="0"
+	/>
+
+  <Animation
+		Name="InvincibleHitSpark_Small" Type="SLIDE" FilePath="Fx\\HitSparkSwirl\\HitSparkSwirl"
+		NumFrames="29"
+		RandomDurationMin="0.3"
+		RandomDurationMax="0.75"
+		RandomAngle="true"
+		Rotate="true"
+		DefaultScale="0.5"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1.0"
+		RandomOffsetX="10"
+		RandomOffsetY="10"
+		Material="Unlit"
+		Green="1.0" Red="1.0" Blue="1.0"
+	>
+	<Slide DurationFrames="2" VisualFx="InvincibleHitSpark_Small_Particles"/>
+	<Slide DurationFrames="2" VisualFx="InvincibleHitSpark_Small_Particles"/>/>
+	<Slide DurationFrames="2" VisualFx="InvincibleHitSpark_Small_Particles"/>/>
+	<Slide DurationFrames="2" VisualFx="InvincibleHitSpark_Small_Particles"/>/>
+	<Slide DurationFrames="2" VisualFx="InvincibleHitSpark_Small_Particles"/>/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	<Slide DurationFrames="2"/>
+	</Animation>
+
+	<Animation
+		Name="InvincibleHitSpark_Small_Particles" Type="CONSTANT" FilePath="Particles\\particle_circle_04"
+		Material="Emissive"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomAngle="true" Rotate="true"
+		Velocity="1000"	Acceleration="-1000"
+		VelocityMin="300"
+		VelocityMax="500"
+		OffsetY="-80"
+		Gravity="500"
+		StartScaleX="1.2" EndScaleX="0.0"
+		StartScaleY="0.4" EndScaleY="0.0"
+		RandomScaleMin="0.5" RandomScaleMax="1.0"
+		StartOpacity="1.0"
+		EndOpacity="0.0"
+		StartRed="1" EndRed="1"
+		StartGreen="1" EndGreen="0.5"
+		StartBlue="1" EndBlue="0"
+	/>
+		
+  <Animation
+		Name="WindbagHitSpark" Type="BOOK" FilePath="Fx\\HitSpark_A\\HitSpark_A"
+		NumFrames="46"
+		RandomOffsetX="15" RandomOffsetY="15"
+		DefaultScale="1.2" RandomFlipHorizontal="true"
+		Green="1.0" Red="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="WindbagImpact_Small" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60"
+		RandomOffsetX="30" RandomOffsetY="30"
+		DrawAsDecal="false" Opacity="0.4" RandomFlipHorizontal="true" OffsetY="-10" DefaultScale="0.6"
+		Red="0.1" Green="0.1" Blue="1.0" RandomAngle="true" Rotate="true"
+		ChildAnimation="WindbagHitSpark_Small"/>
+
+  <Animation
+		Name="WindbagHitSpark_Small" Type="BOOK" FilePath="Fx\\HitSpark_A\\HitSpark_A"
+		NumFrames="46"
+		RandomOffsetX="15" RandomOffsetY="15"
+		DefaultScale="0.8" RandomFlipHorizontal="true"
+		Green="1.0" Red="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="GlowingBall" Type="BOOK" FilePath="Fx\\GlowingBall\GlowingBall"
+		NumFrames="29" Loop="true"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="GlowingBallB" Type="BOOK" FilePath="Fx\\GlowingBallB\GlowingBallB"
+		NumFrames="29" Loop="true"
+		DefaultScale="1.0"/>
+
+	<Animation
+	  Name="GlowingBallD" Type="BOOK" FilePath="Fx\\GlowingBallB\GlowingBallB"
+	  NumFrames="29" Loop="false"
+	  StartOffsetZ="0" EndOffsetZ="105"
+	  StartScale="0.5" EndScale="1.0"
+	  RandomDurationMin="2.1" RandomDurationMax="2.1"/>
+
+	<Animation
+	  Name="GlowingBallC" Type="BOOK" FilePath="Fx\\GlowingBallB\GlowingBallB"
+	  NumFrames="29" Loop="true" StartScale="0.1" EndScale="3.7" Duration="2.5"
+	  DefaultScale="1.0"/>
+
+	<Animation
+		Name="PlayerHit" Type="BOOK" FilePath="Fx\\PlayerHit\PlayerHit"
+		Material="Emissive"
+		NumFrames="20"
+		DurationFrames="40"
+		Loop="false"
+		DefaultScale="1.0"
+		RandomScaleMin="1.0"
+		RandomScaleMax="1.1"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		OwnerDamageRed="0"
+		OwnerDamageGreen="0"
+		OwnerDamageBlue="0"
+		VisualFx="PlayerHitParticles" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.1" 
+		/>
+		
+	<Animation
+		Name="PlayerHitParticles" Type="CONSTANT" FilePath="Particles\\particle_square_plain"
+		Material="Emissive"
+		RandomDurationMin="0.25" RandomDurationMax="0.5"
+		RandomAngle="true" Rotate="true"
+		Velocity="1000"	Acceleration="-5000"
+		VelocityMin="300"
+		VelocityMax="1500"
+		StartScaleX="0.3" EndScaleX="0.0"
+		StartScaleY="0.1" EndScaleY="0.0"
+		RandomScaleMin="0.5" RandomScaleMax="1.0"
+		StartOpacity="1.0"
+		EndOpacity="0.0"
+		StartRed="1" EndRed="0"
+		StartGreen="1" EndGreen="0.5"
+		StartBlue="1" EndBlue="1"
+	/>
+
+	<Animation
+		Name="PlayerHitParticlesB" Type="CONSTANT" FilePath="Particles\\particle_square_plain"
+		Material="Emissive"
+		RandomDurationMin="0.25" RandomDurationMax="0.5"
+		RandomAngle="true" Rotate="true"
+		Velocity="1000"	Acceleration="-5000"
+		VelocityMin="300"
+		VelocityMax="1500"
+		Gravity="2000"
+		StartScaleX="0.3" EndScaleX="0.0"
+		StartScaleY="0.1" EndScaleY="0.0"
+		RandomScaleMin="0.5" RandomScaleMax="1.0"
+		StartOpacity="1.0"
+		EndOpacity="0.0"
+		StartRed="1" EndRed="0"
+		StartGreen="1" EndGreen="0.5"
+		StartBlue="1" EndBlue="1"
+	/>
+	
+	<Animation
+		Name="PickupAnimation" Type="BOOK" FilePath="Fx\\PickupAnimation\PickupAnimation_"
+		NumFrames="54" DurationFrames="40"
+		OffsetZ="65"
+		DefaultScale="1.0"
+		RandomFlipHorizontal="true"
+		/>
+
+  <Animation
+		Name="TurtleCloseFx" Type="BOOK" FilePath="Fx\\ConvergeA\ConvergeA"
+		NumFrames="14"
+		OffsetZ="110" OffsetX="-15"
+		DefaultScale="1.3"
+		PlayBackwards="true"
+		ChildAnimation="TurtleBib"
+		/>
+
+  <Animation
+		Name="TurtleOpenFx" Type="BOOK" FilePath="Fx\\ConvergeA\ConvergeA"
+		NumFrames="14"
+		OffsetZ="110" OffsetX="-15"
+		DefaultScale="1.3"
+		PlayBackwards="false"
+		ChildAnimation="TurtleBib"
+		/>
+
+  <Animation
+		Name="RandomWhirlwind" Type="RANDOM"
+		>
+		<Random Name="WhirlwindA"/>
+		<Random Name="WhirlwindB"/>
+		<Random Name="WhirlwindC"/>
+		<Random Name="WhirlwindD"/>
+		<Random Name="WhirlwindE"/>
+  </Animation>
+
+  <Animation
+		Name="WhirlwindA" Type="BOOK" FilePath="Fx\\WhirlwindA\WhirlwindA"
+		NumFrames="10" Loop="false"
+		OffsetX="-94"
+		OffsetZ="100"
+		DefaultScale="2.0"/>
+
+  <Animation
+		Name="HammerWhirlwindFx" Type="BOOK" FilePath="Fx\\WhirlwindA\WhirlwindA"
+		NumFrames="10" Loop="false"
+		OffsetX="-80"
+		OffsetZ="0"
+		PlayBackwards="false" DrawAsDecal="true"
+		DefaultScale="2.0"/>
+
+  <Animation
+		Name="WhirlwindA_Reverse" Type="BOOK" FilePath="Fx\\WhirlwindA\WhirlwindA"
+		NumFrames="10" Loop="false"
+		OffsetX="-80"
+		OffsetZ="0"
+		PlayBackwards="true" DrawAsDecal="true"
+		DefaultScale="2.0"/>
+
+  <Animation
+    Name="WhirlwindA_Flamethrower" Type="BOOK" FilePath="Fx\\WhirlwindA\WhirlwindA"
+    NumFrames="10" Loop="false"
+    StartScale="0.5" EndScale="1"
+    OffsetX="-60"
+    OffsetZ="50"
+    DefaultScale="2.0"/>
+  
+
+  <Animation
+		Name="WhirlwindB" Type="BOOK" FilePath="Fx\\WhirlwindB\WhirlwindB"
+		NumFrames="21" Loop="false"
+		OffsetZ="175"
+		DefaultScale="2.0"/>
+
+  <Animation
+		Name="WhirlwindC" Type="BOOK" FilePath="Fx\\WhirlwindC\WhirlwindC"
+		NumFrames="11" Loop="false"
+		OffsetZ="175"
+		DefaultScale="2.0"/>
+
+  <Animation
+		Name="WhirlwindD" Type="BOOK" FilePath="Fx\\WhirlwindD\WhirlwindD"
+		NumFrames="12" Loop="false"
+		OffsetZ="175"
+		DefaultScale="2.0"/>
+
+  <Animation
+		Name="WhirlwindE" Type="BOOK" FilePath="Fx\\WhirlwindE\WhirlwindE"
+		NumFrames="11" Loop="false"
+		OffsetZ="175"
+		DefaultScale="2.0"/>
+
+  <Animation
+		Name="PlayerFullDeflectionFx" Type="BOOK" FilePath="Fx\\WhirlwindA\WhirlwindA"
+		NumFrames="10" Loop="false"
+		OffsetX="-50"
+		OffsetY="-25"
+		OffsetZ="0"
+		PlayBackwards="true" DrawAsDecal="true"
+		DefaultScale="0.5"/>
+
+  <Animation
+		Name="CircleGlow" Type="SLIDE" FilePath="Fx\\CircleGlow\CircleGlow"
+		NumFrames="23" PingPong="true"
+		DefaultScale="1.0">
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="1"/>
+
+  </Animation>
+
+  <Animation
+		Name="CircleGlowB" Type="BOOK" FilePath="Fx\\CircleGlowB\CircleGlowB"
+		NumFrames="45" StartOpacity="1.0" EndOpacity="0.0" PingPongColor="false"
+		OffsetX="-6"
+		DefaultScale="1.05"/>
+
+	<Animation
+		Name="ArsenalConfirm" Type="SLIDE" FilePath="Fx\\CircleGlowB\CircleGlowB"
+		NumFrames="45"
+		OffsetX="-6"
+		DefaultScale="1.13"
+		StartOpacity="1.0" EndOpacity="0.0">
+
+		<Slide DurationFrames="15"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+
+	</Animation>
+
+  <Animation
+		Name="MineExplosion" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+		NumFrames="60" DrawAsDecal="false" StartOpacity="1.0" EndOpacity="0.0"
+		RandomFlipHorizontal="true" StartScale="2.6" EndScale="3.2"
+		Red="1.0" Green="1.0" Blue="1.0" OffsetY="-215"
+		/>
+
+	<Animation
+	  Name="JumpBlast" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+	  NumFrames="60" DrawAsDecal="false" StartOpacity="0.7" EndOpacity="0.0"
+	  RandomFlipHorizontal="true" StartScale="1.5" EndScale="2.1" OffsetY="-40"
+	  Red="0.0" Green="0.0" Blue="1.0" FlipVertical="true"
+		/>
+
+	<Animation
+		Name="NovaExplosion" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+		NumFrames="60" DrawAsDecal="false" StartOpacity="1.0" EndOpacity="0.0"
+		RandomFlipHorizontal="true"
+		Red="1.0" Green="1.0" Blue="1.0" OffsetY="-380" ScaleRadius="60"
+		/>
+
+	<Animation
+		Name="NovaExplosionBlack" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+		NumFrames="60" DrawAsDecal="false" StartOpacity="0.8" EndOpacity="0.0"
+		RandomFlipHorizontal="true"
+		Red="0.0" Green="0.0" Blue="0.0" OffsetY="-380" ScaleRadius="60"
+		/>
+
+	<Animation
+		Name="ReverseNova" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true" ScaleRadius="105" PlayBackwards="true"
+		NumFrames="38" Duration="0.5" OffsetY="50"
+		Red="1.0" Green="0.5" Blue="0.5"
+		FlipVertical="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="ReverseNovaSlow" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true" ScaleRadius="85" PlayBackwards="true"
+		NumFrames="38" Duration="1.8" OffsetY="50"
+		Red="0.0" Green="0.0" Blue="0.0" StartOpacity="0.35" EndOpacity="0.8"
+		FlipVertical="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="EggHatch" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+		DrawAsDecal="true" DefaultScale="0.5" PlayBackwards="true"
+		NumFrames="38" Duration="0.4" StartOpacity="0.2" EndOpacity="1.0"
+		Red="1.0" Green="0.5" Blue="0.5"
+		FlipVertical="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="DistilleryLight" Type="SLIDE" FilePath="Fx\\LightColumnA\\LightColumnA"
+		OffsetY="-98"
+		NumFrames="50" Opacity="1.0" RandomFlipHorizontal="false"
+		Red="1.0" Green="1.0" Blue="1.0"
+		DefaultScale="1"
+		>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="6" PlayBackwards="false" NumDirectionSets="999999"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="6" PlayBackwards="true" NumDirectionSets="999999"/>
+
+	</Animation>
+
+
+  <!-- Greg K Effects -->
+
+  <Animation
+  Name="LampRising" Type="BOOK" FilePath="Fx\\LampRising\LampRising"
+  NumFrames="80" DrawAsDecal="false" Opacity="0.75" Red=".7" Green="0.7" DurationFrames="140" DefaultScale="2.0"/>
+
+  <Animation
+    Name="LampRising2" Type="BOOK" FilePath="Fx\\LampRising2\LampRising2"
+	  NumFrames="60" DrawAsDecal="false" StartOpacity="0.9" EndOpacity="0.3" DefaultScale="1.0"/>
+
+  <Animation
+		Name="BasicExplosion" Type="BOOK" FilePath="Fx\\BasicExplosion\BasicExplosion"
+		NumFrames="58" DrawAsDecal="false" Opacity="0.9" RandomFlipHorizontal="true" OffsetY="-50" DefaultScale="0.7"/>
+
+  <Animation
+		Name="GasExplosion" Type="BOOK" FilePath="Fx\\BasicExplosion\BasicExplosion"
+		NumFrames="58" DurationFrames="90" DrawAsDecal="false" Opacity="1" RandomFlipHorizontal="true" OffsetY="-100" OffsetX="-20" DefaultScale="1.3"
+		DefaultAngle="90" Red="0.1" Green="0.1" Blue="1"/>
+
+	<Animation
+		Name="GasfellaIchor" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.6" RandomFlipHorizontal="true" OffsetY="-25"
+		RandomScaleMin="1.0" RandomScaleMax="1.2"
+		Red="0.1" Green="0.6" Blue="1.0" RandomAngle="true" Rotate="true"/>
+
+	<Animation
+		Name="GasfellaIchorLight" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.2" RandomFlipHorizontal="true" OffsetY="-25"
+		RandomScaleMin="1.0" RandomScaleMax="1.2"
+		Red="1.0" Green="1.0" Blue="0.8" RandomAngle="true" Rotate="true"/>
+
+	<Animation
+		Name="GasfellaIchorLightSmall" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.2" RandomFlipHorizontal="true" OffsetY="-25"
+		RandomScaleMin="0.2" RandomScaleMax="0.3"
+		Red="1.0" Green="1.0" Blue="0.8" RandomAngle="true" Rotate="true"/>	
+
+	<Animation
+		Name="PlantIchor" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.65" RandomFlipHorizontal="true" OffsetY="-20"
+		RandomScaleMin="1.0" RandomScaleMax="1.2"
+		Red="0.4" Green="1.0" Blue="0.0" RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="FireflyDeathIchor" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.65" RandomFlipHorizontal="true" OffsetY="-20"
+		OffsetZ="60"
+		RandomScaleMin="1.0" RandomScaleMax="1.2"
+		Red="0.4" Green="1.0" Blue="0.0" RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="FireflyDeathIchor_Large" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.75" RandomFlipHorizontal="true" OffsetY="-20"
+		OffsetZ="60"
+		RandomScaleMin="1.2" RandomScaleMax="1.4"
+		Red="0.6" Green="1.0" Blue="0.2" RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="FireflySpawnerFireFx" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.65" RandomFlipHorizontal="true" OffsetY="-190"
+		RandomScaleMin="1.0" RandomScaleMax="1.2"
+		Red="0.4" Green="1.0" Blue="0.0" RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="SporeIchor" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" DurationFrames="60" Opacity="0.65" RandomFlipHorizontal="true" OffsetY="-20"
+		RandomScaleMin="0.6" RandomScaleMax="0.7"
+		Red="1.0" Green="0.35" Blue="0.1" RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="SmokePuff_Small" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" RandomFlipHorizontal="true" RandomDurationMin="0.5" RandomDurationMax="0.8"
+		Blue="0.1" Red="0.6" Green="0.4" StartOpacity="0.7" EndOpacity="0.1"
+		RandomScaleMin="0.8" RandomScaleMax="1.2"
+		StartScale="0.8" EndScale="1.1" OffsetY="30" OffsetX="-10"
+		RandomOffsetX="10" RandomOffsetY="10"
+		RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="SmokePuff_Small2" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" RandomFlipHorizontal="true" RandomDurationMin="0.4" RandomDurationMax="0.7"
+		Blue="0.2" Red="0.5" Green="0.3" StartOpacity="0.7" EndOpacity="0.1"
+		RandomScaleMin="0.8" RandomScaleMax="1.2"
+		StartScale="0.5" EndScale="1.4" OffsetY="30" OffsetX="-10"
+		RandomOffsetX="10" RandomOffsetY="10"
+		RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="SmokePuff_Medium" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" RandomDurationMin="0.7" RandomDurationMax="1.0" RandomFlipHorizontal="true"
+		Blue="0.1" Red="0.5" Green="0.4" StartOpacity="0.9" EndOpacity="0.5"
+		RandomScaleMin="0.8" RandomScaleMax="1.2"
+		StartScale="1.5" EndScale="1.7" OffsetY="-30"
+		RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="SmokePuff_Large" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		StartFrame="10" EndFrame="60" RandomDurationMin="1.3" RandomDurationMax="1.67"
+		Opacity="0.9" RandomFlipHorizontal="true" OffsetY="-50" OffsetX="10"
+		RandomScaleMin="2.4" RandomScaleMax="2.8"
+		RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="LargeObstacleDustCloud" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		StartFrame="10" EndFrame="60" RandomDurationMin="1.3" RandomDurationMax="1.67"
+		Opacity="0.8" RandomFlipHorizontal="true" OffsetY="-90"
+		Blue="0.5" Red="1.0" Green="0.7" DefaultScale="3.0"
+		RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="DustCloud_Small" Type="BOOK" FilePath="Fx\\DustCloud_Small\DustCloud_Small"
+		NumFrames="53" DrawAsDecal="false"
+		StartOpacity="0.7" EndOpacity="0.1"
+		RandomScaleMin="0.8" RandomScaleMax="1.2"
+		RandomOffsetX="15" RandomOffsetY="15"
+		RandomAngle="true" Rotate="true"/>
+
+
+    <Animation
+          Name="DustCloud_Small_Blue" Type="BOOK" FilePath="Fx\\DustCloud_Small\DustCloud_Small"
+          NumFrames="53" DrawAsDecal="false"
+          StartOpacity="0.3" EndOpacity="0.1"
+          RandomScaleMin="0.1" RandomScaleMax="0.3"
+          RandomOffsetX="15" RandomOffsetY="15"
+          RandomAngle="true" Rotate="true"
+          Red="0.0" Green="0.0" Blue="1.0"/>
+
+  <Animation
+		  Name="DustCloud_Mini" Type="BOOK" FilePath="Fx\\DustCloud_Small\DustCloud_Small"
+		  NumFrames="53" DrawAsDecal="false"
+		  StartOpacity="0.7" EndOpacity="0.1"
+		  RandomScaleMin="0.4" RandomScaleMax="0.75"
+		  RandomOffsetX="15" RandomOffsetY="15"
+		  RandomAngle="true" Rotate="true"/>
+
+  <Animation
+	    Name="FlamethrowerFire" Type="BOOK" FilePath="Fx\\FireA\FireA"
+		NumFrames="24" DurationFrames="24" Loop="true"
+	    DrawAsDecal="false" Opacity="0.8" RandomFlipHorizontal="true" RandomAngle="true" Rotate="true" DefaultScale="1.0"
+	    Red="1.0" Green="1.0" Blue="1.0"
+		StartScale="1.0" EndScale="1.0"/>
+
+  <Animation
+		Name="CravenDeath_Curl1" Type="CONSTANT" FilePath="Fx\\craven_feathers\feather_curled"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.1"
+		RandomAngle="true" Rotate="true" RotationSpeed="4320"
+		RandomDurationMin="0.2" RandomDurationMax="0.25"
+		StartOpacity="1.0" EndOpacity="0.5"
+		StartScale="1.0" EndScale="1.25"
+		Velocity="500"
+		ChildAnimation="CravenDeath_Curl2"/>
+
+  <Animation
+		Name="CravenDeath_Curl2" Type="CONSTANT" FilePath="Fx\\craven_feathers\feather_curled"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.1"
+		RandomAngle="true" Rotate="true" RotationSpeed="4320"
+		RandomDurationMin="0.2" RandomDurationMax="0.25"
+		StartOpacity="1.0" EndOpacity="0.5"
+		StartScale="1.0" EndScale="1.25"
+		Velocity="500"
+		ChildAnimation="CravenDeath_Curl3"/>
+
+  <Animation
+		Name="CravenDeath_Curl3" Type="CONSTANT" FilePath="Fx\\craven_feathers\feather_curled"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.1"
+		RandomAngle="true" Rotate="true" RotationSpeed="4320"
+		RandomDurationMin="0.2" RandomDurationMax="0.25"
+		StartOpacity="1.0" EndOpacity="0.5"
+		StartScale="1.0" EndScale="1.25"
+		Velocity="500"
+		ChildAnimation="CravenDeath_Straight1"/>
+
+  <Animation
+		Name="CravenDeath_Straight1" Type="CONSTANT" FilePath="Fx\\craven_feathers\feather_straight"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.1"
+		RandomAngle="true" Rotate="true"
+		RandomDurationMin="0.2" RandomDurationMax="0.25"
+		StartOpacity="1.0" EndOpacity="0.5"
+		StartScale="1.0" EndScale="1.25"
+		Velocity="500"
+		ChildAnimation="CravenDeath_Straight2"/>
+
+  <Animation
+		Name="CravenDeath_Straight2" Type="CONSTANT" FilePath="Fx\\craven_feathers\feather_straight"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.1"
+		RandomAngle="true" Rotate="true"
+		RandomDurationMin="0.2" RandomDurationMax="0.25"
+		StartOpacity="1.0" EndOpacity="0.5"
+		StartScale="1.0" EndScale="1.25"
+		Velocity="500"
+		ChildAnimation="null"/>
+
+  <Animation
+		Name="FlamethrowerSparks" Type="CONSTANT" FilePath="ForegroundFlyers\\cinder_2"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.1"
+		RandomAngle="true" Rotate="true"
+		RandomDurationMin="0.3" RandomDurationMax="0.35"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Velocity="350"
+		ChildAnimation="null"/>
+
+  <Animation
+		Name="FlamethrowerSparks_2" Type="CONSTANT" FilePath="ForegroundFlyers\cinder_3"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.1"
+		RandomAngle="true" Rotate="true"
+		RandomDurationMin="0.3" RandomDurationMax="0.35"
+		StartOpacity="1.0" EndOpacity="0.5"
+		Velocity="350"
+		ChildAnimation="null"/>
+
+  <Animation
+		Name="FlameDeathAsh" Type="CONSTANT" FilePath="ForegroundFlyers\\ash_1"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="0.75" RandomDurationMax="1.25"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		StartOffsetZ="25" EndOffsetZ="125"
+		RandomOffsetX="30" RandomOffsetY="40"
+		ChildAnimation="FlameDeathAsh_Particle2"
+		>
+  </Animation>
+
+  <Animation
+		Name="FlameDeathAsh_Particle2" Type="CONSTANT" FilePath="ForegroundFlyers\\ash_2"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="0.75" RandomDurationMax="1.25"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		StartOffsetZ="25" EndOffsetZ="125"
+		RandomOffsetX="30" RandomOffsetY="40"
+		ChildAnimation="FlameDeathAsh_Particle3"
+		>
+  </Animation>
+
+  <Animation
+		Name="FlameDeathAsh_Particle3" Type="CONSTANT" FilePath="ForegroundFlyers\\ash_3"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="0.75" RandomDurationMax="1.25"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		StartOffsetZ="25" EndOffsetZ="125"
+		RandomOffsetX="30" RandomOffsetY="40"
+		ChildAnimation="FlameDeathAsh_Particle4"
+		>
+  </Animation>
+
+  <Animation
+		Name="FlameDeathAsh_Particle4" Type="CONSTANT" FilePath="ForegroundFlyers\\ash_1"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="0.75" RandomDurationMax="1.25"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		StartOffsetZ="25" EndOffsetZ="125"
+		RandomOffsetX="30" RandomOffsetY="40"
+		ChildAnimation="FlameDeathAsh_Particle5"
+		>
+  </Animation>
+
+  <Animation
+		Name="FlameDeathAsh_Particle5" Type="CONSTANT" FilePath="ForegroundFlyers\\ash_2"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="0.75" RandomDurationMax="1.25"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		StartOffsetZ="25" EndOffsetZ="125"
+		RandomOffsetX="30" RandomOffsetY="40"
+		ChildAnimation="null"
+		>
+  </Animation>
+
+  <Animation
+    Name="SpearJump_Takeoff" Type="BOOK" FilePath="Fx\\DustD\DustD"
+    NumFrames="80"
+    Opacity="0.5"
+    DrawAsDecal="false" RandomFlipHorizontal="true" OffsetY="-55" DefaultScale="1.0"
+    Red="0.0" Green="0.95" Blue="0.67"/>
+  
+  <Animation
+		Name="SpearJumpLandCrack" Type="CONSTANT" FilePath="Decals\\Crater_01"
+		DrawAsDecal="true" RandomAngle="true" RandomFlipHorizontal="true"
+		Duration="1"
+		RandomScaleMin="0.9" RandomScaleMax="1.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ChildAnimation="SpearJumpLandDust"
+		>
+  </Animation>
+
+  <Animation
+		Name="SpearJumpLandDust" Type="BOOK" FilePath="Fx\\DustC\\DustC"
+		NumFrames="30"
+    Duration="1"
+		DrawAsDecal="true"
+		RandomScaleMin="0.9" RandomScaleMax="1.0"
+		RandomAngle="true" RandomFlipHorizontal="true"
+		ChildAnimation="SpearJumpLandNova"/>
+
+  <Animation
+		Name="SpearJumpLandNova" Type="BOOK" FilePath="Fx\\GroundBlastB\\GroundBlastB"
+		DrawAsDecal="true"
+		NumFrames="60"
+    StartScale="1.0" EndScale="1.5"
+		ScaleRadius="155"
+		Red="1.0" Green="0.3" Blue="0.6"
+		FlipVertical="true"
+		>
+  </Animation>
+
+  <Animation
+		Name="DecoyDust" Type="BOOK" FilePath="Fx\\DustD\DustD"
+		NumFrames="80"
+		DrawAsDecal="false" Opacity="0.8" RandomFlipHorizontal="true" OffsetY="-55" DefaultScale="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="UraDust" Type="BOOK" FilePath="Fx\\DustD\DustD"
+		NumFrames="80"
+		DrawAsDecal="false" Opacity="0.8" RandomFlipHorizontal="true" OffsetY="-55" DefaultScale="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"/>
+
+	<Animation
+		Name="BlinkDust" Type="BOOK" FilePath="Fx\\DustD\DustD"
+		NumFrames="80" Duration="0.5"
+		DrawAsDecal="false" Opacity="0.5" RandomFlipHorizontal="true" OffsetY="-55" DefaultScale="1.0"
+		Red="0.0" Green="0.0" Blue="0.0"/>
+
+	<Animation
+		Name="DeathD" Type="BOOK" FilePath="Fx\\DeathD\\DeathD"
+		NumFrames="19" DurationFrames="38"
+		OffsetY="0" Red="0.0" Green="0.0" Blue="0.0"
+		DefaultScale="1.1" ScaleRadius="100"
+		RandomOffsetX="10" RandomOffsetY="10"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+    Name="CannonImpact" Type="BOOK" FilePath="Fx\\DeathD\\DeathD"
+    NumFrames="19" DurationFrames="20"
+    OffsetY="0"
+    DefaultScale="0.7" ScaleRadius="100"
+    RandomOffsetX="10" RandomOffsetY="10"
+    Red="1.0" Green="0.82" Blue="0.09"
+    RandomFlipVertical="true" RandomFlipHorizontal="true" ChildAnimation="CannonImpactBurst"/>
+
+	<Animation
+		Name="CannonImpact2" Type="BOOK" FilePath="Fx\\DeathD\\DeathD"
+		NumFrames="19" DurationFrames="20"
+		OffsetY="0"
+		DefaultScale="0.7" ScaleRadius="100"
+		RandomOffsetX="10" RandomOffsetY="10"
+		Red="0.0" Green="1.0" Blue="0.09"
+		RandomFlipVertical="true" RandomFlipHorizontal="true" ChildAnimation="CannonImpactBurst"/>
+
+	<Animation
+		Name="DeathTurtle" Type="BOOK" FilePath="Fx\\DeathD\\DeathD"
+		NumFrames="19" DurationFrames="38"
+		OffsetY="-40"
+		Red="0.9" Green="1.0" Blue="1.0"
+		DefaultScale="1.2" ScaleRadius="100"
+		RandomOffsetX="10" RandomOffsetY="10"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="DeathE" Type="BOOK" FilePath="Fx\\DeathE\\DeathE"
+		NumFrames="30"
+		OffsetY="0"
+		DefaultScale="1.0" ScaleRadius="100"
+		RandomOffsetX="10" RandomOffsetY="10"
+		RandomFlipVertical="false" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="DeathE_Light" Type="BOOK" FilePath="Fx\\DeathE\\DeathE"
+		NumFrames="30"
+		OffsetY="0"
+		DefaultScale="0.7" ScaleRadius="100"
+		RandomOffsetX="10" RandomOffsetY="10"
+    Red="0.9" Green="0.7" Blue="1.0" Opacity="0.8"
+		RandomFlipVertical="false" RandomFlipHorizontal="true"/>
+  
+  <Animation
+		Name="WoodDeath" Type="BOOK" FilePath="Fx\\DeathE\\DeathE"
+		NumFrames="30"
+		DefaultScale="1.2" ScaleRadius="100"
+		RandomOffsetX="10" RandomOffsetY="10"
+		OffsetY="-68" RandomAngle="true"
+		Red="1.0" Green="0.75" Blue="1.0"
+		RandomFlipVertical="false" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="HitF" Type="BOOK" FilePath="Fx\\HitF\\HitF"
+		NumFrames="9"
+		OffsetY="0"
+		DefaultScale="1.0" ScaleRadius="100"
+		RandomOffsetX="10" RandomOffsetY="10"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"
+		/>
+
+  <Animation
+		Name="SpineweedFire" Type="BOOK" FilePath="Fx\\HitF\\HitF"
+		NumFrames="9"
+		OffsetY="0" OffsetZ="30"
+		DefaultScale="0.7"
+		RandomOffsetX="0" RandomOffsetY="0"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="SpineweedFireBig" Type="BOOK" FilePath="Fx\\HitF\\HitF"
+		NumFrames="9"
+		OffsetY="0" OffsetZ="30"
+		DefaultScale="1.5"
+		RandomOffsetX="0" RandomOffsetY="0"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="FlyingSwarmerAttack" Type="BOOK" FilePath="Fx\\FeatherBurst\\FeatherBurst"
+		NumFrames="35"
+		OffsetY="0" OffsetZ="120"
+		DefaultScale="0.8"
+		RandomOffsetX="5" RandomOffsetY="5"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="FlyingSwarmerDeath" Type="BOOK" FilePath="Fx\\FeatherBurst\\FeatherBurst"
+		NumFrames="35"
+		OffsetY="0" OffsetZ="0"
+		DefaultScale="1.0"
+		RandomOffsetX="5" RandomOffsetY="5"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="FlyingSwarmerDeath_Small" Type="BOOK" FilePath="Fx\\FeatherBurst\\FeatherBurst"
+		NumFrames="35"
+		OffsetY="0" OffsetZ="0"
+		DefaultScale="0.6"
+		RandomOffsetX="5" RandomOffsetY="5"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="MoleDeath" Type="BOOK" FilePath="Fx\\FeatherBurst\\FeatherBurst"
+		NumFrames="35"
+		OffsetY="0" OffsetZ="0"
+		DefaultScale="1.0"
+		RandomOffsetX="5" RandomOffsetY="5"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="FrogDeath" Type="BOOK" FilePath="Fx\\FeatherBurst\\FeatherBurst"
+		NumFrames="35"
+		OffsetY="0" OffsetZ="0"
+		DefaultScale="1.5"
+		RandomOffsetX="5" RandomOffsetY="5"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="MoleDeath_Small" Type="BOOK" FilePath="Fx\\FeatherBurst\\FeatherBurst"
+		NumFrames="35"
+		OffsetY="0" OffsetZ="0"
+		DefaultScale="0.6"
+		RandomOffsetX="5" RandomOffsetY="5"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="TurtleFire" Type="BOOK" FilePath="Fx\\HitF\\HitF"
+		NumFrames="9"
+		OffsetY="0" OffsetZ="100"
+		DefaultScale="1.0"
+		RandomOffsetX="8" RandomOffsetY="8"
+		Red="0.8" Green="1.0" Blue="0.2"
+		RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="DustE" Type="BOOK" FilePath="Fx\\DustE\\DustE"
+		NumFrames="19"
+		OffsetY="0"
+		DefaultScale="1.0"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomFlipVertical="false" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="DustF" Type="BOOK" FilePath="Fx\\DustF\\DustF"
+		NumFrames="34"
+		OffsetY="0"
+		DefaultScale="1.0"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="SpecialFire" Type="BOOK" FilePath="Fx\\SpecialFire\\SpecialFire"
+		NumFrames="30"
+		OffsetY="-60"
+		DefaultScale="1.0"
+		RandomOffsetX="0" RandomOffsetY="0"
+		Mirror="true"
+		AttachToOwner="true"/>
+
+    <Animation
+         Name="SpecialFireFeet" Type="BOOK" FilePath="Fx\\SpecialFire\\SpecialFire"
+         NumFrames="30"
+         OffsetY="0"
+         DefaultScale="0.35"
+         RandomOffsetX="0" RandomOffsetY="0"
+         Mirror="true"
+         AttachToOwner="true"/>
+
+    <Animation
+		Name="SpecialFirePreview" Type="SLIDE" FilePath="Fx\\SpecialFire\\SpecialFire"
+        OffsetY="-60" AllowRestart="true"
+		NumAngles="32"
+		Opacity="0.5"
+		Mirror="true">
+
+		<Slide DurationFrames="999999"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+
+	</Animation>
+
+	<Animation
+		Name="HitG" Type="BOOK" FilePath="Fx\\HitG\\HitG"
+		NumFrames="20"
+		OffsetY="0"
+		DefaultScale="1.0"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomFlipHorizontal="true" RandomFlipVertical="true"/>
+
+  <Animation
+		Name="IceShatter" Type="BOOK" FilePath="Fx\\IceShatter\\IceShatter"
+		NumFrames="30"
+		OffsetY="-110"
+		DefaultScale="1.0"
+		RandomOffsetX="5" RandomOffsetY="5"
+		RandomFlipHorizontal="true" RandomFlipVertical="false"/>
+
+  <Animation
+		Name="IceShatter_Large" Type="BOOK" FilePath="Fx\\IceShatter\\IceShatter"
+		NumFrames="30"
+		OffsetY="-200"
+		DefaultScale="2.0"
+		RandomOffsetX="6" RandomOffsetY="6"
+		RandomFlipHorizontal="true" RandomFlipVertical="false"/>
+
+  <Animation
+		Name="IceShatter_Gold" Type="BOOK" FilePath="Fx\\IceShatter\\IceShatter"
+		NumFrames="30"
+		OffsetY="-200"
+		DefaultScale="2.0"
+		RandomOffsetX="7" RandomOffsetY="7"
+		Red="1.0" Green="0.75" Blue="0.5"
+		RandomFlipHorizontal="true" RandomFlipVertical="false"/>
+
+  <Animation
+		Name="IceShatter_Dark" Type="BOOK" FilePath="Fx\\IceShatter\\IceShatter"
+		NumFrames="30"
+		OffsetY="-200"
+		DefaultScale="2.0"
+		RandomOffsetX="7" RandomOffsetY="7"
+		Red="0.55" Green="0.55" Blue="0.55"
+		RandomFlipHorizontal="true" RandomFlipVertical="false"/>
+
+  <Animation
+		Name="IceShatter_Blue" Type="BOOK" FilePath="Fx\\IceShatter\\IceShatter"
+		NumFrames="30"
+		OffsetY="-200"
+		DefaultScale="1.7"
+		RandomOffsetX="4" RandomOffsetY="4"
+		Red="0.65" Green="0.75" Blue="1.0"
+		RandomFlipHorizontal="true" RandomFlipVertical="false"/>
+
+  <Animation
+		Name="PlantHitSpark" Type="BOOK" FilePath="Fx\\HitG\\HitG"
+		NumFrames="20"
+		RandomOffsetX="10" RandomOffsetY="10"
+		DefaultScale="1.0"
+		RandomFlipHorizontal="true" RandomFlipVertical="false"
+		Green="1.0" Red="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="PlantHitSpark_Small" Type="BOOK" FilePath="Fx\\HitG\\HitG"
+		NumFrames="20"
+		RandomOffsetX="10" RandomOffsetY="10"
+		DefaultScale="0.5"
+		RandomFlipHorizontal="true" RandomFlipVertical="false"
+		Green="1.0" Red="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="TurretDamagedSmokeSpawner" Type="CONSTANT" FilePath="Animations\\Mudgator\\mudgator_spike"
+		Opacity="0.0"
+		Mirror="false"
+		DieWithOwner="true"
+		VisualFx="TurretDamagedSmoke" VisualFxIntervalMin="0.09" VisualFxIntervalMax="0.13"
+		>
+  </Animation>
+
+  <Animation
+		Name="TurretDamagedSmoke" Type="BOOK" FilePath="Fx\\DustE\\DustE"
+		NumFrames="19"
+		DurationFrames="38"
+		DefaultScale="0.5"
+		StartOffsetZ="150" EndOffsetZ="270"
+		Red="0.1" Green="0.1" Blue="0.1"
+		RandomOffsetX="20" RandomOffsetY="10"
+		RandomFlipHorizontal="true"
+		StartOpacity="0.0" EndOpacity="0.8" PingPongColor="true" StartColorFraction="0.2" EndColorFraction="0.2"
+		>
+  </Animation>
+
+  <Animation
+		Name="FrogLandFx" Type="CONSTANT" FilePath="Decals\\Crater_01"
+		OffsetY="24"
+		DrawAsDecal="true" RandomAngle="true" RandomFlipHorizontal="true"
+		Duration="1.5"
+		RandomScaleMin="0.4" RandomScaleMax="0.6"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ChildAnimation="FrogLandDust"
+		>
+  </Animation>
+
+  <Animation
+		Name="FrogLandDust" Type="BOOK" FilePath="Fx\\DustE\\DustE"
+		NumFrames="19"
+		OffsetY="10"
+		DefaultScale="1.0"
+		RandomFlipHorizontal="true">
+  </Animation>
+
+  <Animation
+		Name="SuperFrogLandFx" Type="CONSTANT" FilePath="Decals\\Crater_01"
+		OffsetY="24"
+		DrawAsDecal="true" RandomAngle="true" RandomFlipHorizontal="true"
+		Duration="0.6"
+		RandomScaleMin="1.1" RandomScaleMax="1.3"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ChildAnimation="FrogLandDust"
+		>
+  </Animation>
+
+	<Animation
+	  Name="HunterJumpGroundBlast" Type="BOOK" FilePath="Fx\\GroundBlastA\\GroundBlastA"
+	  DrawAsDecal="true" ScaleRadius="105"
+	  NumFrames="38"
+	  DefaultScale="0.6"
+	  Red="1.0" Green="0.5" Blue="0.5"
+	  FlipVertical="true"
+	  ChildAnimation="SuperFrogLandFx"
+		>
+	</Animation>
+
+	<Animation
+		Name="StinkweedDeath" Type="BOOK" FilePath="Fx\\DeathE\\DeathE"
+		NumFrames="30"
+		OffsetY="-20"
+		DefaultScale="1.2"
+		RandomFlipVertical="false" RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="LassoDeath" Type="BOOK" FilePath="Fx\\DeathE\\DeathE"
+		NumFrames="30"
+		OffsetY="-10"
+		DefaultScale="0.65"
+		RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="LassoJumpDust" Type="BOOK" FilePath="Fx\\DustF\\DustF"
+		NumFrames="34"
+		OffsetY="0"
+		DefaultScale="1.0"
+		RandomOffsetX="8" RandomOffsetY="8"
+		RandomFlipHorizontal="true"/>
+
+  <Animation
+		Name="LassoLandDust" Type="BOOK" FilePath="Fx\\SmokePuff_Small\SmokePuff_Small"
+		NumFrames="60" RandomFlipHorizontal="true"
+		RandomDurationMin="0.5" RandomDurationMax="0.8"
+		Blue="0.1" Red="0.6"
+		Green="0.4" StartOpacity="0.7" EndOpacity="0.1"
+		RandomScaleMin="0.8" RandomScaleMax="1.2"
+		StartScale="0.8" EndScale="1.1"
+		OffsetY="0" OffsetX="-10"
+		RandomAngle="true" Rotate="true"/>
+
+  <Animation
+		Name="BullRiseSmoke" Type="BOOK" FilePath="Fx\\DustE\\DustE"
+		NumFrames="19"
+		DurationFrames="38"
+		DefaultScale="0.5"
+		StartOffsetZ="250" EndOffsetZ="370"
+		Red="0.1" Green="0.1" Blue="0.1"
+		RandomOffsetX="60" RandomOffsetY="8"
+		RandomFlipHorizontal="true"
+		StartOpacity="0.0" EndOpacity="0.8" PingPongColor="true" StartColorFraction="0.2" EndColorFraction="0.2"
+		>
+  </Animation>
+
+  <Animation
+		Name="BullMoveDust" Type="SLIDE" FilePath="Fx\\WalkDust\\WalkDust" DrawAsDecal="true"
+		RandomOffsetX="6" RandomOffsetY="6"
+		NumFrames="30" DefaultScale="0.7">
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+
+    <Slide DurationFrames="0"/>
+    <Slide DurationFrames="1"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="2"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="3"/>
+    <Slide DurationFrames="4"/>
+
+    <Slide DurationFrames="4"/>
+    <Slide DurationFrames="4"/>
+    <Slide DurationFrames="4"/>
+    <Slide DurationFrames="4"/>
+    <Slide DurationFrames="5"/>
+    <Slide DurationFrames="5"/>
+    <Slide DurationFrames="5"/>
+    <Slide DurationFrames="5"/>
+    <Slide DurationFrames="5"/>
+    <Slide DurationFrames="5"/>
+
+  </Animation>
+
+  <Animation
+		Name="FrogHelmetExplosion" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+		NumFrames="60"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomFlipHorizontal="true"
+		Red="1.0" Green="1.0" Blue="1.0" OffsetY="-100"
+		DefaultScale="1.0"
+		/>
+
+  <Animation
+	    Name="MartyrdomExplosion" Type="BOOK" FilePath="Fx\\ExplosionA\ExplosionA"
+		OffsetY="-106" ScaleRadius="85"
+	    NumFrames="60"
+		RandomFlipHorizontal="true" DefaultScale="1.0"
+	    Red="1.0" Green="1.0" Blue="1.0"/>
+
+  <Animation
+		Name="TileRise" Type="BOOK" FilePath="Fx\\TileRise\\TileRise"
+		NumFrames="19"
+		RandomFlipHorizontal="true"
+		StartOpacity="0.0" EndOpacity="1.0"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="StartScreenDust" Type="CONSTANT" FilePath="ForegroundFlyers\\rock_03"
+		StartOffsetY="0" EndOffsetY="750"
+		Duration="1.5"
+		RandomScaleMin="0.2" RandomScaleMax="0.9"
+		RandomOffsetX="425" RandomOffsetY="75"
+		DefaultAngle="90"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ChildAnimation="null"
+		>
+  </Animation>
+
+  <Animation
+		Name="PlayerDeathWeaponNova" Type="BOOK" FilePath="Fx\\GroundBlastB\\GroundBlastB"
+		DrawAsDecal="true"
+		NumFrames="60" DurationFrames="30"
+		DefaultScale="1.0"
+		ScaleRadius="155"
+		Red="1.0" Green="0.51" Blue="0.9"
+		>
+  </Animation>
+
+  <Animation
+		Name="MemorialTurnIn" Type="BOOK" FilePath="Fx\\BurstA\BurstA"
+		NumFrames="19"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="OrbPlotFx" Type="BOOK" FilePath="Fx\\BurstA\BurstA"
+		NumFrames="19"
+		DrawAsDecal="true"
+		DefaultScale="1.0"/>
+
+  <Animation
+		Name="ForgeBuy" Type="BOOK" FilePath="Fx\\BurstA\BurstA"
+		NumFrames="19"
+		DefaultScale="1.0"
+		Red="0.21" Green="0.91" Blue="1.0"/>
+
+  <Animation
+		Name="ShrineInvoke" Type="BOOK" FilePath="Fx\\BurstA\BurstA"
+		NumFrames="19"
+		DefaultScale="1.0"
+		Red="0.21" Green="0.91" Blue="1.0"/>
+
+  <Animation
+		Name="PowershotTrailFx" Type="CONSTANT" FilePath="ForegroundFlyers\\spark_triangle"
+		Loop="false"
+		StartOpacity="1.0" EndOpacity="0.0" PingPongColor="false"
+		Rotate="true"
+		RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+		RandomScaleMin="0.6" RandomScaleMax="0.8"
+		RandomDurationMin="0.8" RandomDurationMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="-90"
+		Red="1.0" Green="1.0" Blue="1.0"
+		ChildAnimation="null"
+		>
+  </Animation>
+
+	<Animation
+	  Name="TempPriestRainFx" Type="CONSTANT" FilePath="Particles\\particle_green_glow"
+	  Loop="false"
+	  StartOpacity="1.0" EndOpacity="0.85" PingPongColor="false"
+	  Rotate="true"
+	  RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+	  RandomScaleMin="0.6" RandomScaleMax="0.8"
+	  RandomDurationMin="0.8" RandomDurationMax="1.1"
+	  StartOffsetZ="0" EndOffsetZ="-90"
+	  Red="1.0" Green="1.0" Blue="1.0"
+	  ChildAnimation="null"
+	  Material="Emissive"
+		>
+	</Animation>
+
+  <Animation
+		Name="LevelFiveTrailFx" Type="CONSTANT" FilePath="ForegroundFlyers\\spark_diamond"
+		Loop="false"
+		StartOpacity="1.0" EndOpacity="0.0" HoldStartColorFraction="0.5"
+		Rotate="true" RotationSpeed="0"
+		RandomDurationMin="0.3" RandomDurationMax="0.4"
+		StartOffsetZ="0" EndOffsetZ="-80"
+		Red="1.0" Green="1.0" Blue="1.0"
+		ChildAnimation="null"
+		>
+  </Animation>
+
+  <Animation
+		Name="SpecialTrailFx" Type="CONSTANT" FilePath="ForegroundFlyers\\spark_burst"
+		Loop="false"
+		StartOpacity="1.0" EndOpacity="0.0" 
+		Rotate="true" RotationSpeed="0"
+		DefaultScale="1"
+    RandomScaleMin="0.2" RandomScaleMax="1.2"
+		RandomDurationMin="0.3" RandomDurationMax="0.4"
+		StartOffsetZ="0" EndOffsetZ="-0"
+    StartRed="0.91" StartGreen="0.77" StartBlue="1.0"
+		ChildAnimation="null"
+		>
+  </Animation>
+<!--
+  <Animation
+    Name="DeadBirdRain" Type="CONSTANT" FilePath="Animations\\FlyingSwarmer\\FlyingSwarmerClawAttack\\FlyingSwarmerClawAttack0003"
+    DefaultAngle="-90" RandomScaleMin="0.4" RandomScaleMax="0.5"
+    Duration="1.1"
+    Rotate="true" RotationSpeed="300"
+    StartOpacity="0" EndOpacity="1"
+    RandomFlipHorizontal="true"
+    StartRed="0.0" EndRed="1.0" StartGreen="0.2" EndGreen="0.5"
+		>
+  </Animation>
+  <Animation
+     Name="BulletRain_Impact" Type="BOOK" FilePath="Fx\\FeatherBurst\\FeatherBurst"
+     NumFrames="35"
+     OffsetY="0" OffsetZ="0"
+     DefaultScale="1.0"
+     RandomScaleMin="0.5" RandomScaleMax="1.0"
+     Red="0.0"
+     RandomOffsetX="5" RandomOffsetY="5"
+     RandomFlipVertical="true" RandomFlipHorizontal="true"/>
+  </Animation>
+-->
+	
+	<!-- Using Jen's Animations for Terrible Purposes-->
+	
+	<Animation
+		Name="BulletRain_Descent" Type="CONSTANT" FilePath="ForegroundFlyers\\rock_03"
+		DefaultAngle="-90" RandomScaleMin="0.8" RandomScaleMax="1.2"
+		Duration="1.1"
+		Rotate="false"
+		StartOpacity="0" EndOpacity="1"
+		RandomFlipHorizontal="true"
+		StartRed="0.0" EndRed="1.0" StartGreen="1" EndGreen="1">
+	</Animation>
+
+    <Animation
+     Name="BulletRain_Impact" Type="BOOK" FilePath="Fx\\DustE\\DustE"
+     NumFrames="19"
+     OffsetY="0" OffsetZ="0"
+     DefaultScale="1.0"
+     Red="1.0" Blue="0.2" Green="0.5"
+     StartRed="1.0" EndRed="0.5" StartGreen="1.0" EndGreen="0.2"
+     RandomScaleMin="0.5" RandomScaleMax="1.0"
+     RandomOffsetX="5" RandomOffsetY="5"
+     RandomFlipVertical="true" RandomFlipHorizontal="true">
+    </Animation>
+
+
+	<Animation
+		Name="BulletRain_Ascent" Type="CONSTANT" FilePath="Projectiles\\bullet_tracer"
+		StartOpacity="0.0" EndOpacity="1.0" 
+		OffsetX="20" 
+		StartScale="1" EndScale="2" Duration="1" DefaultAngle="-90" Red="1" Green="0.7" Blue="1"
+		>
+	</Animation>
+
+    
+	<Animation
+		Name="GhostBladeFX" Type="BOOK" FilePath="Fx\\WalkDust\WalkDust"
+		NumFrames="30" DurationFrames="30"
+		RandomAngle="true" RandomScaleMin="0.2" RandomScaleMax="0.7"
+		DrawAsDecal="false" StartOpacity="1" EndOpacity="0" OffsetY="-35" DefaultScale="1.0"
+		>
+	</Animation>
+
+    <Animation
+		Name="CannonRocketStormProjectile" Type="CONSTANT" FilePath="Projectiles\Cannonball2"
+		OffsetY="-8"
+		Rotate="true" RotationSpeed="300" Loop="true"
+		DefaultScale="0.5" RandomScaleMin="0.3" RandomScaleMax="0.7" 
+		StartOpacity="0.0" EndOpacity="1.0"
+		Duration="0.4" HoldLastFrame="true"
+		RandomAngle="true"
+		StartRed="1.0" EndRed="0.4" 
+		VisualFx="CannonRocketStormTrailFx" VisualFxIntervalMin="0.7" VisualFxIntervalMax="1.2">
+    </Animation>
+
+  <Animation
+		Name="CannonRocketStormTrailFx" Type="CONSTANT" FilePath="ForegroundFlyers\\cinder_2"
+		Loop="false"
+		StartOpacity="1.0" EndOpacity="0.0" HoldStartColorFraction="0.4"
+		Rotate="true" RotationSpeed="3000"
+		StartScale="0.5" EndScale="1.0"
+		StartRed="1.0" EndRed="0.0"
+		RandomAngle="true"
+		RandomDurationMin="0.5" RandomDurationMax="0.8"
+		Velocity="350"
+		ChildAnimation="null">
+  </Animation>
+
+
+	<Animation
+		Name="CannonBomblettesProjectile" Type="CONSTANT" FilePath="Projectiles\Cannonball2"
+		OffsetY="-8"
+		Rotate="true" RotationSpeed="300" Loop="true"
+		RandomScaleMin="0.8" RandomScaleMax="0.5"
+		HoldLastFrame="true"
+		StartOpacity="1" EndOpacity="1"
+		StartScale="3" EndScale="3" 
+		VisualFx="CannonBomblettesTrailFx" VisualFxIntervalMin="0.5" VisualFxIntervalMax="1">
+    </Animation>
+
+    <Animation
+		Name="CannonBomblettesTrailFx" Type="CONSTANT" FilePath="ForegroundFlyers\\cinder_2"
+		Loop="false"
+		StartOpacity="1.0" EndOpacity="0.0" 
+		StartRed="1.0" EndRed="0.0"
+		Duration="1"
+		Rotate="true" RotationSpeed="2000"
+		StartScale="0.5" EndScale="1.0"
+		RandomAngle="true"
+		RandomDurationMin="0.5" RandomDurationMax="0.9"
+		Velocity="350"
+		ChildAnimation="null">
+    </Animation>
+
+	<Animation
+		Name="IceImpact" Type="BOOK" FilePath="Fx\\BurstA\BurstA"
+		NumFrames="19"
+		OffsetY="20"
+		DefaultScale="1.0"
+		RandomScaleMin="0.7" RandomScaleMax="1.0"
+		RandomAngle="true"
+		RandomFlipHorizontal="true" RandomFlipVertical="true">
+	</Animation>
+
+	<Animation
+		Name="IceImpact_Small" Type="BOOK" FilePath="Fx\\BurstA\BurstA"
+		NumFrames="19"
+		OffsetY="20"
+		DefaultScale="0.6"
+		RandomScaleMin="0.7" RandomScaleMax="1.0"
+		RandomAngle="true"
+		RandomFlipHorizontal="true" RandomFlipVertical="true">
+	</Animation>
+
+	<Animation
+		Name="FocusBarSquares" Type="CONSTANT" FilePath="Particles\\particle_square_01"
+		Duration="3.0"
+		VelocityMin="10" VelocityMax="30"	
+		RandomScaleMin="0.2" RandomScaleMax="0.8"
+		StartOpacity="0" EndOpacity="1.0" HoldStartColorFraction="0.3" PingPongColor="true"
+		StartRed="0" StartGreen="1" StartBlue="1"
+		EndRed="1" EndGreen="1" EndBlue="1"
+
+		>
+	</Animation>
+
+	<Animation
+		Name="FocusBarSpeedLines" Type="CONSTANT" FilePath="Particles\\particle_line_02"
+		Duration="3.0"
+		DesaturationStart="10" DesaturationEnd="1"
+		RandomScaleMin="0.2" RandomScaleMax="0.8"
+		StartOpacity="1" EndOpacity="0" 
+		>
+	</Animation>
+
+	<Animation
+		Name="SuppressorLeg1" Type="CONSTANT" FilePath="Animations\\Suppressor\\Dead\\SuppressorLeg01"
+		RandomAngle="true"
+		RandomRotation="true"
+		RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		DefaultScale="1.25"
+		VelocityMin="250"
+		VelocityMax="350"
+		UpwardVelocityMin="800"
+		UpwardVelocityMax="900"
+		Gravity="2000"
+		DieOnTouchdown="true"
+		VisualFx="SuppressorLeg2" VisualFxCap="1"
+		ChainTo="VirusCritSplatterRandom"
+		>
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="SuppressorLeg2" Type="CONSTANT" FilePath="Animations\\Suppressor\\Dead\\SuppressorLeg02"
+		RandomAngle="true"
+		RandomRotation="true"
+		RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		DefaultScale="1.25"
+		VelocityMin="250"
+		VelocityMax="350"
+		UpwardVelocityMin="800"
+		UpwardVelocityMax="900"
+		Gravity="2000"
+		DieOnTouchdown="true"
+		VisualFx="SuppressorLeg3" VisualFxCap="1"
+		ChainTo="VirusCritSplatterRandom"
+		>
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="SuppressorLeg3" Type="CONSTANT" FilePath="Animations\\Suppressor\\Dead\\SuppressorLeg03"
+		RandomAngle="true"
+		RandomRotation="true"
+		RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		DefaultScale="1.25"
+		VelocityMin="250"
+		VelocityMax="350"
+		UpwardVelocityMin="800"
+		UpwardVelocityMax="900"
+		Gravity="2000"
+		DieOnTouchdown="true"
+		ChainTo="VirusCritSplatterRandom"
+		>
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="DemolisherDeathExplosion" InheritFrom="ClusterBombExplode"
+		DefaultScale="0.8"
+		>
+	</Animation>
+
+	<Animation
+		Name="DemolisherDebris" Type="RANDOM"
+		>
+		<Random Name="DemolisherDebris01"/>
+		<Random Name="DemolisherDebris02"/>
+		<Random Name="DemolisherDebris03"/>
+		<Random Name="DemolisherDebris04"/>
+		<Random Name="DemolisherDebris05"/>
+		<Random Name="DemolisherDebris06"/>
+		<Random Name="DemolisherDebris07"/>
+		<Random Name="DemolisherDebris08"/>
+		<Random Name="DemolisherDebris09"/>
+		<Random Name="DemolisherDebris10"/>
+		<Random Name="DemolisherDebris11"/>
+		<Random Name="DemolisherDebris12"/>
+		<Random Name="DemolisherDebris13"/>
+		<Random Name="DemolisherDebris14"/>
+		<Random Name="DemolisherDebris15"/>
+		<Random Name="DemolisherDebris16"/>
+		<Random Name="DemolisherDebris17"/>
+	</Animation>
+	
+	<Animation
+		Name="DemolisherDebrisPrototype" Type="CONSTANT" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris01"
+		RandomAngle="true"
+		RandomRotation="true"
+		RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+		RotateWithGravity="true"
+		DefaultScale="1.0"
+		VelocityMin="20"
+		VelocityMax="550"
+		Gravity="1000"
+	    UpwardVelocityMin="0"
+		UpwardVelocityMax="500"
+		Opacity="1.0"
+		StartScale="1.0"
+		EndScale="0.1"
+		RandomScaleMin="0.6"
+		RandomScaleMax="0.9"
+		Duration="0.75"
+		RandomDurationMin="0.4"
+		RandomDurationMax="1.0"
+		VisualFx="VirusOnHitFlareSmall" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.2" VisualFxCap="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShielderDish1" Type="BOOK" FilePath="Animations\\Shielder\\Dish\\ShielderDish"
+		StartOffsetY="-110"
+		NumFrames="64" NumAngles="1" Loop="false"
+		StartScale="1.0" EndScale="0.2"
+		DurationFrames="64"
+		RandomAngle="true"
+		RandomRotation="true"
+		RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		DefaultScale="1.0"
+		VelocityMin="250"
+		VelocityMax="350"
+		UpwardVelocityMin="800"
+		UpwardVelocityMax="900"
+		Gravity="2000"
+		DieOnTouchdown="true"
+		ChainTo="VirusCritSplatterRandom"
+		VisualFx="EnemyDeathSplatter" VisualFxCap="1"
+		>
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+  <Animation
+		Name="VirusOnHitFlareSmall" Type="CONSTANT" FilePath="Particles\\particle_red_flare"
+		Material="Unlit"
+		Duration="0.2"
+	    RandomDurationMin="0.1"
+	    RandomDurationMax="0.35"
+		StartScale="0.2"
+		EndScale="0.0"
+	    RandomScaleMin="0.3" RandomScaleMax="0.7"
+		RandomFlipHorizontal="true"
+		AttachToOwner="true"
+	    Blue="0"
+	    VisualFx="DebrisSpark" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.02" VisualFxCap="1"
+		>
+  </Animation>
+  
+  <Animation
+		Name="DebrisSpark" Type="CONSTANT" FilePath="Particles\\particle_spark"
+		Loop="false"
+		DrawAsDecal="false" Material="Emissive"
+		Duration="0.2"
+	    RandomDurationMin="0.5"
+	    RandomDurationMax="1.0"
+		StartOpacity="1.0" EndOpacity="0.3"
+		StartScaleY="1.0"
+		EndScaleY="0.2"
+		StartScaleX="1.0"
+		EndScaleX="0.6"
+	    RandomScaleMin="0.3"
+	    RandomScaleMax="0.8"
+	    FlipVertical="true"
+		VelocityMin="200"
+	    VelocityMax="600"
+		StartGreen="0.8"
+		EndGreen="0.1"
+		Rotate="true"
+	    Gravity="600"
+		RandomAngle="false"
+		RandomRotation="false"
+		RotateWithGravity="true"
+		Acceleration="-400"
+	>
+  </Animation>
+  
+	<Animation Name="DemolisherDebris01" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris01"></Animation>
+	<Animation Name="DemolisherDebris02" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris02"></Animation>
+	<Animation Name="DemolisherDebris03" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris03"></Animation>
+	<Animation Name="DemolisherDebris04" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris04"></Animation>
+	<Animation Name="DemolisherDebris05" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris05"></Animation>
+	<Animation Name="DemolisherDebris06" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris06"></Animation>
+	<Animation Name="DemolisherDebris07" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris07"></Animation>
+	<Animation Name="DemolisherDebris08" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris08"></Animation>
+	<Animation Name="DemolisherDebris09" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris09"></Animation>
+	<Animation Name="DemolisherDebris10" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris10"></Animation>
+	<Animation Name="DemolisherDebris11" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris11"></Animation>
+	<Animation Name="DemolisherDebris12" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris12"></Animation>
+	<Animation Name="DemolisherDebris13" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris13"></Animation>
+	<Animation Name="DemolisherDebris14" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris14"></Animation>
+	<Animation Name="DemolisherDebris15" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris15"></Animation>
+	<Animation Name="DemolisherDebris16" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris16"></Animation>
+	<Animation Name="DemolisherDebris17" Type="CONSTANT" InheritFrom="DemolisherDebrisPrototype" FilePath="Animations\\Demolisher\\Death\\DemolisherDeathDebris17"></Animation>
+
+  <Animation
+		Name="DemolisherDeathFXSpawner" InheritFrom="ClusterBombExplode"
+    DefaultScale="2.5"
+    VisualFx="DemolisherDeathPieces" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.011" VisualFxCap="8"
+    ChildAnimation="DemolisherDeathNova"
+  >
+  </Animation>
+
+  <Animation
+	Name="DemolisherDeathNova" Type="BOOK" FilePath="Fx\\RadialAoE\\RadialAoE"
+	DrawAsDecal="true"
+	Loop="false"
+	DurationFrames="30"
+	Material="Emissive"
+	NumFrames="15" NumAngles="1"
+	OffsetY="-100"
+    DefaultScale="2.0"
+    StartGreen="1.0"
+    EndGreen="0.0"
+    StartBlue="0.1"
+    EndBlue="0.0"
+    StartOpacity="1.0"
+    EndOpacity="0.25"
+	ChildAnimation="DemolisherDeathNovaLight"
+	VisualFx="EnemyDeathSplatter" VisualFxCap="1"
+  >
+  </Animation>
+
+	<Animation
+		Name="DemolisherDeathNovaLight" FilePath="blank_invisible" Type="CONSTANT"
+		DurationFrames="30"
+		StartBlue="0.5" EndBlue="0"
+		StartGreen="0.75" EndGreen="0"
+		StartOpacity="1" EndOpacity="0"
+		DefaultScale="4"
+		Light="Lights\\DiffuseSpotlight"
+		>
+	</Animation>
+      
+  <Animation
+		Name="DemolisherDeathPieces" Type="RANDOM"
+		>
+    <Random Name="DemolisherHead01"/>
+    <Random Name="DemolisherShoulder01"/>
+    <Random Name="DemolisherShoulder02"/>
+    <Random Name="DemolisherArm01"/>
+    <Random Name="DemolisherArm02"/>
+  </Animation>
+ 
+	<Animation
+		Name="DemolisherHead01" Type="CONSTANT" FilePath="Animations\\Demolisher\\Death\\DemolisherHead01"
+		OriginX="184" OriginY="80"
+		OffsetY="-65"
+		RandomAngle="true"
+		RandomRotation="true"
+		RandomRotationSpeedMin="360" RandomRotationSpeedMax="720"
+		DefaultScale="1.2"
+		VelocityMin="250"
+		VelocityMax="550"
+		UpwardVelocityMin="400"
+		UpwardVelocityMax="800"
+		Gravity="1000"
+		StartOpacity="1.0" EndOpacity="1.0"
+		Duration="0.75"
+		RandomDurationMin="0.66"
+		RandomDurationMax="1.25"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0"
+		EndRed="0.0" EndGreen="0.0" EndBlue="0.0"
+		DieOnTouchdown="false"
+		StartScale="1.0"
+		EndScale="0.1"
+		ChainTo="null"
+		RandomOffsetX="50"
+		RandomOffsetY="50"
+		VisualFx="DemolisherDebris" VisualFxIntervalMin="0.03" VisualFxIntervalMax="0.06" VisualFxCap="10"
+		>
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="DemolisherShoulder01"
+		InheritFrom="DemolisherHead01"
+		Type="CONSTANT" FilePath="Animations\\Demolisher\\Death\\DemolisherShoulder01"
+		OriginX="252" OriginY="158"
+		OffsetY="-35" OffsetX="-25"
+		ChildAnimation="VirusOnHit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DemolisherShoulder02" 
+		InheritFrom="DemolisherHead01"
+		Type="CONSTANT" FilePath="Animations\\Demolisher\\Death\\DemolisherShoulder02"
+		OriginX="116" OriginY="148"
+		OffsetY="-30" OffsetX="25"
+	    ChildAnimation="VirusOnHit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DemolisherArm01"
+		InheritFrom="DemolisherHead01"
+		Type="CONSTANT" FilePath="Animations\\Demolisher\\Death\\DemolisherArm01"
+		OriginX="312" OriginY="240"
+		OffsetY="5" OffsetX="-10"
+	    ChildAnimation="VirusOnHit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DemolisherArm02"
+		InheritFrom="DemolisherHead01"
+		Type="CONSTANT" FilePath="Animations\\Demolisher\\Death\\DemolisherArm02"
+		OriginX="60" OriginY="226"
+		OffsetY="0" OffsetX="10"
+	    ChildAnimation="VirusOnHit"
+		>
+	</Animation>
+	
+
+	<!-- Begin Prototype Projectiles & FX-->
+
+	<!-- Sidearm -->
+	<Animation
+		Name="SidearmTempProjectile" Type="CONSTANT" FilePath="Particles\\particle_rapidfire_projectile"
+		Material="Emissive"
+		Duration="0.15"
+		DrawAsDecal="false"
+		Rotate="true"
+		RandomFlipVertical="true"
+		RandomFlipHorizontal="false"
+		RandomOffsetX="0"
+		RandomOffsetY="0"
+		StartScaleX="1.0"
+		StartScaleY="1.0"
+		EndScaleX="1.0"
+		EndScaleY="0.5"
+		VisualFx="SidearmTempProjectileTrail" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.01"
+		>
+	</Animation>
+
+	<Animation
+		Name="SidearmTempProjectileTrail" Type="CONSTANT" FilePath="Particles\\particle_trail_streak"
+		Duration="0.15"
+		Rotate="true"
+		DefaultScale="0.75"
+		StartOpacity="1.0"
+		EndOpacity="0.5"
+		StartScaleY="0.5"
+		EndScaleY="0.0"
+		RandomOffsetY="3"
+		RandomOffsetX="3"
+		RandomFlipVertical="true"
+		StartBlue="0.1" EndBlue="0.0"
+		StartGreen="0.5" EndGreen="0.25"
+		>
+	</Animation>
+	
+	
+	<!-- Cone -->
+	<Animation
+		Name="ConeProjectile" Type="CONSTANT" FilePath="Particles\\particle_rapidfire_projectile"
+		Material="Emissive"
+		Duration="0.22"
+		DrawAsDecal="false"
+		Rotate="true"
+		RandomFlipVertical="true"
+		RandomFlipHorizontal="false"
+		RandomOffsetX="25"
+		RandomOffsetY="25"
+		StartScaleX="1.0"
+		StartScaleY="1.0"
+		EndScaleX="0.5"
+		EndScaleY="0.0"
+		StartBlue="1.0"
+		StartGreen="1.0"
+		EndBlue="0"
+		EndGreen="0.2"
+		>
+	</Animation>
+
+	<Animation
+		Name="ConeProjectileParticles" Type="CONSTANT" FilePath="Particles\\particle_square_plain"
+		Material="Emissive"
+		RandomAngle="false"
+		VelocityMin="100"
+		VelocityMax="100"
+		Duration="0.8"
+		DrawAsDecal="false"
+		Rotate="true"
+		RandomScaleMin="0.05"
+		RandomScaleMax="0.1"
+		StartScaleX="1.0"
+		StartScaleY="1.0"
+		EndScaleX="0.0"
+		EndScaleY="0.0"
+		StartBlue="0.2"
+		EndBlue="0.0"
+		StartGreen="0.8"
+		EndGreen="0.3"
+		>
+	</Animation>
+	
+	<!-- Radial AoE -->
+
+	<Animation
+		Name="SlamNova" Type="BOOK" FilePath="Fx\\RadialAoE\\RadialAoE"
+		DrawAsDecal="true"
+		Loop="false"
+		Material="Unlit"
+		NumFrames="15" NumAngles="1"
+		DurationFrames="30"
+		OffsetY="0"
+		ScaleRadius="240"
+		>
+	</Animation>
+	
+	<!-- Snare -->
+
+	<Animation
+		Name="SnareDetonate" Type="BOOK" FilePath="Fx\\RadialAoE\\RadialAoE"
+		DrawAsDecal="true"
+		Loop="false"
+		Material="Unlit"
+		NumFrames="15" NumAngles="1"
+		DurationFrames="30"
+		OffsetY="0"
+		StartGreen="1.0"
+		EndGreen="0.0"
+		StartRed="0.1"
+		EndRed="0.0"
+		ChildAnimation="SnareDetonateFlash"
+		ChainTo="SnareGroundEffect"
+		ScaleRadius="270"
+		>
+	</Animation>
+	
+	<Animation
+		Name="SnareDetonateFlash" Type="BOOK" FilePath="Fx\\RadialAoE\\RadialAoE"
+		DrawAsDecal="true"
+		Loop="false"
+		Material="Unlit"
+		NumFrames="15" NumAngles="1"
+		DurationFrames="15"
+		OffsetY="0"
+		FlipHorizontal="true"
+		ScaleRadius="270"
+		>
+	</Animation>
+	
+	<Animation
+		Name="SnareHold" Type="CONSTANT" FilePath="Particles\\particle_donut_04"
+		Material="Emissive"
+		Duration="1.0"
+		RandomOffsetY="10"
+		>
+	</Animation>
+
+	<Animation
+		Name="SnareGroundEffect" Type="CONSTANT" FilePath="Particles\\particle_circle_04"
+		Opacity="1.0"
+		Duration="4.25"
+		VisualFx="SnareGroundEffectVisual" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.05"
+		AttachToOwner="true"
+		UseAttachedAngle="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="SnareGroundEffectVisual" Type="RANDOM"
+		>
+		<Random Name="SnareGroundA"/>
+		<Random Name="SnareGroundB"/>
+	</Animation>
+	
+	<Animation
+		Name="SnareGroundA" Type="BOOK" FilePath="Fx\\SnareGroundA\\SnareGroundA"
+		DrawAsDecal="false"
+		Loop="false"
+		Material="Unlit"
+		NumFrames="6" NumAngles="1"
+		DurationFrames="12"
+		RandomOffsetX="75"
+		RandomOffsetY="75"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1.0"
+		StartOffsetY="-25"
+		EndOffsetY="0"
+		RandomFlipHorizontal="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="SnareGroundB" Type="BOOK" FilePath="Fx\\SnareGroundB\\SnareGroundB"
+		DrawAsDecal="false"
+		Loop="false"
+		Material="Unlit"
+		NumFrames="6" NumAngles="1"
+		DurationFrames="12"
+		RandomOffsetX="75"
+		RandomOffsetY="75"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1.0"
+		StartOffsetY="-25"
+		EndOffsetY="0"
+		RandomFlipHorizontal="true"
+		>
+	</Animation>
+
+
+	<!-- Hook -->
+
+	<Animation
+		Name="HookTrail" Type="CONSTANT" FilePath="Particles\\particle_flare_white"
+		Loop="false"
+		Material="Unlit"
+		OffsetY="0"
+		VisualFx="HookTrailDissipate" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.01"
+		StartScale="0.1"
+		EndScale="1"
+		Duration="0.2"
+		ChildAnimation="HookConeSpike"
+		ChainTo="HookTrailEnd"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookTrailUpgrade" InheritFrom="HookTrail"
+		ChildAnimation="null"
+		ChainTo="null"
+		FilePath="blank"
+		Duration="5"
+		OffsetFromParentZ="false"
+	>
+	</Animation>
+
+
+	<Animation
+		Name="HookTrailUpgradeLarge" InheritFrom="HookTrail"
+		ChildAnimation="null"
+		ChainTo="null"
+		FilePath="blank"
+		Duration="5"
+		OffsetFromParentZ="false"
+		VisualFx="HookTrailDissipateLarge" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.1"
+	>
+	</Animation>
+
+	<Animation
+		Name="HookTrailUpgradeSlam" InheritFrom="HookTrailUpgradeLarge"
+		VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.05"
+	>
+	</Animation>
+
+	<Animation
+		Name="HookTrailUpgradeSlow" InheritFrom="HookTrail"
+		ChildAnimation="null"
+		ChainTo="null"
+		FilePath="blank"
+		Duration="5"
+		OffsetFromParentZ="false"
+		VisualFxIntervalMin="0.04" VisualFxIntervalMax="0.04"
+	>
+	</Animation>
+
+	<Animation
+		Name="HookTrailUpgradeSlower" InheritFrom="HookTrail"
+		ChildAnimation="null"
+		ChainTo="null"
+		FilePath="blank"
+		Duration="5"
+		OffsetFromParentZ="false"
+		VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.2"
+	>
+	</Animation>
+	
+	<Animation
+		Name="HookTrailUpgradeFast" InheritFrom="HookTrail"
+		ChildAnimation="null"
+		ChainTo="null"
+		FilePath="blank"
+		Duration="5"
+		OffsetFromParentZ="false"
+		VisualFxIntervalMin="0.002" VisualFxIntervalMax="0.002"
+	>
+	</Animation>
+	
+	<Animation
+		Name="HookTrailEnd" Type="CONSTANT" FilePath="Particles\\particle_flare_white"
+		Loop="false"
+		Material="Unlit"
+		OffsetY="0"
+		StartScale="1"
+		EndScale="0"
+		Duration="0.25"
+		VisualFx="HookTrailDissipateParticlesHit"
+		ChildAnimation="HookTrailEnd2"
+		Red="0"
+		StartBlue="1"
+		EndBlue="0.5"
+		RandomAngle="true"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookTrailEnd2" InheritFrom="HookTrailEnd"
+		ChildAnimation="null"
+		StartScale="0.25"
+		Red="1"
+		EndBlue="0.99"
+		VisualFx="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="HookConeSpike" Type="CONSTANT" FilePath="Particles\\particle_cone_spike"
+		Material="Unlit"
+		Rotate="true"
+		StartScaleX="1.0"
+		EndScaleX="1.0"
+		StartScaleY="0.5"
+		EndScaleY="0.5"
+		StartScale="0.1"
+		EndScale="1"
+		Duration="0.2"
+		RandomFlipVertical="true"
+		ChildAnimation="HookLight"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookLight" FilePath="blank" Type="CONSTANT"
+		Light="Lights\\DiffuseSpotlight"
+		Red="0.25"
+		DefaultScale="2"
+		OffsetZ="-60"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookTrailDissipate" Type="BOOK" FilePath="Fx\\HookPoly\\HookPoly"
+		Acceleration="-5000"
+		Velocity="1000"
+		Duration="0.66"
+		StartOpacity="1.0"
+		EndOpacity="0.0"
+		StartScaleX="0.4"
+		StartScaleY="0.4"
+		EndScaleX="0.7"
+		EndScaleY="0.7"
+		Loop="false"
+		Material="Unlit"
+		NumFrames="1" NumAngles="32"
+		RandomOffsetX="0"
+		RandomOffsetY="0"
+		VisualFx="HookTrailDissipateParticles" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.25"
+		StartRed="1"
+		EndRed="0"
+		ChildAnimation="HookTrailReticle"
+		OpacityMin="0"
+		OpacityMax="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookTrailDissipateLarge" InheritFrom="HookTrailDissipate"
+		DefaultScale="2.5"
+		ChildAnimation="HookTrailReticleLarge"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookTrailDissipateNova" InheritFrom="HookTrailDissipate"
+		RandomAngle="true"
+		OpacityMin="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookTrailReticle" InheritFrom="HookTrailDissipate" FilePath="Fx\\HookReticle\\HookReticle"
+		StartScale="2"
+		EndScale="0.9"
+		VisualFx="null"
+		ChildAnimation="null"
+		OpacityMin="0"
+		OpacityMax="1"
+		PingPongColor="true"
+		StartOpacity="0"
+		EndOpacity="1"
+		AngleOffsetMin="180"
+		AngleOffsetMax="180"
+
+	></Animation>
+
+	<Animation
+		Name="HookTrailReticleLarge" InheritFrom="HookTrailReticle"
+		DefaultScale="2.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookTrailDissipateParticles" Type="CONSTANT" FilePath="Particles\\particle_square_plain"
+		FlipHorizontal="true"
+		Material="Emissive"
+		RandomAngle="false"
+		VelocityMin="100"
+		VelocityMax="400"
+		AngleOffsetMin="180"
+		AngleOffsetMax="180"
+		Acceleration="-500"
+		Duration="0.8"
+		DrawAsDecal="false"
+		Rotate="true"
+		RandomScaleMin="0.05"
+		RandomScaleMax="0.1"
+		StartScaleX="1.0"
+		StartScaleY="1.0"
+		EndScaleX="0.0"
+		EndScaleY="0.0"
+		RandomRotation="true"
+		StartOpacity="1.0"
+		StartRed="0.5"
+		EndRed="0"
+		>
+	</Animation>
+
+	<Animation 
+		Name="HookTrailDissipateParticlesHit" InheritFrom="HookTrailDissipateParticles"
+		RandomAngle="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="HookUppercut" Type="CONSTANT" FilePath="blank_invisible"
+		VisualFx="HookTrailDissipateNova" VisualFxIntervalMin="0.0001" VisualFxIntervalMax="0.0001" VisualFxCap="16"
+		Duration="0.1"
+		Light="Lights\\DiffuseSpotlight"
+		Red="0.3"
+		StartScale="2"
+		EndScale="0"
+	></Animation>
+
+	<Animation
+		Name="HookHide" Type="CONSTANT" FilePath="blank_invisible"
+		VisualFx="HookTrailDissipateNova" VisualFxIntervalMin="0.0001" VisualFxIntervalMax="0.0001" VisualFxCap="2"
+		Duration="0.1"
+	></Animation>
+	<!-- Snare -->
+	
+	<Animation
+		Name="SnareBack" Type="BOOK" FilePath="Fx\\SnareCircleBack\\SnareCircleBack"
+		Material="Emissive"
+		NumFrames="15" PlaySpeed="30" Loop="true"
+		DefaultScale="1.0"
+		OffsetY="-20"
+		>
+	</Animation>
+
+	<Animation
+		Name="SnareFront" Type="BOOK" FilePath="Fx\\SnareCircleFront\\SnareCircleFront"
+		Material="Emissive"
+		NumFrames="15" PlaySpeed="30" Loop="true"
+		DefaultScale="1.0"
+		OffsetY="-20"
+		>
+	</Animation>
+	
+	<!-- Temp Enemy Spawn In -->
+
+		<Animation
+			Name="EnemySpawnTemp" InheritFrom="ZonerGunFire" 
+			DefaultScale="1.0"
+			Material="Emissive"
+			StartScale="7.5"
+			EndScale="0.1"
+			StartOpacity="1.0"
+			EndOpacity="1.0"
+			>
+		</Animation>
+
+	<!-- End Prototype Projectiles & FX-->
+	
+	
+	<!-- Designer FX-Omancy -->
+	<!--
+	<Animation
+		Name="SidearmTempProjectile"
+		InheritFrom="PopperProjectile" 
+		DefaultScale="0.75"
+		StartScaleY="0"
+		EndScaleY="0"
+		RandomFlipVertical="false"
+		RandomOffsetX="0" RandomOffsetY="0"
+		OffsetY="0"
+		VisualFx="null"
+		ChainTo="null"
+		>
+	</Animation>
+	
+	
+	<Animation
+		Name="SidearmTempProjectileTrail" 
+		InheritFrom="PopperProjectileTrail"
+		DefaultScale="0.75"
+		StartOpacity="1.0"
+		EndOpacity="0.5"
+		StartScaleX="0.0"
+		EndScaleX="0.0"
+		StartScaleY="0"
+		EndScaleY="0"
+		OffsetY="0"
+		StartRed="1" EndRed="0.3"
+		VisualFx="PopperProjectileTrailParticles02" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.3"
+		>
+	</Animation>
+	-->
+	
+	<Animation
+		Name="PopperProjectileTrailParticles02" Type="CONSTANT" FilePath="Particles\\particle_circle_05"
+		Material="Emissive"
+		RandomOffsetX="30"
+		RandomOffsetY="30"
+		RandomAngle="false"
+		VelocityMin="400"
+		VelocityMax="1200"
+		Acceleration="-1500"
+		Duration="0.8"
+		DrawAsDecal="false"
+		Rotate="true"
+		DefaultScale="2.0"
+		RandomScaleMin="0.2"
+		RandomScaleMax="1.0"
+		StartOpacity="1.0"
+		StartScaleX="0.0"
+		EndScaleX="0.0"
+		StartScaleY="0.0"
+		EndScaleY="0.0"
+		OffsetY="0"
+		StartGreen="0.3" EndGreen="0"
+		StartBlue="0.3" EndBlue="0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="FocusTransition" Type="BOOK" FilePath="Screens\\FocusTransition\\FocusTransition"
+		Material="Emissive"
+		NumFrames="35" PlaySpeed="30" Loop="false"
+		DefaultScale="1.5"
+		VideoTexture="FocusTransition"
+		>
+	</Animation>
+
+	<Animation
+		Name="Cycle01CloudsFGSpawner" Type="CONSTANT" FilePath="ForegroundFlyers\\Cloud_01"
+		Loop="true"
+		Duration="1.0"
+		Opacity="0"
+		VisualFx="Cycle01CloudRandom" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.3"
+		>
+	</Animation>
+
+	<Animation Name="Cycle01CloudRandom" Type="RANDOM">
+		<Random Name="Cycle01CloudA"/>
+		<Random Name="Cycle01CloudB"/>
+		<Random Name="Cycle01CloudC"/>
+	</Animation>
+	
+	<Animation
+		Name="Cycle01CloudA" Type="CONSTANT" FilePath="ForegroundFlyers\\Cloud_01"
+		RandomAngle="false"
+		Rotate="false"
+		RandomAngleMin="179" RandomAngleMax="180"
+		VelocityMin="1500"
+		VelocityMax="3000"
+		RandomScaleMin="0.8"
+		RandomScaleMax="3.5"
+		OpacityMin="0.9"
+		OpacityMax="1.0"
+		StartOpacity="0"
+		EndOpacity="1"
+		PingPongColor="true"
+		RandomDurationMin="2.0"
+		RandomDurationMax="4.0"
+		Material="Emissive"
+		Red="0.45"
+		Green="0.52"
+		Blue="0.5"
+		OffsetY="780"
+		OffsetX="1920"
+		>
+	</Animation>
+
+	<Animation
+		Name="Cycle01CloudB" InheritFrom="Cycle01CloudA" FilePath="ForegroundFlyers\\Cloud_01_A"
+		>
+	</Animation>
+	<Animation
+		Name="Cycle01CloudC" InheritFrom="Cycle01CloudA" FilePath="ForegroundFlyers\\Cloud_02"
+		>
+	</Animation>
+
+	<!-- glider shot -->
+	<Animation
+		Name="GliderShot" Type="CONSTANT" FilePath="Particles\\particle_rapidfire_projectile_glider"
+		Material="Emissive"
+		Duration="0.15"
+		DrawAsDecal="false"
+		Rotate="true"
+		RandomFlipVertical="true"
+		RandomFlipHorizontal="false"
+		RandomOffsetX="0"
+		RandomOffsetY="10"
+		DefaultScale="0.8"
+		OffsetFromParentZ="false"
+		RandomScaleMin="0.8"
+		RandomScaleMax="1.1"
+		VisualFx="GliderShotTrail" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.01"
+		OffsetX="-100"
+		ScaleY="2"
+		>
+	</Animation>
+
+	<Animation
+		Name="GliderShotTrail" Type="CONSTANT" FilePath="Particles\\particle_trail_streak"
+		RandomDurationMin="0.1"
+		RandomDurationMax="0.3"
+		Rotate="true"
+		DefaultScale="0.75"
+		StartOpacity="1.0"
+		ScaleX="0.3"
+		EndOpacity="0.0"
+		StartScaleY="0.25"
+		EndScaleY="0.1"
+		RandomFlipVertical="true"
+		Material="Emissive"
+		StartBlue="1"
+		EndBlue="0.0"
+		StartGreen="1"
+		EndGreen="0.5"
+		VisualFx="GliderShotTrailB" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.011" VisualFxCap="1"
+		>
+	</Animation>
+	
+	<Animation
+		Name="GliderShotTrailB" Type="BOOK" FilePath="Fx\\HelixShot\\HelixShot"
+		NumFrames="28"
+		RandomDurationMin="0.5"
+		RandomDurationMax="1.0"
+		Material="Unlit"
+		Loop="false"
+		Rotate="true"
+		RandomAngle="false"
+		VelocityMin="100"
+		VelocityMax="2000"
+		DefaultScale="1.0"
+		StartScaleX="0.8"
+		StartScaleY="0.8"
+		EndScaleX="0.2"
+		EndScaleY="0.2"
+		RandomScaleMin="0.2"
+		RandomScaleMax="1.0"
+		OpacityMin="0.2"
+		OpacityMax="1.0"
+		RandomFlipVertical="false"
+		Acceleration="-4500"
+		StartOpacity="1.0"
+		EndOpacity="0.1"
+		StartGreen="1.0"
+		EndGreen="0.5"
+		StartBlue="0.6"
+		EndBlue="0.3"
+		>
+	</Animation>
+
+
+<!-- hurt transistor path -->
+
+	<Animation
+		  Name="TransistorSparkHurt" Type="CONSTANT" FilePath="Particles\\particle_spark"
+		  Loop="false"
+		  DrawAsDecal="false" Material="Emissive"
+		  RandomDurationMin="0.25"
+		  RandomDurationMax="1.0"
+		  StartOpacity="1.0" EndOpacity="0.3"
+		  StartScaleY="1.0"
+		  EndScaleY="0.1"
+		  StartScaleX="1.0"
+		  EndScaleX="0.1"
+		  RandomScaleMin="0.3"
+		  RandomScaleMax="0.6"
+		  FlipVertical="true"
+		  VelocityMin="100"
+		  VelocityMax="200"
+		  UpwardVelocityMin="100"
+		  UpwardVelocityMax="200"
+		  Rotate="true"
+		  Gravity="1000"
+		  RandomAngle="true"
+		  RandomRotation="false"
+		  RotateWithGravity="true"
+		  Acceleration="-200"
+		  DieOnTouchdown="true"
+		  StartGreen="0.6" EndGreen="0" StartRed="1" EndRed="0.99"
+		  StartBlue="0.01" EndBlue="0"
+		  SortVisualFx="true"
+		  
+	>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathCenterHurt" Type="SLIDE"
+		FilePath="Fx\\TransistorPathCenter\\TransistorPathCenter"
+		NumFrames="50"
+		RandomDurationMin="0.5"
+		RandomDurationMax="1.0"
+		Material="Emissive"
+		DrawAsDecal="false"
+		RandomFlipHorizontal="true"
+		RandomScaleMin="0.25"
+		RandomScaleMax="0.4"
+		VelocityMin="0"
+		VelocityMax="2"
+		Acceleration="-2000"
+		RandomOffsetX="2"
+		RandomOffsetY="2"
+		DefaultScale="1"
+		StartOpacity="1"
+		EndOpacity="0"
+		ChildAnimation="TransistorPathCenterLineHurt"
+		  StartGreen="0.4" EndGreen="0" StartRed="1" EndRed="0.99"
+		  StartBlue="0.01" EndBlue="0"
+
+	   >
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathLightsHurt" FilePath="blank_invisible" Type="CONSTANT"
+		Light="Lights\\DiffuseSpotlight"
+		RandomDurationMin="0.33"
+		RandomDurationMax="0.75"
+		RandomScaleMin="0.15"
+		RandomScaleMax="0.33"
+		StartOpacity="0.15"
+		EndOpacity="0"
+		StartScale="1.0"
+		EndScale="2.5"
+		  StartGreen="0.01" EndGreen="0" StartRed="0" EndRed="1"
+		StartBlue="0.01" EndBlue="0"
+		Rotate="true"
+		RandomAngle="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathSelectorHurt" Type="RANDOM"
+		Sound="null"
+		>
+		<Random Name="TransistorPathAHurt"/>
+		<Random Name="TransistorPathBHurt"/>
+		<Random Name="TransistorPathCHurt"/>
+	</Animation>
+
+	<Animation
+		  Name="TransistorPathSelector2Hurt" Type="RANDOM"
+		>
+		<Random Name="TransistorPathA1Hurt"/>
+		<Random Name="TransistorPathB1Hurt"/>
+		<Random Name="TransistorPathC1Hurt"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+
+	</Animation>
+	<Animation
+		  Name="TransistorPathSelector3Hurt" Type="RANDOM"
+		>
+		<Random Name="TransistorPathA2Hurt"/>
+		<Random Name="TransistorPathB2Hurt"/>
+		<Random Name="TransistorPathC2Hurt"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+	</Animation>
+
+	<Animation
+		  Name="TransistorSparkSelectorHurt" Type="RANDOM"
+		>
+		<Random Name="TransistorSparkHurt"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+		<Random Name="TransistorPathEnd"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathAHurt" Type="SLIDE" FilePath="Fx\\TransistorPath\\TransistorPath"
+		NumFrames="20"
+		Rotate="false"
+		RandomAngle="false"
+		Loop="false"
+		DrawAsDecal="true"
+		DefaultScale="1"
+		Material="Emissive"
+		RandomOffsetX="0"
+		RandomOffsetY="0"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1.0"
+		OpacityMin="0.25"
+		OpacityMax="1"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		ChildAnimation="TransistorPathCenterHurt"
+		VisualFx="TransistorPathSelector2Hurt" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.1" VisualFxCap="1"
+		StartGreen="0.01" EndGreen="0" StartRed="0" EndRed="1"
+		StartBlue="0.01" EndBlue="0"
+		EndOpacity="0.25"
+		HoldStartColorFraction="0.1"
+		>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="3"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="4"/>
+		<Slide DurationFrames="24"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathCenterLineHurt" Type="SLIDE" FilePath="Fx\\TransistorPathCenterLine\\TransistorPathCenterLine"
+		NumFrames="20"
+		Rotate="true"
+		RandomAngle="false"
+		Loop="false"
+		DrawAsDecal="true"
+		DefaultScale="0.75"
+		Material="Emissive"
+		StartGreen="0.01" EndGreen="0" StartRed="1" EndRed="0.99"
+		StartBlue="0.01" EndBlue="0"
+		StartOpacity="1"
+		EndOpacity="0"
+		HoldStartColorFraction="0.1"
+		StartScaleY="1"
+		EndScaleY="0.1"
+		ChildAnimation="null"
+		VisualFx="TransistorSparkSelectorHurt" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.011" VisualFxCap="1"
+		>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="30"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathA1Hurt" Type="SLIDE" InheritFrom="TransistorPathA"
+		RandomAngle="false"
+		UseAttachedScale="true"
+		DefaultScale="0.8"
+		RandomOffsetX="32"
+		RandomOffsetY="32"
+		RandomFlipVertical="true"
+		VisualFx="TransistorPathSelector3Hurt" VisualFxIntervalMin="0.01" VisualFxIntervalMax="0.01" VisualFxCap="1"
+		ChildAnimation="null"
+		StartGreen="0.01" EndGreen="0" StartRed="0" EndRed="1"
+		StartBlue="0.01" EndBlue="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathA2Hurt" Type="SLIDE" InheritFrom="TransistorPathA1Hurt"
+		VisualFx="null"
+		RandomOffsetX="32"
+		RandomOffsetY="31"
+		DefaultScale="0.4"
+		StartGreen="0.01" EndGreen="0" StartRed="0" EndRed="1"
+		StartBlue="0.01" EndBlue="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorPathBHurt" InheritFrom="TransistorPathAHurt" FilePath="Fx\\TransistorPathB\\TransistorPathB"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathB1Hurt" InheritFrom="TransistorPathA1Hurt" FilePath="Fx\\TransistorPathB\\TransistorPathB"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathB2Hurt" InheritFrom="TransistorPathA2Hurt" FilePath="Fx\\TransistorPathB\\TransistorPathB"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathCHurt" InheritFrom="TransistorPathAHurt" FilePath="Fx\\TransistorPathC\\TransistorPathC"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathC1Hurt" InheritFrom="TransistorPathA1Hurt" FilePath="Fx\\TransistorPathC\\TransistorPathC"
+		>
+	</Animation>
+	<Animation
+		Name="TransistorPathC2Hurt" InheritFrom="TransistorPathA2Hurt" FilePath="Fx\\TransistorPathC\\TransistorPathC"
+		Sound="null"
+		>
+	</Animation>
+	
+	
+
+</Animations> 

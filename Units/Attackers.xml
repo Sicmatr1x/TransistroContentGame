@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<Npc
+		Name="1_BaseAttacker"
+		PhaseInTimeMin="0.01"
+		PhaseInTimeMax="0.01"
+		SpeedVariance="0.1"
+		PhaseInSound="/SFX/Enemy Sounds/EnemyPhaseInAlt"
+		BlockFx="InvincibleHitSpark"
+		FootprintFx="VirusFootprint"
+		SpawnFacingPlayer="true"
+		OnHatchWeapon="EggHatchWeapon"
+		DeathWeaponSuppressedFx="EggSuppression"
+		TraitorColorShiftFraction="0.5"
+		TraitorRed="1.0"
+		TraitorGreen="0.15"
+		TraitorBlue="0.74"
+		ActivePlannedTargetColorShiftFraction="0.8"
+		ActivePlannedTargetRed="1"
+		ActivePlannedTargetGreen="0.7"
+		ActivePlannedTargetBlue="0.06"
+		PreviousPlannedTargetColorShiftFraction="0.5"
+		PreviousPlannedTargetRed="1"
+		PreviousPlannedTargetGreen="0.2"
+		PreviousPlannedTargetBlue="0.05"
+		NoHighlightWhileActivating="true"
+		>
+		<Thing
+			FallSound="Falling"
+            FallSpeedMultiplier="7.5"
+			OnTouchdownFxAnim="UppercutLandSmoke"
+			TouchdownSound="/SFX/OLD SOUNDS/Blunderbuss2"
+			UpwardVelocityGhostThreshold="2000"
+			UpwardVelocityGhostInterval="0.02"
+			UpwardVelocityGhostDuration="0.25"
+			OcclusionOutlineRed="1.0"
+			OcclusionOutlineGreen="0.2"
+			OcclusionOutlineBlue="0.1"
+			OcclusionOutlineRadius="0.001"
+			OcclusionOutlineThreshold="0.5"
+			OcclusionOutlineDelay="0.0"
+			OcclusionOutlineOpacity="1.0"
+			OcclusionOutlineFadeSpeed="2"
+			OutlineAllAnims="true"
+			MaxImpactForce="9000"
+			>
+		</Thing>
+		<Life
+			HitSound="/SFX/Enemy Sounds/EnemyOnHit2"
+			DeathSound="/SFX/Enemy Sounds/EnemyDeathAlt"
+			ShowDamageNumbers="false"
+			DamageShakeDistance="2"
+			DamageShakeSpeed="300"
+			DamageShakeDuration="0.25"
+			DeathLineGraphic="Particles\\particle_line_03"
+			Material="METAL"
+			>
+		</Life>
+
+		<Upgrade Name="Egg_Shield" Graphic="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_09" StatName="Speeder"
+				 BioSummaryHelpTextId="Egg_Shield_Bio_Summary" BioDetailsHelpTextId="Egg_Shield_Bio_Details">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion" Graphic="GUI\\Icons\\Limiters\\limiter_icon_demolisher_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_01" StatName="Demolisher"
+				 BioSummaryHelpTextId="Egg_HatchExplosion_Bio_Summary" BioDetailsHelpTextId="Egg_HatchExplosion_Bio_Details">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn" Graphic="GUI\\Icons\\Limiters\\limiter_icon_popper_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_02" StatName="Popper"
+				 BioSummaryHelpTextId="Egg_MultiSpawn_Bio_Summary" BioDetailsHelpTextId="Egg_MultiSpawn_Bio_Details">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime" Graphic="GUI\\Icons\\Limiters\\limiter_icon_priest_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_07" StatName="Priest"
+				 BioSummaryHelpTextId="Egg_HatchTime_Bio_Summary" BioDetailsHelpTextId="Egg_HatchTime_Bio_Details">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty" Graphic="GUI\\Icons\\Limiters\\limiter_icon_shielder_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_04" StatName="Shielder"
+				 BioSummaryHelpTextId="Limiter_SupplyPenalty_Bio_Summary" BioDetailsHelpTextId="Limiter_SupplyPenalty_Bio_Details">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus" Graphic="GUI\\Icons\\Limiters\\limiter_icon_lobber_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_03" StatName="Lobber"
+				 BioSummaryHelpTextId="Limiter_NoAutoFocus_Bio_Summary" BioDetailsHelpTextId="Limiter_NoAutoFocus_Bio_Details">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>		
+
+		<Upgrade Name="Limiter_DeathPenalty" Graphic="GUI\\Icons\\Limiters\\limiter_icon_suppressor_gold"
+ 				 Portrait="GUI\\Portraits\\enemyinspect_portrait_10" StatName="Suppressor"
+				 BioSummaryHelpTextId="Limiter_DeathPenalty_Bio_Summary" BioDetailsHelpTextId="Limiter_DeathPenalty_Bio_Details">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>			
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn" Graphic="GUI\\Icons\\Limiters\\limiter_icon_zoner_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_06" StatName="Zoner"
+				 BioSummaryHelpTextId="Egg_FakeSpawn_Bio_Summary" BioDetailsHelpTextId="Egg_FakeSpawn_Bio_Details">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>		
+
+		<Upgrade Name="Limiter_NoRecycles" Category="NORMAL" Graphic="GUI\\Icons\\Limiters\\limiter_icon_flusher_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_08" StatName="Flusher"
+				 BioSummaryHelpTextId="Limiter_NoRecycles_Bio_Summary" BioDetailsHelpTextId="Limiter_NoRecycles_Bio_Details">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights" Graphic="GUI\\Icons\\Limiters\\limiter_icon_haunter_gold"
+				 Portrait="GUI\\Portraits\\enemyinspect_portrait_05" StatName="Haunter"
+				 BioSummaryHelpTextId="Limiter_EscalatingFights_Bio_Summary" BioDetailsHelpTextId="Limiter_EscalatingFights_Bio_Details">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+	
+	<Npc
+		Name="1_PlayerTargeter"
+		InheritFrom="1_BaseAttacker"
+		AutoLockable="false"
+		>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			>
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="PATHFIND">
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT">
+		</AttackAI>
+	</Npc>
+	
+</Npcs>

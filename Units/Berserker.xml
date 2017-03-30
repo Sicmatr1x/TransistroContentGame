@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Berserker -->
+	
+	<Npc
+		Name="Berserker"
+		InheritFrom="1_BaseAttacker"
+		VisionRange="9999"
+		Speed="390.0"
+		Flyer="true"
+		Acceleration="100"
+		Deceleration="100"
+		RotationSpeed="3600"
+		CosmeticRotationSpeed="720"
+		SpawnFacingPlayer="true"
+		AlertFriendsOnDeathDistance="2000"
+		OnHitWeapon="null"
+		FacedByTargetWeapon="null"
+		OnDeathWeapon="BerserkerEggSpawn"
+		FootprintFx="null"
+		PhaseInGraphic="null"
+		WobbleDistance="20"
+		WobbleSpeed="35"
+		ImmuneToStun="true"
+		ImmuneToCharm="true"
+		StunBreakModifier="20.0"
+		ImmuneToDeathWeaponSuppression="true"
+		LastStandWeapon="null"
+		OnHitWeaponFaceSource="true"
+		OnHitWeaponHealthFraction="1.0"
+		OnFiredAtWeapon="BerserkerDodge">
+		<Thing
+			Grip="5.0"
+			Drag="0.5"
+			Graphic="BerserkerIdle"
+			OnTouchdownFxAnim="null"
+			TouchdownSound="null"
+			AmbientSound="/SFX/Enemy Sounds/Demolisher/DemolisherAmbience"
+			MinScale="1.0"
+			MaxScale="1.0"
+			OverheadOffset="200"
+            SelectionWidth="275"
+			SelectionHeight="365"
+            SelectionShiftY="60"
+			HelpTextId="Berserker"
+			SpeechCapable="true"
+			SpeechMetering="true"
+			SpeechMeteringChannelName="Berserker"
+			OffsetZ="50"
+			OcclusionOutlineRadius="0.006"
+			OcclusionOutlineThreshold="0.5"
+			Material="VirusUnit">
+			<Point X="16" Y="32"/>
+			<Point X="48" Y="12"/>
+			<Point X="48" Y="-12"/>
+			<Point X="16" Y="-32"/>
+			<Point X="-16" Y="-32"/>
+			<Point X="-48" Y="-12"/>
+			<Point X="-48" Y="12"/>
+			<Point X="-16" Y="32"/>
+		</Thing>
+		<Metering>
+			<Entry Field="Scale" MeteringChannel="Berserker" MeterMax="1.0" MeterMin="0.05" AddMax="0.025" />
+			<Entry Field="MaterialAmbient" MeteringChannel="Berserker" MeterMax="1.0" MeterMin="0.05" AddMax="-0.5" PulsePeriod="3.6" PulseIntensity="0.01" PulseIsMin="false" />
+		</Metering>
+		<Life
+			Health="600"
+			DeathSound="/SFX/Enemy Sounds/Sybil/SybilLifeLost"
+			Material="METAL"
+			DeathGraphic="BerserkerDeath"
+			ImpactGraphicOffset="70" 
+			Decal="Decals\\Health_Circle_Medium"
+			ArmorCoverage="240"
+			Vulnerability="1.5"
+			LastStandHealth="0">
+		</Life>
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="3.0"
+			RandomTurnIntervalMax="4.0"
+			SpeedFraction="0.0"
+			TetherDistance="250"
+			FootprintSpawnInterval="0.5"
+			FootprintBlockDistance="78"
+			StopToAttack="true"
+			>
+		</MoveAI>
+		<MoveAI
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="true"
+			RequiresLoS="false"
+			SuccessDistance="350"
+			RelaxDistance="100"
+			NodeSuccessDistance="16"
+			LookAheadDistance="2048"
+			MaxChasers="2"
+			DisengageTime="3.0"
+			StopWhenDisengaged="false"
+			CoverSearchWhenDisengaged="0"
+			OldTargetLocationWhenDisengaged="0.0"
+			FlankDistanceWhenDisengaged="1024"
+			>
+		</MoveAI>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			TargetAcquiredSound="SFX/Enemy Sounds/EnemyTargetAcquired"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetLostDisable="0.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			TargetLostGraphic="null"
+			RequiresCanAttack="false"
+			MaxDistance="9999"
+			FindHealerHealthFraction="0.5"
+			Retaliate="false">
+			<SortType Heuristic="NAMED"></SortType>
+			<TargetName>_PlayerUnit</TargetName>
+		</TargetAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true">
+		</AttackAI>
+		<Weapon Name="BerserkerSlash"/>
+	</Npc>
+
+	<Npc
+		Name="Berserker2"
+		InheritFrom="Berserker"
+		OnSpawnWeapon="Berserker2EggLaunch"
+		OnDeathWeapon="Berserker2EggSpawn"
+		Speed="400.0"
+		Acceleration="500"
+		Deceleration="500"
+		PhaseInSound="SFX/Enemy Sounds/EnemyPhaseInLarge"
+		ClearWeapons="true">
+		<Thing
+			MinScale="1.13"
+			MaxScale="1.13">
+		</Thing>
+		<Life
+			Health="800"
+			>
+		</Life>
+		<Weapon Name="BerserkerSlash2"/>
+	</Npc>
+	
+	<Npc
+		Name="Berserker3"
+		InheritFrom="Berserker"
+		OnSpawnWeapon="Berserker3EggLaunch"
+		OnDeathWeapon="Berserker3EggSpawn"		
+		Speed="525.0"
+		PhaseInSound="SFX/Enemy Sounds/EnemyPhaseInLarge"
+		ImmuneToStun="true"
+		ClearWeapons="true">
+		<Thing
+			MinScale="1.25"
+			MaxScale="1.25">
+		</Thing>
+		<Life
+			Health="1200"
+			>
+		</Life>
+		<Weapon Name="BerserkerSlash3"/>
+	</Npc>
+
+	<Npc
+		Name="Berserker4"
+        InheritFrom="Berserker"
+		ClearWeapons="true"
+		OnSpawnWeapon="Berserker4EggLaunch"
+		OnDeathWeapon="null"
+		Speed="20"
+		WobbleDistance="0"
+		WobbleSpeed="0"
+		Acceleration="0"
+		RotationSpeed="0"
+		PhaseInTimeMin="0.01"
+		PhaseInTimeMax="0.01" 
+		PhaseInGraphic="BerserkerCrawl"
+		PhaseInSound="SFX/Enemy Sounds/EnemyPhaseIn"
+		VisionRange="9999"
+		FacedByTargetWeapon="null"
+		OnFiredAtWeapon="null"
+		ClearTargetAI="true"
+		DormantOnDeath="true"
+		RagDollOnDeath="false"
+		ClearAI="true"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Thing
+			Grip="7.5"
+			Drag="0.75"
+			Graphic="BerserkerCrawl"
+			AmbientSound="null"
+			OverheadOffset="25"
+			MinScale="0.6"
+			MaxScale="0.6"
+			SpeechCapable="false"
+			SpeechMetering="false"
+			SelectionWidth="340"
+			SelectionHeight="245"
+            SelectionShiftY="95">
+		</Thing>
+		<Life
+			Health="50"
+			Armor="0.0"
+			ArmorCoverage="180"
+			DeathFx="EnemyDeathSplatter"
+			DeathGraphic="BerserkerCrawlStopped"
+			DeathSound="SFX/Enemy Sounds/EnemyDeath"
+			Decal="null"
+			DamageDecal="null"
+			LastStandHealth="0"
+			Material="ORGANIC"
+			>
+		</Life>
+		<Weapon Name="BerserkerSelfStun"/>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="null"
+			TargetAcquiredFx="null"
+			TargetAcquiredGraphic="null"
+			TargetLostDisable="1.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="null"
+			TargetLostGraphic="null"
+			RequiresLoS="false"
+			MaxDistance="9999"
+			FindHealerHealthFraction="0.0"
+			>
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="PATHFIND"
+			StopToRotate="false"
+			StopToAttack="false"
+			SuccessDistance="50"
+            MaxChasers="2">
+			<RetreatFromUnit Name="_PlayerUnit"/>
+		</MoveAI>
+		<AttackAI
+			Algorithm="INTERVAL">
+		</AttackAI>
+	</Npc>
+
+
+</Npcs>

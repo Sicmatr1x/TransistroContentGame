@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Screens>
+
+	<InspectScreen
+		Platform="default"
+		TransitionOnTime="0.25"
+		TransitionOffTime="0.5"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="/SFX/Menu Sounds/InfoPanelLeave"
+		SelectionSound="/SFX/Menu Sounds/PowerToggleNEW">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.9"/>
+
+		    <!-- Formats -->
+		<TextTitleA TextRed="0.92" TextGreen="0.92" TextBlue="0.92" Font="RalewayLight45" Scale="1.0" AlwaysUpperCase="true" LineSpacingTop="17"/>
+		<TextTitleB TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewaySemiBold22" Scale="0.66"/>
+		<TextSubtitleA TextRed="0.28" TextGreen="0.91" TextBlue="0.6" Font="RalewayRegular32" Scale="0.77" AlwaysUpperCase="true"/>
+		<TextSubtitleB TextRed="0.28" TextGreen="0.91" TextBlue="0.6" Font="UbuntuMono32" Scale="0.57" NonEnglishScaleModifier="0.92"/>
+		<TextBodyA TextRed="0.93" TextGreen="0.93" TextBlue="0.93" Font="RalewaySemiBold22" Scale="0.66"/>
+		<TextBodyB TextRed="0.68" TextGreen="0.68" TextBlue="0.68" Font="UbuntuMono32" Scale="0.5"/>
+		<TextCommentA TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMonoBold32" Scale="0.56" AlwaysUpperCase="true"/>
+		<TextCommentB TextRed="0.68" TextGreen="0.68" TextBlue="0.68" Font="UbuntuMono32" Scale="0.64"/>
+		<TextStat TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewaySemiBold22" Scale="0.66"/>
+		
+		    <!-- Components -->
+		<TitleIcon X="100" Y="100" Graphic="GUI\\Widgets\\title_rect_inspect_name" Justification="Left" VerticalJustification="Center"/>
+		<TitleLine AttachTo="TitleIcon" OffsetX="22" OffsetY="36" Graphic="GUI\\Widgets\\title_underline_inspect" Justification="Left" VerticalJustification="Center"/>
+		<TitleText AttachTo="TitleIcon" OffsetX="42" OffsetY="1" Justification="Left" VerticalJustification="Center" 
+				   Font="RalewayBold48" Scale="0.8" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<Background AttachTo="TitleIcon" OffsetX="-24" OffsetY="80" Graphic="GUI\\Backgrounds\\background_inspect_bio_left" AlternateGraphic="GUI\\Backgrounds\\background_inspect_left" TertiaryGraphic="GUI\\Backgrounds\\background_inspect_full" Justification="Left" VerticalJustification="Top"/>
+		<BackgroundRight AttachTo="Background" OffsetX="460" OffsetY="12" Graphic="GUI\\Backgrounds\\background_inspect_right" AlternateGraphic="GUI\\Backgrounds\\background_inspect_details_right" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackground X="960" Y="540" Graphic="TerminalBGShimmerA" Red="0" Green="1" Blue="0.9" Alpha="0.5"/>
+		<TabHighlight OffsetX="33" OffsetY="-30" Graphic="GUI\\Widgets\\inspect_subhead_bg" Justification="Left" VerticalJustification="Top" MoveSpeed="30000" ActionSound="/SFX/Menu Sounds/PowerToggleNEW"
+					  FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" FlashRed="0.69" FlashGreen="1.0" FlashBlue="0.2"
+					  />
+
+		<!-- Bio Tab -->
+
+		<BioTabTitleIcon AttachTo="TitleIcon" OffsetX="4" OffsetY="72" Graphic="GUI\\Widgets\\title_rect_inspect_subject" Justification="Left" VerticalJustification="Center"/>
+		<BioTabTitleLine AttachTo="BioTabTitleIcon" OffsetX="-19" OffsetY="4" Graphic="GUI\\Widgets\\inspect_subhead_underline_subject" AlternateGraphic="GUI\\Widgets\\inspect_subhead_underline_subject_highlight"
+						 Justification="Left" VerticalJustification="Center" Width="400" Height="60" AreaOffsetY="-20"
+						FlashMin="0" FlashMax="0.4" FlashSpeed="2.0" FlashRed="0.1" FlashGreen="0" FlashBlue="0"
+						 PressSound="/SFX/Menu Sounds/PowerToggleNEW"
+						 />
+		<BioTabTitleText AttachTo="BioTabTitleIcon" OffsetX="38" OffsetY="2" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="InspectScreen_Subject" AlwaysUpperCase="true" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<BioImage AttachTo="Background" OffsetX="280" OffsetY="380" Justification="Center" VerticalJustification="Center" Scale="0.9" FadeOpacity="0"/>
+		<BioSummary AttachTo="Background" OffsetX="71" OffsetY="355" Width="500" Height="390" Justification="Left" VerticalJustification="Top"
+					TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMono32" Scale="0.64" FadeOpacity="0"
+					/>
+		<BioDetails AttachTo="BackgroundRight" OffsetX="70" OffsetY="30" Width="1200" Height="560" Justification="Left" VerticalJustification="Top"
+					TextRed="0.68" TextGreen="0.68" TextBlue="0.68" Font="RalewayMedium26" Scale="0.7" FadeOpacity="0" ScrollSpeed="3" LineSpacingBottom="5"/>
+
+		<BioCompletionInstructions AttachTo="BioDetails" OffsetX="30" OffsetY="637" Width="650" Height="150" Justification="Left" VerticalJustification="Center"
+					HelpTextId="InspectScreen_Bio_Stage1" TextRed="0.28" TextGreen="0.91" TextBlue="0.6" Font="UbuntuMono32" Scale="0.64" FadeOpacity="0"
+					FlashMin="0.2" FlashMax="0.8" FlashSpeed="2.0" FlashRed="0.69" FlashGreen="1.0" FlashBlue="0.72"
+					ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="0.25" ShadowBlur="100" ShadowOffsetX="0" ShadowOffsetY="0"
+								   NonEnglishScaleModifier="0.8"
+		/>
+
+		<BioProgressBackground AttachTo="BioTabTitleText" OffsetX="1560" OffsetY="700" Graphic="GUI\\Widgets\\decrypt_bg" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+		<BioProgressLabel AttachTo="BioProgressBackground" OffsetX="-146" OffsetY="1" Justification="Right" VerticalJustification="Center" FadeOpacity="0"
+					HelpTextId="InspectScreen_BioProgress" AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold32" Scale="0.45"/>
+		<BioProgressActive AttachTo="BioProgressBackground" OffsetX="-64" OffsetY="6" Graphic="GUI\\Widgets\\decrypt_active_locked" AlternateGraphic="GUI\\Widgets\\decrypt_active_unlocked" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+		<BioProgressUpgrade AttachTo="BioProgressBackground" OffsetX="-4" OffsetY="6" Graphic="GUI\\Widgets\\decrypt_upgrade_locked" AlternateGraphic="GUI\\Widgets\\decrypt_upgrade_unlocked" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+		<BioProgressPassive AttachTo="BioProgressBackground" OffsetX="56" OffsetY="6" Graphic="GUI\\Widgets\\decrypt_passive_locked" AlternateGraphic="GUI\\Widgets\\decrypt_passive_unlocked" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+
+		<!-- Details Tab -->
+
+		<DetailsTabTitleIcon AttachTo="BioTabTitleIcon" OffsetX="464" Graphic="GUI\\Widgets\\title_rect_inspect_details" Justification="Left" VerticalJustification="Center"/>
+		<DetailsTabTitleLine AttachTo="DetailsTabTitleIcon" OffsetX="-19" OffsetY="4" Graphic="GUI\\Widgets\\inspect_subhead_underline" AlternateGraphic="GUI\\Widgets\\inspect_subhead_underline_highlight"
+							 Justification="Left" VerticalJustification="Center" Width="400" Height="60" AreaOffsetY="-20"
+							FlashMin="0" FlashMax="0.4" FlashSpeed="2.0" FlashRed="0.1" FlashGreen="0" FlashBlue="0"
+							PressSound="/SFX/Menu Sounds/PowerToggleNEW"
+							 />
+		<DetailsTabTitleText AttachTo="DetailsTabTitleIcon" OffsetX="38" OffsetY="2" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="InspectScreen_Details" AlwaysUpperCase="true" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<DetailsImage AttachTo="Background" OffsetX="260" OffsetY="200" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+
+		<DetailsActiveTitle AttachTo="BackgroundRight" OffsetX="110" OffsetY="65" Justification="Left" VerticalJustification="Center" FadeOpacity="0"
+					HelpTextId="HandScreenSlotDialog_WeaponType" AlwaysUpperCase="true" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"
+					NonEnglishScaleModifier="0.88"
+					/>
+		<DetailsActiveDescription AttachTo="BackgroundRight" OffsetX="96" OffsetY="108" Width="370" Height="620" Justification="Left" VerticalJustification="Top"
+					TextRed="0.79" TextGreen="0.79" TextBlue="0.79" Font="RalewayMedium26" Scale="0.55" FadeOpacity="0"
+								  />
+		<ActiveUsedImage AttachTo="DetailsActiveTitle" OffsetX="160" OffsetY="400" Graphic="GUI\\Icons\\inspect_completed_check" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+		<ActiveUsedText AttachTo="DetailsActiveDescription" OffsetX="10" OffsetY="516" Justification="Left" VerticalJustification="Center" FadeOpacity="0" NonEnglishScaleModifier="0.9"
+					HelpTextId="HandScreenSlotDialog_Usage" AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold18"/>
+		<GlobalActiveUsedText AttachTo="ActiveUsedText" OffsetY="30" Justification="Left" VerticalJustification="Center" FadeOpacity="0" NonEnglishScaleModifier="0.9"
+					HelpTextId="HandScreenSlotDialog_GlobalUsage" AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold18"/>
+
+		<DetailsUpgradeTitle AttachTo="BackgroundRight" OffsetX="524" OffsetY="65" Justification="Left" VerticalJustification="Center" FadeOpacity="0"
+					HelpTextId="HandScreenSlotDialog_UpgradeType" AlwaysUpperCase="true" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"
+					NonEnglishScaleModifier="0.88"
+					/>
+		<DetailsUpgradeDescription AttachTo="BackgroundRight" OffsetX="510" OffsetY="108" Width="370" Height="620" Justification="Left" VerticalJustification="Top"
+					TextRed="0.79" TextGreen="0.79" TextBlue="0.79" Font="RalewayMedium26" Scale="0.55" FadeOpacity="0"
+				   />
+		<UpgradeUsedImage AttachTo="DetailsUpgradeTitle" OffsetX="160" OffsetY="400" Graphic="GUI\\Icons\\inspect_completed_check" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+		<UpgradeUsedText AttachTo="DetailsUpgradeDescription" OffsetX="10" OffsetY="516" Justification="Left" VerticalJustification="Center" FadeOpacity="0" NonEnglishScaleModifier="0.9"
+					HelpTextId="HandScreenSlotDialog_Usage" AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold18"/>
+		<GlobalUpgradeUsedText AttachTo="UpgradeUsedText" OffsetY="30" Justification="Left" VerticalJustification="Center" FadeOpacity="0" NonEnglishScaleModifier="0.9"
+					HelpTextId="HandScreenSlotDialog_GlobalUsage" AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold18"/>
+
+		<DetailsPassiveTitle AttachTo="BackgroundRight" OffsetX="954" OffsetY="65" Justification="Left" VerticalJustification="Center" FadeOpacity="0"
+					HelpTextId="HandScreenSlotDialog_PassiveType" AlwaysUpperCase="true" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"
+					NonEnglishScaleModifier="0.88"
+							 />
+		<DetailsPassiveDescription AttachTo="BackgroundRight" OffsetX="940" OffsetY="108" Width="360" Height="620" Justification="Left" VerticalJustification="Top"
+					TextRed="0.79" TextGreen="0.79" TextBlue="0.79" Font="RalewayMedium26" Scale="0.55" FadeOpacity="0"
+					/>
+		<PassiveUsedImage AttachTo="DetailsPassiveTitle" OffsetX="160" OffsetY="400" Graphic="GUI\\Icons\\inspect_completed_check" Justification="Center" VerticalJustification="Center" FadeOpacity="0"/>
+		<PassiveUsedText AttachTo="DetailsPassiveDescription" OffsetX="10" OffsetY="516" Justification="Left" VerticalJustification="Center" FadeOpacity="0" NonEnglishScaleModifier="0.9"
+					HelpTextId="HandScreenSlotDialog_Usage" AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold18"/>
+		<GlobalPassiveUsedText AttachTo="PassiveUsedText" OffsetY="30" Justification="Left" VerticalJustification="Center" FadeOpacity="0" NonEnglishScaleModifier="0.9"
+					HelpTextId="HandScreenSlotDialog_GlobalUsage" AlwaysUpperCase="true" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold18"/>
+
+		<DetailsUsageDescription AttachTo="GlobalUpgradeUsedText" OffsetX="120" OffsetY="54" Justification="Center" VerticalJustification="Center" FadeOpacity="0"
+					HelpTextId="HandScreenSlotDialog_UsageDesc" TextRed="0.79" TextGreen="0.79" TextBlue="0.79" Font="RalewayBold18" Scale="0.8"/>
+
+		<!-- Upgrades Tab -->
+
+		<UpgradesTabTitleIcon AttachTo="DetailsTabTitleIcon" OffsetX="464" Graphic="GUI\\Widgets\\title_rect_inspect_upgrades" Justification="Left" VerticalJustification="Center"/>
+		<UpgradesTabTitleLine AttachTo="UpgradesTabTitleIcon" OffsetX="-19" OffsetY="4" Graphic="GUI\\Widgets\\inspect_subhead_underline_upgrades" AlternateGraphic="GUI\\Widgets\\inspect_subhead_underline_upgrades_highlight"
+							  Justification="Left" VerticalJustification="Center" Width="400" Height="60" AreaOffsetY="-20"
+						  FlashMin="0" FlashMax="0.4" FlashSpeed="2.0" FlashRed="0.1" FlashGreen="0" FlashBlue="0"
+							  PressSound="/SFX/Menu Sounds/PowerToggleNEW"/>
+		<UpgradesTabTitleText AttachTo="UpgradesTabTitleIcon" OffsetX="38" OffsetY="2" Justification="Left" VerticalJustification="Center"
+				   HelpTextId="InspectScreen_Upgrades" AlwaysUpperCase="true" Font="RalewayRegular32" Scale="0.75" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<UpgradeListData X="238" Y="320" Width="400" Height="170" Justification="Center" VerticalJustification="Center" SelectionSound="/SFX/Menu Sounds/PowerToggle"/>
+
+		<IconBack Scale="0.69" Alpha="1.0" SelectedRed="1.0" SelectedGreen="1.0" SelectedBlue="1.0" SelectedAlpha="1.0" Graphic="GUI\\HUD\\Card_Back" Justification="Center" VerticalJustification="Center" OffsetX="3" OffsetY="3"
+				  SelectedScale="1.0" ScaleSpeed="2.0" FadeSpeed="3.0"/>
+		<Icon Scale="0.5" Alpha="1.0" SelectedRed="1.0" SelectedGreen="1.0" SelectedBlue="1.0" SelectedAlpha="1.0" Justification="Center" VerticalJustification="Center"
+			  SelectedScale="1.0" ScaleSpeed="2.0" FlashSpeed="0.06" FlashMin="0.0" FlashMax="0.4" FadeSpeed="3.0"/>
+		<IconFront Scale="0.69" Alpha="1.0" SelectedRed="1.0" SelectedGreen="1.0" SelectedBlue="1.0" SelectedAlpha="1.0" Graphic="GUI\\HUD\\Card_Front" Justification="Center" VerticalJustification="Center" OffsetX="-3" OffsetY="-2"
+				   SelectedScale="1.0" ScaleSpeed="2.0" FadeSpeed="3.0"/>
+		<CostImage OffsetX="-66" OffsetY="-61" Scale="0.5" Justification="Center" VerticalJustification="Top"
+				   SelectedScale="1.0" ScaleSpeed="2.0" Alpha="0.75" Red="0.6" Green="0.9"/>
+		<NameText OffsetX="69" OffsetY="-40" Justification="Left" VerticalJustification="Center" FadeOpacity="0"
+					Scale="0.68" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24"/>
+		<ItemDescription OffsetX="62" OffsetY="-32" Width="270" Height="116" Justification="Left" VerticalJustification="Top"
+					TextRed="0.63" TextGreen="0.63" TextBlue="0.63" Font="RalewayMedium26" Scale="0.531" FadeOpacity="0" NonEnglishScaleModifier="1.05" NonEnglishFont="RalewaySemiBold22"/>
+
+		<Checkmark OffsetX="0" OffsetY="60" Graphic="GUI\\Icons\\inspect_completed_check" Scale="0.3" Justification="Center" VerticalJustification="Center"/>
+
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.65"/>
+		<InfoPanel X="960" Y="540" Justification="Center" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Center" VerticalJustification="Center"
+				  TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="700"/>
+		<InfoInstructionText
+			X="960" Y="640" Justification="Center" VerticalJustification="Center"
+			Font="RalewaySemiBold22"
+			HelpTextId="InfoInstructionText"
+			TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+
+		<!-- Controls -->
+
+		<UpArrow X="1795" Y="234" Scale="0.75" Graphic="ArrowAnimUp" Angle="0" Justification="Center" VerticalJustification="Center"/>
+		<DownArrow X="1795" Y="780" Scale="0.75" Graphic="ArrowAnimDown" Angle="0" Justification="Center" VerticalJustification="Center"/>
+		
+		<LeftArrow X="140" Y="990" Scale="1.0" Graphic="ArrowAnimLeft" Angle="0" Justification="Center" VerticalJustification="Center"/>
+		<RightArrow X="1780" Y="990" Scale="1.0" Graphic="ArrowAnimRight" Angle="0" Justification="Center" VerticalJustification="Center"/>
+
+		<LeftIcon AttachTo="LeftArrow" OffsetX="86" Scale="0.5" Graphic="GUI\\PS4Controller\\ps4ControllerL1" Justification="Center" VerticalJustification="Center"/>
+		<RightIcon AttachTo="RightArrow" OffsetX="-86" Scale="0.5" Graphic="GUI\\PS4Controller\\ps4ControllerR1" Justification="Center" VerticalJustification="Center"/>
+
+		<ConfirmButton Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="CardBuyScreen_Accept"
+					   Scale="0.0" Justification="Center" VerticalJustification="Center"
+					   TextScale="0.0" TextJustification="Left" ActionSound="/SFX/Menu Sounds/PowerSelecting"
+					   Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+					   X="310" Y="800"
+					   />
+
+		<CancelButton
+			X="960" Y="990"
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="InspectScreen_Exit"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.62" TextJustification="Left" ActionSound="/SFX/Menu Sounds/MenuDenied"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"/>
+
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+
+	</InspectScreen>
+	
+</Screens>

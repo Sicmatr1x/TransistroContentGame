@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Screens>
+
+	<HandScreenUpgradeDialog
+		Platform="default"
+		>
+
+		<TitleText X="960" Y="70" Justification="Center" VerticalJustification="Center"
+				   HelpTextId="HandScreen_UpgradeConfirm" OutlineThickness="2" Font="RalewaySemiBold32"
+				   TextRed="1.0" TextGreen="1.0" TextBlue="0.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" />
+
+		<InstructionText
+			X="960" Y="370" Justification="Center" VerticalJustification="Center"
+			OutlineThickness="2" Font="RalewaySemiBold32"
+			HelpTextId="HandScreen_UpgradeCostReduced"
+			TextRed="1.0" TextGreen="1.0" TextBlue="0.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" />
+
+		<!-- Controls -->
+
+		<ConfirmButton Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="Select"
+					   Scale="0.25" Justification="Center" VerticalJustification="Center"
+					   TextScale="1.0" TextJustification="Left"
+					   Font="RalewaySemiBold32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0.0" TextOutlineGreen="0.0" TextOutlineBlue="0.0"/>
+
+		<CancelButton Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Exit"
+					  Scale="0.25" Justification="Center" VerticalJustification="Center"
+					  TextScale="1.0" TextJustification="Left"
+					  Font="RalewaySemiBold32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0.0" TextOutlineGreen="0.0" TextOutlineBlue="0.0"/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.4"/>
+		<InfoPanel X="960" Y="540" Justification="Center" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Center" VerticalJustification="Center" TextRed="0.0" TextGreen="0.0" TextBlue="0.0" Width="830"/>
+		<InfoInstructionText
+			X="960" Y="640" Justification="Center" VerticalJustification="Center"
+			Font="RalewaySemiBold22"
+			HelpTextId="InfoInstructionText"
+			TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+
+	</HandScreenUpgradeDialog>
+	
+</Screens>

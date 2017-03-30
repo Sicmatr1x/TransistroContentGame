@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+
+	<!-- Prototype -->
+
+	<Animation
+		Name="PlayerMotorcycleOld" Type="CONSTANT" FilePath="Cinematic\\Motorcycle_01"
+		OriginX="100" OriginY="166" DefaultScale="1.0"
+		ChildAnimation="null"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerBoat" Type="CONSTANT" FilePath="Cinematic\\Temp_Boat_01"
+		OriginX="80" OriginY="350" DefaultScale="0.75"
+		OffsetY="-15" OffsetFromParentZ="false"
+		StartOffsetX="0" EndOffsetX="20" PingPongShiftOverDuration="true"
+		ZWobbleDistance="5" ZWobbleSpeed="10"
+		StartAngle="1" EndAngle="0" PingPongAngle="true"
+		RandomDurationMin="2.0" RandomDurationMax="3.0" Loop="true"
+		Material="Unlit"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerBoatLanding01" Type="CONSTANT" FilePath="Cinematic\\Temp_Boat_01"
+		OriginX="80" OriginY="350" DefaultScale="0.65"
+		StartOffsetY="0"
+		EndOffsetY="30"
+		Duration="0.2"
+		DisableOwnerInput="true"
+		VisualFx="WaterSpray" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.06"
+		ChildAnimation="PlayerBoatRider01"
+		ChainTo="PlayerBoatLanding02"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerBoatLanding02" Type="CONSTANT" FilePath="Cinematic\\Temp_Boat_01"
+		OriginX="80" OriginY="350" DefaultScale="0.65"
+		StartOffsetY="30"
+		EndOffsetY="-10"
+		Duration="0.5"
+		DisableOwnerInput="true"
+		VisualFx="WaterSpray" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.06"
+		ChildAnimation="PlayerBoatRider01"
+		ChainTo="PlayerBoatLanding03"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerBoatLanding03" Type="CONSTANT" FilePath="Cinematic\\Temp_Boat_01"
+		OriginX="80" OriginY="350" DefaultScale="0.65"
+		StartOffsetY="-10"
+		EndOffsetY="0"
+		Duration="0.3"
+		DisableOwnerInput="true"
+		VisualFx="WaterSpray" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.06"
+		ChildAnimation="PlayerBoatRider01"
+		>
+	</Animation>
+	
+	<Animation
+		Name="MotorcycleHotOld" Type="CONSTANT" FilePath="Cinematic\\MotorcycleHot_01"
+		PingPongShiftOverDuration="true" DefaultScale="0.95" OffsetX="133" OffsetY="28"
+		Loop="true" StartOpacity="0.0" EndOpacity="0.2" Red="0.6" Green="0.6"
+		RandomDurationMin="1.5" RandomDurationMax="2" PingPongColor="true">
+	</Animation>
+
+	<Animation
+		Name="MotorcycleRiderOld" Type="CONSTANT" FilePath="Cinematic\\Mod_Woman_01"
+		OffsetX="-32" OffsetY="-20" DefaultScale="1.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerMotorcycleTransistor01" Type="CONSTANT" FilePath="Cinematic\\sideview_transistor_01"
+		OriginX="-100" OriginY="790" DefaultScale="0.8"
+		DefaultAngle="-19"
+		ChildAnimation="PlayerMotorcycle01"
+		Rotate="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerMotorcycle01" Type="CONSTANT" FilePath="Cinematic\\sideview_motorcycle_02"
+		OriginX="80" OriginY="314" DefaultScale="1.0"
+		ChildAnimation="PlayerMotorcycleRider01"
+		Rotate="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerMotorcycleRider01" Type="CONSTANT" FilePath="Cinematic\\sideview_rider_01"
+		OriginX="125" OriginY="700" DefaultScale="1.0"
+		ChildAnimation="null"
+		Rotate="true"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerMotorcycleTransistor02" Type="CONSTANT" FilePath="Cinematic\\sideview_transistor_01"
+		OriginX="-100" OriginY="790" DefaultScale="0.8"
+		DefaultAngle="-19"
+		Duration="5"
+		Loop="true" Rotate="true" Mirror="true"
+		ChildAnimation="PlayerMotorcycle02" 
+		Material="Emissive"
+		VisualFx="PlayerMotorcycleTransistorParticles" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.06"
+		>
+	</Animation>
+
+  <Animation
+		Name="PlayerMotorcycleTransistor04" Type="CONSTANT" FilePath="Cinematic\\sideview_transistor_02"
+		OriginX="200" OriginY="325" DefaultScale="1"
+		RandomDurationMin="0.5" RandomDurationMax="1.8"
+		ShakeSpeed="70" ShakeDistance="1.5"
+		StartAngle="1" EndAngle="0" PingPongAngle="true"
+		Loop="true" Mirror="false"
+		Material="Default"
+		ChildAnimation="PlayerMotorcycle02"
+		VisualFx="PlayerMotorcycleTransistorParticles" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.06"
+		>
+  </Animation>
+
+	<Animation
+		Name="PlayerBoatTransistor01" Type="CONSTANT" FilePath="Cinematic\\sideview_transistor_02"
+		Mirror="false"
+		OffsetX="180" OffsetY="-120" DefaultScale="0.65"
+		UseChildZWobble="true" UseChildOffset="true" OffsetFromParentZ="false"
+		DefaultAngle="40"
+		Loop="true"
+		ChildAnimation="PlayerBoatRider01"
+		>
+		<Material Ambient="0.7" Diffuse="0" Directionality="0"/>
+	</Animation>
+	
+	<Animation
+		Name="PlayerMotorcycleTransistor03" InheritFrom="PlayerMotorcycleTransistor04"
+		OriginX="350" OriginY="320"
+		DefaultAngle="0"
+		ChildAnimation="PlayerMotorcycle03"
+		VisualFx="PlayerMotorcycleTransistorParticles02" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.06"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerMotorcycleTransistorParticles" Type="CONSTANT" FilePath="Particles\\particle_circle_04"
+		StartOffsetX="510" EndOffsetX="-500"
+		StartOffsetY="-100" EndOffsetY="-120"
+		RandomOffsetY="300"
+		StartOpacity="0" EndOpacity="1" PingPongColor="true"
+		RandomDurationMin="0.25" RandomDurationMax="1.0"
+		Velocity="450"
+		RandomAngle="true" Mirror="true"
+		DefaultScale="1"
+		StartScaleX="0" EndScaleX="3.0" PingPongScale="true"
+		Rotate="false" RotationSpeed="30"
+		RandomScaleMin="0.2" RandomScaleMax="0.8"
+		StartGreen="1.0" EndGreen="0.75"
+		StartRed="1.0" EndRed="1"
+		StartBlue="1.0" EndBlue="0"
+		Acceleration="-600"
+		AngleChangeSpeed="175"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerMotorcycleTransistorParticles02" InheritFrom="PlayerMotorcycleTransistorParticles"
+		StartOffsetX="0" EndOffsetX="800"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerMotorcycleTransistorFlash" InheritFrom="PlayerMotorcycleTransistor04"
+		Duration="0.6" AllowRestart="false" Loop="false" RandomDurationMin="0.0" RandomDurationMax="0.0"
+		FlashSpeed="4.0" FlashMin="0.0" FlashMax="0.9" FlashExpireAfterCycle="true"
+		Red="1.0" Green="0.84" Blue="0.0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerMotorcycle02" Type="CONSTANT" FilePath="Cinematic\\sideview_motorcycle_02"
+		OriginX="40" OriginY="334" DefaultScale="1.0"
+		ChildAnimation="PlayerMotorcycleRider02"
+		Rotate="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerMotorcycleRider02"  Type="BOOK" FilePath="Animations\\Muse\\MotorcycleRide\\MotorcycleRide"
+		OriginX="-58" OriginY="425" DefaultScale="1.0"
+		NumAngles="1" NumFrames="3" DurationFrames="15" Loop="true"
+		RandomFrameTime="0.083"
+		ChildAnimation="null"
+		Rotate="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerSwarmRider01"  Type="BOOK" FilePath="Animations\\Muse\\SwarmRide\\SwarmRide"
+		DefaultScale="0.9"
+		OffsetY="-180" OffsetX="-200"
+		ShakeDistance="5" ShakeSpeed="8"
+		NumAngles="1" NumFrames="3" DurationFrames="15" Loop="true"
+		RandomFrameTime="0.083"
+		Rotate="false" Mirror="true"
+		ChildAnimation="PlayerSwarmRiderSwarm"
+		>
+		<Material Ambient="0.7" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+	
+	<Animation
+		Name="PlayerSwarmRiderSwarm" Type="BOOK" FilePath="Animations\\GliderSwarm\\GliderSwarm"
+		NumFrames="60" DurationFrames="120" NumAngles="1"
+		OffsetX="120"
+		DefaultScale="1.85"
+		Material="Default"
+		RandomStartFrame="true"
+		ReRandomizeOnLoop="false"
+		Loop="true"
+		ChildAnimation="PlayerSwarmRiderSwarmBehind" 
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerSwarmRiderSwarmBehind" Type="BOOK" FilePath="Animations\\GliderSwarm\\GliderSwarm"
+		NumFrames="60" DurationFrames="120" NumAngles="1"
+		OffsetX="-200"
+		DefaultScale="1.55"
+		PlayBackwards="true"
+		RandomStartFrame="true"
+		ReRandomizeOnLoop="false"
+		Loop="true"
+		>
+		<Material Ambient="0.7" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+			
+	<Animation
+		Name="PlayerSwarmRider02"  Type="CONSTANT" FilePath="Animations\\Muse\\SwarmRide\\SwarmRide0001"
+		OriginX="-58" OriginY="425" DefaultScale="1.0"
+		NumAngles="1" NumFrames="3" DurationFrames="15" Loop="true"
+		RandomFrameTime="0.083"
+		ChildAnimation="null"
+		Rotate="false" Mirror="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerBoatRider01" InheritFrom="PlayerMotorcycleRider02"
+		OriginX="-270" OriginY="410" DefaultScale="0.65"
+		UseChildZWobble="true" UseChildOffset="true" OffsetFromParentZ="false"
+		ChildAnimation="PlayerBoat"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PlayerMotorcycle03" InheritFrom="PlayerMotorcycle02" Type="CONSTANT" FilePath="Cinematic\\sideview_motorcycle_02"
+		OriginX="500" OriginY="334" DefaultScale="1.0"
+		ChildAnimation="PlayerMotorcycleRider03"
+		Rotate="true"
+		Material="Emissive"
+		>
+	</Animation>
+
+	<Animation
+		Name="PlayerMotorcycleRider03" InheritFrom="PlayerMotorcycleRider02" Type="BOOK" FilePath="Animations\\Muse\\MotorcycleRide\\MotorcycleRide"
+		OriginX="312" OriginY="420" DefaultScale="1.0"
+		NumAngles="1" NumFrames="3" DurationFrames="15" Loop="true"
+		RandomFrameTime="0.083"
+		ChildAnimation="null"
+		Rotate="true"
+		Material="Emissive"
+		>
+	</Animation>
+	
+	<Animation
+        Name="PlayerGlider01" Type="SLIDE" FilePath="Animations\\Muse\\Blink\\MuseBlink"
+		OffsetZ="0"
+		ShakeSpeed="150" ShakeDistance="1.5" 
+		StartOffsetX="0" EndOffsetX="30" PingPongShiftOverDuration="true"
+		ZWobbleDistance="10" ZWobbleSpeed="10" Rotate="false"
+		RandomDurationMin="2.0" RandomDurationMax="3.0"
+		DefaultScale="1.0" OffsetY="-100"
+		NumAngles="32" NumFrames="130"
+		Loop="true"
+		VideoTexture="MuseBlink"
+		DisableOwnerInput="false"
+		ChildAnimation="HerderCloud"
+		>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="1" NumDirectionSets="99999"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="1" PlayBackwards="true" NumDirectionSets="99999"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Material Ambient="0.5" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+        Name="PlayerGlider02" Type="SLIDE" FilePath="Animations\\Muse\\Blink\\MuseBlink"
+		OffsetZ="0"
+		ShakeSpeed="150" ShakeDistance="1.5"
+		StartOffsetX="0" EndOffsetX="30" PingPongShiftOverDuration="true"
+		ZWobbleDistance="10" ZWobbleSpeed="10" Rotate="false"
+		RandomDurationMin="2.0" RandomDurationMax="3.0"
+		DefaultScale="1.0" OffsetY="-100"
+		NumAngles="32" NumFrames="130"
+		Loop="true"
+		VideoTexture="MuseBlink"
+		DisableOwnerInput="false"
+		ChildAnimation="HerderCloud"
+		>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="1" NumDirectionSets="99999"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="1" PlayBackwards="true" NumDirectionSets="99999"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Material Ambient="0.5" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="PlayerGliderAttack" InheritFrom="MuseQuickAttack"
+		ChildAnimation="HerderCloud">
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="1"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+	</Animation>
+
+	<Animation
+		Name="PlayerGliderAttackFlare"
+		InheritFrom="PopperAttackFlare"
+		FilePath="Particles\\particle_flare_ring_spectral"
+		RandomDurationMin="0.1"
+		RandomDurationMax="0.2"
+		StartOpacity="1.0"
+		EndOpacity="0.5"
+		StartBlue="1"
+		EndBlue="0"
+		StartRed="1"
+		EndRed="0"
+		OffsetZ="100"
+		OffsetX="-30"
+		OffsetY="-5"
+		UseAttachedScale="true"
+		DieWithOwner="true"
+		SetOwnerEndAngle="true"
+		DrawAsDecal="false"
+		StartScale="0.5"
+		EndScale="0.25"
+		ChildAnimation="null"
+		Rotate="true"
+		RandomAngle="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="HerderCloud" Type="CONSTANT" FilePath="blank" DieWithOwner="true"
+		VisualFx="HerderCloudUnit" VisualFxIntervalMin="0.003" VisualFxIntervalMax="0.004">
+	</Animation>
+	
+	<Animation
+		Name="HerderCloudUnit" Type="CONSTANT" FilePath="Animations\\Enemies\\Herding1\\Herder0001"
+		OffsetZ="0" OffsetX="58" OffsetY="30" DrawAsDecal="true"
+		RandomOffsetX="75" RandomOffsetY="40"
+		StartOffsetX="0" EndOffsetX="-130"
+		StartOffsetY="0" EndOffsetY="-10"
+		RandomAngle="true"
+		RandomDurationMin="0.2" RandomDurationMax="0.3"
+		StartOpacity="0.8" EndOpacity="0.0"
+		RandomScaleMin="0.25" RandomScaleMax="0.35"
+		GhostInterval="0.001" GhostDuration="0.05"
+		NumFrames="1" NumAngles="1"
+		Material="Emissive">
+	</Animation>
+
+	<Animation
+		Name="HerderCloud3"
+		OffsetX="6" OffsetY="-10"
+		InheritFrom="HerderCloudUnit"
+		ChildAnimation="HerderCloud4"
+		>
+	</Animation>
+
+	<Animation
+		Name="HerderCloud4"
+		OffsetX="0" OffsetY="0"
+		InheritFrom="HerderCloudUnit"
+		ChildAnimation="HerderCloud5"
+		>
+	</Animation>
+
+	<Animation
+		Name="HerderCloud5"
+		OffsetX="46" OffsetY="25"
+		InheritFrom="HerderCloudUnit"
+		ChildAnimation="HerderCloud6"
+		>
+	</Animation>
+
+	<Animation
+		Name="HerderCloud6"
+		OffsetX="60" OffsetY="-40"
+		InheritFrom="HerderCloudUnit"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="MotorcycleHot" Type="CONSTANT" FilePath="Cinematic\\MotorcycleHot_01"
+		PingPongShiftOverDuration="true" DefaultScale="0.95" OffsetX="133" OffsetY="28"
+		Loop="true" StartOpacity="0.0" EndOpacity="0.2" Red="0.6" Green="0.6"
+		RandomDurationMin="1.5" RandomDurationMax="2" PingPongColor="true">
+	</Animation>
+
+	<Animation
+		Name="MotorcycleRider" Type="CONSTANT" FilePath="Cinematic\\Mod_Woman_01"
+		OffsetX="-32" OffsetY="-20" DefaultScale="1.0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="TracerHuge" Type="CONSTANT" FilePath="Projectiles\\bullet_tracer"
+		StartScale="1.5" EndScale="2.0" DefaultScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Rotate="true" Loop="true"
+		VisualFx="CannonTrailFx" VisualFxIntervalMin="0.0167" VisualFxIntervalMax="0.0167">
+	</Animation>
+
+	<Animation
+		Name="Tracer" Type="CONSTANT" FilePath="Projectiles\\bullet_tracer"
+		DefaultScale="1.05"
+		Rotate="true" Loop="true">
+	</Animation>
+	
+
+</Animations>

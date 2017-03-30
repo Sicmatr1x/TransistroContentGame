@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AboutScreens>
+
+	<AboutScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="/SFX/Menu Sounds/InfoPanelLeave"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		UseSelectionSoundWithMouse="false"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="WarningBackgroundLoop" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackgroundTop X="960" Y="460" Graphic="ShellBackgroundMainIntroB" Justification="Center" VerticalJustification="Center"/>
+		<AnimatedBackgroundIcons X="730" Y="610" Graphic="ShellIconsAbout" Justification="Center" VerticalJustification="Center"/>
+		
+		<TitleText X="960" Y="180" Justification="Center" VerticalJustification="Center"
+				   HelpTextId="Supergiant" Font="JuliusSansOne48Titling"
+				   OutlineThickness="0"
+				   Scale="0.8"
+				   TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+
+		<SoundtrackButton X="575" Y="380" Justification="Center" VerticalJustification="Center"
+					Graphic="GUI\\Shell\\about_store" SelectedGraphic="GUI\\Shell\\selection_reticle_about"
+					Scale="1.0" Width="140" Height="100"
+					HelpTextId="AboutScreen_Soundtrack" Font="RalewaySemiBold22"
+					TextRed="0.5" TextGreen="0.5" TextBlue="0.5" TextOffsetY="80"
+					SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+					SelectedTextScale="1.0"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.15" FadeDelayMax="0.2" FadeSpeed="10.0"
+					PressSound="null"/>
+
+		<WebsiteButton AttachTo="SoundtrackButton" OffsetY="130" Justification="Center" VerticalJustification="Center"
+					Graphic="GUI\\Shell\\about_supergiant" SelectedGraphic="GUI\\Shell\\selection_reticle_about"
+					Scale="1.0" Width="140" Height="100"
+					HelpTextId="AboutScreen_Website" Font="RalewaySemiBold22"
+					TextRed="0.5" TextGreen="0.5" TextBlue="0.5" TextOffsetY="80"
+					SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+					SelectedTextScale="1.0"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.1" FadeDelayMax="0.15" FadeSpeed="10.0"
+					PressSound="null"/>
+
+		<TwitterButton AttachTo="WebsiteButton" OffsetY="130" Justification="Center" VerticalJustification="Center"
+					Graphic="GUI\\Shell\\about_twitter" SelectedGraphic="GUI\\Shell\\selection_reticle_about"
+					Scale="1.0" Width="140" Height="100"
+					HelpTextId="AboutScreen_Twitter" Font="RalewaySemiBold22"
+					TextRed="0.5" TextGreen="0.5" TextBlue="0.5" TextOffsetY="80"
+					SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+					SelectedTextScale="1.0"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.05" FadeDelayMax="0.1" FadeSpeed="10.0"
+					PressSound="null"/>
+
+		
+
+		<FacebookButton AttachTo="TwitterButton" OffsetY="130" Justification="Center" VerticalJustification="Center"
+					Graphic="GUI\\Shell\\about_facebook" SelectedGraphic="GUI\\Shell\\selection_reticle_about"
+					Scale="1.0" Width="140" Height="100"
+					HelpTextId="AboutScreen_Facebook" Font="RalewaySemiBold22"
+					TextRed="0.5" TextGreen="0.5" TextBlue="0.5" TextOffsetY="80"
+					SelectedTextRed="0.69" SelectedTextGreen="1.0" SelectedTextBlue="0.92"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0" FadeDelayMax="0.05" FadeSpeed="10.0"
+					SelectedTextScale="1.0"/>
+
+		<CreditTitle
+			AttachTo="TitleText" OffsetX="-130" OffsetY="170" Spacing="400" LineSpacingTop="89"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Scale="0.7"
+			AlwaysUpperCase="true"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.1" FadeDelayMax="0.15" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.8"
+			TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+
+		<CreditName
+			AttachTo="TitleText" OffsetX="-130" OffsetY="196" Spacing="400" LineSpacingTop="89"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayBold24"
+			OutlineThickness="0"
+			AlwaysUpperCase="true"
+			Scale="0.75"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.15" FadeDelayMax="0.2" FadeSpeed="10.0"
+			TextRed="0" TextGreen="1" TextBlue="0.63" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.4"/>
+		<InfoPanel X="960" Y="540" Justification="Left" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="830"/>
+
+		<!-- Controls -->
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="Shell_Confirm"
+			PressSound="/SFX/Menu Sounds/PowerSelecting" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="680" Y="940"
+			AlwaysUpperCase="true"
+			/>
+
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Shell_back"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="1170" Y="940"
+			AlwaysUpperCase="true"
+			MouseOffsetX="-210"
+			/>
+
+		
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+
+	</AboutScreen>
+	
+</AboutScreens>

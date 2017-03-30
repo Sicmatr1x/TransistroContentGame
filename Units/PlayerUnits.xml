@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<Npc
+		Name="1_BasePlayerUnit"
+		PlayerControlled="true"
+		PlayerOwned="true"
+		DisplayInEditor="false"
+		>
+	</Npc>
+
+	<Npc
+		Name="_PlayerUnit"
+		InheritFrom="1_BasePlayerUnit"
+		MoveGraphic="MuseRun"
+		StopGraphic="MuseStop"
+		WalkLegs="null"
+		StrafeLegs="null"
+		ExecuteMoveGraphic="MuseExecuteDash"
+		PhaseInTimeMin="0.01"
+		PhaseInTimeMax="0.01"
+		Speed="335"
+		BackpedalSpeedModifier="0.34"
+		RotationSpeed="216000"
+		CosmeticRotationSpeed="1340"
+		VisionRange="1000"
+		OnTouchdownWeapon="TouchdownSlam"
+		OnCounterWeapon="null"
+		OnRangedCounterWeapon="null"
+		OnBlockWeapon="null"
+		OnRangedBlockWeapon="null"
+		LastStandWeapon="null"
+		IgnoreTargetCollision="false"
+		Magnetism="300"
+		ChargeFx="ShieldChargeFx"
+		ChargeRumble="0.125"
+		BlockFx="BlockSparks3"
+		FriendlyFx="null"
+		FallPenaltyFx="null"
+		PowerShotIcon="GUI\\Icons\\Icon_PowerShot"
+		CounterIcon="GUI\\Icons\\Icon_Counter"
+		LevelUpIcon="GUI\\Icons\\Icon_LevelUp"
+		LivesIcon="GUI\\Icons\\Icon_Lives"
+		DormantOnDeath="true"
+		LifeStealMinInterval="0"
+		OnHitWeapon="PlayerOnHitWeapon"
+		OnDeathWeapon="PlayerOnDeathWeapon"
+		OnKillWeapon="PlayerOnKillWeapon"
+		ContinuousWeapon="PassiveBombSpawner"
+		ExecuteWeapon="PlayerExecuteWeapon"
+		AnimToFireTouchdownWeapon="MusePassedOut"
+		OnFiredAtWeapon="PlayerDecoyWeapon"
+		UsePreviewGraphic="MuseUsePreview"
+		BreathFx="ColdBreath"
+		PathFx="TransistorPathSelector"
+		MaxStamina="100"
+		StaminaRegen="0"
+		CompleteStaminaRegen="30"
+		ReloadStaminaRegenDelay="1.5"
+        StaminaRecoverThreshold="99999"
+		FullStaminaHealthRegen="0.0"
+		FullStaminaHealthRegenCap="0.5"
+		StaminaMoveCost="0.05625"
+		Flyer="true"
+		StaminaReloadFx="PlayerReloading"
+		StaminaReloadFinishFx="PlayerReloadComplete"
+		MotionBlurMaxOpacity="0.2"
+		MotionBlurMinOpacity="0.05"
+		WeaponTrackingObstacle="TransistorEye"
+		AutoLockable="true"
+		>
+		<Thing
+			Graphic="MuseIdle"
+			FidgetGraphic="MuseFidget"
+			FlyingGraphic="null"
+			Grip="5.0"
+			Drag="0.6"
+			FallSpeedMultiplier="7.5"
+			FallDamageFraction="0.15"
+			FallSound="Falling"
+			Width="104"
+			Height="64"
+			OverheadOffset="182"
+			OnTouchdownFxAnim="null"
+			TouchdownSound="null"
+			TouchdownRumbleIntensity="0.4"
+			TouchdownRumbleDuration="0.15"
+			TouchdownScreenShake="600"
+			SelectionRadius="120"
+			OcclusionOutlineRed="0.29"
+			OcclusionOutlineGreen="1.0"
+			OcclusionOutlineBlue="0.71"
+			OcclusionOutlineRadius="0.01"
+			OcclusionOutlineThreshold="0.5"
+			OcclusionOutlineDelay="-2.0"
+			OcclusionOutlineOpacity="0.0"
+			OcclusionOutlineFadeSpeed="0.1"
+			MaxImpactForce="18000">
+			<Point X="8" Y="20"/>
+			<Point X="24" Y="4"/>
+			<Point X="24" Y="-4"/>
+			<Point X="8" Y="-20"/>
+			<Point X="-8" Y="-20"/>
+			<Point X="-24" Y="-4"/>
+			<Point X="-24" Y="4"/>
+			<Point X="-8" Y="20"/>
+		</Thing>
+		<Life
+			Health="100"
+			HealthRegen="0"
+			HealthRegenDelay="0.0"
+			AllowRegenWhileDisabled="false"
+			Armor="0.0"
+			ArmorCoverage="360"
+			LowHealthThreshold="0.2"
+			LowHealthSound="SFX/Player Sounds/LowHealth"
+			DeathGraphic="MuseDeath"
+			FallDeathAnimation="MusePassedOut"
+			DeathSound="null"
+			Decal="null"
+			OverPitDecal="null"
+			UseHealthMeter="true"
+			HealthMeterOpacity="0.0"
+			HealthMeterFalloffSpeed="0.34"
+			HitSound="/SFX/Player Sounds/PlayerOnHit2"
+			SkipHitSoundOnDeath="true"
+			MaxLives="3"
+			Material="PLAYER"
+			ShowHealNumbers="false"
+			ShowDamageNumbers="false"
+			ImmuneToDissolveDeath="true"
+			DamageFlashMin="0.1"
+			DamageFlashMax="0.5"
+			BurstDamageLimit="999"
+			BurstDamageRecoverRate="20"
+			LastStandHealth="1"
+			ReviveHealTime="0.25"
+			ReflectionCooldown="5.0"
+			ReflectionShieldHealth="6.0"
+			HasReflectionFx="ReflectionShield"
+			ProjectileHealModifier="0.1"
+			ProjectileHealCap="0.1"
+			ShowCritFx="false"
+			>
+		</Life>
+		
+		<!-- Player Passive Upgrades -->
+
+		<Upgrade Name="Slam" HelpTextId="Slam_Passive">
+			<Rank>
+				<Change ValueChangeType="ADD" Armor="0.25"/>
+				<Change ValueChangeType="ABSOLUTE" ImmuneToStun="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Snipe" HelpTextId="Snipe_Passive">
+			<Rank ValueChangeType="ADD" MaxStamina="20"/>
+		</Upgrade>
+
+		<Upgrade Name="ClusterbombGP" HelpTextId="Clusterbomb_Passive">
+			<!--
+			<Rank ApplyToWeapon="PlayerLowHealthWeapon"/>
+			-->
+			<Rank ApplyToWeapon="PlayerDecoyWeapon"/>
+		</Upgrade>
+
+		<Upgrade Name="Bomb" HelpTextId="Bomb_Passive">
+			<Rank ApplyToWeapon="PassiveBombSpawner"/>
+		</Upgrade>
+
+		<Upgrade Name="Blink" HelpTextId="Blink_Passive">
+			<Rank ValueChangeType="ADD" CompleteStaminaRegen="10"/>
+		</Upgrade>
+
+		<Upgrade Name="Heal" HelpTextId="Heal_Passive">
+			<Rank ValueChangeType="ADD" Health="50"/>
+		</Upgrade>
+
+		<Upgrade Name="Might" HelpTextId="Might_Passive">
+			<Rank ValueChangeType="ADD" DamageOutputMultiplier="0.25"/>
+		</Upgrade>
+
+		<Upgrade Name="Hook" HelpTextId="Hook_Passive">
+			<Rank ValueChangeType="MULTIPLY" Magnetism="2.0"/>
+		</Upgrade>
+
+		<Upgrade Name="Sidearm" HelpTextId="Sidearm_Passive">
+			<Rank ValueChangeType="ADD" StaminaMoveCost="-0.02"/>
+		</Upgrade>
+
+		<Upgrade Name="Orb" HelpTextId="Orb_Passive">
+			<Rank ValueChangeType="ADD" FullStaminaHealthRegen="5"/>
+		</Upgrade>
+
+		<Upgrade Name="Hide" HelpTextId="Hide_Passive">
+			<Rank ApplyToWeapon="PlayerOnKillWeapon"/>
+		</Upgrade>
+		
+		<Upgrade Name="Charm" HelpTextId="Charm_Passive">
+			<Rank ValueChangeType="ADD" ApplyGlobally="true"/>
+		</Upgrade>
+
+		<Upgrade Name="Summon" HelpTextId="Summon_Passive">
+			<Rank ValueChangeType="ADD" FocusStandInChance="0.25"/>
+		</Upgrade>
+
+		<Upgrade Name="Uppercut" HelpTextId="Uppercut_Passive">
+			<Rank ApplyToWeapon="PlayerExecuteWeapon"/>
+		</Upgrade>
+
+		<Upgrade Name="Tracker" HelpTextId="Tracker_Passive">
+			<Rank ApplyToWeapon="PlayerOnHitWeapon"/>
+		</Upgrade>
+
+		<Upgrade Name="Jumper" HelpTextId="Jumper_Passive">
+			<Rank ValueChangeType="ADD" Reflection="1.0"/>
+		</Upgrade>
+
+		<!--
+		<Upgrade Name="LifeSteal" Graphic="GUI\\HUD\\passive_attack_01">
+			<Rank Cost="20" ValueChangeType="ABSOLUTE" LifeSteal="0.2"/>
+		</Upgrade>
+		-->
+
+		<PlayerUnitData
+			GetUpAnim="MusePowerLostReturn"
+			PassOutAnim="MusePassedOut"
+			HardLandAnim="MuseGetUp"
+			HardLandGetUpAnim="MuseGetUp"
+			OnLevelUpAnim="null"
+			OnLevelUpFxAnim="PlayerLevelUp"
+			OnLevelUpSound="LevelUp"
+			OnLevelUpWeapon="LevelUp"
+			OnUpgradesEquippedAnim="PlayerFlaskDrink"
+			FocusSimulationMoveSlow="0.15"
+			FocusSimulationAttackSlow="0.03"
+			FocusSpeedBoost="40.0"
+			FocusSpeedDrain="1.0"
+			FocusCooldown="0.5"
+			MinMoveDistance="32"
+			ReticleMoveSpeed="800"
+			ReticleMagnetismDistance="100"
+			ReticleMagnetismSpeed="1000"
+			ReticleReMagnetizeTimeout="1.0"
+			ReticleMoveDelay="0.25"
+			FocusOutlineRadius="0.01"
+			FocusOutlineThreshold="0.5"
+			FocusMotionBlurOpacity="1.0"
+			FocusOpacity="0.4"
+			SwordVolumeEmissiveRatio="0.5"
+			SwordPulsePeriod="3.6"
+			SwordPulseIntensity="0.4"
+			SwordPulsePlanIntensity="1.0"
+			SwordPulseExecuteIntensity="0.85"
+			EnterPlanningFx="FocusTransition"
+			Partner="PlayerPartner"
+			FocusStandIn="PlayerArchon"
+			FocusStandInCooldown="14.0"
+			GainControlSound="SFX/Player Sounds/FocusActionAlt"
+			PlanningBeginSound="/SFX/Player Sounds/FocusBegin"
+			PlanningMoveSound="/SFX/Player Sounds/FocusMoveAlt"
+			>
+			<SwordColor Red="0.29" Green="1.0" Blue="0.71" Opacity="0.85"/>
+			<SwordEmissiveColor Red="1.0" Green ="1.0" Blue ="1.0" Opacity="0.0"/>
+			<FocusOutlineColor Red="0.29" Green="1.0" Blue="0.71" Opacity="0.4"/>
+		</PlayerUnitData>
+
+		<Using>MuseSocket</Using>
+		<Using>SocketSword</Using>
+		<Using>SocketSwordReverse</Using>
+		<Using>HandScreenIn</Using>
+		<Using>HandScreenOut</Using>
+		<Using>WarningBackground</Using>
+		<Using>TestSocketActive</Using>
+		<Using>TestSocketInactive</Using>
+		<Using>MuseCombatOverIdle</Using>
+		<Using>MuseCombatOverLevelUpEnter</Using>
+		<Using>MuseCombatOverLevelUpExit</Using>		
+		<Using>TargetEliminated</Using>
+		<Using>ArchonMuseAttack</Using>
+
+	</Npc>
+
+	<Npc
+		Name="PlayerPartner"
+		InheritFrom="_PlayerUnit"
+		DormantOnDeath="false"
+		OnDeathWeapon="null"
+		CollideWithUnits="false"
+		PathFx="null"
+		ClearWeapons="true"
+		ClearUpgrades="true"
+		MoveGraphic="PlanningMuseRun"
+		StaminaReloadFx="null"
+		StaminaReloadFinishFx="null"
+		WeaponTrackingObstacle="">
+		<Thing
+			Graphic="PlanningMuseIdle"
+			FidgetGraphic="null"
+			FlyingGraphic="null"
+			PermaFlash="AlmostWhite">
+			<Color Red="0.3" Green="0.3" Blue="0.3" Opacity="0.7"/>
+		</Thing>
+		<Life
+			Invulnerable="true"
+			DeathFx="null">
+		</Life>
+		<PlayerUnitData
+			Partner="null"
+			GetUpAnim="null"
+			>
+		</PlayerUnitData>
+
+		<Upgrade Name="Snipe" HelpTextId="Snipe_Passive">
+			<Rank ValueChangeType="ADD" MaxStamina="20"/>
+		</Upgrade>
+		
+	</Npc>
+
+	<Npc
+		Name="PlayerPet"
+		InheritFrom="_PlayerUnit"
+		DormantOnDeath="false"
+		RagDollOnDeath="false"
+		OnDeathWeapon="null"
+		ExecuteWeapon="PetExecuteWeapon"
+		ContinuousWeapon="PetLowHealthWeapon"
+		CollideWithUnits="false"
+		OnFiredAtWeapon="null"
+		PathFx="null"
+		ClearWeapons="true"
+		ClearUpgrades="true"
+		MoveGraphic="FlusherRun"
+		StopGraphic="null"
+		ExecuteMoveGraphic="null"
+		WeaponTrackingObstacle=""
+		MaxStamina="100"
+		StaminaRegen="0"
+		StaminaMoveCost="0.015"
+		VisionRange="750"
+		OnSpawnWeapon="null"
+		UsePreviewGraphic="FlusherUsePreview"
+		>
+		<Thing
+			Graphic="FlusherIdle"
+			OverheadOffset="122"
+			ActivateGraphic="SummonPetFx"
+			FidgetGraphic="null"
+			FlyingGraphic="null"
+			Scale="0.575">
+			<Color Red="1.0" Green="0.7" Blue="0.1" Opacity="1.0"/>
+		</Thing>
+		<Life
+			Health="20"
+			Invulnerable="false"
+			HitSound="/SFX/Enemy Sounds/Flusher/FlusherOnHit"
+			DeathSound="/SFX/Enemy Sounds/Flusher/FlusherOnDeath"
+			DeathFx="EnemyDeathSplatter"
+			Material="METAL"
+			DeathGraphic="null"
+			LastStandHealth="0"
+			ShowCritFx="true"
+		>
+		</Life>
+		<PlayerUnitData
+			Partner="PlayerPetPartner"
+			>
+		</PlayerUnitData>
+		
+		<Weapon Name="PlayerPetBark"/>
+
+		<Upgrade Name="PetSlam">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" ImmuneToStun="true"/>
+				<Change ApplyGlobally="PetSlam"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetSnipe">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" MaxStamina="1.3"/>
+				<Change ApplyGlobally="PetSnipe"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetClusterbombGP">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" Scale="0.7"/>
+				<Change ValueChangeType="MULTIPLY" ActivateGraphic="SummonPetFxSmall"/>
+				<Change ValueChangeType="MULTIPLY" DamageOutputMultiplier="0.75"/>
+				<Change ApplyGlobally="PetClusterbombGP"/>
+				<Change ValueChangeType="MULTIPLY" Health="1.5"/>
+				<Change ValueChangeType="MULTIPLY" MaxStamina="0.5"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetBomb">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetBlink">
+			<Rank>
+				<Change ApplyGlobally="PetBlink"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetHeal">
+			<Rank>
+				<Change OnSpawnWeapon="PetHealerBuff"/>
+				<Change ApplyGlobally="PetHeal"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetMight">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetHook">
+			<Rank>
+				<Change ApplyGlobally="PetHook"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetSidearm">
+			<Rank>
+				<Change ValueChangeType="ADD" Speed="300"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetOrb">
+			<Rank>
+				<Change ApplyGlobally="PetOrb"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetHide">
+			<Rank>
+				<Change ApplyGlobally="PetHide"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetCharm">
+			<Rank>
+				<Change ApplyToAllWeapons="PetCharm"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetUppercut">
+			<Rank>
+				<Change ApplyToAllWeapons="PetUppercut"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetTracker">
+			<Rank>
+				<Change ApplyToAllWeapons="PetTracker"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetJumper">
+			<Rank>
+				<Change ApplyGlobally="PetJumper"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetSummon">
+			<Rank>
+				<Change ApplyGlobally="PetSummon"/>
+				<Change ValueChangeType="MULTIPLY" Health="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="false"
+			TargetLock="true"
+			MaxDistance="500"
+			TargetShields="true"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="SFX/Enemy Sounds/Suppressor/SuppressorSight"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetAcquiredGraphicPrereq="null"
+			TargetLostDisable="0.5"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			FindHealerHealthFraction="0.5">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="1.0"
+			RandomTurnIntervalMax="2.0"
+			TurnDelayMin="1.0"
+			TurnDelayMax="2.0"
+			SpeedFraction="1.0"
+			TetherDistance="150"
+			StopToAttack="true"
+			StopOnInvalidDestination="false"
+			>
+		</MoveAI>
+		<MoveAI
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="true"
+			RequiresLoS="true"
+			SuccessDistance="100"
+			LookAheadDistance="512"
+			>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			RequiresLoS="true"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true"
+			RangeBufferMin="0.9"
+			RangeBufferMax="1.0">
+		</AttackAI>
+		
+	</Npc>
+
+	<Npc
+		Name="PlayerPetPartner"
+		InheritFrom="PlayerPet"
+		DormantOnDeath="false"
+		RagDollOnDeath="false"
+		OnDeathWeapon="null"
+		CollideWithUnits="false"
+		PathFx="null"
+		ClearWeapons="true"
+		ClearUpgrades="true"
+		ClearAI="true"
+		WeaponTrackingObstacle="">
+		<Thing
+			FidgetGraphic="null"
+			FlyingGraphic="null"
+			ActivateGraphic="null"
+			PermaFlash="AlmostWhite">
+			<Color Red="0.3" Green="0.3" Blue="0.3" Opacity="0.7"/>
+		</Thing>
+		<Life
+			Invulnerable="true"
+			DeathFx="null">
+		</Life>
+		<PlayerUnitData
+			Partner="null"
+			>
+		</PlayerUnitData>
+
+		<Upgrade Name="PetSnipe">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" MaxStamina="1.3"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetClusterbombGP">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" Scale="0.7"/>
+				<Change ValueChangeType="MULTIPLY" MaxStamina="0.5"/>
+			</Rank>
+		</Upgrade>
+		
+	</Npc>
+
+	<Npc
+		Name="PlayerArchon"
+		InheritFrom="_PlayerUnit"
+		DormantOnDeath="false"
+		RagDollOnDeath="false"
+		OnDeathWeapon="null"
+		CollideWithUnits="false"
+		PathFx="null"
+		ClearWeapons="true"
+		ClearUpgrades="true"
+		MoveGraphic="null"
+		StopGraphic="null"
+		ExecuteMoveGraphic="null"
+		WeaponTrackingObstacle=""
+		MaxStamina="100"
+		StaminaRegen="0"
+		StaminaMoveCost="0.015"
+		>
+		<Thing
+			Graphic="ArchonMuseBase"
+			OverheadOffset="122"
+			FidgetGraphic="null"
+			FlyingGraphic="null"
+			Scale="1.0">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life
+			Invulnerable="false"
+			DeathSound="null"
+			DeathFx="null"
+			DeathGraphic="null"
+			LastStandHealth="0">
+		</Life>
+		<PlayerUnitData
+			Partner="PlayerArchonPartner"
+			PlanningBeginSound="/SFX/Player Sounds/FocusBeginAlt"
+			PlanningMoveSound="/SFX/Player Sounds/FocusMove"
+			>
+		</PlayerUnitData>
+
+		<Weapon Name="ArchonAttack"/>
+	</Npc>
+
+	<Npc
+		Name="PlayerArchonPartner"
+		InheritFrom="PlayerArchon"
+		DormantOnDeath="false"
+		RagDollOnDeath="false"
+		OnDeathWeapon="null"
+		CollideWithUnits="false"
+		PathFx="null"
+		ClearWeapons="true"
+		ClearUpgrades="true"
+		WeaponTrackingObstacle="">
+		<Thing
+			FidgetGraphic="null"
+			FlyingGraphic="null"
+			PermaFlash="AlmostWhite">
+			<Color Red="0.3" Green="0.3" Blue="0.3" Opacity="0.7"/>
+		</Thing>
+		<Life
+			Invulnerable="false"
+			Health="1"
+			DeathSound="null"
+			HealthRegen="-999.0"
+			HealthRegenDelay="0.0"
+			LastStandHealth="0"
+			DeathFx="null">
+		</Life>
+		<PlayerUnitData
+			Partner="null"
+			>
+		</PlayerUnitData>
+	</Npc>
+	
+	<!-- Royce -->
+
+	<Npc
+		Name="Royce"
+		InheritFrom="_PlayerUnit"
+		StopGraphic="null"
+		Speed="385"
+		ExecuteMoveGraphic="null"
+		MoveGraphic="RoyceRunTemp"
+		CollideWithUnits="true"
+		ClearWeapons="true"
+		ClearUpgrades="true"
+		WeaponTrackingObstacle=""
+		PathFx="null"
+		StaminaReloadFx="RoyceReloading"
+		StaminaReloadFinishFx="RoyceReloadComplete"
+		MaxStamina="100"
+		StaminaRegen="0"
+		PlayerOwned="false"
+		ImmuneToCharm="true"
+		ImmuneToSizeEffects="true"
+		AutoLockable="true"
+		
+		ActivePlannedTargetColorShiftFraction="0.75"
+		ActivePlannedTargetRed="1.0"
+		ActivePlannedTargetGreen="0.6"
+		ActivePlannedTargetBlue="0.06"
+		PreviousPlannedTargetColorShiftFraction="0.5"
+		PreviousPlannedTargetRed="1"
+		PreviousPlannedTargetGreen="0.6"
+		PreviousPlannedTargetBlue="0.06"
+			
+		>
+		<Thing
+			Scale="1.0"
+			Grip="12.0"
+			Drag="1.2"
+			Graphic="RoyceIdleTemp"
+			FidgetGraphic="null"
+			OverheadOffset="150"
+			OnTouchdownFxAnim="UppercutLandSmoke"
+			TouchdownSound="/SFX/Player Sounds/FootstepsWheatHeavy3"
+			SpeechCapable="true"
+			SpeechMetering="false"
+			SpeechMeteringChannelName="null"
+			ClearGeometry="true"
+			Material="Player"
+			SelectionWidth="175"
+			SelectionHeight="230"
+            SelectionShiftY="35"
+			OcclusionOutlineRed="1.0"
+			OcclusionOutlineGreen="0.2"
+			OcclusionOutlineBlue="0.1"
+			OcclusionOutlineRadius="0.007"
+			OcclusionOutlineThreshold="0.5"
+			OcclusionOutlineDelay="0.0"
+			OcclusionOutlineOpacity="0.75"
+			OcclusionOutlineFadeSpeed="2"
+			>
+			<Point X="-32" Y="32"/>
+			<Point X="32" Y="32"/>
+			<Point X="48" Y="16"/>
+			<Point X="48" Y="-16"/>
+			<Point X="32" Y="-32"/>
+			<Point X="-32" Y="-32"/>
+			<Point X="-48" Y="-16"/>
+			<Point X="-48" Y="16"/>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Metering>
+			<Entry Field="Scale" MeteringChannel="Royce" MeterMax="0.1" MeterMin="0.05" MultMax="1.05" />
+			<Entry Field="MaterialAmbient" MeteringChannel="Royce" MeterMax="1.5" MeterMin="0.05" AddMax="-0.5" PulsePeriod="3.6" PulseIntensity="0.01" PulseIsMin="false" />
+		</Metering>
+		<Life
+			Health="1000"
+			DeathGraphic="RoycePowerLost"
+			ArmorCoverage="240"
+			Vulnerability="1.5"
+			Invulnerable="false"
+			LastStandHealth="0"
+			DamageFlashMin="0"
+			DamageFlashMax="0"
+			DamageShakeDistance="0.1"
+			DamageShakeSpeed="160"
+			DamageShakeDuration="0.5"
+			HitSound="null"
+			DeathFx="null">
+		</Life>
+		<PlayerUnitData
+			AIControlled="true"
+			GetUpAnim="RoyceIdleTemp"
+			Partner="RoycePartner"
+			PlanningMoveSound="/SFX/Player Sounds/FocusMove"
+			FocusOutlineRadius="0.01"
+			FocusOutlineThreshold="0.5"
+			DisableSwordColorMask="true"
+			>
+		</PlayerUnitData>
+
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="0.025"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+	</Npc>
+
+	<Npc
+		Name="RoycePartner"
+		InheritFrom="PlayerPartner"
+		StopGraphic="null"
+		ExecuteMoveGraphic="null"
+		MoveGraphic="PlanningRoyceRun"
+		PlayerOwned="false"
+		StaminaReloadFx="null"
+		StaminaReloadFinishFx="null"
+		AutoLockable="false"
+		>
+		<Thing
+			Graphic="PlanningRoyceIdle"
+			PermaFlash="AlmostWhite"
+			SpeechCapable="true"
+			SpeechMetering="false"
+			SpeechMeteringChannelName="Royce"
+			Material="Player">
+			<Color Red="0.3" Green="0.3" Blue="0.3" Opacity="0.7"/>
+		</Thing>
+		<Metering>
+			<Entry Field="Scale" MeteringChannel="Royce" MeterMax="0.1" MeterMin="0.05" MultMax="1.05" />
+			<Entry Field="MaterialAmbient" MeteringChannel="Royce" MeterMax="1.5" MeterMin="0.05" AddMax="-0.5" PulsePeriod="3.6" PulseIntensity="0.01" PulseIsMin="false" />
+		</Metering>
+		<Life
+			DeathFx="null">
+		</Life>
+		<PlayerUnitData
+			AIControlled="true"
+			DisableSwordColorMask="true"
+			>
+		</PlayerUnitData>
+	</Npc>
+
+	<!-- DarkPlayer -->
+
+	<Npc
+		Name="DarkPlayer"
+		InheritFrom="_PlayerUnit"
+		StopGraphic="null"
+		Speed="385"
+		ExecuteMoveGraphic="null"
+		CollideWithUnits="true"
+		ClearWeapons="true"
+		ClearUpgrades="true"
+		WeaponTrackingObstacle=""
+		PathFx="null"
+		StaminaReloadFx="RoyceReloading"
+		StaminaReloadFinishFx="RoyceReloadComplete"
+		MaxStamina="100"
+		StaminaRegen="0"
+		PlayerOwned="false"
+		ImmuneToCharm="true"
+		NoUpwardVelocityOnAttacks="true"
+		ActivePlannedTargetColorShiftFraction="0.8"
+		ActivePlannedTargetRed="1"
+		ActivePlannedTargetGreen="1"
+		ActivePlannedTargetBlue="0.06"
+		PreviousPlannedTargetColorShiftFraction="0.5"
+		PreviousPlannedTargetRed="1"
+		PreviousPlannedTargetGreen="0.2"
+		PreviousPlannedTargetBlue="0.05"
+		AutoLockable="true"
+		>
+		<Thing
+			Scale="1.0"
+			Grip="12.0"
+			Drag="1.2"
+			OverheadOffset="122"
+			OnTouchdownFxAnim="UppercutLandSmoke"
+			TouchdownSound="/SFX/OLD SOUNDS/Blunderbuss2"
+			SpeechCapable="true"
+			SpeechMetering="false"
+			SpeechMeteringChannelName="Royce"
+			ClearGeometry="true"
+			Material="Player"
+			
+			SelectionWidth="210"
+			SelectionHeight="200"
+            SelectionShiftY="40"
+			
+			OcclusionOutlineRed="1.0"
+			OcclusionOutlineGreen="0.2"
+			OcclusionOutlineBlue="0.1"
+			OcclusionOutlineRadius="0.004"
+			OcclusionOutlineThreshold="0.5"
+			OcclusionOutlineDelay="0.0"
+			OcclusionOutlineOpacity="1.0"
+			OcclusionOutlineFadeSpeed="2"
+			>
+			<Point X="-32" Y="32"/>
+			<Point X="32" Y="32"/>
+			<Point X="48" Y="16"/>
+			<Point X="48" Y="-16"/>
+			<Point X="32" Y="-32"/>
+			<Point X="-32" Y="-32"/>
+			<Point X="-48" Y="-16"/>
+			<Point X="-48" Y="16"/>
+			<Color Red="0.75" Green="0.0" Blue="0.0" Opacity="0.9"/>
+		</Thing>
+		<Metering>
+			<Entry Field="Scale" MeteringChannel="Royce" MeterMax="0.1" MeterMin="0.05" MultMax="1.05" />
+			<Entry Field="MaterialAmbient" MeteringChannel="Royce" MeterMax="1.5" MeterMin="0.05" AddMax="-0.5" PulsePeriod="3.6" PulseIntensity="0.01" PulseIsMin="false" />
+		</Metering>
+		<Life
+			Health="1000"
+			Invulnerable="false"
+			LastStandHealth="0"
+			DamageFlashMin="1.0"
+			DamageFlashMax="1.0"
+			DamageShakeDistance="0.1"
+			DamageShakeSpeed="160"
+			DamageShakeDuration="0.5"
+			HitSound="null"
+			DeathFx="null">
+		</Life>
+		<PlayerUnitData
+			AIControlled="true"
+			Partner="DarkPlayerPartner"
+			FocusOutlineRadius="0.01"
+			FocusOutlineThreshold="0.5"
+			SwordPulseIntensity="0.0"
+			SwordPulsePlanIntensity="0.0"
+			SwordPulseExecuteIntensity="0.0"
+			SwordVolumeEmissiveRatio="0.0"
+			SwordPulsePeriod="0.0"
+			DisableSwordColorMask="true"
+			>
+		</PlayerUnitData>
+	</Npc>
+
+	<Npc
+		Name="DarkPlayerPartner"
+		InheritFrom="PlayerPartner"
+		PlayerOwned="false"
+		StaminaReloadFx="null"
+		StaminaReloadFinishFx="null"
+		AutoLockable="false"
+		>
+		<Thing
+			PermaFlash="AlmostWhite"
+			SpeechCapable="true"
+			SpeechMetering="false"
+			SpeechMeteringChannelName="Royce"
+			Material="Player">
+			<Color Red="0.3" Green="0.3" Blue="0.3" Opacity="0.7"/>
+		</Thing>
+		<Metering>
+			<Entry Field="Scale" MeteringChannel="Royce" MeterMax="0.1" MeterMin="0.05" MultMax="1.05" />
+			<Entry Field="MaterialAmbient" MeteringChannel="Royce" MeterMax="1.5" MeterMin="0.05" AddMax="-0.5" PulsePeriod="3.6" PulseIntensity="0.01" PulseIsMin="false" />
+		</Metering>
+		<Life
+			DeathFx="null">
+		</Life>
+		<PlayerUnitData
+			AIControlled="true"
+			SwordPulseIntensity="0.0"
+			SwordPulsePlanIntensity="0.0"
+			SwordPulseExecuteIntensity="0.0"
+			DisableSwordColorMask="true"
+			>
+		</PlayerUnitData>
+	</Npc>
+	
+	<!-- Sideview Units -->
+
+	<Npc
+		Name="PlayerMotorcycle"
+		InheritFrom="_PlayerUnit"
+		DormantOnDeath="false"
+		OnDeathWeapon="null"
+		CollideWithUnits="false"
+		MoveGraphic="null"
+		PathFx="null"
+		Speed="150"
+		Acceleration="0.02"
+		Deceleration="0.035"
+		VerticalAcceleration="0.0"
+		VerticalDeceleration="0.0"
+		RotationSpeed="216000"
+		Magnetism="525"
+		MagnetismOffsetX="200"
+		WeaponTrackingObstacle="">
+		<Thing
+			Graphic="PlayerMotorcycleTransistor04"
+			OverheadOffset="182"
+			ClearGeometry="true">
+			<Point X="-20" Y="0"/>
+			<Point X="480" Y="0"/>
+			<Point X="520" Y="-99"/>
+			<Point X="480" Y="-185"/>
+			<Point X="285" Y="-400"/>
+			<Point X="225" Y="-415"/>
+			<Point X="-20" Y="-209"/>
+			<Point X="-50" Y="-150"/>
+		</Thing>
+		<Life
+			Invulnerable="true"
+			DeathFx="null"
+			Decal="null"
+			OverPitDecal="null">
+		</Life>
+		<PlayerUnitData
+			UseMotorcycleInput="true"
+			InputSound="/SFX/Motorcycle Sounds/MotorcycleAccelerate2"
+			SwordVolumeEmissiveRatio="0.5"
+			SwordPulsePeriod="3.6"
+			SwordPulseIntensity="0.4"
+			>
+		<SwordColor Red="0.29" Green="1.0" Blue="0.71" Opacity="0.85"/>
+	    <SwordEmissiveColor Red="1.0" Green ="1.0" Blue ="1.0" Opacity="0.0"/>
+		<FocusOutlineColor Red="0.29" Green="1.0" Blue="0.71" Opacity="0.4"/>
+		</PlayerUnitData>
+	</Npc>
+	<Npc
+		Name="PlayerMotorcycleReverse"
+		InheritFrom="PlayerMotorcycle">
+		<Thing
+			Graphic="PlayerMotorcycleTransistor03"
+			ClearGeometry="true">
+			<Point X="-20" Y="0"/>
+			<Point X="480" Y="0"/>
+			<Point X="520" Y="-99"/>
+			<Point X="480" Y="-185"/>
+			<Point X="285" Y="-400"/>
+			<Point X="225" Y="-415"/>
+			<Point X="-20" Y="-209"/>
+			<Point X="-50" Y="-150"/>
+		</Thing>
+	</Npc>
+	
+	<Npc
+		Name="PlayerBoat"
+		InheritFrom="PlayerMotorcycle"
+		VerticalAcceleration="1650"
+		VerticalDeceleration="0"
+		MaxImpulseDuration="0.33"
+		Speed="700"
+		Acceleration="1000"
+	    WeaponTrackingObstacle=""
+		MaxUseZ="9999">
+		<Thing
+			Graphic="PlayerBoatTransistor01"
+			FlyingGraphic="null"
+			OnTouchdownFxAnim="null"
+			FallSpeedMultiplier="1.0"
+			Gravity="4000"
+			GravityAcceleration="0"
+			SurfaceDeceleration="6000"
+			Buoyancy="300"
+			FallDamageFraction="0.0"
+			ClearGeometry="true"
+			ZShiftGeometry="true">
+			<Point X="30" Y="0"/>
+			<Point X="500" Y="0"/>
+			<Point X="670" Y="-135"/>
+			<Point X="300" Y="-230"/>
+			<Point X="-20" Y="-60"/>
+		</Thing>
+		<PlayerUnitData
+			UseMotorcycleInput="false"
+			UseBoatInput="true"
+			InputSound="null"
+			SwordVolumeEmissiveRatio="0.5"
+			SwordPulsePeriod="3.6"
+			SwordPulseIntensity="0.4"
+			>
+			<SwordColor Red="0.29" Green="1.0" Blue="0.71" Opacity="0.85"/>
+			<SwordEmissiveColor Red="1.0" Green ="1.0" Blue ="1.0" Opacity="0.0"/>
+			<FocusOutlineColor Red="0.29" Green="1.0" Blue="0.71" Opacity="0.4"/>
+		</PlayerUnitData>
+	</Npc>
+
+	<Npc
+		Name="PlayerGlider"
+		InheritFrom="PlayerMotorcycle"
+		VerticalAcceleration="2000"
+		InstantVerticalAcceleration="false"
+		MaxImpulseDuration="999"
+		Speed="2200"
+		Acceleration="0"
+		OnTouchdownWeapon="null"
+	    WeaponTrackingObstacle=""
+		ContinuousWeapon="null"
+		CollideWithUnits="true"
+		CameraTrackZ="true"
+		MaxUseZ="9999"
+		RotationSpeed="0">
+		<Thing
+			Graphic="PlayerSwarmRider01"
+			FlyingGraphic="null"
+			OnTouchdownFxAnim="null"
+			FallSpeedMultiplier="1.0"
+			Gravity="1000"
+			Grip="1.0"
+			GravityAcceleration="0"
+			FallDamageFraction="0.0"
+			TerminalVelocity="500"
+			UpwardTerminalVelocity="500"
+			TouchdownRumbleIntensity="0"
+			TouchdownRumbleDuration="0"
+			TouchdownScreenShake="0"
+			ClearGeometry="true"
+			ZShiftGeometry="true"
+			MaxZ="1350">
+			<Point X="-405" Y="0"/>
+			<Point X="121" Y="0"/>
+			<Point X="-330" Y="-221"/>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1"/>
+		</Thing>
+		<PlayerUnitData
+			UseMotorcycleInput="false"
+			UseBoatInput="true"
+			InputSound="null">
+		</PlayerUnitData>
+	</Npc>
+	
+	<Npc
+		Name="1_BaseTurret"
+		PlayerOwned="true"
+		DisplayInEditor="false">
+	</Npc>
+
+	<Npc
+		Name="FocusExecuteDecoy"
+		InheritFrom="_PlayerUnit"
+		PlayerControlled="false"
+		Speed="0.0"
+		Flyer="true"
+		PhaseInTimeMin="0.0"
+		PhaseInTimeMax="0.0"
+		PhaseInGraphic="null"
+		IgnoreTargetCollision="true"
+		CollideWithUnits="false"
+		DormantOnDeath="false"
+		ClearAI="true"
+		Magnetism="0.0"
+		OnDeathWeapon="null"
+		OnHitWeapon="null"
+		OnKillWeapon="null"
+		ExecuteWeapon="null"
+		ClearUpgrades="true"
+		MoveGraphic="null"
+		WalkLegs="null"
+		StrafeLegs="null"
+		StaminaReloadFinishFx="null"
+		ImmuneToStun="true"
+		OnTouchdownWeapon="null"
+		WeaponTrackingObstacle=""
+		>
+		<Thing
+			Invisible="true"
+			Graphic="Blank"
+			Grip="9999"
+			FidgetGraphic="null"
+			FlyingGraphic="null">
+		</Thing>
+		<Life
+			Dodge="1.0"
+			Health="10"
+			HealthRegen="0.0"
+			HealthFractionRegen="-1.25"
+			LowHealthSound="null"
+			HealthRegenDelay="0.0"
+			DeathFx="null"
+			DeathGraphic="null"
+			DeathSound="null"
+			ShowHealNumbers="false"
+			ShowDamageNumbers="false"
+			HitSound="null"
+			Material="NONE"
+			>
+		</Life>
+	</Npc>
+
+	<Npc
+		Name="PlayerDopplewalkDecoy"
+		InheritFrom="_PlayerUnit"
+		PlayerControlled="false"
+		Speed="0.0"
+		PhaseInTimeMin="0.0"
+		PhaseInTimeMax="0.0"
+		PhaseInGraphic="null"
+		IgnoreTargetCollision="false"
+		CollideWithUnits="false"
+		DormantOnDeath="false"
+		ClearAI="true"
+		Magnetism="0.0"
+		OnDeathWeapon="null"
+		OnHitWeapon="null"
+		OnKillWeapon="null"
+		ClearUpgrades="true"
+		MoveGraphic="null"
+		WalkLegs="null"
+		StaminaReloadFinishFx="null"
+		StrafeLegs="null"
+		AutoLockable="false"
+		>
+		<Thing
+			Graphic="MuseSummonCosmeticDecoy"
+			OverheadOffset="122"
+			Grip="9999"
+			FidgetGraphic="null"
+			FlyingGraphic="null">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life
+			Health="20"
+			HealthFractionRegen="-0.25"
+			DeathFx="DecoyDeath"
+			DeathGraphic="null"
+			DeathSound="/SFX/Player Sounds/Weapon_Hide_Fire"
+			ShowHealNumbers="false"
+			ShowDamageNumbers="true"
+			HitSound="GenericEnemyGettingHit"
+			Material="WOOD"
+			LowHealthSound="null"
+			>
+		</Life>
+	</Npc>
+
+</Npcs>

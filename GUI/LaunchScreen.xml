@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LaunchScreens>
+
+	<LaunchScreen
+		Platform="default"
+		ShowCursor="false"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<AnimatedBackground  X="960" Y="540"  Graphic="BootImage" Justification="Center" VerticalJustification="Center"/>
+		<PressAnyKey X="960" Y="900" Justification="Center" VerticalJustification="Center" HelpTextId="Launcher_PressAnyKey" AlternateHelpTextId="Launcher_PressAnyButton" Font="RalewayLight45" TextRed="1" TextGreen="1" TextBlue="1"
+					 FlashMin="0.5" FlashMax="1.0" FlashSpeed="0.75" FlashRed="1.0" FlashGreen="1.0" FlashBlue="0.66" FadeOpacity="0.0" FadeTarget="0.0"
+					 Scale="1.0" AlwaysUpperCase="false"
+					 />
+		<ProgressBar X="960" Y="1000" Justification="Center" VerticalJustification="Center" Width="600" Height="10"
+			 Red="0" Green="1" Blue="0.75" Alpha="0.25"/>
+
+
+	</LaunchScreen>
+	
+</LaunchScreens>

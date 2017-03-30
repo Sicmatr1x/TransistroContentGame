@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PauseScreens>
+
+	<PauseScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="/SFX/Menu Sounds/InfoPanelLeave"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		UseSelectionSoundWithMouse="false"
+		TransitionOnTime="0.1"
+		TransitionOffTime="0.15"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.85"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="WarningBackground" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackgroundTop X="960" Y="430" Graphic="ShellBackgroundMainIntro" Justification="Center" VerticalJustification="Center"/>
+		
+		<TitleText X="960" Y="150" Justification="Center" VerticalJustification="Center"
+				   HelpTextId="Welcome01_Transistor" Font="JuliusSansOne48Titling"
+				   AlwaysUpperCase="true" Scale="0.66"
+				   OutlineThickness="0"
+					NonEnglishScaleModifier="0.8"
+				   TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"
+				   />
+
+		<PromptText X="960" Y="450" Justification="Center" VerticalJustification="Center" HelpTextId="PauseMenuScreenMessage"
+					Font="RalewayMedium26"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48"/>
+
+		<BuildNumberText X="1824" Y="1026" Justification="Right" VerticalJustification="Center" Font="RalewayMedium26"
+						 TextRed="0.1" TextGreen="0.2" TextBlue="0.2" Scale="0.50"
+						 ShadowRed="0" ShadowBlue="0" ShadowGreen="0" ShadowAlpha="1" ShadowBlur="2" ShadowOffsetY="0" ShadowOffsetX="0"
+						 />
+
+		<ResumeButton X="962" Y="340" Justification="Center" VerticalJustification="Center"
+					TextOffsetX="-180"
+					Graphic="GUI\\Shell\\icons_generic" SelectedGraphic="GUI\\Shell\\selection_reticle_pause"
+					Scale="1.0" Width="500" Height="34"
+					HelpTextId="PauseMenuScreenContinue" Font="RalewayMedium26"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+					TextScale="1.0"
+					SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+					AlwaysUpperCase="true"
+					TextJustification="Left"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.4" FadeSpeed="10.0"
+					SelectedTextScale="1.0"
+					NonEnglishScaleModifier="0.85"
+					  />
+
+		<RestartButton AttachTo="ResumeButton" OffsetY="80" Justification="Center" VerticalJustification="Center"
+					TextOffsetX="-180"
+					Graphic="GUI\\Shell\\icons_generic" SelectedGraphic="GUI\\Shell\\selection_reticle_pause"
+					Scale="1.0" Width="500" Height="34"
+					HelpTextId="PauseMenuScreenRestartAlt" AlternateHelpTextId="PauseMenuScreenSandboxRestartAlt" Font="RalewayMedium26"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+				    TextScale="1.0"
+					SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+					SelectedTextScale="1.0"
+					AlwaysUpperCase="true"
+					TextJustification="Left"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.4" FadeSpeed="10.0"
+					NonEnglishScaleModifier="0.85"
+					PressSound="null"/>
+
+		<SettingsButton AttachTo="RestartButton" OffsetY="160" Justification="Center" VerticalJustification="Center"
+					TextOffsetX="-180"
+					Graphic="GUI\\Shell\\icons_generic" SelectedGraphic="GUI\\Shell\\selection_reticle_pause"
+					Scale="1.0" Width="500" Height="34"
+					HelpTextId="PauseMenuScreenSettings" Font="RalewayMedium26"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+					TextScale="1.0"
+					SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+					SelectedTextScale="1.0"
+					AlwaysUpperCase="true"
+					TextJustification="Left"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.4" FadeSpeed="10.0"
+					NonEnglishScaleModifier="0.85"
+					PressSound="null"/>
+
+		<AboutUsButton AttachTo="SettingsButton" OffsetY="80" Justification="Center" VerticalJustification="Center"
+					TextOffsetX="-180"
+					Graphic="GUI\\Shell\\icons_generic" SelectedGraphic="GUI\\Shell\\selection_reticle_pause"
+					Scale="1.0" Width="500" Height="34"
+					HelpTextId="PauseMenuScreenAboutUs" Font="RalewayMedium26"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+					TextScale="1.0"
+					SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+					SelectedTextScale="1.0"
+					AlwaysUpperCase="true"
+					TextJustification="Left"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.4" FadeSpeed="10.0"
+					NonEnglishScaleModifier="0.85"
+					PressSound="null"/>
+
+		<ExitButton AttachTo="AboutUsButton" OffsetY="80" Justification="Center" VerticalJustification="Center"
+					TextOffsetX="-180"
+					Graphic="GUI\\Shell\\icons_generic" SelectedGraphic="GUI\\Shell\\selection_reticle_pause"
+					Scale="1.0" Width="500" Height="34"
+					HelpTextId="GameStartScreen_Exit" Font="RalewayMedium26"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+					TextScale="1.0"
+					SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+					SelectedTextScale="1.0"
+					AlwaysUpperCase="true"
+					TextJustification="Left"
+					FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.4" FadeSpeed="10.0"
+					NonEnglishScaleModifier="0.85"
+					PressSound="null"/>
+		
+		<!-- Info Panel -->
+
+		<InfoPanel X="960" Y="540" Justification="Left" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="830"/>
+
+		<!-- Controls -->
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="Shell_Confirm"
+			PressSound="/SFX/Menu Sounds/PowerSelecting" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			AlwaysUpperCase="true"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.4" FadeSpeed="10.0"
+			X="680" Y="940"
+			ShowWhileUsingMouse="false"
+			/>
+
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Shell_back"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			AlwaysUpperCase="true"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.3" FadeDelayMax="0.4" FadeSpeed="10.0"
+			X="1170" Y="940"
+			ShowWhileUsingMouse="false"
+			/>
+
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+
+	</PauseScreen>
+	
+</PauseScreens>

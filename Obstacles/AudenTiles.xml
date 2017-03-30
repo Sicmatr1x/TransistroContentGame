@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TerrainTiles>
+	
+	<Obstacle
+		Name="1_BaseTerrainTile"
+		DisplayInEditor="false"
+		Walkable="false"
+		StopsUnits="false"
+		StopsProjectiles="false">
+		<Thing
+			DefaultDrawLayer="TERRAIN"
+			NeverObscuresPlayer="true"
+			MeshType="Flat">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Lush_TestSkyline"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Backgrounds\\Telescope_01">
+		</Thing>
+	</Obstacle>  
+	
+	<Obstacle
+		Name="Auden_CutFrameMask_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\cut_frame_mask"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutFrameTarget_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\cut_frame_target"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_CutVirus_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\VirusGroup_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_CutTitle_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	
+	
+	<Obstacle
+		Name="Auden_CutPoster_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\musePoster_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutPopper_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Popper_Shadow_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutHighrise_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Linger_CityProcessed01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_CutEating_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Linger_Fooding02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutWashroom_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Linger_Washroom02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+		
+	<Obstacle
+		Name="Auden_CutFloating_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Linger_Floating03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleBackground_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Background"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_CutTitleMuse_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuse_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_CutTitleMuse_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_03"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseGlowingTriangle_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_GlowingTriangle_02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseMourning_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_Mourning_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseMourning_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_Mourning_02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="Auden_Title01_Buildings"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title01_Buildings"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title02_Buildings"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title02_Buildings"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title03_Buildings"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title03_Buildings"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="Auden_Title04_Fog"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title04_Fog"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title05_Muse"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title05_Muse"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title06_Sword"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title06_Sword"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title07_Boxer"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title07_Boxer"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title08_Fence"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title08_Fence"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title09_Fence"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title09_Fence"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Title10_Lamp"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title10_Lamp"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CombatOverMuse_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="GUI\\Backgrounds\\background_combatOver_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CombatOverGradient_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="GUI\\Widgets\\lower_right_gradient_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_EnemyLevelUpGradient_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="EnemyLevel_Gradient"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_TerminalStartUp"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="TerminalScreenStartUp"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>	
+
+	<Obstacle
+		Name="Prototype_Tile_01"
+		InheritFrom="1_BaseTerrainTile">
+		<Thing
+			Graphic="TerrainTiles\\CityTileset\\Prototype_Tile_01">
+			<Point X="-767" Y="0"/>
+			<Point X="-6" Y="385"/>
+			<Point X="767" Y="-4"/>
+			<Point X="2" Y="-384"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Blank_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Blank"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="Auden_Flourish_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flourish_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_Flourish_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flourish_02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Flourish_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flourish_03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Pipe_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Pipe_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Transistor_Eye_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Transistor_Eye_01"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Transistor_Streak_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Transistor_Streak_01"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Transistor_Streak_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Transistor_Streak_02"
+		>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="CutsceneTransistor01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="CutsceneTransistor01"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Wheat_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Wheat_01"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Pillar_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Pillar_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Pillar_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Pillar_02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="MonsterBody"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="MonsterBody"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="PlayerSwarmRider02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="PlayerSwarmRider02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_Sandbox_Entrance_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Sandbox_Entrance_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Country_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Country_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+</TerrainTiles>

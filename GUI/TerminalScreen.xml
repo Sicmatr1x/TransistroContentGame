@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TerminalScreens>
+
+	<TerminalScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/TerminalOnline"
+		CloseSound="null"
+		SelectionSound="/SFX/Menu Sounds/PowerToggleNEW"
+		TransitionOnTime="0.01"
+		TransitionOffTime="0.83">
+
+		<Back Justification="Left" Red="0.0" Green="0.0" Blue="0.0" Alpha="0.0"/>
+
+		<Background X="0" Y="0" Scale="0.0" Graphic="GUI\\Backgrounds\\Background_Gradient_Cover" Justification="Left" VerticalJustification="Top"/>
+		<BackgroundScreen X="960" Y="540" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackground X="960" Y="540" Graphic="TerminalBGShimmerA" Red="0" Green="1" Blue="0.9" Alpha="0.5"/>
+
+		<!-- These are shared -->
+		<TextHeaderLeft X="184" Y="210" Justification="Left" VerticalJustification="Center" TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="UbuntuMonoBold22" Scale="0.6" HelpTextId="Terminal_HeaderLeft" FadeOpacity="0.75" FadeTarget="0.0"/>
+		<TextHeaderRight X="1710" Y="210" Justification="Right" VerticalJustification="Center" TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="UbuntuMonoBold22" Scale="0.6" HelpTextId="Terminal_HeaderRight" FadeOpacity="0.75" FadeTarget="0.0"/>
+
+		<TextHeader1 X="300" Y="280" Justification="Left" VerticalJustification="Top" NonEnglishScaleModifier="0.74"
+			TextRed="0.69" TextGreen="1.0" TextBlue="0.92" Font="RalewayLight45" Scale="1.0" FadeOpacity="0.75" FadeTarget="0.95" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextHeader2 X="305" Y="355" Justification="Left" VerticalJustification="Top" NonEnglishScaleModifier="0.68"
+			TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewaySemiBold22" Scale="1.0" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextHeader3 X="305" Y="405" Justification="Left" VerticalJustification="Top"
+			TextRed="0.4" TextGreen="0.8" TextBlue="0.6" Font="UbuntuMonoBold22" Scale="0.7" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextTicker X="310" Y="241" Width="1400" Justification="Left" VerticalJustification="Top"
+			TextRed="0.4" TextGreen="0.8" TextBlue="0.6" Font="UbuntuMonoBold22" Scale="0.6" MarqueeSpeed="50" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		
+		<HeaderImage Justification="Center" VerticalJustification="Center" X="1600" Y="365" Scale="0.85" />
+		<VoiceIndicator AttachTo="HeaderImage" OffsetY="100"/>
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="More Info"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.75" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FadeOpacity="0.0"
+			NonEnglishScaleModifier="0.75"
+			NonEnglishFont="RalewaySemiBold32"
+			X="1262" Y="890" MouseOffsetX="-40"/>
+		
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Sign Out"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.75" TextJustification="Left"
+			Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			FadeOpacity="0.0"
+			NonEnglishScaleModifier="0.75"
+			NonEnglishFont="RalewaySemiBold32"
+			X="1560" Y="890" />
+
+		<!-- These are specific to "News" terminals -->
+		<TextNewsBody X="410" Y="495"  Width="1300" Height="260" Justification="Left" VerticalJustification="Top" TextRed="0.3" TextGreen="0.8" TextBlue="0.6" Font="RalewayMedium26"
+					  Scale="0.75" ScrollSpeed="3.0" LineSpacingBottom="5"
+					  />
+
+		<TextNewsBodyTitleFmt Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayBold24" Scale="0.9" AlwaysUpperCase="true" LineSpacingBottom="4"
+							  />
+		<TextNewsBodySubTitleFmt Justification="Left" VerticalJustification="Top"
+		  TextRed="0.2" TextGreen="0.9" TextBlue="0.8" Font="UbuntuMonoBold22" Scale="0.9" LineSpacingLeft="40" LineSpacingTop="3" LineSpacingBottom="5" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+								 					 NonEnglishScaleModifier="0.95"
+								 />
+		<TextNewsBodyTextAFmt Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="UbuntuMono16" Scale="1.0" LineSpacingLeft="80"  FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextNewsBodyTextBFmt Justification="Left" VerticalJustification="Top"
+		  TextRed="0.2" TextGreen="0.8" TextBlue="0.5" Font="UbuntuMono16" Scale="1.0" LineSpacingLeft="80"  FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextNewsReply X="438" Y="778"  Width="1300" Height="130" Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayBold24" Scale="1.0" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+	   />
+		<TextNewsReplyBodyFmt Justification="Left" VerticalJustification="Top"
+		  TextRed="0.1" TextGreen="0.8" TextBlue="1.0" Font="UbuntuMono32" Scale="0.66" LineSpacingLeft="40" LineSpacingTop="2" LineSpacingBottom="2" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+		  NonEnglishScaleModifier="0.85"
+		  NonEnglishFont="UbuntuMonoBold32"
+							  />
+		<TextNewsReplyThanksFmt Justification="Left" VerticalJustification="Top"
+		  TextRed="0.69" TextGreen="1.0" TextBlue="0.92" Font="RalewayRegular32" Scale="0.7" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+													 NonEnglishScaleModifier="0.95"
+								/>
+		<NewsBodyImage
+		  Justification="Center" VerticalJustification="Center"
+		  X="250" Y="855" Scale="1.0" />
+
+		<!-- These are specific to "VoteAB" terminals -->
+		<TextVoteQuestion X="410" Y="495"  Width="1300" Height="85" Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayBold24" Scale="1.0" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextVoteResultsHeader1 X="410" Y="495" Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayLight24" Scale="1.0" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextVoteResultsHeader2 X="550" Y="590" Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayBold24" Scale="1.0" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextVoteResultA X="610" Y="650" Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayMedium26" Scale="0.85" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+		<TextVoteResultB X="610" Y="700" Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayMedium26" Scale="0.85" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"/>
+
+		<ButtonVoteChoiceA
+			Name="ButtonVoteChoiceA"
+			Graphic="GUI\\Widgets\\terminal_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_selector" ForceSelectOnClick="true"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			Scale="1.2"
+			TextOffsetY="3"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+			TextScale="0.85"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			HighlightOffsetY="2"
+			OffsetX="-57"
+			TextOffsetX="57"
+			NonEnglishScaleModifier="0.85"
+			X="590" Y="650"/>
+
+		<ButtonVoteChoiceB
+			Name="ButtonVoteChoiceB"
+			Graphic="GUI\\Widgets\\terminal_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_selector" ForceSelectOnClick="true"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+			TextScale="0.85"
+			TextOffsetY="3"
+			Scale="1.2"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			OffsetX="-57"
+			TextOffsetX="57"
+			HighlightOffsetY="2"
+			NonEnglishScaleModifier="0.85"
+			X="590" Y="730"/>
+
+		<!-- These are specific to "Choice" terminals -->
+		<TextChoiceHeader X="400" Y="495" Justification="Left" VerticalJustification="Top"
+		  TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayBold24" Scale="1.0"/>
+
+		<TextChoiceA
+			Name="TextChoiceA"
+			Graphic="GUI\\Widgets\\terminal_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_selector" ForceSelectOnClick="true"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			OffsetX="-50"
+			TextOffsetX="50"
+			X="480" Y="580" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.9"
+			/>
+
+		<TextChoiceB
+			Name="TextChoiceB"
+			Graphic="GUI\\Widgets\\terminal_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_selector" ForceSelectOnClick="true"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			AttachTo="TextChoiceA" OffsetY="60" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.9"
+			/>
+
+		<TextChoiceC
+			Name="TextChoiceC"
+			Graphic="GUI\\Widgets\\terminal_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_selector" ForceSelectOnClick="true"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			AttachTo="TextChoiceB" OffsetY="60" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.9"
+			/>
+
+		<TextChoiceD
+			Name="TextChoiceD"
+			Graphic="GUI\\Widgets\\terminal_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_selector" ForceSelectOnClick="true"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			AttachTo="TextChoiceC" OffsetY="60" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0"
+			NonEnglishScaleModifier="0.9"
+			/>
+
+		<TextChoiceResult X="990" Y="560" Justification="Left" VerticalJustification="Top" TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayBold24" Scale="1.0" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0" NonEnglishScaleModifier="0.85"/>
+		<TextChoiceFooter1 AttachTo="TextChoiceResult" OffsetY="60" Justification="Left" VerticalJustification="Top" TextRed="0.69" TextGreen="1.0" TextBlue="0.92" Font="RalewayMedium26" Scale="0.75" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0" NonEnglishScaleModifier="0.9"/>
+		<TextChoiceFooter2 AttachTo="TextChoiceFooter1" OffsetY="60" Justification="Left" VerticalJustification="Top" TextRed="0.5" TextGreen="0.5" TextBlue="0.5" Font="RalewayMedium26" Scale="0.75" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0" NonEnglishScaleModifier="0.9"/>
+		<TextChoiceFooter3 AttachTo="TextChoiceFooter2" OffsetY="60" Justification="Left" VerticalJustification="Top" TextRed="0.4" TextGreen="1.0" TextBlue="0.9" Font="RalewayMedium26" Scale="0.75" FadeOpacity="0.75" FadeTarget="0.85" FadeDelayMin="0" FadeDelayMax="0.001" FadeSpeed="10.0" NonEnglishScaleModifier="0.9"/>
+
+		<!-- Controls -->
+		<UpArrow
+			X="1710" Y="510" Scale="0.75" Graphic="ArrowAnimUp" Angle="0" Justification="Center" VerticalJustification="Center"
+			FadeOpacity="0.0" FadeTarget="0.75" FadeSpeed="2.0"/>
+		<DownArrow
+			X="1710" Y="750" Scale="0.75" Graphic="ArrowAnimDown" Angle="0" Justification="Center" VerticalJustification="Center"
+			FadeOpacity="0.0" FadeTarget="0.75" FadeSpeed="2.0"/>
+
+	</TerminalScreen>
+
+</TerminalScreens>

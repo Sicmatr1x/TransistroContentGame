@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Leaderboards>
+  <Leaderboard Name="Story" DisplayTextId="Story">
+    <Column Id="1" DisplayTextId="Rank" Type="Rank" Width="150"/>
+    <Column Id="2" DisplayTextId="Gamertag" Type="Gamertag" Width="800"/>
+    <Column Id="3" DisplayTextId="Score" Type="Score" Width="400"/>
+  </Leaderboard>
+  <Leaderboard Name="Onslaught01" DisplayTextId="Onslaught01_Leaderboard">
+    <Column Id="1" DisplayTextId="Rank" Type="Rank" Width="150"/>
+    <Column Id="2" DisplayTextId="Gamertag" Type="Gamertag" Width="800"/>
+    <Column Id="3" DisplayTextId="Idols" Type="Idol_Icons" Width="400"/>
+  </Leaderboard>
+  <Leaderboard Name="Onslaught02" DisplayTextId="Onslaught02_Leaderboard">
+    <Column Id="1" DisplayTextId="Rank" Type="Rank" Width="150"/>
+    <Column Id="2" DisplayTextId="Gamertag" Type="Gamertag" Width="800"/>
+    <Column Id="3" DisplayTextId="Idols" Type="Idol_Icons" Width="400"/>
+  </Leaderboard>
+  <Leaderboard Name="Onslaught03" DisplayTextId="Onslaught03_Leaderboard">
+    <Column Id="1" DisplayTextId="Rank" Type="Rank" Width="150"/>
+    <Column Id="2" DisplayTextId="Gamertag" Type="Gamertag" Width="800"/>
+    <Column Id="3" DisplayTextId="Idols" Type="Idol_Icons" Width="400"/>
+  </Leaderboard>
+	<Leaderboard Name="Onslaught04" DisplayTextId="Onslaught04_Leaderboard">
+		<Column Id="1" DisplayTextId="Rank" Type="Rank" Width="150"/>
+		<Column Id="2" DisplayTextId="Gamertag" Type="Gamertag" Width="800"/>
+		<Column Id="3" DisplayTextId="Idols" Type="Idol_Icons" Width="400"/>
+	</Leaderboard>
+  <Leaderboard Name="Hardcore" DisplayTextId="HardcoreMode">
+    <Column Id="1" DisplayTextId="Rank" Type="Rank" Width="150"/>
+    <Column Id="2" DisplayTextId="Gamertag" Type="Gamertag" Width="800"/>
+    <Column Id="3" DisplayTextId="Score" Type="Score" Width="400"/>    
+  </Leaderboard>
+</Leaderboards>

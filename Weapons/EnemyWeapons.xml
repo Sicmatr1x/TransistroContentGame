@@ -1,0 +1,3123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Weapons>
+
+	<!-- Suppressor -->
+
+	<Weapon
+		Name="Suppressor"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Projectile="Suppressor"
+		ChargeTime="0.75"
+		ChargeSound="/SFX/Enemy Sounds/Suppressor/SuppressorCharge"
+		ChargeFx="null"
+		ChargeGraphic="null"
+		Graphic="SuppressorAttack"
+		IdleGraphic="null"
+		FireSound="/SFX/Enemy Sounds/Suppressor/SuppressorAttackLoop"
+		StopFireSoundOnRelease="true"
+		StopFireSoundOnClipEmpty="true"
+		OnlyChargeOnce="true"
+		Cooldown="0.01"
+		ClipSize="60"
+		ReloadTime="2.5"
+		FixedBarrel="true"
+		FiringArc="15"
+		BarrelLength="30"
+		ReloadOnCreation="false"
+		ObstacleDamageMultiplier="0.1"
+		WeaponRange="400"
+		FireFx="SuppressorBeamFlare"
+		ProjectileAngleOffset="15"
+		DisableOwnerForDuration="0.2"
+		MaxFireZ="50" 
+		>
+
+		<Upgrade Name="SuppressorLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" ObstacleDamageMultiplier="0.1"/>
+				<Change ValueChangeType="ADD" NumProjectiles="2"/>
+				<Change ValueChangeType="ABSOLUTE" ChargeTime="0.25"/>
+				<Change ValueChangeType="ADD" Damage="0.1"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="SuppressorLevel3">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" ImpactVelocity="-100"/>
+				<Change ValueChangeType="ADD" Damage="-0.05"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="Suppressor"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="SuppressorBeam"
+		CycleGraphicStartFrame="true"
+		Type="HOMING"
+		Damage="0.1" 
+		Range="500.0"
+		Speed="16000"
+		MaxAdjustRate="120"
+		AffectsFriends="false"
+		CanBeReflected="true"
+		Fuse="0.58"
+		CanCrit="false"
+		ImpactVelocity="55"
+		PlayerImpactSound="SFX/Player Sounds/PlayerOnHitBeam"
+		LoopImpactSoundTime="0.04"
+		ClearImpactGraphics="true"
+		DrawAsBeam="true"
+		BeamEndFx="SuppressorBeamTerminus"
+		DrawImpactFrame="true"
+		SpawnType="PROJECTILE"
+		SpawnOnImpactDeathExplode="true"
+		>
+		<Thing
+			OffsetZ="0.0"
+			RotateGeometry="true"
+			Scale="1.0"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.8" Active="true"/>
+		<ImpactGraphic Material="PLAYER" Name="PlayerOnHit"/>
+		<ImpactGraphic Material="INVINCIBLE" Name="InvincibleHitSpark"/>
+		<ImpactGraphic Material="ORGANIC" Name="VirusOnHitRandom"/>
+		<ImpactGraphic Material="METAL" Name="VirusOnHit"/>
+
+		<Effect Name="StaminaLeech" Type="RECOVER_OVER_TIME" Duration="1.0" Rate="-5" Active="false" IgnorePause="true" ClearOnExecute="false"/>
+		
+	</Projectile>
+
+
+	<Weapon
+		Name="SuppressorSmall"
+		InheritFrom="Suppressor"
+		Projectile="SuppressorSmall"
+		BarrelLength="20"
+		FireFx="SuppressorSmallBeamFlare"
+		>
+	</Weapon>
+	<Projectile
+		Name="SuppressorSmall"
+		InheritFrom="Suppressor"
+		ImpactVelocity="20"
+		Damage="0.01"
+		>
+		<Thing
+			OffsetZ="30.0"
+			>
+		</Thing>
+	</Projectile>
+	
+	<Weapon
+		Name="SuppressorSmallSelfKill"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="SuppressorSmallSelfKill"
+		BarrelLength="0"
+		FireSound="null"
+		Type="GUN"
+		Cooldown="1.0"
+		RequiresTarget="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="SuppressorSmallSelfKill"
+		Type="STRAIGHT"
+		Fuse="0.0"
+		ImmunityDuration="0"
+		DamageRadius="100"
+		DamageLow="999"
+		DamageHigh="999"
+		ImpactVelocity="0"
+		AffectsFriends="false"
+		AffectsSelf="true"
+		AffectsEnemies="false"
+		>
+	</Projectile>
+
+
+	<Weapon
+		Name="SuppressorFormatting"
+		InheritFrom="Suppressor"
+		Projectile="Suppressor"
+		ChargeTime="0.75"
+		Cooldown="0.01"
+		ClipSize="120"
+		ReloadTime="0.5"
+		ObstacleDamageMultiplier="0"
+		WeaponRange="500"
+		>
+	</Weapon>
+	
+	<!-- Suppressor Mini -->
+
+	<Weapon
+		Name="Suppressor_Mini"
+		InheritFrom="Suppressor"
+		Projectile="Suppressor_Mini"
+		ReloadTime="4.5"
+		WeaponRange="400"
+		>
+	</Weapon>
+	<Projectile
+		Name="Suppressor_Mini"
+		InheritFrom="Suppressor"
+		Damage="1"
+		Range="500.0"
+		Speed="2000"
+		MaxAdjustRate="120"
+		AffectsFriends="false"
+		ImmunityDuration="0.150"
+		Fuse="0.58"
+		CanCrit="false"
+		>
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.8" Active="true"/>
+	</Projectile>
+
+	
+	<!-- Suppressor Tutorial -->
+	<Weapon
+		Name="Suppressor_Tutorial"
+		InheritFrom="Suppressor"
+		Projectile="Suppressor_Tutorial"
+		>
+	</Weapon>
+	<Projectile
+		Name="Suppressor_Tutorial"
+		InheritFrom="Suppressor"
+		Damage="1"
+		>
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.8" Active="true"/>
+	</Projectile>
+
+
+	<!-- Speeder -->
+
+	<Weapon
+        Name="Speeder"
+        InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+        Projectile="Speeder"
+        ChargeTime="1.5"
+		ChargeSound="/SFX/Enemy Sounds/Speeder/SpeederCharge2"
+		FireSound="/SFX/Enemy Sounds/Speeder/SpeederFire"
+        ChargeFx="null"
+		Graphic="SpeederAttack"
+		IdleGraphic="SpeederIdle"
+		ChargeGraphic="SpeederCharge"
+		FireFx="SpeederChargeSpawner"
+        ClipSize="1"
+        ReloadTimeMin="3.5"
+		ReloadTimeMax="3.5"
+        FixedBarrel="true"
+        FiringArc="15"
+        BarrelLength="30"
+        ReloadOnCreation="false"
+		OnlyChargeOnce="true"
+        ObstacleDamageMultiplier="37.75"
+        WeaponRange="500"
+		MaxFireZ="50"
+		SelfVelocity="0"
+		>
+
+		<Upgrade Name="SpeederLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" ChargeTime="-1.3"/>
+				<Change ValueChangeType="ADD" ReloadTimeMin="-1.0"/>
+				<Change ValueChangeType="ADD" ReloadTimeMax="-1.5"/>
+				<Change ValueChangeType="ADD" Cooldown="0.1"/>
+				<Change ValueChangeType="ADD" ClipSize="1"/>
+				<Change ValueChangeType="ADD" Speed="500"/>
+				<Change ValueChangeType="ABSOLUTE" SelfVelocity="0"/>
+				<Change ValueChangeType="MULTIPLY" ImpactVelocity="0.6"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="SpeederLevel3">
+			<Rank>
+				<!--
+				<Change ValueChangeType="ADD" ClipSize="1"/>
+				-->
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="Speeder"
+		InheritFrom="1_BaseDebuffProjectile"
+		Graphic="SpeederProjectile"
+		Type="HOMING"
+		Damage="0"
+		Range="2000.0"
+		Speed="2500"
+        MaxAdjustRate="20"
+		DamageLow="4"
+		DamageHigh="4"
+		ImpactVelocity="1750"
+		ImpactUpwardVelocity="0"
+        FadeTime="0.0"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		SelfDamageMultiplier="0.0"
+		RequireHitCenter="false"
+		DetonateAtTarget="false"
+		>
+		<Thing
+			OffsetZ="70.0"
+			RotateGeometry="true"
+			Scale="0.8"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<Weapon
+		Name="FlyingSpeeder"
+		InheritFrom="Speeder"
+		MaxFireZ="99999"
+		Projectile="FlyingSpeeder"
+		ChargeTime="0.5"
+		ChargeSound="SFX/Player Sounds/WeaponCharge3"
+		FireSound="SFX/Player Sounds/WeaponFire4"
+		ChargeFx="null"
+		Graphic="SpeederAttack"
+		IdleGraphic="SpeederIdle"
+		ChargeGraphic="SpeederCharge"
+		ClipSize="1"
+		ReloadTimeMin="0.1"
+		ReloadTimeMax="0.3"
+		FixedBarrel="true"
+		FiringArc="360"
+		BarrelLength="30"
+		ReloadOnCreation="false"
+		WeaponRange="2500"
+		>
+	</Weapon>
+	<Projectile
+		Name="FlyingSpeeder"
+		InheritFrom="Speeder"
+		Graphic="SpeederProjectile"
+		Type="HOMING"
+		Range="2000.0"
+		Speed="1250"
+		MaxAdjustRate="0"
+		DamageLow="4"
+		DamageHigh="4"
+		ImpactVelocity="0"
+		ImpactUpwardVelocity="0"
+		FadeTime="0.0"
+		AffectsFriends="false"
+		MaxVictimZ="9999"
+		>
+		<Thing
+			OffsetZ="50.0"
+			RotateGeometry="true"
+			Scale="0.8"
+			Gravity="0"
+			ZShiftGeometry="true">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<Weapon
+		Name="FlyingSpeederSelfDestruct"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Projectile="FlyingSpeederSelfDestruct"
+		Cooldown="1.0"
+		>
+	</Weapon>
+	<Projectile
+		Name="FlyingSpeederSelfDestruct"
+		Type="STRAIGHT"
+		DetonateGraphic="ExpandingCircleBuff"
+		DetonateSound="null"
+		DamageRadius="500"
+		DamageRadiusScaleY="0.75"
+		Damage="5"
+		BlastSpeed="1000"
+		NumPenetrations="9999"
+		AffectsSelf="true"
+		AffectsEnemies="false">
+	</Projectile>
+
+	<Weapon
+		Name="SpeederAreaBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="SpeederAreaBuff"
+		>
+	</Weapon>
+	<Projectile
+		Name="SpeederAreaBuff"
+		Type="STRAIGHT"
+		Fuse="0.2"
+		DetonateGraphic="ExpandingCircleBuff"
+		Speed="0.0"
+		DamageRadius="300"
+		DamageRadiusScaleY="0.75"
+		BlastSpeed="1000"
+		SpawnOnDetonate="null"
+		SpawnCount="0"
+		DetonateSound="/SFX/Enemy Sounds/Speeder/SpeederDetonate"
+		NumPenetrations="9999"
+		IgnoreArmor="false"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		AffectsEnemies="false"
+		DetonateScreenShakeSpeed="0"
+		ImpactVelocity="0"
+		>
+		<Thing
+			OffsetZ="1.0"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="0.0"/>
+		</Thing>
+		<Effect Name="BuffDamage" Type="DAMAGE_OUTPUT" Duration="8" Modifier="1.25" Active="true"/>
+		<Effect Name="BuffSize" Type="SIZE" Duration="8" Modifier="1.5" LerpTime="0.20" Active="true"/>
+		<Effect Name="BuffSpeed" Type="SPEED" Duration="8" Modifier="1.25" Active="true"/>
+		<Effect Name="BuffRotation" Type="ROTATION" Duration="8" Modifier="2.0" Active="true"/>
+	</Projectile>
+
+
+	<Weapon
+		Name="SpeederAreaDebuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="SpeederAreaDebuff"
+		>
+		<!--
+		<Upgrade Name="SpeederLevel2">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" SpawnOnDetonate="SpeederAreaBuff"/>
+			</Rank>
+		</Upgrade>
+		-->
+	</Weapon>
+	<Projectile
+		Name="SpeederAreaDebuff"
+		Type="STRAIGHT"
+		Fuse="0.2"
+		DetonateGraphic="ExpandingCircleBuff"
+		Speed="0.0"
+		DamageRadius="300"
+		DamageRadiusScaleY="0.75"
+		BlastSpeed="1000"
+		DetonateSound="/SFX/Enemy Sounds/Speeder/SpeederDetonate"
+		NumPenetrations="9999"
+		IgnoreArmor="false"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		AffectsEnemies="true"
+		DetonateScreenShakeSpeed="0"
+		ImpactVelocity="0"
+		SpawnType="PROJECTILE"
+		>
+		<Thing
+			OffsetZ="1.0"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="0.0"/>
+		</Thing>
+		<Effect Name="DebuffSpeed" Type="SPEED" Duration="2" Modifier="0.65" ClearOnExecute="true" BackFx="DebuffBack" FrontFx="DebuffFront" Active="true"/>
+		<!--
+		<Effect Name="DebuffRotation" Type="ROTATION" Duration="2" Modifier="0.001" Active="true" ClearOnExecute="true"/>
+		-->
+	</Projectile>
+
+	<Weapon
+		Name="SpeederDodge"
+		InheritFrom="1_BaseWeapon"
+		Projectile="SpeederDodge"
+		Type="BLINK"
+		Graphic="null"
+		FireFx="null"
+		FireSound="null"
+		BarrelLength="0"
+		ClipSize="1"
+		ReloadTimeMin="6"
+		ReloadTimeMax="9"
+		CooldownMin="0.05"
+		CooldownMax="0.20"
+		>
+	</Weapon>
+	<Projectile
+		Name="SpeederDodge"
+		Type="STRAIGHT"
+		MinRange="20"
+		Range="50"
+		IgnoreFireAngle="true"
+		DetonateGraphic="null"
+		DetonateSound="null"
+        SpawnDamageField="null"
+		AutoAdjustForTarget="false"
+		Fuse="0.0"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="0.0"
+		ImpactVelocity="0.0"
+		>
+	</Projectile>
+
+	<!-- Zapper -->
+
+	<Weapon
+		Name="SpeederZapper"
+		InheritFrom="1_BaseEnemyWeapon"
+		Graphic="SpeederAttack"
+		IdleGraphic="SpeederIdle"
+		ChargeGraphic="SpeederCharge"
+		Projectile="SpeederZapper"
+		WeaponRange="250"
+		BarrelLength="20"
+		ClipSize="1"
+		ChargeTime="0.5"
+		OnlyChargeOnce="true"
+		ChargeFx="ChargeUpEnemy"
+		ChargeSound="SFX/Enemy Sounds/EnemyCharge"
+		FireSound="SFX/Enemy Sounds/EnemyAttackSmall"
+		Cooldown="0.28"
+		ReloadTimeMin="3.5"
+		ReloadTimeMax="5.5"
+		RootOwnerWhileFiring="false"
+		RootOwnerWhileFiringDuration="0.0"
+		SelfVelocity="-300"
+		FireFx="TurretMuzzleSmoke"
+		FireFxB="TurretMuzzleFlash"
+		RotationSpeed="140"
+		ReloadTime="1.0"
+		FixedBarrel="true"
+		FiringArc="360"
+		Spread="0"
+		>
+	</Weapon>
+	<Projectile
+        Name="SpeederZapper"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="Virus_Projectile"
+        Type="HOMING"
+		MaxAdjustRate="180"
+		HomingAllegiance="ENEMIES"
+        DamageLow="3"
+        DamageHigh="3"
+        Range="450.0"
+        Speed="375.0"
+		Acceleration="80.0"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		Fuse="1.5"
+		FuseStartFade="true"
+		FadeTime="0.25"
+        NumPenetrations="0"
+		>
+		<Thing
+			OffsetZ="50.0"
+			Scale="0.8"
+			>
+			<Point X="0" Y="24"/>
+			<Point X="24" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-24" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<!-- Demolisher -->
+
+	<Weapon
+		Name="DemolisherJump"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Cooldown="0.2"
+		WeaponRange="1400"
+		SelfUpwardVelocity="3800"
+		MaxFireZ="1"
+		Graphic="DemolisherDown"
+		DistanceCooldownModifier="4.0"
+		>
+	</Weapon>
+	
+	<Weapon
+		Name="DemolisherTouchdown"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		FireSound="null"
+		Graphic="DemolisherUp"
+		Projectile="DemolisherTouchdown"
+		WeaponRange="1400"
+		BarrelLength="1"
+		ObstacleDamageMultiplier="35.5"
+		>
+
+		<Upgrade Name="DemolisherLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageLow="0"/>
+				<Change ValueChangeType="ADD" DamageHigh="0"/>
+				<Change ValueChangeType="MULTIPLY" ObstacleDamageMultiplier="1.0"/>
+			</Rank>
+		</Upgrade>
+
+
+		<Upgrade Name="DemolisherLevel3">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageLow="0"/>
+				<Change ValueChangeType="ADD" DamageHigh="0"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="DemolisherTouchdown"
+		InheritFrom="1_BaseSmallProjectile"
+		Type="STRAIGHT"
+		Speed="0.0"
+		Fuse="0.0"
+		DamageLow="1.5"
+		DamageHigh="1.5"
+		DamageRadius="220"
+		AdjustBlastRadiusToOwnerScale="true"
+		DamageRadiusScaleY="0.75"
+		DetonateGraphic="DemolisherAoE"
+		DetonateBasedOnOwner="true"
+		DetonateSound="/SFX/Enemy Sounds/Demolisher/DemolisherShockwave"
+		NumPenetrations="9999999"
+		IgnoreArmor="false"
+		AffectsSelf="false"
+		AffectsFriends="false"
+		CanCrit="false"
+		ImpactVelocity="600"
+		>
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.75" Active="false"/>
+	</Projectile>
+
+	<Weapon
+		Name="DemolisherTouchdownMega"
+		InheritFrom="DemolisherTouchdown"
+		Projectile="DemolisherTouchdownMega"
+		>
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.55" Active="true"/>
+	</Weapon>
+	<Projectile
+		Name="DemolisherTouchdownMega"
+		InheritFrom="DemolisherTouchdown"
+		Type="STRAIGHT"
+		Speed="0.0"
+		Fuse="0.0"
+		DamageLow="2"
+		DamageHigh="2"
+		DamageRadius="250"
+		>
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.75" Active="false"/>
+	</Projectile>	
+
+	<Weapon
+		Name="DemolisherLastStand"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		RequiresTarget="false"
+		BarrelLength="25"
+		FireFx="null"
+		FireSound="/SFX/Enemy Sounds/Demolisher/DemolisherLastStand"
+		Cooldown="999" 
+		ReloadOnCreation="false"
+		Graphic="null"
+		FixedBarrel="true"
+        DisableOwnerForDuration="2.0"
+		>
+		<!--
+		<Effect Name="LastStandArmor" Type="ARMOR" Duration="3.25" Modifier="-1.0" Active="true"/>
+		-->
+		<Effect Name="LastStandSpeed" Type="SPEED" Duration="993.25" Modifier="1.75" ClearOnExecute="false"/>
+		<!--
+		<Effect Name="LastStandInvulnerable" Type="INVULNERABLE" Duration="3.25" Modifier="1.0" ClearOnExecute="false"/>
+		-->
+		<Effect Name="LastStandSize" Type="SIZE" Duration="993.25" LerpTime="1.75" Modifier="1.35" ClearOnExecute="false"/>
+		<Effect Name="LastStandDamage" Type="DAMAGE_OUTPUT" Duration="993.25" Modifier="1.25" ClearOnExecute="false"/>
+	</Weapon>
+
+	<Weapon
+		Name="DemolisherHerd"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="DemolisherHerd"
+		BarrelLength="0"
+		FireSound="null"
+		Type="GUN"
+		Cooldown="0.1"
+		RequiresTarget="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="DemolisherHerd"
+		Type="STRAIGHT"
+		Fuse="0.0"
+		ImmunityDuration="0"
+		DamageRadius="100"
+		DamageLow="0"
+		DamageHigh="0"
+		ImpactVelocity="500"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		AffectsEnemies="true"
+		>
+	</Projectile>
+
+	<!-- Demolisher Bash -->
+	<Weapon
+		Name="DemolisherBash"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		FireSound="null"
+		Projectile="DemolisherBash"
+		Cooldown="3.0"
+		WeaponRange="150"
+		DisableOwnerForDuration="1.5"
+		BarrelLength="100"
+		ObstacleDamageMultiplier="35.5"
+		SelfVelocity="1500"
+		MaxFireZ="300"
+		>
+	</Weapon>
+	<Projectile
+		Name="DemolisherBash"
+		InheritFrom="1_BaseSmallProjectile"
+		Type="STRAIGHT"
+		Speed="1000.0"
+		Range="320"
+		Fuse="0.0"
+		DamageLow="15"
+		DamageHigh="15"
+		DamageRadius="200"
+		DamageRadiusScaleY="0.75"
+		DetonateGraphic="LoadBombDetonateUpgrade"
+		DetonateSound="SFX/Enemy Sounds/Demolisher/DemolisherAttack"
+		NumPenetrations="9999999"
+		IgnoreArmor="false"
+		AffectsSelf="false"
+		AffectsFriends="false"
+		CanCrit="false"
+		ImpactVelocity="4000"
+		ImpactUpwardVelocity="0"
+		RequireHitCenter="false"
+		MaxVictimZ="300"
+		>
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.75" Active="false"/>
+	</Projectile>
+
+	<!-- DemolisherHook -->
+
+	<Weapon
+		Name="DemolisherHook"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		DisableOwnerForDuration="0.0"
+		CooldownMin="8.0"
+		CooldownMax="10.0"
+		ArsenalCooldown="0.0"
+		FireSound="SFX/Player Sounds/WeaponFire4"
+		FireSound2="/SFX/Enemy Sounds/Demolisher/DemolisherTractorBeam"
+		PlayFireSoundForPausedProjectiles="true"
+		BarrelLength="15"
+		Projectile="DemolisherHook"
+		ChargeTime="0.1"
+		RequiresTarget="false"
+		RootOwnerWhileFiring="true"
+		RootOwnerWhileFiringDuration="0.325"
+		SelfVelocity="0"
+		CancelMovement="true"
+		AutoLockArcDistance="180"
+		>
+	</Weapon>
+
+	<Projectile
+		Name="DemolisherHook"
+		InheritFrom="1_BaseSmallProjectile"
+		Graphic="HookTrail"
+		CriticalSound="CriticalHit"
+		Type="HOMING"
+		MaxAdjustRate="9000"
+		StartDelay="0.0"
+		ArcSize="15"
+		Range="2000"
+		Speed="2000.0"
+		DamageLow="0"
+		DamageHigh="0"
+		DrawShadow="true"
+		NumPenetrations="0"
+		NumGraphics="1"
+		GhostInterval="0.0"
+		GhostDuration="0.0"
+		FadeTime="0.05"
+		AffectsSelf="false"
+		AffectsFriends="true"
+		SelfDamageMultiplier="0.0"
+		VacuumStrength="22000"
+		ImpactPauseFrames="0"
+		ImpactRumbleIntensity="0.35"
+		ImpactRumbleDuration="0.175"
+		CheckObstacleImpact="false"
+		CanBeReflected="false"
+		>
+		<Thing
+			Scale="1.5"
+			OffsetZ="75.0">
+		</Thing>
+
+		<Effect Name="DemolisherHook" Type="STEALTH" Duration="0.4" Modifier="0" ClearOnAttack="true" ClearOnExecute="true" FrontFx="SnareFront" BackFx="SnareBack" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="DemolisherCubePath"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		SlotType="NONE"
+		Graphic="null"
+		FireFx="SlamNova"
+		FireSound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		CooldownMin="0.25"
+		CooldownMax="0.50"
+		MinRange="0.0"
+		ReloadOnCreation="true"
+		Projectile="DemolisherCubePath"
+		BarrelLength="0"
+		Spread="45"
+		>
+	</Weapon>
+	<Projectile
+		Name="DemolisherCubePath"
+		DetonateGraphic="null"
+		DetonateSound="null"
+        SpawnDamageField="null"
+		Type="STRAIGHT"
+		Range="400"
+		MinRange="500"
+		IgnoreFireAngle="true"
+		AutoAdjustForTarget="false"
+		Fuse="1.1"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="0.0"
+		ImpactVelocity="0.0"
+		SpawnOnDetonate="VirusColumn03Spawned"
+		SpawnCap="10"
+		SpawnType="OBSTACLE"
+		>
+	</Projectile>
+
+	<!-- Popper -->
+
+	<Weapon
+		Name="PopperBeam"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Projectile="PopperBeam"
+		ChargeTime="1.0"
+		ChargeSound="/SFX/Enemy Sounds/Popper/PopperAttacking"
+		ChargeFx="null"
+		Graphic="PopperFire"
+		ChargeGraphic="PopperChargeUp"
+		IdleGraphic="null"
+		UseReloadGraphic="true"
+		ReloadGraphic="PopperReload"
+		FireSound="/SFX/Enemy Sounds/Popper/PopperFire"
+		FireSound2="null"
+		OnlyChargeOnce="true"
+		StopFireSoundOnRelease="false"
+		ReloadTimeMin="3.75"
+		ReloadTimeMax="5.00"
+		SelfVelocity="-50"
+		Cooldown="0.1"
+		ClipSize="20"
+		FixedBarrel="true"
+		FiringArc="15"
+		BarrelLength="80"
+		ReloadOnCreation="false"
+		ObstacleDamageMultiplier="45"
+		WeaponRange="400"
+		FireFx="PopperAttackFlare"
+		MaxFireZ="175" 
+		>
+
+		<Upgrade Name="PopperLevel2">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" Damage="1.25"/>
+				<Change ValueChangeType="ABSOLUTE" ObstacleDamageMultiplier="60"/>
+				<Change ValueChangeType="ADD" ClipSize="0"/>
+				<Change ValueChangeType="ADD" Range="0"/>
+				<Change ValueChangeType="ABSOLUTE" ReloadTimeMin="3.0"/>
+				<Change ValueChangeType="ABSOLUTE" ReloadTimeMax="4.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PopperLevel3">
+			<Rank>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="PopperBeam"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="PopperProjectile"
+		StartFx="PopperProjectileStartSparks"
+		DrawShadow="false"
+		Type="HOMING"
+		Damage="0.5"
+		Range="550.0"
+		Speed="2000"
+		MaxAdjustRate="120"
+		AffectsFriends="false"
+		CanBeReflected="true"
+		Fuse="0.58"
+		CanCrit="false"
+		PlayerImpactSound="SFX/Player Sounds/PlayerOnHitBeam"
+		LoopImpactSoundTime="0.12"
+		StartDelay="0.1"
+		>
+		<Thing
+			OffsetZ="0.0"
+			RotateGeometry="true"
+			Scale="0.5">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<Weapon
+		Name="PopperIllusionBeam"
+		InheritFrom="PopperBeam"
+		Projectile="PopperIllusionBeam"
+		FireFx="PopperAttackFlareIllusion"
+		ObstacleDamageMultiplier="1"
+		ReloadTimeMin="2.5"
+		ReloadTimeMax="4.0"
+		ReloadOnCreation="true"
+		ClearUpgrades="true"
+		>
+
+		<Upgrade Name="PopperLevel2">
+			<Rank>
+				<Change ReloadOnCreation="false"/>
+			</Rank>
+		</Upgrade>
+		
+	</Weapon>
+	<Projectile
+		Name="PopperIllusionBeam"
+		InheritFrom="PopperBeam"
+		Graphic="PopperProjectileIllusion"
+		StartFx="PopperProjectileStartSparksIllusion"
+		Damage="0.03"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="PopperBlink"
+		InheritFrom="1_BaseWeapon"
+		Type="BLINK"
+		SlotType="MOVE"
+		Graphic="PopperBlink"
+		FireFx="BlinkDust"
+		FireSound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		CooldownMin="0.01"
+		CooldownMax="0.01"
+		MinRange="0.0"
+		ReloadOnCreation="false"
+		Projectile="PopperBlink"
+		BarrelLength="0"
+		BlinkDetonateAtOrigin="true"
+		>
+		<Upgrade Name="PopperLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" SpawnCount="1"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="PopperBlink"
+		DetonateGraphic="null"
+		DetonateSound="SpearThrow"
+        SpawnDamageField="null"
+		Type="STRAIGHT"
+		Range="400"
+		MinRange="500"
+		IgnoreFireAngle="true"
+		AutoAdjustForTarget="false"
+		Fuse="0.0"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="0.0"
+		ImpactVelocity="0.0"
+		SpawnOnDetonate="PopperIllusion"
+		SpawnType="Unit"
+		SpawnCap="2"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="PopperBlinkRandom"
+		InheritFrom="PopperBlink"
+		ClipSize="3"
+		ReloadTime="5"
+		CooldownMin="3"
+		CooldownMax="4"
+		Projectile="PopperBlinkRandom"
+		>
+	</Weapon>
+	<Projectile
+		Name="PopperBlinkRandom"
+		InheritFrom="PopperBlink"
+		Range="300"
+		IgnoreFireAngle="true"
+		SpawnOnDetonate="null"
+		SpawnType="Unit"
+		SpawnCap="1"
+		>
+	</Projectile>
+
+
+	<Weapon
+		Name="PopperOnTouched"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="PopperOnTouched"
+		BarrelLength="0"
+		FireSound="ScumbagAttack"
+		Type="GUN"
+		Cooldown="1.0"
+		RequiresTarget="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="PopperOnTouched"
+		Type="STRAIGHT"
+		Fuse="0.0"
+		ImmunityDuration="1.0"
+		DamageRadius="100"
+		DamageLow="0"
+		DamageHigh="0"
+		ImpactVelocity="500"
+		AffectsFriends="true"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="PopperEggLay"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		SlotType="NONE"
+		Graphic="null"
+		FireFx="SlamNova"
+		FireSound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		CooldownMin="8.0"
+		CooldownMax="12.0"
+		MinRange="0.0"
+		ReloadOnCreation="true"
+		Projectile="PopperEggLay"
+		BarrelLength="0"
+		>
+	</Weapon>
+	<Projectile
+		Name="PopperEggLay"
+		DetonateGraphic="null"
+		DetonateSound="null"
+        SpawnDamageField="null"
+		Type="STRAIGHT"
+		Range="400"
+		MinRange="500"
+		IgnoreFireAngle="true"
+		AutoAdjustForTarget="false"
+		Fuse="0.0"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="0.0"
+		ImpactVelocity="0.0"
+		SpawnOnDetonate="SpeederEgg"
+		SpawnCap="5"
+		SpawnType="OBSTACLE"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="PopperOnHitEggLay"
+		InheritFrom="PopperEggLay"
+		CooldownMin="10.25"
+		CooldownMax="15.50"
+		ReloadOnCreation="false"
+		Projectile="PopperOnHitEggLay"
+		>
+	</Weapon>
+	<Projectile
+		Name="PopperOnHitEggLay"
+		InheritFrom="PopperEggLay"
+		Range="400"
+		MinRange="500"
+		SpawnCount="3"
+		>
+	</Projectile>
+
+
+
+	<Weapon
+		Name="PropperPropEggLay"
+		InheritFrom="PopperEggLay"
+		Projectile="PropperPropEggLay"
+		CooldownMin="1.8"
+		CooldownMax="2.2"
+		FireFx="null"
+		>
+	</Weapon>
+	<Projectile
+		Name="PropperPropEggLay"
+		InheritFrom="PopperEggLay"
+		SpawnOnDetonate="null"
+		SpawnType="OBSTACLE"
+		SpawnCap="20"
+		>
+	</Projectile>
+	
+	<!-- Priest Weapons -->
+	
+	<Weapon
+		Name="PriestHealAura"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		SlotType="PRIMARY"
+		Projectile="PriestHealAura"
+		Icon="GUI\\Icons\\WeaponSpecials\\Special_Gel_Cannister"
+		FireSound="/SFX/Enemy Sounds/Priest/PriestHealingLoop"
+		FireSound2="null"
+		StopFireSoundOnRelease="true"
+		StopFireSoundOnClipEmpty="false"
+		Cooldown="0.01"
+		BarrelLength="1"
+		WeaponRange="175"
+		FireFx="PriestHealAuraFx"
+		FireFxUseScaleRadius="true"
+		SilentImpact="true"
+		>
+		
+		<Upgrade Name="PriestLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageRadius="110"/>
+				<Change ValueChangeType="ADD" WeaponRange="110"/>
+				<Change ValueChangeType="MULTIPLY" Heal="2.0"/>
+			</Rank>
+		</Upgrade>
+		
+	</Weapon>
+	<Projectile
+		Name="PriestHealAura"
+		Type="STRAIGHT"
+		Speed="0.0"
+		Fuse="0.0"
+		Heal="1.0"
+		DamageRadius="200"
+		DamageRadiusScaleY="0.75"
+		DetonateGraphic="null"
+		NumPenetrations="9999999"
+		IgnoreArmor="false"
+		AffectsEnemies="false"
+		AffectsSelf="false"
+		AffectsFriends="true"
+		CriticalSound="null"
+		CriticalIcon="null"
+		CriticalFx="null"
+		>
+	</Projectile>
+
+	<!-- PriestHealBeam -->
+
+	<Weapon
+		Name="PriestHealBeam"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		SlotType="PRIMARY"
+		Projectile="PriestHealBeam"
+		Icon="GUI\\Icons\\WeaponSpecials\\Special_Gel_Cannister"
+		FireSound="Revive"
+		WeaponRange="500"
+		ChargeTime="0.25"
+		ChargeFx="TurtleCharge"
+		ChargeSound="LaserCharge"
+		StopFireSoundOnRelease="true"
+		StopFireSoundOnClipEmpty="true"
+		OnlyChargeOnce="true"
+		Cooldown="0.02"
+		ClipSize="60"
+		ReloadTime="2.5"
+		FixedBarrel="true"
+		FiringArc="15"
+		BarrelLength="30"
+		>
+	</Weapon>
+	<Projectile
+		Name="PriestHealBeam"
+		Graphic="Projectiles\\bullet_tracer"
+		BeamDrawTime="0.22"
+		Type="STRAIGHT"
+		HomingAllegiance="FRIENDS"
+		Speed="2000"
+		Range="500"
+		NumPenetrations="999"
+		IgnoreArmor="false"
+		AffectsEnemies="false"
+		AffectsSelf="false"
+		AffectsFriends="true"
+		CriticalSound="null"
+		CriticalIcon="null"
+		CriticalFx="null"
+		MaxAdjustRate="720"
+		CanBeReflected="false"
+		Fuse="0.58"
+		CanCrit="false"
+		>
+		<Thing
+			OffsetZ="75.0"
+			RotateGeometry="true"
+			Scale="0.8">
+			<Color Red="0.6" Green="0.6" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+		<Effect Name="Heal" Type="HEAL_OVER_TIME" Duration="0.03" Cooldown="0.01" Amount="1" Active="true" />
+	</Projectile>
+
+	<DamageField
+		Name="PriestDamageField"
+		Graphic="PriestHealAuraFxIdle"
+		DeathFx="null"
+		HitFx="PriestTaser"
+		OwnerHitGraphic="PriestFastIdle"
+		Duration="999999"
+		Damage="2.5"
+		DamageInterval="0.25"
+		ImmunityDuration="0.0"
+		Radius="120"
+		IgnoreDodging="true">
+	</DamageField>
+
+	<Weapon
+		Name="PriestHide"
+		Type="SELF"
+		Graphic="PriestHide"
+		Cooldown="3.0"
+		ReloadOnCreation="false"
+		BarrelLength="1"
+		>
+		<Effect Name="PriestHideDodge" Type="DODGE" Duration="4.0" ClearGraphic="PriestEmerge"/>
+		<Effect Name="PriestHideStealth" Type="STEALTH" Duration="4.0" Modifier="0.01"/>
+	</Weapon>
+	
+	<Weapon
+		Name="PriestSelfStun"
+		Type="SELF"
+		Graphic="null"
+		Cooldown="0.1"
+		ReloadOnCreation="false"
+		BarrelLength="1"
+		>
+		<Effect Name="PriestSelfDisarm" Type="DISARM" Duration="1.1"/>
+	</Weapon>
+
+	<Weapon
+		Name="PriestDuplicate"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		SlotType="NONE"
+		Graphic="null"
+		FireFx="SlamNova"
+		FireSound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		CooldownMin="10.0"
+		CooldownMax="15.0"
+		MinRange="0.0"
+		ReloadOnCreation="true"
+		Projectile="PriestDuplicate"
+		BarrelLength="0"
+		RandomFireAngle="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="PriestDuplicate"
+		Graphic="Blank"
+		DetonateGraphic="null"
+		DetonateSound="null"
+        SpawnDamageField="null"
+		Type="STRAIGHT"
+		Range="100"
+		Speed="1000"
+		AutoAdjustForTarget="false"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="1"
+		ImpactVelocity="0.0"
+		SpawnOnDetonate="Priest"
+		SpawnType="UNIT"
+		SpawnCap="20"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="PriestOnHitMultiply"
+		InheritFrom="PriestDuplicate"
+		CooldownMin="4.75"
+		CooldownMax="4.75"
+		ReloadOnCreation="false"
+		Projectile="PriestOnHitMultiply"
+		CanFireWhileDisarmed="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="PriestOnHitMultiply"
+		InheritFrom="PriestDuplicate"
+		Range="100"
+		SpawnOnDetonate="PriestNoUpgrades"
+		SpawnCap="2"
+		SpawnCapOnCamera="true"
+		>
+	</Projectile>
+	
+	<!-- Priest Sky Experiment -->
+
+	<Weapon
+		Name="PriestSky"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		RotationSpeed="0"
+		Projectile="PriestSky"
+		CooldownMin="0.25"
+		CooldownMax="0.55"
+		BarrelLength="120"
+		RequiresTarget="false"
+		Spread="400"
+	>
+	</Weapon>
+	<Projectile
+		Name="PriestSky"
+		InheritFrom="1_BaseSmallProjectile"
+		Graphic="TempPriestRainFx"
+		DetonateGraphic="PriestHealAuraFxIdleNonLooping"
+		Type="SKY"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="100.0"
+		Speed="3000.0"
+		Acceleration="3100.0"
+        MinRange="0.0"
+		Range="0.0"
+		SkipAscent="true"
+		SkyTime="0.01"
+        AffectsFriends="true"
+		AffectsSelf="false"
+		AffectsEnemies="false"
+		DescentStartZ="1500"
+		DetonateSound="DebrisFallHitSHORT"
+		IgnoreArmor="false"
+		CanCrit="false"
+		>
+		<Thing
+			Scale="0.20">
+		</Thing>
+		<Effect Name="Heal" Type="HEAL_OVER_TIME" Duration="1.0" Cooldown="0.01" Amount="1" Active="true" OverheadFx="BuffB"/>
+	</Projectile>
+
+	<!-- Priest Hook Experiment -->
+
+	<Weapon
+		Name="PriestHook"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		DisableOwnerForDuration="0.0"
+		Cooldown="1.0"
+		ArsenalCooldown="0.0"
+		FireSound="SFX/Player Sounds/WeaponFire4"
+		FireSound2=""
+		PlayFireSoundForPausedProjectiles="true"
+		BarrelLength="15"
+		Projectile="PriestHook"
+		ChargeTime="0.0"
+		RequiresTarget="false"
+		RootOwnerWhileFiring="true"
+		RootOwnerWhileFiringDuration="0.325"
+		SelfVelocity="0"
+		CancelMovement="true"
+		AutoLockArcDistance="180"
+		>
+	</Weapon>
+
+	<Projectile
+		Name="PriestHook"
+		InheritFrom="1_BaseSmallProjectile"
+		Graphic="HookTrail"
+		CriticalSound="CriticalHit"
+		Type="HOMING"
+		MaxAdjustRate="150"
+		StartDelay="0.0"
+		ArcSize="15"
+		Range="400"
+		Speed="3000.0"
+		DamageLow="0"
+		DamageHigh="0"
+		DrawShadow="true"
+		NumPenetrations="0"
+		NumGraphics="1"
+		GhostInterval="0.0"
+		GhostDuration="0.0"
+		FadeTime="0.05"
+		AffectsSelf="false"
+		AffectsFriends="true"
+		SelfDamageMultiplier="0.0"
+		VacuumStrength="9000"
+		ImpactPauseFrames="0"
+		ImpactRumbleIntensity="0.35"
+		ImpactRumbleDuration="0.175"
+		>
+		<Thing
+			Scale="1.0"
+			OffsetZ="75.0">
+		</Thing>
+	</Projectile>
+	
+	<!-- Shielder -->
+
+	<Weapon
+        Name="Shielder"
+        InheritFrom="1_BaseEnemyWeapon"
+        Type="GUN"
+		Graphic="ShielderDish"
+        Projectile="Shielder"
+        Cooldown="0.01"
+        FixedBarrel="true"
+        BarrelLength="20"
+        ChargeTime="0.25"
+        OnlyChargeOnce="true"
+        ObstacleDamageMultiplier="0.0"
+		WeaponRange="800"
+		RootOwnerWhileFiring="true"
+		RootOwnerWhileFiringDuration="0.2"
+		MaxFireZ="50"
+		FireFx="ShielderBeamFlare"
+		>
+
+		<Upgrade Name="ShielderLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="AmplifyDamage"/>
+				<Change ValueChangeType="ADD" Effect="AmplifySize"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ShielderLevel3">
+			<Rank>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="Shielder"
+		InheritFrom="1_BaseBuffProjectile"
+		Type="STRAIGHT"
+		HomingAllegiance="FRIENDS"
+		DamageLow="0"
+        DamageHigh="0"
+		DamageRadius="0"
+		Range="850.0"
+		Speed="8000"
+		MaxAdjustRate="0"
+		AffectsFriends="true"
+        AffectsEnemies="false"
+		CanBeReflected="false"
+		ImmunityDuration="0.0"
+		CanCrit="false"
+		DrawShadow="false"
+		TriggerHitSound="false"
+		MultiDetonate="false"
+		CheckObstacleImpact="false"
+		Graphic="ShielderBeam"
+		CycleGraphicStartFrame="true"
+		LoopImpactSoundTime="0.04"
+		ClearImpactGraphics="true"
+		DrawAsBeam="true"
+		BeamEndFx="SuppressorBeamTerminus"
+		DrawImpactFrame="true"
+		>
+		<Thing
+			OffsetZ="80"
+			RotateGeometry="true"
+			Scale="0.8"
+			>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+
+		<Effect Name="ShielderInvincible" Type="INVULNERABLE" Duration="0.12" Modifier="1.0" FrontFx="ShieldFx" Sound="/SFX/Enemy Sounds/Shielder/ShielderAttacking" StopSoundOnEnd="true" CanAffectInvulnerable="true" ClearOnSourceDeath="true"/>
+		<Effect Name="ShielderGrip" Type="GRIP" Duration="0.12" Modifier="20" Active="true" CanAffectInvulnerable="true" ClearOnSourceDeath="true"/>
+
+		<Effect Name="AmplifyDamage" Type="DAMAGE_OUTPUT" Duration="0.12" Modifier="1.25" Stacks="false"
+			Active="false" CanAffectInvulnerable="true" ClearOnSourceDeath="true"/>
+		<Effect Name="AmplifySize" Type="SIZE" Duration="0.12" LerpTime="0.40" Modifier="1.15" Active="false" CanAffectInvulnerable="true" ClearOnSourceDeath="true"/>
+
+	</Projectile>
+
+	<Weapon
+		Name="ShielderShieldPulse"
+		Type="SELF"
+		Graphic="null"
+		CooldownMin="8.0"
+		CooldownMax="12.0"
+		ReloadOnCreation="false"
+		BarrelLength="1"
+		>
+		<Effect Name="ShielderInvulnerability" Type="INVULNERABLE" Modifier="1.0" Duration="3.0" FrontFx="ShieldFx" Sound="/SFX/Enemy Sounds/Shielder/ShielderShielding" StopSoundOnEnd="true" />
+	</Weapon>
+	
+	<!-- Zoner -->
+
+	<Weapon
+		Name="ZonerGun"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		Graphic="null"
+		FireFx="ZonerMuzzle"
+		ChargeGraphic="null"
+        ChargeFx="ShrinkingCircleC"
+		FireFxB="null"
+		IdleGraphic="null"
+		ChargeSound="null"
+		FireSound="/SFX/Enemy Sounds/Zoner/ZonerFire"
+		ClipStartSound="/SFX/Enemy Sounds/Zoner/ZonerAttacking"
+		RotationSpeed="9999"
+		Projectile="ZonerGun"
+		ClipSize="3"
+		Cooldown="0.08"
+		ReloadOnCreation="true"
+		ReloadTimeMin="2.3"
+		ReloadTimeMax="3.6"
+		RootOwnerWhileFiring="false"
+		RootOwnerWhileFiringDuration="0.0"
+		SelfVelocity="-600"
+		FixedBarrel="true"
+		BarrelLength="35"
+		FiringArc="15"
+		Spread="0"
+		ShowLockLine="true"
+		WeaponRange="500"
+		ObstacleDamageMultiplier="0.1"
+		MaxFireZ="150"
+		>
+		
+		<Upgrade Name="ZonerLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" ClipSize="3"/>
+				<Change ValueChangeType="ABSOLUTE" SelfVelocity="-210"/>
+				<Change ValueChangeType="ADD" Cooldown="-0.01"/>
+				<!--
+				<Change ValueChangeType="ADD" Effect="ZonerStationaryFire"/>
+				-->
+				<Change ValueChangeType="ADD" ReloadTimeMin="1"/>
+				<Change ValueChangeType="ADD" ReloadTimeMax="1"/>
+				<!--
+				<Change ValueChangeType="ADD" DamageLow="2.5"/>
+				<Change ValueChangeType="ADD" DamageHigh="2.5"/>
+				-->
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ZonerLevel3">
+			<Rank>
+				<Change ValueChangeType="ADD" ClipSize="3"/>
+				<!--
+				<Change ValueChangeType="ADD" DamageLow="2.5"/>
+				<Change ValueChangeType="ADD" DamageHigh="2.5"/>
+				-->
+			</Rank>
+		</Upgrade>
+
+
+		<Effect Name="ZonerStationaryFire" Type="SPEED" Duration="1.0" Modifier="0.0" Active="false"/>
+	</Weapon>
+	<Projectile
+		Name="ZonerGun"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="ZonerGunPhotonFlare"
+		DetonateSound="TurretImpact"
+		Type="STRAIGHT"
+		DamageLow="3"
+		DamageHigh="3"
+		Range="1200.0"
+		FadeTime="0.25"
+		Speed="605.0"
+        NumPenetrations="0"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		CanBeReflected="true"
+		ImpactFx="ZonerGunHit"
+		>
+		<Thing
+			OffsetZ="70.0"
+			Scale="0.6">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="24"/>
+			<Point X="24" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-24" Y="0"/>
+		</Thing>
+	</Projectile>
+
+
+
+	<Weapon
+		Name="ZonerConfuse"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		FireSound="null"
+		RotationSpeed="45"
+		Projectile="ZonerConfuse"
+		Cooldown="1.0"
+		BarrelLength="0"
+		>
+	</Weapon>
+	<Projectile
+        Name="ZonerConfuse"
+		InheritFrom="1_BaseEnemyProjectile"
+        Graphic="null"
+        Type="STRAIGHT"
+        Range="0.0"
+        Speed="0.0"
+		DamageRadius="300"
+		DamageRadiusScaleY="0.75"
+		Fuse="0.01"
+		Damage="0"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		FadeTime="0.5"
+		SpawnDamageField="ZonerConfuse"
+		CheckObstacleImpact="false"
+		CheckUnitImpact="false"
+        >
+		<Thing
+			OffsetZ="90.0"
+			Scale="1.0">
+		</Thing>
+	</Projectile>
+	<DamageField
+		Name="ZonerConfuse"
+		Graphic="null"
+		DeathFx="null"
+		Duration="1.3"
+		DamageInterval="0.34"
+		ImmunityDuration="0.23"
+		Radius="500.0"
+		IgnoreDodging="true">
+		<GlobalEffect Name="ConfuseBloom" Type="BLOOM" FadeIn="0.5" FadeOut="1.25" Duration="0.25" Setting="Stinkweed" Sound="PlayerChoke"/>
+		<GlobalEffect Name="ConfuseEq" Type="EQ" FadeIn="0.5" FadeOut="1.25" Duration="0.25"/>
+	</DamageField>
+
+
+	<Weapon
+		Name="ZonerFlash"
+		InheritFrom="1_BaseWeapon"
+		Type="GUN"
+		Graphic="null"
+		FireFx="ZonerFlashFlare"
+		ChargeGraphic="null"
+        ChargeFx="null"
+		FireFxB="null"
+		IdleGraphic="null"
+		ChargeSound="null"
+		FireSound="/SFX/Enemy Sounds/Zoner/ZonerFlashBang"
+		RotationSpeed="9999"
+		Projectile="ZonerFlash"
+		ClipSize="1"
+		Cooldown="0.3"
+		ChargeTime="0"
+		OnlyChargeOnce="true"
+		ReloadTimeMin="6.0"
+		ReloadTimeMax="6.0"
+		ReloadOnCreation="true"
+		FixedBarrel="false"
+		BarrelLength="35"
+		FiringArc="360"
+		Spread="0"
+		ShowLockLine="true"
+		WeaponRange="200"
+		ObstacleDamageMultiplier="0.0"
+		>
+	</Weapon>
+	<Projectile
+		Name="ZonerFlash"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="null"
+		DetonateSound="null"
+		Type="HOMING"
+		MaxAdjustRate="9999"
+		DamageLow="0"
+		DamageHigh="0"
+		Range="200.0"
+		FadeTime="0.25"
+		Speed="9999.0"
+        NumPenetrations="0"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		>
+		<Thing
+			OffsetZ="70.0"
+			Scale="0.6">
+			<Color Red="1.0" Green="1.0" Blue="0.0" Opacity="1.0"/>
+			<Point X="0" Y="24"/>
+			<Point X="24" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-24" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<Weapon
+		Name="ZonerDodge"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Graphic="ZonerDodge"
+		IdleGraphic="null"
+		FireSound="/SFX/OLD SOUNDS/SpearAttack"
+		FireSound2="/SFX/Enemy Sounds/Zoner/ZonerAttacking"
+		CooldownMin="6.0"
+		CooldownMax="6.0"
+		SelfVelocity="1200"
+		>
+	</Weapon>
+	
+	<!-- Bomber -->
+
+	<Weapon
+		Name="Bomber"
+		InheritFrom="1_BaseEnemyWeapon"
+		Graphic="LobberAttack"
+		ChargeGraphic="LobberCharge"
+		IdleGraphic="LobberReturnToIdle"
+		FireFx="null"
+		ChargeFx="SpeederChargeSpawner"
+		Projectile="Bomber"
+		BarrelLength="0"
+		FixedBarrel="false"
+		FireSound="/SFX/Enemy Sounds/Lobber/LobberFire"
+		FireSound2="/SFX/Enemy Sounds/Lobber/LobberAttacking"
+		Type="GUN"
+		Spread="15"
+		ChargeTime="0.0"
+		ReloadTimeMin="4.5"
+		ReloadTimeMax="6.5"
+		ReloadOnCreation="false"
+		DisableOwnerForDuration="0.3"
+		FiringArc="60"
+		MaxFireZ="150"
+ 		>
+
+		<Upgrade Name="LobberLevel3">
+			<Rank>
+
+				<Change ValueChangeType="ADD" SpawnOnDetonate="VirusGrid02"/>
+				<Change ValueChangeType="ADD" SpawnCount="1"/>
+				<!--
+				<Change ValueChangeType="ABSOLUTE" SpawnDamageField="BomberDamageField2" />
+				-->
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="Bomber"
+		Type="LOB"
+        Graphic="LobberBomb"
+		AutoAdjustForTarget="true"
+		MaxSpeed="1575.0"
+		LaunchAngle="50"
+		SpinRate="-360"
+		MinRange="225.0"
+		LeadFactor="2.0"
+		DetonateSound="/SFX/Enemy Sounds/Lobber/LobberDetonate"
+		CanCrit="false"
+        DrawShadow="true"
+		DamageLow="18"
+		DamageHigh="18"
+		DamageRadius="360"
+		DamageRadiusFalloff="0.5"
+		DamageRadiusScaleX="1.0"
+		DamageRadiusScaleY="0.55"
+		BlastSpeed="2500"
+		DetonateGraphic="LobberEggPopLarge"
+		AffectsFriends="false"
+		NumPenetrations="9999999"
+		IgnoreArmor="false"
+		DetonateScreenShakeSpeed="650"
+		ImpactVelocity="18000"
+		ImpactPauseFrames="0"
+		ImpactUpwardVelocity="0"
+		SpawnType="OBSTACLE"
+		ReticleGraphic="LobberReticle"
+		CanBeReflected="true"
+		CheckUnitImpact="true"
+		CheckObstacleImpact="false"
+		>
+		<Thing
+			Shadow="Decals\\Health_Circle_Tiny"
+			ShadowAutoScale="NONE"
+			VisibleInPlanning="true">
+		</Thing>
+	</Projectile>
+
+	<Projectile
+		Name="BomberHoming"
+		Graphic="LobberBomb"
+		Type="HOMING"
+		MaxAdjustRate="1080"
+		HomingAllegiance="ENEMIES"
+		DamageLow="2"
+		DamageHigh="2"
+		Range="450.0"
+		Speed="675.0"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		Fuse="1.5"
+		FuseStartFade="true"
+		>
+		<Thing
+			OffsetZ="50.0"
+			Scale="0.5"
+			>
+			<Point X="0" Y="24"/>
+			<Point X="24" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-24" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<DamageField
+		Name="BomberDamageField"
+		Graphic="null"
+		DeathFx="null"
+		Duration="999999.0"
+		Damage="1.0"
+		DamageInterval="0.015"
+		ImmunityDuration="0.0"
+		Radius="120.0"
+		MaxZ="150"
+		IgnoreDodging="true"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		SelfDamageMultiplier="0.0"
+		OwnerHitFlashSpeed="0.5"
+		OwnerHitFlashIntensity="0.8"
+		OwnerHitFlashRed="0.7"
+		OwnerHitFlashGreen="0.4"
+		OwnerHitFlashBlue="0.9">
+	</DamageField>
+
+	<DamageField
+		Name="BomberDamageField2"
+		Graphic="BigSupport_Puddle_PhaseIn"
+		DeathFx="BigSupport_Puddle_Death"
+		Duration="5.5"
+		Damage="1.0"
+		DamageInterval="0.25"
+		EffectInterval="0.1"
+		Radius="125.0"
+		MaxZ="150">
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.4" Active="true"/>
+	</DamageField>
+
+
+
+
+	
+
+	<Weapon
+		Name="LobberLight"
+		InheritFrom="1_BaseEnemyWeapon"
+		Graphic="LobberAttack"
+		ChargeGraphic="LobberCharge"
+		IdleGraphic="LobberReturnToIdle"
+		FireFx="null"
+		ChargeFx="SpeederChargeSpawner"
+		Projectile="LobberLight"
+		BarrelLength="0"
+		FixedBarrel="false"
+		FireSound="SFX/Enemy Sounds/EnemyAttackLarge"
+		Type="GUN"
+		Spread="15"
+		ChargeTime="0.0"
+		ReloadTimeMin="4.5"
+		ReloadTimeMax="6.5"
+		ReloadOnCreation="true"
+		DisableOwnerForDuration="0.3"
+		FiringArc="15"
+		WeaponRange="700"
+ 		>
+		<Upgrade Name="LobberLevel2">
+			<Rank>
+				<!--
+				<Change ValueChangeType="ADD" SpawnOnDetonate="VirusGrid02"/>
+				<Change ValueChangeType="ADD" SpawnCount="1"/>
+				<Change ValueChangeType="ABSOLUTE" SpawnDamageField="BomberDamageField2" />
+				-->
+			</Rank>
+		</Upgrade>
+	</Weapon>
+	<Projectile
+		Name="LobberLight"
+		Type="LOB"
+        Graphic="LobberBomb"
+		AutoAdjustForTarget="true"
+		LaunchAngle="75"
+		MaxSpeed="3000"
+		Acceleration="350.0"
+		SpinRate="-360"
+		MinRange="300"
+		LeadFactor="2.0"
+		DetonateSound="null"
+		CanCrit="false"
+        DrawShadow="true"
+		DamageLow="13"
+		DamageHigh="13"
+		DamageRadius="200"
+		DamageRadiusScaleX="1.0"
+		DamageRadiusScaleY="0.68"
+		BlastSpeed="1300"
+		DetonateGraphic="ExpandingCircleBuff"
+		AffectsFriends="true"
+		NumPenetrations="9999999"
+		IgnoreArmor="false"
+		DetonateScreenShakeSpeed="350"
+		ImpactVelocity="0"
+		ImpactPauseFrames="0"
+		ImpactUpwardVelocity="0"
+		SpawnType="OBSTACLE"
+		>
+		<Thing
+			Shadow="Decals\\Health_Circle_Tiny"
+			ShadowAutoScale="NONE"
+			VisibleInPlanning="true">
+			<Color Red="0.0" Green="1.0" Blue="0.0" Opacity="1.0"/>
+		</Thing>
+	</Projectile>
+
+	<Weapon
+		Name="LobberTrail"
+		InheritFrom="1_BaseEnemyWeapon"
+		Graphic="null"
+		IdleGraphic="null"
+		ChargeGraphic="null"
+		FireFx="null"
+		Projectile="LobberTrail"
+		BarrelLength="0"
+		FireSound="StoneThrow"
+		Type="GUN"
+		Cooldown="0.10"
+		WeaponRange="9999"
+		ChargeTime="0.0"
+		DisableOwnerForDuration="0.0"
+		>
+	</Weapon>
+	<Projectile
+		Name="LobberTrail"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="null"
+		Type="STRAIGHT"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="1"
+		Fuse="0.0"
+		SpawnDamageField="LobberTrail"
+		>
+	</Projectile>
+	<DamageField
+		Name="LobberTrail"
+		Graphic="LobberEggTrailSpawner"
+		DeathFx="LobberEggPopSmall"
+		Damage="0.0"
+		DamageInterval="0.25"
+		EffectInterval="0.25"
+		Radius="65.0"
+		Duration="3.5"
+		DeathSound="/SFX/Enemy Sounds/Lobber/LobberTrailDissipate">
+		<Effect Name="LobberSlow" Type="SPEED" Duration="0.5" Modifier="0.5" ClearOnExecute="true" BackFx="DebuffBack" FrontFx="DebuffFront" Active="true"/>
+	</DamageField>
+
+	<!-- Flusher Nova -->
+
+	<Weapon
+		Name="Bark"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Cooldown="1.5"
+		Graphic="FlusherAttack"
+        IdleGraphic="null"
+		FireSound="null"
+		FireSound2="/SFX/Enemy Sounds/Flusher/FlusherAttacking"
+		Projectile="Bark"
+		Spread="0"
+		BarrelLength="80"
+		NumProjectiles="1"
+		ProjectileOffset="16.0"
+		Cost="0"
+		ObstacleDamageMultiplier="0.0"
+		WeaponRange="120"
+		DisableOwnerForDuration="1.0"
+		MaxFireZ="100"
+		>
+
+		<Upgrade Name="FlusherLevel2">
+			<Rank>
+				<Change ValueChangeType="ADD" Damage="0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="FlusherLevel3">
+			<Rank>
+				
+				<Change ValueChangeType="ADD" Cooldown="0.5"/>
+				<Change ValueChangeType="ADD" Damage="0"/>
+			
+				<Change ValueChangeType="ADD" ImpactVelocity="1200"/>
+			
+				<Change ValueChangeType="ADD" Effect="FlusherStunSpeed"/>
+				<Change ValueChangeType="ADD" Effect="FlusherStunDisarm"/>
+				<Change ValueChangeType="ADD" EFfect="FlusherStunRotation"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="Bark"
+		InheritFrom="1_BaseSmallProjectile"
+		DetonateSound="null"
+		StartSound="/SFX/Enemy Sounds/Flusher/FlusherFire"
+		DrawShadow="false "
+		Graphic="null"
+		StartFx="FlusherBarkStart"
+		StartFx2="FlusherBarkStart2"
+		StartFxShift="42"
+		Type="STRAIGHT"
+        StartDelay="0.2"
+		DamageLow="12"
+		DamageHigh="12"
+		DamageRadius="100"
+		DetonateGraphic="FlusherBarkFx"
+		GhostInterval="1.0"
+        GhostDuration="0.0"
+		ImpactVelocity="1200"
+		ImpactUpwardVelocity="0"
+		Fuse="0.0"
+		AffectsFriends="false"
+		Acceleration="0"
+		FadeTime="0.0"
+		AffectsSelf="false"
+		CanBeReflected="false"
+		SelfDamageMultiplier="0.0"
+		RequireHitCenter="false"
+		MaxVictimZ="9999"
+		>
+		<Thing
+			OffsetZ="1.0"
+			Scale="0.45"
+			RotateGeometry="true"
+			>
+			<Point X="219" Y="-54"/>
+			<Point X="-123" Y="-55"/>
+			<Point X="-124" Y="56"/>
+			<Point X="221" Y="54"/>
+		</Thing>
+
+		<Effect Name="FlusherStunSpeed" Type="SPEED" Duration="1.1" Modifier="0.0" BackFx="DebuffBack" FrontFx="DebuffFront" ClearOnExecute="true" ShowCustomInfo="true" Active="false"/>
+		<Effect Name="FlusherStunDisarm" Type="DISARM" Duration="1.1" Active="false" ClearOnExecute="true" />
+		<Effect Name="FlusherStunRotation" Type="ROTATION" Duration="1.1" Modifier="0.001" Active="false" ClearOnExecute="true"/>
+
+	</Projectile>
+	
+	<!-- Player Pet Bark -->
+
+	<Weapon
+		Name="PlayerPetBark"
+		InheritFrom="Bark"
+		Projectile="PlayerPetBark"
+		StaminaCost="40"
+		ProjectilePreview="TargetLineSegment"
+		FirePreview="FlusherAttackPreview"
+		ClearUpgrades="true"
+		ObstacleDamageMultiplier="0.1"
+		WeaponRange="150"
+		AutoLock="true"
+		AutoLockDuration="0.02"
+		AutoLockRange="150"
+		AutoLockArcDistance="120"
+		ReloadTime="2.0"
+		ReloadOnCreation="false"
+		Cooldown="0"
+		DisableOwnerForDuration="1.0"
+		FocusCooldown="0.15"
+		ExecuteCooldown="1.0"
+		Icon="GUI\\Icons\\Powers\\power_flusher_bark"
+		>
+
+		<Upgrade Name="Slam">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="Combo" />
+				<Change ValueChangeType="ADD" Effect="PetSlamStunSpeed" />
+				<Change ValueChangeType="ADD" Effect="PetSlamStunDisarm" />
+				<Change ValueChangeType="ADD" Effect="PetSlamStunRotation" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Snipe">
+			<Rank>
+				<!--
+				<Change ValueChangeType="ADD" WeaponRange="450" />
+				-->
+				<Change ValueChangeType="ABSOLUTE" Range="450" />
+				<Change ValueChangeType="ABSOLUTE" WeaponRange="400" />
+				<Change ValueChangeType="ABSOLUTE" Speed="9999" />
+				<Change ValueChangeType="ABSOLUTE" Fuse="0.1" />
+				<Change ValueChangeType="ABSOLUTE" NumPenetrations="999" />
+				<Change ValueChangeType="ABSOLUTE" AutoLockRange="450" />
+				<Change ValueChangeType="ABSOLUTE" DetonateAtTarget="true" />
+				<Change ValueChangeType="ABSOLUTE" DetonateAtVictimLocation="true" />
+				<Change ValueChangeType="ADD" ChildGraphic="SnipeOnDog" />
+			</Rank>
+			
+		</Upgrade>
+		
+		<Upgrade Name="PetBomb">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageRadius="250" />
+				<Change ValueChangeType="MULTIPLY" DamageLow="1.25" />
+				<Change ValueChangeType="MULTIPLY" DamageHigh="1.25" />
+				<Change DetonateGraphic="SlamNova"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetClusterbombGP">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" DamageRadius="0.5" />
+				<Change ValueChangeType="MULTIPLY" Damage="0.5" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Blink">
+			<Rank>
+				<!--
+				<Change ValueChangeType="ABSOLUTE" WeaponType="BLINK" />
+				<Change ValueChangeType="ABSOLUTE" Range="350" />
+				-->
+				
+				<Change ValueChangeType="MULTIPLY" ReloadTime="0.5" />
+				<Change ValueChangeType="MULTIPLY" DisableOwnerForDuration="0.5" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Might">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" DamageLow="1.5" />
+				<Change ValueChangeType="MULTIPLY" DamageHigh="1.5" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Hook">
+			<Rank>
+				<Change ValueChangeType="ADD" VacuumStrength="9000" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Hide">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" VulnerabilityMultiplier="2.0"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Heal">
+			<Rank>
+				<!--
+				<Change ValueChangeType="ADD" Effect="PetHealerBuff"/>
+				-->
+			</Rank>
+		</Upgrade>
+
+		
+
+		<Upgrade Name="Sidearm">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" StaminaCost="0.75" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetCharm">
+			<Rank>
+				<Change ValueChangeType="ADD" CharmDuration="3.5"/>
+				<Change ValueChangeType="ADD" StaminaCost="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PetTracker">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="TrackerUpgradeDamageOverTime"/>
+				<Change ValueChangeType="ADD" Effect="TrackerUpgradeSpeed"/>
+				<Change ValueChangeType="ADD" Effect="TrackerUpgradeRotation"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Jumper">
+			<Rank>
+				<Change ValueChangeType="ADD" NumJumps="3" />
+				<Change ValueChangeType="ADD" JumpRange="500" />
+				<Change ValueChangeType="ADD" JumpDamageMultiplier="0.5" />
+				<Change ValueChangeType="ADD" MultiDetonate="true" />
+				<Change ValueChangeType="ADD" Speed="6000" />
+				<Change ValueChangeType="ADD" Fuse="0.1" />
+				<Change ValueChangeType="ADD" Range="150" />
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Summon">
+			<Rank>
+				<Change ValueChangeType="ADD" SuppressDeathWeaponChance="0.9"/>
+			</Rank>
+		</Upgrade>
+		
+	</Weapon>
+	<Projectile
+		Name="PlayerPetBark"
+		InheritFrom="Bark"
+		DetonateSound="null"
+		StartSound="/SFX/Enemy Sounds/Flusher/FlusherPetFire"
+		DrawShadow="false "
+		Graphic="FlusherBarkFx"
+		StartFx="null"
+		StartFx2="null"
+		StartFxShift="42"
+		Type="STRAIGHT"
+        StartDelay="0.2"
+		DamageLow="75"
+		DamageHigh="75"
+		DamageRadius="100"
+		DetonateGraphic="FlusherBarkFxFriendly"
+		GhostInterval="1.0"
+        GhostDuration="0.0"
+		ImpactVelocity="200"
+		ImpactUpwardVelocity="0"
+		Fuse="0.0"
+		Range="1"
+		AffectsFriends="false"
+		Acceleration="0"
+		FadeTime="0.0"
+		AffectsSelf="false"
+		CanBeReflected="false"
+		SelfDamageMultiplier="0.0"
+		RequireHitCenter="false"
+		MaxVictimZ="9999"
+		CheckObstacleImpact="false"
+		>
+		<Effect Name="PetHealerBuff" Type="HEAL_OVER_TIME" Amount="10" Cooldown="0.01" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="_PlayerUnit" Active="true"/>
+
+		<Effect Name="Combo" Type="TAG" Duration="1.575"/>
+		
+		<Effect Name="PetSlamStunSpeed" Type="SPEED" Duration="1.575" Modifier="0.0" BackFx="DebuffBack" FrontFx="DebuffFront" ShowCustomInfo="true" Active="false"/>
+		<Effect Name="PetSlamStunDisarm" Type="DISARM" Duration="1.575" Active="false" />
+		<Effect Name="PetSlamStunRotation" Type="ROTATION" Duration="1.575" Modifier="0.000001" Active="false"/>
+
+		<Tag Name="Combo" DamageMultiplier="1.5" />
+
+		<Effect Name="TrackerUpgradeDamageOverTime" Type="DAMAGE_OVER_TIME" Duration="3.5" Cooldown="0.05" Amount="1" Active="false" ShowCustomInfo="true" SpawnOnKill="TrackerDeathWeapon"/>
+		<Effect Name="TrackerUpgradeSpeed" Type="SPEED" Duration="3.5" Modifier="0.3" Active="false"/>
+		<Effect Name="TrackerUpgradeRotation" Type="ROTATION" Duration="3.5" Modifier="0.1" Active="false"/>
+	</Projectile>
+	
+	<!-- Friendly Bark -->
+
+	<Weapon
+		Name="BarkFriendly"
+		InheritFrom="Bark"
+		Projectile="BarkFriendly"
+		ClearUpgrades="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="BarkFriendly"
+		InheritFrom="Bark"
+		StartSound="/SFX/Enemy Sounds/Flusher/FlusherPetFire"
+		DamageLow="0"
+		DamageHigh="0"
+		AffectsEnemies="false"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		>
+	</Projectile>
+
+	<!-- Flusher Hide -->
+
+	<Weapon
+		Name="FlusherHide"
+		InheritFrom="1_BasePlayerUtilityWeapon"
+		Type="GUN"
+		Cooldown="1"
+		ChargeTime="1.0"
+		CooldownMin="6.0"
+		CooldownMax="9.5"
+		Graphic="null"
+		FireSound="/SFX/Enemy Sounds/Flusher/FlusherUsingStealth"
+		FireSound2="null"
+		FireFx="HideShroud"
+		RequiresTarget="false"
+		GuaranteeNextProjectileCrit="false"
+		BarrelLength="80"
+		FireFxShift="-80"
+		Cost="1"
+		CooldownStoppedInStealth="true"
+		SelfVelocity="0"
+		ClearUpgrades="true"
+		DisableOwnerForDuration="1.0"
+        >
+
+		<Effect Name="HideStealth" Type="STEALTH" Duration="4.5" Modifier="0.99" ClearOnAttack="true" ClearOnExecute="false" ClearFx="null" BackFx="null"/>
+
+	</Weapon>
+
+
+	<!-- Summoner Repulsor -->
+
+	<Weapon
+		Name="Repulsor"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Cooldown="0.5"
+		Graphic="null"
+		IdleGraphic="null"
+		FireSound="null"
+		FireSound2="null"
+		Projectile="Repulsor"
+		Spread="0"
+		BarrelLength="0"
+		NumProjectiles="1"
+		Cost="0"
+		ObstacleDamageMultiplier="0.0"
+		DisableOwnerForDuration="0.0"
+		>
+	</Weapon>
+	<Projectile
+		Name="Repulsor"
+		InheritFrom="1_BaseSmallProjectile"
+		DetonateSound="null"
+		StartSound="null"
+		Graphic="SpeederProjectile"
+		DrawShadow="true"
+		StartFx="null"
+		StartFx2="null"
+		StartFxShift="0"
+		Type="HOMING"
+		MaxAdjustRate="99999"
+        StartDelay="0"
+		Range="1000"
+		Speed="2000"
+		Acceleration="0"
+		DamageLow="0"
+		DamageHigh="0"
+		GhostInterval="0.0"
+        GhostDuration="0.0"
+		ImpactVelocity="1200"
+		ImpactUpwardVelocity="0"
+		AffectsFriends="false"
+		FadeTime="0.0"
+		AffectsSelf="false"
+		CanBeReflected="false"
+		SelfDamageMultiplier="0.0"
+		RequireHitCenter="false"
+		MaxVictimZ="9999"
+		>
+		<Thing
+			OffsetZ="1.0"
+			Scale="1.0"
+			RotateGeometry="true"
+			>
+			<Point X="219" Y="-54"/>
+			<Point X="-123" Y="-55"/>
+			<Point X="-124" Y="56"/>
+			<Point X="221" Y="54"/>
+		</Thing>
+	</Projectile>
+
+
+	<!-- Berserker -->
+
+	<Weapon
+		Name="BerserkerSlash"
+		Type="GUN"
+		ChargeGraphic="BerserkerCharge"
+		Graphic="BerserkerAttack"
+		IdleGraphic="BerserkerReturnToIdle"
+		ChargeSound="/SFX/Enemy Sounds/Sybil/SybilCharge"
+		FireSound="/SFX/Enemy Sounds/Sybil/SybilFire"
+		FireSound2="null"
+		FireFx="null"
+		Projectile="BerserkerSlash"
+		FixedBarrel="true"
+		RequiresTarget="false"
+		OnlyChargeOnce="true"
+		ChargeTime="1.5"
+		DisableOwnerForDuration="2.0"
+		ReloadTime="2.6"
+		Cooldown="0.8"
+		ClipSize="1"
+		SelfVelocity="60000.0"
+		WeaponRange="500"
+		ObstacleDamageMultiplier="15.0"
+		FiringArc="30"
+		>
+	</Weapon>
+	<Projectile
+		Name="BerserkerSlash"
+		InheritFrom="1_BaseEnemyProjectile"
+		Type="ARC"
+		ArcStart="-30"
+		ArcSize="60"
+		Speed="0.2"
+		DamageLow="15"
+		DamageHigh="20"
+		Range="260.0"
+		ImpactPauseFrames="2"
+		ScreenShakeSpeed="350"
+		AffectsFriends="true"
+		ImpactVelocity="17000"
+		ImpactFilterDuration="0.45"
+		ImpactFilterOpacity="1.0"
+		ImpactRumbleIntensity="0.5"
+		ImpactRumbleDuration="0.375"
+		NumPenetrations="9999"
+        >
+		<Thing OffsetZ="1.0"></Thing>
+	</Projectile>
+
+	<Weapon
+		Name="BerserkerSlash2"
+		InheritFrom="BerserkerSlash"
+		WeaponRange="540"
+		ReloadOnCreation="true"
+		ChargeTime="1.25"
+		DisableOwnerForDuration="0.1"
+		Cooldown="1.25"
+		ReloadTime="4.0"
+		ClipSize="2"
+		SelfVelocity="30000.0"
+		ObstacleDamageMultiplier="30.0"
+		>
+	</Weapon>
+	<Projectile
+		Name="BerserkerSlash2"
+		InheritFrom="BerserkerSlash"
+		DamageLow="15"
+		DamageHigh="19"
+        >
+	</Projectile>
+
+	<Weapon
+		Name="BerserkerSlash3"
+		InheritFrom="BerserkerSlash"
+		ChargeTime="1.25"
+		DisableOwnerForDuration="0.1"
+		ReloadOnCreation="true"
+		Cooldown="1.25"
+		ReloadTime="5.0"
+		ClipSize="3"
+		SelfVelocity="17000.0"
+		WeaponRange="570"
+		ObstacleDamageMultiplier="50.0"
+		>
+	</Weapon>
+	<Projectile
+		Name="BerserkerSlash3"
+		InheritFrom="BerserkerSlash"
+		DamageLow="15"
+		DamageHigh="18"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="BerserkerBlink"
+		InheritFrom="1_BaseWeapon"
+		Type="BLINK"
+		SlotType="MOVE"
+		Graphic="BerserkerIdle"
+		FireFx="BlinkDust"
+		FireSound="SFX/Enemy Sounds/VirusColumnSpawnSmall"
+		CooldownMin="0.9"
+		CooldownMax="1.3"
+		MinRange="0.0"
+		ClipSize="12"
+		ReloadTime="3.6"
+		Projectile="BerserkerBlink"
+		BarrelLength="0"
+		>
+	</Weapon>
+	<Projectile
+		Name="BerserkerBlink"
+		DetonateGraphic="null"
+		DetonateSound="SpearThrow"
+        SpawnDamageField="null"
+		Type="STRAIGHT"
+		Range="160"
+		IgnoreFireAngle="false"
+		AutoAdjustForTarget="false"
+		Fuse="0.0"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="0.0"
+		ImpactVelocity="0.0"
+		>
+	</Projectile>
+	
+	<Weapon
+		Name="BerserkerDodge"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Graphic="BerserkerIdle"
+		IdleGraphic="BerserkerIdle"
+		FireSound="/SFX/OLD SOUNDS/SpearThrow"
+		Cooldown="0.2"
+		SelfVelocity="1800"
+		>
+	</Weapon>
+
+	<Weapon
+		Name="BerserkerSelfStun"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Cooldown="9999.0"
+		ReloadOnCreation="true"
+		Graphic="null"
+		IdleGraphic="null"
+		FireSound="null"
+		FixedBarrel="true"
+		FiringArc="360">
+		<Effect Name="SelfStunSpeed" Type="SPEED" Duration="0.5" Modifier="0.0" Active="true"/>
+		<Effect Name="SelfStunRotation" Type="ROTATION" Duration="0.5" Modifier="0.000001" Active="true"/>
+	</Weapon>
+	
+	<!-- Monster Stomp -->
+
+	<Weapon
+		Name="MonsterStomp"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Graphic="MonsterTailReturnToIdle"
+		FireFx="MonsterAttackVerticalGroundDustOut"
+		ChargeTime="0.2"
+		FireSound="/SFX/Enemy Sounds/Monster/MonsterTailFree"
+		DisableOwnerForDuration="0"
+		ChargeFx="null"
+		SelfVelocity="0"
+		SelfUpwardVelocity="25000"
+		FixedBarrel="false"
+		FiringArc="360"
+		BarrelLength="0"
+		WeaponRange="9999"
+		Spread="150"
+		ClipSize="1"
+		CooldownMin="0.1"
+		CooldownMax="0.1"
+        ReloadTime="0.1"
+		MaxFireZ="10"
+		>
+	</Weapon>
+
+	<Weapon
+		Name="MonsterStompNoVelocity"
+		InheritFrom="MonsterStomp"
+		SelfVelocity="0"
+		SelfUpwardVelocity="80000"
+		Spread="0"
+		CooldownMin="2"
+		CooldownMax="5"
+		>
+	</Weapon>
+	
+	<Weapon
+		Name="MonsterStompTouchdown"
+		InheritFrom="1_BaseWeapon"
+		SlotType="PRIMARY"
+		Type="GUN"
+		Graphic="MonsterTailEmbedded"
+		Projectile="MonsterStompTouchdown"
+		ObstacleDamageMultiplier="15.0"
+		DisableOwnerForDuration="1.25"
+		RequiresTarget="false"
+		BarrelLength="0"
+		>
+	</Weapon>
+	<Projectile
+		Name="MonsterStompTouchdown"
+		InheritFrom="1_BaseLargeProjectile"
+		DetonateGraphic="MonsterAttackVerticalGroundDust"
+		DetonateSound="/SFX/Enemy Sounds/Monster/MonsterTailSlam"
+		Type="STRAIGHT"
+		Fuse="0.0"
+		StartFx2="MonsterAttackVerticalGroundCrack"
+		StartFxShift="42"
+		DamageLow="24"
+		DamageHigh="24"
+		DamageRadius="300"
+		DamageRadiusScaleX="1.0"
+		DamageRadiusScaleY="0.58"
+		BlastSpeed="2000"
+		ImpactVelocity="18000"
+		AffectsFriends="true"
+		DetonateRumbleIntensity="0.6"
+		DetonateRumbleDuration="0.4"
+		ImpactFilterDuration="0.35"
+		ImpactFilterOpacity="1.0"
+		DetonateScreenShakeSpeed="250"
+		>
+	</Projectile>
+
+	<!-- Monster Beam -->
+
+	<Weapon
+		Name="MonsterBeam"
+		Type="GUN"
+		Projectile="MonsterBeam"
+		ChargeGraphic="MonsterTorsoCharging"
+		Graphic="MonsterTorsoAttacking"
+		IdleGraphic="MonsterTorso"
+		ChargeFx="MonsterBeamCharge"
+		FireFx="null"
+		ChargeSound="/SFX/Enemy Sounds/Monster/MonsterBeamAttack"
+		FireSound="/SFX/Enemy Sounds/Monster/MonsterFire"
+		OnlyChargeOnce="true"
+		StopFireSoundOnRelease="false"
+		ChargeTime="1.0"
+		ReloadTimeMin="2.75"
+		ReloadTimeMax="4.0"
+		ReloadOnCreation="true"
+		SelfVelocity="-50"
+		Cooldown="0.1"
+		ClipSize="50"
+		FixedBarrel="true"
+		FiringArc="45"
+		BarrelLength="250"
+		ObstacleDamageMultiplier="4"
+		>
+	</Weapon>
+	<Projectile
+		Name="MonsterBeam"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="MonsterBeam"
+		StartFx="MonsterBeamStart"
+		DrawShadow="false"
+		Type="HOMING"
+		DamageRadius="20"
+		SpawnOnDetonate="MonsterBeamBlast"
+		SpawnType="PROJECTILE"
+		Damage="2.0"
+		Range="1500"
+        Speed="2000"
+		DetonateSound="null"
+		CanCrit="false"
+		LeadFactor="-2.0"
+		Acceleration="450"
+		MaxAdjustRate="70"
+		DetonateAtTarget="true"
+		AffectsFriends="false"
+		CanBeReflected="true"
+		NumPenetrations="0"
+		IgnoreArmor="false"
+		DetonateRumbleIntensity="0.075"
+		DetonateRumbleDuration="0.15"
+		StartAtMarker="WpnCtr"
+		>
+		<Effect Name="BlastGrip" Type="GRIP" Duration="0.5" Modifier="18" Active="true"/>
+		<Thing
+			OffsetZ="0.0"
+			RotateGeometry="true"
+			VisibleInPlanning="true"
+			Scale="1.0">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+	</Projectile>
+	<Projectile
+		Name="MonsterBeamBlast"
+		InheritFrom="1_BasePlayerSmallProjectile"
+		Type="STRAIGHT"
+		Speed="0.0"
+		Fuse="0.5"
+		DamageLow="2.5"
+		DamageHigh="2.5"
+		DrawShadow="false"
+		DamageRadius="215"
+		DamageRadiusScaleX="1.0"
+		DamageRadiusScaleY="0.58"
+		StartFx="MonsterBeamDetonateArea"
+		Graphic="MonsterBeamGroundContact"
+		DetonateGraphic="MonsterBeamDetonate"
+		DetonateSound="/SFX/Enemy Sounds/Monster/MonsterFireDetonate"
+		AffectsFriends="false"
+		NumPenetrations="9999999"
+		IgnoreArmor="false"
+		DetonateScreenShakeSpeed="650"
+		ImpactVelocity="6000"
+		ImpactPauseFrames="0"
+		ImpactUpwardVelocity="0"
+		DetonateRumbleIntensity="0.05"
+		DetonateRumbleDuration="0.15"
+		>
+	</Projectile>
+
+	<!-- Monster Surprise Attack -->
+
+	<Weapon
+		Name="MonsterSurpriseAttack"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Graphic="null"
+		ChargeSound="MudgatorPreAttack"
+		FireSound="/SFX/Enemy Sounds/Monster/MonsterTailSlam"
+		Projectile="MonsterSurpriseAttack"
+		BarrelLength="0"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		WeaponRange="9999"
+		>
+	</Weapon>
+	<Projectile
+		Name="MonsterSurpriseAttack"
+		InheritFrom="1_BaseEnemyProjectile"
+		Type="INSTANT"
+		Range="9999999"
+		Fuse="0.0"
+		DetonateGraphic="null"
+		DetonateSound="/SFX/Enemy Sounds/Monster/MonsterTailSlam"
+		DamageLow="15"
+		DamageHigh="15"
+		DamageRadius="200"
+		DamageRadiusScaleX="1.2"
+		DamageRadiusScaleY="0.78"
+		AffectsFriends="true"
+		ImpactVelocity="12000"
+		ImpactRumbleIntensity="0.5"
+		ImpactRumbleDuration="0.35"
+		DeflectRumbleIntensity="0.5"
+		DeflectRumbleDuration="0.35"
+		CounterRumbleIntensity="0.5"
+		CounterRumbleDuration="0.35"
+		ImpactFilterDuration="0.35"
+		ImpactFilterOpacity="1.0"
+		>
+		<Thing OffsetZ="1.0">
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+		<Effect Name="MonsterSurpriseStunSpeed" Type="SPEED" Duration="1.0" Modifier="0.0" BackFx="DebuffBack" FrontFx="DebuffFront" ClearOnExecute="true" Active="true"/>
+		<Effect Name="MonsterSurpriseStunDisarm" Type="DISARM" Duration="1.0" Active="true" ClearOnExecute="true" />
+		<Effect Name="MonsterSurpriseStunRotation" Type="ROTATION" Duration="1.0" Modifier="0.001" Active="true" ClearOnExecute="true"/>
+	</Projectile>
+	
+	<!-- Haunter / Charge -->
+
+	<Weapon
+        Name="Haunter"
+        InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+        Projectile="Haunter"
+        ChargeTime="3.0"
+		MinChargeToFire="0.5"
+		FireOnRelease="true"
+		ForceMaxChargeRelease="true"
+		ChargeDamageMultiplier="8.0"
+		ChargeSpeedMultiplier="0.33"
+		ChargeScaleMultiplier="24.0"
+		ChargeStealth="-1.0"
+		ChargeSound="SFX/Player Sounds/WeaponCharge3"
+		FireSound="SFX/Player Sounds/WeaponFire4"
+        ChargeFx="ShrinkingCircleC"
+		ChargeGraphic="null"
+		Graphic="HaunterAttack"
+		IdleGraphic="null"
+        ClipSize="3"
+        ReloadTime="0.5"
+        FixedBarrel="true"
+        FiringArc="15"
+        BarrelLength="30"
+        ReloadOnCreation="false"
+        ObstacleDamageMultiplier="37.75"
+		Spread="30"
+		>
+		<Effect Name="HaunterDestealth" Type="STEALTH" Modifier="-1.0" Duration="0.9" CanAffectInvulnerable="true" Active="true"/>
+	</Weapon>
+	<Projectile
+		Name="Haunter"
+		InheritFrom="1_BaseDebuffProjectile"
+		Graphic="HaunterProjectile"
+		Type="HOMING"
+		Damage="0"
+		Range="300"
+		Speed="1200"
+        MaxAdjustRate="80"
+		DamageLow="5"
+		DamageHigh="5"
+		ImpactVelocity="0"
+		ImpactUpwardVelocity="0"
+        FadeTime="0.0"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		SelfDamageMultiplier="0.0"
+		RequireHitCenter="false"
+		DetonateAtTarget="false"
+		TrailDamageField="HaunterDamageField"
+		TrailDamageFieldInterval="20"
+		>
+		<Thing
+			OffsetZ="70.0"
+			RotateGeometry="true"
+			Scale="0.05"
+			>
+			<Color Red="1.0" Green="0.0" Blue="0.0" Opacity="1.0"/>
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<DamageField
+		Name="HaunterDamageField"
+		Graphic="OrbUpgradeDamageFieldFX"
+		DeathFx="null"
+		Duration="2.5"
+		Damage="0.25"
+		DamageInterval="0.15"
+		EffectInterval="0.1"
+		Radius="125.0"
+		MaxZ="150">
+		<Effect Name="Slow" Type="SPEED" Duration="0.12" Modifier="0.4" Active="true"/>
+	</DamageField>
+
+	<Weapon
+		Name="HaunterMoverBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="HaunterMoverBuff"
+		SilentImpact="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="HaunterMoverBuff"
+		Type="STRAIGHT"
+		Fuse="0.1"
+		DetonateGraphic="null"
+		Speed="0.0"
+		DamageRadius="3000"
+		DamageRadiusScaleY="0.75"
+		SpawnOnDetonate="null"
+		SpawnCount="0"
+		DetonateSound="SFX/Player Sounds/WeaponDetonate4"
+		NumPenetrations="9999"
+		IgnoreArmor="false"
+		AffectsFriends="true"
+		AffectsSelf="true"
+		AffectsEnemies="false"
+		DetonateScreenShakeSpeed="0"
+		ImpactVelocity="0"
+		AffectsStealthed="true"
+		>
+		<Thing
+			OffsetZ="1.0"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="0.0"/>
+		</Thing>
+		<Effect Name="HaunterMoverBuff" Type="SPEED" ChangeType="MULTIPLY" Modifier="8.0" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true" UnitPropertyName="MoveGraphic" UnitPropertyValue="HaunterDash"/>
+		<Effect Name="HaunterMoverRangeBuff" Type="RANGE" ChangeType="ADD" Modifier="-0.5" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+		<Effect Name="HaunterMoverRotationBuff" Type="ROTATION" ChangeType="ADD" Modifier="800" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+		<Effect Name="HaunterMoverChargeTimeBuff" Type="CHARGE_TIME" ChangeType="MULTIPLY" Modifier="10.0" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="HaunterHealerBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="HaunterHealerBuff"
+		SilentImpact="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="HaunterHealerBuff"
+		InheritFrom="HaunterMoverBuff"
+		ClearEffects="true"
+		>
+		<Effect Name="HaunterHealerBuff" Type="HEAL_OVER_TIME" Amount="0.15" Cooldown="0.01" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="PetHealerBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="PetHealerBuff"
+		SilentImpact="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="PetHealerBuff"
+		InheritFrom="HaunterMoverBuff"
+		ClearEffects="true"
+		>
+		<Effect Name="PetHealerBuff" Type="HEAL_OVER_TIME" Amount="0.2" Cooldown="0.01" Duration="4" CanAffectInvulnerable="true" OnlyAffectName="_PlayerUnit" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="HaunterShooterBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="HaunterShooterBuff"
+		SilentImpact="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="HaunterShooterBuff"
+		InheritFrom="HaunterMoverBuff"
+		ClearEffects="true"
+		>
+		<Effect Name="HaunterShooterRangeBuff" Type="RANGE" ChangeType="ADD" Modifier="8.0" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+		<Effect Name="HaunterShooterTargetRangeBuff" Type="TARGET_RANGE" ChangeType="ADD" Modifier="8.0" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+		<Effect Name="HaunterShooterMoveAI" Type="MOVE_AI_SWAP" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+		<Effect Name="HaunterShooterAttackAI" Type="ATTACK_AI_SWAP" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="HaunterCloakerBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Projectile="HaunterCloakerBuff"
+		SilentImpact="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="HaunterCloakerBuff"
+		InheritFrom="HaunterMoverBuff"
+		ClearEffects="true"
+		>
+		<Effect Name="HaunterCloakerBuff" Type="STEALTH" Modifier="0.8" Duration="99999" CanAffectInvulnerable="true" OnlyAffectName="Haunter" Active="true" FrontFx="StealthCloudSpawnerHaunter"/>
+	</Projectile>
+	
+	<!-- Generic Weapons -->
+	
+	<Weapon
+		Name="SuperRotationBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Cooldown="0.0"
+		Graphic="null"
+		RequiresAlive="true"
+		FireSound="SFX/OLD SOUNDS/SquirtSpawn"
+		FixedBarrel="true">
+		<Effect Name="DeflectorRotation" Type="ROTATION" Modifier="999999" Duration="0.1"/>
+	</Weapon>
+
+	<Weapon
+		Name="SpeedBuff"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="SELF"
+		Cooldown="0.5"
+		Graphic="null"
+		RequiresAlive="true"
+		FireSound="SFX/OLD SOUNDS/SquirtSpawn"
+		FixedBarrel="true">
+		<Effect Name="MaxSpeed" Type="SPEED" Duration="2.5" Modifier="100" ChangeType="ADD" Stacks="true" MaxStacks="3" ClearOnCollision="false"/>
+	</Weapon>
+	
+	<Weapon
+		Name="EggHatchWeapon"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Cooldown="0.0"
+		Graphic="null"
+		RequiresAlive="true"
+		FireSound="SFX/OLD SOUNDS/SquirtSpawn"
+		FixedBarrel="true">
+
+		<Upgrade Name="Egg_HatchExplosion" Graphic="GUI\\Icons\\Limiters\\limiter_icon_suppressor_gold">
+			<Rank Cost="0">
+				<!--
+				<Change ValueChangeType="ADD" Projectile="Egg_HatchExplosion"/>
+				-->
+			</Rank>
+		</Upgrade>
+		
+	</Weapon>
+
+	<Projectile
+		Name="Egg_HatchExplosion"
+		Type="STRAIGHT"
+		Fuse="0.0"
+		DetonateGraphic="ExpandingCircleBuff"
+		Speed="0.0"
+		Damage="10"
+		DamageRadius="250"
+		DamageRadiusScaleY="0.75"
+		BlastSpeed="1000"
+		DetonateSound="SFX/Player Sounds/WeaponDetonate4"
+		NumPenetrations="9999"
+		IgnoreArmor="false"
+		DetonateScreenShakeSpeed="0"
+		ImpactVelocity="1000"
+		>
+		<Thing
+			OffsetZ="1.0"
+			>
+		</Thing>
+	</Projectile>
+
+	<Weapon
+		Name="HauntSpawn"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Projectile="HauntSpawn"
+		DisableOwnerForDuration="1.0"
+		ChargeTime="1.1"
+		ChargeStealth="-1.0"
+		CancelChargeOnRelease="true"
+		ChargeSound="/SFX/Enemy Sounds/Haunter/HaunterAttacking"
+		FireSound="/SFX/Enemy Sounds/Haunt/HauntOnSpawn"
+        ChargeFx="null"
+		ChargeGraphic="HaunterCharge"
+		Graphic="HaunterFire"
+		IdleGraphic="HaunterReturnToIdle"
+        ClipSize="1"
+        ReloadTimeMin="5.5"
+		ReloadTimeMax="7.5"
+        FixedBarrel="true"
+        BarrelLength="200"
+        ReloadOnCreation="false"
+        ObstacleDamageMultiplier="0.1"
+		Cooldown="0.65"
+		SilentImpact="true"
+		ProjectileOffset="0"
+		WeaponRange="400"
+		MaxFireZ="150"
+		>
+		<Effect Name="HaunterDestealth" Type="STEALTH" Modifier="-1.0" Duration="1.1" CanAffectInvulnerable="true" Active="true"/>
+	</Weapon>
+	<Projectile
+		Name="HauntSpawn"
+		Graphic="HaunterProjectile"
+		DetonateGraphic="null"
+		DetonateSound="null"
+		Type="STRAIGHT"
+		Speed="0.0"
+		StartDelay="0.1"
+		SpawnOnDetonate="Haunt"
+		SpawnType="UNIT"
+		SpawnCount="1"
+		SpawnCap="4"
+		SpawnAsSameTraitor="10.0"
+		ForceSpawnsToValidLocation="true"
+		FizzleOldSpawns="false"
+		SpawnsGrabOwner="false"
+		DamageLow="1"
+		DamageHigh="1"
+		DamageRadius="1"
+		SpawnUpwardVelocity="5000"
+		Fuse="0.1"
+		ReflectOnObstacleImpact="true"
+		Range="1"
+		>
+		<Thing OffsetZ="1.0"></Thing>
+	</Projectile>
+
+	<Weapon
+		Name="HauntMoverSpawn"
+		InheritFrom="HauntSpawn"
+		IdleGraphic="HaunterMoverReturnToIdle"
+		>
+	</Weapon>
+
+	<Weapon
+		Name="HauntShooterSpawn"
+		InheritFrom="HauntSpawn"
+		IdleGraphic="HaunterShooterReturnToIdle"
+		>
+	</Weapon>
+
+	<Weapon
+		Name="HauntHealerSpawn"
+		InheritFrom="HauntSpawn"
+		IdleGraphic="HaunterHealerReturnToIdle"
+		>
+	</Weapon>
+
+	<Weapon
+		Name="HauntCloakerSpawn"
+		InheritFrom="HauntSpawn"
+		IdleGraphic="HaunterCloakerReturnToIdle"
+		>
+	</Weapon>
+
+
+	<Weapon
+		Name="HauntExplode"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Projectile="HauntExplode"
+		ObstacleDamageMultiplier="0.4"
+		>
+	</Weapon>
+	<Projectile
+		Name="HauntExplode"
+		InheritFrom="1_BaseEnemyProjectile"
+		Graphic="HaunterProjectile"
+		DetonateGraphic="HaunterProjectileExplode"
+		DetonateSound="/SFX/Enemy Sounds/Haunt/HauntDetonate"
+		Type="STRAIGHT"
+		Speed="0.0"
+		DamageLow="80"
+		DamageHigh="80"
+		DamageRadiusFalloff="0.04"
+		DamageRadius="300"
+		DamageRadiusScaleY="0.75"
+		RequireHitCenter="false"
+		DrawShadow="false"
+		TrippedGraphic="OrbProjectileBTripped"
+		TripProximityTriggers="true"
+		CheckUnitImpact="false"
+		CheckObstacleImpact="false"
+		MoveWithTerrain="true"
+		Fuse="0.1"
+		AffectsSelf="true"
+		AffectsFriends="true"
+		AffectsEnemies="true"
+		SelfDamageMultiplier="1.0"
+		IgnoreArmor="false"
+		CanCrit="false"
+		Range="10"
+		ImpactUpwardVelocity="0"
+		ImpactVelocity="2400"
+		DetonateRumbleIntensity="0.7"
+		DetonateRumbleDuration="0.2"
+		ImpactFilterDuration="0.35"
+		ImpactFilterOpacity="0.7"
+		>
+		<Thing OffsetZ="70.0"></Thing>
+	</Projectile>
+
+
+</Weapons>

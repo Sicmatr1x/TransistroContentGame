@@ -1,0 +1,1693 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Name="HighriseArch01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Arch_01"
+			OffsetY="-615"
+			NeverObscuresPlayer="true"
+			Material="Emissive">
+			<Point X="-1077" Y="539"/>
+			<Point X="1148" Y="-495"/>
+			<Point X="1037" Y="-550"/>
+			<Point X="-1133" Y="461"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseArch02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Arch_02"
+			OffsetY="-354"
+			NeverObscuresPlayer="true">
+			<Point X="-727" Y="-347"/>
+			<Point X="703" Y="365"/>
+			<Point X="744" Y="335"/>
+			<Point X="-700" Y="-388"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseBillboard01"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Billboard_01"
+			NeverObscuresPlayer="true"
+			OffsetY="-150">
+			<Point X="-402" Y="183"/>
+			<Point X="-264" Y="243"/>
+			<Point X="409" Y="-84"/>
+			<Point X="283" Y="-157"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseBall01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="HighriseBall01"
+			NeverObscuresPlayer="true"
+			Material="Emissive"
+			OffsetY="-214">
+			<Point X="-334" Y="41"/>
+			<Point X="-11" Y="187"/>
+			<Point X="362" Y="12"/>
+			<Point X="-6" Y="-97"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseCat01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Cat_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="HighriseCube01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Cube_01"
+			NeverObscuresPlayer="true"
+			OffsetY="-235">
+			<Point X="-511" Y="13"/>
+			<Point X="-63" Y="232"/>
+			<Point X="85" Y="232"/>
+			<Point X="528" Y="0"/>
+			<Point X="-13" Y="-275"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseCube02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		CauseGroundShift="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Cube_02"
+			NeverObscuresPlayer="true"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="SPRITE"
+			ShadowOffsetY="-30"
+			ShadowScale="1.0"
+			OffsetY="-150">
+			<Point X="-506" Y="-27"/>
+			<Point X="-4" Y="234"/>
+			<Point X="505" Y="-25"/>
+			<Point X="-9" Y="-257"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseCube06"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		CauseGroundShift="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Cube_06"
+			NeverObscuresPlayer="true"
+			Shadow="null"
+			ShadowAutoScale="SPRITE"
+			ShadowOffsetY="-30"
+			ShadowScale="1.0"
+			OffsetY="-150">
+			<Point X="-506" Y="-27"/>
+			<Point X="-4" Y="234"/>
+			<Point X="505" Y="-25"/>
+			<Point X="-9" Y="-257"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseCube03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Cube_03"
+			NeverObscuresPlayer="true"
+			Shadow="null"
+			ShadowAutoScale="SPRITE"
+			ShadowOffsetY="-13"
+			ShadowScale="1.0"
+			OffsetY="-185">
+			<Point X="-423" Y="-14"/>
+			<Point X="5" Y="202"/>
+			<Point X="436" Y="-16"/>
+			<Point X="-16" Y="-209"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseCube04"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Cube_04"
+			NeverObscuresPlayer="true"
+			OffsetY="-181">
+			<Point X="-388" Y="13"/>
+			<Point X="-118" Y="152"/>
+			<Point X="121" Y="150"/>
+			<Point X="375" Y="11"/>
+			<Point X="366" Y="-62"/>
+			<Point X="116" Y="-155"/>
+			<Point X="-109" Y="-155"/>
+			<Point X="-386" Y="-71"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseCube05"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Cube_05"
+			NeverObscuresPlayer="true"
+			OffsetY="-89">
+			<Point X="-267" Y="68"/>
+			<Point X="-108" Y="154"/>
+			<Point X="98" Y="153"/>
+			<Point X="265" Y="65"/>
+			<Point X="266" Y="-25"/>
+			<Point X="102" Y="-115"/>
+			<Point X="-102" Y="-115"/>
+			<Point X="-265" Y="-27"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseDoor01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Door_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseDoor02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Door_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseDoor02A"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Door_02A">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseDoor02B"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Door_02B">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseDoor03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Door_03"
+			OffsetY="-202">
+			<Point X="132" Y="-14"/>
+			<Point X="86" Y="-59"/>
+			<Point X="-129" Y="66"/>
+			<Point X="-65" Y="88"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseDoor04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Door_04"
+			OffsetY="-202">
+			<Point X="132" Y="-14"/>
+			<Point X="86" Y="-59"/>
+			<Point X="-129" Y="66"/>
+			<Point X="-65" Y="88"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseElevator01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		CauseGroundShift="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Elevator_01">
+			<Point X="-721" Y="171"/>
+			<Point X="239" Y="668"/>
+			<Point X="727" Y="423"/>
+			<Point X="-218" Y="-74"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseElevator02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		CauseGroundShift="true"
+		>
+		<Thing
+			OffsetY="-76"
+			Graphic="Tilesets\\Highrise\\Highrise_Elevator_02">
+			<Point X="521" Y="13"/>
+			<Point X="0" Y="-258"/>
+			<Point X="-510" Y="10"/>
+			<Point X="-2" Y="281"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseElevator01A"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-412"
+			Graphic="Tilesets\\Highrise\\Highrise_Elevator_01A">
+			<Point X="140" Y="55"/>
+			<Point X="-98" Y="-74"/>
+			<Point X="-143" Y="-47"/>
+			<Point X="91" Y="83"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseElevator01B"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-412"
+			Graphic="Tilesets\\Highrise\\Highrise_Elevator_01B">
+			<Point X="140" Y="55"/>
+			<Point X="-98" Y="-74"/>
+			<Point X="-143" Y="-47"/>
+			<Point X="91" Y="83"/>
+
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighriseElevatorButton01"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="ElevatorButton"
+			NeverObscuresPlayer="true"
+			Material="Default">
+			<Point X="-42" Y="-28"/>
+			<Point X="-53" Y="-23"/>
+			<Point X="54" Y="32"/>
+			<Point X="61" Y="28"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighriseElevatorButton01A"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_ElevatorButton_01A"
+			NeverObscuresPlayer="true"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighriseElevatorButton01B"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_ElevatorButton_01B"
+			NeverObscuresPlayer="true"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseFence01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			OffsetY="-170"
+			Graphic="Tilesets\\Highrise\\Highrise_Fence_01">
+			<Point X="191" Y="-78"/>
+			<Point X="127" Y="-113"/>
+			<Point X="-190" Y="57"/>
+			<Point X="-129" Y="99"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseFlourish01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Flourish_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseFlower01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Flower_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLampost01"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Lamp_01"
+			NeverObscuresPlayer="true"
+			OffsetY="-412">
+			<Point X="-83" Y="0"/>
+			<Point X="3" Y="56"/>
+			<Point X="94" Y="1"/>
+			<Point X="2" Y="-48"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLamp02"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Lamp_02"
+			NeverObscuresPlayer="true"
+			OffsetY="-412">
+			<Point X="-83" Y="0"/>
+			<Point X="3" Y="56"/>
+			<Point X="94" Y="1"/>
+			<Point X="2" Y="-48"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLampAmbience01"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		Tallness="0.0"
+		>
+		<Thing
+			Graphic="Dev\\InvisibleTarget"
+			AmbientSound="/SFX/World Sounds/LanternLoop"
+			Scale="0.7"
+			Material="Unlit"
+			Grip="99999999.0"
+			Invisible="true"
+			MeshType="Vertical"
+			VisibleInPlanning="false">
+			<Color Red="1.0" Green="0.1" Blue="0.7" Opacity="1.0"/>
+		</Thing>
+		<Life
+			Invulnerable="true"
+			ShowDamageNumbers="false">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighrisePipeAmbience01"
+		InheritFrom="HighriseLampAmbience01"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/MaintenancePipeAmbience">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighrisePoolAmbience01"
+		InheritFrom="HighriseLampAmbience01"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/PoolAmbience">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseServerAmbience01"
+		InheritFrom="HighriseLampAmbience01"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/ServerAmbience">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseGatewayAmbience01"
+		InheritFrom="HighriseLampAmbience01"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/FairviewDoorAmbience">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseWindAmbience01"
+		InheritFrom="HighriseLampAmbience01"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/WindAmbienceLocal">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseVirusAmbience01"
+		InheritFrom="HighriseLampAmbience01"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/VirusWallAmbience">
+		</Thing>
+	</Obstacle>
+			
+	<Obstacle
+		Name="HighriseLight01"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseLight02"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight02A"
+		InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_02A"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="HighriseLight03"
+	InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="HighriseLight03A"
+	InheritFrom="1_BaseDecalObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_03A"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_04"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight05"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_05"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight06"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_06"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight07"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_07"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight08"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_08"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight09"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_09"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight09A"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_09A"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight09B"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_09B"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight10"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_10"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight11"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_11"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseLight11A"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_11A"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="HighriseLight11B"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Light_11B"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+<Obstacle
+	Name="HighriseNum001"
+	InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num0_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseNum901"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num9_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Highrise_Num801"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num8_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Highrise_Num701"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num7_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Highrise_Num601"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num6_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Highrise_Num501"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num5_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Highrise_Num401"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num4_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Highrise_Num301"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num3_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Highrise_Num201"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num2_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Highrise_Num101"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Num1_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighrisePillar01"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Pillar_01"
+			NeverObscuresPlayer="true"
+			OffsetY="-939">
+			<Point X="-372" Y="-7"/>
+			<Point X="-268" Y="147"/>
+			<Point X="17" Y="179"/>
+			<Point X="314" Y="118"/>
+			<Point X="367" Y="-17"/>
+			<Point X="357" Y="-110"/>
+			<Point X="24" Y="-189"/>
+			<Point X="-354" Y="-107"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighrisePillar02"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Pillar_02"
+			NeverObscuresPlayer="true"
+			OffsetY="-461">
+			<Point X="-357" Y="52"/>
+			<Point X="-184" Y="154"/>
+			<Point X="11" Y="177"/>
+			<Point X="229" Y="129"/>
+			<Point X="338" Y="40"/>
+			<Point X="168" Y="-80"/>
+			<Point X="-207" Y="-78"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighrisePillar03"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Pillar_03"
+			OffsetY="-223"
+			NeverObscuresPlayer="true">
+			<Point X="-142" Y="4"/>
+			<Point X="5" Y="96"/>
+			<Point X="161" Y="16"/>
+			<Point X="10" Y="-65"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighrisePillar04"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Pillar_04"
+			OffsetY="-182">
+			<Point X="-203" Y="4"/>
+			<Point X="1" Y="114"/>
+			<Point X="217" Y="-15"/>
+			<Point X="-14" Y="-92"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighrisePillar05"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Pillar_05"
+			OffsetY="-108">
+			<Point X="-270" Y="19"/>
+			<Point X="16" Y="144"/>
+			<Point X="273" Y="6"/>
+			<Point X="-22" Y="-106"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighrisePool01"
+		InheritFrom="1_BaseImpassableDecalObstacle"
+		Tallness="5"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Pool_01"
+			NeverObscuresPlayer="true"
+			OffsetY="-76">
+			<Point X="-478" Y="-91"/>
+			<Point X="-481" Y="84"/>
+			<Point X="-278" Y="182"/>
+			<Point X="-20" Y="181"/>
+			<Point X="510" Y="-106"/>
+			<Point X="510" Y="-260"/>
+			<Point X="297" Y="-363"/>
+			<Point X="39" Y="-358"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseScaffold01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Scaffold_01"
+      NeverObscuresPlayer="true"
+			OffsetY="-471">
+			<Point X="-566" Y="-227"/>
+			<Point X="495" Y="323"/>
+			<Point X="574" Y="275"/>
+			<Point X="-485" Y="-282"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseScaffold02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Scaffold_02"
+			NeverObscuresPlayer="true"
+      OffsetY="-270">
+			<Point X="105" Y="86"/>
+			<Point X="266" Y="2"/>
+			<Point X="-85" Y="-189"/>
+			<Point X="-258" Y="-95"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseScaffold03"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Scaffold_03"
+      NeverObscuresPlayer="true">
+    </Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseScaffold04"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Scaffold_04"
+      NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseScaffold05"
+		InheritFrom="1_BaseStandingDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Scaffold_05"
+      NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseScaffold06"
+		InheritFrom="1_BaseStandingDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Scaffold_06"
+      NeverObscuresPlayer="true">
+    </Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighriseScaffold07"
+	  InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Highrise\\Highrise_Scaffold_07"
+		  NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighriseScaffold07B"
+	  InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Highrise\\Highrise_Scaffold_07B"
+		  NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+	
+	
+	<Obstacle
+		Name="HighriseSign01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/NeonBuzz"
+			Graphic="Tilesets\\Highrise\\Highrise_Sign_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseSign02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/NeonBuzz"
+			Graphic="Tilesets\\Highrise\\Highrise_Sign_02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+		Name="HighriseGlow01"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Glow_01"
+      Material="Emissive">
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+		Name="HighriseShadow01"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Shadow_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseShadow02"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Shadow_02"
+			VisibleInPlanning="false">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseStairs01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Stairs_01"
+			NeverObscuresPlayer="true"
+			OffsetY="-84">
+			<Point X="-510" Y="-7"/>
+			<Point X="-139" Y="203"/>
+			<Point X="134" Y="209"/>
+			<Point X="518" Y="-11"/>
+			<Point X="111" Y="-175"/>
+			<Point X="-146" Y="-166"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseStairs02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Stairs_02"
+			OffsetY="-56"
+			NeverObscuresPlayer="true">
+			<Point X="-261" Y="83"/>
+			<Point X="-24" Y="203"/>
+			<Point X="260" Y="59"/>
+			<Point X="15" Y="-38"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseStairs03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Stairs_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseStairs04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Stairs_04"
+			OffsetY="-137"
+			NeverObscuresPlayer="true">
+			<Point X="-266" Y="-13"/>
+			<Point X="-47" Y="92"/>
+			<Point X="170" Y="13"/>
+			<Point X="-40" Y="-91"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseShrub01"
+		InheritFrom="1_BaseStandingDecalObstacle">
+		<Thing
+			OffsetY="-90"
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Highrise\\Highrise_Shrub_01">
+			<Point X="-87" Y="-7"/>
+			<Point X="3" Y="34"/>
+			<Point X="88" Y="-14"/>
+			<Point X="-4" Y="-43"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseShrub02"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			OffsetY="-36"
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Highrise\\Highrise_Shrub_02">
+			<Point X="-296" Y="76"/>
+			<Point X="-169" Y="149"/>
+			<Point X="235" Y="-87"/>
+			<Point X="98" Y="-158"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseShrub03"
+		InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			OffsetY="-40"
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Highrise\\Highrise_Shrub_03">
+			<Point X="-3" Y="-16"/>
+			<Point X="-43" Y="2"/>
+			<Point X="2" Y="23"/>
+			<Point X="38" Y="1"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseTile01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Tile_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTrim01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Trim_01">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseTrim02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Trim_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTrim03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			OffsetY="-118"
+			Graphic="Tilesets\\Highrise\\Highrise_Trim_03">
+			<Point X="-232" Y="-178"/>
+			<Point X="-344" Y="-128"/>
+			<Point X="287" Y="181"/>
+			<Point X="359" Y="131"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTrim04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Trim_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTrim05"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Trim_05">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+		Name="HighriseTrim06"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Trim_06">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+    Name="HighriseTrim07"
+    InheritFrom="1_BaseStandingDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Trim_07">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+  Name="HighriseGrate01"
+  InheritFrom="1_BaseStandingDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Grate_01">
+    </Thing>
+  </Obstacle>
+  
+	<Obstacle
+		Name="HighriseRoof01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Roof_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseRoof02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			OffsetY="-2"
+			Graphic="Tilesets\\Highrise\\Highrise_Roof_02">
+			<Point X="517" Y="-26"/>
+			<Point X="6" Y="-265"/>
+			<Point X="-553" Y="21"/>
+			<Point X="-47" Y="268"/>
+		</Thing>/>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseVent01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Vent_01"
+			AmbientSound="/SFX/World Sounds/TurbineAmbience">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseVent02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="RooftopFan"
+			NeverObscuresPlayer="true"
+			AmbientSound="/SFX/World Sounds/TurbineAmbience"
+			>
+			<Point X="-96" Y="2"/>
+			<Point X="3" Y="51"/>
+			<Point X="101" Y="-8"/>
+			<Point X="-4" Y="-46"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="HighriseWeathervane01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Weathervane_01"
+			OffsetY="-251">
+			<Point X="-190" Y="7"/>
+			<Point X="-29" Y="100"/>
+			<Point X="151" Y="0"/>
+			<Point X="-20" Y="-87"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseWineglass01"
+		InheritFrom="1_BaseStandingDecalObstacle">
+		<Thing
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Highrise\\Highrise_Wineglass_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseWindow01"
+		InheritFrom="1_BaseStandingDecalObstacle">
+		<Thing
+			OffsetY="-187"
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Highrise\\Highrise_Window_01">
+			<Point X="-274" Y="142"/>
+			<Point X="292" Y="-138"/>
+			<Point X="268" Y="-154"/>
+			<Point X="-289" Y="123"/>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="HighriseWires01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Wires_01"
+			OffsetY="-325">
+			<Point X="-79" Y="72"/>
+			<Point X="141" Y="-41"/>
+			<Point X="116" Y="-80"/>
+			<Point X="-102" Y="38"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseWires02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Wires_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseRope01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Highrise\\Highrise_Rope_01">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="HighriseGrass01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Grass_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseGrass02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Grass_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseGrass03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Grass_03">
+		</Thing>
+	</Obstacle>
+	
+
+	<Obstacle
+		Name="HighriseGrass04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Grass_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseGrass05"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Grass_05">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTerrain01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTerrain02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTerrain03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTerrain04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTerrain05"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_05">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTerrain06"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_06">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseTerrain07"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_07">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+    Name="HighriseTerrain08"
+    InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_08">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+  Name="HighriseTerrain09"
+  InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_09">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+  Name="HighriseTerrain10"
+  InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_10">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+  Name="HighriseTerrain11"
+  InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_11">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+  Name="HighriseTerrain12"
+  InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_12">
+    </Thing>
+  </Obstacle>
+	
+	
+  <Obstacle
+	  Name="HighriseTerrain13"
+	  InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_13">
+    </Thing>
+  </Obstacle>
+	
+	<Obstacle
+	  Name="HighriseTerrain14"
+	  InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Terrain_14">
+    </Thing>
+  </Obstacle>
+
+
+
+  <Obstacle
+		Name="MonsterHair01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+    <Thing
+			Graphic="Animations\\Monster\\monster_hair_01"
+			NeverObscuresPlayer="true"
+			Material="Emissive">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+		Name="MonsterHair02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+    <Thing
+			Graphic="Animations\\Monster\\monster_hair_02"
+			NeverObscuresPlayer="true"
+			Material="Emissive">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+		Name="MonsterTorso01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+    <Thing
+			Graphic="Animations\\Monster\\monster_torso_01"
+			NeverObscuresPlayer="true"
+      VisibleInPlanning="true"
+			Material="Emissive">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+		Name="MonsterBody01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+    <Thing
+		Graphic="MonsterBodyLooping"
+		NeverObscuresPlayer="true"
+		OffsetY="-137"
+		Material="Emissive">
+		<Point X="-267" Y="102"/>
+		<Point X="315" Y="-66"/>
+		<Point X="258" Y="-175"/>
+		<Point X="-295" Y="-7"/>
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+		Name="MonsterTail02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+    <Thing
+			Graphic="MonsterSurpriseAttackHold"
+			NeverObscuresPlayer="true"
+			Scale="0.5"
+			OffsetY="-136"
+			Material="Emissive">
+      <Point X="-739" Y="-128"/>
+      <Point X="802" Y="277"/>
+      <Point X="-259" Y="-413"/>
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+	  Name="ElevatorBackground"
+	  InheritFrom="1_BaseInvulnerableObstacle">
+		<Thing
+			Graphic="Backgrounds\\ElevatorInfiniteBackground"
+			NeverObscuresPlayer="true"
+			VisibleInPlanning="false"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	
+	<!-- Laboratory Assets -->
+	<Obstacle
+		Name="HighriseVialPopper"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="HighriseVialPopper"
+			NeverObscuresPlayer="true"
+			>
+			<Point X="94" Y="20"/>
+			<Point X="-11" Y="-42"/>
+			<Point X="-92" Y="17"/>
+			<Point X="-2" Y="69"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="HighriseVialDemolisher"
+	InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="HighriseVialDemolisher"
+			NeverObscuresPlayer="true"
+			>
+			<Point X="94" Y="20"/>
+			<Point X="-11" Y="-42"/>
+			<Point X="-92" Y="17"/>
+			<Point X="-2" Y="69"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="HighriseVialSuppressor"
+	InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="HighriseVialSuppressor"
+			NeverObscuresPlayer="true"
+			>
+			<Point X="94" Y="20"/>
+			<Point X="-11" Y="-42"/>
+			<Point X="-92" Y="17"/>
+			<Point X="-2" Y="69"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="HighriseVialSwarm"
+	InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="HighriseVialSwarm"
+			AmbientSound="SFX/World Sounds/VirusGateAmbience"
+			NeverObscuresPlayer="true"
+			>
+			<Point X="94" Y="20"/>
+			<Point X="-11" Y="-42"/>
+			<Point X="-92" Y="17"/>
+			<Point X="-2" Y="69"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="HighriseVialEmpty"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="HighriseVialEmpty"
+			NeverObscuresPlayer="true"
+			>
+			<Point X="94" Y="20"/>
+			<Point X="-11" Y="-42"/>
+			<Point X="-92" Y="17"/>
+			<Point X="-2" Y="69"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighriseBoard01"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-187"
+			Graphic="Tilesets\\Highrise\\Highrise_Board_01"
+			NeverObscuresPlayer="true"
+			Material="Default">
+			<Point X="312" Y="30"/>
+			<Point X="-271" Y="-39"/>
+			<Point X="-312" Y="2"/>
+			<Point X="276" Y="70"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighriseMonitors01"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Monitors_01"
+			NeverObscuresPlayer="true"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighrisePapers01"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Highrise\\Highrise_Papers_01"
+			NeverObscuresPlayer="true"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="HighrisePapers02"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="41"
+			Graphic="Tilesets\\Highrise\\Highrise_Papers_02"
+			NeverObscuresPlayer="true"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+	  Name="HighriseTable01"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-31"
+			Graphic="Tilesets\\Highrise\\Highrise_Table_01"
+			NeverObscuresPlayer="true"
+			Material="Default">
+			<Point X="-308" Y="-50"/>
+			<Point X="-305" Y="133"/>
+			<Point X="-70" Y="213"/>
+			<Point X="307" Y="-53"/>
+			<Point X="300" Y="-110"/>
+			<Point X="17" Y="-237"/>
+		</Thing>
+	</Obstacle>
+
+
+</Obstacles>

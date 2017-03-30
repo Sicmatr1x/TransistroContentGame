@@ -1,0 +1,3927 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+
+  <!-- Auden Prototype -->
+
+	<Animation
+		Name="Muse_Approve" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_approve_01"
+		DefaultScale="0.5"
+		Duration="0.25" HoldLastFrame="true"
+		StartOpacity="0.0" EndOpacity="1.0"
+		ChildAnimation="Button_X">
+	</Animation>
+
+	<Animation
+		Name="Muse_Approve_02" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_approve_01"
+		DefaultScale="0.35"
+		Duration="0.25" HoldLastFrame="true"
+		StartOpacity="0.0" EndOpacity="1.0"
+		Material="Unlit"
+		ChildAnimation="null">
+	</Animation>
+	
+	<Animation
+		Name="Muse_Approve_Picked"
+		InheritFrom="Muse_Approve"
+		StartScale="0.5" EndScale="0.65"
+		Duration="0.25"
+		StartOpacity="0.0" EndOpacity="1.0"
+		Sound="SFX/Menu Sounds/ActivePowerSelect"
+		ChildAnimation="Button_X_Confirm">
+	</Animation>
+	
+	<Animation
+		Name="Muse_Approve_NotPicked" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_approve_01"
+		DefaultScale="0.5"
+		Duration="0.25"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0"
+		EndRed="0.6" EndGreen="0.6" EndBlue="0.6"
+		StartOpacity="1.0" EndOpacity="0.0"
+		ChildAnimation="Button_X_Fade">
+	</Animation>
+
+	<Animation
+		Name="Muse_Disapprove" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_disapprove_01"
+		DefaultScale="0.5"
+		Duration="0.25" HoldLastFrame="true"
+		StartOpacity="0.0" EndOpacity="1.0"
+		ChildAnimation="Button_B">
+	</Animation>
+
+	<Animation
+		Name="Muse_Disapprove_Picked" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_disapprove_01"
+		StartScale="0.5" EndScale="0.65"
+		Duration="0.25"
+		StartOpacity="1.0" EndOpacity="0.25"
+		Sound="SFX/Menu Sounds/ActivePowerSelect"
+		ChildAnimation="Button_B_Confirm">
+	</Animation>
+
+	<Animation
+		Name="Muse_Disapprove_NotPicked" Type="CONSTANT" FilePath="GUI\\Portraits\\muse_disapprove_01"
+		DefaultScale="0.5"
+		Duration="0.25"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0"
+		EndRed="0.6" EndGreen="0.6" EndBlue="0.6"
+		StartOpacity="0.0" EndOpacity="1.0"
+		ChildAnimation="Button_B_Fade">
+	</Animation>
+
+	<Animation
+		Name="TargetEliminated" Type="CONSTANT" FilePath="Cinematic\\cut_frame_target"
+		DefaultScale="0.1"
+		StartScale="2.5" EndScale="1.0"
+		Duration="0.25" HoldLastFrame="true"
+		StartOpacity="0.0" EndOpacity="1.0">
+	</Animation>
+	
+	<Animation
+		Name="Button_A" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_A_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		Duration="0.25"
+		StartOpacity="0.0" EndOpacity="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		Material="Unlit"
+		ChainTo="Button_A2">
+	</Animation>
+
+	<Animation
+		Name="Button_A2" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_A_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		Material="Unlit"
+		Red="1.0" Green="1.0" Blue="1.0">
+	</Animation>
+
+	<Animation
+		Name="Button_B" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_B_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		Duration="0.25"
+		StartOpacity="0.0" EndOpacity="1.0"
+		ChainTo="Button_B2">
+	</Animation>
+	
+	<Animation
+		Name="Button_B2" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_B_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		Red="1.0" Green="1.0" Blue="1.0">
+	</Animation>
+
+	<Animation
+		Name="Button_B_Confirm" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_B_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		FlashSpeed="4.0" FlashMin="0.4" FlashMax="0.85"
+		Red="1.0" Green="1.0" Blue="1.0"
+		Duration="0.25"
+		StartOpacity="1.0" EndOpacity="0.0">
+	</Animation>
+
+	<Animation
+		Name="Button_B_Fade" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_B_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		Duration="0.25"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0"
+		EndRed="0.6" EndGreen="0.6" EndBlue="0.6"
+		StartOpacity="1.0" EndOpacity="0.0">
+	</Animation>
+	
+	<Animation
+		Name="Button_X" InheritFrom="Button_A" FilePath="GUI\\XboxController\\FaceButton_X_Color"
+		ChainTo="Button_X2">
+	</Animation>
+	
+	<Animation
+		Name="Button_X2" InheritFrom="Button_A2" FilePath="GUI\\XboxController\\FaceButton_X_Color">
+	</Animation>
+
+	<Animation
+		Name="Button_X_Confirm" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_X_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		Red="1.0" Green="1.0" Blue="1.0"
+		Duration="0.25"
+		StartOpacity="1.0" EndOpacity="0.0">
+	</Animation>
+
+	<Animation
+		Name="Button_X_Fade" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_X_Color"
+		DefaultScale="0.25"
+		OffsetY="88"
+		Duration="0.25"
+		StartRed="1.0" StartGreen="1.0" StartBlue="1.0"
+		EndRed="0.6" EndGreen="0.6" EndBlue="0.6"
+		StartOpacity="1.0" EndOpacity="0.0">
+	</Animation>
+	
+	<Animation
+		Name="Button_Y" InheritFrom="Button_A" FilePath="GUI\\XboxController\\FaceButton_Y_Color"
+		ChainTo="Button_Y2">
+	</Animation>
+
+	<Animation
+		Name="Button_Y2" InheritFrom="Button_A2" FilePath="GUI\\XboxController\\FaceButton_Y_Color">
+	</Animation>
+
+	<Animation
+		Name="Button_Y_Confirm" InheritFrom="Button_X_Confirm" FilePath="GUI\\XboxController\\FaceButton_Y_Color">
+	</Animation>
+
+	<Animation
+		Name="Button_Dpad" Type="CONSTANT" FilePath="GUI\\PS4Controller\\ps4ControllerDPad"
+		DefaultScale="2.0"
+		OffsetY="0"
+		FlashSpeed="1.4" FlashMin="0.0" FlashMax="0.5"
+		Red="1.0" Green="1.0" Blue="1.0">
+	</Animation>
+
+	<Animation
+		Name="Button_Dpad_Confirm" Type="CONSTANT" FilePath="GUI\\PS4Controller\\ps4ControllerDPad"
+		DefaultScale="2.0"
+		FlashSpeed="4.0" FlashMin="0.4" FlashMax="0.85"
+		Red="1.0" Green="1.0" Blue="1.0"
+		Duration="0.25"
+		StartOpacity="1.0" EndOpacity="0.0">
+	</Animation>
+
+	<Animation
+		Name="Button_Cross" InheritFrom="Button_A" FilePath="GUI\\PS4Controller\\ps4ControllerX" DrawAsOverlay="true"
+		ChainTo="Button_Cross2">
+	</Animation>
+
+	<Animation
+		Name="Button_Cross2" InheritFrom="Button_A2" FilePath="GUI\\PS4Controller\\ps4ControllerX" DrawAsOverlay="true">
+	</Animation>
+
+	<Animation
+		Name="Button_Circle" InheritFrom="Button_A" FilePath="GUI\\PS4Controller\\ps4ControllerCircle" DrawAsOverlay="true"
+		ChainTo="Button_Circle2">
+	</Animation>
+
+	<Animation
+		Name="Button_Circle2" InheritFrom="Button_A2" FilePath="GUI\\PS4Controller\\ps4ControllerCircle" DrawAsOverlay="true">
+	</Animation>
+	
+	<Animation
+		Name="Button_Square" InheritFrom="Button_A" FilePath="GUI\\PS4Controller\\ps4ControllerSquare" DrawAsOverlay="true"
+		ChainTo="Button_Square2">
+	</Animation>
+
+	<Animation
+		Name="Button_Square2" InheritFrom="Button_A2" FilePath="GUI\\PS4Controller\\ps4ControllerSquare" DrawAsOverlay="true">
+	</Animation>
+
+	<Animation
+		Name="Button_SquareDeathScreen" InheritFrom="Button_A2" FilePath="GUI\\PS4Controller\\ps4ControllerSquare"
+		DefaultScale="0.35"
+		DrawAsOverlay="true">
+	</Animation>
+
+	<Animation
+		Name="Button_Square_Confirm" InheritFrom="Button_X_Confirm" FilePath="GUI\\PS4Controller\\ps4ControllerSquare" DrawAsOverlay="true">
+	</Animation>
+	
+	<Animation
+		Name="Button_Triangle" InheritFrom="Button_A" FilePath="GUI\\PS4Controller\\ps4ControllerTriangle" DrawAsOverlay="true"
+		ChainTo="Button_Triangle2">
+	</Animation>
+
+	<Animation
+		Name="Button_Triangle2" InheritFrom="Button_A2" FilePath="GUI\\PS4Controller\\ps4ControllerTriangle" DrawAsOverlay="true">
+	</Animation>
+
+	<Animation
+		Name="Button_Triangle_Confirm" InheritFrom="Button_X_Confirm" FilePath="GUI\\PS4Controller\\ps4ControllerTriangle" DrawAsOverlay="true">
+	</Animation>
+	
+	<Animation
+		Name="CombatOver_Suppressor" Type="CONSTANT" FilePath="GUI\\Portraits\\suppressor_small_01"
+		DefaultScale="1.0"
+		Material="Unlit">
+	</Animation>
+	
+	<Animation
+		Name="CombatOver_Speeder" Type="CONSTANT" FilePath="GUI\\Portraits\\speeder_small_01"
+		DefaultScale="1.0"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Popper" Type="CONSTANT" FilePath="GUI\\Portraits\\popper_small_01"
+		DefaultScale="1.0"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Demolisher" Type="CONSTANT" FilePath="GUI\\Portraits\\demolisher_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Flusher" Type="CONSTANT" FilePath="GUI\\Portraits\\flusher_small_02"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Lobber" Type="CONSTANT" FilePath="GUI\\Portraits\\lobber_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Priest" Type="CONSTANT" FilePath="GUI\\Portraits\\priest_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="CombatOver_Zoner" Type="CONSTANT" FilePath="GUI\\Portraits\\zoner_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Shielder" Type="CONSTANT" FilePath="GUI\\Portraits\\shielder_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Summoner" Type="CONSTANT" FilePath="GUI\\Portraits\\summoner_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="CombatOver_HaunterCloaker" Type="CONSTANT" FilePath="GUI\\Portraits\\cloaker_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_HaunterMover" Type="CONSTANT" FilePath="GUI\\Portraits\\mover_small_02"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_HaunterShooter" Type="CONSTANT" FilePath="GUI\\Portraits\\shooter_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_HaunterHealer" Type="CONSTANT" FilePath="GUI\\Portraits\\healer_small_02"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Monster" Type="CONSTANT" FilePath="GUI\\Portraits\\monster_small_01"
+		DefaultScale="1.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Asher" Type="CONSTANT" FilePath="GUI\\Portraits\\asher_small_02"
+		DefaultScale="0.95"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="CombatOver_Grant" Type="CONSTANT" FilePath="GUI\\Portraits\\grant_small_02"
+		DefaultScale="0.95"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_Sybil" Type="CONSTANT" FilePath="GUI\\Portraits\\sybil_small_02"
+		DefaultScale="0.95"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_XpPipFull" Type="SLIDE" FilePath="GUI\\Widgets\\xp_pip_fill\\xp_pip_fill"
+		NumFrames="8" NumAngles="1"
+		DurationFrames="16"
+		Material="Unlit"
+		HoldLastFrame="true"
+		Loop="false">
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+		<Slide DurationFrames="2"/>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_XpPipFull_Max" Type="CONSTANT" FilePath="GUI\\Widgets\\xp_pip_fill\\xp_pip_max"
+		Material="Unlit"
+		ChildAnimation="XpPipFull_Glow"
+		>
+	</Animation>
+
+	<Animation
+		Name="XpPipFull_Glow" Type="CONSTANT" FilePath="GUI\\Slot_Connecting_Line_Active_Glow"
+		DefaultScale="0.25"
+		StartOpacity="0" EndOpacity="0.25"
+		Duration="1.5" PingPongColor="true"
+		Material="Unlit"
+		Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="CombatOver_XpPreFill" Type="SLIDE" FilePath="GUI\\Widgets\\xp_pip_fill\\xp_pip_fill"
+		NumFrames="8" NumAngles="1"
+		Material="Unlit">
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="0"/>
+		<Slide DurationFrames="999"/>
+	</Animation>
+	
+	<Animation
+		Name="CombatOver_XpPipEmpty" Type="CONSTANT" FilePath="GUI\\Widgets\\xp_pip_unfilled"
+		DefaultScale="1.0">
+	</Animation>
+
+	<Animation
+		Name="EnemyLevel_XpPipPrefill"
+		InheritFrom="CombatOver_XpPreFill"
+		DefaultScale="0.5"
+		ScreenScaling="true"
+		UseAttachedScale="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="EnemyLevel_XpPipFull"
+		InheritFrom="CombatOver_XpPipFull"
+		DefaultScale="0.5"
+		ScreenScaling="true"
+		UseAttachedScale="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="EnemyLevel_XpPipEmpty"
+		InheritFrom="CombatOver_XpPipEmpty"
+		DefaultScale="0.5"
+		ScreenScaling="true"
+		UseAttachedScale="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="EnemyLevel_Gradient"
+		Type="CONSTANT"
+		FilePath="GUI\\Widgets\\lower_right_gradient_01"
+		ScreenScaling="true"
+		UseAttachedScale="false"
+		DefaultScale="0.25"
+		OffsetX="600"
+		OffsetY="-100"
+		>
+	</Animation>
+
+	<Animation
+		Name="ActivePowerHighlightFlash" Type="BOOK" FilePath="GUI\\Widgets\\ActivePowerHighlightFlash\\ActivePowerHighlightFlash"
+		NumFrames="20" NumAngles="1"
+		PlaySpeed="30"
+		Material="Unlit"
+		Loop="false"
+		AllowRestart="true"
+		TransferFrame="true"
+		ChainTo="ActivePowerHighlight"
+		>
+	</Animation>
+	
+	<Animation
+		Name="ActivePowerHighlight" Type="BOOK" FilePath="GUI\\Widgets\\ActivePowerHighlight\\ActivePowerHighlight"
+		NumFrames="45" NumAngles="1"
+		PlaySpeed="30"
+		Material="Unlit"
+		Loop="true"
+		AllowRestart="true">
+	</Animation>
+
+	<Animation
+		Name="ActivePowerHighlightHUDFlash" Type="BOOK" FilePath="GUI\\Widgets\\ActivePowerHighlightHUDFlash\\ActivePowerHighlightHUDFlash"
+		NumFrames="20" NumAngles="1"
+		PlaySpeed="30"
+		Material="Unlit"
+		Loop="false"
+		AllowRestart="true"
+		TransferFrame="true"
+		ChainTo="ActivePowerHighlightHUD"
+		>
+	</Animation>
+
+	<Animation
+		Name="ActivePowerHighlightHUD" Type="BOOK" FilePath="GUI\\Widgets\\ActivePowerHighlightHUD\\ActivePowerHighlightHUD"
+		NumFrames="45" NumAngles="1"
+		PlaySpeed="30"
+		Material="Unlit"
+		Loop="true"
+		AllowRestart="true">
+	</Animation>
+
+	<Animation
+		Name="ActivePowerHighlightHUD_MouseOver" InheritFrom="ActivePowerHighlightHUD"
+		StartOpacity="0.25" EndOpacity="0.6"
+		PingPongColor="true"
+		AllowRestart="false">
+	</Animation>
+
+	<Animation
+		Name="NewCardHighlight" Type="SLIDE" FilePath="GUI\\Widgets\\NewCard\\NewCard"
+		NumFrames="12" NumAngles="1"
+		Material="Unlit"
+		DefaultScale="0.5"
+		Loop="false"
+		ChainTo="NewCardHighlightDelay"
+		>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+	</Animation>
+
+	<Animation
+		Name="NewCardHighlightDelay" Type="CONSTANT" FilePath="blank_invisible"
+		Duration="1"
+		ChainTo="NewCardHighlight"
+		>
+	</Animation>
+		
+	
+	<Animation
+		Name="ActivePowerHighlightMetaSlotAnim" InheritFrom="ActivePowerHighlight"
+		OffsetX="46"
+		OffsetY="121"
+		ChildAnimation="ActivePowerHighlightMetaSlotAnim180"
+		>
+	</Animation>
+
+	<Animation
+		Name="ActivePowerHighlightMetaSlotAnim180"
+		InheritFrom="ActivePowerHighlight"
+		OffsetX="46"
+		OffsetY="121"
+		DefaultAngle="180"
+		>
+	</Animation>
+
+	<Animation
+		Name="ActivePowerHighlightMetaSlot" Type="CONSTANT" FilePath="GUI\\Widgets\\Selection_Reticle_MetaSlotUpgrade"
+		Material="Unlit"
+		Loop="false"
+		HoldLastFrame="true"
+		StartOpacity="0" EndOpacity="1" Duration="0.25"
+		AllowRestart="true"
+		ChildAnimation="ActivePowerHighlightMetaSlotAnim"
+		>
+	</Animation>
+
+	<Animation
+		Name="Power_Melee" Type="CONSTANT" FilePath="GUI\\Icons\\Powers\\power_slam01"
+		DefaultScale="0.35">
+	</Animation>
+
+	<Animation
+		Name="Power_Targeted" Type="CONSTANT" FilePath="GUI\\HUD\\power_targeted_01"
+		DefaultScale="0.35">
+	</Animation>
+
+	<Animation
+		Name="Power_Debuff" Type="CONSTANT" FilePath="GUI\\HUD\\power_debuff_01"
+		DefaultScale="0.35">
+	</Animation>
+
+	<Animation
+		Name="Power_AOE" Type="CONSTANT" FilePath="GUI\\HUD\\power_aoe_01"
+		DefaultScale="0.35">
+	</Animation>
+
+	<Animation
+		Name="A_Button" Type="CONSTANT" FilePath="GUI\\XboxController\\FaceButton_A_Color"
+		StartOpacity="1.0" EndOpacity="0.4" Duration="2.0" Loop="true" PingPongColor="true"
+		DefaultScale="0.5">
+	</Animation>
+
+	<Animation
+		Name="EggSpawn" Type="CONSTANT" FilePath="Cinematic\\Drops01"
+		OffsetZ="60" DefaultScale="0.4"
+		Duration="0.6"
+		StartScale="2.0" EndScale="1.0"
+		StartOpacity="0.3" EndOpacity="1.0"
+		ChainTo="EggSpawnComplete">
+	</Animation>
+
+	<Animation
+		Name="EggSpawnComplete" Type="CONSTANT" FilePath="Cinematic\\Drops01"
+		OffsetZ="60" DefaultScale="0.4"
+		Duration="0.75"
+		FlashSpeed="32.0" FlashMin="0.1" FlashMax="0.9">
+	</Animation>
+	
+	<Animation
+		Name="Egg_Sparkle" Type="CONSTANT" FilePath="Cinematic\\Drops01"
+		OffsetZ="60" DefaultScale="0.4" RandomFlipHorizontal="true"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="null">
+	</Animation>
+
+	<Animation
+		Name="Egg_Sparkle_Spin" Type="CONSTANT" FilePath="Cinematic\\Drops01"
+		RandomDurationMin="0.8" RandomDurationMax="1.0"
+		RotationSpeed="0" Rotate="false" RandomFlipHorizontal="true"
+		OffsetZ="70"
+		RandomScaleMin="0.4" RandomScaleMax="0.5"
+		ChildAnimation="null">
+	</Animation>
+
+	<Animation
+		Name="MetalEgg_Sparkle" Type="CONSTANT" FilePath="Cinematic\\Drops01"
+		OffsetZ="60" DefaultScale="0.6" Red="1.0" Green="0.0" Blue="0.0"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="BleedBubbles">
+	</Animation>
+
+	<Animation
+		Name="CocoonPhaseIn" Type="BOOK" FilePath="Animations\\PopperB\\Idle\\PopperBIdle"
+		NumFrames="32" NumAngles="1"
+		OffsetY="-8"
+		StartScale="2.3" EndScale="1.2" Duration="0.65"
+		StartOpacity="0.3" EndOpacity="1.0"
+		ShakeSpeed="200" ShakeDistance="3">
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="CocoonIdle" Type="BOOK" FilePath="Animations\\PopperB\\Idle\\PopperBIdle"
+		NumFrames="32" NumAngles="1"
+		OffsetY="-8"
+		DefaultScale="1.2"
+		Duration="0.5"
+		ShakeSpeed="200" ShakeDistance="3">
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="CocoonFire" Type="BOOK" FilePath="Animations\\PopperB\\Idle\\PopperBIdle"
+		NumFrames="1" NumAngles="32"
+		OffsetY="-8"
+		DefaultScale="0.8"
+		Rotate="true" RotationSpeed="-800"
+		Duration="0.5" StartOpacity="1.0" EndOpacity="1.0"
+		ShakeSpeed="280" ShakeDistance="20">
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="CocoonDeath" Type="BOOK" FilePath="Animations\\PopperB\\Idle\\PopperBIdle"
+		NumFrames="32" NumAngles="1"
+		OffsetY="-8" Duration="1.5"
+		DefaultScale="1.2"
+		StartScale="1.2" EndScale ="1.8"
+		StartOpacity="1.0" EndOpacity="0.0" PingPongColor="false"
+		Rotate="true" RotationSpeed="1800"
+		ShakeSpeed="280" ShakeDistance="10">
+		<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="EggLegs" Type="BOOK" FilePath="Animations\\Egg\\Legs\\EggLegs"
+		NumFrames="32" DurationFrames="64" NumAngles="1" Loop="true"
+		OffsetZ="70" DefaultScale="0.4" RandomFlipHorizontal="true"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="EggBlinkPause">
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="EggLegsCorrupt" Type="BOOK" FilePath="Animations\\Egg\\LegsCorrupt\\EggLegsCorrupt"
+		NumFrames="32" DurationFrames="64" NumAngles="1" Loop="true"
+		OffsetZ="70" DefaultScale="1" RandomFlipHorizontal="true"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="EggBlinkPause">
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation Name="EggLegsProp" InheritFrom="EggLegs" OnlyWhenVisible="true"/>
+	
+	<Animation
+		Name="EggBlinkPause" Type="BOOK" FilePath="Animations\\Egg\\Blink\\EggBlink"
+		NumFrames="44" StartFrame="1" EndFrame="1" NumAngles="2"
+		RandomDurationMin="2.0" RandomDurationMax="3.0"
+		OffsetZ="0" DefaultScale="0.4"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChainTo="EggBlink"
+		ChildAnimation="null">
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+		<Angle MinAngle="0" MaxAngle="90" AngleNum="1" Mirror="true"/>
+		<Angle MinAngle="90" MaxAngle="180" AngleNum="2" Mirror="true"/>
+		<Angle MinAngle="180" MaxAngle="270" AngleNum="1" Mirror="false"/>
+		<Angle MinAngle="270" MaxAngle="360" AngleNum="2" Mirror="false"/>
+	</Animation>
+
+	<Animation
+		Name="EggBlink" Type="BOOK" FilePath="Animations\\Egg\\Blink\\EggBlink"
+		NumFrames="44" DurationFrames="88" NumAngles="2"
+		OffsetZ="0" DefaultScale="0.4"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChainTo="EggBlinkPause"
+		ChildAnimation="null">
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+		<Angle MinAngle="0" MaxAngle="90" AngleNum="1" Mirror="true"/>
+		<Angle MinAngle="90" MaxAngle="180" AngleNum="2" Mirror="true"/>
+		<Angle MinAngle="180" MaxAngle="270" AngleNum="1" Mirror="false"/>
+		<Angle MinAngle="270" MaxAngle="360" AngleNum="2" Mirror="false"/>
+	</Animation>
+
+	<Animation
+		Name="EggLegsSpawn" Type="CONSTANT" FilePath="Animations\\Egg\\Legs\\EggLegs0001"
+		OffsetZ="70" DefaultScale="0.4"
+		Duration="0.6"
+		FlashSpeed="5.0" FlashMin="0.3" FlashMax="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		ChildAnimation="EggSpawnHead"
+		Sound="null"
+		ChainTo="null">
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="EggLegsSpawnCorrupt" InheritFrom="EggLegsSpawn"
+		FilePath="Animations\\Egg\\LegsCorrupt\\EggLegsCorrupt0001"
+		DefaultScale="1.0"
+		>
+	</Animation>
+	
+	<Animation
+		Name="EggLegsSpawnMonsterBreath" InheritFrom="EggLegsSpawn"
+		StartScale="0" EndScale="1"
+		Duration="0.1"
+		HoldLastFrame="true"
+		VisualFx="null" VisualFxCap="1"
+		ChildAnimation="EggSpawnHeadMonsterBreath"
+		>
+	</Animation>
+
+	<Animation
+		Name="EggLegsSpawnFireFx" Type="CONSTANT" FilePath="blank_invisible"
+		>
+	</Animation>
+		
+
+	<Animation
+		Name="EggSpawnHead" Type="BOOK" FilePath="Animations\\Egg\\Blink\\EggBlink"
+		NumFrames="44" StartFrame="1" EndFrame="1" NumAngles="2" Loop="true"
+		OffsetZ="0" DefaultScale="0.4"
+		FlashSpeed="5.0" FlashMin="0.3" FlashMax="1.0"
+		Red="1.0" Green="1.0" Blue="1.0"
+		>
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+		<Angle MinAngle="0" MaxAngle="90" AngleNum="1" Mirror="true"/>
+		<Angle MinAngle="90" MaxAngle="180" AngleNum="2" Mirror="true"/>
+		<Angle MinAngle="180" MaxAngle="270" AngleNum="1" Mirror="false"/>
+		<Angle MinAngle="270" MaxAngle="360" AngleNum="2" Mirror="false"/>
+	</Animation>
+
+	<Animation
+		Name="EggSpawnHeadMonsterBreath" InheritFrom="EggSpawnHead"
+		Duration="0.1"
+		StartScale="0" EndScale="1"
+		HoldLastFrame="true"
+		VisualFx="MonsterBreathEggParticles" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.2"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonsterBreathEggFog" Type="BOOK" FilePath="Fx\\EnvironmentGroundFog\\EnvironmentGroundFog"
+		NumFrames="55"
+		Material="Emissive"
+		RandomAngle="true" Rotate="true"
+		RandomScaleMin="0.8" RandomScaleMax="1"
+		DefaultScale="0.5"
+		OpacityMin="0.5" OpacityMax="1"
+		StartOpacity="0" EndOpacity="1"
+		PingPongColor="true"
+		RandomDurationMin="1"
+		RandomDurationMax="2"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonsterBreathEggTrails" Type="CONSTANT" FilePath="Particles\\particle_line_04"
+		Material="Emissive"
+		RandomAngle="false" Rotate="true"
+		DefaultScale="1.0"
+		StartOpacity="0.5" EndOpacity="0"
+		StartScaleY="2" EndScaleY="0"
+		Duration="0.24"
+		FlashSpeed="4" FlashMin="0.99" FlashMax="1"
+		VisualFx="null" VisualFxCap="1"
+		RotateWithGravity="false"
+		VelocityMin="10" VelocityMax="20"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonsterBreathEggParticles" Type="CONSTANT" FilePath="Particles\\particle_circle_04"
+		FlashSpeed="4" FlashMin="0.99" FlashMax="1"
+		StartScale="1" EndScale="0"
+		RandomAngle="true"
+		VelocityMin="50" VelocityMax="400"
+		Acceleration="-800"
+		Gravity="150"
+		RandomDurationMin="0.8" RandomDurationMax="1.2"
+		StartOpacity="1" EndOpacity="0"
+		RandomScaleMin="0.25" RandomScaleMax="0.5"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="EggLegsSpawnComplete" Type="CONSTANT" FilePath="Animations\\Egg\\Legs\\EggLegs0001"
+		OffsetZ="70" DefaultScale="0.4"
+		Duration="0.75"
+		FlashSpeed="32.0" FlashMin="0.1" FlashMax="0.9"
+		ChildAnimation="EggSpawnHead">
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="EggHelicopter" Type="BOOK" FilePath="Animations\\Egg\\Helicopter\\EggHelicopter"
+		NumFrames="35" NumAngles="1" Loop="true" RandomFlipHorizontal="true" Rotate="true"
+		DurationFrames="70" GhostInterval="0.02" GhostDuration="0.02"
+		OffsetZ="0" DefaultScale="0.5">
+		<Material Ambient="0" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+
+
+	<Animation
+		Name="EggShield" Type="CONSTANT" FilePath="Particles\\particle_circle_07"
+		ChildAnimation="EggShieldFresnel"
+		Material="Emissive"
+		AttachToOwner="true" UseAttachedScale="false"
+		OffsetZ="65"
+		OffsetFromParentZ="false"
+		EndFx="EggShieldShatter"
+		DefaultScale="0.8"
+		>
+	</Animation>
+	
+	<Animation
+		Name="EggShieldFresnel" Type="BOOK" FilePath="Fx\\ReflectionShield\\ReflectionShield"
+		NumFrames="45" DurationFrames="90" Loop="true"
+		RandomStartFrame="true"
+		Material="Emissive"
+		Green="0" Blue="0"
+		DefaultScale="0.5"
+		ChildAnimation="EggShieldFresnelBottom"
+		>
+	</Animation>
+
+	<Animation
+		Name="EggShieldFresnelBottom" InheritFrom="EggShieldFresnel"
+		ChildAnimation="null"
+		DefaultAngle="180" Opacity="0.25"
+		>
+	</Animation>
+
+	<Animation
+		Name="EggShieldShatter" Type="BOOK" FilePath="Fx\\ReflectionShield\\ReflectionShield"
+		NumFrames="45" DurationFrames="90" Loop="false"
+		TransferFrame="true" PlaySpeed="30" Duration="0.33"
+		Material="Emissive"
+		AttachToOwner="true" UseAttachedScale="false"
+		Green="0" Blue="0"
+		OffsetZ="65"
+		DefaultScale="0.66"
+		StartScale="1" EndScale="1.5"
+		StartOpacity="1" EndOpacity="0"
+		ChildAnimation="EggShieldShatterShine"
+		VisualFx="EggShieldShatterPieces" VisualFxCap="8" VisualFxIntervalMin="0.001" VisualFxIntervalMax="0.001"
+		Sound="/SFX/Enemy Sounds/EnergyShieldDeath"
+		>
+	</Animation>
+
+	<Animation
+		Name="EggShieldCenterShatter" Type="CONSTANT" FilePath="Particles\\particle_circle_07"
+		StartScale="0.8" EndScale="1.4" StartOpacity="1" EndOpacity="0"
+		Material="Emissive"
+		Duration="0.33"
+		>
+	</Animation>
+
+	<Animation
+		Name="EggShieldShatterShine" FilePath="Particles\\particle_flare_white" Type="CONSTANT"
+		Duration="0.2" StartScale="1" EndScale="0"
+		Green="0" Blue="0"
+		Material="Emissive"
+		ScaleX="2"
+		>
+	</Animation>
+
+	<Animation
+		Name="EggShieldShatterPieces" FilePath="Particles\\particle_circle_05" Type="CONSTANT"
+		RandomDurationMin="0.4" RandomDurationMax="0.6"
+		VelocityMin="600" VelocityMax="800" Acceleration="-2000"
+		RandomAngle="true"
+		Rotate="true"
+		Material="Emissive" Green="0" Blue="0"
+		RandomScaleMin="0.4"
+		RandomScaleMax="1"
+		StartScale="1" EndScale="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="AudenParticle01" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_skewed_square01"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="0.1" RandomScaleMax="0.35"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="AudenParticle02"
+		>
+	</Animation>
+
+	<Animation
+		Name="AudenParticle02" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_skewed_square01"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="0.1" RandomScaleMax="0.35"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="AudenParticle03"
+		>
+	</Animation>
+
+	<Animation
+		Name="AudenParticle03" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_skewed_square01"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="0.1" RandomScaleMax="0.35"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="AudenParticle04"
+		>
+	</Animation>
+
+	<Animation
+		Name="AudenParticle04" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_skewed_square01"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="0.1" RandomScaleMax="0.35"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="AudenParticle05"
+		>
+	</Animation>
+
+	<Animation
+		Name="AudenParticle05" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_skewed_square01"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="0.1" RandomScaleMax="0.35"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="-1500" EndOffsetY="-800"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01A"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01A" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="-1500" EndOffsetY="-800" OffsetX="400"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01B"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01B" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="-1500" EndOffsetY="-800" OffsetX="800"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01C"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01C" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="-1500" EndOffsetY="-800" OffsetX="-400"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01D"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01D" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="-1500" EndOffsetY="-800" OffsetX="-800"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01E"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01E" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="2000" EndOffsetY="1450"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01F"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01F" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="2000" EndOffsetY="1450" OffsetX="400"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01G"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01G" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="2000" EndOffsetY="1450" OffsetX="800"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01H"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01H" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="2000" EndOffsetY="1450" OffsetX="-400"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="Transition01I"
+		>
+	</Animation>
+
+	<Animation
+		Name="Transition01I" Type="CONSTANT" FilePath="Cinematic\\Pillar_01"
+		Red="1.0" Green="0.8" Blue="0.0"
+		StartScaleY="2" EndScaleY="2.1"
+		StartScaleX="0.6" EndScaleX="1.21"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartOffsetY="2000" EndOffsetY="1450" OffsetX="-800"
+		Duration="2.4"
+		Material="Unlit"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="SpeechIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Talk"
+		OffsetZ="180"
+    OffsetX="20"
+    ZWobbleDistance="5" ZWobbleSpeed="10"
+		DefaultScale="1.0" UseAttachedScale="false"
+    Duration="3.0"
+    DieWithOwner="true"
+		Mirror="true"
+		>
+  </Animation>
+
+	<Animation
+		Name="Buoy" Type="CONSTANT" FilePath="Cinematic\\Temp_Buoy01"
+		ZWobbleDistance="10" ZWobbleSpeed="10"
+		OriginY="300" OriginX="10"
+		StartAngle="10" EndAngle="-15" PingPongAngle="true"
+		RandomDurationMin="2.0" RandomDurationMax="4.0" Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Piling" Type="CONSTANT" FilePath="Cinematic\\Piling_01"
+		>
+	</Animation>
+
+	<Animation
+		Name="Seagull_Flying" Type="CONSTANT" FilePath="Cinematic\\Seagull_01"
+		RandomDurationMin="10" RandomDurationMax="10"
+		StartScale="0.8" EndScale="1"
+		StartOffsetX="0" EndOffsetX="-4000"
+		StartScaleY="1" EndScaleY="0.5"
+		StartOffsetY="0" EndOffsetY="800"
+		ZWobbleDistance="15" ZWobbleSpeed="10"
+		ShakeSpeed="100" ShakeDistance="1"
+		>
+	</Animation>
+	
+	<Animation
+		Name="Hammer_Overhead_Crater" Type="CONSTANT" FilePath="Decals\\Crater_01"
+		DrawAsDecal="true" RandomAngle="true" RandomFlipHorizontal="true"
+		Duration="1.5"
+		RandomScaleMin="0.4" RandomScaleMax="0.6"
+		StartOpacity="1.0" EndOpacity="0.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Meteor" Type="CONSTANT" FilePath="Projectiles\\Cannonball2"
+		OffsetY="0" 
+		DefaultScale="0.3"
+		ChildAnimation="Meteor_Tail"
+		>
+	</Animation>
+
+	<Animation
+		Name="Meteor_Tail" Type="CONSTANT" FilePath="Projectiles\\Meteor\\Meteor_Tail"
+		OffsetY="-160"
+		>
+	</Animation>
+
+	<Animation
+		Name="Ice01" Type="CONSTANT" FilePath="TerrainTiles\\EdgeTileset\\Edge_Icicle01"
+		OffsetY="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Ice02" Type="CONSTANT" FilePath="TerrainTiles\\EdgeTileset\\Edge_Icicle02"
+		OffsetY="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Ice03" Type="CONSTANT" FilePath="TerrainTiles\\EdgeTileset\\Edge_Icicle03"
+		OffsetY="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="FragmentWithSmoke" Type="CONSTANT" FilePath="Loot\\Fragment_Yellow\\Fragment_Test0001"
+		OffsetY="-23"
+		RandomScaleMin="0.65" RandomScaleMax="1.0"
+		ChildAnimation="Fragment_Particles"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="FragmentWithSmokeB" Type="CONSTANT" FilePath="Loot\\Fragment_Yellow\\Fragment_Test0002"
+		OffsetY="-23"
+		RandomScaleMin="0.85" RandomScaleMax="1.25"
+		ChildAnimation="Fragment_Particles"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="FragmentWithSmokeC" Type="CONSTANT" FilePath="Loot\\Fragment_Yellow\\Fragment_Test0003"
+		OffsetY="-23"
+		RandomScaleMin="0.75" RandomScaleMax="1.25"
+		ChildAnimation="Fragment_Particles"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="Fragment_Particles" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		OffsetY="-23"
+		RandomDurationMin="1.0" RandomDurationMax="1.2"
+		StartOffsetZ="0" EndOffsetZ="50"
+		Loop="true"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomOffsetX="10" RandomOffsetY="10"
+		OnlyWhenVisible="true"
+		>
+	</Animation>
+	
+	<!-- Monument Piece -->
+
+	<Animation
+		Name="MonumentPiece" Type="CONSTANT" FilePath="Loot\\Monument_Piece01"
+		OffsetZ="140"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonumentPiece_Particle1" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="MonumentPiece_Particle2"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonumentPiece_Particle2" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="MonumentPiece_Particle3"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonumentPiece_Particle3" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="MonumentPiece_Particle4"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonumentPiece_Particle4" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="MonumentPiece_Particle5"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonumentPiece_Particle5" Type="CONSTANT" FilePath="ForegroundFlyers\\blue_spark"
+		Loop="true"
+		StartOpacity="0.0" EndOpacity="1.0" PingPongColor="true"
+		RandomDurationMin="1.2" RandomDurationMax="1.8"
+		RandomScaleMin="1.0" RandomScaleMax="1.3"
+		Red="0.8" Green="1.0" Blue="1.0"
+		StartOffsetZ="75" EndOffsetZ="175"
+		RandomOffsetX="20" RandomOffsetY="40"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonumentPiece_Upgrade" Type="CONSTANT" FilePath="Loot\\Monument_Piece02"
+		OffsetZ="140"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1"
+		>
+	</Animation>
+
+	<Animation
+		Name="Longbow_Kit" Type="CONSTANT" FilePath="Loot\\Longbow_Kit"
+		OffsetZ="100"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+	    ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Shield_Kit" Type="CONSTANT" FilePath="Loot\\Shield_Kit"
+		OffsetZ="100"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+	    ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Whip_Kit" Type="CONSTANT" FilePath="Loot\\Whip_Kit"
+		OffsetZ="70"
+		DefaultScale="0.75"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		>
+	</Animation>
+
+	<Animation
+		Name="Hammer_Kit" Type="CONSTANT" FilePath="Loot\\Hammer_Kit"
+		OffsetZ="100"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Repeater_Kit" Type="CONSTANT" FilePath="Loot\\Repeater_Kit"
+		OffsetZ="60"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Revolvers_Kit" Type="CONSTANT" FilePath="Loot\\Revolvers_Kit"
+		OffsetZ="100"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1"
+		>
+	</Animation>
+
+	<Animation
+		Name="Rifle_Kit" Type="CONSTANT" FilePath="Loot\\Rifle_Kit"
+		OffsetZ="140"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1"
+		>
+	</Animation>
+
+	<Animation
+		Name="Mine_Kit" Type="CONSTANT" FilePath="Animations\\Mine\\Mine0001"
+		OffsetZ="80"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Grenade_Kit" Type="CONSTANT" FilePath="Loot\\Grenade_Kit"
+		OffsetZ="80"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Mortar_Kit" Type="CONSTANT" FilePath="Loot\\Mortar_Kit"
+		OffsetZ="80"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Ram_Kit" Type="CONSTANT" FilePath="Loot\\Ram_Kit"
+		OffsetZ="200" OffsetX="-20"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Cannon_Kit" Type="CONSTANT" FilePath="Loot\\Cannon_Kit"
+		OffsetZ="80"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Machete_Kit" Type="CONSTANT" FilePath="Loot\\Machete_Kit"
+		OffsetZ="120"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Spear_Kit" Type="CONSTANT" FilePath="Loot\\Spear_Kit"
+		OffsetZ="180"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Flamethrower_Kit" Type="CONSTANT" FilePath="Loot\\Flamethrower_Kit"
+		OffsetZ="80"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Shotgun_Kit" Type="CONSTANT" FilePath="Loot\\Shotgun_Kit"
+		OffsetZ="120"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="MineDeploy" Type="CONSTANT" FilePath="Animations\\Mine\\Mine0001"
+		Duration="0.15"
+		StartOpacity="0.0" EndOpacity="1.0"
+		OffsetZ="0"
+		ZWobbleDistance="0" ZWobbleSpeed="0"
+		ChainTo="ActiveMine"
+		>
+	</Animation>
+
+	<Animation
+		Name="ActiveMine" Type="BOOK" FilePath="Animations\\Mine\\Mine"
+		NumFrames="64" NumAngles="1" Rotate="false" Loop="true"
+		OffsetZ="0"
+		ZWobbleDistance="0" ZWobbleSpeed="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="TrippedMine" Type="BOOK" FilePath="Animations\\Mine\\Mine"
+		NumFrames="64" NumAngles="1" Rotate="false" Loop="true"
+		FlashSpeed="8.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="0.0" Blue="0.0"
+		OffsetZ="0"
+		ZWobbleDistance="0" ZWobbleSpeed="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="OrbProjectileBTripped" Type="CONSTANT" FilePath="Particles\\particle_pizza_02"
+		DefaultScale="1"
+		Duration="0.5"
+		StartScale="1.2" EndScale="3.0" PingPongScale="false"
+		FlashSpeed="8.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="1.0" Blue="1.0"
+		Loop="false"
+		Rotate="true" RotationSpeed="-150"
+		>
+	</Animation>
+
+	<Animation
+		Name="MartyrdomGrenade" Type="CONSTANT" FilePath="Loot\\Grenade_Kit"
+		Rotate="true" RotationSpeed="-360" Mirror="true"
+		Loop="true"
+		FlashSpeed="8.0" FlashMin="0.3" FlashMax="0.7" Red="1.0" Green="0.0" Blue="0.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="MartyrdomGrenadeGreen" Type="CONSTANT" FilePath="Loot\\Grenade_Kit"
+		Rotate="true" RotationSpeed="-360" Mirror="true"
+		Loop="true"
+		FlashSpeed="8.0" FlashMin="0.3" FlashMax="0.7" Red="0.0" Green="1.0" Blue="0.0"
+		>
+	</Animation>	
+
+	<Animation
+		Name="Flask" Type="CONSTANT" FilePath="Loot\\Flask_Glow"
+		OffsetY="-32"
+		Duration="1.5" Loop="true"
+		DefaultScale="1.05"
+		StartOpacity="1.0" EndOpacity="0.0" PingPongColor="true"
+		ChildAnimation="Flask_Bottle"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="Flask_Bottle" Type="CONSTANT" FilePath="Loot\\Flask"
+		OffsetY="-32"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="SpecialWeaponAmmo" Type="CONSTANT" FilePath="Loot\\FlaskRed_Glow"
+		OffsetY="-32"
+		Duration="1.5" Loop="true"
+		DefaultScale="1.05"
+		StartOpacity="1.0" EndOpacity="0.0" PingPongColor="true"
+		ChildAnimation="SpecialWeaponAmmo_Bottle"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="SpecialWeaponAmmo_Bottle" Type="CONSTANT" FilePath="Loot\\FlaskRed"
+		OffsetY="-32"
+		Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="WeaponSkillBook" Type="CONSTANT" FilePath="Loot\\Blueprint_Temple"
+		OffsetZ="80"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Jump_Kit" Type="CONSTANT" FilePath="GUI\\Shell\\tonic_hopscotch"
+		OffsetZ="80"
+		DefaultScale="0.7"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<!-- Souvenir Animations -->
+
+	<Animation
+		Name="Crystal_Barrette" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Barette"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Gasfella_Hood" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Hood"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Spyglass" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Spyglass"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Spice_Jar" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Spices"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Ura_Sigil" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Sigil"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Marshals_Badge" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Badge"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Plush_Pyth" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Pyth"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Hidebound_Journal" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Journal"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Fractured_Monument" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Monument"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Gramophone" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Gramophone"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Anklegator_Egg" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Egg"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Sealed_Note" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Note"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Pecker_Nest" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Nest"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Ceramic_Stockpot" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Pot"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Zia_Harp" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Harp"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Childs_Drawing" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\\Lush_Con_Portrait"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Smoking_Pipe" Type="CONSTANT" FilePath="TerrainTiles\\LushTileset\Lush_Con_Pipe"
+		OffsetZ="60" DefaultScale="0.16"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<!-- Seed Animations -->
+
+	<Animation
+		Name="Hammer_Seed" Type="CONSTANT" FilePath="Loot\\something_heavy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Repeater_Seed" Type="CONSTANT" FilePath="Loot\\something_nasty"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Longbow_Seed" Type="CONSTANT" FilePath="Loot\\something_stringy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Machete_Seed" Type="CONSTANT" FilePath="Loot\\something_sharp"
+		OffsetZ="90" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Shotgun_Seed" Type="CONSTANT" FilePath="Loot\\something_twitchy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Revolvers_Seed" Type="CONSTANT" FilePath="Loot\\something_greasy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Spear_Seed" Type="CONSTANT" FilePath="Loot\\something_sturdy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Rifle_Seed" Type="CONSTANT" FilePath="Loot\\something_fancy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Flamethrower_Seed" Type="CONSTANT" FilePath="Loot\\something_foul"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Mortar_Seed" Type="CONSTANT" FilePath="Loot\\something_hot"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+
+	<Animation
+		Name="Cannon_Seed" Type="CONSTANT" FilePath="Loot\\something_wrong"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		ChildAnimation="MonumentPiece_Particle1">
+	</Animation>
+	
+	<Animation
+		Name="Mine_Seed" Type="CONSTANT" FilePath="Loot\\something_twitchy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		>
+	</Animation>
+
+	<Animation
+		Name="Shield_Seed" Type="CONSTANT" FilePath="Loot\\something_sturdy"
+		OffsetZ="60" DefaultScale="0.3"
+		ZWobbleDistance="8" ZWobbleSpeed="8"
+		>
+	</Animation>
+
+	<!-- Misc -->
+
+	<Animation
+		Name="HeartBubblesOld" Type="CONSTANT" FilePath="GUI\\HUD\\friendly"
+		DieWithOwner="true"
+		Loop="true"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.4" RandomScaleMax="0.6"
+		StartOffsetZ="-20" EndOffsetZ="30"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="HeartBubbles_2"
+		>
+	</Animation>
+
+	<Animation
+		Name="HeartBubbles_2"
+		InheritFrom="HeartBubblesOld"
+		DieWithOwner="false"
+		ChildAnimation="HeartBubbles_3"
+		>
+	</Animation>
+
+	<Animation
+		Name="HeartBubbles_3"
+		InheritFrom="HeartBubbles_2"
+		ChildAnimation="HeartBubbles_4"
+		>
+	</Animation>
+
+	<Animation
+		Name="HeartBubbles_4"
+		InheritFrom="HeartBubbles_2"
+		ChildAnimation="null"
+		>
+	</Animation>
+	
+	<!-- Indicators -->
+
+	<Animation
+		Name="TargetIndicator" Type="CONSTANT" FilePath="GUI\\HUD\\Target_Indicator"
+		OffsetZ="100"
+		ZWobbleDistance="16" ZWobbleSpeed="32"
+		DefaultScale="1.25" UseAttachedScale="false"
+		DieWithOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="ArrowIndicator" Type="CONSTANT" FilePath="GUI\\HUD\\arrow"
+		OffsetZ="120"
+		StartOffsetZ="1000" EndOffsetZ="0" Duration="0.3" HoldLastFrame="true"
+		ZWobbleDistance="16" ZWobbleSpeed="32" Sound="HintArrow"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="ArrowIndicator2" Type="CONSTANT" FilePath="GUI\\Widgets\\arrow_01"
+		OffsetZ="120"
+		StartOffsetZ="1000" EndOffsetZ="120" Duration="0.3" HoldLastFrame="true"
+		DefaultScale="0.6" UseAttachedScale="false"
+		ZWobbleDistance="16" ZWobbleSpeed="32"
+		StartAngle="89.9" EndAngle="90"
+		FlashSpeed="2" FlashMin="0.3" FlashMax="0.8"
+		Red="1.0" Green="1.0" Blue="1.0"
+		DieWithOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="ArrowIndicator3" Type="CONSTANT" FilePath="GUI\\Widgets\\arrow_01"
+		OffsetZ="120"
+		StartOffsetZ="1000" EndOffsetZ="120" Duration="0.3" HoldLastFrame="true"
+		DefaultScale="0.6" UseAttachedScale="false"
+		ZWobbleDistance="16" ZWobbleSpeed="32"
+		StartAngle="89.9" EndAngle="90"
+		FlashSpeed="2" FlashMin="0.3" FlashMax="0.8"
+		Red="1.0" Green="1.0" Blue="1.0"
+		DieWithOwner="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="OvermapArrowIndicator" Type="CONSTANT" FilePath="GUI\\HUD\\arrow"
+		OffsetZ="120"
+		StartOffsetZ="1000" EndOffsetZ="0" Duration="0.3" HoldLastFrame="true"
+		ZWobbleDistance="16" ZWobbleSpeed="32" Sound="HintArrow"
+		DefaultScale="0.68" UseAttachedScale="false"
+		DieWithOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="NovaIndicator" Type="CONSTANT" FilePath="GUI\\Shell\\Icon_Highlight"
+		Duration="2.0"
+		OffsetZ="-50"
+		DrawAsDecal="true"
+		StartScale="0.0" EndScale="50.0"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Loop="true"
+		DieWithOwner="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="AlertIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_alerted"
+		OffsetZ="120"
+		ZWobbleDistance="16" ZWobbleSpeed="32"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true"
+		Mirror="true"
+        Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="ConversationAlertIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_alerted"
+		OffsetZ="200"
+		ZWobbleDistance="8" ZWobbleSpeed="16"
+		DefaultScale="0.7" UseAttachedScale="false"
+		DieWithOwner="true"
+		Mirror="true"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Blank" Type="CONSTANT" FilePath="blank" 
+		Opacity="0.0"
+		>
+	</Animation>
+	
+	<!-- Decoy -->
+
+	<Animation
+		Name="DecoyPhaseIn" Type="CONSTANT" FilePath="Attackers\\decoy"
+		OriginX="58" OriginY="137"
+		Mirror="true"
+		Loop="true"
+		StartOffsetZ="1600" EndOffsetZ="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="Decoy" Type="CONSTANT" FilePath="Attackers\\decoy"
+		OriginX="58" OriginY="137"
+		Mirror="true"
+		Loop="true"
+		RandomDurationMin="3.25" RandomDurationMax="3.75"
+		StartAngle="-5" EndAngle="5" PingPongAngle="true" Rotate="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="GapGeneratorFill" Type="CONSTANT" FilePath="Fx\\GapGenerator\\GapGeneratorFill" UseAttachedScale="false"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.25"
+		DefaultScale="5.0"
+        Opacity="0.98"
+		OffsetY="100"
+		DrawAsFlying="true"
+		HoldLastFrame="true"
+		ChainTo="GapGeneratorFillFadeOut"
+		>
+	</Animation>
+
+	<Animation
+		Name="GapGeneratorFillFadeOut" Type="CONSTANT" FilePath="Fx\\GapGenerator\\GapGeneratorFill" UseAttachedScale="false"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.25"
+		DefaultScale="5.0"
+        Opacity="0.98"
+		OffsetY="100"
+		DrawAsFlying="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="GapGeneratorHole" Type="CONSTANT" FilePath="Fx\\GapGenerator\\GapGeneratorHole" UseAttachedScale="false"
+		StartOpacity="0.0" EndOpacity="1.0" Duration="0.25"
+		DefaultScale="5.0"
+        Opacity="0.98"
+		OffsetY="100"
+		DrawAsFlying="true"
+		HoldLastFrame="true"
+		ChainTo="GapGeneratorHoleFadeOut"
+		>
+	</Animation>
+
+	<Animation
+		Name="GapGeneratorHoleFadeOut" Type="CONSTANT" FilePath="Fx\\GapGenerator\\GapGeneratorHole" UseAttachedScale="false"
+		StartOpacity="1.0" EndOpacity="0.0" Duration="0.25"
+		DefaultScale="5.0"
+        Opacity="0.98"
+		OffsetY="100"
+		DrawAsFlying="true"
+		>
+	</Animation>
+	
+	<!-- Status Indicators -->
+
+	<Animation
+		Name="TargetAcquiredIndicator" Type="CONSTANT" FilePath="blank" UseAttachedScale="false"
+		ChainTo="TargetAcquiredIndicatorGraphic" RandomDurationMin="0.01" RandomDurationMax="0.15"
+        Material="Unlit"
+		Opacity="0.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="TargetAcquiredIndicatorGraphic" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_alerted"
+		StartOffsetZ="100" EndOffsetZ="118" Sound="null"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="0.5" EndScale="0.58"
+		StartGreen="1.0" EndGreen="0.1"
+		StartBlue="1.0" EndBlue="0.1"
+		Duration="0.9" DieWithOwner="true" UseAttachedScale="false"
+		Mirror="true"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="GuideConversationGraphic" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_alerted"
+		StartOffsetZ="100" EndOffsetZ="118" Sound="null"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="0.5" EndScale="0.58"
+		StartGreen="1.0" EndGreen="0.1"
+		StartBlue="1.0" EndBlue="0.1"
+		Duration="0.9" DieWithOwner="true" UseAttachedScale="false"
+		Loop="true"
+		Mirror="true"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TargetLostIndicator" Type="CONSTANT" FilePath="blank" UseAttachedScale="false"
+		ChainTo="TargetLostIndicatorGraphic" RandomDurationMin="0.01" RandomDurationMax="0.15"
+        Material="Unlit"
+		Opacity="0.0"
+		>
+	</Animation>
+
+	<Animation
+		Name="TargetLostIndicatorGraphic" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_targetlost"
+		StartOffsetZ="175" EndOffsetZ="193" Sound="null"
+		StartOpacity="1.0" EndOpacity="0.0"
+		StartScale="0.5" EndScale="0.58"
+		StartRed="1.0" EndRed="0.1"
+		StartGreen="1.0" EndGreen="0.1"
+		Duration="0.9" DieWithOwner="true" UseAttachedScale="false"
+		Mirror="false"
+        Material="Unlit"
+        >
+	</Animation>
+
+	<Animation
+		Name="StunIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_stun"
+		OffsetZ="60"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="StunExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="StunExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_stun"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="StunIndicatorOld" Type="CONSTANT" FilePath="GUI\\HUD\\stun"
+		OffsetZ="50"
+		ZWobbleDistance="16" ZWobbleSpeed="32"
+		RotationSpeed="360" Rotate="true"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PoisonIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_poison"
+		OffsetZ="60"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="PoisonExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PoisonExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_poison"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PoisonIndicatorOld" Type="CONSTANT" FilePath="GUI\\HUD\\skull"
+		OffsetZ="20"
+		ZWobbleDistance="8" ZWobbleSpeed="16"
+		DefaultScale="0.8" UseAttachedScale="false"
+		DieWithOwner="true"
+		ChildAnimation="PoisonBubbles"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PoisonBubbles" Type="CONSTANT" FilePath="GUI\\HUD\\poison_bubble"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="PoisonBubbles_2"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PoisonBubbles_2" Type="CONSTANT" FilePath="GUI\\HUD\\poison_bubble"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="PoisonBubbles_3"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PoisonBubbles_3" Type="CONSTANT" FilePath="GUI\\HUD\\poison_bubble"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="PoisonBubbles_4"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PoisonBubbles_4" Type="CONSTANT" FilePath="GUI\\HUD\\poison_bubble"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="BleedIndicator" Type="CONSTANT" FilePath="GUI\\HUD\\skull"
+		OffsetZ="20"
+		ZWobbleDistance="8" ZWobbleSpeed="16"
+		DefaultScale="0.8" UseAttachedScale="false"
+		DieWithOwner="true"
+		ChildAnimation="BleedBubbles"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="BleedBubbles" Type="CONSTANT" FilePath="GUI\\HUD\\bleed"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="BleedBubbles_2"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="BleedBubbles_2" Type="CONSTANT" FilePath="GUI\\HUD\\bleed"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="BleedBubbles_3"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="BleedBubbles_3" Type="CONSTANT" FilePath="GUI\\HUD\\bleed"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="BleedBubbles_4"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="BleedBubbles_4" Type="CONSTANT" FilePath="GUI\\HUD\\bleed"
+		DieWithOwner="true"
+		Loop="true"
+		OffsetZ="55"
+		StartScale="0.9" EndScale="1.5"
+		StartOpacity="1.0" EndOpacity="0.0"
+		RandomDurationMin="0.4" RandomDurationMax="0.7"
+		RandomScaleMin="0.7" RandomScaleMax="1.1"
+		StartOffsetZ="0" EndOffsetZ="80"
+		RandomOffsetX="25" RandomOffsetY="20"
+		ChildAnimation="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="RootedIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_immobile"
+		OffsetZ="10"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="RootedExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="RootedExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_immobile"
+		StartOffsetZ="0" EndOffsetZ="5"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="LifestealIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_lifesteal"
+		OffsetZ="70"
+		DefaultScale="0.75" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="LifestealExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="LifestealExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_lifesteal"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="0.75" EndScale="0.85"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="HealingIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_heal"
+		OffsetZ="60"
+		ZWobbleDistance="16" ZWobbleSpeed="32"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="HealingExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="HealingExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_heal"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="DmgUpIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_atk_up"
+		OffsetZ="80"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="DmgUpExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DmgUpExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_atk_up"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DmgDownIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_dmg_down"
+		OffsetZ="80"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="DmgDownExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DmgDownExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_dmg_down"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="DefUpIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_def_up"
+		OffsetZ="80"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="DefUpExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DefUpExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_def_up"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DefDownIndicator" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_def_down"
+		OffsetZ="80"
+		DefaultScale="1.0" UseAttachedScale="false"
+		DieWithOwner="true" Mirror="false"
+		ChainTo="DefDownExpired"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="DefDownExpired" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_def_down"
+		StartOffsetZ="0" EndOffsetZ="15"
+		StartScale="1.0" EndScale="1.1"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="0.4" Mirror="false" UseAttachedScale="false"
+		ChainTo="null"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="HeartBubbles" Type="CONSTANT" FilePath="GUI\\Icons\\status\\status_loyal"
+		OffsetZ="40"
+		ZWobbleDistance="16" ZWobbleSpeed="32"
+		DefaultScale="0.58"
+		StartRed="1.0" EndRed="0.1"
+		Duration="9999"
+		DieWithOwner="true" UseAttachedScale="false"
+        Material="Unlit"
+		>
+	</Animation>
+	
+	<!-- PC UI Animations -->
+
+	<Animation
+		Name="MoveMarker" Type="CONSTANT" FilePath="Particles\\particle_emptySquare_02"
+		OffsetX="0"
+		DrawAsDecal="true"
+		Rotate="true" RotationSpeed="0"
+		RandomDurationMin="0.2"
+		RandomDurationMax="0.35"
+		PingPongScale="true"
+		StartOpacity="0.5" EndOpacity="0"
+		StartScale="0" EndScale="0.33"
+		StartRed="1.0" EndRed="0.25"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="PathMarker" Type="CONSTANT" FilePath="Particles\\particle_line_01"
+		Material="Unlit"
+		Duration="2"
+		DrawAsDecal="true"
+		DefaultAngle="90"
+		DefaultScale="0.15"
+		Rotate="true"
+		StartScaleY="30" EndScaleY="20"
+		RandomScaleMin="1" RandomScaleMax="1"
+		StartRed="1" EndRed="0"
+		StartGreen="1" EndGreen="0.5"
+		StartBlue="0.8" EndBlue="0.5"
+		PingPongColor="true"
+		PingPong="true"
+		Loop="true"
+		>
+	</Animation>
+
+	<!-- Connected Experience Path Markers -->
+	<Animation
+		Name="ConnectedPathMarker" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_isoSquare_01"
+		Duration="0.2"
+		DrawAsDecal="true"
+		DefaultScale="1.25"
+		Opacity="0.4"
+		Rotate="true"
+		>
+        <Material Directionality="0"/>
+    </Animation>
+
+    <Animation
+		Name="ConnectedPathMarker_2" Type="CONSTANT" FilePath="ForegroundFlyers\\cinder_1"
+		Duration="0.2"
+		DrawAsDecal="true"
+		DefaultScale="0.1"
+		Opacity="0.4"
+		Rotate="true"
+		Red="1.0"
+		Green="1.0"
+		Blue="1.0"
+		>
+        <Material Directionality="0"/>
+    </Animation>
+
+    <Animation
+        Name="LivePathMarker" Type="CONSTANT" FilePath="Particles\\particle_flare_phasein"
+		Material="Unlit"
+        Duration="2" 
+		StartScale="1" EndScale="0.33"
+		Loop="false"
+		Opacity="0.5"
+		StartOpacity="1" EndOpacity="0"
+		HoldEndColorFraction="0.9"
+		RandomScaleMin="0.6"
+		RandomScaleMax="1.1"
+        DrawAsDecal="true"
+        DefaultScale="0.1"
+		ChildAnimation="LivePathMarkerB"
+		VisualFx="LivePathMarkerParticles" VisualFxIntervalMin="0.0001" VisualFxIntervalMax="0.0002"
+		VisualFxCap="1"
+		SortVisualFx="true"
+	    >
+    </Animation>
+
+	
+	<Animation
+		Name="LivePathMarkerParticles" Type="CONSTANT" FilePath="Particles\\particle_green_glow_02"
+		RandomDurationMin="0.2"
+		RandomDurationMax="0.8"
+		RandomAngle="true"
+		RandomAngleMin="0"
+		RandomAngleMax="180"
+		Gravity="500"
+		Rotate="true"
+		RotateWithGravity="true"
+		StartScaleX="2"
+		EndScaleX="1"
+		VelocityMin="100"
+		VelocityMax="200"
+		OpacityMin="0.1"
+		OpacityMax="1.0"
+		Acceleration="-200"
+		StartScale="1"
+		EndScale="0"
+		StartRed="1" EndRed="0"
+		StartGreen="1" EndGreen="0.5"
+		RandomScaleMin="0.05"
+		RandomScaleMax="0.45"
+		Material="Emissive"
+		RandomOffsetX="2"
+		RandomOffsetY="2"
+		SortVisualFx="true"
+		Loop="false"
+		StartOffsetY="0" EndOffsetY="1"
+
+		>
+	</Animation>
+
+	<Animation 
+		Name="LivePathMarkerB"
+		InheritFrom="LivePathMarker"
+		ScaleX="1"
+		ChildAnimation="null"
+		FilePath="Particles\\particle_green_glow_02"
+		StartOffsetY="0"
+		EndOffsetY="-10"
+		StartOffsetX="0"
+		EndOffsetX="10"
+		Opacity="0.5"
+		Duration="1"
+		EndScale="0.66"
+		EndGreen="0.66"
+		HoldEndColorFraction="0"
+		EndOpacity="0.99"
+		ChainTo="LivePathMarkerC"
+		DefaultScale="1"
+		RandomScaleMin="0.1"
+		RandomScaleMax="1.0"
+		VisualFx="null"
+	>
+	</Animation>
+
+	<Animation
+		Name="LivePathMarkerC"
+		InheritFrom="LivePathMarkerB"
+		StartScale="0.66"
+		EndScale="0"
+		StartGreen="0.66" EndGreen="1"
+		StartBlue="1" EndBlue="0.2"
+		ChainTo="null"
+		StartOffsetX="10"
+		EndOffsetX="0"
+		StartOffsetY="-10"
+		EndOffsetY="0"
+		VelocityMin="0"
+		VelocityMax="60"
+		RandomAngle="true"
+		RandomAngleMin="90"
+		RandomAngleMax="91"
+		>
+	</Animation>
+
+
+	<Animation
+        Name="LivePathMarker2" InheritFrom="LivePathMarker"
+		ChildAnimation="LivePathMarker2B"
+		ScaleX="1"
+		    >
+	</Animation>
+
+	<Animation
+		Name="LivePathMarker2B"
+		InheritFrom="LivePathMarker"
+		ScaleX="1"
+		ChildAnimation="null"
+		FilePath="Particles\\particle_line_01"
+		StartOffsetY="0"
+		EndOffsetY="-30"
+		Opacity="1.0"
+		Duration="1"
+		EndScale="0.66"
+		StartGreen="1" EndGreen="0.99"
+		StartRed="0.2" EndRed="0"
+		StartBlue="0" EndBlue="0.3"
+		OriginX="0"
+		OriginY="8"
+		StartScaleX="0" EndScaleX="1"
+		HoldEndColorFraction="0"
+		EndOpacity="0.99"
+		DefaultAngle="270"
+		ChainTo="LivePathMarker2C"
+		DefaultScale="2"
+		RandomScaleMin="0.1"
+		RandomScaleMax="1.0"
+		VisualFx="null"
+	>
+	</Animation>
+
+	<Animation
+		Name="LivePathMarker2C"
+		InheritFrom="LivePathMarker2B"
+		StartScale="0.66"
+		StartScaleX="1" EndScaleX="0.99"
+		EndScale="0"
+		ChainTo="null"
+		StartBlue="0.3" EndBlue="0"
+		StartGreen="0.99" EndGreen="0"
+		StartRed="0" EndRed="1"
+		StartOffsetY="-30"
+		EndOffsetY="-60"
+		VelocityMin="0"
+		VelocityMax="60"
+		RandomAngle="true"
+		DefaultAngle="0"
+		RandomAngleMin="90"
+		RandomAngleMax="91"
+		RandomRotationSpeedMin="-180"
+		RandomRotationSpeedMax="180"
+		>
+	</Animation>
+
+	<Animation
+        Name="LivePathMarkerIdle" Type="CONSTANT" FilePath="Particles\\particle_isoSquare_01"
+		Material="Unlit"
+		RandomDurationMin="1.0" RandomDurationMax="1"
+		Loop="false"
+		AngleOffsetMin="90"
+		AngleOffsetMax="91"
+		StartScale="6" EndScale="3"
+		DrawAsDecal="false"
+		Acceleration="-200"
+		DefaultScale="0.15"
+		StartOpacity="0" EndOpacity="0.1"
+		HoldEndColorFraction="0"
+		StartRed="0" EndRed="1"
+		StartGreen="1" EndGreen="0.5"
+		StartBlue="0.8" EndBlue="0.5"
+		VisualFx="LivePathMarkerIdleParticles" VisualFxIntervalMin="0.04" VisualFxIntervalMax="0.04"
+		Velocity="150"
+		RandomAngle="false"
+		SortVisualFx="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="LivePathMarkerIdleParticles" Type="CONSTANT" FilePath="Particles\\particle_isoSquare_01"
+		Material="Unlit"
+		RandomDurationMin="0.1" RandomDurationMax="1.0"
+		Loop="false"
+		StartScale="6" EndScale="3"
+		RandomScaleMin="0.5" RandomScaleMax="1.0"
+		DrawAsDecal="false"
+		DefaultScale="0.15"
+		StartOpacity="1" EndOpacity="0"
+		OpacityMin="0" OpacityMax="1"
+		RandomAngle="false"
+		HoldEndColorFraction="0"
+		StartRed="0" EndRed="1"
+		StartGreen="1" EndGreen="1.0"
+		StartBlue="1" EndBlue="0.8"
+		PingPongColor="false"
+		>
+	</Animation>
+	
+	<Animation
+        Name="LivePathPlanningMarker" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_isoSquare_01"
+        Duration="0.5"
+        DrawAsDecal="true"
+        DefaultScale="0.5"
+        Opacity="0.4"
+        Rotate="true"
+        Red="0.0"
+        Green="1.0"
+        Blue="0.0"
+		    >
+		<Material Directionality="0"/>
+	</Animation>
+
+	<Animation
+		Name="LivePathExecutingMarker" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_isoSquare_01"
+		Duration="0.5"
+		DrawAsDecal="true"
+		DefaultScale="0.5"
+		Opacity="0.4"
+		Rotate="true"
+		Red="1.0"
+		Green="0.0"
+		Blue="0.0"
+				>
+		<Material Directionality="0"/>
+	</Animation>
+
+	<Animation
+		Name="LivePathRecoveringMarker" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_isoSquare_01"
+		Duration="0.5"
+		DrawAsDecal="true"
+		DefaultScale="0.5"
+		Opacity="0.4"
+		Rotate="true"
+		Red="1.0"
+		Green="1.0"
+		Blue="1.0"
+				>
+		<Material Directionality="0"/>
+	</Animation>	
+	
+	<Animation
+		Name="LivePathOverlap" Type="CONSTANT" FilePath="Particles\particle_isoSquare_01"
+		DrawAsDecal="false"
+		DefaultScale="1"
+		PingPong="false"		
+		Red="1.0" Green="1.0" Blue="1.0" Material="Unlit"
+		
+		>
+	</Animation>
+	
+	<Animation
+		Name="LiveOverlapBurst" Type="BOOK" FilePath="Fx\\SuppressorBeamTerminus\\SuppressorBeamTerminus"
+		PingPongScale="true"
+		StartScale="1"
+		EndScale="1.2"
+		DefaultScale="0.33"
+		NumFrames="30" DurationFrames="30"
+		DrawAsDecal="false"
+		Material="Unlit"
+		VisualFx="LiveOverlapBurstParticles" VisualFxIntervalMin="0.05" VisualFxIntervalMax="0.11"
+		ChildAnimation="LiveOverlapBurstLight"
+		ChainTo="LiveOverlapBurstEnd"
+		Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapBurstEnd" Type="BOOK" FilePath="Fx\\SuppressorBeamTerminus\\SuppressorBeamTerminus"
+		StartScale="1"
+		EndScale="0"
+		NumFrames="30" DurationFrames="15"
+		DrawAsDecal="false"
+		Material="Unlit"
+		ChildAnimation="LiveOverlapBurstLightEnd"
+		Loop="false"
+		ChainTo="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapBurstLightEnd"
+		Type="CONSTANT"
+		FilePath="blank_invisible"
+		Light="Lights\\DiffuseSpotlight"
+		DefaultScale="1"
+		StartScale="1" EndScale="0"
+		DurationFrames="15"
+		>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapBurstLight"
+		Type="CONSTANT"
+		FilePath="blank_invisible"
+		Light="Lights\\DiffuseSpotlight"
+		ChildAnimation="LiveOverlapShimmer"
+		DefaultScale="0.25"
+		VisualFx="LiveOverlapPaths" VisualFxIntervalMin="0.2" VisualFxIntervalMax="0.21"
+		>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapShimmer" Type="CONSTANT" FilePath="blank_invisible"
+		Loop="true"
+		Duration="1"
+		Light="Lights\\DiffuseSpotlight"
+		DefaultScale="0.25"
+		VisualFx="LiveOverlapShimmerTrails" VisualFxIntervalMin="0.1" VisualFxIntervalMax="0.11"
+		>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapShimmerTrails" Type="BOOK" FilePath="Fx\\PingTrail\\PingTrail"
+		NumFrames="20" DurationFrames="20"
+		StartScaleY="0.1" EndScaleY="2"
+		RandomAngle="true"
+		Rotate="true"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1"
+		StartRed="0.5" EndRed="1"
+		StartGreen="1" EndGreen="0.5"
+		Material="Emissive"
+		OpacityMin="0" OpacityMax="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapPaths" Type="BOOK" FilePath="Fx\\TransistorPath\\TransistorPath"
+		NumFrames="20"
+		DurationFrames="20"
+		RandomAngle="true"
+		VelocityMin="1000"
+		VelocityMax="1001"
+		Acceleration="-5000"
+		Material="Unlit"
+		Rotate="true"
+		DefaultAngle="-26"
+		RandomScaleMin="0.5"
+		RandomScaleMax="1"
+		OpacityMin="0.9"
+		OpacityMax="1"
+		ChainTo="null"
+		OriginX="116"
+		OriginY="64"
+		StartRed="0" EndRed="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapPathTrail"
+		InheritFrom="LiveOverlapPaths"
+		NumFrames="20"
+		RandomAngle="false"
+		Duration="2"
+		VelocityMin="0" VelocityMax="1"
+		RandomScaleMin="0.9" RandomScaleMax="1"
+		StartOpacity="0.2" EndOpacity="0" ChainTo="null" VisualFx="null"
+		>
+		
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapPathSelector" Type="RANDOM"
+		>
+		<Random Name="LiveOverlapPathsA"></Random>
+		<Random Name="LiveOverlapPathsB"></Random>
+		<Random Name="LiveOverlapPathsA"></Random>
+		<Random Name="LiveOverlapPathsB"></Random>
+		<Random Name="LiveOverlapPathsC"></Random>
+	</Animation>
+
+	<Animation Name="LiveOverlapPathsA" InheritFrom="LiveOverlapPaths"
+				RandomAngle="false"
+			   AngleOffsetMin="89.9" AngleOffsetMax="90.1"
+	>
+	</Animation>
+
+	<Animation Name="LiveOverlapPathsB" InheritFrom="LiveOverlapPaths"
+				RandomAngle="false"
+			   AngleOffsetMin="269.9" AngleOffsetMax="270.1"
+	>
+	</Animation>
+
+	<Animation Name="LiveOverlapPathsC" InheritFrom="LiveOverlapPaths"
+			ChainTo="null"
+			RandomAngle="false"
+	>
+	</Animation>
+	
+
+	<Animation
+		Name="LiveOverlapBurstParticles" Type="RANDOM"
+		>
+		<Random Name="LiveOverlapBurstParticleA"></Random>
+		<Random Name="LiveOverlapBurstParticleB"></Random>
+	</Animation>
+
+	<Animation
+		Name="LiveOverlapBurstParticleA" FilePath="Particles\\particle_green_glow_02" Type="CONSTANT"
+		VelocityMin="100"
+		VelocityMax="500"
+		RandomDurationMin="0.5"
+		RandomDurationMax="1"
+		RandomAngle="true"
+		Acceleration="-600"
+		StartScale="1" EndScale="0"
+		Material="Unlit"
+		Rotate="true"
+		UpwardVelocityMin="100"
+		UpwardVelocityMax="300"
+		Gravity="200"
+	>
+	</Animation>
+	
+	<Animation
+		Name="LiveOverlapBurstParticleB" InheritFrom="LiveOverlapBurstParticleA"
+		FilePath="Particles\\particle_gold_sparkle"
+	>
+	</Animation>
+
+
+	<Animation
+		Name="LivePathFire" Type="BOOK" FilePath="Fx\\BurstSquareA\BurstSquareA"
+		DrawAsDecal="false"
+		NumFrames="28" DurationFrames="30"
+		DefaultScale="1.5"
+		PingPong="false"
+		Red="1.0" Green="0.5" Blue="0.5" Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="VirusBorderTrace" Type="CONSTANT" FilePath="Particles\\particle_emptySquare_02"
+		Duration="1" 
+		RandomAngle="false"
+		DrawAsDecal="true"
+		DefaultScale="0.1"
+		Opacity="0.3"
+		Rotate="false"
+		StartRed="1.0" EndRed="0"
+		StartGreen="1.0" EndGreen="0.5"
+		StartBlue="1.0" EndBlue="0.2"
+		VisualFx="VirusBorderWaves" VisualFxIntervalMin="1.0" VisualFxIntervalMax="1.0"
+		SortVisualFx="false"
+		>
+		<Material Ambient="0.5" Diffuse="0" Directionality="1"/>
+	</Animation>
+
+  <Animation
+		Name="VirusBorderLowRent" Type="CONSTANT" FilePath="Particles\\particle_emptySquare_02"
+		Duration="1"
+		RandomAngle="false"
+		DrawAsDecal="true"
+		DefaultScale="0.1"
+		Opacity="0.3"
+		Rotate="false"
+		StartRed="1.0" EndRed="0"
+		StartGreen="1.0" EndGreen="0.5"
+		StartBlue="1.0" EndBlue="0.2"
+		>
+		<Material Ambient="0.5" Diffuse="0" Directionality="1"/>
+  </Animation>
+
+	<Animation
+		Name="VirusBorderWaves" Type="CONSTANT" FilePath="Particles\\particle_green_glow_02"
+		DefaultScale="0.3"
+		RandomScaleMin="0.3" RandomScaleMax="1"
+		Duration="1"
+		UpwardVelocityMin="50"
+		UpwardVelocityMax="100"
+		StartScaleX="1" EndScaleX="0"
+		StartScaleY="1" EndScaleY="10"
+		StartOffsetY="0" EndOffsetY="-100"
+		RandomAngle="false"
+		Gravity="50"
+		DrawAsDecal="false"
+		StartOpacity="1" EndOpacity="1"
+		Rotate="false"
+		StartRed="1.0" EndRed="0"
+		StartGreen="1.0" EndGreen="1"
+		StartBlue="1.0" EndBlue="0.8"
+		>
+		<Material Ambient="0" Diffuse="0.0" Directionality="0.5"/>
+	</Animation>
+	
+	<!-- Path Markers I liked-->
+
+	<Animation
+		Name="PathMarkerREMOVE" Type="CONSTANT" FilePath="ForegroundFlyers\\particle_isoSquare_01"
+		Duration="1.2"
+		DrawAsDecal="true"
+		DefaultScale="0.8"
+		RandomFlipHorizontal="false" RandomFlipVertical="false"
+		Rotate="true"
+		StartRed="1.0" EndRed="0.5" StartGreen="1.0" EndGreen="0.5" StartBlue="1.0" EndBlue="0.5"
+		StartOpacity="1.0" EndOpacity="0.2"
+		StartScale="4" EndScale="1"
+		DesaturationStart="1" DesaturationEnd="0"
+		PingPongColor="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="PathMarker_3" Type="CONSTANT" FilePath="ForegroundFlyers\\cinder_1"
+		Duration="1.2"
+		DrawAsDecal="true"
+		DefaultScale="0.1"
+		RandomFlipHorizontal="true" RandomFlipVertical="true"
+		Rotate="true"
+		StartScaleY="5" EndScaleY="5"
+		StartRed="1.0" EndRed="0.5" StartGreen="1.0" EndGreen="0.0" StartBlue="1.0" EndBlue="0.5"
+		StartOpacity="1.0" EndOpacity="0.2"
+		Loop="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="PathMarker_2" Type="CONSTANT" FilePath="ForegroundFlyers\\spark_triangle"
+		Duration="1.2"
+		DrawAsDecal="true"
+		DefaultScale="0.3"
+		RandomFlipHorizontal="true" RandomFlipVertical="true"
+		Rotate="true"
+		StartScaleY="5" EndScaleY="5"
+		StartRed="1.0" EndRed="0.5" StartGreen="1.0" EndGreen="0.0" StartBlue="1.0" EndBlue="0.5"
+		StartOpacity="1.0" EndOpacity="0.2"
+		Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="PathMarker_1" Type="CONSTANT" FilePath="ForegroundFlyers\\cinder_1"
+		Duration="1.2"
+		DrawAsDecal="true"
+		DefaultScale="0.2"
+		Rotate="true"
+		StartRed="1.0" EndRed="0.0" StartGreen="1.0" EndGreen="0.0" StartBlue="1.0" EndBlue="0.0"
+		StartOpacity="1.0" EndOpacity="0.2"
+		Loop="true"
+		>
+	</Animation>
+	
+	<Animation
+		Name="AttackMarker" Type="BOOK" FilePath="Fx\\HitE\\HitE"
+		NumFrames="46"
+		RandomOffsetX="4" RandomOffsetY="4"
+		DefaultScale="0.65" RandomFlipHorizontal="true"
+		DrawOnGround="true"
+		Loop="true"/>
+
+	<Animation
+		Name="TargetReticle_OLD" Type="CONSTANT" FilePath="GUI\\HUD\\Target_Reticle"
+		DrawAsDecal="true"
+		DefaultScale="1.0"
+		ScaleRadius="38"
+		>
+	</Animation>
+
+	<Animation
+		Name="DarkLink" Type="CONSTANT" FilePath="ForegroundFlyers\\spark_burst"
+		Duration="1.0"
+		DrawAsDecal="true"
+		DefaultScale="0.3"
+		StartOpacity="1.0" EndOpacity="1.0"
+		Loop="true"
+		Red="0.1"
+		Green="0.1"
+		Blue="0.1"
+		>
+	</Animation>
+
+	<Animation
+		Name="MoveCursor" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Move_2"
+		DefaultScale="1"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="AttackCursor" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Attack"
+		DefaultScale="1"
+	    Material="Unlit"
+		>
+	</Animation>
+
+	
+	<Animation
+		Name="MoveCursorOutOfRange" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Move_2"
+		DefaultScale="1"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="AttackCursorOutOfRange" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Attack"
+		DefaultScale="1"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="FreeAttackCursor" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_FreeAttack"
+		DefaultScale="1.0"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="UseCursor" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Use"
+		DefaultScale="1.0"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="UseCursorPulse" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Use"
+		DefaultScale="1.0"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TalkCursor" Type="CONSTANT" FilePath="GUI\\Icons\\Pointer_Talk"
+		DefaultScale="1.0"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="MouseoverIndicator" Type="CONSTANT" FilePath="GUI\\Widgets\\target_decal"
+		ScaleRadius="263"
+		DefaultScale="0.25"
+		StartOpacity="0" EndOpacity="1"
+		StartScale="0.6" EndScale="1.0"
+		Duration="0.25"
+		Loop="false"
+		AttachToOwner="true"
+		ChildAnimation="MouseoverIndicatorVolume"
+		DrawAsDecal="true"
+		Material="Unlit"
+		HoldLastFrame="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="MouseoverIndicatorVolume" Type="CONSTANT" FilePath="GUI\\Widgets\\target_hemisphere"
+		ScaleRadius="263"
+		DefaultScale="0.25"
+		StartOpacity="0" EndOpacity="1"
+		StartScale="0.6" EndScale="1.0"
+		Duration="0.25"
+		DrawAsDecal="false"
+        Material="Unlit"
+		Loop="false"
+		HoldLastFrame="true"
+		ChildAnimation="MouseoverIndicatorVolumeAnim"
+		>
+	</Animation>
+
+	<Animation
+		Name="MouseoverIndicatorVolumeAnim" InheritFrom="MouseoverIndicatorVolume"
+		StartOpacity="0" EndOpacity="0.5"
+		StartScale="0.8" EndScale="1.05"
+		PingPongColor="true"
+		Duration="2"
+		DrawAsDecal="false"
+        Material="Unlit"
+		Loop="true"
+		HoldLastFrame="false"
+		ChildAnimation="MouseoverIndicatorDecalAnim"
+		Blue="0"
+		StartGreen="0" EndGreen="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="MouseoverIndicatorDecalAnim" Type="CONSTANT" FilePath="GUI\\Widgets\\target_decal"
+		ScaleRadius="263"
+		DefaultScale="0.25"
+		StartOpacity="0" EndOpacity="1"
+		StartScale="1.0" EndScale="0.95"
+		PingPong="true"
+		PingPongColor="true"
+		Duration="2"
+		Loop="true"
+		ChildAnimation="TargetCornerA"
+		DrawAsDecal="true"
+		Material="Unlit"
+		>
+	</Animation>
+
+
+
+
+	<Animation
+		Name="TargetCornerA" Type="BOOK" FilePath="Fx\\TransistorPathCenterLine\\TransistorPathCenterLine"
+		NumFrames="20" DurationFrames="20"
+		Material="Unlit"
+		Loop="false"
+		Rotate="true"
+		DefaultAngle="54"
+		StartOpacity="1"
+		EndOpacity="0"
+		DefaultScale="0.66"
+		OffsetX="19" OffsetY="26"
+		ChildAnimation="TargetCornerB"
+		PlayBackwards="true"
+		DrawAsDecal="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="TargetCornerB" InheritFrom="TargetCornerA"
+		DefaultAngle="169"
+		OffsetX="-54" OffsetY="9"
+		ChildAnimation="TargetCornerC"
+		>
+	</Animation>
+
+	<Animation
+		Name="TargetCornerC" InheritFrom="TargetCornerA"
+		DefaultAngle="234"
+		OffsetX="-20" OffsetY="-29"
+		ChildAnimation="TargetCornerD"
+		>
+	</Animation>
+
+	<Animation
+		Name="TargetCornerD" InheritFrom="TargetCornerA"
+		DefaultAngle="349"
+		OffsetX="55" OffsetY="11"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="MouseOverExpandingCircle" Type="CONSTANT" FilePath="Particles\\particle_ovalDonut_02"
+		DefaultScale="0.5"
+		StartScale="1" EndScale="1.5" 
+		StartOpacity="0" EndOpacity="1"
+		PingPongColor="true"
+		Duration="2"
+		DrawAsDecal="true"
+		HoldLastFrame="false"
+		Loop="true"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="LobberReticle" Type="BOOK" FilePath="Fx\\LobberTargeting\\LobberTargeting"
+		NumFrames="36" DurationFrames="24"
+		DefaultScale="1.5"
+		Material="Emissive"
+		ChainTo="LobberReticleLoop"
+		DrawAsDecal="true"
+		Loop="false"
+		PauseInPlanning="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="LobberReticleLoop" Type="CONSTANT" FilePath="Fx\\LobberTargeting\\LobberTargeting0036"
+		DefaultScale="1.5"
+		Duration="1.0"
+		StartGreen="1.0"
+		EndGreen="0.25"
+		StartOpacity="1.0"
+		EndOpacity="0.6"
+		HoldEndColorFraction="0.4"
+		Loop="false"
+		UseAttachedScale="true"
+		Material="Emissive"
+		DrawAsDecal="true"
+		PauseInPlanning="true"
+		Sound="/SFX/Enemy Sounds/Lobber/LobberTargetReticle"
+		StopSoundOnFinish="true"
+		ReplaySoundOnLoop="false"
+		ChildAnimation="LobberReticleFlash"
+		>
+	</Animation>
+
+	<Animation
+		Name="LobberReticleFlash" Type="CONSTANT" FilePath="Fx\\LobberTargetingFlash\\LobberTargetingFlash"
+		DefaultScale="3.0"
+		Duration="0.375"
+		Loop="true"
+		UseAttachedScale="true"
+		Material="Emissive"
+		StartOpacity="0.3"
+		EndOpacity="0"
+		HoldEndColorFraction="0.8"
+		DrawAsDecal="true"
+		DieWithOwner="true"
+		OffsetY="-20"
+		PauseInPlanning="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="LobberReticleOLD" Type="CONSTANT" FilePath="GUI\\Widgets\\target_01A"
+		DrawAsDecal="true"
+		ScaleRadius="104"
+		StartOpacity="0.8" EndOpacity="0.0"
+		StartScale="3.0"
+		Duration="1.3" Loop="false"
+		Red="1.0" Green="0.00" Blue="0.0"
+		ChildAnimation="LobberReticleArrows"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonsterReticle" Type="CONSTANT" FilePath="Decals\\Health_Circle_Large"
+		StartScale="0.1" EndScale="6.0"
+		StartOpacity="0.0" EndOpacity="1.0"
+		Duration="1.6"
+		UseAttachedScale="true"
+		DrawAsDecal="true"
+		DieWithOwner="false"
+		HoldLastFrame="true"
+		OffsetY="-20"
+		PauseInPlanning="true"
+		Sound="/SFX/Menu Sounds/ImprintBIG"
+		ChainTo="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="MonsterReticleFast" InheritFrom="MonsterReticle"
+		Duration="0.35"
+		>
+	</Animation>
+	
+	<Animation
+		Name="MonsterReticleEnd" Type="CONSTANT" FilePath="Decals\\Health_Circle_Large"
+		StartScale="6.0" EndScale="0.1"
+		StartOpacity="1.0" EndOpacity="0"
+		Duration="0.4"
+		DrawAsDecal="true"
+		DieWithOwner="true"
+		OffsetY="-20"
+		PauseInPlanning="true"
+		ChainTo="null"
+		>
+	</Animation>
+	
+	<Animation
+		Name="LobberReticleArrows" Type="CONSTANT" FilePath="GUI\\Widgets\\target_01B"
+		DrawAsDecal="true"
+		StartScale="1.0" ScaleRadius="104"
+		StartOpacity="0.8" EndOpacity="0.0"
+		Duration="1.3"
+		HoldLastFrame="true"
+		Red="1.0" Green="0.25" Blue="0.0"
+		ChildAnimation="LobberReticleExpandingCircle"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="LobberReticleExpandingCircle" Type="CONSTANT" FilePath="Particles\\particle_ovalDonut_02"
+		DefaultScale="1.0"
+		StartScale="1.0" EndScale="0.65"
+		StartOpacity="1.0" EndOpacity="0.0"
+		Duration="1.3"
+		DrawAsDecal="true"
+		HoldLastFrame="false"
+		Red="1.0" Green="0.75" Blue="0.0"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="MoveIndicator" Type="CONSTANT" FilePath="GUI\\Widgets\\mouseover_01"
+		DefaultScale="0.65" DrawAsDecal="true"
+		StartOpacity="1.0" EndOpacity="0.5"
+		Duration="1"
+		PingPong="true" Loop="true"
+		AttachToOwner="false"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="MoveIndicatorArrows" Type="CONSTANT" FilePath="GUI\\Widgets\\mouseover_arrows_01"
+		DefaultScale="0.65" DrawAsDecal="true"
+		StartOpacity="0.0" EndOpacity="0.2" OffsetY="100"
+		Duration="0.4"
+		HoldLastFrame="true"
+        Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="FirePreview" Type="CONSTANT" FilePath="blank"
+		NumFrames="1" NumAngles="32" Rotate="false"
+		Duration="1.0" Loop="true"
+		DefaultScale="0.35"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="AimPreview" Type="BOOK" FilePath="Animations\\Arrow01\\Arrow"
+		NumFrames="1" NumAngles="32" Rotate="false"
+		Duration="1.0" Loop="true"
+		DrawAsDecal="true"
+        Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="MetPrereqFx" Type="CONSTANT" FilePath="Particles\\particle_donut_02"
+		Loop="true"
+		DefaultScale="1"
+		Duration="2"
+		StartScale="0.9" EndScale="0.8"
+		StartOpacity="1" EndOpacity="0.5"
+		DesaturationStart="1" DesaturationEnd="0"
+		Rotate="true" RotationSpeed="8"
+		PingPongScale="true" 
+		PingPongColor="true" 
+		PingPong="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShielderProjectile" Type="CONSTANT" FilePath="Particles\\particle_shield_circle"
+		Duration="2.0" Material="Emissive"
+		DefaultScale="0.5"
+		Loop="false"
+		Rotate="true" RotationSpeed="180"
+		PingPongScale="true"
+		StartScale="0.5"
+		EndScale="1.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShielderProjectileTemp" Type="CONSTANT" FilePath="Particles\\particle_shield_circle"
+		Duration="2.0" Material="Emissive"
+		DefaultScale="1.5"
+		Loop="false"
+		Rotate="true" RotationSpeed="180"
+		PingPongScale="true"
+		StartScale="9.5"
+		EndScale="9.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShielderBuffBack" Type="BOOK" FilePath="Fx\\debuff\\back\\DebuffBack"
+		Material="Emissive"
+		NumFrames="40" PlaySpeed="30" Loop="true"
+		DefaultScale="1.0"
+		OffsetY="-20"
+		StartRed="0"
+		StartGreen="0"
+		EndRed="0"
+		EndGreen="0"
+		PauseInPlanning="true">
+	</Animation>
+
+	<Animation
+		Name="ShielderBuffFront" Type="BOOK" FilePath="Fx\\debuff\\front\\DebuffFront"
+		Material="Emissive"
+		NumFrames="40" PlaySpeed="30" Loop="true"
+		DefaultScale="1.0"
+		OffsetY="-20"
+		StartRed="0"
+		StartGreen="0"
+		EndRed="0"
+		EndGreen="0"
+		PauseInPlanning="true">
+	</Animation>
+
+	<!-- Idol / Limiter Animations -->
+
+	<Animation
+		Name="Egg_Base_CombatOver" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+		StartScale="1.0"
+		EndScale="0.40"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Egg_Base_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Egg_Base_CombatOver2" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+		DefaultScale="0.40"
+		Material="Emissive">
+	</Animation>
+
+	<Animation
+		Name="Egg_Shield" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+	
+	<Animation
+		Name="Egg_Shield_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="20"
+		Material="Emissive"
+		ChainTo="Egg_Shield_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Egg_Shield_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+
+	<Animation
+		Name="Egg_Shield_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+		ChainTo="Egg_Shield_CombatOver2"
+		>
+	</Animation>
+
+	<Animation
+		Name="Egg_Shield_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_speeder_gold"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="Limiter_EscalatingFights" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_haunter_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_EscalatingFights_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_haunter_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Limiter_EscalatingFights_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Limiter_EscalatingFights_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_haunter_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_EscalatingFights_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_haunter_gold"
+		ChainTo="Limiter_EscalatingFights_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Limiter_EscalatingFights_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_haunter_gold">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchTime" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_priest_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchTime_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_priest_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Egg_HatchTime_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchTime_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_priest_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchTime_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_priest_gold"
+		ChainTo="Egg_HatchTime_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchTime_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_priest_gold"
+		Material="Emissive">
+	</Animation>
+
+	<Animation
+		Name="Limiter_SupplyPenalty" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_shielder_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_SupplyPenalty_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_shielder_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Limiter_SupplyPenalty_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Limiter_SupplyPenalty_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_shielder_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_SupplyPenalty_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_shielder_gold"
+		ChainTo="Limiter_SupplyPenalty_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Limiter_SupplyPenalty_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_shielder_gold"
+		Material="Emissive">
+	</Animation>
+
+
+	<Animation
+		Name="Limiter_NoAutoFocus" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_lobber_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoAutoFocus_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_lobber_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Limiter_NoAutoFocus_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoAutoFocus_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_lobber_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoAutoFocus_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_lobber_gold"
+		ChainTo="Limiter_NoAutoFocus_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoAutoFocus_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_lobber_gold">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoRecycles" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_flusher_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoRecycles_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_flusher_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Limiter_NoRecycles_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoRecycles_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_flusher_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoRecycles_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_flusher_gold"
+		ChainTo="Limiter_NoRecycles_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Limiter_NoRecycles_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_flusher_gold">
+	</Animation>
+
+
+	<Animation
+		Name="Egg_MultiSpawn" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_popper_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_MultiSpawn_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_popper_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Egg_MultiSpawn_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Egg_MultiSpawn_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_popper_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_MultiSpawn_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_popper_gold"
+		ChainTo="Egg_MultiSpawn_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Egg_MultiSpawn_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_popper_gold">
+	</Animation>
+
+
+	<Animation
+		Name="Egg_FakeSpawn" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_zoner_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_FakeSpawn_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_zoner_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Egg_FakeSpawn_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Egg_FakeSpawn_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_zoner_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_FakeSpawn_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_zoner_gold"
+		ChainTo="Egg_FakeSpawn_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Egg_FakeSpawn_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_zoner_gold">
+	</Animation>	
+
+	<Animation
+		Name="Limiter_DeathPenalty" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_suppressor_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Limiter_DeathPenalty_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_suppressor_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Limiter_DeathPenalty_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Limiter_DeathPenalty_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_suppressor_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+	
+	<Animation
+		Name="Limiter_DeathPenalty_CombatOver"
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_suppressor_gold"
+		ChainTo="Limiter_DeathPenalty_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Limiter_DeathPenalty_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_suppressor_gold"
+		Material="Emissive">
+	</Animation>		
+
+	<Animation
+		Name="Egg_HatchExplosion" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_demolisher_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchExplosion_Flair" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_demolisher_gold"
+		StartScale="10.0"
+		EndScale="0.15"
+		DefaultScale="1.0"
+		DurationFrames="10"
+		Material="Emissive"
+		ChainTo="Egg_HatchExplosion_FlairB">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchExplosion_FlairB" Type="CONSTANT" FilePath="GUI\\Icons\\Limiters\\limiter_icon_demolisher_gold"
+		DefaultScale="0.15"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchExplosion_CombatOver" 
+		InheritFrom="Egg_Base_CombatOver"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_demolisher_gold"
+		ChainTo="Egg_HatchExplosion_CombatOver2">
+	</Animation>
+
+	<Animation
+		Name="Egg_HatchExplosion_CombatOver2"
+		InheritFrom="Egg_Base_CombatOver2"
+		FilePath="GUI\\Icons\\Limiters\\limiter_icon_demolisher_gold"
+		>
+	</Animation>
+
+	<!-- Meta-Card Graphics / Animations -->
+
+	<Animation
+		Name="Meta_BaseCard" Type="CONSTANT" FilePath="GUI\\Icons\\Upgrades\\meta_supply" Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="Meta_StartingSupply1"
+		InheritFrom="Meta_BaseCard">
+	</Animation>
+
+	<Animation
+		Name="Meta_StartingSupply2"
+		InheritFrom="Meta_BaseCard">
+	</Animation>
+
+	<Animation
+		Name="Meta_StartingSupply3"
+		InheritFrom="Meta_BaseCard">
+	</Animation>
+
+	<Animation
+		Name="Meta_StartingSupply4"
+		InheritFrom="Meta_BaseCard">
+	</Animation>
+
+	<Animation
+		Name="Meta_PassiveSlot1"
+		InheritFrom="Meta_BaseCard"
+		FilePath="GUI\\Icons\\Upgrades\\meta_passive"
+		>
+	</Animation>
+
+	<Animation
+		Name="Meta_PassiveSlot2"
+		InheritFrom="Meta_PassiveSlot1">
+	</Animation>
+
+	<Animation
+		Name="Meta_PassiveSlot3"
+		InheritFrom="Meta_PassiveSlot1">
+	</Animation>
+
+	<Animation
+		Name="Meta_PassiveSlot4"
+		InheritFrom="Meta_PassiveSlot1">
+	</Animation>
+
+	<Animation
+		Name="Meta_HandSize1"
+		InheritFrom="Meta_BaseCard">
+	</Animation>
+
+	<Animation
+		Name="Meta_HandSize2"
+		InheritFrom="Meta_BaseCard">
+	</Animation>
+
+	<Animation
+		Name="Meta_UpgradeSlotAll"
+		InheritFrom="Meta_BaseCard"
+		FilePath="GUI\\Icons\\Upgrades\\meta_upgradeslot"
+		>
+	</Animation>
+
+	<Animation
+		Name="Meta_UpgradeSlotA"
+		InheritFrom="Meta_UpgradeSlotAll">
+	</Animation>
+
+	<Animation
+		Name="Meta_UpgradeSlotB"
+		InheritFrom="Meta_UpgradeSlotAll">
+	</Animation>
+
+	<Animation
+		Name="Meta_UpgradeSlotX"
+		InheritFrom="Meta_UpgradeSlotAll">
+	</Animation>
+
+	<Animation
+		Name="Meta_UpgradeSlotY"
+		InheritFrom="Meta_UpgradeSlotAll">
+	</Animation>
+
+	<Animation
+		Name="Meta_Unique"
+		InheritFrom="Meta_BaseCard"
+		FilePath="GUI\\Icons\\Upgrades\\meta_backdoor"
+		>
+	</Animation>
+
+	<Animation
+		Name="GliderSwarm" Type="BOOK" FilePath="Animations\\GliderSwarm\\GliderSwarm"
+		NumFrames="60" DurationFrames="120" NumAngles="1"
+		Material="Emissive" Rotate="true"
+		RandomStartFrame="true"
+		ReRandomizeOnLoop="false"
+		Loop="true"
+		>
+	</Animation>
+	
+	<!-- In Game Focus Info-->
+
+	<Animation
+		Name="Focus_Info_Flourish_All" Type="CONSTANT" FilePath="GUI\\Widgets\\focus_user_info_bg"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="Focus_Info_Flourish" Type="CONSTANT" FilePath="GUI\\Widgets\\focus_user_info_bg_01"
+		Material="Unlit">
+	</Animation>
+	
+	<!-- InGameUI -->
+
+	<Animation
+		Name="OffScreenEggIndicator" Type="CONSTANT" FilePath="GUI\\Widgets\\offscreenIndicator_02"
+		Duration="1.01"
+		Rotate="true"
+		PingPongScale="true"
+		Loop="true"
+		StartScale="1" EndScale="1.1"
+		ChildAnimation="OffScreenEggIndicatorIcon"
+		Material="Unlit">
+	</Animation>
+
+	<Animation
+		Name="OffScreenEggIndicatorIcon" Type="BOOK" FilePath="GUI\\Widgets\\OffscreenEggLoop\\OffscreenEgg"
+		NumFrames="31"
+		DurationFrames="62"
+		RandomStartFrame="true"
+		Loop="true"
+		Material="Unlit">
+	</Animation>	
+
+</Animations>

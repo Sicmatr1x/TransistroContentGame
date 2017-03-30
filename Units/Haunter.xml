@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Haunter / "TBD" -->
+
+	<Npc
+		Name="Haunter"
+		InheritFrom="1_BaseAttacker"
+		PhaseInSound="/SFX/Enemy Sounds/Haunter/HaunterOnSpawn"
+		Speed="150"
+		RotationSpeed="21600"
+		CosmeticRotationSpeed="720"
+		Flyer="true"
+		ScoreValue="0"
+		PhaseInGraphic="null"
+        PhaseInTimeMin="0.01"
+        PhaseInTimeMax="0.01"
+		MoveGraphic="HaunterWalk"
+		WalkLegs="null"
+		SpawnFacingPlayer="false"
+		OnHitWeapon="null"
+		FootprintFx="null"
+        CloakFx="null"
+		SquadName="SHOOTERS"
+		IgnoreTargetCollision="false"
+		VisionRange="1"
+		WeaponTrackingAnimation="HaunterHealerHead"
+		EnemyStatName="Haunter"
+		ChainReactSpawnWeapon="Haunter"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights"
+		>
+		<Thing
+			Grip="5.0"
+			ActivateGraphic="HaunterPhaseIn"
+			HatchGraphic="null"
+			Graphic="HaunterMoverIdle"
+			AmbientSound="/SFX/Enemy Sounds/Priest/PriestAmbience"
+			ClearGeometry="true"
+			OverheadOffset="135"
+			SelectionWidth="180"
+			SelectionHeight="250"
+            SelectionShiftY="35"
+			OcclusionOutlineRadius="0.007"
+			OcclusionOutlineThreshold="0.7"
+			OffsetZ="50"
+			PermaFlash="null"
+			MinScale="1.0"
+			MaxScale="1.0">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="42"/>
+			<Point X="72" Y="0"/>
+			<Point X="0" Y="-42"/>
+			<Point X="-72" Y="0"/>
+		</Thing>
+		<Life
+			Health="600"
+			HitSound="/SFX/Enemy Sounds/Haunter/HaunterOnHit"
+			DeathSound="/SFX/Enemy Sounds/Haunter/HaunterOnDeath"
+			Decal="null"
+			DamageDecal="null"
+			HitGraphic="HaunterGlitch"
+			DeathGraphic="null"
+			DeathFx="EnemyDeathSplatter"
+			ImpactGraphicOffset="80"
+			DeathShakeSpeed="250"
+			DeathShakeDistance="5"
+			Material="METAL"
+			LowHealthTransitionEffect="null"
+			NumDeathLines="8"
+			ArmorCoverage="240"
+			Vulnerability="1.5"
+			DeathChainReactSpawnWeapon="Haunter"
+			>
+		</Life>
+		<Weapon Name="HauntSpawn"/>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="false"
+			SearchDistance="500"
+			MaxDistance="700"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="/SFX/Enemy Sounds/Haunter/HaunterTargetSighted"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetAcquiredGraphicPrereq="null"
+			TargetLostDisable="0.5"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			FindHealerHealthFraction="0.5">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<!--
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="0.3"
+			RandomTurnIntervalMax="0.6"
+			TurnDelayMin="1.0"
+			TurnDelayMax="2.0"
+			SpeedFraction="1.0"
+			TetherDistance="150"
+			StopToAttack="true"
+			>
+		</MoveAI>
+		-->
+		<MoveAI
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="true"
+			RequiresLoS="true"
+			LookAheadDistance="512"
+			MaxChasers="1"
+			DisengageTime="0.5"
+			StopWhenDisengaged="false"
+			CoverSearchArea="0"
+			CoverSearchWhenDisengaged="500"
+			CoverSearchWhenReloading="500"
+			OldTargetLocationWhenDisengaged="0.0"
+			FlankDistanceWhenDisengaged="0"
+			SuccessDistance="80"
+			>
+		</MoveAI>
+		<MoveAI
+			Name="HaunterShooterMoveAI"
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="true"
+			RequiresLoS="false"
+			LookAheadDistance="512"
+			MaxChasers="1"
+			DisengageTime="0.5"
+			StopWhenDisengaged="false"
+			CoverSearchArea="500"
+			CoverSearchWhenDisengaged="500"
+			CoverSearchWhenReloading="500"
+			OldTargetLocationWhenDisengaged="0.0"
+			FlankDistanceWhenDisengaged="0"
+			SuccessDistance="80"
+			>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			RequiresLoS="true"
+			LeadTarget="false"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="false"
+			CanAimWhileStopped="false"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true"
+			HoldFireWhileReloading="true"
+			HoldFireWhenDisengagedEvenIfStarted="false"
+			AttackStartRange="400">
+		</AttackAI>		
+		<AttackAI
+			Name="HaunterShooterAttackAI"
+			Algorithm="ON_SIGHT"
+			RequiresLoS="false"
+			LeadTarget="false"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="false"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true"
+			HoldFireWhileReloading="true"
+			HoldFireWhenDisengagedEvenIfStarted="false"
+			AttackStartRange="2000">
+		</AttackAI>
+		
+		<Using>HaunterDash</Using>
+
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+	<Npc
+		Name="HaunterMover"
+		InheritFrom="Haunter"
+		ClearWeapons="true"
+		OnSpawnWeapon="HaunterMoverBuff"
+		OnDeathWeapon="HaunterMoverEggSpawn"
+		WeaponTrackingAnimation="HaunterMoverHead"
+		>
+		<Thing
+			Graphic="HaunterMoverIdle"
+			PlanningCustomInfo="HaunterMoverBuff">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life>
+			<RemoveEffect>HaunterMoverBuff</RemoveEffect>
+			<RemoveEffect>HaunterMoverRangeBuff</RemoveEffect>
+			<RemoveEffect>HaunterMoverRotationBuff</RemoveEffect>
+			<RemoveEffect>HaunterMoverChargeTimeBuff</RemoveEffect>
+		</Life>
+		
+		<Weapon Name="HauntMoverSpawn"/>
+
+		<Upgrade Name="HaunterMoverLevel2">
+			<Rank>
+				<Change HelpTextId="HaunterMoverLevel2"/>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+	<Npc
+		Name="HaunterShooter"
+		InheritFrom="Haunter"
+		ClearWeapons="true"
+		OnSpawnWeapon="HaunterShooterBuff"
+		OnDeathWeapon="HaunterShooterEggSpawn"
+		WeaponTrackingAnimation="HaunterShooterHead"
+		>
+		<Thing
+			Graphic="HaunterShooterIdle"
+			PlanningCustomInfo="HaunterShooterBuff">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life>
+			<RemoveEffect>HaunterShooterRangeBuff</RemoveEffect>
+			<RemoveEffect>HaunterShooterTargetRangeBuff</RemoveEffect>
+			<RemoveEffect>HaunterShooterMoveAI</RemoveEffect>
+			<RemoveEffect>HaunterShooterAttackAI</RemoveEffect>
+		</Life>
+		<Weapon Name="HauntShooterSpawn"/>
+
+		<Upgrade Name="HaunterShooterLevel2">
+			<Rank>
+				<Change HelpTextId="HaunterShooterLevel2"/>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+		
+	</Npc>
+
+	<Npc
+		Name="HaunterHealer"
+		InheritFrom="Haunter"
+		ClearWeapons="true"
+		OnSpawnWeapon="HaunterHealerBuff"
+		OnDeathWeapon="HaunterHealerEggSpawn"
+		WeaponTrackingAnimation="HaunterHealerHead"
+		>
+		<Thing
+			Graphic="HaunterHealerIdle"
+			PlanningCustomInfo="HaunterHealerBuff">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life>
+			<RemoveEffect>HaunterHealerBuff</RemoveEffect>
+		</Life>
+		<Weapon Name="HauntHealerSpawn"/>
+
+		<Upgrade Name="HaunterHealerLevel2">
+			<Rank>
+				<Change HelpTextId="HaunterHealerLevel2"/>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+	<Npc
+		Name="HaunterCloaker"
+		InheritFrom="Haunter"
+		ClearWeapons="true"
+		OnSpawnWeapon="HaunterCloakerBuff"
+		OnDeathWeapon="HaunterCloakerEggSpawn"
+		WeaponTrackingAnimation="HaunterCloakerHead"
+		>
+		<Thing
+			Graphic="HaunterCloakerIdle"
+			PlanningCustomInfo="HaunterCloakerBuff">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		</Thing>
+		<Life>
+			<RemoveEffect>HaunterCloakerBuff</RemoveEffect>
+		</Life>
+		<Weapon Name="HauntCloakerSpawn"/>
+
+		<Upgrade Name="HaunterCloakerLevel2">
+			<Rank>
+				<Change HelpTextId="HaunterCloakerLevel2"/>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+
+	<Npc
+		Name="Haunt"
+		InheritFrom="1_BaseAttacker"
+		PhaseInSound="/SFX/Enemy Sounds/Haunt/HauntOnSpawn"
+		Speed="400"
+		Acceleration="100"
+		Deceleration="400"
+		RotationSpeed="9999"
+		Flyer="true"
+		ScoreValue="0"
+		PhaseInGraphic="null"
+		PhaseInTimeMin="0.01"
+		PhaseInTimeMax="0.01"
+		MoveGraphic="null"
+		SpawnFacingPlayer="false"
+		VisionRange="2000"
+		OnHitWeapon="null"
+		FootprintFx="null"
+		CloakFx="null"
+		OnDeathWeapon="HauntExplode"
+		DeathWeaponSuppressedFx="null"
+		SquadName="HAUNTS"
+		IgnoreTargetCollision="true"
+		CollisionWeapon="Suicide"
+		MovingWeapon="null"
+		CollideWithUnits="false"
+		NoHighlightWhileActivating="true"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		>
+		<Thing
+			Grip="4.0"
+			Drag="0.1"
+			ActivateGraphic="HaunterProjectileActivate"
+			HatchGraphic="null"
+			Graphic="HaunterProjectile"
+			AmbientSound="/SFX/Enemy Sounds/Haunt/HauntAmbientLoop"
+			TouchdownSound="null"
+			ClearGeometry="true"
+			OverheadOffset="70"
+			SelectionWidth="155"
+			SelectionHeight="170"
+            SelectionShiftY="30"
+			
+			OcclusionOutlineRadius="0.008"
+			OcclusionOutlineThreshold="0.3"
+			
+			OffsetZ="70"
+			PermaFlash="null"
+			ShowEstimatedForce="true">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="24"/>
+			<Point X="40" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-40" Y="0"/>
+		</Thing>
+		<Life
+			Health="10"
+			DeathSound="/SFX/Enemy Sounds/Haunt/HauntOnDeath"
+			Decal="null"
+			DamageDecal="null"
+			HitGraphic="HaunterGlitch"
+			DeathGraphic="HaunterProjectileDying"
+			DeathShakeSpeed="250"
+			DeathShakeDistance="5"
+			Material="METAL"
+			LowHealthTransitionEffect="null"
+			DamageFlashMin="0"
+			DamageFlashMax="0.1"
+			NumDeathLines="8"
+			>
+		</Life>
+		<Weapon Name="HaunterSuicide"/>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="false"
+			TargetLock="true"
+			MaxDistance="2000"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="null"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetAcquiredGraphicPrereq="null"
+			TargetLostDisable="0.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			FindHealerHealthFraction="0.0"
+			CanHaveTargetStolen="false">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="false"
+			RequiresLoS="false"
+			LookAheadDistance="512"
+			RepathTimeout="0.25"
+			MaxChasers="999"
+			DisengageTime="0.0"
+			StopWhenDisengaged="false"
+			CoverSearchWhenDisengaged="0"
+			OldTargetLocationWhenDisengaged="0.0"
+			FlankDistanceWhenDisengaged="0"
+			FinishAtGoal="true"
+			>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			RequiresLoS="true"
+			MustCompleteAttack="false"
+			AimWhileCompletingAttack="false"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true">
+		</AttackAI>
+
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+			</Rank>
+		</Upgrade>
+
+
+	</Npc>
+
+</Npcs>

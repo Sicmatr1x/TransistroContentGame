@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResolutionScreens>
+
+	<ResolutionScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="/SFX/Menu Sounds/InfoPanelLeave"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		UseSelectionSoundWithMouse="false"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="WarningBackgroundLoop" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackgroundTop X="960" Y="430" Graphic="ShellBackgroundMainIntroQuick" Justification="Center" VerticalJustification="Center"/>
+		
+		<TitleText X="960" Y="150" Justification="Center" VerticalJustification="Center"
+				   HelpTextId="ResolutionScreen_Title" Font="JuliusSansOne48Titling"
+				   NonEnglishScaleModifier="0.7"
+				   OutlineThickness="0"
+				   Scale="0.66"
+				   AlwaysUpperCase="true"
+				   TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+
+		<ResolutionButton X="960" Y="250" Spacing="68" Justification="Center" VerticalJustification="Center"
+					Graphic="GUI\\Shell\\resolution_icon_back" SelectedGraphic="GUI\\Shell\\selection_reticle_resolution"
+					TextScale="0.85" Width="500" Height="34"
+					Font="RalewayMedium26"
+						  FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.0" FadeDelayMax="0.15" FadeSpeed="10.0"
+					TextJustification="Center"
+						  TextOffsetX="0"
+						  TextOffsetY="3"
+					TextRed="0.31" TextGreen="0.52" TextBlue="0.48" SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0" SelectedTextScale="1.0"
+		/>
+
+		<ActiveMarker OffsetX="0" Graphic="GUI\\Shell\\resolution_active" Justification="Center" VerticalJustification="Center" Scale="1.0" OffsetY="3"/>
+		
+		<!-- Info Panel -->
+
+		<DimBox Justification="Left" Red="0" Green="0" Blue="0" Alpha="0.4"/>
+		<InfoPanel X="960" Y="540" Justification="Left" VerticalJustification="Center" />
+		<InfoText X="960" Y="540" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="830"/>
+
+		<ConfirmButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="Shell_Confirm"
+			PressSound="/SFX/Menu Sounds/PowerSelecting" DisabledPressSound="/SFX/Menu Sounds/MenuDenied"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="680" Y="940"
+			AlwaysUpperCase="true"
+			/>
+
+		<CancelButton
+			Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Shell_Back"
+			Scale="0.25" Justification="Center" VerticalJustification="Center"
+			TextScale="0.9" TextJustification="Left"
+			Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+			X="1170" Y="940"
+			AlwaysUpperCase="true"
+			MouseOffsetX="-210"
+			/>
+		
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+
+	</ResolutionScreen>
+	
+</ResolutionScreens>

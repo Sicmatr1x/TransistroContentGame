@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameStartScreens>
+
+	<GameStartScreen
+		Platform="default"
+		OpenSound="null"
+		CloseSound="null"
+		TransitionOnTime="0.0"
+		TransitionOffTime="0.5"
+		SelectionSound="/SFX/Menu Sounds/MenuBackOut"
+		ShowControls="false">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1.0"/>
+		<Background X="960" Y="540" Graphic="Cinematic\\Title_Muse_01" Justification="Center" VerticalJustification="Center"/>
+
+		<TitleText
+			X="960" Y="900" Justification="Center" VerticalJustification="Center"
+			HelpTextId="PressAnyKey" Font="JuliusSansOne48Titling"
+			OutlineThickness="0"
+			Scale="0.8"
+			TextRed="1" TextGreen="1" TextBlue="1"
+			ShadowRed="0" ShadowBlue="0" ShadowGreen="0" ShadowAlpha="1" ShadowBlur="2" ShadowOffsetY="1" ShadowOffsetX="0"/>
+
+	</GameStartScreen>
+	
+</GameStartScreens>

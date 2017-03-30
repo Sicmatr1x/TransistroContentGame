@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+
+	<Animation
+		Name="InfoPanelSmallIn" Type="BOOK" FilePath="GUI\\HUD\\HUD_Info_Panel\\HUD_Info_Panel_Small_In\\HUD_Info_Panel_Small_In"
+		NumFrames="10" DurationFrames="20"
+		HoldLastFrame="true"
+		VideoTexture="null"
+		Sound="/SFX/Menu Sounds/InfoTextAppear"
+		>
+		<Material Ambient="0.5" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="InfoPanelSmallOut" Type="BOOK" FilePath="GUI\\HUD\\HUD_Info_Panel\\HUD_Info_Panel_Small_Out\\HUD_Info_Panel_Small_Out"
+		NumFrames="7" DurationFrames="14"
+		HoldLastFrame="false"
+		VideoTexture="null"
+		Sound="/SFX/Menu Sounds/InfoPanelLeave"
+		>
+		<Material Ambient="0.5" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="InfoPanelLargeIn" Type="BOOK" FilePath="GUI\\HUD\\HUD_Info_Panel\\HUD_Info_Panel_Large_In\\HUD_Info_Panel_Large_In"
+		NumFrames="10" DurationFrames="20"
+		HoldLastFrame="true"
+		VideoTexture="null"
+		Sound="/SFX/Menu Sounds/InfoTextAppear"
+		>
+		<Material Ambient="0.5" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="InfoPanelLargeOut" Type="BOOK" FilePath="GUI\\HUD\\HUD_Info_Panel\\HUD_Info_Panel_Large_Out\\HUD_Info_Panel_Large_Out"
+		NumFrames="7" DurationFrames="14"
+		HoldLastFrame="false"
+		VideoTexture="null"
+		Sound="/SFX/Menu Sounds/InfoPanelLeave"
+		>
+		<Material Ambient="0.5" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+	<Animation
+		Name="SlotUpgrade" Type="BOOK" FilePath="GUI\\Widgets\\SlotUpgrade\\SlotUpgrade"
+		NumFrames="20" DurationFrames="40"
+		HoldLastFrame="false"
+		VideoTexture="null"
+		>
+		<Material Ambient="0.5" Diffuse="0.5" Directionality="0.5"/>
+	</Animation>
+
+
+	<Animation
+		Name="TerminalBGShimmerA" Type="BOOK" FilePath="Screens\\Terminal\\TerminalBGShimmer\\TerminalBGShimmer"
+		NumFrames="80" PlaySpeed="20"
+		VideoTexture="TerminalBGShimmerA"
+		Material="Unlit"
+		Loop="true"
+		Red="0"
+		Green="1"
+		Blue="0.9"
+		TransferFrame="true"
+		Opacity="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalBGShimmerB" InheritFrom="TerminalBGShimmerA"
+		Red="1.0"
+		Green="0.9"
+		Blue="0"
+		TransferFrame="true"
+		Opacity="0.5"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="TerminalScreenStartUp" Type="BOOK" FilePath="Screens\\Terminal\\Terminal01Intro\\Terminal01Intro"
+		NumFrames="48" DurationFrames="96"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenStartUp"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenStartUpCamerata" Type="BOOK" FilePath="Screens\\Terminal\\TerminalB01Intro\\TerminalB01Intro"
+		NumFrames="39" DurationFrames="78"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenStartUpCamerata"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenContent" Type="SLIDE" FilePath="Screens\\Terminal\\Terminal02Content\\Terminal02Content"
+		NumFrames="14" DurationFrames="28"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenContent"
+		Material="Unlit"
+		>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenContentNewsA" Type="BOOK" FilePath="Screens\\Terminal\\Terminal02ContentNewsA\\Terminal02ContentNewsA"
+		NumFrames="14" DurationFrames="42"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenContentNewsA"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenContentNewsACamerata" Type="BOOK" FilePath="Screens\\Terminal\\TerminalB02ContentNewsA\\TerminalB02ContentNewsA"
+		NumFrames="22" DurationFrames="44"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenContentNewsACamerata"
+		Material="Unlit"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="TerminalScreenContentCamerata" InheritFrom="TerminalScreenContentNewsACamerata"
+		>
+	</Animation>
+
+	
+	<Animation
+		Name="TerminalScreenContentNewsB" Type="BOOK" FilePath="Screens\\Terminal\\Terminal02ContentNewsB\\Terminal02ContentNewsB"
+		NumFrames="15" DurationFrames="42"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenContentNewsB"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenContentNewsBCamerata" Type="BOOK" FilePath="Screens\\Terminal\\TerminalB02ContentNewsB\\TerminalB02ContentNewsB"
+		NumFrames="20" DurationFrames="40"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenContentNewsBCamerata"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenResultsCamerata" InheritFrom="TerminalScreenContentNewsACamerata"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="TerminalScreenFourChoiceBackground" Type="CONSTANT" FilePath="GUI\\Widgets\\terminal_4way_bg"
+		HoldLastFrame="true"
+		VideoTexture="null"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenResults" Type="BOOK" FilePath="Screens\\Terminal\\Terminal03Results\\Terminal03Results"
+		NumFrames="12" DurationFrames="24"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenResults"
+		Material="Unlit"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="TerminalScreenSelection" Type="BOOK" FilePath="Screens\\Terminal\\TerminalMenuSelection\\TerminalMenuSelection"
+		NumFrames="5" DurationFrames="10"
+		HoldLastFrame="true" Loop="false"
+		VideoTexture="null"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="TerminalScreenShutDown" Type="BOOK" FilePath="Screens\\Terminal\\Terminal04Out\\Terminal04Out"
+		NumFrames="20" DurationFrames="40"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenShutDown"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalScreenShutDownCamerata" Type="BOOK" FilePath="Screens\\Terminal\\TerminalB04Out\\TerminalB04Out"
+		NumFrames="21" DurationFrames="42"
+		HoldLastFrame="true"
+		VideoTexture="TerminalScreenShutDownCamerata"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<!-- Hand Screen -->
+
+	<Animation
+		Name="HandScreenIn" Type="BOOK" FilePath="Screens\\HandScreen\\HandScreenIn\\HandScreenIn"
+		NumFrames="41" PlaySpeed="30"
+		OriginX="0.01" OriginY="0.01"
+		ChainTo="HandScreenLoop"
+		VideoTexture="HandScreenIn"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenInFast" InheritFrom="HandScreenIn"
+		PlaySpeed="60"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenOut" Type="BOOK" FilePath="Screens\\HandScreen\\HandScreenOut\\HandScreenOut"
+		NumFrames="10" PlaySpeed="30"
+		OriginX="0.01" OriginY="0.01"
+		HoldLastFrame="true"
+		VideoTexture="HandScreenOut"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenLoop" Type="BOOK" FilePath="Screens\\HandScreen\\HandScreenLoop\\HandScreenLoop"
+		NumFrames="90" PlaySpeed="30"
+		OriginX="0.01" OriginY="0.01"
+		Loop="true"
+		VideoTexture="HandScreenLoop"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<!-- Warning -->
+
+	<Animation
+		Name="WarningBackground" Type="BOOK" FilePath="Screens\\WarningIntro\\WarningIntro"
+		NumFrames="16" PlaySpeed="30"
+		OriginX="0.01" OriginY="0.01"
+		Loop="false"
+		VideoTexture="WarningBackground"
+		Material="Unlit"
+		ChainTo="WarningBackgroundLoop"
+		>
+	</Animation>
+	
+	<Animation
+		Name="WarningBackgroundLoop" Type="BOOK" FilePath="Screens\\Warning\\Warning"
+		NumFrames="100" PlaySpeed="30"
+		OriginX="0.01" OriginY="0.01"
+		Loop="true"
+		VideoTexture="WarningBackgroundLoop"
+		Material="Unlit"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellBackgroundMain" Type="CONSTANT" FilePath="GUI\\Shell\\background_box_01"
+	></Animation>
+	
+	<Animation
+		Name="ShellBackgroundMainIntroOld"
+		InheritFrom="ShellBackgroundMain"
+		Duration="0.33"
+		StartOpacity="0"
+		EndOpacity="1"
+		Loop="false"
+		HoldLastFrame="true"
+		StartScale="1.25"
+		EndScale="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellBackgroundControlsIntro"
+		Type="CONSTANT"
+		FilePath="GUI\\Shell\\background_box_02"
+		Duration="0.1"
+		StartOpacity="0.75"
+		EndOpacity="1"
+		Loop="false"
+		HoldLastFrame="true"
+		StartScale="0.97"
+		EndScale="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellBackgroundControls"
+		Type="CONSTANT"
+		FilePath="GUI\\Shell\\background_box_02"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="ShellBackgroundMainIntroQuick"
+		InheritFrom="ShellBackgroundMain"
+		Duration="0.15"
+		StartOpacity="0.75"
+		EndOpacity="1"
+		Loop="false"
+		HoldLastFrame="true"
+		StartScale="0.96"
+		EndScale="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellBackgroundMainIntro" Type="BOOK"
+		FilePath="Screens\\ShellBackgroundBoxIntroA\\ShellBackgroundBoxIntroA"
+		NumFrames="14"
+		DurationFrames="28"
+		VideoTexture="ShellBackgroundMainIntro"
+		ChainTo="ShellBackgroundMain"
+		Material="Emissive"
+	>
+	</Animation>
+
+	<Animation
+		Name="ShellBackgroundMainIntroB" Type="BOOK"
+		FilePath="Screens\\ShellBackgroundBoxIntroB\\ShellBackgroundBoxIntroB"
+		NumFrames="14"
+		DurationFrames="28"
+		VideoTexture="ShellBackgroundMainIntroB"
+		ChainTo="ShellBackgroundControls"
+		Material="Emissive"
+	>
+	</Animation>
+	
+	<Animation 
+		Name="ShellIconsPause" Type="CONSTANT" FilePath="GUI\\Shell\\pause_icons_right"
+		ChildAnimation="ShellIconsPauseLeft"
+		OffsetX="240"
+		Duration="0.4" StartOpacity="0" EndOpacity="1"
+		HoldStartColorFraction="0.5"
+		HoldLastFrame="true"
+	>
+	</Animation>
+	
+	<Animation 
+		Name="ShellIconsPauseLeft"
+		Type="CONSTANT" 
+		FilePath="GUI\\Shell\\pause_icons_left"
+		OffsetX="-210"
+		Duration="0.3" StartOpacity="0" EndOpacity="1"
+		HoldStartColorFraction="0.5"
+		HoldLastFrame="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsSettings" InheritFrom="ShellIconsPause"
+		ChildAnimation="ShellIconsSettingsLeft"
+		FilePath="GUI\\Shell\\options_icons_right"
+		HoldStartColorFraction="0.1"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsSettingsLeft" InheritFrom="ShellIconsPauseLeft"
+		FilePath="GUI\\Shell\\options_icons_left"
+		OffsetX="-230"
+		HoldStartColorFraction="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsLanguage" InheritFrom="ShellIconsPause"
+		ChildAnimation="ShellIconsLanguageLeft"
+		FilePath="GUI\\Shell\\language_icons_right"
+		HoldStartColorFraction="0.1"
+		OffsetX="120"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsLanguageLeft" InheritFrom="ShellIconsPauseLeft"
+		FilePath="GUI\\Shell\\language_icons_left"
+		OffsetX="-120"
+		HoldStartColorFraction="0"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="ShellIconsProfile" InheritFrom="ShellIconsPause"
+		ChildAnimation="ShellIconsProfileLeft"
+		FilePath="GUI\\Shell\\profile_icons_right"
+		HoldStartColorFraction="0.1"
+		OffsetX="160"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsProfileLeft" InheritFrom="ShellIconsPauseLeft"
+		FilePath="GUI\\Shell\\profile_icons_left"
+		OffsetX="-160"
+		OffsetY="-6"
+		HoldStartColorFraction="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsResolution" InheritFrom="ShellIconsPause"
+		ChildAnimation="ShellIconsResolutionLeft"
+		FilePath="GUI\\Shell\\resolution_icons_right"
+		HoldStartColorFraction="0.1"
+		OffsetX="120"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsResolutionLeft" InheritFrom="ShellIconsPauseLeft"
+		FilePath="GUI\\Shell\\resolution_icons_left"
+		OffsetX="-120"
+		HoldStartColorFraction="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsAbout" InheritFrom="ShellIconsPause"
+		ChildAnimation="ShellIconsAboutLeft"
+		FilePath="GUI\\Shell\\about_icons_right"
+		HoldStartColorFraction="0.1"
+		OffsetX="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="ShellIconsAboutLeft" InheritFrom="ShellIconsPauseLeft"
+		FilePath="GUI\\Shell\\about_icons_left"
+		OffsetX="-300"
+		OffsetY="-35"
+		HoldStartColorFraction="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="SelectionReticleIn" Type="CONSTANT"
+		FilePath="GUI\\Shell\\selection_reticle_controls"
+	>
+	</Animation>
+
+	<Animation
+		Name="LimitersBackground" Type="BOOK" FilePath="Screens\\LimitersBackground\\LimitersBackground0001"
+		NumFrames="120" PlaySpeed="30"
+		VideoTexture="LimitersBackground"
+		Material="Emissive"
+		Loop="true"
+		OriginX="0.01" OriginY="0.01"
+		>
+	</Animation>
+
+	<Animation
+		Name="GameEndBackground" Type="BOOK" FilePath="Screens\\NewGameBackground\\NewGameBackground"
+		NumFrames="60" PlaySpeed="15"
+		VideoTexture="GameEndBackground"
+		Material="Emissive"
+		StartGreen="0"
+		StartBlue="0"
+		StartRed="0.99"
+		StartOpacity="0" EndOpacity="1"
+		EndGreen="1"
+		EndBlue="1"
+		EndRed="1"
+		Duration="1"
+		OriginX="0.01" OriginY="0.01"
+		ChainTo="GameEndBackgroundLoop"
+		TransferFrame="true"
+		>
+	</Animation>
+
+	
+	<Animation
+		Name="GameEndBackgroundLoop" Type="BOOK" FilePath="Screens\\NewGameBackground\\NewGameBackground"
+		NumFrames="60" PlaySpeed="15"
+		VideoTexture="GameEndBackground"
+		Material="Emissive"
+		OriginX="0.01" OriginY="0.01"
+		Loop="true"
+		TransferFrame="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="GameEndReticle" Type="CONSTANT" FilePath="GUI\\Shell\\game_end_reticle"
+		Duration="0.15"
+		StartScale="1.1" EndScale="1"
+		HoldLastFrame="true"
+		StartOpacity="0" EndOpacity="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="PowerCooldownAngle" Type="BOOK" FilePath="GUI\\Widgets\\PowerCooldownAngle\\PowerCooldownAngle"
+		NumFrames="59"
+		Material="Emissive"
+		StartOpacity="0.66"
+		EndOpacity="0.65"
+		Loop="false"
+		AllowRestart="false"
+		ChainTo="PowerCooldownFinish"
+		OffsetY="-4"
+		>
+	</Animation>
+
+	<Animation
+		Name="PowerCooldownFinish" Type="BOOK" FilePath="GUI\\Widgets\\PowerCooldownFinish\\PowerCooldownFinish"
+		NumFrames="13" DurationFrames="26"
+		Material="Emissive"
+		Loop="false"
+		ChildAnimation="PowerCooldownFinishRadial"
+		>
+	</Animation>
+
+	<Animation
+		Name="PowerCooldownFinishRadial"
+		Type="BOOK" FilePath="Fx\\ReloadDissipate\\ReloadDissipate"
+		NumFrames="20"
+		PlaySpeed="60"
+		Material="Emissive"
+		Loop="false"
+		StartOpacity="0.25" EndOpacity="1"
+		StartRed="1" EndRed="0.01"
+		>
+	</Animation>
+
+	<Animation
+		Name="PowerCooldownFinishRadialCardBuy"
+		Type="SLIDE" FilePath="Fx\\ReloadDissipate\\ReloadDissipate"
+		NumFrames="20"
+		Material="Emissive"
+		Loop="false"
+		StartOpacity="0.25" EndOpacity="1"
+		StartRed="1" EndRed="0.01"
+		ChildAnimation="CardBuyFlare"
+		>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+	</Animation>
+
+	<Animation
+		Name="CardBuyFlare" FilePath="Particles\\particle_flare_phasein" Type="CONSTANT"
+		Duration="0.25"
+		StartScale="1"
+		EndScale="0"
+		Material="Emissive"
+		>
+	</Animation>
+
+
+
+	<Animation
+		Name="CardBuyFx" Type="SLIDE" FilePath="GUI\\Widgets\\PowerCooldownFinish\\PowerCooldownFinish"
+		NumFrames="13" DurationFrames="26" DefaultScale="2.0"
+		Material="Emissive"
+		Loop="false"
+		ChildAnimation="PowerCooldownFinishRadialCardBuy"
+		>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+	</Animation>
+
+	<Animation
+		Name="TerminalBWaveformLoop" Type="CONSTANT" FilePath="Screens\\Terminal\\TerminalBWaveformEnd\\TerminalBWaveformEnd0010"
+		Duration="1.25"
+		Material="Unlit"
+		Loop="false"
+		ChainTo="TerminalBWaveformLoopB"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalBWaveformLoopB" Type="BOOK" FilePath="Screens\\Terminal\\TerminalBWaveformLoop\\TerminalBWaveformLoop"
+		NumFrames="60" DurationFrames="120"
+		Sound="/UI/TerminalMessageLoop"
+		StopSoundOnFinish="true"
+		ReplaySoundOnLoop="false"
+		Material="Unlit"
+		Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="TerminalBWaveformEnd" Type="BOOK" FilePath="Screens\\Terminal\\TerminalBWaveformEnd\\TerminalBWaveformEnd"
+		NumFrames="10" DurationFrames="20"
+		Sound="/UI/TerminalMessageEnd"
+		Material="Unlit"
+		Loop="false"
+		HoldLastFrame="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="FocusBarSwapFlash" Type="CONSTANT" FilePath="Particles\\particle_square_plain"
+		Material="Unlit"
+		ScaleX="60"
+		ScaleY="2.0"
+		StartScaleY="1"
+		EndScaleY="0.5"
+		StartOpacity="1" EndOpacity="0.5"
+		StartRed="1" EndRed="0.01"
+		Duration="0.16"
+		ChainTo="FocusBarSwapFlashB"
+		>
+	</Animation>
+
+	<Animation 
+		Name="FocusBarSwapFlashB" 
+		InheritFrom="FocusBarSwapFlash"
+		StartRed="0.01" EndRed="0"
+		StartScaleY="0.5"
+		EndScaleY="0.02"
+		StartOpacity="0.5" EndOpacity="0"
+		ChainTo="null"
+	>
+	</Animation>
+
+
+	<Animation
+		Name="MoveHint" Type="BOOK" FilePath="GUI\\MoveMarker\\MoveMarker"
+		NumFrames="16"
+		DurationFrames="16"
+		Material="Unlit"
+		Loop="false"
+		DrawAsDecal="true"
+		AllowRestart="true"
+		ChainTo="MoveHintLoop"
+		DefaultScale="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="MoveHintLoop" Type="BOOK" FilePath="GUI\\MoveMarker\\MoveMarker"
+		StartFrame="17"
+		NumFrames="13"
+		DurationFrames="26"
+		Material="Unlit"
+		Loop="true"
+		DefaultScale="0.5"
+		>
+	</Animation>
+
+	<Animation
+		Name="ArrowAnimDown" Type="SLIDE" FilePath="GUI\\ArrowAnim\\ArrowAnim"
+		Material="Unlit"
+		NumFrames="21"
+		Rotate="true"
+		Loop="true"
+		>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="2"></Slide>
+		<Slide DurationFrames="15"></Slide>
+	</Animation>
+
+	<Animation
+		Name="ArrowAnimUp" InheritFrom="ArrowAnimDown"
+		DefaultAngle="180"
+		>
+	</Animation>
+
+	<Animation
+		Name="ArrowAnimLeft" InheritFrom="ArrowAnimDown"
+		DefaultAngle="90"
+		>
+	</Animation>
+
+	<Animation
+		Name="ArrowAnimRight" InheritFrom="ArrowAnimDown"
+		DefaultAngle="270"
+		>
+	</Animation>
+
+	<!-- Save Spinner -->
+	<Animation
+		Name="SaveSpinner" Type="BOOK" FilePath="GUI\\SaveSpinner\\SaveSpinner"
+		Material="Unlit"
+		NumFrames="25"
+		DurationFrames="50"
+		PlaySpeed="30"
+		Loop="false"
+		VideoTexture="SaveSpinner"
+		ChainTo="SaveSpinnerEnd"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="SaveSpinnerEnd" InheritFrom="SaveSpinner"
+		ChainTo="null"
+		StartScale="1"
+		EndScale="0.75"
+		Duration="0.5"
+		PlaySpeed="30"
+		StartOpacity="1" EndOpacity="0"
+		StartRed="1" EndRed="0"
+		StartBlue="1" EndBlue="0.8"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="SaveSpinnerLooping" InheritFrom="SaveSpinner"
+		Loop="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="SaveSpinnerLoopingFade" InheritFrom="SaveSpinner"
+		ChainTo="SaveSpinnerEndLoop"
+		>
+	</Animation>
+
+	<Animation
+		Name="SaveSpinnerEndLoop"
+		InheritFrom="SaveSpinnerEnd"
+		ChainTo="SaveSpinnerLoopDelay"
+		>
+	</Animation>
+
+	<Animation
+		Name="SaveSpinnerLoopDelay" Type="CONSTANT"
+		FilePath="blank_invisible" Duration="0.25"
+		ChainTo="SaveSpinnerLooping"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewLimiterIndicator" Type="CONSTANT" FilePath="GUI\\Widgets\\flare_new_limiter"
+		Material="Unlit"
+		Duration="0.33"
+		StartScale="2.5" EndScale="1"
+		Loop="false"
+		ChainTo="NewLimiterIndicatorLoop"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewLimiterIndicatorLoop" InheritFrom="NewLimiterIndicator"
+		StartScale="1" EndScale="0"
+		PingPongScale="false"
+		Duration="1"
+		ChainTo="null"
+		Loop="true"
+		ChildAnimation="NewLimiterIndicatorGlow"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewLimiterIndicatorGlow" Type="CONSTANT" FilePath="Particles\\particle_circle_06"
+		Material="Unlit"
+		StartScale="4" EndScale="3"
+		PingPongScale="false"
+		Duration="1"
+		Loop="true"
+		StartOpacity="0.4"
+		EndOpacity="0"
+		PingPongColor="false"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewLimiterIndicatorButton" InheritFrom="NewLimiterIndicatorLoop"
+		OffsetY="22"
+		Duration="1.1"
+		ChildAnimation="NewLimiterIndicatorButtonBG"
+		StartOpacity="1" EndOpacity="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewLimiterIndicatorButtonBG" Type="CONSTANT" FilePath="GUI\\Widgets\\limiter_mouse_button_highlight"
+		Material="Unlit"
+		Duration="1.1"
+		StartScaleY="1.1" EndScaleY="0.1"
+		OriginX="138"
+		OriginY="54"
+		OffsetY="22"
+		Loop="true"
+		StartOpacity="0.33" EndOpacity="0"
+		StartBlue="0.01" EndBlue="0"
+		StartGreen="0.7" EndGreen="0"
+		StartRed="1" EndRed="0.99"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewBioIndicatorGlow" InheritFrom="NewLimiterIndicatorGlow"
+		FilePath="Particles\\particle_green_glow_03"
+		StartScale="0.5" EndScale="0.66"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewBioIndicator" InheritFrom="NewLimiterIndicator" 
+		FilePath="GUI\\Widgets\\flare_new_inspect"
+		ChainTo="NewBioIndicatorLoop"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewBioIndicatorLoop" InheritFrom="NewLimiterIndicatorLoop"
+		FilePath="GUI\\Widgets\\flare_new_inspect"
+		ChildAnimation="NewBioIndicatorGlow"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewBioIndicatorButton" InheritFrom="NewBioIndicatorLoop"
+		OffsetY="22"
+		Duration="1.1"
+		ChildAnimation="NewBioIndicatorButtonBG"
+		StartOpacity="1" EndOpacity="0"
+		>
+	</Animation>
+
+	<Animation
+		Name="NewBioIndicatorButtonBG" Type="CONSTANT" FilePath="GUI\\Widgets\\limiter_mouse_button_highlight"
+		Material="Unlit"
+		Duration="1.1"
+		StartScaleY="1" EndScaleY="0.25"
+		OriginX="138"
+		OriginY="54"
+		OffsetY="22"
+		Loop="true"
+		StartOpacity="0.2" EndOpacity="0"
+		StartBlue="0.5" EndBlue="0"
+		StartGreen="1.0" EndGreen="0.99"
+		StartRed="0.01" EndRed="0"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenSlotInstalled" Type="BOOK" FilePath="GUI\\Widgets\\ActivePowerHighlight\\ActivePowerHighlight"
+		NumFrames="45"
+		Duration="0.60"
+		StartScale="1.82"
+		EndScale="2.10"
+		Material="Unlit"
+		Blue="0.5"
+		PlaySpeed="60"
+		StartOpacity="1" EndOpacity="0"
+		ChildAnimation="HandScreenSlotInstalledB"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenSlotInstalledB" Type="CONSTANT"
+		FilePath="GUI\\HUD\\Card_Front_Equipped"
+		Material="Unlit"
+		StartOpacity="1"
+		EndOpacity="0"
+		Duration="0.25"
+		StartScale="1" EndScale="1.1"
+		>
+	</Animation>
+		
+
+	<Animation
+		Name="HandScreenSlotRemoved" InheritFrom="HandScreenSlotInstalled"
+		StartScale="1.82"
+		EndScale="1.54"
+		Blue="1.0"
+		Red="0"
+		PlaySpeed="60"
+		StartGreen="1" EndGreen="0.5"
+		ChildAnimation="HandScreenSlotRemovedB"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenSlotRemovedB" Type="CONSTANT"
+		FilePath="GUI\\HUD\\Card_Front"
+		Material="Unlit"
+		StartOpacity="1"
+		EndOpacity="0"
+		Duration="0.25"
+		StartScale="1" EndScale="0.9"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenIconRemoved" InheritFrom="HandScreenSlotRemoved"
+		StartScale="1.0"
+		EndScale="0.9"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+	<Animation
+		Name="HandScreenIconRemovedB" Type="CONSTANT"
+		FilePath="GUI\\HUD\\Card_Front_Equipped"
+		Material="Unlit"
+		StartOpacity="1"
+		EndOpacity="0"
+		Duration="0.25"
+		StartScale="1" EndScale="0.9"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="FocusRallyPoint" Type="CONSTANT"
+		FilePath="GUI\\HUD\\Supply_Bar_Pip_Limiter"
+		DefaultAngle="90"
+		Rotate="true"
+		Material="Unlit"
+		StartOffsetY="-40"
+		EndOffsetY="0"
+		OriginX="47"
+		OriginY="18"
+		Duration="0.2"
+		StartScaleX="4"
+		EndScaleX="0.5"
+		StartScaleY="0" EndScaleY="2"
+		ChainTo="FocusRallyPointLoop"
+		>
+	</Animation>
+	
+	<Animation
+		Name="FocusRallyPointLoop" Type="BOOK"
+		FilePath="GUI\\Widgets\\FocusRallyPoint\\FocusRallyPoint"
+		NumFrames="40"
+		DurationFrames="80"
+		Loop="true"
+		Material="Unlit"
+		ChildAnimation="FocusRallyPointGlow"
+		VisualFx="FocusRallyPointPlacedA" VisualFxCap="1"
+		>
+	</Animation>
+
+	<Animation
+		Name="FocusRallyPointPlacedA" Type="BOOK" FilePath="Fx\\TransistorPathCenterLine\\TransistorPathCenterLine"
+		NumFrames="20" DurationFrames="20"
+		Material="Unlit"
+		Loop="false"
+		Rotate="true"
+		DefaultAngle="30"
+		StartOpacity="1"
+		EndOpacity="0"
+		DefaultScale="0.66"
+		ChildAnimation="FocusRallyPointPlacedB"
+		DrawAsDecal="true"
+		TakeSpawnerColor="true"
+		>
+	</Animation>
+
+	<Animation
+		Name="FocusRallyPointPlacedB" InheritFrom="FocusRallyPointPlacedA"
+		DefaultAngle="150"
+		ChildAnimation="FocusRallyPointPlacedC"
+		>
+	</Animation>
+
+	<Animation
+		Name="FocusRallyPointPlacedC" InheritFrom="FocusRallyPointPlacedA"
+		DefaultAngle="210"
+		ChildAnimation="FocusRallyPointPlacedD"
+		>
+	</Animation>
+	
+	<Animation
+		Name="FocusRallyPointPlacedD" InheritFrom="FocusRallyPointPlacedA"
+		DefaultAngle="330"
+		ChildAnimation="null"
+		>
+	</Animation>
+
+
+	<Animation
+		Name="FocusRallyPointGlow" Type="CONSTANT"
+		FilePath="GUI\\Slot_Connecting_Line_Active_Glow"
+		Material="Unlit"
+		DurationFrames="80"
+		PingPongColor="true"
+		StartOpacity="0.25"
+		EndOpacity="0.5"
+		ScaleY="0.5"
+		Loop="true"
+		StartGreen="0.33" EndGreen="1"
+		DefaultScale="0.5"
+		Light="Lights\\DiffuseSpotlight"
+		>
+	</Animation>
+	
+</Animations>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Screens>
+
+	<CamerataTerminalScreen
+		Platform="default"
+		OpenSound="/SFX/Menu Sounds/TerminalOnline"
+		CloseSound="null"
+		SelectionSound="/SFX/Menu Sounds/PowerToggleNEW"
+		TransitionOnTime="0.01"
+		TransitionOffTime="0.83">
+
+		<Back Justification="Left" Red="0.0" Green="0.0" Blue="0.0" Alpha="0.0"/>
+		
+		<Background X="0" Y="0" Scale="0.0" Graphic="GUI\\Backgrounds\\Background_Gradient_Cover" Justification="Left" VerticalJustification="Top"/>
+		<BackgroundScreen X="960" Y="540" Justification="Left" VerticalJustification="Top"/>
+		<AnimatedBackground X="960" Y="540" Graphic="TerminalBGShimmerB" Red="1.0" Green="0.4" Blue="0" Alpha="0.66"/>
+
+
+    <!-- These are shared -->
+	<TextHeaderLeft X="184" Y="210" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMonoBold22" Scale="0" HelpTextId="Terminal_HeaderLeft" FadeOpacity="0.0" FadeTarget="0.0"/>
+	<TextHeaderRight X="1710" Y="210" Justification="Right" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMonoBold22" Scale="0" HelpTextId="Terminal_HeaderRight" FadeOpacity="0.0" FadeTarget="0.0"/>
+
+	<TextHeader1 X="215" Y="265" Justification="Left" VerticalJustification="Top"
+      TextRed="1" TextGreen="1.0" TextBlue="1" Font="RalewayLight45" Scale="0.85" 
+		FadeDelayMin="0.05" FadeDelayMax="0.2" FadeOpacity="0" FadeTarget="1" FadeSpeed="10"/>
+    <TextHeader2 X="215" Y="324" Justification="Left" VerticalJustification="Top" 
+      TextRed="1.0" TextGreen="0.0" TextBlue="0.15" Font="RalewayRegular32" Scale="0.66"
+		  />
+    <TextHeader3 X="215" Y="360" Justification="Left" VerticalJustification="Top" 
+      TextRed="0.5" TextGreen="0.5" TextBlue="0.5" Font="UbuntuMonoBold22" Scale="0.8"
+		 FadeDelayMin="0.05" FadeDelayMax="0.2" FadeOpacity="0" FadeTarget="1" FadeSpeed="10"
+				 />
+    <TextTicker X="310" Y="245" Width="1300" Justification="Left" VerticalJustification="Top"
+      TextRed="0.75" TextGreen="0.75" TextBlue="0.75" Font="UbuntuMonoBold22" Scale="0.6" MarqueeSpeed="50"
+				/>
+    
+		<HeaderImage Justification="Center" VerticalJustification="Center" X="1600" Y="310" Scale="0.85" />
+		<VoiceIndicator X="1460" Y="512"/>
+
+	<ConfirmButton
+		Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="More Info"
+		Scale="0.25" Justification="Center" VerticalJustification="Center"
+		TextScale="0.75" TextJustification="Left"
+		Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+		FadeOpacity="0.0"
+		NonEnglishScaleModifier="0.75"
+		NonEnglishFont="RalewaySemiBold32"
+		MouseGraphicDefault="GUI\\pc_button_base_alt"
+		MouseGraphicHover="GUI\\pc_button_over_alt"
+		MouseGraphicPressed="GUI\\pc_button_down_alt"
+		X="1292" Y="915" MouseOffsetX="-40"/>
+		
+    <CancelButton
+		Graphic="GUI\\PS4Controller\\ps4ControllerCircle" HelpTextId="Sign Out"
+		Scale="0.25" Justification="Center" VerticalJustification="Center"
+		TextScale="0.75" TextJustification="Left"
+		Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+		FadeOpacity="0.0"
+		NonEnglishFont="RalewaySemiBold32"
+		NonEnglishScaleModifier="0.75"
+		MouseGraphicDefault="GUI\\pc_button_base_alt"
+		MouseGraphicHover="GUI\\pc_button_over_alt"
+		MouseGraphicPressed="GUI\\pc_button_down_alt"
+		X="1560" Y="915" />
+
+    <!-- These are specific to "News" terminals -->
+    <TextNewsBody X="262" Y="412"  Width="1300" Height="170" Justification="Left" VerticalJustification="Top" 
+				  TextRed="0.9" TextGreen="0.5" TextBlue="0.1" Font="UbuntuMono32" Scale="0.6" ScrollSpeed="3.0" LineSpacingBottom="6"/>
+		
+    <TextNewsBodyTitleFmt Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMonoBold22" Scale="1.0" AlwaysUpperCase="true"/>
+    <TextNewsBodySubTitleFmt Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="0.0" TextBlue="0.2" Font="UbuntuMonoBold22" Scale="0.85" LineSpacingLeft="40" LineSpacingTop="3" LineSpacingBottom="5"
+	/>
+    <TextNewsBodyTextAFmt Justification="Left" VerticalJustification="Top"
+      TextRed="0.9" TextGreen="0.5" TextBlue="0.1" Font="UbuntuMono32" Scale="0.6" LineSpacingBottom="7"
+	LineSpacingLeft="80"
+	/>
+		
+    <TextNewsBodyTextBFmt Justification="Left" VerticalJustification="Top"
+      TextRed="0.5" TextGreen="0.5" TextBlue="0.5" Font="UbuntuMono32" Scale="0.6" LineSpacingBottom="7"
+	LineSpacingLeft="80"
+	/>
+		
+		
+    <TextNewsReply X="294" Y="656"  Width="1300" Height="130" Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewaySemiBold32" Scale="0.66"/>
+    <TextNewsReplyBodyFmt Justification="Left" VerticalJustification="Top"
+      TextRed="0.5" TextGreen="0.75" TextBlue="0.1" Font="UbuntuMono32" Scale="0.6" LineSpacingLeft="40" LineSpacingTop="3" LineSpacingBottom="5"
+						  NonEnglishFont="UbuntuMonoBold32"
+						  NonEnglishScaleModifier="0.85"
+						  />
+    <TextNewsReplyThanksFmt Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayRegular32" Scale="0.66"/>
+	<NewsBodyImage
+	  Justification="Center" VerticalJustification="Center"
+	  X="1145" Y="507" Scale="1.0" />
+
+		<!-- These are specific to "VoteAB" terminals -->
+    <TextVoteQuestion X="265" Y="420"  Width="1300" Height="85" Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMono32" Scale="0.6"/>
+    <TextVoteResultsHeader1 X="280" Y="420" Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayRegular32" Scale="0.75"/>
+    <TextVoteResultsHeader2 X="280" Y="460" Justification="Left" VerticalJustification="Top"
+      TextRed="0.5" TextGreen="0.5" TextBlue="0.5" Font="RalewayRegular32" Scale="0.75"/>
+    <TextVoteResultA X="310" Y="500" Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" Scale="1.0"/>
+    <TextVoteResultB X="310" Y="540" Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayBold24" Scale="1.0"/>
+
+		<ButtonVoteChoiceA
+			Name="ButtonVoteChoiceA"
+			Graphic="GUI\\Widgets\\terminal_camerata_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_camerata_selector"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.5" TextGreen="0.35" TextBlue="0.12"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="0.9" SelectedTextBlue="0.7"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			NonEnglishScaleModifier="0.85"
+			
+			X="310" Y="500"/>
+
+		<ButtonVoteChoiceB
+			Name="ButtonVoteChoiceB"
+			Graphic="GUI\\Widgets\\terminal_camerata_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_camerata_selector"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.5" TextGreen="0.35" TextBlue="0.12"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="0.9" SelectedTextBlue="0.7"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			NonEnglishScaleModifier="0.85"
+			X="310" Y="555"/>
+
+    <!-- These are specific to "Choice" terminals -->
+    <TextChoiceHeader X="300" Y="495" Justification="Left" VerticalJustification="Top"
+      TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="RalewayRegular32" Scale="0.75" AlwaysUpperCase="true"/>
+
+		<TextChoiceA
+			Name="TextChoiceA"
+			Graphic="GUI\\Widgets\\terminal_camerata_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_camerata_selector"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.5" TextGreen="0.35" TextBlue="0.12"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="0.9" SelectedTextBlue="0.7"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			NonEnglishScaleModifier="0.9"
+			X="300" Y="600"/>
+
+		<TextChoiceB
+			Name="TextChoiceB"
+			Graphic="GUI\\Widgets\\terminal_camerata_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_camerata_selector"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.5" TextGreen="0.35" TextBlue="0.12"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="0.9" SelectedTextBlue="0.7"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			NonEnglishScaleModifier="0.9"
+			AttachTo="TextChoiceA" OffsetY="60"/>
+
+		<TextChoiceC
+			Name="TextChoiceC"
+			Graphic="GUI\\Widgets\\terminal_camerata_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_camerata_selector"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.5" TextGreen="0.35" TextBlue="0.12"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="0.9" SelectedTextBlue="0.7"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			TextOffsetX="50"
+			NonEnglishScaleModifier="0.9"
+			AttachTo="TextChoiceB" OffsetY="60"/>
+
+		<TextChoiceD
+			Name="TextChoiceD"
+			Graphic="GUI\\Widgets\\terminal_camerata_selector_bg"
+			SelectedGraphic="GUI\\Widgets\\terminal_camerata_selector"
+			Justification="Left" VerticalJustification="Center"
+			Font="RalewayMedium26" Width="500" Height="34"
+			TextRed="0.5" TextGreen="0.35" TextBlue="0.12"
+			TextScale="1.0"
+			SelectedTextRed="1.0" SelectedTextGreen="0.9" SelectedTextBlue="0.7"
+			AlwaysUpperCase="true"
+			TextJustification="Left"
+			SelectedTextScale="1.0"
+			NonEnglishScaleModifier="0.9"
+			TextOffsetX="50"
+			AttachTo="TextChoiceC" OffsetY="60"/>
+
+		<TextChoiceResult X="980" Y="550" Justification="Left" VerticalJustification="Top" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Font="UbuntuMonoBold32" Scale="0.6" NonEnglishScaleModifier="0.9"/>
+		<TextChoiceFooter1 AttachTo="TextChoiceResult" OffsetY="60" Justification="Left" VerticalJustification="Top" TextRed="0.0" TextGreen="1.0" TextBlue="0.0" Font="UbuntuMono32" Scale="0.6" NonEnglishScaleModifier="0.9"/>
+		<TextChoiceFooter2 AttachTo="TextChoiceFooter1" OffsetY="60" Justification="Left" VerticalJustification="Top" TextRed="0.5" TextGreen="0.5" TextBlue="0.5" Font="UbuntuMono32" Scale="0.6" NonEnglishScaleModifier="0.9"/>
+		<TextChoiceFooter3 AttachTo="TextChoiceFooter2" OffsetY="60" Justification="Left" VerticalJustification="Top" TextRed="0.5" TextGreen="0.5" TextBlue="0.5" Font="UbuntuMono32" Scale="0.6" NonEnglishScaleModifier="0.9"/>
+
+		<!-- Controls -->
+		<UpArrow
+			X="1635" Y="430" Scale="0.5" Graphic="ArrowAnimUp" Angle="0" Justification="Center" VerticalJustification="Center"
+			/>
+		<DownArrow
+			X="1635" Y="590" Scale="0.5" Graphic="ArrowAnimDown" Angle="0" Justification="Center" VerticalJustification="Center"
+			/>
+
+  </CamerataTerminalScreen>
+	
+</Screens>

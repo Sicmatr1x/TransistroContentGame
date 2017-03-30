@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Players>
+
+	<Player
+		Name="Player"
+		DrawCooldown="999"
+		RedrawCost="5"
+		RefundFraction="1.0"
+		>
+	</Player>
+
+</Players>

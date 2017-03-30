@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HelpTexts>
+  
+	<HelpText lang="zh-CN">
+		<Text Id="Launcher_PressAnyButton" DisplayName="按下任意键"/>
+		<Text Id="Launcher_PressAnyKey" DisplayName="按下任意键"/>
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="进度保存时会出现自动保存提示："/>
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="自动保存提示：当看到如下提示时，你的进度已经被保存。请不要在保存期间关闭游戏主机。"/>
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. All rights reserved."/>
+	</HelpText>
+
+	<HelpText lang="de">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Drücke eine beliebige Taste" />
+		<Text Id="Launcher_PressAnyKey" DisplayName="Beliebige Taste drücken" />
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="Autosave-Indikator wird beim Speichern des Spielfortschritts angezeigt." />
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="AutoSave-Mitteilung: Dein Spielfortschritt wird gespeichert, wenn der Indikator unten angezeigt wird. Schalte deine Konsole zu diesem Zeitpunkt bitte nicht aus." />
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. Alle Rechte vorbehalten." />
+	</HelpText>
+
+	<HelpText lang="es">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Pulsa cualquier botón" />
+		<Text Id="Launcher_PressAnyKey" DisplayName="Pulsa cualquier tecla" />
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="El indicador de autoguardado aparece cuando se está guardando tu progreso:" />
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="Aviso de autoguardado: Cuando aparece el indicador que se muestra a continuación, tu progreso se está guardando. No apagues la consola en este momento." />
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. Reservados todos los derechos." />
+	</HelpText>
+
+	<HelpText lang="fr">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Appuyer sur une touche" />
+		<Text Id="Launcher_PressAnyKey" DisplayName="Appuyer sur une touche" />
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="L'indicateur de sauvegarde automatique s'affiche lorsque votre progression est sauvegardée :" />
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="Avis de sauvegarde automatique : votre progression est sauvegardée lorsque l'indicateur ci-dessous s'affiche à l'écran. Veuillez ne pas éteindre votre console." />
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. Tous droits réservés." />
+	</HelpText>
+
+	<HelpText lang="it">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Premi qualsiasi pulsante" />
+		<Text Id="Launcher_PressAnyKey" DisplayName="Premi qualunque tasto" />
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="L'indicatore di salvataggio automatico compare quando i progressi di gioco vengono salvati:" />
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="Avviso di salvataggio automatico: i progressi di gioco vengono salvati quando compare l'indicatore illustrato qui sotto. Non spegnere la console durante il salvataggio." />
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. Tutti i diritti riservati." />
+	</HelpText>
+	
+	<HelpText lang="ru">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Нажмите любую кнопку" />
+		<Text Id="Launcher_PressAnyKey" DisplayName="Нажмите любую клавишу" />
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="Индикатор автосохранения появляется при сохранении прогресса:" />
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="Уведомление об автосохранении: Ваш прогресс сохраняется во время отображения данного индикатора. Не выключайте консоль во время сохранения." />
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. Все права защищены." />
+	</HelpText>
+	
+	<HelpText lang="pl">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Naciśnij dowolny przycisk" />
+		<Text Id="Launcher_PressAnyKey" DisplayName="Naciśnij dowolny przycisk" />
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="Wskaźnik autozapisu pojawia się, gdy trwa zapis postępów:" />
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="Informacja o autozapisie: Postępy są zapisywane, gdy pojawia się poniższy wskaźnik autozapisu. W tym czasie nie wyłączaj swojej konsoli." />
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. Wszystkie prawa zastrzeżone." />
+	</HelpText>
+		
+	<HelpText lang="pt-BR">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Pressione Qualquer Botão" />
+		<Text Id="Launcher_PressAnyKey" DisplayName="Pressione Qualquer Tecla" />
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="O indicador de Salvamento Automático Aparece Durante A Gravação do Progresso:" />
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="Aviso de Salvamento Automático: Seu progresso está sendo gravado quando o indicador abaixo é exibido. Não desligue seu console neste momento." />
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. Todos os direitos reservados." />
+	</HelpText>
+
+	<HelpText lang="en">
+		<Text Id="Launcher_PressAnyButton" DisplayName="Press Any Button"/>
+		<Text Id="Launcher_PressAnyKey" DisplayName="Press Any Key"/>
+		<Text Id="Launcher_AutoSaveAlert" DisplayName="AutoSave Indicator Appears When Progress Is Saved:"/>
+		<Text Id="Launcher_AutoSaveAlertAlt" DisplayName="AutoSave Notice: Your progress is being saved when you see the indicator below. Please do not turn off your console at this time."/>
+		<Text Id="Launcher_SupergiantGamesShortCopyright" DisplayName="© 2014 Supergiant Games, LLC. All rights reserved."/>
+	</HelpText>
+
+</HelpTexts>

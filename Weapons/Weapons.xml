@@ -1,0 +1,1520 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Weapons>
+
+	<Weapon
+		Name="1_BaseWeapon"
+		Cost="100"
+		>
+		<ExperienceLevel Points="100"/>
+		<ExperienceLevel Points="200"/>
+		<ExperienceLevel Points="300"/>
+		<ExperienceLevel Points="400"/>
+		<ExperienceLevel Points="500"/>
+		<ExperienceLevel Points="600"/>
+		<ExperienceLevel Points="700"/>
+		<ExperienceLevel Points="800"/>
+		<ExperienceLevel Points="900"/>
+	</Weapon>
+
+	<Weapon
+		Name="1_BasePlayerWeapon"
+		InheritFrom="1_BaseWeapon"
+        Icon="GUI\\HUD\\power_icon_01"
+		NoAmmoSound="SFX/Player Sounds/CannotFocus"
+		StaminaRegenDelay="0.0"
+        SlotType="SPECIAL"
+        FocusCooldown="0.1"
+        BlackDamageFlash="false"
+        ShowAmmoBar="false"
+		ShowAimLines="false"
+        Cost="1"
+		LockTriggerForCharge="true"
+		Portrait="GUI\\Portraits\\inspect_portrait_royce"
+		FirePreview="MuseFirePreview"
+		ProjectilePreview="TargetLineSegment"
+		MaxFireZ="2.0"
+		AutoLock="true"
+		AutoLockDuration="0.02"
+		AutoLockRange="650"
+		AutoLockArcDistance="100"
+		ShowLockLine="true"
+		ReloadOnCreation="false"
+		>
+		
+		<!-- Card Weapon Updgrades -->
+
+		<Upgrade Name="Slam" HelpTextId="Slam_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="SlamUpgradeCombo"/>
+				<Change ValueChangeType="ADD" Effect="SlamUpgradeStunSpeed"/>
+				<Change ValueChangeType="ADD" Effect="SlamUpgradeStunDisarm"/>
+				<Change ValueChangeType="ADD" Effect="SlamUpgradeStunRotation"/>
+				<Change ValueChangeType="ADD" Effect="SlamUpgradeDestealth"/>
+				<Change ValueChangeType="ADD" ChildGraphic="SlamProjectileUpgrade"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Snipe" HelpTextId="Snipe_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" Range="2.0"/>
+				<Change ValueChangeType="MULTIPLY" AutoLockRange="2.0"/>
+				<Change ValueChangeType="MULTIPLY" Speed="2.0"/>
+				<Change ValueChangeType="MULTIPLY" Acceleration="2.5"/>
+				<Change ValueChangeType="ADD" Range="250"/>
+				<Change ValueChangeType="ADD" AutoLockRange="250"/>
+				<Change ValueChangeType="ADD" ChildGraphic="SnipeProjectileUpgrade"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ClusterbombGP" HelpTextId="Clusterbomb_Upgrade">
+			<Rank>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="BombPassive" HelpTextId="Bomb_Passive">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" SpawnOnKillChance="0.50" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Blink" HelpTextId="Blink_Upgrade">
+			<Rank>
+
+				<Change ValueChangeType="ABSOLUTE" CanFireWhileRecovering="true"/>
+				<Change ValueChangeType="ADD" ChildGraphic="BlinkTrail"/>
+
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Sidearm" HelpTextId="Sidearm_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" StaminaCost="0.75"/>
+				<Change ValueChangeType="MULTIPLY" ChargeTime="0.8"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Bomb" HelpTextId="Bomb_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" DamageLow="1.10" />
+				<Change ValueChangeType="MULTIPLY" DamageHigh="1.10" />
+				<Change ValueChangeType="ADD" DamageRadius="200" />
+				<Change ValueChangeType="ADD" DamageRadiusFalloff="0.015" />
+				<Change DetonateGraphic="LoadBombDetonateUpgrade"/>
+			</Rank>	
+		</Upgrade>
+
+		<Upgrade Name="Orb" HelpTextId="Orb_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" TrailDamageField="OrbUpgradeDamageField"/>
+				<Change ValueChangeType="ADD" TrailDamageFieldInterval="60"/>
+			</Rank>
+		</Upgrade>
+
+
+		<Upgrade Name="Hook" HelpTextId="Hook_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" VacuumStrength="9000" />
+				<Change ValueChangeType="ADD" DamageFalloff="1.5" />
+				<Change ValueChangeType="ABSOLUTE" ChildGraphic="HookTrailUpgrade"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Uppercut" HelpTextId="Uppercut_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" ImpactVelocity="200" />
+				<Change ValueChangeType="ADD" ImpactUpwardVelocity="10000" />
+				<Change ValueChangeType="MULTIPLY" DamageLow="1.25" />
+				<Change ValueChangeType="MULTIPLY" DamageHigh="1.25" />
+				<Change ValueChangeType="REPLACE_IF_NULL" ImpactFx="UppercutPillar"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Tracker" HelpTextId="Tracker_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="TrackerUpgradeDamageOverTime" />
+				<Change ValueChangeType="ADD" Effect="TrackerUpgradeSpeed" />
+				<Change ValueChangeType="ADD" Effect="TrackerUpgradeRotation" />
+				<Change ValueChangeType="ADD" ChildGraphic="TrackerUpgradeFx" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Jumper" HelpTextId="Jumper_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" NumJumps="5" />
+				<Change ValueChangeType="ADD" JumpRange="350" />
+				<Change ValueChangeType="ADD" JumpDamageMultiplier="0.5" />
+				<Change ValueChangeType="ADD" ChildGraphic="JumperProjectileUpgrade" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Might" HelpTextId="Might_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" DamageLow="1.5"/>
+				<Change ValueChangeType="MULTIPLY" DamageHigh="1.5"/>
+				<Change ValueChangeType="ADD" ChildGraphic="MightUpgradeTrail"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Hide" HelpTextId="Hide_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" VulnerabilityMultiplier="1.25"/>
+			</Rank>
+		</Upgrade>
+
+
+		<Upgrade Name="Heal" HelpTextId="Heal_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" LifeSteal="0.1"/>
+				<Change ValueChangeType="ADD" ChildGraphic="HealUpgradeFx"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Charm" HelpTextId="Charm_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" CharmDuration="5.0"/>
+				<Change ValueChangeType="ADD" ChildGraphic="CharmProjectileUpgrade"/>
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Summon" HelpTextId="Summon_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" SuppressDeathWeaponChance="0.5"/>
+			</Rank>
+		</Upgrade>	
+
+		<!-- Activated Upgrade Effects -->
+
+		<Effect Name="BlinkUpgradeRecover" Type="RECOVER_OVER_TIME" Duration="0.15" Rate="5" IgnorePause="false" ClearOnExecute="false" Active="false"/>
+		
+	</Weapon>
+
+    <Weapon
+		Name="1_BasePlayerUtilityWeapon"
+		InheritFrom="1_BasePlayerWeapon"
+        ClearUpgrades="true"
+        FireOnSelect="true"
+        CanFireWhileRecovering="true"
+        StaminaCost="0"		
+        AutoLock="false"
+		AutoLockDuration="0.02"
+		>
+		
+		<Upgrade Name="Slam" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Slam_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" AllEffectsDuration="1.5"/>
+			</Rank>
+		</Upgrade>
+			
+		<Upgrade Name="Snipe" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Snipe_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" AllEffectsDuration="1.5"/> 
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="ClusterbombGP" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="ClusterbombGP_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" Cooldown="0.75"/> 
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Blink" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Blink_Utility_Upgrade">
+			<Rank>
+				
+				<Change ValueChangeType="ABSOLUTE" ChargeGraphic="null"/>
+				<Change ValueChangeType="ABSOLUTE" ChargeTime="0.01"/>
+				<Change ValueChangeType="ABSOLUTE" StartDelay="0.01"/>
+				<Change ValueChangeType="ABSOLUTE" WeaponGraphic="MusePostAttackDisable"/>
+				<Change ValueChangeType="ABSOLUTE" IdleGraphic="MusePostAttackDisableReturnToIdle"/>
+				<Change ValueChangeType="ABSOLUTE" DisableOwnerForDuration="1.45"/>
+				<Change ValueChangeType="ABSOLUTE" Cooldown="1.734"/>
+				<Change ValueChangeType="ADD" SelfVelocity="1200"/>
+				<Change ValueChangeType="ABSOLUTE" FirePreview="MusePostAttackDisableFirePreview"/>
+				
+				<Change ValueChangeType="ABSOLUTE" CanFireWhileRecovering="true"/>
+				
+			</Rank>
+		</Upgrade>
+
+	
+		<Upgrade Name="Sidearm" Graphic="GUI\\Icons\\Upgrades\\upgrade_Special" HelpTextId="Sidearm_Upgrade">
+			<Rank ValueChangeType="MULTIPLY" StaminaCost="0.5" />
+		</Upgrade>
+
+		<Upgrade Name="Bomb" Graphic="GUI\\Icons\\Upgrades\\upgrade_Special" HelpTextId="Bomb_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Projectile="BombUtilityNova" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Hook" Graphic="GUI\\Icons\\Upgrades\\upgrade_Special" HelpTextId="Hook_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Projectile="HookUtilityNova" />
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Might" Graphic="GUI\\Icons\\Upgrades\\upgrade_Special" HelpTextId="Might_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="MightUpgradeDamage"/>
+				<Change ValueChangeType="ADD" Effect="MightUpgradeProtection"/>
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Hide" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Hide_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="HideUpgradeStealth"/>
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Heal" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Heal_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Effect="HealUpgrade"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Charm" Graphic="GUI\\Icons\\Upgrades\\upgrade_Special" HelpTextId="Charm_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Projectile="CharmUtilityNova" />
+			</Rank>
+		</Upgrade>
+				
+		<Upgrade Name="Jumper" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Jumper_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" Cooldown="0.75"/> 
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Summon" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Summon_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" Cooldown="0.75"/> 
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Tracker" Graphic="GUI\\Icons\\Upgrades\\upgrade_Special" HelpTextId="Tracker_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ADD" Projectile="Tracker" />
+				<Change ValueChangeType="ADD" NumProjectiles="3" />
+				<Change ValueChangeType="ADD" ProjectileAngleOffset="45" />
+			</Rank>
+		</Upgrade>
+				
+		<Upgrade Name="Orb" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Orb_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" AllEffectsDuration="1.5"/> 
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Uppercut" Graphic="GUI\\Icons\\Powers\\power_evolve_01" HelpTextId="Uppercut_Utility_Upgrade">
+			<Rank>
+				<Change ValueChangeType="MULTIPLY" AllEffectsDuration="1.5"/> 
+			</Rank>
+		</Upgrade>
+
+		<!-- Upgrade Related Effects -->
+		<Effect Name="HealUpgrade" Type="HEAL_OVER_TIME" Duration="0.05" Cooldown="0.01" Amount="1" IgnorePause="true" ClearOnExecute="false" Active="false"/>
+		<Effect Name="HideUpgradeStealth" Type="STEALTH" Duration="2.8" Modifier="0.8" ClearOnAttack="true" ClearOnExecute="false" ClearFx="StealthClear" Active="false"/>
+		<Effect Name="MightUpgradeDamage" Type="DAMAGE_OUTPUT" Duration="2.8" Modifier="2.0" Sound="SFX/Menu Sounds/PowerUpgrade" ClearOnExecute="false" Active="false"/>
+		<Effect Name="MightUpgradeProtection" Type="INVULNERABLE" Duration="2.8" Modifier="1.0" ClearOnExecute="false" Active="false"/>
+		
+        
+    </Weapon>
+	
+
+	<Projectile
+        Name="1_BaseProjectile"
+		InvincibleImpactSound="/SFX/Enemy Sounds/InvincibleOnHit"
+		TemporarilyInvincibleImpactSound="/SFX/Enemy Sounds/EnergyShieldOnHit"
+		>
+		<Thing
+			VisibleInPlanning="true">
+		</Thing>
+	</Projectile>
+
+    <Projectile
+        Name="1_BaseLargeProjectile"
+		InheritFrom="1_BaseProjectile"
+		CriticalFx="VirusCritRings">
+        <ImpactGraphic Material="PLAYER" Name="PlayerOnHit"/>
+        <ImpactGraphic Material="INVINCIBLE" Name="InvincibleHitSpark"/>
+        <ImpactGraphic Material="ORGANIC" Name="VirusOnHitRandom"/>
+        <ImpactGraphic Material="PLANT" Name="PlantHitSpark"/>
+        <ImpactGraphic Material="METAL" Name="VirusOnHit"/>
+    </Projectile>
+
+	<Projectile
+		Name="1_BaseSmallProjectile"
+		InheritFrom="1_BaseProjectile"
+		CriticalFx="VirusCritRings">
+		<ImpactGraphic Material="PLAYER" Name="PlayerOnHit"/>
+		<ImpactGraphic Material="INVINCIBLE" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="ORGANIC" Name="VirusOnHitRandom"/>
+		<ImpactGraphic Material="METAL" Name="VirusOnHit"/>
+	</Projectile>
+
+	<Projectile
+		Name="1_BaseBuffProjectile"
+		InheritFrom="1_BaseProjectile"
+		ImpactFxInterval="0.2">
+		<ImpactGraphic Material="PLAYER" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="INVINCIBLE" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="ORGANIC" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="PLANT" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="WOOD" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="STONE" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="STONE" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="STONE" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="ICE" Name="InvincibleHitSpark_Small"/>
+		<ImpactGraphic Material="METAL" Name="InvincibleHitSpark"/>
+	</Projectile>
+
+    <Projectile
+        Name="1_BaseDebuffProjectile"
+		InheritFrom="1_BaseProjectile">
+        <ImpactGraphic Material="PLAYER" Name="PlayerOnHit"/>
+        <ImpactGraphic Material="INVINCIBLE" Name="InvincibleHitSpark_Small"/>
+        <ImpactGraphic Material="ORGANIC" Name="VirusOnHitRandom"/>
+		<ImpactGraphic Material="METAL" Name="VirusOnHit"/>
+	</Projectile>
+
+
+	<Projectile
+		Name="1_BasePlayerLargeProjectile"
+		InheritFrom="1_BaseLargeProjectile"
+		TripProximityTriggers="true"
+		ImpactFxInterval="0.0"
+		SpawnType="PROJECTILE"
+		SpawnOnKill="PassiveBombExplode"
+		SpawnOnKillChance="0.0"
+		MetalImpactSound="/SFX/Enemy Sounds/EnemyOnHit2"
+		PlayerImpactSound="/SFX/Player Sounds/PlayerOnHit"
+		>
+		
+		<!-- Card Weapon Effects -->
+		<Effect Name="SlamUpgradeCombo" Type="TAG" Duration="1.575" Active="false" BackFx="DebuffBack" FrontFx="DebuffFront"/>
+		<Effect Name="SlamUpgradeStunSpeed" Type="SPEED" Duration="1.575" Modifier="0.0" ShowCustomInfo="true" Active="false"/>
+		<Effect Name="SlamUpgradeStunDisarm" Type="DISARM" Duration="1.575" Active="false"/>
+		<Effect Name="SlamUpgradeStunRotation" Type="ROTATION" Duration="1.575" Modifier="0.000001" Active="false"/>
+		<Effect Name="SlamUpgradeDestealth" Type="STEALTH" Modifier="-1.0" Duration="1.575" Active="false"/>
+		<Tag Name="SlamUpgradeCombo" DamageMultiplier="1.5"/>
+
+		<Effect Name="JumperUpgradeSlow" Type="SPEED" Duration="1.5" Modifier="0.5" Stacks="true" MaxStacks="10" Active="false"/>
+		
+		<Tag Name="Combo" DamageMultiplier="1.5" />
+
+		<Effect Name="TrackerUpgradeDamageOverTime" Type="DAMAGE_OVER_TIME" Duration="2.0" Cooldown="0.05" Amount="1" Active="false" ShowCustomInfo="true" FrontFx="ArcSpawner" SpawnOnKill="TrackerDeathWeapon"/>
+		<Effect Name="TrackerUpgradeSpeed" Type="SPEED" Duration="2.0" Modifier="0.3" Active="false"/>
+		<Effect Name="TrackerUpgradeRotation" Type="ROTATION" Duration="2.0" Modifier="0.1" Active="false"/>
+
+	</Projectile>
+
+	<Projectile
+		Name="1_BasePlayerSmallProjectile"
+		InheritFrom="1_BaseSmallProjectile"
+		TripProximityTriggers="true"
+		ImpactFxInterval="0.0"
+		SpawnOnKillChance="0.0"
+		MetalImpactSound="/SFX/Enemy Sounds/EnemyOnHit2"
+		PlayerImpactSound="/SFX/Player Sounds/PlayerOnHit"
+		>
+
+		<!-- Card Weapon Effects -->
+		<Effect Name="SlamUpgradeCombo" Type="TAG" Duration="1.575" Active="false" BackFx="DebuffBack" FrontFx="DebuffFront"/>
+		<Effect Name="SlamUpgradeStunSpeed" Type="SPEED" Duration="1.575" Modifier="0.0" ShowCustomInfo="true" Active="false"/>
+		<Effect Name="SlamUpgradeStunDisarm" Type="DISARM" Duration="1.575" Active="false" />
+		<Effect Name="SlamUpgradeStunRotation" Type="ROTATION" Duration="1.575" Modifier="0.000001" Active="false"/>
+		<Effect Name="SlamUpgradeDestealth" Type="STEALTH" Modifier="-1.0" Duration="1.575" Active="false"/>
+		<Tag Name="SlamUpgradeCombo" DamageMultiplier="1.5"/>
+
+		<Effect Name="JumperUpgradeSlow" Type="SPEED" Duration="1.5" Modifier="0.5" Stacks="true" MaxStacks="10" Active="false"/>
+		
+		<Tag Name="Combo" DamageMultiplier="1.5" />
+
+		<Effect Name="TrackerUpgradeDamageOverTime" Type="DAMAGE_OVER_TIME" Duration="3.5" Cooldown="0.05" Amount="1" Active="false" ShowCustomInfo="true" FrontFx="ArcSpawner" SpawnOnKill="TrackerDeathWeapon"/>
+		<Effect Name="TrackerUpgradeSpeed" Type="SPEED" Duration="3.5" Modifier="0.3" Active="false"/>
+		<Effect Name="TrackerUpgradeRotation" Type="ROTATION" Duration="3.5" Modifier="0.1" Active="false"/>
+	</Projectile>
+
+	<Weapon
+		Name="1_BasePlayerSummonWeapon"
+		InheritFrom="1_BasePlayerWeapon"
+		Projectile="1_BasePlayerSummonWeapon"
+		DisableOwnerForDuration="0.3"
+		Cooldown="0.35"
+		ArsenalCooldown="0.0"
+        ChargeTime="1.15"
+        ChargeGraphic="MuseSummonCharge"
+		Graphic="MuseSummonFire"
+        IdleGraphic="MuseSummonReturnToIdle"
+		Icon="GUI\\Icons\\Powers\\power_summon"
+		FireSound="null"
+		FireSound2="SFX/Player Sounds/Vocalizations/Muse_Attack_Light"
+        FireOnSelect="true"
+        StaminaCost="0"
+        AutoLock="false"
+		AutoLockDuration="0.02"
+		CanFireWhilePlanning="false"
+		FullyAutomatic="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="1_BasePlayerSummonWeapon"
+		InheritFrom="1_BasePlayerLargeProjectile"
+		Graphic="null"
+		DetonateGraphic="null"
+		DetonateSound="PeacemakerDeath"
+		Type="STRAIGHT"
+		Speed="0.0"
+		Range="50"
+		SpawnOnDetonate="Egg"
+		SpawnType="OBSTACLE"
+		SpawnCount="1"
+		SpawnCap="2"
+		DamageLow="1"
+		DamageHigh="1"
+		DamageRadius="1"
+		SpawnUpwardVelocity="5000"
+		Fuse="0.0"
+		ReflectOnObstacleImpact="true"
+		StartDelay="0.175"
+		>
+		<Thing OffsetZ="1.0"></Thing>
+	</Projectile>
+
+	<Weapon
+		Name="Summon"
+		InheritFrom="1_BasePlayerSummonWeapon"
+		GenericHelpTextId="Summon_Generic"
+		UpgradeHelpTextId="Summon_Generic_Upgrade"
+		BioHelpTextId="Summon_Bio"
+		BioTwoHelpTextId="Summon_Bio_2"
+		BioThreeHelpTextId="Summon_Bio_3"
+		BioFourHelpTextId="Summon_Bio_4"
+		Portrait="GUI\\Portraits\\inspect_portrait_03"
+		Projectile="Summon"
+		BarrelLength="90"
+		ProjectileOffset="60"
+		ClearUpgrades="true"
+		ChargeSound="/SFX/Player Sounds/Weapon_Summon_Charge"
+		OnWeaponChargingSound1="/SFX/Player Sounds/Vocalizations/Muse_Attack_Pull"
+		OnWeaponChargingSound1Chance="0.3"
+		OnWeaponChargingSound2="/SFX/Player Sounds/Vocalizations/Muse_Emote_Charge_Quick"
+		FireSound2="/SFX/Player Sounds/Weapon_Summon_Fire"
+		FireSound3="/SFX/Player Sounds/Vocalizations/Muse_Emote_Satisfaction"
+		Cost="4"
+		Cooldown="10"
+		ShowCooldown="true"
+		ChargeFx="SummonChargeSpawner"
+		FullyAutomatic="false"
+		TouchGroundAttack="false"
+		TouchFireOnSelect="true"
+		>
+		
+		<Upgrade Name="Slam" HelpTextId="Slam_Pet">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" ImmuneToStun="true"/>
+				<Change ApplyGlobally="PetSlam"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Snipe" HelpTextId="Snipe_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetSnipe"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ClusterbombGP" HelpTextId="Clusterbomb_Pet">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" NumProjectiles="2"/>
+				<Change ValueChangeType="ABSOLUTE" SpawnCap="2"/>
+				<Change ValueChangeType="ADD" ProjectileAngleOffset="40"/>
+				<Change ApplyGlobally="PetClusterbombGP"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Bomb" HelpTextId="Bomb_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetBomb"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Blink" HelpTextId="Blink_Pet">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" CanFireWhileRecovering="true"/>
+				<Change ValueChangeType="MULTIPLY" Cooldown="0.5"/>
+				<Change ApplyGlobally="PetBlink"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Heal" HelpTextId="Heal_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetHeal"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Might" HelpTextId="Might_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetMight"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Hook" HelpTextId="Hook_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetHook"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Sidearm" HelpTextId="Sidearm_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetSidearm"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Orb" HelpTextId="Orb_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetOrb"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Hide" HelpTextId="Hide_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetHide"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Charm" HelpTextId="Charm_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetCharm"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Uppercut" HelpTextId="Uppercut_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetUppercut"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Tracker" HelpTextId="Tracker_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetTracker"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Jumper" HelpTextId="Jumper_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetJumper"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Summon" HelpTextId="Summon_Pet">
+			<Rank>
+				<Change ApplyGlobally="PetSummon"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="Summon"
+		InheritFrom="1_BasePlayerSummonWeapon"
+		DetonateGraphic="null"
+		DetonateSound="/SFX/Enemy Sounds/EnemyPhaseIn"
+		SpawnOnDetonate="PlayerPet"
+		SpawnType="UNIT"
+		SpawnCap="1"
+		SpawnAsFriend="true"
+		FizzleOldSpawns="true"
+		SpawnUpwardVelocity="0"
+		>
+	</Projectile>
+	
+	<!-- Enemy Weapons -->
+
+	<Weapon
+		Name="1_BaseEnemyWeapon"
+		>
+
+		<Upgrade Name="Enemy_Damage" Category="NORMAL" Graphic="GUI\\Icons\\Upgrades\\Upgrade_Longbow_ArrowDamage">
+			<Rank ValueChangeType="MULTIPLY" DamageLow="2.0" DamageHigh="2.0"/>
+		</Upgrade>
+
+		<Upgrade Name="Enemy_Speed" Category="NORMAL" Graphic="GUI\\Icons\\Upgrades\\Upgrade_Longbow_ArrowDamage">
+			<Rank ValueChangeType="MULTIPLY" Cooldown="0.75" ReloadTime="0.75"/>
+		</Upgrade>
+
+		<Upgrade Name="Enemy_Slow" Category="NORMAL" Graphic="GUI\\Icons\\Upgrades\\Upgrade_Longbow_ArrowDamage">
+			<Rank ValueChangeType="MULTIPLY" Effect="GenericSlow"/>
+		</Upgrade>
+
+	</Weapon>
+
+	<Projectile
+		Name="1_BaseEnemyProjectile"
+		InheritFrom="1_BaseProjectile"
+		PlayerImpactScreenFx="ScreenHitFx"
+		PlayerImpactScreenFxInterval="0.05"
+		ImpactFilterOpacity="0.0"
+        ImpactFilterDuration="0.0">
+
+		<Effect Name="GenericSlow" Type="SPEED" Duration="1.25" Modifier="0.5" Stacks="false" Active="false"/>
+
+		<ImpactGraphic Material="PLAYER" Name="PlayerOnHit"/>
+		<ImpactGraphic Material="INVINCIBLE" Name="InvincibleHitSpark"/>
+		<ImpactGraphic Material="ORGANIC" Name="VirusOnHitRandom"/>
+		<ImpactGraphic Material="METAL" Name="VirusOnHit"/>
+	</Projectile>
+
+	<!-- Touchdown -->
+
+	<Weapon
+		Name="TouchdownSlam"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		Type="GUN"
+		Graphic="null"
+		Projectile="TouchdownSlam"
+		RequiresTarget="false"
+		>
+		<Upgrade Name="ImprovedTouchdown" Graphic="GUI\\Shell\\tonic_hopscotch">
+			<Rank ValueChangeType="MULTIPLY" DamageLow="3.0" DamageHigh="3.0" DamageRadius="1.1"/>
+		</Upgrade>
+	</Weapon>
+	<Projectile
+		Name="TouchdownSlam"
+		InheritFrom="1_BaseLargeProjectile"
+		DetonateGraphic="null"
+		DetonateSound="PlayerHit"
+		Type="STRAIGHT"
+		Fuse="0.0"
+		DamageLow="5"
+		DamageHigh="5"
+		DamageRadius="175.0"
+		ImpactVelocity="300.0"
+		CanCrit="false"
+		>
+	</Projectile>
+
+	<!-- LevelUp-->
+
+	<Weapon
+		Name="LevelUp"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		Type="GUN"
+		Graphic="null"
+		Projectile="LevelUp"
+		RequiresTarget="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="LevelUp"
+		DetonateGraphic="null"
+		DetonateSound="null"
+		Type="STRAIGHT"
+		Fuse="0.0"
+		DamageLow="100"
+		DamageHigh="100"
+		DamageRadius="300.0"
+		ImpactVelocity="750.0"
+		CanCrit="false"
+		>
+	</Projectile>
+	
+	<!-- PlayerOnHitWeapon -->
+
+	<Weapon
+		Name="PlayerOnHitWeapon"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		Projectile="PlayerOnHitWeapon"
+		BarrelLength="0"
+		FireFx="PingMuzzle"
+		FireSound="null"
+		Type="GUN"
+		NumProjectiles="1"
+		Cooldown="0.075"
+		RequiresTarget="false"
+		ApplyCooldownToDefenseSlot="false"
+        AutoLock="true"
+		Enabled="false"
+		>
+
+		<Upgrade Name="Tracker">
+			<Rank>
+				<Change Enabled="true"/>
+			</Rank>
+		</Upgrade>
+		
+	</Weapon>
+	<Projectile
+		Name="PlayerOnHitWeapon"
+		InheritFrom="1_BaseSmallProjectile"
+		Graphic="TrackerPassiveOnHitWeaponFx"
+		StartFx="SlamFlash"
+		Type="HOMING"
+		DamageLow="10"
+		DamageHigh="10"
+		Range="650.0"
+		FadeTime="09"
+		Speed="900.0"
+		NumPenetrations="0"
+		AffectsFriends="false"
+		AffectsSelf="false"
+		ClearOnAttackEffects="false"
+		ImmunityDuration="0.25"
+        MaxAdjustRate="980"
+        Fuse="2.2"
+		>
+		<Thing
+			OffsetZ="115.0"
+			Scale="0.65">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="24"/>
+			<Point X="24" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-24" Y="0"/>
+		</Thing>
+	</Projectile>
+	
+	<!-- PlayerDecoyWeapon -->
+
+	<Weapon
+		Name="PlayerDecoyWeapon"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		Projectile="SummonDecoy"
+		BarrelLength="0"
+		FireSound="null"
+		Type="GUN"
+		NumProjectiles="1"
+		Cooldown="1.5"
+		RequiresTarget="false"
+		ApplyCooldownToDefenseSlot="false"
+		IgnoreCooldownDuringExecute="false"
+		ExecuteCooldown="0.0"
+		Enabled="false"
+		>
+
+		<Upgrade Name="ClusterbombGP">
+			<Rank>
+				<Change Enabled="true"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+
+	<!-- PassiveBombSpawner -->
+
+	<Weapon
+		Name="PassiveBombSpawner"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		RequiresTarget="false"
+		ApplyCooldownToDefenseSlot="false"
+		FireSound="/SFX/Player Sounds/Weapon_Bomb_Fire"
+		Enabled="false"		
+		Type="GUN"
+		Projectile="Bomb"
+		Cooldown="10.0"
+		ArsenalCooldown="0.0"
+		ClipSize="1"
+		ProjectileOffset="0"
+		ClearUpgrades="true"
+		RandomFireAngle="true"
+		BarrelLength="175"
+		ExecuteCooldown="0.0"
+		CanFireWhileExecuting="false"
+		RequiresInWalledMapArea="true"
+		>
+
+		<Upgrade Name="Bomb">
+			<Rank>
+				<Change Enabled="true"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+
+	<!-- PlayerOnKillWeapon -->
+
+	<Weapon
+		Name="PlayerOnKillWeapon"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		BarrelLength="0"
+		FireSound="null"
+		Type="SELF"
+		Cooldown="0.01"
+		ExecuteCooldown="0.0"
+		IgnoreForceCooldown="true"
+		RequiresTarget="false"
+		AllEffectsProcChance="1.0"
+		>
+		<Effect Name="PlayerOnKillBuffSpeed" Type="SPEED" Duration="2.0" Modifier="1.45" Active="false" ShowCustomInfo="true"/>
+		<Effect Name="PlayerOnKillBuffStealth" Type="STEALTH" Duration="2.0" Modifier="0.8" Sound="/SFX/Player Sounds/Weapon_Hide_Fire" ClearOnAttack="true" Active ="false" ClearFx="HideShroud" FrontFx="StealthCloudSpawner" BackFx="HideShroud"/>
+
+		<Upgrade Name="Hide">
+			<Rank>
+				<Change Effect="PlayerOnKillBuffSpeed"/>
+				<Change Effect="PlayerOnKillBuffStealth"/>
+			</Rank>
+		</Upgrade>
+		
+	</Weapon>
+
+	<!-- PlayerLowHealthWeapon -->
+
+	<Weapon
+		Name="PlayerLowHealthWeapon"
+		InheritFrom="1_BasePlayerWeapon"
+		SlotType="UNKNOWN"
+		BarrelLength="0"
+		FireSound="SFX/OLD SOUNDS/StealthActivate"
+		Type="GUN"
+		Cooldown="10.0"
+		LowHealthCooldownModifier="30.0"
+		RequiresDamaged="true"
+		IgnoreForceCooldown="true"
+		RequiresTarget="false"
+		RandomFireAngle="true"
+		Projectile="PlayerLowHealthWeapon"
+		ExecuteCooldown="0.0"
+		Enabled="false"
+		NoAmmoSound="null"
+		IgnoreCooldownDuringExecute="false"
+		ClearUpgrade="ClusterbombGP"
+		>
+
+		<Upgrade Name="ClusterbombGP">
+			<Rank>
+				<Change Enabled="true"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="PlayerLowHealthWeapon"
+		InheritFrom="1_BasePlayerLargeProjectile"
+		Graphic="ClusterbombProjectileSecondary"
+		DetonateGraphic="ClusterBombSecondaryExplosion"
+		DetonateSound="SFX/Player Sounds/WeaponDetonate5"
+		Type="LOB"
+		DamageLow="5"
+		DamageHigh="5"
+		DamageRadius="125.0"
+		AutoAdjustForTarget="false"
+		Speed="300"
+		SpeedVariance="150"
+		SpinRate="-360"
+		MinRange="0.0"
+		ImpactVelocity="0.0"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		SelfDamageMultiplier="0.0"
+        CheckUnitImpact="false"
+		CheckObstacleImpact="false"
+		ImpactRumbleIntensity="0.5"
+		ImpactRumbleDuration="0.2"
+		DetonateRumbleIntensity="0.25"
+		DetonateRumbleDuration="0.20"
+		CanCrit="true"
+		>
+		<Thing
+			Scale="0.6"
+			OffsetZ="101"
+			Shadow="Decals\\Health_Circle_Medium"
+			ShadowScale="2.0">
+			<Point X="0" Y="24"/>
+			<Point X="24" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-24" Y="0"/>
+		</Thing>
+	</Projectile>
+	
+	
+	<!-- PetLowHealthWeapon -->
+
+	<Weapon
+		Name="PetLowHealthWeapon"
+		InheritFrom="1_BasePlayerWeapon"
+		SlotType="UNKNOWN"
+		BarrelLength="0"
+		FireSound="null"
+		Type="GUN"
+		Cooldown="0.25"
+		IgnoreForceCooldown="true"
+		RequiresTarget="false"
+		Projectile="PetLowHealthWeapon"
+		Enabled="false"
+		NoAmmoSound="null"
+		IgnoreCooldownDuringExecute="false"
+		ClearUpgrades="true"
+		ExecuteCooldown="0.0"
+		>
+		<!--		
+		<Effect Name="EpicenterBlastwave" Type="WEAPON_FIRE" Duration="1.0"/>
+		-->
+		<Upgrade Name="Orb">
+			<Rank>
+				<Change Enabled="true"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="PetLowHealthWeapon"
+		InheritFrom="1_BasePlayerLargeProjectile"
+		Type="STRAIGHT"
+		Speed="0.0"
+		Fuse="0.0"
+		DamageLow="7.5"
+		DamageHigh="7.5"
+		DamageRadius="150"
+		DetonateGraphic="OrbOnSummonFx"
+		DetonateSound="null"
+		NumPenetrations="9999999"
+		IgnoreArmor="false"
+		AffectsSelf="false"
+		AffectsFriends="false"
+		CanCrit="false"
+		CanBackstab="false"
+		TriggerHitSound="false"
+		MaxVictimZ="9999"
+		>
+		<Thing
+			Scale="0.6"
+			OffsetZ="101"
+			Shadow="Decals\\Health_Circle_Medium"
+			ShadowScale="2.0">
+			<Point X="0" Y="24"/>
+			<Point X="24" Y="0"/>
+			<Point X="0" Y="-24"/>
+			<Point X="-24" Y="0"/>
+		</Thing>
+	</Projectile>
+
+	<!-- PlayerExecuteWeapon -->
+
+	<Weapon
+		Name="PlayerExecuteWeapon"
+		InheritFrom="1_BasePlayerWeapon"
+		SlotType="UNKNOWN"
+		BarrelLength="0"
+		FireSound="/SFX/Player Sounds/Weapon_PlayerExecuteWeapon_Fire"
+		Type="GUN"
+		Cooldown="0.25"
+		IgnoreForceCooldown="true"
+		RequiresTarget="false"
+		RandomFireAngle="true"
+		Projectile="PlayerExecuteWeapon"
+		ExecuteCooldown="0.0"
+		Enabled="false"
+		IgnoreCooldownDuringExecute="false"
+		ClearUpgrades="true"
+		NoAmmoSound="null"
+		StaminaCost="10"
+		FirePreview="null"
+		>
+
+		<Upgrade Name="Uppercut">
+			<Rank>
+				<Change Enabled="true"/>
+			</Rank>
+		</Upgrade>
+
+	</Weapon>
+	<Projectile
+		Name="PlayerExecuteWeapon"
+		InheritFrom="1_BasePlayerLargeProjectile"
+		Graphic="OrbProjectileBTripped"
+		DetonateGraphic="ExpandingCircleBuff"
+		DetonateSound="SFX/Player Sounds/WeaponDetonate3"
+		Type="STRAIGHT"
+		DamageLow="150.0"
+		DamageHigh="150.0"
+		DamageRadius="100"
+		DamageRadiusScaleY="0.75"
+		RequireHitCenter="false"
+		DrawShadow="false"
+		TrippedGraphic="OrbProjectileBTripped"
+		TripProximityTriggers="true"
+		CheckUnitImpact="false"
+		CheckObstacleImpact="false"
+		MoveWithTerrain="true"
+		Fuse="0.0"
+		SelfDamageMultiplier="0.0"
+		IgnoreArmor="false"
+		CanCrit="false"
+		CanBackstab="false"
+		Range="60"
+		ImpactUpwardVelocity="7500"
+		ImpactVelocity="1350"
+		DetonateRumbleIntensity="0.45"
+		DetonateRumbleDuration="0.35"
+		DetonatePauseFrames="4"
+		>
+		<Thing OffsetZ="70.0"></Thing>
+	</Projectile>
+	
+	<!-- PlayerExecuteWeapon -->
+
+	<Weapon
+		Name="PetExecuteWeapon"
+		InheritFrom="PlayerExecuteWeapon"
+		ClearUpgrades="true"
+		>
+		<Upgrade Name="PetUppercut">
+			<Rank>
+				<Change Enabled="true"/>
+			</Rank>
+		</Upgrade>
+	</Weapon>
+	<Projectile
+		Name="PetExecuteWeapon"
+		InheritFrom="PlayerExecuteWeapon"
+		ImpactPauseFrames="0"
+		DamageLow="100.0"
+		DamageHigh="100.0"
+		>
+	</Projectile>
+
+	<!-- PlayerDeath -->
+
+	<Weapon
+		Name="PlayerDeath"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		Type="GUN"
+		Graphic="null"
+		Projectile="PlayerDeath"
+		RequiresTarget="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="PlayerDeath"
+		DetonateGraphic="PhoenixExplosion"
+		DetonateSound="SFX/OLD SOUNDS/PeacemakerDeath"
+		Type="STRAIGHT"
+		Fuse="0.65"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="1100.0"
+		ImpactVelocity="0"
+        ImpactUpwardVelocity="0"
+		CanBeReflected="false"
+		>
+	</Projectile>
+
+	<!-- SummonDeathWeapon -->
+
+	<Weapon
+		Name="SummonDeathWeapon"
+		InheritFrom="1_BaseWeapon"
+		SlotType="UNKNOWN"
+		Type="GUN"
+		Graphic="null"
+		Projectile="SummonDeathWeapon"
+		RequiresTarget="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="SummonDeathWeapon"
+		DetonateGraphic="PhoenixExplosion"
+		DetonateSound="SFX/OLD SOUNDS/PeacemakerDeath"
+		Type="STRAIGHT"
+		Fuse="0.1"
+		DamageLow="50"
+		DamageHigh="50"
+		DamageRadius="150.0"
+		ImpactVelocity="300.0"
+        ImpactUpwardVelocity="0"
+		CanBeReflected="false"
+		SpawnOnDetonate="Drop_Heal"
+		SpawnType="OBSTACLE"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		SelfDamageMultiplier="0.0"
+		>
+	</Projectile>
+	<Projectile
+		Name="HealingDarts"
+		StartDelay="0.0"
+		DrawShadow="false"
+		Graphic="MudgatorIdle_Virus"
+		Type="HOMING"
+        MaxAdjustRate="1720"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="100"
+		ImpactVelocity="0"
+		ImpactUpwardVelocity="0"
+		Range="1000.0"
+		Speed="300"
+		NumPenetrations="1"
+		Acceleration="0"
+		FadeTime="0.0"
+		AffectsSelf="true"
+		AffectsEnemies="false"
+		AffectsFriends="true"
+		RequireHitCenter="false"
+		HomingAllegiance="PLAYER"
+		IgnoreArmor="false"
+		CanBeReflected="false"
+		Fuse="5.98"
+		CanCrit="false"
+		>
+		<Thing
+		RotateGeometry="true"
+		OffsetZ="70.0">
+			<Point X="0" Y="8"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-8"/>
+			<Point X="-32" Y="0"/>
+			<Color Red="0.0" Green="1.0" Blue="0.0" Opacity="1.0"/>
+		</Thing>
+		<Effect Name="HealingDartsHeal" Type="HEAL_OVER_TIME" Duration="1.0" Cooldown="0.5" Amount="100" Active="true"/>
+	</Projectile>	
+	
+	<!-- Invisible InstantDamage -->
+
+	<Weapon
+		Name="InstantDamage"
+		Type="GUN"
+		Projectile="InstantDamage"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		SilentImpact="true"
+		ReloadOnCreation="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="InstantDamage"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="88"
+		DamageHigh="88"
+		IgnoreArmor="true"
+		>
+	</Projectile>
+
+	<!-- Invisible Destealth -->
+	<Weapon
+		Name="InvisibleDestealth"
+		Type="GUN"
+		Projectile="InvisibleDestealth"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		SilentImpact="true"
+		ReloadOnCreation="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleDestealth"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true"
+		>
+		<Effect Name="SlamDestealth" Type="STEALTH" Modifier="-1.0" Duration="10" Active="true"/>
+	</Projectile>
+
+
+	
+	<!-- Invisible Slow -->
+
+	<Weapon
+		Name="InvisibleSlow"
+		Type="GUN"
+		Projectile="InvisibleSlow"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		SilentImpact="true"
+		ReloadOnCreation="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleSlow"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true"
+		>
+		<Effect Name="InvisibleSlow" Type="SPEED" Duration="999.0" Modifier="0.825" CanAffectInvulnerable="true" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="InvisibleSlowStrong"
+		InheritFrom="InvisibleSlow"
+		Projectile="InvisibleSlowStrong"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleSlowStrong"
+		InheritFrom="InvisibleSlow"
+		ClearEffects="true"
+		>
+		<Effect Name="InvisibleSlowStrong" Type="SPEED" Duration="999.0" Modifier="0.425" CanAffectInvulnerable="true" Active="true"/>
+	</Projectile>
+
+	
+	<Weapon
+		Name="InvisibleSlowFinal"
+		InheritFrom="InvisibleSlow"
+		Projectile="InvisibleSlowFinal"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleSlowFinal"
+		InheritFrom="InvisibleSlow"
+		ClearEffects="true"
+		>
+		<Effect Name="InvisibleSlowFinal" Type="SPEED" Duration="999.0" Modifier="0.75" CanAffectInvulnerable="true" Active="true"/>
+	</Projectile>
+
+
+	<Weapon
+		Name="InvisibleSlowFinal2"
+		InheritFrom="InvisibleSlow"
+		Projectile="InvisibleSlowFinal"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleSlowFinal2"
+		InheritFrom="InvisibleSlow"
+		ClearEffects="true"
+		>
+		<Effect Name="InvisibleSlowFinal2" Type="SPEED" Duration="999.0" Modifier="0.68" CanAffectInvulnerable="true" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="InvisibleFast"
+		InheritFrom="InvisibleSlow"
+		Projectile="InvisibleFast"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleFast"
+		InheritFrom="InvisibleSlow"
+		ClearEffects="true"
+		>
+		<Effect Name="InvisibleFast" Type="SPEED" Duration="999.0" Modifier="100.00" CanAffectInvulnerable="true" Active="true"/>
+	</Projectile>
+
+    <!-- InvisibleHeal -->
+
+    <Weapon
+        Name="InvisibleHeal"
+        InheritFrom="1_BaseWeapon"
+        Projectile="InvisibleHeal"
+        Type="GUN"
+		FireSound="null"
+        BarrelLength="0"
+        Cooldown="0.01"
+        ClipSize="1"
+        ReloadTime="0.01"
+        SilentImpact="null"
+		ReloadOnCreation="false"
+        >
+    </Weapon>
+    <Projectile
+		Name="InvisibleHeal"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true">
+        <Effect Name="Heal" Type="HEAL_OVER_TIME" Duration="2.0" Cooldown="0.01" Amount="1" Active="true" IgnorePause="true"  ClearOnExecute="false"  ClearOnAttack="false" CanAffectInvulnerable="true"/>
+    </Projectile>
+
+	<!-- InvisibleHealSmooth -->
+
+	<Weapon
+        Name="InvisibleHealSmooth"
+        InheritFrom="1_BaseWeapon"
+        Projectile="InvisibleHealSmooth"
+        Type="GUN"
+		FireSound="null"
+        BarrelLength="0"
+        Cooldown="0.01"
+        ClipSize="1"
+        ReloadTime="0.01"
+        SilentImpact="null"
+		ReloadOnCreation="false"
+        >
+	</Weapon>
+	<Projectile
+		Name="InvisibleHealSmooth"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true">
+		<Effect Name="Heal" Type="HEAL_OVER_TIME" Duration="1.0" Cooldown="0.01" Modifier="0.05" Active="true" IgnorePause="true"  ClearOnExecute="false"  ClearOnAttack="false" CanAffectInvulnerable="true"/>
+	</Projectile>
+
+	<Weapon
+        Name="InvisibleInstantHeal"
+        InheritFrom="1_BaseWeapon"
+        Projectile="InvisibleInstantHeal"
+        Type="GUN"
+		FireSound="null"
+        BarrelLength="0"
+        Cooldown="0.01"
+        ClipSize="1"
+        ReloadTime="0.01"
+        SilentImpact="null"
+		ReloadOnCreation="false"
+        >
+	</Weapon>
+	<Projectile
+		Name="InvisibleInstantHeal"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true"
+		Heal="99999"
+        HealFraction="1.0">
+	</Projectile>
+
+	<Weapon
+        Name="InvisibleHealNoVfx"
+        InheritFrom="InvisibleHeal"
+        Projectile="InvisibleHealNoVfx"
+		>
+    </Weapon>
+	<Projectile
+		Name="InvisibleHealNoVfx"
+		InheritFrom="InvisibleHeal"
+		ClearEffects="true"
+		>
+		<Effect Name="Heal" Type="HEAL_OVER_TIME" Duration="2.0" Cooldown="0.01" Amount="1" Active="true" IgnorePause="true"/>
+	</Projectile>
+	
+	<!-- InvisibleStaminaRecover -->
+
+	<Weapon
+		Name="InvisibleStaminaRecover"
+		InheritFrom="1_BaseWeapon"
+		Projectile="InvisibleStaminaRecover"
+		Type="GUN"
+		FireSound="null"
+		BarrelLength="0"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		SilentImpact="null"
+		ReloadOnCreation="false"
+		ClearUpgrades="true"
+        >
+	</Weapon>
+	<Projectile
+		Name="InvisibleStaminaRecover"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true"
+        HealFraction="0.0">
+		<Effect Name="StaminaRecover" Type="RECOVER_OVER_TIME" Duration="0.5" Rate="100" Active="true" IgnorePause="true" ClearOnExecute="false"  ClearOnAttack="false" CanAffectInvulnerable="true" />
+	</Projectile>
+
+	<!-- InvisibleFullArmor -->
+		
+	<Weapon
+		Name="InvisibleFullArmor"
+		Type="GUN"
+		Projectile="InvisibleFullArmor"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		SilentImpact="true"
+		ReloadOnCreation="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleFullArmor"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true"
+		>
+		<Effect Name="InvisibleFullArmor" Type="ARMOR" Duration="99999.0" Modifier="-1.0" CanAffectInvulnerable="true" Active="true"/>
+	</Projectile>
+
+	<!-- InvisibleReflection -->
+
+	<Weapon
+		Name="InvisibleReflection"
+		Type="GUN"
+		Projectile="InvisibleReflection"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		SilentImpact="true"
+		ReloadOnCreation="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="InvisibleReflection"
+		Type="INSTANT"
+		Range="9999999"
+		NumPenetrations="9999999"
+		DamageLow="0"
+		DamageHigh="0"
+		IgnoreArmor="true"
+		>
+		<Effect Name="InvisibleReflection" Type="DEFLECT" Duration="99999" Modifier="1.0" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="BlankWeapon"
+		Type="SELF"
+		Projectile="null"
+		Cooldown="0.01"
+		ClipSize="1"
+		ReloadTime="0.01"
+		SilentImpact="true"
+		ReloadOnCreation="false"
+		>
+	</Weapon>
+
+	<Weapon
+		Name="Suicide"
+		Type="SELF"
+		Projectile="Suicide"
+		Cooldown="1.0"
+		SilentImpact="true"
+		ReloadOnCreation="false"
+		>
+	</Weapon>
+	<Projectile
+		Name="Suicide"
+		Type="STRAIGHT"
+		Damage="999999"
+		Range="1"
+		AffectsSelf="true"
+		AffectsFriends="false"
+		AffectsEnemies="false">
+	</Projectile>
+
+	<Weapon
+		Name="HaunterSuicide"
+		InheritFrom="Suicide"
+		WeaponRange="40"
+		>
+	</Weapon>
+
+</Weapons>

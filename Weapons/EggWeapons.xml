@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Weapons>
+
+	<!-- Base Egg Spawn-->
+	
+	<Weapon
+		Name="BaseEggSpawn"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		Projectile="BaseEggSpawn"
+		>
+		
+		<Upgrade Name="Egg_MultiSpawn" Graphic="GUI\\Icons\\Idols\\idol_chain">
+			<Rank Cost="0">
+				<Change ValueChangeType="ADD" SpawnCount="1"/>
+				<Change ValueChangeType="ADD" SpawnVelocity="1000"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn" Graphic="GUI\\Icons\\Limiters\\limiter_icon_zoner_gold">
+			<Rank Cost="0">
+				<Change ValueChangeType="ADD" SpawnOnDetonate2="FakeEgg"/>
+				<Change ValueChangeType="ADD" SpawnVelocity="400"/>
+			</Rank>
+		</Upgrade>
+		
+	</Weapon>
+	<Projectile
+		Name="BaseEggSpawn"
+		Graphic="null"
+		DetonateGraphic="null"
+		DetonateSound="PeacemakerDeath"
+		Type="STRAIGHT"
+		Speed="0.0"
+		SpawnOnDetonate="Egg"
+		SpawnType="OBSTACLE"
+		SpawnCount="1"
+		ExtraSpawnChance="0.4"
+		RandomSpawnOffset="1.0"
+		SpawnsGrabOwner="true"
+		DamageLow="0"
+		DamageHigh="0"
+		DamageRadius="1"
+		SpawnUpwardVelocity="5000"
+		Fuse="0.0"
+		ReflectOnObstacleImpact="true"
+		>
+		<Thing OffsetZ="1.0"></Thing>
+	</Projectile>
+
+
+	<!-- Suppressor -->
+	<Weapon
+		Name="SuppressorEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="SuppressorEggSpawn">
+	</Weapon>
+	<Projectile
+		Name="SuppressorEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="SuppressorEgg"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="Suppressor_TutorialEggSpawn"
+		InheritFrom="SuppressorEggSpawn"
+		Projectile="Suppressor_TutorialEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="Suppressor_TutorialEggSpawn"
+		InheritFrom="SuppressorEggSpawn"
+		SpawnOnDetonate="SuppressorTutorialEgg"
+		SpawnUpwardVelocity="9000"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="Suppressor_MiniEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="Suppressor_MiniEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="Suppressor_MiniEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="Suppressor_MiniEgg"
+		>
+	</Projectile>
+
+	<Weapon
+		Name="SuppressorRTEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="SuppressorRTEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="SuppressorRTEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="SuppressorRTEgg"
+		>
+	</Projectile>
+
+	<!-- Haunter -->
+
+	<Weapon
+		Name="HaunterEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="HaunterEggSpawn">
+	</Weapon>
+	<Projectile
+		Name="HaunterEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		DetonateGraphic="null"
+		DamageRadius="3000"
+		DamageRadiusScaleY="0.75"
+		NumPenetrations="9999"
+		IgnoreArmor="false"
+		AffectsFriends="true"
+		AffectsSelf="true"
+		AffectsEnemies="true"
+		AffectsStealthed="true">
+	</Projectile>
+	
+	<Weapon
+		Name="HaunterMoverEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		Projectile="HaunterMoverEggSpawn">
+	</Weapon>
+	<Projectile
+		Name="HaunterMoverEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		SpawnOnDetonate="HaunterMoverEgg">
+	</Projectile>
+
+	<Weapon
+		Name="HaunterShooterEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		Projectile="HaunterShooterEggSpawn">
+	</Weapon>
+	<Projectile
+		Name="HaunterShooterEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		SpawnOnDetonate="HaunterShooterEgg">
+		>
+	</Projectile>
+
+	<Weapon
+		Name="HaunterHealerEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		Projectile="HaunterHealerEggSpawn">
+	</Weapon>
+	<Projectile
+		Name="HaunterHealerEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		SpawnOnDetonate="HaunterHealerEgg">
+		>
+	</Projectile>
+
+	<Weapon
+		Name="HaunterCloakerEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		Projectile="HaunterCloakerEggSpawn">
+	</Weapon>
+	<Projectile
+		Name="HaunterCloakerEggSpawn"
+		InheritFrom="HaunterEggSpawn"
+		SpawnOnDetonate="HaunterCloakerEgg">
+		>
+	</Projectile>
+
+	<!-- Demolisher -->
+
+	<Weapon
+		Name="DemolisherEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="DemolisherEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="DemolisherEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="DemolisherEgg"
+		>
+	</Projectile>
+	
+	<!-- Popper -->
+
+	<Weapon
+		Name="MegaEggLauncher"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		NumProjectiles="10"
+		ProjectileInterval="0.1"
+		Projectile="MegaEggLauncher"
+		Spread="360"
+		FireSound=""
+		BarrelLength="0"
+		>
+		<Upgrade Name="PopperLevel2">
+			<Rank>
+				<!--
+				<Change ValueChangeType="ADD" NumProjectiles="5"/>
+				-->
+			</Rank>
+		</Upgrade>
+	</Weapon>
+	<Projectile
+        Name="MegaEggLauncher"
+		Type="LOB"
+		Graphic="Egg_Sparkle"
+		DrawShadow="true"
+		SpinRate="-360"
+		DetonateGraphic="MartyrdomExplosion"
+		DetonateSound="PeacemakerDeath"
+		Fuse="0.0"
+		SpawnOnDetonate="SpeederEgg"
+		SpawnType="OBSTACLE"
+		SpawnsGrabOwner="false"
+		SpawnVelocity="4000"
+		SpawnVelocityVariance="3500"
+		SpawnUpwardVelocity="5000"
+		SpeedVariance="400"
+		Range="800"
+		Gravity="1024"
+		AutoAdjustForTarget="false"
+		BounceSpeedMultiplier="0.8"
+		CheckUnitImpact="false"
+		CheckObstacleImpact="true"
+		DetonateOnImpact="false"
+		ReflectOnUnitImpact="false"
+		ReflectOnObstacleImpact="true"
+        >
+		<Thing
+			OffsetZ="60.0"
+			Scale="0.65"
+			TouchdownSound="SFX/OLD SOUNDS/GrenadeBounce"
+			>
+		</Thing>
+	</Projectile>
+
+	<!-- Monster -->
+
+	<Weapon
+		Name="MonsterBreath"
+		InheritFrom="1_BaseEnemyWeapon"
+		Type="GUN"
+		FireFx="MonsterBeamCharge"
+		ClipStartSound="/SFX/Enemy Sounds/Monster/MonsterBreathWeapon"
+		FireSound="null"
+		Projectile="MonsterBreath"
+		NumProjectiles="12"
+		ProjectileInterval="0.1"
+		FixedBarrel="true"
+		FiringArc="30"
+		BarrelLength="250"
+		FireOffsetX="150"
+		FireOffsetY="-180"
+		>
+	</Weapon>
+	<Projectile
+		Name="MonsterBreath"
+		Type="LOB"
+		DrawShadow="true"
+		Graphic="EggLegsSpawnMonsterBreath"
+		DetonateGraphic="null"
+		DetonateSound="FireFlyDeath"
+		SpawnOnDetonate="SpeederEggSlow"
+		SpawnType="OBSTACLE"
+		SpawnsGrabOwner="false"
+		SpawnVelocity="9000"
+		SpawnVelocityVariance="3000"
+		SpawnUpwardVelocity="2500"
+		SpeedVariance="400"
+		DamageLow="0"
+		DamageHigh="0"
+		Range="800"
+		Gravity="1024"
+		AutoAdjustForTarget="false"
+		BounceSpeedMultiplier="0.8"		
+		MinRange="100.0"
+		LeadFactor="7.0"
+		CheckUnitImpact="false"
+		CheckObstacleImpact="true"
+		DetonateOnImpact="true"
+		ReflectOnUnitImpact="false"
+		ReflectOnObstacleImpact="false"
+		StartAtMarker="WpnCtr"
+		SnapToOwnerAngleOnStart="true"
+		>
+		<Thing OffsetZ="1.0"></Thing>
+	</Projectile>
+	
+	<!-- Priest -->
+
+	<Weapon
+		Name="PriestEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="PriestEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="PriestEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="PriestEgg"
+		>
+	</Projectile>
+	
+	<!-- Shielder -->
+
+	<Weapon
+		Name="ShielderEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="ShielderEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="ShielderEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="ShielderEgg"
+		>
+	</Projectile>
+	
+	<!-- Zoner -->
+	
+	<Weapon
+		Name="ZonerEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="ZonerEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="ZonerEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="ZonerEgg"
+		>
+	</Projectile>
+
+	<!-- Lobber -->
+
+	<Weapon
+		Name="LobberEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="LobberEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="LobberEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="LobberEgg"
+		>
+	</Projectile>
+	
+	<!-- Berserker -->
+
+	<Weapon
+		Name="BerserkerEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="BerserkerEggSpawn"
+		ClearUpgrades="true"
+		>
+	</Weapon>
+	<Projectile
+		Name="BerserkerEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="BerserkerEgg"
+		Type="STRAIGHT"
+		Speed="0.0"
+		DamageRadius="1200"
+		DetonateGraphic="ExpandingCircleBuff"
+		DetonateSound="SFX/Player Sounds/WeaponDetonate4"
+		NumPenetrations="9999"
+		IgnoreArmor="false"
+		AffectsFriends="true"
+		AffectsSelf="false"
+		AffectsEnemies="false"
+		DetonateScreenShakeSpeed="650"
+		ImpactVelocity="1000"
+		ImpactPauseFrames="0"
+		ImpactUpwardVelocity="0"
+		>
+		<Effect Name="NovaStunSpeed" Type="SPEED" Duration="5.5" Modifier="0.0" Active="true"/>
+		<Effect Name="NovaStunRotation" Type="ROTATION" Duration="5.5" Modifier="0.000001" Active="true"/>
+		<Effect Name="NovaStunDisarm" Type="DISARM" Duration="5.5" Active="true"/>
+	</Projectile>
+
+	<Weapon
+		Name="Berserker2EggSpawn"
+		InheritFrom="BerserkerEggSpawn"
+		Projectile="Berserker2EggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="Berserker2EggSpawn"
+		InheritFrom="BerserkerEggSpawn"
+		SpawnOnDetonate="Berserker2Egg">
+	</Projectile>
+
+	<Weapon
+		Name="Berserker3EggSpawn"
+		InheritFrom="BerserkerEggSpawn"
+		Projectile="Berserker3EggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="Berserker3EggSpawn"
+		InheritFrom="BerserkerEggSpawn"
+		SpawnOnDetonate="Berserker3Egg">
+	</Projectile>
+
+	<Weapon
+		Name="Berserker2EggLaunch"
+		InheritFrom="MegaEggLauncher"
+		NumProjectiles="7"
+		ProjectileInterval="0.1"
+		Projectile="Berserker2EggLaunch"
+		ClearUpgrades="true">
+	</Weapon>
+	<Projectile
+        Name="Berserker2EggLaunch"
+		InheritFrom="MegaEggLauncher"
+		SpawnVelocity="6000"
+		SpawnVelocityVariance="3500"
+		SpawnUpwardVelocity="5000"
+		SpawnOnDetonate="PriestEggFast">
+	</Projectile>
+
+	<Weapon
+		Name="Berserker3EggLaunch"
+		InheritFrom="Berserker2EggLaunch"
+		NumProjectiles="2"
+		Projectile="Berserker3EggLaunch"
+		ClearUpgrades="true"
+		>
+	</Weapon>
+	<Projectile
+        Name="Berserker3EggLaunch"
+		InheritFrom="Berserker2EggLaunch"
+		SpawnOnDetonate="ShielderEggFast">
+	</Projectile>
+
+	<Weapon
+		Name="Berserker4EggLaunch"
+		InheritFrom="Berserker2EggLaunch"
+		ProjectileInterval="0.0167"
+		NumProjectiles="8"
+		Projectile="Berserker4EggLaunch"
+		FireFx="EnemyDeathSplatter"
+		ClearUpgrades="true"
+		>
+	</Weapon>
+	<Projectile
+        Name="Berserker4EggLaunch"
+		InheritFrom="Berserker2EggLaunch"
+		SpawnVelocity="2800"
+		SpawnVelocityVariance="1300"
+		SpawnUpwardVelocity="3500"
+		SpawnOnDetonate="Berserker4Egg">
+	</Projectile>
+	
+	<!-- Flusher -->
+
+	<Weapon
+		Name="FlusherEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		Projectile="FlusherEggSpawn"
+		>
+	</Weapon>
+	<Projectile
+		Name="FlusherEggSpawn"
+		InheritFrom="BaseEggSpawn"
+		SpawnOnDetonate="FlusherEgg"
+		>
+	</Projectile>
+
+</Weapons>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveData>
+	
+	<!--
+		MaxCount: 
+			Maximum number of other players to show
+	
+		Timeout:
+			Minimum time in seconds before dropping another player
+			
+		Duration:
+			Maximum time to stay connected to a player before looking for another
+			
+		RetryTimeout:
+			Time between checking for other players
+			
+		MaxDistance:
+			Maximum distance another player can  be from you in order to appear
+
+		OverlapDistance:
+			How close two players must be in order for the OverlapFx to fire
+
+		Fx:
+			The animation to play to represent a player	
+			
+		OverlapFx:
+			The animation to play when two player positions overlap			
+	-->
+	
+	<LivePlayerData
+		Name="Default"
+		MaxCount="2"
+		Timeout="0.5"
+		Duration="999"
+		MaxDistance="4096"
+		OverlapDistance="35"
+		Fx="ConnectedPathGlitch"
+		ExecutingFx="null"
+		PlanningFx="null"
+		RecoveringFx="null"
+		OverlapFx="null"
+		FireFx="null"
+		StationaryFx="null"
+		FlourishFx="ConnectedPathGlitch"
+		SingingFx="SingFlourishSpawner"
+		>		
+	</LivePlayerData>
+	
+</LiveData>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Name="VirusDitch01"
+		InheritFrom="1_BaseDecalObstacle"
+		StopsUnits="true"
+		>
+		<Thing
+			Graphic="VirusDitch01"
+			>
+			<Point X="-130" Y="33"/>
+			<Point X="32" Y="61"/>
+			<Point X="130" Y="-33"/>
+			<Point X="50" Y="-62"/>
+			<Point X="-85" Y="-6"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="VirusDitch02"
+	InheritFrom="1_BaseDecalObstacle"
+	StopsUnits="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_ditch_02"
+			>
+			<Point X="-108" Y="-29"/>
+			<Point X="19" Y="90"/>
+			<Point X="105" Y="-46"/>
+			<Point X="0" Y="-91"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="VirusDitch03"
+		InheritFrom="1_BaseDecalObstacle"
+		StopsUnits="true"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_ditch_03"
+			>
+			<Point X="-131" Y="-5"/>
+			<Point X="74" Y="62"/>
+			<Point X="129" Y="23"/>
+			<Point X="-78" Y="-65"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutCamerata_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Camerata_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutProtag_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Protag_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutSinger_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Singer_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutSinger_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Singer_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutMuse_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Muse_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_GlitchTest"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Protag_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutCityscape_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Cityscape_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Pillar_04"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Pillar_04"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_Pillar_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Pillar_03"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+
+
+</Obstacles>

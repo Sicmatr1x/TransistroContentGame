@@ -1,0 +1,4328 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<FlyerData>
+	
+  <!-- Auden Motorcycle Flyers -->
+
+  <FlyerSettings
+		Name="CycleCloudsSparse"
+		MaxFlyers="48"
+		MinTimeBetweenSpawns="0.5"
+		Speed="95"
+		MinAngle="175"
+		MaxAngle="185"
+		MinLifetime="22.0"
+		MaxLifetime="30.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.5"
+		RefractAmount="0.1"
+		UseWorldLocation="true"
+		>
+    <Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+    <Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+    <Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+    <Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+    <Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+    <Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+    <Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+    <Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+    <Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+    <Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+    <Texture Path="BackdropFlyers\\Cloud_01" />
+    <Texture Path="BackdropFlyers\\Cloud_03" />
+    <Texture Path="BackdropFlyers\\Cloud_04" />
+    <Texture Path="BackdropFlyers\\Cloud_05" />
+  </FlyerSettings>
+
+  <FlyerSettings
+		Name="CycleCloudsShooting"
+		MaxFlyers="36"
+		MinTimeBetweenSpawns="0.3"
+		Speed="4400"
+		MinAngle="180"
+		MaxAngle="180"
+		MinLifetime="0.4"
+		MaxLifetime="0.8"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+    <Layer Opacity="0.45" Scale="9.0" Speed="1.00"/>
+    <Layer Opacity="0.25" Scale="6.0" Speed="0.85"/>
+    <Layer Opacity="0.15" Scale="4.0" Speed="0.7"/>
+    <Texture Path="ForegroundFlyers\\Cloud_03" />
+	<Texture Path="ForegroundFlyers\\Cloud_05" />
+  </FlyerSettings>
+
+	<FlyerSettings
+		  Name="CycleCloudsShootingReverse"
+		  MaxFlyers="36"
+		  MinTimeBetweenSpawns="0.3"
+		  Speed="-4400"
+		  MinAngle="180"
+		  MaxAngle="180"
+		  MinLifetime="0.4"
+		  MaxLifetime="0.8"
+		  FadeInTime="0.25"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.25" Scale="9.0" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="6.0" Speed="0.85"/>
+		<Layer Opacity="0.10" Scale="4.0" Speed="0.7"/>
+		<Texture Path="ForegroundFlyers\\Cloud_03" Green="0.9" Blue="0.8"/>
+		<Texture Path="ForegroundFlyers\\Cloud_05" Green="0.9" Blue="0.8" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		  Name="BoatCloudsShooting"
+		  MaxFlyers="36"
+		  MinTimeBetweenSpawns="0.3"
+		  Speed="4400"
+		  MinAngle="180"
+		  MaxAngle="180"
+		  MinLifetime="0.4"
+		  MaxLifetime="0.8"
+		  FadeInTime="0.25"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.45" Scale="9.0" Speed="1.00"/>
+		<Layer Opacity="0.25" Scale="6.0" Speed="0.85"/>
+		<Layer Opacity="0.15" Scale="4.0" Speed="0.7"/>
+		<Texture Path="ForegroundFlyers\\Cloud_03" Red="0.5" Blue="0.8" Green="1.0"/>
+		<Texture Path="ForegroundFlyers\\Cloud_05" Red="0.5" Blue="0.8" Green="1.0"/>
+	</FlyerSettings>
+
+
+	<FlyerSettings
+		  Name="CycleSpeedlines"
+		  MaxFlyers="180"
+		  MinTimeBetweenSpawns="0.3"
+		  Speed="8000"
+		  MinAngle="180"
+		  MaxAngle="180"
+		  MinLifetime="0.4"
+		  MaxLifetime="0.8"
+		  FadeInTime="0.25"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.5" Scale="3.0" Speed="2.00"/>
+		<Layer Opacity="0.4" Scale="2.0" Speed="1.5"/>
+		<Layer Opacity="0.3" Scale="1.0" Speed="1.3"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_01" Red="0.78" Green="1.0" Blue="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_02" Red="0.7" Green="1.0" Blue="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_03" Red="0.6" Green="1.0" Blue="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_04" Red="0.65" Green="1.0" Blue="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_05" Red="0.55" Green="1.0" Blue="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_06" Red="0.78" Green="1.0" Blue="0.9"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		  Name="BoatSpeedlines"
+		  MaxFlyers="180"
+		  MinTimeBetweenSpawns="0.3"
+		  Speed="8000"
+		  MinAngle="180"
+		  MaxAngle="180"
+		  MinLifetime="0.4"
+		  MaxLifetime="0.8"
+		  FadeInTime="0.25"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.3" Scale="3.0" Speed="2.00"/>
+		<Layer Opacity="0.2" Scale="2.0" Speed="1.5"/>
+		<Layer Opacity="0.1" Scale="1.0" Speed="1.3"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_01" Red="0.39" Blue="0.76" Green="1.0"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_02" Red="0.39" Blue="0.76" Green="1.0"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_03" Red="0.39" Blue="0.76" Green="1.0"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_04" Red="0.39" Blue="0.76" Green="1.0"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_05" Red="0.39" Blue="0.76" Green="1.0"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_06" Red="0.39" Blue="0.76" Green="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		  Name="GliderSpeedlines"
+		  MaxFlyers="100"
+		  MinTimeBetweenSpawns="0.15"
+		  Speed="8000"
+		  MinAngle="0"
+		  MaxAngle="0"
+		  MinLifetime="0.4"
+		  MaxLifetime="0.8"
+		  FadeInTime="0.25"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.3" Scale="2" Speed="1.3"/>
+		<Layer Opacity="0.2" Scale="1.7" Speed="1.2"/>
+		<Layer Opacity="0.1" Scale="1.5" Speed="1.0" />
+		<Texture Path="ForegroundFlyers\\Speedlines_01" Blue="0.8" Green="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_02" Blue="0.8" Green="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_03" Blue="0.8" Green="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_04" Blue="0.8" Green="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_05" Blue="0.8" Green="0.9"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_06" Blue="0.8" Green="0.9"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		  Name="ReturnToCycleSpeedlines"
+		  MaxFlyers="360"
+		  MinTimeBetweenSpawns="0.15"
+		  Speed="8000"
+		  MinAngle="0"
+		  MaxAngle="0"
+		  MinLifetime="0.4"
+		  MaxLifetime="0.8"
+		  FadeInTime="0.25"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.3" Scale="1.5" Speed="1.3"/>
+		<Layer Opacity="0.2" Scale="1.0" Speed="1.2"/>
+		<Layer Opacity="0.1" Scale="1.25" Speed="1.0" />
+		<Texture Path="ForegroundFlyers\\Speedlines_01"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_02"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_03"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_04"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_05"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_06"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+	  Name="FloatingSpeedlines"
+	  MaxFlyers="60"
+	  MinTimeBetweenSpawns="0.25"
+	  Speed="2000"
+	  MinAngle="280"
+	  MaxAngle="280"
+	  MinLifetime="1.4"
+	  MaxLifetime="1.8"
+	  FadeInTime="0.25"
+	  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.4" Scale="1.5" Speed="2.0"/>
+		<Layer Opacity="0.3" Scale="1.25" Speed="1.5" />
+		<Layer Opacity="0.2" Scale="1.0" Speed="1.0"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_01" Red="1.0" Green="0.984" Blue="0.96"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_02" Red="1.0" Green="0.984" Blue="0.96"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_03" Red="1.0" Green="0.984" Blue="0.96"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_04" Red="1.0" Green="0.984" Blue="0.96"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_05" Red="1.0" Green="0.984" Blue="0.96"/>
+		<Texture Path="ForegroundFlyers\\Speedlines_06" Red="1.0" Green="0.984" Blue="0.96"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		  Name="CycleCloudsShootingDense"
+		  MaxFlyers="128"
+		  MinTimeBetweenSpawns="0.05"
+		  Speed="3400"
+		  MinAngle="180"
+		  MaxAngle="180"
+		  MinLifetime="0.3"
+		  MaxLifetime="0.5"
+		  FadeInTime="0.1"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.75" Scale="7.0" Speed="1.00"/>
+		<Layer Opacity="0.65" Scale="6.0" Speed="0.85"/>
+		<Layer Opacity="0.55" Scale="5.0" Speed="0.7"/>
+		<Layer Opacity="0.45" Scale="4.0" Speed="0.65"/>
+		<Layer Opacity="0.35" Scale="3.0" Speed="0.5"/>
+		<Texture Path="BackdropFlyers\\Cloud_06" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		  Name="CycleCloudsShootingDenseReverse"
+		  MaxFlyers="128"
+		  MinTimeBetweenSpawns="0.05"
+		  Speed="-3400"
+		  MinAngle="180"
+		  MaxAngle="180"
+		  MinLifetime="0.3"
+		  MaxLifetime="0.5"
+		  FadeInTime="0.1"
+		  UseWorldLocation="true"
+		>
+		<Layer Opacity="0.05" Scale="4.5" Speed="1.00"/>
+		<Layer Opacity="0.1" Scale="4.25" Speed="0.85"/>
+		<Layer Opacity="0.2" Scale="3.0" Speed="0.7"/>
+		<Layer Opacity="0.4" Scale="3.75" Speed="0.65"/>
+		<Layer Opacity="0.6" Scale="2.5" Speed="0.5"/>
+		<Texture Path="ForegroundFlyers\\Cloud_05" Green="0.9" Blue="0.7"/>
+		<Texture Path="ForegroundFlyers\\Cloud_04" Green="0.9" Blue="0.7"/>
+		<Texture Path="ForegroundFlyers\\Cloud_03" Green="0.9" Blue="0.7" ScaleX="3"/>
+	</FlyerSettings>
+	
+	<!-- Auden Foreground Flyers -->
+
+	<FlyerSettings
+		Name="SquareSizzle"
+		MaxFlyers="512"
+		MinTimeBetweenSpawns="0.001"
+		Speed="80"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.1"
+		MaxLifetime="1.7"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		MinRotation="0"
+		MaxRotation="0"
+		SnapOrthogonal="true"
+		>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\particle_square_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="FocusSizzle"
+		MaxFlyers="512"
+		MinTimeBetweenSpawns="0.001"
+		Speed="80"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.9"
+		MaxLifetime="2.7"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		MinRotation="0"
+		MaxRotation="0"
+		SnapOrthogonal="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\dotted_line01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CriticalSizzle"
+		MaxFlyers="128"
+		MinTimeBetweenSpawns="0.00001"
+		Speed="4000"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.9"
+		MaxLifetime="2.7"
+		UseLightEffect="false"
+		FadeInTime="0.00001"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		MinRotation="0"
+		MaxRotation="0"
+		SnapOrthogonal="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.45"/>
+		<Texture Path="Particles\\particle_green_glow"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="ProcessSizzle"
+		MaxFlyers="32"
+		MinTimeBetweenSpawns="0.00001"
+		MinSpeed="1000"
+		MaxSpeed="4000"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="1.9"
+		MaxLifetime="2.7"
+		UseLightEffect="false"
+		FadeInTime="0.00001"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		MinRotation="0"
+		MaxRotation="0"
+		SnapOrthogonal="false"
+		>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.45"/>
+		<Texture Path="Particles\\particle_green_glow"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="ReviveRisers"
+		MaxFlyers="100"
+		MinSpeed="2000"
+		MaxSpeed="3000"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="0.05"
+		MaxLifetime="0.50"
+		UseLightEffect="true"
+		FadeInTime="0.00001"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		MinRotation="0"
+		MaxRotation="0"
+		SnapOrthogonal="false"
+		>
+		<Layer Opacity="0.20" Scale="3.0" Speed="1.0"/>
+		<Layer Opacity="0.25" Scale="2.0" Speed="1.0"/>
+		<Layer Opacity="0.35" Scale="1.0" Speed="0.5"/>
+		<Texture Path="Particles\\particle_line_02"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="NotesSizzle"
+		MaxFlyers="32"
+		Speed="100"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="0.4"
+		MaxLifetime="0.6"
+		UseLightEffect="false"
+		FadeInTime="0.20"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.45"/>
+		<Texture Path="Particles\\particle_music_note_01" Red="0.1" Green="1.0" Blue="0.6"/>
+		<Texture Path="Particles\\particle_music_note_02" Red="0.1" Green="1.0" Blue="0.6"/>
+		<Texture Path="Particles\\particle_music_note_03" Red="0.1" Green="1.0" Blue="0.6"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="RooftopClouds"
+		MaxFlyers="36"
+		MinTimeBetweenSpawns="0.3"
+		Speed="4000"
+		MinAngle="210"
+		MaxAngle="210"
+		MinLifetime="0.4"
+		MaxLifetime="0.8"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.85" Scale="9.0" Speed="1.00"/>
+		<Layer Opacity="0.65" Scale="5.0" Speed="1.00"/>
+		<Layer Opacity="0.55" Scale="3.0" Speed="1.00"/>
+		<Layer Opacity="0.35" Scale="1.0" Speed="0.9"/>
+		<Layer Opacity="0.25" Scale="0.1" Speed="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_06" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RooftopCloudsOrtho"
+		MaxFlyers="2"
+		MinTimeBetweenSpawns="3.3"
+		MinSpeed="4000"
+		MinAngle="180"
+		MaxAngle="180"
+		MinLifetime="0.4"
+		MaxLifetime="0.8"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.25" Scale="0.9" Speed="0.8"/>
+		<Layer Opacity="0.25" Scale="0.5" Speed="0.8"/>
+		<Layer Opacity="0.25" Scale="0.3" Speed="1.1"/>
+		<Layer Opacity="0.25" Scale="0.1" Speed="1.3"/>
+		<Texture Path="BackdropFlyers\\Cloud_06" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="FlyingCardsForeground"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="4.0"
+		Speed="280"
+		MinAngle="265"
+		MaxAngle="270"
+		MinRotation="3"
+		MaxRotation="12"
+		MinLifetime="7.0"
+		MaxLifetime="10.0"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseLightEffect="true"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.65" Scale="0.40" Speed="0.85"/>
+		<Layer Opacity="0.60" Scale="0.35" Speed="0.8"/>
+		<Layer Opacity="0.55" Scale="0.25" Speed="0.75"/>
+		<Texture Path="GUI\\HUD\\deck_01" />
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="FlyingCardsBackground"
+		MaxFlyers="24"
+		MinTimeBetweenSpawns="3.0"
+		Speed="280"
+		MinAngle="265"
+		MaxAngle="270"
+		MinRotation="1"
+		MaxRotation="15"
+		MinLifetime="7.0"
+		MaxLifetime="10.0"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseLightEffect="true"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.50" Scale="0.20" Speed="0.7"/>
+		<Layer Opacity="0.40" Scale="0.15" Speed="0.6"/>
+		<Layer Opacity="0.30" Scale="0.10" Speed="0.5"/>
+		<Layer Opacity="0.25" Scale="0.06" Speed="0.4"/>
+		<Layer Opacity="0.15" Scale="0.03" Speed="0.3"/>
+		<Texture Path="GUI\\HUD\\deck_01" />
+	</FlyerSettings>
+
+
+	<!-- Old Foreground Flyers -->
+
+	<FlyerSettings
+		Name="Rain"
+		MaxFlyers="512"
+		Speed="1000"
+		MinAngle="280"
+		MaxAngle="280"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\raindrop_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainOptimized"
+		MaxFlyers="64"
+		Speed="1000"
+		MinAngle="280"
+		MaxAngle="280"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\raindrop_multi02"/>		
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainLightOptimized"
+		MaxFlyers="16"
+		MinTimeBetweenSpawns="0.01"
+		Speed="800"
+		MinAngle="280"
+		MaxAngle="280"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\raindrop_multi02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainHeavyOptimized"
+		MaxFlyers="128"
+		MinTimeBetweenSpawns="0.01"
+		Speed="1500"
+		MinAngle="259"
+		MaxAngle="260"
+		MinLifetime="0.75"
+		MaxLifetime="1.0"
+		FadeInTime="0.05"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.25" Scale="1.0" Speed="1.4"/>
+		<Layer Opacity="0.23" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="0.21" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="0.19" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="0.17" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="0.15" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="0.13" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="0.11" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\RainStreakA"/>
+		<Texture Path="ForegroundFlyers\\RainStreakB"/>
+		<Texture Path="ForegroundFlyers\\RainStreakC"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainSplashes"
+		MaxFlyers="128"
+		MinTimeBetweenSpawns="0.01"
+		Speed="0"
+		MinAngle="0"
+		MaxAngle="1"
+		MinLifetime="0.1"
+		MaxLifetime="0.2"
+		FadeInTime="0.01"
+		FadeOutTime="0.01"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\RainSplashA"/>
+		<Texture Path="ForegroundFlyers\\RainSplashB"/>
+		<Texture Path="ForegroundFlyers\\RainSplashC"/>
+		<Texture Path="ForegroundFlyers\\RainSplashD"/>
+		<Texture Path="ForegroundFlyers\\RainSplashE"/>
+	</FlyerSettings>
+	
+	
+	
+
+	<FlyerSettings
+		Name="RainDrizzle"
+		MaxFlyers="128"
+		Speed="800"
+		MinAngle="280"
+		MaxAngle="280"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		>
+		<Layer Opacity="0.95" Scale="0.7" Speed="0.95"/>
+		<Layer Opacity="0.90" Scale="0.6" Speed="0.90"/>
+		<Layer Opacity="0.90" Scale="0.5" Speed="0.80"/>
+		<Layer Opacity="0.95" Scale="0.4" Speed="0.75"/>
+		<Layer Opacity="0.90" Scale="0.3" Speed="0.65"/>
+		<Layer Opacity="0.97" Scale="0.3" Speed="0.60"/>
+		<Layer Opacity="0.94" Scale="0.2" Speed="0.50"/>
+		<Layer Opacity="0.92" Scale="0.2" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\raindrop_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainDownpour"
+		MaxFlyers="1024"
+		Speed="1500"
+		MinAngle="280"
+		MaxAngle="280"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		>
+		<Layer Opacity="0.95" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="0.90" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="0.90" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="0.95" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="0.90" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="0.97" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="0.94" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="0.92" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\raindrop_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainTyphoon"
+		MaxFlyers="800"
+		Speed="1000"
+		MinAngle="250"
+		MaxAngle="255"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		>
+		<Layer Opacity="0.90" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.95" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="0.90" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="0.95" Scale="0.85" Speed="0.85"/>
+		<Layer Opacity="0.90" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="0.95" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="0.90" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="0.97" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="0.94" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="0.92" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\raindrop_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="MagicRain"
+		MaxFlyers="32"
+		Speed="800"
+		MinAngle="280"
+		MaxAngle="280"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="0.90" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="0.90" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="0.95" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="0.90" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="0.97" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="0.94" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="0.92" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\droplet_2"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="BlackRain"
+		MaxFlyers="512"
+		Speed="1000"
+		MinAngle="280"
+		MaxAngle="280"
+		MinLifetime="0.75"
+		MaxLifetime="1.50"
+		FadeInTime="0.05"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.7" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.5" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.3" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\raindrop_1" Red="0.0" Green="0.0" Blue="0.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SnowLight"
+		MaxFlyers="64"
+		Speed="70"
+		MinAngle="250"
+		MaxAngle="255"
+		MinRotation="0"
+		MaxRotation="100"
+		MinLifetime="8.00"
+		MaxLifetime="10.00"
+		FadeInTime="0.05"
+		MinTimeBetweenSpawns="0.4"
+		UseLightEffect="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.7" Scale="0.45" Speed="0.95"/>
+		<Layer Opacity="0.7" Scale="0.4" Speed="0.90"/>
+		<Layer Opacity="0.6" Scale="0.35" Speed="0.80"/>
+		<Layer Opacity="0.6" Scale="0.3" Speed="0.75"/>
+		<Layer Opacity="0.5" Scale="0.25" Speed="0.65"/>
+		<Layer Opacity="0.5" Scale="0.2" Speed="0.60"/>
+		<Layer Opacity="0.4" Scale="0.15" Speed="0.50"/>
+		<Layer Opacity="0.4" Scale="0.1" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\snowflake01"/>
+		<Texture Path="ForegroundFlyers\\snowflake02"/>
+	</FlyerSettings>	
+	
+	<FlyerSettings
+		Name="Snow"
+		MaxFlyers="384"
+		Speed="100"
+		MinAngle="235"
+		MaxAngle="255"
+		MinRotation="0"
+		MaxRotation="100"
+		MinLifetime="10.00"
+		MaxLifetime="15.00"
+		FadeInTime="0.05"
+		MinTimeBetweenSpawns="0.2"
+		UseLightEffect="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.7" Scale="1.2" Speed="0.95"/>
+		<Layer Opacity="0.7" Scale="1.1" Speed="0.90"/>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="0.6" Scale="0.9" Speed="0.75"/>
+		<Layer Opacity="0.5" Scale="0.8" Speed="0.65"/>
+		<Layer Opacity="0.5" Scale="0.7" Speed="0.60"/>
+		<Layer Opacity="0.4" Scale="0.6" Speed="0.50"/>
+		<Layer Opacity="0.4" Scale="0.5" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\SnowflakeSoftA"/>
+		<Texture Path="ForegroundFlyers\\SnowflakeSoftB"/>
+		<Texture Path="ForegroundFlyers\\SnowflakeSoftC"/>
+		<Texture Path="ForegroundFlyers\\SnowflakeSoftD"/>
+		<Texture Path="ForegroundFlyers\\SnowflakeSoftE"/>
+		<Texture Path="ForegroundFlyers\\SnowflakeSoftF"/>
+		<Texture Path="ForegroundFlyers\\SnowflakeSoftG"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SnowStorm"
+		MaxFlyers="128"
+		Speed="1200"
+		MinAngle="180"
+		MaxAngle="265"
+		MinRotation="0"
+		MaxRotation="100"
+		MinLifetime="2.00"
+		MaxLifetime="4.00"
+		FadeInTime="0.05"
+		MinTimeBetweenSpawns="0.01"
+		UseLightEffect="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.9" Scale="0.85" Speed="0.95"/>
+		<Texture Path="ForegroundFlyers\\snow_multi01"/>
+		<Texture Path="ForegroundFlyers\\snow_multi02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="LensFlares"
+		MaxFlyers="24"
+		Speed="50"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="4.75"
+		MaxLifetime="6.25"
+		UseLightEffect="false"
+		FadeInTime="4.25"
+		UseWorldLocation="false"
+		SnapOrthogonal="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="0.6" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="0.4" Scale="0.5" Speed="0.95"/>
+		<Layer Opacity="0.2" Scale="0.25" Speed="0.90"/>
+		<Texture Path="ForegroundFlyers\\particle_circle_02" />
+		<Texture Path="ForegroundFlyers\\particle_circle_02" />
+		<Texture Path="ForegroundFlyers\\particle_circle_02" />
+		<Texture Path="ForegroundFlyers\\particle_circle_02" />
+		<Texture Path="ForegroundFlyers\\particle_circle_03" />
+		<Texture Path="ForegroundFlyers\\particle_circle_03" />
+		<Texture Path="ForegroundFlyers\\particle_circle_03" />
+		<Texture Path="ForegroundFlyers\\particle_circle_03" />
+		<Texture Path="ForegroundFlyers\\particle_circle_02" />
+		<Texture Path="ForegroundFlyers\\particle_circle_03" />		
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="LensFlaresSmall"
+		MaxFlyers="4"
+		Speed="50"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="4.75"
+		MaxLifetime="8.00"
+		UseLightEffect="false"
+		FadeInTime="4.25"
+		UseWorldLocation="false"
+		SnapOrthogonal="true"
+		>
+		<Layer Opacity="0.5" Scale="1.00" Speed="0.90"/>
+		<Texture Path="ForegroundFlyers\\particle_circle_01" />
+		<Texture Path="ForegroundFlyers\\particle_circle_01" />
+		<Texture Path="ForegroundFlyers\\particle_circle_01" />
+		<Texture Path="ForegroundFlyers\\particle_circle_01" />
+	</FlyerSettings>
+
+	<!--
+		<Texture Path="ForegroundFlyers\\particle_circle_01"/>
+		<Texture Path="ForegroundFlyers\\particle_circle_02"/>
+		<Texture Path="ForegroundFlyers\\particle_circle_03"/>
+	-->
+	
+	<FlyerSettings
+		Name="Droplet"
+		MaxFlyers="10"
+		Speed="50"
+		MinAngle="120"
+		MaxAngle="60"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="4.00" Speed="0.95"/>
+		<Layer Opacity="0.95" Scale="3.75" Speed="0.90"/>
+		<Layer Opacity="0.85" Scale="2.65" Speed="0.80"/>
+		<Layer Opacity="0.75" Scale="1.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="0.95" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="0.85" Scale="0.25" Speed="0.50"/>
+		<Layer Opacity="0.75" Scale="0.15" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\particle_waterdroplet_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Pollen"
+		MaxFlyers="25"
+		Speed="100"
+		MinAngle="60"
+		MaxAngle="120"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="0.95" Scale="0.75" Speed="0.90"/>
+		<Layer Opacity="0.85" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="0.75" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="0.95" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="0.85" Scale="0.25" Speed="0.50"/>
+		<Layer Opacity="0.75" Scale="0.15" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="PollenSerious"
+		MaxFlyers="50"
+		MinTimeBetweenSpawns="0.05"
+		Speed="200"
+		MinAngle="255"
+		MaxAngle="275"
+		MinLifetime="2.75"
+		MaxLifetime="7.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="0.95" Scale="0.75" Speed="0.90"/>
+		<Layer Opacity="0.85" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="0.75" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="0.75" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="0.75" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="0.75" Scale="0.25" Speed="0.50"/>
+		<Layer Opacity="0.75" Scale="0.15" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+	</FlyerSettings>	
+	
+	<FlyerSettings
+		Name="PollenCrazy"
+		MaxFlyers="128"
+		Speed="1250"
+		MinAngle="215"
+		MaxAngle="230"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.01" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="PollenUpwards"
+		MaxFlyers="100"
+		Speed="150"
+		MinAngle="180"
+		MaxAngle="90"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Spores"
+		MaxFlyers="8"
+		MinTimeBetweenSpawns="0.5"
+		Speed="100"
+		MinAngle="10"
+		MaxAngle="100"
+		MinLifetime="4.5"
+		MaxLifetime="7.5"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.7" Scale="0.35" Speed="0.95"/>
+		<Layer Opacity="0.6" Scale="0.30" Speed="0.90"/>
+		<Layer Opacity="0.5" Scale="0.25" Speed="0.80"/>
+		<Layer Opacity="0.4" Scale="0.20" Speed="0.75"/>
+		<Layer Opacity="0.3" Scale="0.15" Speed="0.65"/>
+		<Layer Opacity="0.2" Scale="0.10" Speed="0.60"/>
+		<Layer Opacity="0.1" Scale="0.05" Speed="0.50"/>
+		<Texture Path="BackdropFlyers\\Spore_01"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StartScreen"
+		MaxFlyers="25"
+		MinTimeBetweenSpawns="0.2"
+		Speed="80"
+		MinAngle="60"
+		MaxAngle="120"
+		MinLifetime="6.0"
+		MaxLifetime="12.0"
+		UseLightEffect="false"
+		FadeInTime="0.5"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RisingWhatnots"
+		MaxFlyers="25"
+		MinTimeBetweenSpawns="0.2"
+		Speed="80"
+		MinAngle="60"
+		MaxAngle="120"
+		MinLifetime="6.0"
+		MaxLifetime="12.0"
+		UseLightEffect="false"
+		FadeInTime="0.5"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.45"/>
+		<Texture Path="Particles\\particle_circle_04"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="FadingWhatnots"
+		MaxFlyers="8"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="15"
+		MaxSpeed="25"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="4.0"
+		MaxLifetime="9.0"
+		UseLightEffect="true"
+		FadeInTime="10.5"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Texture Path="Particles\\particle_green_glow_02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="FadingWhatnots02"
+		MaxFlyers="8"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="30"
+		MaxSpeed="45"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="4.0"
+		MaxLifetime="9.0"
+		UseLightEffect="true"
+		FadeInTime="3.5"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Texture Path="Particles\\particle_circle_04"/>
+	</FlyerSettings>
+
+
+	<FlyerSettings
+		Name="StartScreen01"
+		MaxFlyers="7"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="15"
+		MaxSpeed="25"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="5.0"
+		UseLightEffect="true"
+		FadeInTime="1.0"
+		FadeOutTime="1.0"
+		UseWorldLocation="false"
+		SpawnAtScreenEdges="false"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Texture Path="Particles\\particle_triangle_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StartScreen02"
+		MaxFlyers="6"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="15"
+		MaxSpeed="25"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="5.0"
+		UseLightEffect="true"
+		FadeInTime="1.0"
+		FadeOutTime="1.0"
+		UseWorldLocation="false"
+		SpawnAtScreenEdges="false"
+		>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Texture Path="Particles\\particle_donut_05"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StartScreen03"
+		MaxFlyers="6"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="15"
+		MaxSpeed="25"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="5.0"
+		UseLightEffect="true"
+		FadeInTime="1.0"
+		FadeOutTime="1.0"
+		UseWorldLocation="false"
+		SpawnAtScreenEdges="false"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.60"/>
+		<Texture Path="Particles\\particle_circle_06"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StartScreen04"
+		MaxFlyers="7"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="15"
+		MaxSpeed="25"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="5.0"
+		UseLightEffect="true"
+		FadeInTime="1.0"
+		FadeOutTime="1.0"
+		UseWorldLocation="true"
+		SpawnAtScreenEdges="false"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Texture Path="Particles\\particle_triangle_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StartScreen05"
+		MaxFlyers="6"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="15"
+		MaxSpeed="25"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="5.0"
+		UseLightEffect="true"
+		FadeInTime="1.0"
+		FadeOutTime="1.0"
+		UseWorldLocation="true"
+		SpawnAtScreenEdges="false"
+		>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Texture Path="Particles\\particle_donut_05"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StartScreen06"
+		MaxFlyers="6"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="15"
+		MaxSpeed="25"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="5.0"
+		UseLightEffect="true"
+		FadeInTime="1.0"
+		FadeOutTime="1.0"
+		UseWorldLocation="true"
+		SpawnAtScreenEdges="false"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.60"/>
+		<Texture Path="Particles\\particle_circle_06"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Leaves"
+		MaxFlyers="16"
+		MinTimeBetweenSpawns="1.0"
+		Speed="200"
+		MinAngle="250"
+		MaxAngle="290"
+		MinRotation="60"
+		MaxRotation="270"
+		MinLifetime="6.0"
+		MaxLifetime="8.5"
+		UseLightEffect="false"
+		FadeInTime="0.1"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="1.00"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.65"/>
+		<Texture Path="ForegroundFlyers\\leaf_01"/>
+		<Texture Path="ForegroundFlyers\\leaf_02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Cinders"
+		MaxFlyers="12"
+		Speed="350"
+		MinAngle="60"
+		MaxAngle="120"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_2"/>
+		<Texture Path="ForegroundFlyers\\cinder_3"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\cinder_4_no_glow"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CindersSlow"
+		MaxFlyers="12"
+		Speed="100"
+		MinAngle="60"
+		MaxAngle="120"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_2"/>
+		<Texture Path="ForegroundFlyers\\cinder_3"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\cinder_4_no_glow"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CindersHeavy"
+		MaxFlyers="128"
+		Speed="1250"
+		MinAngle="215"
+		MaxAngle="230"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_2"/>
+		<Texture Path="ForegroundFlyers\\cinder_3"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\cinder_4_no_glow"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CindersSizzle"
+		MaxFlyers="128"
+		Speed="100"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="0.1"
+		MaxLifetime="0.5"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_2"/>
+		<Texture Path="ForegroundFlyers\\cinder_3"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CindersSizzleOptimized"
+		MaxFlyers="84"
+		MinTimeBetweenSpawns="0.01"
+		Speed="100"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="0.6"
+		MaxLifetime="0.9"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_multi_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="DiamondSizzleOptimized"
+		MaxFlyers="84"
+		MinTimeBetweenSpawns="0.01"
+		Speed="100"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="0.6"
+		MaxLifetime="0.9"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\spark_diamond"/>
+	</FlyerSettings>
+
+
+	<FlyerSettings
+			Name="DreamSizzle"
+			MaxFlyers="64"
+			MinTimeBetweenSpawns="0.01"
+			Speed="100"
+			MinAngle="0"
+			MaxAngle="360"
+			MinLifetime="0.25"
+			MaxLifetime="0.50"
+			MinRotation="0"
+			MaxRotation="359"			
+			UseLightEffect="false"
+			FadeInTime="0.25"
+			RandomFlipHorizontal="true"
+			RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\spark_swirl"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="IceSizzle"
+		MaxFlyers="64"
+		Speed="100"
+		MinTimeBetweenSpawns="0.02"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.75"
+		MaxLifetime="2.45"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\ice_02" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="BlueSparkSizzle"
+		MaxFlyers="64"
+		Speed="100"
+		MinTimeBetweenSpawns="0.02"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="0.35"
+		MaxLifetime="0.75"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\blue_spark"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="DustFalling"
+		MaxFlyers="32"
+		Speed="100"
+		MinAngle="260"
+		MaxAngle="275"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="0.20" Scale="0.75" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="1.0" Green="0.5" Blue="0.08"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="IcicleEdge"
+		MaxFlyers="72"
+		Speed="3"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="50"
+		MaxLifetime="70"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\Edge_Icicle01" />
+		<Texture Path="ForegroundFlyers\\Edge_Icicle02" />
+		<Texture Path="ForegroundFlyers\\Edge_Icicle03" />
+	</FlyerSettings>
+
+
+	<FlyerSettings
+		Name="FrostEdgeSlow"
+		MaxFlyers="72"
+		Speed="3"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="50"
+		MaxLifetime="70"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\frost01" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="FrostSizzle"
+		MaxFlyers="128"
+		Speed="100"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="0.1"
+		MaxLifetime="0.5"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\frost01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RedIcicleEdge"
+		MaxFlyers="72"
+		Speed="3"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="50"
+		MaxLifetime="70"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\Edge_Icicle01" Red="1.0" Green="0.4" Blue="0.4" />
+		<Texture Path="ForegroundFlyers\\Edge_Icicle02" Red="1.0" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\Edge_Icicle03" Red="1.0" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="IcicleFallingFG"
+		MaxFlyers="128"
+		Speed="50"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="999"
+		MaxLifetime="999"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\Edge_Icicle01" />
+		<Texture Path="ForegroundFlyers\\Edge_Icicle02" />
+		<Texture Path="ForegroundFlyers\\Edge_Icicle03" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="IcicleFallingBG"
+		MaxFlyers="128"
+		Speed="10"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="999"
+		MaxLifetime="999"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\Edge_Icicle01" />
+		<Texture Path="ForegroundFlyers\\Edge_Icicle02" />
+		<Texture Path="ForegroundFlyers\\Edge_Icicle03" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StoneRain"
+		MaxFlyers="128"
+		Speed="1250"
+		MinAngle="265"
+		MaxAngle="275"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\rock_01"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="AshWind"
+		MaxFlyers="32"
+		Speed="400"
+		MinTimeBetweenSpawns="0.05"
+		MinAngle="30"
+		MaxAngle="70"
+		MinRotation="0"
+		MaxRotation="320"
+		MinLifetime="3.0"
+		MaxLifetime="4.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.75" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="0.75" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="0.75" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="0.75" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="0.75" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="0.75" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="0.75" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="0.75" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\ash_2"/>
+		<Texture Path="ForegroundFlyers\\ash_3"/>
+		<Texture Path="ForegroundFlyers\\ash_3"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Ash"
+		MaxFlyers="12"
+		Speed="200"
+		MinAngle="250"
+		MaxAngle="290"
+		MinRotation="0"
+		MaxRotation="180"
+		MinLifetime="3.0"
+		MaxLifetime="4.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\ash_2"/>
+		<Texture Path="ForegroundFlyers\\ash_3"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AshSlow"
+		MaxFlyers="12"
+		Speed="25"
+		MinAngle="250"
+		MaxAngle="290"
+		MinRotation="0"
+		MaxRotation="180"
+		MinLifetime="5.0"
+		MaxLifetime="10.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\ash_2"/>
+		<Texture Path="ForegroundFlyers\\ash_3"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Dust"
+		MaxFlyers="25"
+		Speed="100"
+		MinAngle="60"
+		MaxAngle="120"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\dust_interior_particle_1_blue"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="DustInterior"
+		MaxFlyers="30"
+		Speed="100"
+		MinAngle="250"
+		MaxAngle="325"
+		MinLifetime="2.75"
+		MaxLifetime="4.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.5" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="0.5" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="0.5" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="0.5" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="0.5" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="0.5" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="0.5" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="0.5" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\dust_interior_particle_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="DustBlueSwirl"
+		MaxFlyers="30"
+		MinSpeed="100"
+		MaxSpeed="400"
+		MinAngle="180"
+		MaxAngle="350"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.7" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="0.7" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="0.7" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="0.7" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="0.7" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="0.7" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="0.7" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="0.7" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\dust_interior_particle_1_blue"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="Feathers"
+		MaxFlyers="16"
+		MinTimeBetweenSpawns="1.0"
+		Speed="200"
+		MinAngle="250"
+		MaxAngle="290"
+		MinRotation="60"
+		MaxRotation="270"
+		MinLifetime="4.0"
+		MaxLifetime="4.5"
+		UseLightEffect="false"
+		FadeInTime="0.1"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="1.00"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.65"/>
+		<Texture Path="Fx\\craven_feathers\\feather_curled"/>
+		<Texture Path="Fx\\craven_feathers\\feather_straight"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="FeathersTempest"
+		MaxFlyers="32"
+		MinTimeBetweenSpawns="1.0"
+		Speed="230"
+		MinAngle="225"
+		MaxAngle="245"
+		MinRotation="60"
+		MaxRotation="100"
+		MinLifetime="4.0"
+		MaxLifetime="5.5"
+		UseLightEffect="false"
+		FadeInTime="0.1"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="1.00"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.65"/>
+		<Texture Path="Fx\\craven_feathers\\feather_curled"/>
+		<Texture Path="Fx\\craven_feathers\\feather_straight"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Asteroids"
+		MaxFlyers="6"
+		MinTimeBetweenSpawns="5.0"
+		Speed="150"
+		MinAngle="215"
+		MaxAngle="245"
+		MinRotation="5"
+		MaxRotation="7"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		UseLightEffect="false"
+		FadeInTime="1.0"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.55"/>
+		<Texture Path="foregroundflyers\\foreground_blob01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Asteroids_Old"
+		MaxFlyers="10"
+		MinTimeBetweenSpawns="5.0"
+		Speed="150"
+		MinAngle="215"
+		MaxAngle="245"
+		MinRotation="5"
+		MaxRotation="10"
+		MinLifetime="18.0"
+		MaxLifetime="36.0"
+		UseLightEffect="false"
+		FadeInTime="1.0"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="1.00"/>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.40" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.55"/>
+		<Texture Path="foregroundflyers\\foreground_blob01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AuroraRisingFG"
+		MaxFlyers="22"
+		Speed="350"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_2"/>
+		<Texture Path="ForegroundFlyers\\cinder_2" Red="1.0" Green="1.0" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\cinder_2" Red="0.4" Green="1.0" Blue="1.0"/>
+		<Texture Path="ForegroundFlyers\\cinder_2" Red="0.4" Green="1.0" Blue="1.0"/>
+		<Texture Path="ForegroundFlyers\\cinder_2" Red="1.0" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\cinder_3"/>
+		<Texture Path="ForegroundFlyers\\cinder_3" Red="1.0" Green="1.0" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\cinder_3" Red="0.4" Green="1.0" Blue="1.0"/>
+		<Texture Path="ForegroundFlyers\\cinder_3" Red="0.4" Green="1.0" Blue="1.0"/>
+		<Texture Path="ForegroundFlyers\\cinder_3" Red="1.0" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AuroraRisingFullFG"
+		MaxFlyers="18"
+		Speed="350"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_2"/>
+		<Texture Path="ForegroundFlyers\\cinder_2" Red="1.0" Green="1.0" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\cinder_2" Red="1.0" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\cinder_3" Red="1.0" Green="1.0" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\cinder_3" Red="1.0" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+
+
+	<FlyerSettings
+		Name="AuroraRisingFullFG2"
+		MaxFlyers="18"
+		Speed="350"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\spark_triangle"/>
+		<Texture Path="ForegroundFlyers\\blue_spark"/>
+		
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SoftDownwardSparks"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		MaxFlyers="14"
+		Speed="50"
+		MinAngle="250"
+		MaxAngle="255"
+		MinRotation="0"
+		MaxRotation="100"
+		MinLifetime="4.00"
+		MaxLifetime="8.00"
+		FadeInTime="0.05"
+		MinTimeBetweenSpawns="0.4"
+		UseLightEffect="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\spark_triangle"/>
+		<Texture Path="ForegroundFlyers\\blue_spark"/>
+
+	</FlyerSettings>
+
+
+	<FlyerSettings
+		Name="Bug"
+		MaxFlyers="2"
+		Speed="350"
+		MinAngle="1"
+		MaxAngle="359"
+		MinLifetime="12.75"
+		MaxLifetime="16.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\bug_01"/>
+	</FlyerSettings>	
+	
+	<FlyerSettings
+		Name="Bugs"
+		MaxFlyers="12"
+		Speed="350"
+		MinAngle="1"
+		MaxAngle="359"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.25"/>
+		<Texture Path="ForegroundFlyers\\bug_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CrazySparks"
+		MaxFlyers="50"
+		Speed="200"
+		MinAngle="1"
+		MaxAngle="359"
+		MinRotation="0"
+		MaxRotation="180"
+		MinLifetime="4.75"
+		MaxLifetime="8.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.25"/>
+    <Texture Path="ForegroundFlyers\\spark_burst" Red="1.0" Green="0.9" Blue="0.15"/>
+    <Texture Path="ForegroundFlyers\\spark_hanoi" Red="1.0" Green="1.0" Blue="1.0"/>
+		<Texture Path="ForegroundFlyers\\spark_swirl" Red="0.9" Green="0.75" Blue="0.35"/>
+		<Texture Path="ForegroundFlyers\\spark_triangle" Red="1.0" Green="0.75" Blue="0.25"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="PollenFireflies"
+		MaxFlyers="12"
+		Speed="350"
+		MinAngle="1"
+		MaxAngle="359"
+		MinLifetime="2.75"
+		MaxLifetime="8.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.25"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+	</FlyerSettings>
+
+
+	<FlyerSettings
+		Name="Spore"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="2.4"
+		Speed="100"
+		MinAngle="225"
+		MaxAngle="325"
+		MinLifetime="14.75"
+		MaxLifetime="18.0"
+		MinRotation="0"
+		MaxRotation="180"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.75" Scale="0.10" Speed="0.95"/>
+		<Layer Opacity="0.75" Scale="0.05" Speed="0.95"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AutumnLeavesFG"
+		MaxFlyers="14"
+		Speed="345"
+		MinAngle="270"
+		MaxAngle="350"
+		MinLifetime="14.75"
+		MaxLifetime="18.0"
+		MinRotation="0"
+		MaxRotation="350"			
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.75"/>
+		<Texture Path="ForegroundFlyers\\leaf_01"/>
+		<Texture Path="ForegroundFlyers\\leaf_02"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>		
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_05"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AutumnLeavesFGFast"
+		MaxFlyers="14"
+		Speed="1245"
+		MinAngle="270"
+		MaxAngle="350"
+		MinLifetime="8.75"
+		MaxLifetime="10.0"
+		MinRotation="0"
+		MaxRotation="350"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.75"/>
+		<Texture Path="ForegroundFlyers\\leaf_01"/>
+		<Texture Path="ForegroundFlyers\\leaf_02"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_05"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AutumnLeavesPollenFG"
+		MaxFlyers="24"
+		Speed="225"
+		MinAngle="225"
+		MaxAngle="315"
+		MinLifetime="14.75"
+		MaxLifetime="18.0"
+		MinRotation="0"
+		MaxRotation="350"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.75"/>
+		<Texture Path="ForegroundFlyers\\leaf_01"/>
+		<Texture Path="ForegroundFlyers\\leaf_02"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_03"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_04"/>
+		<Texture Path="ForegroundFlyers\\leaf_05"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+		<Texture Path="ForegroundFlyers\\pollen_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="PetalsFG"
+		MaxFlyers="12"
+		Speed="345"
+		MinTimeBetweenSpawns="0.1"
+		MinAngle="270"
+		MaxAngle="350"
+		MinLifetime="14.75"
+		MaxLifetime="18.0"
+		MinRotation="0"
+		MaxRotation="350"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.75"/>
+		<Texture Path="ForegroundFlyers\\petal_01a"/>
+		<Texture Path="ForegroundFlyers\\petal_01a"/>
+		<Texture Path="ForegroundFlyers\\petal_01a"/>
+		<Texture Path="ForegroundFlyers\\petal_01a"/>
+		<Texture Path="ForegroundFlyers\\petal_01a"/>
+		<Texture Path="ForegroundFlyers\\petal_01a"/>
+		<Texture Path="ForegroundFlyers\\petal_01a"/>
+		<Texture Path="ForegroundFlyers\\petal_01b"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SporeFG"
+		MaxFlyers="14"
+		Speed="215"
+		MinAngle="80"
+		MaxAngle="105"
+		MinLifetime="14.75"
+		MaxLifetime="18.0"
+		MinRotation="0"
+		MaxRotation="45"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.8" Scale="0.30" Speed="0.65"/>
+		<Layer Opacity="0.8" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="0.8" Scale="0.20" Speed="0.50"/>
+		<Layer Opacity="0.8" Scale="0.15" Speed="0.40"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_02"/>
+		<Texture Path="BackdropFlyers\\Spore_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SmokeyEdges"
+		MaxFlyers="512"
+		MinTimeBetweenSpawns="0.01"
+		Speed="200"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="0.75"
+		MaxLifetime="1.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="0.65" Scale="0.75" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="1.0" Green="0.5" Blue="0.08"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SmokeyEdgesBlue"
+		MaxFlyers="128"
+		MinTimeBetweenSpawns="0.01"
+		Speed="200"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="2.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="0.65" Scale="0.75" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.5" Green="0.5" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.5" Green="0.5" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.5" Green="0.5" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SmokeyEdgesLightSlow"
+		MaxFlyers="84"
+		MinTimeBetweenSpawns="0.02"
+		Speed="100"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="1.0"
+		MaxLifetime="2.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="0.65" Scale="0.75" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+		<Texture Path="BackdropFlyers\\Cloud_05" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="DustStormLight"
+		MaxFlyers="48"
+		MinTimeBetweenSpawns="0.01"
+		Speed="200"
+		MinAngle="35"
+		MaxAngle="55"
+		MinLifetime="2.75"
+		MaxLifetime="7.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.20" Scale="0.75" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="1.0" Green="0.5" Blue="0.08"/>
+	</FlyerSettings>	
+	
+	<FlyerSettings
+		Name="DustStorm"
+		MaxFlyers="256"
+		Speed="750"
+		MinAngle="35"
+		MaxAngle="55"
+		MinLifetime="2.75"
+		MaxLifetime="5.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"	
+		>
+		<Layer Opacity="0.20" Scale="0.75" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.5" Blue="0.08"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="1.0" Green="0.5" Blue="0.08"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="BlackLinesWipe"
+		MaxFlyers="100"
+		MinTimeBetweenSpawns="0.001"
+		Speed="1750"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="0.55"
+		MaxLifetime="1.0"
+		UseLightEffect="false"
+		FadeInTime="0.1"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		>
+		<Layer Opacity="1.0" Scale="0.60" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.55" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.50" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.45" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+			Name="BlackLinesWipeFG"
+			MaxFlyers="5"
+			MinTimeBetweenSpawns="0.001"
+			Speed="2750"
+			MinAngle="90"
+			MaxAngle="90"
+			MinLifetime="0.55"
+			MaxLifetime="1.0"
+			UseLightEffect="false"
+			FadeInTime="0.1"
+			RandomFlipHorizontal="false"
+			RandomFlipVertical="false"
+		>
+		<Layer Opacity="1.0" Scale="1.00" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.95"/>
+		<Texture Path="ForegroundFlyers\\cinder_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="LifeLostRisers"
+		MaxFlyers="100"
+		MinTimeBetweenSpawns="0.001"
+		Speed="5000"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="0.15"
+		MaxLifetime="0.25"
+		UseLightEffect="false"
+		FadeInTime="0.1"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\cinder_1"/>
+	</FlyerSettings>
+
+
+	<FlyerSettings
+		Name="CharmHeartsRisers"
+		MaxFlyers="100"
+		MinTimeBetweenSpawns="0.001"
+		Speed="1000"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="0.4"
+		MaxLifetime="0.4"
+		UseLightEffect="false"
+		FadeInTime="0.01"
+		FadeOutTime="0.15"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		>
+		<Layer Opacity="0.8" Scale="0.60" Speed="1.0"/>
+		<Layer Opacity="0.8" Scale="0.40" Speed="0.6"/>
+		<Texture Path="Fx\\CharmParticle\\CharmParticle0027"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CharmHeartsPulse"
+		MaxFlyers="100"
+		MinTimeBetweenSpawns="0.001"
+		Speed="2000"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="0.4"
+		MaxLifetime="0.4"
+		UseLightEffect="false"
+		FadeInTime="0.01"
+		FadeOutTime="1.15"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		>
+		<Layer Opacity="0.8" Scale="0.60" Speed="1.0"/>
+		<Layer Opacity="0.8" Scale="0.40" Speed="0.6"/>
+		<Texture Path="Fx\\CharmParticle\\CharmParticle0027"/>
+	</FlyerSettings>
+
+	<!-- Background Flyers -->
+
+	<FlyerSettings
+		Name="SunsetCloudsCalm"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="0.5"
+		Speed="150"
+		MinAngle="20"
+		MaxAngle="23"
+		MinLifetime="15.0"
+		MaxLifetime="30.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="1.0" Green="0.6" Blue="0.3"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.5" Blue="0.2"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="1.0" Green="0.55" Blue="0.25"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SunsetCloudsRaging"
+		MaxFlyers="50"
+		MinTimeBetweenSpawns="0.2"
+		Speed="360"
+		MinAngle="20"
+		MaxAngle="25"
+		MinLifetime="10.0"
+		MaxLifetime="20.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.7" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.60"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.55"/>
+		<Layer Opacity="0.5" Scale="1.0" Speed="0.50"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="1.0" Green="0.6" Blue="0.1"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="1.0" Green="0.75" Blue="0.2"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.7" Blue="0.1"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="1.0" Green="0.9" Blue="0.2"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="CloudRiver"
+		MaxFlyers="512"
+		MinTimeBetweenSpawns="0.01"
+		Speed="400"
+		MinAngle="22"
+		MaxAngle="22"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.55"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="0.2" Green="0.65" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.3" Green="0.6" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.2" Green="0.5" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.3" Green="0.45" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CloudRiverOptimized"
+		MaxFlyers="84"
+		MinTimeBetweenSpawns="0.05"
+		Speed="400"
+		MinAngle="22"
+		MaxAngle="22"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.2" Green="0.65" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.2" Green="0.65" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.2" Green="0.65" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+			Name="CloudRiverLightOptimized"
+			MaxFlyers="34"
+			MinTimeBetweenSpawns="0.05"
+			Speed="400"
+			MinAngle="22"
+			MaxAngle="22"
+			MinLifetime="45.0"
+			MaxLifetime="45.0"
+			FadeInTime="0.25"
+			RandomFlipHorizontal="true"
+			RandomFlipVertical="true"
+			RefractRate="0.1"
+			RefractAmount="1.0"
+			UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.2" Green="0.65" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.2" Green="0.65" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.2" Green="0.65" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AsteroidField"
+		MaxFlyers="256"
+		MinTimeBetweenSpawns="0.1"
+		Speed="5"
+		MinAngle="215"
+		MaxAngle="245"
+		MinRotation="5"
+		MaxRotation="7"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		UseLightEffect="false"
+		FadeInTime="1.0"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.24"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.15"/>
+		<Texture Path="foregroundflyers\\foreground_blob01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="WoodplankHerd"
+		MaxFlyers="188"
+		MinTimeBetweenSpawns="0.6"
+		Speed="150"
+		MinAngle="45"
+		MaxAngle="45"
+		MinRotation="0"
+		MaxRotation="0"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.15"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.10"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.05"/>		
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.10"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.05"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.10"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.05"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.10"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.05"/>
+		<Texture Path="TerrainTiles\\WildTileset\\Wild_WoodPlank01" Red="0.5" Green="0.5" Blue="0.5"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="DustClouds"
+		MaxFlyers="20"
+		MinTimeBetweenSpawns="0.01"
+		Speed="250"
+		MinAngle="20"
+		MaxAngle="22"
+		MinLifetime="10.0"
+		MaxLifetime="20.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.55"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="0.75" Green="0.6" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.7" Green="0.65" Blue="0.35"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.75" Green="0.6" Blue="0.3"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.75" Green="0.75" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.7" Green="0.6" Blue="0.3"/>
+		<Texture Path="BackdropFlyers\\Cinder_2" Red="1.0" Green="1.0" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainClouds"
+		MaxFlyers="512"
+		MinTimeBetweenSpawns="0.1"
+		Speed="350"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" />
+		<Texture Path="BackdropFlyers\\Cloud_02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsOptimized"
+		MaxFlyers="64"
+		MinTimeBetweenSpawns="0.1"
+		Speed="350"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.5"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" />
+		<Texture Path="BackdropFlyers\\Cloud_02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsLightOptimized"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="0.1"
+		Speed="150"
+		MinAngle="250"
+		MaxAngle="280"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.5" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.5" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.5" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="2.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="2.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="2.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="2.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.42" Green="1.0" Blue="0.62" />
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.42" Green="1.0" Blue="0.62" />
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.42" Green="1.0" Blue="0.62" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsMysticFallingOptimized"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="0.1"
+		Speed="150"
+		MinAngle="250"
+		MaxAngle="280"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.5" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.5" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.5" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="2.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="2.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="2.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="2.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.42" Green="1.0" Blue="0.62" />
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.42" Green="1.0" Blue="0.62" />
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.42" Green="1.0" Blue="0.62" />
+	</FlyerSettings>	
+	
+	<FlyerSettings
+		Name="RainCloudsLightFastOptimized"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="0.1"
+		Speed="350"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.5"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" />
+		<Texture Path="BackdropFlyers\\Cloud_02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+	</FlyerSettings>
+  
+	<FlyerSettings
+		Name="RainCloudsCarpet"
+		MaxFlyers="128"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="400"
+		MaxSpeed="450"
+		MinAngle="105"
+		MaxAngle="75"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.05"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.3" Speed="1.50"/>
+		<Layer Opacity="1.0" Scale="1.2" Speed="1.45"/>
+		<Layer Opacity="0.95" Scale="1.1" Speed="1.30"/>
+		<Layer Opacity="0.9" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.85" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="0.8" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="0.75" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="0.7" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="0.65" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="0.6" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" />
+		<Texture Path="BackdropFlyers\\Cloud_02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsCarpetIntense"
+		MaxFlyers="188"
+		MinTimeBetweenSpawns="0.2"
+		MinSpeed="800"
+		MaxSpeed="850"
+		MinAngle="105"
+		MaxAngle="75"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.05"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.3" Speed="1.50"/>
+		<Layer Opacity="1.0" Scale="1.2" Speed="1.45"/>
+		<Layer Opacity="0.95" Scale="1.1" Speed="1.30"/>
+		<Layer Opacity="0.9" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.85" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="0.8" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="0.75" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="0.7" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="0.65" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="0.6" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" />
+		<Texture Path="BackdropFlyers\\Cloud_02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsCarpetOptimized"
+		MaxFlyers="48"
+		MinTimeBetweenSpawns="1.0"
+		MinSpeed="75"
+		MaxSpeed="125"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="90.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.05"
+		RefractAmount="0.25"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="4.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="4.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="4.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="4.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" />
+		<Texture Path="BackdropFlyers\\Cloud_Multi02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsCarpetHeavyOptimized"
+		MaxFlyers="64"
+		MinTimeBetweenSpawns="1.0"
+		MinSpeed="75"
+		MaxSpeed="125"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="90.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.05"
+		RefractAmount="0.25"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="4.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="4.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="4.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="4.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" />
+		<Texture Path="BackdropFlyers\\Cloud_Multi02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsCarpetHeavySwirlOptimized"
+		MaxFlyers="48"
+		MinTimeBetweenSpawns="1.0"
+		MinSpeed="75"
+		MaxSpeed="125"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="90.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.05"
+		RefractAmount="0.25"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.75" />
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.65" />
+		<Layer Opacity="1.0" Scale="4.95" Speed="0.60" />
+		<Layer Opacity="1.0" Scale="4.90" Speed="0.55" />
+		<Layer Opacity="1.0" Scale="4.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="4.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="1.0" Green="0.7" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi02" Red="1.0" Green="0.7" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.7" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.7" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="RainCloudsCarpetHeavySwirlPartOptimized"
+		MaxFlyers="64"
+		MinTimeBetweenSpawns="0.3"
+		MinSpeed="75"
+		MaxSpeed="125"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="20.0"
+		MaxLifetime="20.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.05"
+		RefractAmount="0.25"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="4.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="4.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="4.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="4.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="4.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" />
+		<Texture Path="BackdropFlyers\\Cloud_Multi02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="BlackCloudsCarpet"
+		MaxFlyers="1024"
+		MinTimeBetweenSpawns="0.5"
+		MinSpeed="25"
+		MaxSpeed="25"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="0.0" Green="0.0" Blue="0.0" />
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.0" Green="0.0" Blue="0.0" />
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.0" Green="0.0" Blue="0.0" />
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.0" Green="0.0" Blue="0.0" />
+	</FlyerSettings>
+
+	<FlyerSettings
+			Name="CloudsLight"
+			MaxFlyers="200"
+			MinTimeBetweenSpawns="0.1"
+			Speed="325"
+			MinAngle="20"
+			MaxAngle="30"
+			MinLifetime="45.0"
+			MaxLifetime="90.0"
+			FadeInTime="0.25"
+			RandomFlipHorizontal="true"
+			RandomFlipVertical="true"
+			RefractRate="0.1"
+			RefractAmount="1.0"
+			UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" />
+		<Texture Path="BackdropFlyers\\Cloud_02" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="MysticClouds"
+		MaxFlyers="512"
+		Speed="175"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="1.0" Green="0.75" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="1.0" Green="0.75" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="1.0" Green="0.75" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.75" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.75" Blue="1.0"/>		
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="MysticCloudsCarpet"
+		MaxFlyers="200"
+		MinTimeBetweenSpawns="0.25"
+		MinSpeed="50"
+		MaxSpeed="150"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="1024.0"
+		MaxLifetime="2048.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="1.0" Green="0.75" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.75" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="MysticCloudsCarpetOptimized"
+		MaxFlyers="60"
+		MinTimeBetweenSpawns="0.01"
+		MinSpeed="50"
+		MaxSpeed="150"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="1024.0"
+		MaxLifetime="2048.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.35"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="1.0" Green="0.75" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="1.0" Green="0.75" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.75" Blue="1.0"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="ScaryClouds"
+		MaxFlyers="100"
+		MinTimeBetweenSpawns="0.01"
+		Speed="80"
+		MinAngle="240"
+		MaxAngle="280"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="0.2" Green="0.2" Blue="0.2"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.2" Green="0.2" Blue="0.2"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.2" Green="0.2" Blue="0.2"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.2" Green="0.2" Blue="0.2"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.2" Green="0.2" Blue="0.2"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AshBG"
+		MaxFlyers="64"
+		MinTimeBetweenSpawns="0.1"
+		Speed="200"
+		MinAngle="90"
+		MaxAngle="90"
+		MinRotation="0"
+		MaxRotation="180"
+		MinLifetime="8.0"
+		MaxLifetime="12.0"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.75" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.70" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.65" Speed="0.45"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="ForegroundFlyers\\ash_2"/>
+		<Texture Path="ForegroundFlyers\\ash_3"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SmallRocks"
+		MaxFlyers="512"
+		MinTimeBetweenSpawns="0.1"
+		Speed="10"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="40.0"
+		MaxLifetime="80.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"		
+		>
+		<Layer Opacity="1.0" Scale="0.01" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.02" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.03" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.09" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.04" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.06" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.07" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.08" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Rock_01" />
+		<Texture Path="BackdropFlyers\\Rock_02" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AmbientBackgroundRocks"
+		MaxFlyers="512"
+		MinTimeBetweenSpawns="0.1"
+		Speed="10"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="40.0"
+		MaxLifetime="80.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="1.0" Scale="0.01" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.02" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.03" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.09" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.04" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.06" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.07" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.08" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Rock_01" />
+		<Texture Path="BackdropFlyers\\Rock_02" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CloudsNormal"
+		MaxFlyers="256"
+		MinTimeBetweenSpawns="0.1"
+		Speed="200"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="10.0"
+		MaxLifetime="20.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.5"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+		<Texture Path="BackdropFlyers\\Cloud_05" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CloudsWispy"
+		MaxFlyers="64"
+		MinTimeBetweenSpawns="0.5"
+		Speed="200"
+		MinAngle="75"
+		MaxAngle="105"
+		MinLifetime="10.0"
+		MaxLifetime="15.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.5"
+		UseWorldLocation="true"
+		UseLightEffect="false"		
+		>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="0.6" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="0.6" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="0.6" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="0.6" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="0.6" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+		<Texture Path="BackdropFlyers\\Cloud_05" />
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.54" Blue="0.0" />
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.54" Blue="0.0" />
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="1.0" Green="0.54" Blue="0.0" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CloudsSparse"
+		MaxFlyers="48"
+		MinTimeBetweenSpawns="0.5"
+		Speed="95"
+		MinAngle="120"
+		MaxAngle="150"
+		MinLifetime="22.0"
+		MaxLifetime="30.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.5"
+		RefractAmount="0.1"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" />
+		<Texture Path="BackdropFlyers\\Cloud_03" />
+		<Texture Path="BackdropFlyers\\Cloud_04" />
+		<Texture Path="BackdropFlyers\\Cloud_05" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="ShootingClouds"
+		MaxFlyers="8"
+		MinTimeBetweenSpawns="1.5"
+		Speed="1600"
+		MinAngle="135"
+		MaxAngle="135"
+		MinLifetime="2.0"
+		MaxLifetime="4.0"
+		FadeInTime="0.25"
+		RefractRate="0.25"
+		RefractAmount="0.05"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.15" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.7" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.5" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.3" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.1" Speed="1.00"/>
+		<Texture Path="BackdropFlyers\\Cloud_06" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="HeavyWind"
+		MaxFlyers="128"
+		MinTimeBetweenSpawns="0.01"
+		Speed="1800"
+		MinAngle="200"
+		MaxAngle="250"
+		MinLifetime="2.0"
+		MaxLifetime="4.0"
+		FadeInTime="0.25"
+		RefractRate="0.25"
+		RefractAmount="0.05"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.15" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.7" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.5" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.3" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.1" Speed="1.00"/>
+		<Texture Path="BackdropFlyers\\Cloud_06" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="HeavyWindDown"
+		MaxFlyers="32"
+		MinTimeBetweenSpawns="0.01"
+		Speed="1400"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="2.0"
+		MaxLifetime="4.0"
+		FadeInTime="0.25"
+		RefractRate="0.25"
+		RefractAmount="0.05"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.15" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.7" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.5" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.3" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.1" Speed="1.00"/>
+		<Texture Path="BackdropFlyers\\Cloud_06" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="HeavyWindDownIntense"
+		MaxFlyers="128"
+		MinTimeBetweenSpawns="0.01"
+		Speed="2200"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="2.0"
+		MaxLifetime="4.0"
+		FadeInTime="0.25"
+		RefractRate="0.25"
+		RefractAmount="0.05"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.15" Scale="1.0" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.7" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.5" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.3" Speed="1.00"/>
+		<Layer Opacity="0.15" Scale="0.1" Speed="1.00"/>
+		<Texture Path="BackdropFlyers\\Cloud_06" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="StormyBlueClouds"
+		MaxFlyers="100"
+		MinTimeBetweenSpawns="0.1"
+		Speed="350"
+		MinAngle="20"
+		MaxAngle="30"
+		MinLifetime="10.0"
+		MaxLifetime="20.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="0.3" Green="0.5" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.3" Green="0.6" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.35" Green="0.7" Blue="1.0"/>
+		<Texture Path="BackdropFlyers\\Cinder_2" Red="0.3" Green="0.3" Blue="0.3"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="WarmGoldClouds"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="0.5"
+		Speed="150"
+		MinAngle="20"
+		MaxAngle="22"
+		MinLifetime="12.0"
+		MaxLifetime="24.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.95"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.55"/>
+		<Texture Path="BackdropFlyers\\Cloud_01" Red="0.75" Green="0.6" Blue="0.5"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.7" Green="0.65" Blue="0.5"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.75" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.8" Green="0.75" Blue="0.6"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Birds"
+		MaxFlyers="128"
+		Speed="150"
+		MinAngle="25"
+		MaxAngle="75"
+		MinLifetime="15"
+		MaxLifetime="20"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.12" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Ghetto_Bird_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="BirdsLight"
+		MaxFlyers="2"
+		Speed="1250"
+		MinAngle="25"
+		MaxAngle="75"
+		MinTimeBetweenSpawns="3.2"
+		MinLifetime="15"
+		MaxLifetime="20"
+		UseWorldLocation="true"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Ghetto_Bird_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AuroraRisingBG"
+		MaxFlyers="2"
+		MinTimeBetweenSpawns="10"		
+		Speed="40"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="30"
+		MaxLifetime="45"
+		UseLightEffect="false"
+		FadeInTime="2.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.55" Scale="2.25" Speed="0.65"/>
+		<Texture Path="BackdropFlyers\\aurora_01"/>
+		<Texture Path="BackdropFlyers\\aurora_02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AuroraRisingFullBG"
+		MaxFlyers="14"
+		MinTimeBetweenSpawns="1.5"
+		Speed="120"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="5"
+		MaxLifetime="10"
+		UseLightEffect="false"
+		FadeInTime="2.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="false"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="0.55" Scale="2.25" Speed="0.65"/>
+		<Texture Path="BackdropFlyers\\aurora_01"/>
+		<Texture Path="BackdropFlyers\\aurora_02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Comets"
+		MaxFlyers="4"
+		MinTimeBetweenSpawns="5.8"
+		Speed="3000"
+		MinAngle="45"
+		MaxAngle="45"
+		MinLifetime="2.0"
+		MaxLifetime="3.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.2" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.1" Speed="0.75"/>
+		<Texture Path="BackdropFlyers\\Comet_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CometsStreaming"
+		MaxFlyers="16"
+		MinTimeBetweenSpawns="1.2"
+		Speed="3000"
+		MinAngle="45"
+		MaxAngle="45"
+		MinLifetime="2.0"
+		MaxLifetime="3.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.2" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.1" Speed="0.75"/>
+		<Texture Path="BackdropFlyers\\Comet_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CometsRisingFast"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="1.2"
+		Speed="3000"
+		MinAngle="90"
+		MaxAngle="90"
+		MinLifetime="2.0"
+		MaxLifetime="3.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		>
+		<Layer Opacity="1.0" Scale="0.3" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.2" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.1" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.75"/>
+		<Texture Path="BackdropFlyers\\Comet_01"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="Rainbow"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="3.1"
+		Speed="120"
+		MinAngle="30"
+		MaxAngle="30"
+		MinLifetime="666.0"
+		MaxLifetime="999.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="false"
+		RefractRate="0.0"
+		RefractAmount="0.0"
+		UseWorldLocation="false"
+		>
+		<Layer Opacity="0.75" Scale="1.5" Speed="1.0"/>
+		<Texture Path="BackdropFlyers\\Rainbow_01" />
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CometSparks"
+		MaxFlyers="48"
+		MinTimeBetweenSpawns="0.5"
+		Speed="2000"
+		MinAngle="45"
+		MaxAngle="45"
+		MinLifetime="2.0"
+		MaxLifetime="3.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		MinRotation="60"
+		MaxRotation="270"		
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Texture Path="ForegroundFlyers\\spark_diamond"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="CometsFalling"
+		MaxFlyers="8"
+		MinTimeBetweenSpawns="0.4"
+		Speed="2500"
+		MinAngle="270"
+		MaxAngle="270"
+		MinLifetime="1.5"
+		MaxLifetime="3.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="false"
+		RandomFlipVertical="false"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		>
+		<Layer Opacity="1.0" Scale="0.6" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.2" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.1" Speed="0.75"/>		
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.2" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.1" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.2" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.1" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.4" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="0.2" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="0.1" Speed="0.75"/>		
+		<Texture Path="BackdropFlyers\\Comet_01"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="CometsSpinning"
+		MaxFlyers="18"
+		MinTimeBetweenSpawns="0.3"
+		Speed="1350"
+		MinAngle="180"
+		MaxAngle="270"
+		MinRotation="60"
+		MaxRotation="270"		
+		MinLifetime="5.0"
+		MaxLifetime="15.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.05" Speed="0.15"/>
+		<Texture Path="BackdropFlyers\\Comet_02"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="AutumnLeavesBG"
+		MaxFlyers="84"
+		Speed="200"
+		MinAngle="270"
+		MaxAngle="350"
+		MinLifetime="12.75"
+		MaxLifetime="15.0"
+		MinRotation="0"
+		MaxRotation="350"	
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.35"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>		
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.5" Green="0.5" Blue="0.5"/>		
+		<Texture Path="ForegroundFlyers\\leaf_05" Red="0.5" Green="0.5" Blue="0.5"/>
+	</FlyerSettings>
+	
+	<FlyerSettings
+		Name="AutumnLeavesBGFast"
+		MaxFlyers="84"
+		Speed="800"
+		MinAngle="270"
+		MaxAngle="350"
+		MinLifetime="8.75"
+		MaxLifetime="12.0"
+		MinRotation="0"
+		MaxRotation="350"	
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.35"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_03" Red="0.5" Green="0.5" Blue="0.5"/>		
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.5" Green="0.5" Blue="0.5"/>		
+		<Texture Path="ForegroundFlyers\\leaf_05" Red="0.5" Green="0.5" Blue="0.5"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="LeavesBG"
+		MaxFlyers="256"
+		MinTimeBetweenSpawns="0.001"		
+		Speed="100"
+		MinAngle="225"
+		MaxAngle="325"
+		MinLifetime="4.75"
+		MaxLifetime="8.0"
+		MinRotation="0"
+		MaxRotation="350"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.35"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_05" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.4" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="LeavesBGLight"
+		MaxFlyers="64"
+		MinTimeBetweenSpawns="0.001"
+		Speed="100"
+		MinAngle="225"
+		MaxAngle="325"
+		MinLifetime="4.75"
+		MaxLifetime="8.0"
+		MinRotation="0"
+		MaxRotation="350"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.35"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_04" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_05" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="ForegroundFlyers\\leaf_02" Red="0.4" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="PetalsBG"
+		MaxFlyers="84"
+		MinTimeBetweenSpawns="0.01"
+		Speed="200"
+		MinAngle="270"
+		MaxAngle="350"
+		MinLifetime="12.75"
+		MaxLifetime="15.0"
+		MinRotation="0"
+		MaxRotation="350"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.35" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="0.30" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.45"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.35"/>
+		<Texture Path="ForegroundFlyers\\petal_01a" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\petal_01a" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\petal_01a" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\petal_01a" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\petal_01a" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\petal_01a" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="ForegroundFlyers\\petal_01b" Red="0.5" Green="0.5" Blue="0.5"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SporeBG"
+		MaxFlyers="28"
+		Speed="200"
+		MinAngle="65"
+		MaxAngle="115"
+		MinLifetime="12.75"
+		MaxLifetime="18.0"
+		MinRotation="0"
+		MaxRotation="45"
+		UseLightEffect="false"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="0.25" Speed="0.35"/>
+		<Layer Opacity="1.0" Scale="0.20" Speed="0.25"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.20"/>
+		<Layer Opacity="1.0" Scale="0.15" Speed="0.15"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.10"/>
+		<Layer Opacity="1.0" Scale="0.10" Speed="0.05"/>
+		<Texture Path="BackdropFlyers\\Spore_01" Red="0.25" Green="0.25" Blue="0.25"/>
+		<Texture Path="BackdropFlyers\\Spore_02" Red="0.25" Green="0.25" Blue="0.25"/>
+		<Texture Path="BackdropFlyers\\Spore_02" Red="0.25" Green="0.25" Blue="0.25"/>
+		<Texture Path="BackdropFlyers\\Spore_02" Red="0.25" Green="0.25" Blue="0.25"/>
+		<Texture Path="BackdropFlyers\\Spore_02" Red="0.25" Green="0.25" Blue="0.25"/>
+		<Texture Path="BackdropFlyers\\Spore_02" Red="0.25" Green="0.25" Blue="0.25"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SootyCloudsBG"
+		MaxFlyers="360"
+		MinTimeBetweenSpawns="0.08"
+		Speed="400"
+		MinAngle="30"
+		MaxAngle="38"
+		MinLifetime="25.0"
+		MaxLifetime="45.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.55"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.8" Green="0.8" Blue="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.4" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SootyCloudsBGOptimized"
+		MaxFlyers="84"
+		MinTimeBetweenSpawns="0.025"
+		Speed="400"
+		MinAngle="30"
+		MaxAngle="38"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="BackdropFlyers\\Cloud_03" Red="0.6" Green="0.6" Blue="0.6"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SootyCloudsLightBGOptimized"
+		MaxFlyers="12"
+		MinTimeBetweenSpawns="0.1"
+		Speed="275"
+		MinAngle="30"
+		MaxAngle="38"
+		MinLifetime="45.0"
+		MaxLifetime="90.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.25"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.8" Green="0.8" Blue="0.8"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SootyAshBG"
+		MaxFlyers="256"
+		MinTimeBetweenSpawns="0.001"
+		Speed="200"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="10.0"
+		MaxLifetime="15.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="1.0"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="1.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="0.95" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="0.9" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="0.85" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="0.8" Speed="0.55"/>
+		<Texture Path="ForegroundFlyers\\ash_1"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.8" Green="0.8" Blue="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.8" Green="0.8" Blue="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.8" Green="0.8" Blue="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.4" Green="0.4" Blue="0.4"/>		
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SootyAshBGOptimized"
+		MaxFlyers="32"
+		MinTimeBetweenSpawns="0.1"
+		Speed="250"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="7.0"
+		MaxLifetime="10.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.1"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.4" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+
+	<FlyerSettings
+		Name="SootyAshBGOptimizedOLD"
+		MaxFlyers="64"
+		MinTimeBetweenSpawns="0.1"
+		Speed="250"
+		MinAngle="0"
+		MaxAngle="360"
+		MinLifetime="10.0"
+		MaxLifetime="15.0"
+		FadeInTime="0.25"
+		RandomFlipHorizontal="true"
+		RandomFlipVertical="true"
+		RefractRate="0.1"
+		RefractAmount="0.1"
+		UseWorldLocation="true"
+		>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.90"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.85"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.80"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.75"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.70"/>
+		<Layer Opacity="1.0" Scale="3.0" Speed="0.65"/>
+		<Layer Opacity="1.0" Scale="3.95" Speed="0.60"/>
+		<Layer Opacity="1.0" Scale="3.90" Speed="0.55"/>
+		<Layer Opacity="1.0" Scale="3.85" Speed="0.50"/>
+		<Layer Opacity="1.0" Scale="3.80" Speed="0.45"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.8" Green="0.8" Blue="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.8" Green="0.8" Blue="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_02" Red="0.8" Green="0.8" Blue="0.8"/>
+		<Texture Path="BackdropFlyers\\Cloud_04" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_05" Red="0.4" Green="0.4" Blue="0.4"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.5" Green="0.5" Blue="0.5"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.6" Green="0.6" Blue="0.6"/>
+		<Texture Path="BackdropFlyers\\Cloud_Multi01" Red="0.4" Green="0.4" Blue="0.4"/>
+	</FlyerSettings>
+	
+	
+</FlyerData>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Name="fog_01"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="fog_01"
+			NeverObscuresPlayer="true"
+			MeshType="Flat">
+		</Thing>
+		<Life
+			Invulnerable="true"
+			Material="NONE"
+			ShowDamageNumbers="false"
+			ReflectFx="null"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="fog_02"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="fog_02"
+			NeverObscuresPlayer="true"
+			MeshType="Flat">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="fog_03"
+		InheritFrom="1_BaseInvulnerablePassableObstacle"
+		>
+		<Thing
+			Graphic="fog_03"
+			NeverObscuresPlayer="true"
+			MeshType="Flat">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Bird01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		StopsProjectiles="true"
+		StopsUnits="false"
+		>
+		<Thing
+			Graphic="BirdIdle">
+			<Point X="-10" Y="-10"/>
+			<Point X="10" Y="10"/>
+			<Point X="10" Y="10"/>
+			<Point X="-10" Y="-10"/>
+		</Thing>
+		
+	</Obstacle>
+
+</Obstacles>

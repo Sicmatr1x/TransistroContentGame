@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+	<Obstacle
+		Name="CountryBrushstroke01"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_brushstroke_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryCloud01"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_cloud_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryCloud02"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_cloud_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryCloud03"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_cloud_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryHouse01"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_house_01">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="CountryMem01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		CanPenetrateIfInvulnerable="true">
+		<Thing
+			VisibleInPlanning="false"
+			OffsetY="-328"
+			Graphic="Tilesets\\Country\\country_mem_01">
+			<Point X="368" Y="-16"/>
+			<Point X="158" Y="-179"/>
+			<Point X="-198" Y="-185"/>
+			<Point X="-379" Y="-19"/>
+			<Point X="-150" Y="117"/>
+			<Point X="143" Y="117"/>
+		</Thing>
+		<Life
+			Health="500000"
+			HealthFractionRegen="0.03"
+			RespawnTimeMin="9999.0"
+			RespawnTimeMax="9999.0"
+			HitSound="/SFX/OLD SOUNDS/CannonImpact"
+			HitFx="MemOnHit01"
+			HitFxInterval="0.4"
+			DeathSound="/SFX/OLD SOUNDS/PeacemakerDeath"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			DeathGraphic="null"
+			DeathFx="CountryMem01Death"
+			Material="METAL"
+			NumDeathLines="8"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryMem01A"
+		InheritFrom="1_BaseVulnerableObstacle">
+		<Thing
+			VisibleInPlanning="true"
+			OffsetY="-328"
+			Graphic="Tilesets\\Country\\country_mem_01A">
+			<Point X="368" Y="-16"/>
+			<Point X="158" Y="-179"/>
+			<Point X="-198" Y="-185"/>
+			<Point X="-379" Y="-19"/>
+			<Point X="-150" Y="117"/>
+			<Point X="143" Y="117"/>
+		</Thing>
+		<Life
+			Health="500000"
+			HealthFractionRegen="0.03"
+			RespawnTimeMin="9999.0"
+			RespawnTimeMax="9999.0"
+			HitSound="/SFX/OLD SOUNDS/CannonImpact"
+			HitFx="MemOnHit01"
+			HitFxInterval="0.4"
+			DeathSound="/SFX/OLD SOUNDS/PeacemakerDeath"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			DeathGraphic="null"
+			DeathFx="CountryMem01Death"
+			Material="METAL"
+			NumDeathLines="8"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountrySunset01"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="CountrySunset01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountrySunset01Flare"
+		InheritFrom="1_BaseDecalObstacle"
+			>
+		<Thing
+			Graphic="CountrySunset01Flare">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryTerrain01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_terrain_01">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="CountryTransistor01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_transistor_01">
+		</Thing>
+		<ColorMask>
+			<Color Red="0.29" Green="1.0" Blue="0.71" Opacity="0.85"/>
+			<Emissive Red="1.0" Green ="1.0" Blue ="1.0" Opacity="0.0"/>
+		</ColorMask>
+		<Metering>
+			<Entry Field="ColorMaskEmissiveRatio" MeteringChannel="Showdown" MeterMin="0.00" MeterMax="0.3" AddMin="0.0" AddMax="0.75" PulsePeriod="3.6" PulseIntensity="0.3" PulseIsMin="false" />
+			<Entry Field="ColorMaskRatio" MeteringChannel="Showdown" MeterMin="0.00" MeterMax="0.3" AddMin="0.0" AddMax="1.5"  PulsePeriod="3.6" PulseIntensity="0.3" PulseIsMin="false" />
+		</Metering>
+	</Obstacle>
+	
+	<Obstacle
+		Name="CountryTransistor02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_transistor_02">
+		</Thing>
+		<ColorMask>
+			<Color Red="0.29" Green="1.0" Blue="0.71" Opacity="0.85"/>
+			<Emissive Red="1.0" Green ="1.0" Blue ="1.0" Opacity="0.0"/>
+		</ColorMask>
+		<Metering>
+			<Entry Field="ColorMaskEmissiveRatio" MeteringChannel="Showdown" MeterMin="0.00" MeterMax="0.3" AddMin="0.0" AddMax="0.75" PulsePeriod="3.6" PulseIntensity="0.3" PulseIsMin="false" />
+			<Entry Field="ColorMaskRatio" MeteringChannel="Showdown" MeterMin="0.00" MeterMax="0.3" AddMin="0.0" AddMax="1.5"  PulsePeriod="3.6" PulseIntensity="0.3" PulseIsMin="false" />
+		</Metering>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryTree01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_tree_01">
+		</Thing>
+	</Obstacle>
+	
+	
+	<Obstacle
+		Name="CountryTreeRustle01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="CountryTreeRustle">
+		</Thing>
+	</Obstacle>
+
+
+
+	<Obstacle
+		Name="CountryTreeRustleSlow01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="CountryTreeRustleSlow">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="CountryTreeLine01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_treeLine_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryWheat01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			OffsetY="-70"
+			Graphic="Tilesets\\Country\\country_wheat_01">
+			<Point X="74" Y="0"/>
+			<Point X="22" Y="-24"/>
+			<Point X="-56" Y="3"/>
+			<Point X="-18" Y="35"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CountryWheat02"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_wheat_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CountryGrassWind"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="GrassWind">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+	Name="CountryGodRay01"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Country\\country_godray_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CountryParticleGatherCool"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="ParticleGatherCool">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CountryInvincibleShield"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="CountryInvincibleShield">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CountryDisruptionCubes"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="DisruptionCubes_LoopEnviro">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CountrySpirit01"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			OffsetY="-159"
+			Graphic="Tilesets\\Country\\country_spirit_01">
+			<Point X="-3" Y="-18"/>
+			<Point X="-57" Y="-6"/>
+			<Point X="-11" Y="35"/>
+			<Point X="40" Y="5"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CountryTriangleSpawnerFX"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+			>
+		<Thing
+			Graphic="TriangleSparkleSpawner">
+		</Thing>
+	</Obstacle>
+
+
+</Obstacles>

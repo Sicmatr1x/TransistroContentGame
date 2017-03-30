@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Suppressor / "Creep" -->
+
+	<Npc
+		Name="Suppressor"
+		InheritFrom="1_BaseAttacker"
+		PhaseInSound="SFX/Enemy Sounds/Suppressor/SuppressorOnSpawn"
+		Speed="350"
+		RotationSpeed="420"
+		Flyer="true"
+		ScoreValue="0"
+		PhaseInGraphic="null"
+        PhaseInTimeMin="0.5"
+        PhaseInTimeMax="0.5"
+		MoveGraphic="SuppressorIdle"
+		WalkLegs="SuppressorWalk"
+		SpawnFacingPlayer="false"
+		VisionRange="900"
+		OnHitWeapon="null"
+		FootprintFx="null"
+        CloakFx="null"
+		OnDeathWeapon="SuppressorEggSpawn"
+		SquadName="SHOOTERS"
+		IgnoreTargetCollision="false"
+		SleepWhileActivating="false"
+		EnemyStatName="Suppressor"
+		>
+		<Thing
+			Grip="5.0"
+			ActivateGraphic="SuppressorPack"
+			HatchGraphic="SuppressorActivate"
+			Graphic="SuppressorIdle"
+			AmbientSound="/SFX/Enemy Sounds/Priest/PriestAmbience"
+			TouchdownSound="SFX/Enemy Sounds/Suppressor/SupressorFootsteps"
+			ClearGeometry="true"
+			OverheadOffset="90"
+			SelectionWidth="170"
+			SelectionHeight="255"
+            SelectionShiftY="50"
+			OffsetZ="0"
+			PermaFlash="null"
+			MinScale="0.75"
+			MaxScale="0.75"
+			OcclusionOutlineRadius="0.001"
+			OcclusionOutlineThreshold="0.7"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="-32" Y="38"/>
+			<Point X="32" Y="38"/>
+			<Point X="60" Y="0"/>
+			<Point X="32" Y="-38"/>
+			<Point X="-32" Y="-38"/>
+			<Point X="-60" Y="0"/>
+		</Thing>
+		<Life
+			Health="200"
+			HitSound="SFX/Enemy Sounds/Suppressor/SuppressorOnHit"
+			DeathSound="SFX/Enemy Sounds/Suppressor/SuppressorDeath"
+			Decal="Decals\\Health_Circle_Large"
+			DamageDecal="null"
+			HitGraphic="SuppressorGlitch"
+			DeathGraphic="SuppressorDeath"
+			DeathFx="SuppressorLeg1"
+			ImpactGraphicOffset="73"
+			DeathShakeSpeed="250"
+			DeathShakeDistance="5"
+			Material="METAL"
+			LowHealthTransitionEffect="null"
+			NumDeathLines="8"
+			ArmorCoverage="240"
+			Vulnerability="1.5"
+			>
+		</Life>
+		<Weapon Name="Suppressor"/>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="false"
+			TargetLock="true"
+			MaxDistance="2000"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="SFX/Enemy Sounds/Suppressor/SuppressorSight"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="SuppressorUnpack"
+			TargetAcquiredGraphicPrereq="SuppressorPack"
+			TargetLostDisable="0.5"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			FindHealerHealthFraction="0.5">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="3.0"
+			RandomTurnIntervalMax="4.0"
+			SpeedFraction="0.0"
+			TetherDistance="250"
+			FootprintSpawnInterval="0.5"
+			FootprintBlockDistance="78"
+			StopToAttack="true"
+			>
+		</MoveAI>
+		<MoveAI
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="true"
+			RequiresLoS="true"
+			LookAheadDistance="512"
+			MaxChasers="2"
+			DisengageTime="0"
+			StopWhenDisengaged="true"
+			CoverSearchArea="0"
+			SuccessDistance="350"
+			CoverSearchWhenDisengaged="0"
+			OldTargetLocationWhenDisengaged="0.0"
+			FlankDistanceWhenDisengaged="0"
+			>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			RequiresLoS="true"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true"
+			RequiresHeadOnCamera="true"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true"
+			RangeBufferMin="0.9"
+			RangeBufferMax="1.0">
+		</AttackAI>
+
+		<Upgrade Name="SuppressorLevel2">
+			<Rank>
+				<Change HelpTextId="SuppressorLevel2"/>
+				<Change ValueChangeType="ADD" Health="150"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="SuppressorLevel3">
+			<Rank>
+				<Change HelpTextId="SuppressorLevel3"/>
+				<Change ValueChangeType="ADD" MaxChasers="1"/>
+				<Change ValueChangeType="ADD" Health="150"/>
+				<Change ValueChangeType="ADD" Speed="200"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="SuppressorLevel4">
+			<Rank>
+				<Change HelpTextId="SuppressorLevel4"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+	</Npc>
+	
+	<Npc
+		Name="Suppressor_Tutorial"
+		InheritFrom="Suppressor"
+		ImmuneToDeathWeaponSuppression="true"
+		OnDeathWeapon="Suppressor_TutorialEggSpawn"
+		Speed="400"
+		RotationSpeed="1200"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Life
+			Health="150">
+		</Life>
+	</Npc>
+
+	<Npc
+		Name="SuppressorSmall"
+		InheritFrom="Suppressor"
+		ImmuneToDeathWeaponSuppression="false"
+		OnDeathWeapon="null"
+		Speed="400"
+		RotationSpeed="1200"
+		ClearUpgrades="true"
+		ClearWeapons="true"
+		CollisionWeapon="SuppressorSmallSelfKill"
+		>
+		<Life
+			Health="100">
+		</Life>
+		<Thing
+			MinScale="0.375"
+			MaxScale="0.375">
+		</Thing>
+		<Weapon Name="SuppressorSmall"/>
+	</Npc>
+	
+	<Npc
+		Name="SuppressorProp"
+		InheritFrom="Suppressor"
+		ClearWeapons="true"
+		ClearAI="true"
+		ClearUpgrades="false"
+		RotationSpeed="200"
+		Speed="400.0"
+		VisionRange="300"
+		>
+		<TargetAI
+			TargetAcquiredSound="SFX/Enemy Sounds/Suppressor/SuppressorSight"
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetLostDisable="0.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			TargetLostGraphic="null"
+			MaxDistance="2000"
+			RequiredNearbyFriends="0"
+			FindHealerHealthFraction="0.5">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="0.9"
+			RandomTurnIntervalMax="2.9"
+			SpeedFraction="0.33"
+			TetherDistance="250"
+			RetreatFromDistance="200"
+			RetreatToDistance="300"
+			StopToAttack="true"
+			FootprintSpawnInterval="0.5"
+			FootprintBlockDistance="85">
+			<RetreatFromUnit Name="_PlayerUnit"/>
+		</MoveAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			LeadTarget="false"
+			RequiresLoS="false"
+			CanAttackWhileMoving="true"
+			CanAttackWhileRetreating="true"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true">
+		</AttackAI>
+		<Weapon Name="SuppressorFormatting"/>
+	</Npc>
+
+
+</Npcs>

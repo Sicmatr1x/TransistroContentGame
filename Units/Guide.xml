@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Guide -->
+	
+	<Npc
+		Name="Guide"
+		InheritFrom="1_BaseAttacker"
+		PhaseInSound="SFX/Enemy Sounds/EnemyPhaseIn"
+		ClearWeapons="true"
+		ClearAI="true"
+		Speed="425"
+		Acceleration="900"
+		Deceleration="600"
+		StopOnDime="true"
+		RotationSpeed="640"
+		WobbleDistance="15"
+		WobbleSpeed="25"
+		Flyer="true"
+		ScoreValue="0"
+		PhaseInGraphic="null"
+		PhaseInTimeMin="0.01"
+		PhaseInTimeMax="0.01"
+		MoveGraphic="null"
+		SpawnFacingPlayer="false"
+		VisionRange="2000"
+		OnHitWeapon="null"
+		FootprintFx="null"
+		CloakFx="null"
+		OnDeathWeapon="null"
+		SquadName="GUIDES"
+		IgnoreTargetCollision="true"
+		CollisionWeapon="null"
+		MovingWeapon="null"
+		CollideWithObstacles="false"
+		CollideWithUnits="false"
+		ImmuneToStun="true"
+		StunBreakModifier="99999.0"
+		>
+		<Thing
+			Grip="99999"
+			ActivateGraphic="null"
+			HatchGraphic="null"
+			Graphic="Guide01"
+			AmbientSound="/SFX/World Sounds/MaintenancePipeAmbience"
+			OnTouchdownFxAnim="null"
+			TouchdownSound="null"
+			ClearGeometry="true"
+			OverheadOffset="150"
+			SelectionWidth="140"
+			SelectionHeight="155"
+            SelectionShiftY="30"
+			ImmuneToVacuum="true"
+			OffsetZ="100"
+			PermaFlash="null"
+			SpinFactor="0"
+			SpeechCapable="true"
+			SpeechMetering="true"
+			SpeechMeteringChannelName="Guide"
+			Scale="0.8"
+			OcclusionOutlineOpacity="0.0">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="42"/>
+			<Point X="72" Y="0"/>
+			<Point X="0" Y="-42"/>
+			<Point X="-72" Y="0"/>
+		</Thing>
+		<ColorMask>
+			<Color Red="1" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Emissive Red="1" Green ="1.0" Blue ="1.0" Opacity="1.0"/>
+		</ColorMask>
+		<Metering>
+      <Entry Field="ChildAnimOpacity" MeteringChannel="Guide" MeterMax="0.25" MeterMin="0.05" AddMin="0.0" AddMax="0.4"  PulsePeriod="3.6" PulseIntensity="0.4" PulseIsMin="true" MeteringValueBase="0.2"/>
+		</Metering>
+		<Life
+			Health="1"
+			Armor="1.0"
+			Invulnerable="true"
+			HitSound="/SFX/Enemy Sounds/InvincibleOnHit"
+			DeathSound="null"	
+			Decal="Tilesets\\Virus\\virus_plant_01C"
+			DamageDecal="null"
+			HitGraphic="null"
+			DeathGraphic="null"
+			DeathShakeSpeed="250"
+			DeathShakeDistance="5"
+			Material="INVINCIBLE"
+			LowHealthTransitionEffect="null"
+			DamageFlashMin="0.9"
+			DamageFlashMax="1.0"
+			NumDeathLines="8"
+			>
+		</Life>
+
+		<Weapon Name="BlankWeapon"/>
+
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="false"
+			TargetLock="true"
+			MaxDistance="2000"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="null"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetAcquiredGraphicPrereq="null"
+			TargetLostDisable="0.0"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			FindHealerHealthFraction="0.0">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+
+		<MoveAI
+			Algorithm="PATHFIND"
+			NodeSuccessDistance="16"
+			StopToAttack="false"
+			RequiresLoS="false"
+			SuccessDistance="50"
+			LookAheadDistance="512"
+			StayOnCamera="false"
+			>
+		</MoveAI>
+
+	</Npc>
+
+
+
+
+
+</Npcs>

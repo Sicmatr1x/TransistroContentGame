@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Audio
+	DistantOcclusionLevel="0.9"
+	DistantOcclusionMinDist="150"
+	DistantOcclusionMaxDist="1700"
+	VoiceOutputVolumeScale="8.0"
+	FocusEffectWetFadeTime="0.25"
+	FocusSpeechPitchShiftScale="0.75"
+	FocusSpeechPitchShiftEntryDuration="0.4"
+	FocusSpeechPitchShiftExitDuration="0.4"
+	HealthVelocity="1.0"
+	FocusVelocity="2.0"
+	ListenerHeight="500.0"
+	>
+	<DisableOcclusion Cue="/SFX/World Sounds/CradleAmbience" />
+	<DisableOcclusion Cue="/SFX/World Sounds/CameraFlash" />
+	<DisableOcclusion Cue="/SFX/Player Sounds/FootstepsWheatHeavy3" />
+	<PerFrameSoundCap Cue="/SFX/Player Sounds/Weapon_Bomb_Detonate" Cap="3" />
+	<PerFrameSoundCap Cue="/SFX/Player Sounds/Weapon_Clusterbomb_DetonateAlt" Cap="3" />
+	<PerFrameSoundCap Cue="/SFX/Enemy Sounds/VirusColumnOnHit" Cap="3" />
+	<PerFrameSoundCap Cue="/SFX/Enemy Sounds/VirusColumnDestroy" Cap="3" />
+	<PerFrameSoundCap Cue="/SFX/Enemy Sounds/VirusPlantDeath" Cap="3" />
+</Audio>

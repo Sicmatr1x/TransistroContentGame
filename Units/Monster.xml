@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Monster -->
+
+	<Npc
+		Name="MonsterTail"
+		InheritFrom="1_BaseAttacker"
+		VisionRange="4000"
+		Speed="0.0"
+		RotationSpeed="0.0"
+		Flyer="false"
+		PhaseInGraphic="null"
+		PhaseInFx="null"
+		PhaseInSound="null"
+		SpawnFacingPlayer="false"
+		ImmuneToStun="true"
+		ImmuneToCharm="true"
+		ImmuneToSizeEffects="true"
+		IgnoreTargetCollision="false"
+		OnTouchdownWeapon="MonsterStompTouchdown"
+		BlockFx="null"
+		CollideWithObstacles="true"
+		OnDeathWeapon="null"
+		ClearUpgrade="Egg_HatchExplosion"
+		MouseOverOutline="false"
+		>
+		<Thing
+			Graphic="MonsterTail"
+			Scale="1.0"
+			FlyingGraphic="null"
+			TouchdownGraphic="null"
+			TouchdownSound="null"
+			FallSound="null"
+			UpwardVelocityGhostInterval="0.0"
+			UpwardVelocityGhostDuration="0.0"
+			OverheadOffset="180"
+			FallSpeedMultiplier="10.0"
+			Grip="5.0"
+			Drag="0.5"
+			ImmuneToVacuum="true"
+			OffsetZ="0"
+			OffsetY="-816"
+			RotateGeometry="true"
+			SelectionWidth="400"
+			SelectionHeight="400"
+            SelectionShiftY="85"
+			>
+      <Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+		<Point X="-115" Y="29"/>
+		<Point X="20" Y="88"/>
+		<Point X="101" Y="13"/>
+		<Point X="-34" Y="-50"/>
+	</Thing>
+	<Life
+			Decal="null"
+			Invulnerable="true"
+			Material="INVINCIBLE">
+    </Life>
+    <Weapon Name="MonsterStomp"/>
+    <TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			TargetLock="true"
+			MaxDistance="9999">
+      <SortType Heuristic="CLOSEST"/>
+    </TargetAI>
+    <AttackAI
+			Algorithm="ON_SIGHT"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true"
+			CanAttackWhileMoving="false"
+			OnlyAimAtDestination="true"
+			RequiresLoS="false">
+    </AttackAI>
+	</Npc>
+
+	<Npc
+		  Name="MonsterTailNoVelocity"
+		  InheritFrom="MonsterTail"
+		  ClearWeapons="true"
+		  OnTouchdownWeapon="MonsterStompTouchdown"
+		>
+		<Weapon Name="MonsterStompNoVelocity"/>
+	</Npc>
+	
+	<Npc
+		Name="MonsterHead"
+		InheritFrom="1_BaseAttacker"
+		Speed="150.0"
+		Flyer="true"
+		RotationSpeed="200"
+		RotationAcceleration="5"
+		RightAngleClamp="197"
+		RightAngleHardClamp="183"
+		LeftAngleClamp="345"
+		LeftAngleHardClamp="359"
+		SpawnFacingPlayer="true"
+		OnHitWeapon="null"
+		FootprintFx="null"
+		PhaseInGraphic="null"
+		ImmuneToStun="true"
+		ImmuneToCharm="true"
+		ImmuneToSizeEffects="true"
+		CollideWithObstacles="false"
+		CollideWithUnits="false"
+		OnFiredAtWeapon="null"
+		ScoreValue="0"
+		PhaseInTimeMin="0.3"
+		PhaseInTimeMax="0.3"
+		RotateGraphic="null"
+		PhaseInSound="SFX/Enemy Sounds/EnemyPhaseIn"
+		CheckShadow="false"
+		VisionRange="3000"
+		DormantOnDeath="true"
+		LastStandWeapon="MonsterBreath"
+		OnDeathWeapon="null"
+		RagDollOnDeath="false"
+		HighlightTopAnimOnly="true"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights"
+		>
+		<Thing
+			Graphic="MonsterTorso"
+			Scale="1.0"
+			OffsetY="-229"
+			OffsetX="150"
+			OverheadOffset="100"
+			UpwardVelocityGhostInterval="0.0"
+			UpwardVelocityGhostDuration="0.0"
+			SelectionWidth="1100"
+			SelectionHeight="1000"
+            SelectionShiftY="150"
+			Grip="999999"
+			Drag="5.0">
+			<Point X="-273" Y="42"/>
+			<Point X="-53" Y="140"/>
+			<Point X="190" Y="130"/>
+			<Point X="326" Y="80"/>
+			<Point X="500" Y="-50"/>
+			<Point X="550" Y="-350"/>
+			<Point X="-300" Y="-350"/>
+		</Thing>
+		<Life
+			Health="3000"
+			LastStandHealth="2200"
+			HitGraphic="null"
+			HitSound="/SFX/Enemy Sounds/Monster/MonsterOnHit"
+			Decal="Decals\\Health_Circle_Large"
+			Invulnerable="false"
+			DeathGraphic="MonsterHeadDeath"
+			DeathSound="SFX/Enemy Sounds/Popper/PopperDeath"
+			Material="METAL"
+			AttachImpactGraphic="false">
+		</Life>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			TargetAcquiredSound="/SFX/Enemy Sounds/Monster/MonsterTargetSighted"
+			RequiresCanAttack="false"
+			MaxDistance="4000"
+			RequiresLoS="false">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true"
+			RequiresLoS="false">
+		</AttackAI>
+		
+		<Weapon Name="MonsterBeam"/>
+
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="200"/>
+			</Rank>
+		</Upgrade>
+		
+		
+	</Npc>
+	
+</Npcs>

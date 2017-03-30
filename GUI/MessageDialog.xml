@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MessageDialogs>
+
+	<MessageDialog
+		Platform="default"
+		TransitionOnTime="0.1"
+		TransitionOffTime="0.1"
+		OpenSound="/SFX/Menu Sounds/InfoTextAppear"
+		CloseSound="null">
+
+		<Back Justification="Left" Red="0" Green="0" Blue="0" Alpha="1"/>
+		<AnimatedBackground X="0.01" Y="0.01" Graphic="WarningBackgroundLoop" Justification="Left" VerticalJustification="Top"/>
+		
+		<TitleText X="960" Y="150" Justification="Center" VerticalJustification="Center"
+				   HelpTextId="ExitConfirmScreenTitle" Font="RalewayBold32"
+				   OutlineThickness="0"
+				   TextRed="1" TextGreen="1" TextBlue="1" TextOutlineRed="1" TextOutlineGreen="0.7" TextOutlineBlue="0"/>
+		
+		<MessageText X="960" Y="450" Justification="Center" VerticalJustification="Center"
+					Font="RalewayBold32"
+					TextRed="0.69" TextGreen="1.0" TextBlue="0.92"/>
+
+		<TextBackground X="960" Y="450" Graphic="GUI\\WarningTextBrackets" Justification="Center" VerticalJustification="Center"/>
+
+		<ConfirmButton Graphic="GUI\\PS4Controller\\ps4ControllerX" HelpTextId="Shell_Confirm"
+					X="960" Y="920"
+					Scale="0.25" Justification="Center" VerticalJustification="Center"
+					TextScale="1.0" TextJustification="Left" AlwaysUpperCase="true"
+					Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0.0" TextOutlineGreen="0.0" TextOutlineBlue="0.0"
+					PressSound="/SFX/Menu Sounds/PanelSlideIn"
+					UseMouseGraphics="true"/>
+		
+		<XButton Scale="0.0"/>
+		<YButton Scale="0.0"/>
+
+	</MessageDialog>
+	
+	
+</MessageDialogs>

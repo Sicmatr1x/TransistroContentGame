@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+	Name="FairviewBridge01"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			OffsetY="-147"
+			Graphic="Tilesets\\Fairview\\fairview_bridge_01">
+			<Point X="401" Y="112"/>
+			<Point X="-285" Y="-218"/>
+			<Point X="-411" Y="-161"/>
+			<Point X="274" Y="185"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="FairviewBridgeplatform01"
+	  InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+				Graphic="Tilesets\\Fairview\\fairview_bridgeplatform_01">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+	  Name="FairviewBridgestatue01"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-224"
+			Graphic="Tilesets\\Fairview\\Fairview_bridgeStatue_01">
+			<Point X="-39" Y="36"/>
+			<Point X="95" Y="-10"/>
+			<Point X="-26" Y="-40"/>
+			<Point X="-138" Y="0"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewBridgeImprintStatue01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+				Graphic="ImprintStatueA">
+		</Thing>
+		>
+	</Obstacle>
+
+	<Obstacle
+	  Name="FairviewBridgestatue02"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-207"
+			Graphic="Tilesets\\Fairview\\Fairview_bridgeStatue_02">
+			<Point X="99" Y="-2"/>
+			<Point X="15" Y="-38"/>
+			<Point X="-78" Y="5"/>
+			<Point X="33" Y="37"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewBridgeImprintStatue02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+				Graphic="ImprintStatueB">
+		</Thing>
+		>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewBridgeImprintCube"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+				Graphic="ImprintCube">
+		</Thing>
+		>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewCradle01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="FairviewCradle">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewCradle01B"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Fairview\\fairview_cradle_01B">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="FairviewFence01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Fairview\\fairview_fence_01"
+			OffsetY="-96">
+			<Point X="140" Y="47"/>
+			<Point X="-60" Y="-58"/>
+			<Point X="-130" Y="-26"/>
+			<Point X="83" Y="81"/>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="FairviewLampost01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Fairview\\Fairview_lampost_01"
+			OffsetY="-221"
+			NeverObscuresPlayer="false">
+			<Point X="62" Y="-4"/>
+			<Point X="18" Y="-23"/>
+			<Point X="-28" Y="-2"/>
+			<Point X="27" Y="19"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewPillar01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Fairview\\Fairview_pillar_01"
+				OffsetY="-384"
+				NeverObscuresPlayer="true">
+			<Point X="153" Y="-2"/>
+			<Point X="-10" Y="-71"/>
+			<Point X="-155" Y="-4"/>
+			<Point X="2" Y="78"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FairviewWindow01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Fairview\\fairview_light_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewLight01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Fairview\\fairview_light_02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="FairviewAirportLight01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BuildingLightRedAirportGlow"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="ForegroundBokehSpawner"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="ForegroundBokehSpawnerGreen"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="ForegroundBokehSpawnerRed"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="ForegroundBokehSpawnerRed"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="ForegroundBokehSpawnerBlue"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="ForegroundBokehSpawnerBlue"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="ForegroundBokehSpawnerPurple"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="ForegroundBokehSpawnerPurple"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FairviewFlareOrange"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_Orange_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewFlareOrangeFade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="EndFlareOrangeFade"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FairviewFlareOrangeBlue"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_OrangeBlue_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewFlareOrangeBlueFade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="EndFlareOrangeBlueFade"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewFlareRainbowHoop"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_Rainbow_Hoop_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FairviewFlareRainbowHoopFade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="EndFlareRainbowHoopFade"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewAirportLight02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_Small_Blue_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewAirportLight02Fade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="EndFlareSmallBlueFade"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewAirportLight03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="EndFlareSmallRedFade"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewAirportLight03Fade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_Small_Red_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FairviewAirportLight04"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_Small_WhiteDot"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FairviewAirportLight04Fade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="EndFlareSmallDotFade"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewFlareStreak"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_white_01_streak"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FairviewFlareStreakFade"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="EndFlareStreakFade"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CamerataRoyceEnd01"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="RoyceEnd_01"
+			SpeechCapable="true"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="CamerataRoyceEnd01Hands"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="RoyceHands"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	
+	<Obstacle
+	Name="CamerataRoyceEnd01CigaretteGlow"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="RoyceCigaretteGlow"
+			>
+		</Thing>
+	</Obstacle>
+	<Obstacle
+	Name="CamerataRoyceEnd01CigaretteSmoke"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="RoyceCigaretteSmoke"
+			>
+		</Thing>
+	</Obstacle>
+	<Obstacle
+	Name="CamerataRoyceEnd01CigaretteSpark"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="RoyceCigaretteSpark"
+			>
+		</Thing>
+	</Obstacle>
+
+</Obstacles>
+

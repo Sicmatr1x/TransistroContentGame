@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TerrainTiles>
+
+	<Obstacle
+    Name="CamerataAsher01"
+    InheritFrom="1_BaseTerrainTile"
+    Walkable="false">
+		<Thing
+				Graphic="Cinematic\\Camerata_Asher_01"
+				Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="CamerataGrant01"
+	  InheritFrom="1_BaseTerrainTile"
+	  Walkable="false">
+		<Thing
+				Graphic="Cinematic\\Camerata_Grant_01"
+				Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="CamerataRoyce01"
+	  InheritFrom="1_BaseTerrainTile"
+	  Walkable="false">
+		<Thing
+				Graphic="Cinematic\\Camerata_Royce_01"
+				SpeechCapable="true"
+				Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="CamerataSybil01"
+	  InheritFrom="1_BaseTerrainTile"
+	  Walkable="false">
+		<Thing
+				Graphic="Cinematic\\Camerata_Sybil_01"
+				Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutMuse_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Muse_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutMuse_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Muse_03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutCamerata_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Camerata_02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutCamerata_Portrait_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Camerata_Portraits_Asher_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutCamerata_Portrait_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Camerata_Portraits_Royce_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Royce_Portrait_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Camerata_Portraits_Royce_02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_Muse_Portrait_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Muse_Portrait_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_CutCamerata_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Camerata_03"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutCamerata_04"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\sybil_large"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuse_04"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_04"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseEyesShut_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_Closed_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseEyesShut_02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_Closed_02"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseEyesShut_03"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_Closed_03"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseEyesOpen_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_Forward_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseEyesDown_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_LookingDown_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_CutTitleMuseEyesWide_01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Title_Muse_WideOpen_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_Auden01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Auden_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_Red01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Red_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+	Name="FlashbackAsher01"
+	InheritFrom="1_BaseTerrainTile"
+	Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Asher_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="FlashbackAuden01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Auden_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FlashbackAuden02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Auden_02"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FlashbackAuden02A"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Auden_02A"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FlashbackGrant01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Grant_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FlashbackMic01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Mic_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="FlashbackRed01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Red_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FlashbackRed02"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Red_02"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FlashbackRoyce01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Royce_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FlashbackSybil01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Flashback_Sybil_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_EndingFans01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Fans_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_EndingKiss01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Kiss_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_EndingReading01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Reading_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_EndingRedDead01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_RedDead_01"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Auden_EndingStroll01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Stroll_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_EndingTea01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Tea_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Auden_EndingVanity01"
+		InheritFrom="1_BaseTerrainTile"
+		Walkable="false">
+		<Thing
+			Graphic="Cinematic\\Ending_Vanity_01"
+			Material="Default">
+		</Thing>
+	</Obstacle>
+
+
+</TerrainTiles>

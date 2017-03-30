@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<InGameUIs>
+
+	<InGameUI Platform="default">
+
+		<PauseButton
+			X="1860" Y="130" Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\pause" SelectedGraphic="GUI\\pause"
+			Scale="1.0" Width="100" Height="100"
+			HelpTextId="InGameUI_Pause" Font="RalewayMedium26"
+			TextRed="0.31" TextGreen="0.52" TextBlue="0.48"
+			TextScale="0"
+			SelectedTextRed="1.0" SelectedTextGreen="1.0" SelectedTextBlue="1.0"
+			AlwaysUpperCase="true"
+			TextJustification="Center"
+			FadeOpacity="0.0"
+			SelectedTextScale="1.0"
+			/>
+
+		<PrevTrackButton
+			X="200" Y="500" Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\prev_track_touch" SelectedGraphic="GUI\\prev_track_highlight_touch"
+			/>
+
+		<NextTrackButton
+			X="1720" Y="500" Justification="Center" VerticalJustification="Center"
+			Graphic="GUI\\next_track_touch" SelectedGraphic="GUI\\next_track_highlight_touch"
+			/>
+		
+		<!-- Info Panel -->
+
+		<InfoPanel X="960" Y="710" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<InfoText AttachTo="InfoPanel" Scale="1.0" Justification="Center" VerticalJustification="Center" Font="RalewayRegular32" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" Width="700" NonEnglishScaleModifier="0.9"/>
+		<InfoInstructionText
+			AttachTo="InfoPanel" OffsetY="60" Justification="Center" VerticalJustification="Center"
+			Font="RalewaySemiBold22"
+			HelpTextId="InfoInstructionText"
+			NonEnglishScaleModifier="0.9"
+			TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+		<InfoInstructionTextBack AttachTo="InfoInstructionText" Graphic="GUI\\HUD\\Subtitle_shadow" Scale="0.5"/>
+
+		<Subtitles X="960" Y="155" Graphic="GUI\\HUD\\Subtitle_shadow" Scale="0.75" Justification="Center" VerticalJustification="Center" TextJustification="Center"
+				   Font="RalewaySemiBold32" TextRed="0.9" TextGreen="1.0" TextBlue="0.8" Width="1720" Height="120" FadeOpacity="0.0" FadeTarget="0.0"
+				   ShadowRed="0" ShadowBlue="0" ShadowGreen="0" ShadowAlpha="1" ShadowBlur="1" ShadowOffsetY="1" ShadowOffsetX="0"
+				   NonSafeFrameX="960"
+				   NonSafeFrameY="140"
+				   LeftMargin="40" TopMargin="4"
+		/>
+		<SubtitlesB X="960" Y="235" Graphic="GUI\\HUD\\Subtitle_shadow" Scale="0.75" Justification="Center" VerticalJustification="Center" TextJustification="Center"
+					Font="RalewaySemiBold32" TextRed="1.0" TextGreen="0.8" TextBlue="0.7" Width="1720" Height="120" FadeOpacity="0.0" FadeTarget="0.0"
+					ShadowRed="0" ShadowBlue="0" ShadowGreen="0" ShadowAlpha="1" ShadowBlur="1" ShadowOffsetY="1" ShadowOffsetX="0"
+					NonSafeFrameX="960"
+					NonSafeFrameY="220"
+					LeftMargin="40" TopMargin="4"
+					/>
+
+		<Tooltip
+			Graphic="GUI\\HUD\\Tooltip_shadow" Scale="0.5" Justification="Center" VerticalJustification="Center" TextJustification="Center"
+			Font="RalewaySemiBold32" TextRed="0.97" TextGreen="0.72" TextBlue="0.17" Width="1720" Height="120"
+			ShadowRed="0" ShadowBlue="0" ShadowGreen="0" ShadowAlpha="0" ShadowBlur="1" ShadowOffsetY="1" ShadowOffsetX="0"
+			LeftMargin="40" TopMargin="8"
+			FadeOpacity="0.0" FadeTarget="0.5" FadeDelayMin="0" FadeDelayMax="0.01" FadeSpeed="8.0"
+			
+		/>
+
+		<TimerText
+			X="906" Y="150" Font="RalewayRegular42" Justification="Center" VerticalJustification="Center"
+			Scale="0.8"
+			TextRed="0.8" TextGreen="1" TextBlue="1" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"
+			ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0"
+			FlashMin="0.2" FlashMax="0.8" FlashSpeed="4.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+
+		<TimerValue
+			AttachTo="TimerText" OffsetX="8" Font="RalewayBold48" Justification="Left" VerticalJustification="Center"
+			Scale="0.7"
+			TextRed="0.8" TextGreen="1" TextBlue="1" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"
+			ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0"
+			FlashMin="0.2" FlashMax="0.8" FlashSpeed="4.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+		
+		<CounterText X="960" Y="100" Justification="Center" VerticalJustification="Center" Font="RalewaySemiBold22" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" Scale="1.5"/>
+
+		<ReloadingText OffsetX="0" OffsetY="0" Scale="0.9" Font="RalewayMedium26" Justification="Center" VerticalJustification="Center"
+					   AlwaysUpperCase="true"
+					   TextRed="1" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"
+					   ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1" ShadowBlur="20" ShadowOffsetX="0" ShadowOffsetY="0"/>
+
+		<ObjectiveIcon X="960" Y="790" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+		<ObjectiveText X="195" Y="656" Scale="1.0" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+
+		<OffScreenCell Graphic="null" Scale="1.0" Justification="Center" VerticalJustification="Center" />
+
+		<SaveText
+			X="275" Y="955" Scale="0.9" Font="RalewayMedium26" Justification="Left" VerticalJustification="Center" HelpTextId="InGameUI_Saving"
+			TextRed="0.95" TextGreen="1.0" TextBlue="0.5" TextOutlineRed="0.4" TextOutlineGreen="0" TextOutlineBlue="0"
+			ShadowRed="0" ShadowBlue="0" ShadowGreen="0" ShadowAlpha="1" ShadowBlur="2" ShadowOffsetY="1" ShadowOffsetX="0"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.05" FadeDelayMax="0.06" FadeSpeed="5.0"
+			AlwaysUpperCase="true"
+			NonEnglishScaleModifier="0.8"
+			/>
+
+		<HealthUI>
+
+			<StaminaBack X="960" Y="90" NonSafeFrameX="960" NonSafeFrameY="48" Graphic="FocusBarBGLoop" Scale="1.0" Justification="Center" VerticalJustification="Center" />
+			
+			<StaminaBarLabel X="590" Y="930" HelpTextId="StaminaBar" Scale="0.65" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+			<StaminaValueText X="1250" Y="930" Scale="0.65" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+			<StaminaSpentText X="1250" Y="910" Scale="0.65" Justification="Left" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0"/>
+
+			<AttackBarBack AttachTo="StaminaBack" Justification="Left" VerticalJustification="Center" Scale="1.0" Graphic="GUI\\Widgets\\focus_bar_walk_fill" AlternateGraphic="GUI\\Widgets\\focus_bar_power_fill"/>
+			<AttackBarFront AttachTo="StaminaBack" Justification="Center" VerticalJustification="Center" Scale="1.0" Graphic="GUI\\Widgets\\focus_bar_walk_icon" AlternateGraphic="GUI\\Widgets\\focus_bar_paw_icon"/>
+			<AttackBarText AttachTo="StaminaBack" Justification="Center" VerticalJustification="Center" Font="UbuntuMonoBold22" Scale="1.0" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" />
+
+			<AttackBarCapLeft AttachTo="StaminaBack" Justification="Left" VerticalJustification="Center" Scale="1.0" Graphic="GUI\\Widgets\\focus_bar_walk_cap_left" AlternateGraphic="GUI\\Widgets\\focus_bar_power_cap_left"/>
+			<AttackBarCapRight AttachTo="StaminaBack" Justification="Right" VerticalJustification="Center" Scale="1.0" Graphic="GUI\\Widgets\\focus_bar_walk_cap_right" AlternateGraphic="GUI\\Widgets\\focus_bar_power_cap_right"/>
+
+			<StaminaBarSwap AttachTo="StaminaBack" AlternateGraphic="FocusBarSwapFlash"/>
+
+			<ElbowJoint Graphic="GUI\\Widgets\\elbowline_joint01" Scale="1.2" Justification="Center" VerticalJustification="Center"/>
+			<ElbowJointTop Graphic="GUI\\Widgets\\elbowline_joint01" Scale="1.2" Justification="Center" VerticalJustification="Center"/>
+
+			<HealthShroudUL X="0" Y="0" Graphic="HealthShroudUL"/>
+			<HealthShroudUR X="1920" Y="0" Graphic="HealthShroudUR"/>
+			<HealthShroudLL X="0" Y="1080" Graphic="HealthShroudLL"/>
+			<HealthShroudLR X="1920" Y="1080" Graphic="HealthShroudLR"/>
+
+		</HealthUI>
+
+		<WeaponUI>		
+
+			<HpBarFillHit X="955" Y="875" NonSafeFrameX="955" NonSafeFrameY="909" Graphic="GUI\\HUD\\HP_Bar_Fill_Hit" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<HpBarFill AttachTo="HpBarFillHit" Graphic="GUI\\HUD\\HP_Bar_Fill" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<HpBarFront AttachTo="HpBarFillHit" OffsetX="10" Graphic="GUI\\HUD\\HP_Bar_Front" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<HpBarEndGlow AttachTo="HpBarFillHit" LerpStart="750" LerpEnd="1140" Graphic="GUI\\HUD\\HP_Bar_End_Glow" Scale="1.0" Justification="Center" VerticalJustification="Center" Material="Emissive" />
+
+			<WeaponPanel X="960" Y="940" NonSafeFrameX="960" NonSafeFrameY="974" Graphic="GUI\\HUD\\HUD_Back" Scale="1.0" Justification="Center" VerticalJustification="Center" Alpha="1.0"/>
+
+			<AButtonWeaponImage AttachTo="WeaponPanel" OffsetX="-149" OffsetY="15" Scale="0.39" Justification="Center" VerticalJustification="Center" FadeSpeed="1.0" ScaleSpeed="0.15"
+								FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<AButtonSlot AttachTo="AButtonWeaponImage" OffsetY="-6"
+						 Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Cross" AlternateGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Key_1" TertiaryGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Joystick_1"
+						 Scale="1.0" Justification="Center" VerticalJustification="Center" TooltipOffsetY="77"
+						 Width="92" Height="112" AreaOffsetY="20"/>
+			<AButtonBlownOut AttachTo="AButtonWeaponImage" OffsetX="6" OffsetY="15" Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Cross_Burnt" Justification="Center" VerticalJustification="Center"/>
+			<AButtonConnector AttachTo="AButtonWeaponImage" OffsetX="0" OffsetY="-34" Graphic="GUI\\HUD\\HUD_Active_Slot" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<AButtonCooldown AttachTo="AButtonWeaponImage" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+						ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1.0" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0" Font="RalewayRegular42" Scale="0.75"
+						FlashMin="0.0" FlashMax="1.0" FlashSpeed="24.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<AButtonCooldownAnim AttachTo="AButtonWeaponImage" AlternateGraphic="PowerCooldownAngle" TertiaryGraphic="PowerCooldownFinish"/>
+
+			<AButtonUpgradeBack AttachTo="AButtonSlot" OffsetY="60" Graphic="GUI\HUD\\HUD_upgrade_slots_back" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<AButtonUpgradeOne AttachTo="AButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="-13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<AButtonUpgradeTwo AttachTo="AButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<AButtonUpgradeFront AttachTo="AButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slots_front" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+
+			<BButtonWeaponImage AttachTo="WeaponPanel" OffsetX="-48" OffsetY="15" Scale="0.39" Justification="Center" VerticalJustification="Center" FadeSpeed="1.0" ScaleSpeed="0.15"
+								FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<BButtonSlot AttachTo="BButtonWeaponImage" OffsetY="-6"
+						 Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Circle" AlternateGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Key_2" TertiaryGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Joystick_2"
+						 Scale="1.0" Justification="Center" VerticalJustification="Center" TooltipOffsetY="77"
+						 Width="92" Height="112" AreaOffsetY="20"/>
+			<BButtonBlownOut AttachTo="BButtonWeaponImage" OffsetX="2" OffsetY="15" Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Circle_Burnt" Justification="Center" VerticalJustification="Center"/>
+			<BButtonConnector AttachTo="BButtonWeaponImage" OffsetX="0" OffsetY="-34" Graphic="GUI\\HUD\\HUD_Active_Slot" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<BButtonCooldown AttachTo="BButtonWeaponImage" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+						ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1.0" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0" Font="RalewayRegular42" Scale="0.75"
+						FlashMin="0.0" FlashMax="1.0" FlashSpeed="24.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<BButtonCooldownAnim AttachTo="BButtonWeaponImage" AlternateGraphic="PowerCooldownAngle" TertiaryGraphic="PowerCooldownFinish"/>
+
+			<BButtonUpgradeBack AttachTo="BButtonSlot" OffsetY="60" Graphic="GUI\HUD\\HUD_upgrade_slots_back" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<BButtonUpgradeOne AttachTo="BButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="-13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<BButtonUpgradeTwo AttachTo="BButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<BButtonUpgradeFront AttachTo="BButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slots_front" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+
+			<XButtonWeaponImage AttachTo="WeaponPanel" OffsetX="50" OffsetY="15" Scale="0.39" Justification="Center" VerticalJustification="Center" FadeSpeed="1.0" ScaleSpeed="0.15"
+								FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<XButtonSlot AttachTo="XButtonWeaponImage" OffsetY="-6"
+						 Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Square" AlternateGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Key_3" TertiaryGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Joystick_3"
+						 Scale="1.0" Justification="Center" VerticalJustification="Center" TooltipOffsetY="77"
+						 Width="92" Height="112" AreaOffsetY="20"/>
+			<XButtonBlownOut AttachTo="XButtonWeaponImage" OffsetY="15" Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Square_Burnt" Justification="Center" VerticalJustification="Center"/>
+			<XButtonConnector AttachTo="XButtonWeaponImage" OffsetX="0" OffsetY="-34" Graphic="GUI\\HUD\\HUD_Active_Slot" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<XButtonCooldown AttachTo="XButtonWeaponImage" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+						ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1.0" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0" Font="RalewayRegular42" Scale="0.75"
+						FlashMin="0.0" FlashMax="1.0" FlashSpeed="24.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<XButtonCooldownAnim AttachTo="XButtonWeaponImage" AlternateGraphic="PowerCooldownAngle" TertiaryGraphic="PowerCooldownFinish"/>
+
+			<XButtonUpgradeBack AttachTo="XButtonSlot" OffsetY="60" Graphic="GUI\HUD\\HUD_upgrade_slots_back" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<XButtonUpgradeOne AttachTo="XButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="-13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<XButtonUpgradeTwo AttachTo="XButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<XButtonUpgradeFront AttachTo="XButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slots_front" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+
+			<YButtonWeaponImage AttachTo="WeaponPanel" OffsetX="149" OffsetY="15" Scale="0.39" Justification="Center" VerticalJustification="Center" FadeSpeed="1.0" ScaleSpeed="0.15"
+								FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<YButtonSlot AttachTo="YButtonWeaponImage" OffsetY="-6"
+						 Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Triangle" AlternateGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Key_4" TertiaryGraphic="GUI\\HUD\\HUD_Slot_Icon_Front_Joystick_4"
+						 Scale="1.0" Justification="Center" VerticalJustification="Center" TooltipOffsetY="77"
+						 Width="92" Height="112" AreaOffsetY="20"/>
+			<YButtonBlownOut AttachTo="YButtonWeaponImage" OffsetY="15" Graphic="GUI\\HUD\\HUD_Slot_Icon_Front_Triangle_Burnt" Justification="Center" VerticalJustification="Center"/>
+			<YButtonConnector AttachTo="YButtonWeaponImage" OffsetX="0" OffsetY="-34" Graphic="GUI\\HUD\\HUD_Active_Slot" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<YButtonCooldown AttachTo="YButtonWeaponImage" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0"
+						ShadowRed="0" ShadowGreen="0" ShadowBlue="0" ShadowAlpha="1.0" ShadowBlur="50" ShadowOffsetX="0" ShadowOffsetY="0" Font="RalewayRegular42" Scale="0.75"
+						FlashMin="0.0" FlashMax="1.0" FlashSpeed="24.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<YButtonCooldownAnim AttachTo="YButtonWeaponImage" AlternateGraphic="PowerCooldownAngle" TertiaryGraphic="PowerCooldownFinish"/>
+
+			<YButtonUpgradeBack AttachTo="YButtonSlot" OffsetY="60" Graphic="GUI\HUD\\HUD_upgrade_slots_back" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			<YButtonUpgradeOne AttachTo="YButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="-13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<YButtonUpgradeTwo AttachTo="YButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" OffsetX="13" OffsetY="-1" Scale="0.15" Justification="Center" VerticalJustification="Center"/>
+			<YButtonUpgradeFront AttachTo="YButtonUpgradeBack" Graphic="GUI\\HUD\\HUD_upgrade_slots_front" Scale="1.0" Justification="Center" VerticalJustification="Center"/>
+			
+			<SlotImage Graphic="GUI\\Widgets\\skill_fill_01A" Scale="0.5" Justification="Center" VerticalJustification="Center"/>
+			<SlotHotkey Font="UbuntuMonoBold32" OffsetY="-42" Justification="Center" VerticalJustification="Center" TextRed="1.0" TextGreen="1.0" TextBlue="1.0" TextOutlineRed="0" TextOutlineGreen="0" TextOutlineBlue="0" Scale="0.5"/>
+			<WeaponImage Scale="0.25" Justification="Center" VerticalJustification="Center"/>
+
+			<ActiveSlotHighlight Graphic="ActivePowerHighlightHUDFlash" Scale="1.0" Justification="Center" VerticalJustification="Center" FadeSpeed="999"/>
+
+			<PassivesBackLeft AttachTo="AButtonWeaponImage" OffsetX="-68" OffsetY="-26" Graphic="GUI\\HUD\\HUD_passive_wing_left" Justification="Center" VerticalJustification="Center"/>
+			<PassivesBackRight AttachTo="YButtonWeaponImage" OffsetX="68" OffsetY="-26" Graphic="GUI\\HUD\\HUD_passive_wing_right" Justification="Center" VerticalJustification="Center"/>
+
+			<PassivesFrontLeft AttachTo="PassivesBackLeft" OffsetX="-2" OffsetY="30" Graphic="GUI\\HUD\\HUD_passive_slots_front" Justification="Center" VerticalJustification="Center"/>
+			<PassivesFrontRight AttachTo="PassivesBackRight" OffsetX="2" OffsetY="30" Graphic="GUI\\HUD\\HUD_passive_slots_front" Justification="Center" VerticalJustification="Center"/>
+
+			<PassiveOneWeaponImage AttachTo="PassivesFrontLeft" OffsetY="-20" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" Scale="0.18" Justification="Center" VerticalJustification="Center"
+								   FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<PassiveTwoWeaponImage AttachTo="PassivesFrontLeft" OffsetY="20" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" Scale="0.18" Justification="Center" VerticalJustification="Center"
+								   FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<PassiveThreeWeaponImage AttachTo="PassivesFrontRight" OffsetY="-20" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" Scale="0.18" Justification="Center" VerticalJustification="Center"
+									 FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+			<PassiveFourWeaponImage AttachTo="PassivesFrontRight" OffsetY="20" Graphic="GUI\\HUD\\HUD_upgrade_slot_locked" Scale="0.18" Justification="Center" VerticalJustification="Center"
+									FlashMin="0.3" FlashMax="0.7" FlashSpeed="6.0" FlashRed="1.0" FlashGreen="0.2" FlashBlue="0.2"/>
+
+			<PlanningButton
+				AttachTo="HpBarFillHit" OffsetX="0" OffsetY="-54" Justification="Center" VerticalJustification="Center"
+				Scale="1.0" Font="RalewayBold18" TextOffsetY="-46"
+				Graphic="GUI\\focus_enter" AlternateGraphic="GUI\\focus_exit" SelectedGraphic="GUI\\focus_enter_highlight"
+				TouchGraphic="GUI\\focus_enter_touch" TouchAlternateGraphic="GUI\\focus_exit_touch" TouchSelectedGraphic="GUI\\focus_enter_highlight_touch"
+				TextScale="0"
+				Width="80" Height="60"
+				MouseHelpTextId="InGameUI_Focus"
+				TooltipOffsetY="-40"
+				TooltipOffsetX="-5"
+			/>
+
+			<ExecuteButton
+				AttachTo="HpBarFillHit" OffsetX="288" OffsetY="52" Justification="Center" VerticalJustification="Center"
+				Scale="1.0" Font="RalewayBold18" TextOffsetY="-46"
+				Graphic="GUI\\focus_execute" AlternateGraphic="GUI\\focus_execute_disabled" SelectedGraphic="GUI\\focus_execute_highlight"
+				TouchGraphic="GUI\\focus_execute_touch" TouchAlternateGraphic="GUI\\focus_execute_disabled_touch" TouchSelectedGraphic="GUI\\focus_execute_highlight_touch"
+				TextScale="0"
+				Width="100" Height="70"
+				TooltipOffsetY="-70"
+				TooltipOffsetX="10"
+				MouseHelpTextId="InGameUI_Execute"
+			/>
+
+			<UndoButton
+				AttachTo="HpBarFillHit" OffsetX="-278" OffsetY="52" Justification="Center" VerticalJustification="Center"
+				Scale="1.0" Font="RalewayBold18" TextOffsetY="-46"
+				Graphic="GUI\\focus_undo" AlternateGraphic="GUI\\focus_undo_disabled" SelectedGraphic="GUI\\focus_undo_highlight"
+				TouchGraphic="GUI\\focus_undo_touch" TouchAlternateGraphic="GUI\\focus_undo_disabled_touch" TouchSelectedGraphic="GUI\\focus_undo_highlight_touch"
+				TextScale="0"
+				Width="100" Height="70"
+				TooltipOffsetY="-70"
+				TooltipOffsetX="-15"
+				MouseHelpTextId="InGameUI_PlanningCancel"
+			/>
+
+			<CycleLeftButton
+				AttachTo="HpBarFillHit" OffsetX="-173" OffsetY="-27" Justification="Center" VerticalJustification="Center"
+				Scale="1.0" Font="RalewayBold18" TextOffsetY="-46"
+				Graphic="GUI\\unit_select_left" SelectedGraphic="GUI\\unit_select_left_highlight"
+				TouchGraphic="GUI\\unit_select_left_touch" TouchSelectedGraphic="GUI\\unit_select_left_highlight_touch"
+				TextScale="0"
+				MouseHelpTextId="InGameUI_CycleLeft"
+			/>
+
+			<CycleRightButton
+				AttachTo="HpBarFillHit" OffsetX="192" OffsetY="-27" Justification="Center" VerticalJustification="Center"
+				Scale="1.0" Font="RalewayBold18" TextOffsetY="-46"
+				Graphic="GUI\\unit_select_right" SelectedGraphic="GUI\\unit_select_right_highlight"
+				TouchGraphic="GUI\\unit_select_right_touch" TouchSelectedGraphic="GUI\\unit_select_right_highlight_touch"
+				TextScale="0"
+				MouseHelpTextId="InGameUI_CycleRight"
+			/>
+
+		</WeaponUI>
+		
+	</InGameUI>
+	
+</InGameUIs>

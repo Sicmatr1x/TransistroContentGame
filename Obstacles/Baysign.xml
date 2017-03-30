@@ -1,0 +1,2451 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+
+
+
+	<Obstacle
+    Name="BaysignCobblestones01"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_cobblestones_01">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+    Name="BaysignCobblestones02"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_cobblestones_02">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+    Name="BaysignCobblestones03"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_cobblestones_03">
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+	  Name="BaysignCobblestones04"
+	  InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+				Graphic="Tilesets\\Baysign\\baysign_cobblestones_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BaysignCobblestones05"
+	  InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+				Graphic="Tilesets\\Baysign\\baysign_cobblestones_05">
+		</Thing>
+	</Obstacle>
+
+
+  <Obstacle
+		Name="BaysignCube01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube01"
+			NeverObscuresPlayer="true"
+			FormatSpawnRate="0.03"
+			FormatGrowthRate="0.3"
+			FormatMaxGrowthMin="0.6"
+			FormatMaxGrowthMax="0.6"
+			FormatCrawlSpeed="40.0"
+			FormatStencilSize="2.35">
+			<Point X="-1" Y="196"/>
+			<Point X="390" Y="3"/>
+			<Point X="2" Y="-208"/>
+			<Point X="-372" Y="2"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube02"
+			NeverObscuresPlayer="true">
+			<Point X="-3" Y="191"/>
+			<Point X="383" Y="-10"/>
+			<Point X="2" Y="-297"/>
+			<Point X="-371" Y="-5"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube03"
+			NeverObscuresPlayer="true">
+			<Point X="176" Y="322"/>
+			<Point X="556" Y="125"/>
+			<Point X="569" Y="43"/>
+			<Point X="-162" Y="-407"/>
+			<Point X="-552" Y="-82"/>
+			<Point X="-552" Y="-27"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube04"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube04"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="SPRITE"
+			ShadowOffsetY="13"
+			ShadowScale="1.0"
+			NeverObscuresPlayer="true">
+			<Point X="-2" Y="97"/>
+			<Point X="179" Y="6"/>
+			<Point X="2" Y="-101"/>
+			<Point X="-178" Y="4"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube05"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube05"
+			Shadow="Shadows\\box_shadow"
+			ShadowOffsetX="0"
+			ShadowOffsetY="-7"
+			NeverObscuresPlayer="true">
+			<Point X="-5" Y="160"/>
+			<Point X="354" Y="-33"/>
+			<Point X="0" Y="-190"/>
+			<Point X="-376" Y="-30"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCubeNormals"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCubeNormals"
+			NeverObscuresPlayer="true">
+			<Point X="-5" Y="160"/>
+			<Point X="354" Y="-33"/>
+			<Point X="0" Y="-190"/>
+			<Point X="-376" Y="-30"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube06"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube06"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="EXTENT"
+			ShadowScale="1.1"
+			ShadowOffsetY="12"
+			NeverObscuresPlayer="true">
+			<Point X="-1" Y="331"/>
+			<Point X="587" Y="25"/>
+			<Point X="-1" Y="-245"/>
+			<Point X="-582" Y="40"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignCube07"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube07"
+			NeverObscuresPlayer="true">
+			<Point X="1" Y="162"/>
+			<Point X="294" Y="17"/>
+			<Point X="1" Y="-112"/>
+			<Point X="-292" Y="19"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignCube08"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube08"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="EXTENT"
+			ShadowScale="1.1"
+			ShadowOffsetY="1"
+			NeverObscuresPlayer="true">
+			<Point X="-2" Y="99"/>
+			<Point X="192" Y="1"/>
+			<Point X="0" Y="-85"/>
+			<Point X="-194" Y="0"/>
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BaysignCube09"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube09"
+			Shadow="Shadows\\box_shadow"
+			ShadowOffsetY="-5"
+			NeverObscuresPlayer="true">
+			<Point X="4" Y="83"/>
+			<Point X="196" Y="-15"/>
+			<Point X="2" Y="-91"/>
+			<Point X="-183" Y="-15"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignCube10"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube10"
+			Shadow="Shadows\\box_shadow"
+			ShadowOffsetY="12"
+			ShadowOffsetX="7"
+			ShadowScale="1.1"
+			OffsetY="-88"
+			NeverObscuresPlayer="true">
+			<Point X="-233" Y="13"/>
+			<Point X="32" Y="150"/>
+			<Point X="236" Y="45"/>
+			<Point X="-46" Y="-97"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignCube11"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BaysignCube11"
+			ShadowOffsetY="-7"
+			Shadow="Shadows\\box_shadow"
+			NeverObscuresPlayer="true">
+			<Point X="1" Y="94"/>
+			<Point X="228" Y="-24"/>
+			<Point X="-4" Y="-158"/>
+			<Point X="-230" Y="-28"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube12"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_cube_12"
+      OffsetY="-158"
+      NeverObscuresPlayer="true">
+      <Point X="-551" Y="-5"/>
+      <Point X="-51" Y="251"/>
+      <Point X="573" Y="-58"/>
+      <Point X="50" Y="-322"/>
+    </Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BaysignCube13"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_cube_13"
+      OffsetY="-231"
+      NeverObscuresPlayer="true">
+      <Point X="-510" Y="19"/>
+      <Point X="-65" Y="248"/>
+      <Point X="518" Y="-33"/>
+      <Point X="79" Y="-257"/>
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+	  Name="BaysignCube14"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_cube_14"
+      OffsetY="-273"
+      NeverObscuresPlayer="true">
+      <Point X="-706" Y="3"/>
+      <Point X="16" Y="354"/>
+      <Point X="718" Y="-5"/>
+      <Point X="21" Y="-373"/>
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+	Name="BaysignCube15"
+	InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_cube_15"
+			Shadow="Shadows\\box_shadow"
+			ShadowOffsetY="12"
+			ShadowOffsetX="7"
+			ShadowScale="1.1"
+			OffsetY="-88"
+			NeverObscuresPlayer="true">
+			<Point X="-233" Y="13"/>
+			<Point X="32" Y="150"/>
+			<Point X="236" Y="45"/>
+			<Point X="-46" Y="-97"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFence01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Baysign\\baysign_fence_01"
+			OffsetY="-103"
+			Scale="0.5">
+			<Point X="52" Y="-32"/>
+			<Point X="-75" Y="28"/>
+			<Point X="-40" Y="43"/>
+			<Point X="85" Y="-19"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFence02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Baysign\\baysign_fence_02"
+			OffsetY="-52">
+			<Point X="-23" Y="-17"/>
+			<Point X="-29" Y="-15"/>
+			<Point X="21" Y="18"/>
+			<Point X="27" Y="12"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFence03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Baysign\\baysign_fence_03"
+			OffsetY="-77">
+			<Point X="65" Y="-12"/>
+			<Point X="42" Y="-23"/>
+			<Point X="-69" Y="32"/>
+			<Point X="-49" Y="45"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignPillar01"
+	InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_pillar_01"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="EXTENT"
+			ShadowScale="1.15"
+			ShadowOffsetY="-7"
+			OffsetY="-200"
+			NeverObscuresPlayer="true">
+			<Point X="2" Y="75"/>
+			<Point X="148" Y="-1"/>
+			<Point X="-5" Y="-78"/>
+			<Point X="-146" Y="-4"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignPillar01_NoShadow"
+	InheritFrom="BaysignPillar01"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_pillar_01"
+			Shadow="null"
+			ShadowScale="0">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignPillar02"
+	InheritFrom="1_BaseInvulnerableObstacle"
+			>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_pillar_02"
+			OffsetY="-83"
+			NeverObscuresPlayer="true">
+      <Point X="-36" Y="7"/>
+      <Point X="-13" Y="25"/>
+      <Point X="35" Y="17"/>
+      <Point X="36" Y="-7"/>
+      <Point X="4" Y="-18"/>
+      <Point X="-28" Y="-12"/>
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+	  Name="BaysignPillar03"
+	  InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+				Graphic="Tilesets\\Baysign\\baysign_pillar_03"
+				OffsetY="-200"
+				NeverObscuresPlayer="true">
+				<Point X="2" Y="75"/>
+				<Point X="148" Y="-1"/>
+				<Point X="-5" Y="-78"/>
+				<Point X="-146" Y="-4"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+	Name="BaysignMic01"
+	InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_mic_01"
+      OffsetY="-162"
+			NeverObscuresPlayer="true">
+      <Point X="-68" Y="8"/>
+      <Point X="-51" Y="27"/>
+      <Point X="-1" Y="34"/>
+      <Point X="38" Y="13"/>
+      <Point X="33" Y="-12"/>
+      <Point X="-3" Y="-25"/>
+      <Point X="-57" Y="-17"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	Name="BaysignChair01"
+	InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_chair_01"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="EXTENT"
+			ShadowScale="1.15"
+			ShadowOffsetY="-7"
+			OffsetY="-30"
+			NeverObscuresPlayer="true">
+			<Point X="33" Y="1"/>
+			<Point X="-1" Y="-17"/>
+			<Point X="-31" Y="5"/>
+			<Point X="3" Y="24"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignChair02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_chair_02"
+      OffsetY="-67"
+			NeverObscuresPlayer="true">
+      <Point X="-109" Y="23"/>
+      <Point X="-23" Y="64"/>
+      <Point X="110" Y="-5"/>
+      <Point X="-1" Y="-51"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignChair03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_chair_03"
+      OffsetY="-101"
+			NeverObscuresPlayer="true">
+      <Point X="-211" Y="-62"/>
+      <Point X="78" Y="84"/>
+      <Point X="210" Y="13"/>
+      <Point X="-107" Y="-134"/>
+    </Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDrape01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_drape_01"
+      OffsetY="-312"
+			NeverObscuresPlayer="true">
+      <Point X="-196" Y="106"/>
+      <Point X="-37" Y="153"/>
+      <Point X="280" Y="-21"/>
+      <Point X="119" Y="-83"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTable01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_table_01"
+			Shadow="Shadows\\box_shadow"
+			ShadowAutoScale="EXTENT"
+			ShadowScale="1.30"
+			ShadowOffsetY="13"
+			OffsetY="-44"
+			NeverObscuresPlayer="true">
+			<Point X="0" Y="35"/>
+			<Point X="84" Y="-4"/>
+			<Point X="-1" Y="-63"/>
+			<Point X="-81" Y="-15"/>
+		</Thing>
+	</Obstacle>
+	
+	
+	<Obstacle
+		Name="BaysignDoor01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_01">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BaysignDoor02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_02"
+			OffsetY="-202">
+			<Point X="132" Y="-14"/>
+			<Point X="86" Y="-59"/>
+			<Point X="-129" Y="66"/>
+			<Point X="-65" Y="88"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor02A"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_02A"
+			OffsetY="-202">
+			<Point X="132" Y="-14"/>
+			<Point X="86" Y="-59"/>
+			<Point X="-129" Y="66"/>
+			<Point X="-65" Y="88"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignDoor02B"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_02B">
+		</Thing>
+	</Obstacle>
+
+
+
+	<Obstacle
+		Name="BaysignDoor03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_03"
+			OffsetY="-156">
+			<Point X="120" Y="-22"/>
+			<Point X="79" Y="-43"/>
+			<Point X="-77" Y="37"/>
+			<Point X="-36" Y="62"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor03A"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_03A"
+			OffsetY="-195">
+			<Point X="-26" Y="4"/>
+			<Point X="-7" Y="-2"/>
+			<Point X="-41" Y="-15"/>
+			<Point X="-61" Y="-10"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor03B"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_03B">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor03C"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_03C"
+			OffsetY="-137">
+			<Point X="4" Y="-1"/>
+			<Point X="-17" Y="-9"/>
+			<Point X="-36" Y="0"/>
+			<Point X="-12" Y="11"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_04"
+			OffsetY="-334">
+			<Point X="325" Y="-155"/>
+			<Point X="256" Y="-180"/>
+			<Point X="-342" Y="147"/>
+			<Point X="-275" Y="195"/>>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor04A"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_04A"
+			OffsetY="-334">
+			<Point X="325" Y="-155"/>
+			<Point X="256" Y="-180"/>
+			<Point X="-342" Y="147"/>
+			<Point X="-275" Y="195"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor04AStanding"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignDoor04AStanding">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor04AFrontFacing"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignDoor04AFrontFacing">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor04B"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_04B">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor05"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_05"
+			OffsetY="-343">
+			<Point X="230" Y="-97"/>
+			<Point X="174" Y="-117"/>
+			<Point X="-263" Y="110"/>
+			<Point X="-212" Y="132"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor06A"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_06A"
+			OffsetY="-343">
+			<Point X="230" Y="-97"/>
+			<Point X="174" Y="-117"/>
+			<Point X="-263" Y="110"/>
+			<Point X="-212" Y="132"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor06B"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_06B"
+			OffsetY="-343">
+			<Point X="230" Y="-97"/>
+			<Point X="174" Y="-117"/>
+			<Point X="-263" Y="110"/>
+			<Point X="-212" Y="132"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor06C"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_06C"
+			OffsetY="-343">
+			<Point X="230" Y="-97"/>
+			<Point X="174" Y="-117"/>
+			<Point X="-263" Y="110"/>
+			<Point X="-212" Y="132"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignDoor01_shadow"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_door_01_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFlourish01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_flourish_01">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BaysignFlourish02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_flourish_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFlourish03"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_flourish_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFlourish04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_flourish_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFlourish05"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_flourish_05">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFlourish06"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_flourish_06">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignGoldFlourish01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_gold_flourish_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignGoldFlourish02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_gold_flourish_02">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+    Name="BaysignGoldFlourish03"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_gold_flourish_03">
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+		Name="BaysignGreenFlourish01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Scale="0.5"
+			Graphic="Tilesets\\Baysign\\baysign_green_flourish_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignGreenFlourish02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Scale="0.5"
+			Graphic="Tilesets\\Baysign\\baysign_green_flourish_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignGreenFlourish03"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_green_flourish_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignRoof01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_roof_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignRoof01_shadow"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_roof_01_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignRoof02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_roof_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSigil01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sigil_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignLightShaft01"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_lightShaft_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignLightShaftPulse5s"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Graphic="LightShaftPulse5s"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignLightShaftPulse3s"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Graphic="LightShaftPulse3s"
+		>
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+      Name="BaysignLightrig01"
+      InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+    <Thing
+				Graphic="Tilesets\\Baysign\\baysign_lightrig_01">
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+		Name="BaysignSigil02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sigil_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSigil02_shadow"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sigil_02_shadow">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BaysignCube01_shadow"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_cube_01_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube02_shadow"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_cube_02_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCube03_shadow"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_cube_03_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTerrain01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_terrain_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTerrain02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_terrain_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTerrain03"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_terrain_03">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+    Name="BaysignTerrain04"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_terrain_04">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+    Name="BaysignTerrain05"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_terrain_05">
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+		Name="BaysignCarpet01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_carpet_01">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignTexture01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_texture_01">
+		</Thing>
+	</Obstacle>
+
+	
+	<Obstacle
+		Name="BaysignWater01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_water_01">
+		</Thing>
+	</Obstacle>
+
+	<!--ENVIRONMENTAL FX-->
+	<Obstacle
+		Name="BaysignWaterRippleRadial"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="WaterRippleRadial">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignWaterLightReflection"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="WaterLightReflection"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWaterEdge"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="WaterEdge">
+		</Thing>
+	</Obstacle>
+		
+	<Obstacle
+		Name="BaysignFxDust"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Graphic="EnvironmentDust"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFxGroundFog"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="EnvironmentGroundFog"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFxFog"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Graphic="EnvironmentFog"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFxRoofSmoke"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="EnvironmentRoofSmoke"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFxMoths"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="EnvironmentMoths"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFxGoldSparkle"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="GoldSparkleSpawner"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignFxBokehSparkle"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BokehSparkleSpawner"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWaterRipple01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="WaterRipple">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWaterRipple02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="WaterTurbulence">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignBuildingLight01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BuildingLightRedStart"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignBuildingLight02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BuildingLightGreen"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignBuildingLight03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="BuildingLightRedNoFlare"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCarLightA"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="CarLightA"
+			Material="Unlit">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWhiteTile01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_whiteTile_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWater02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_water_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWater03"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_water_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCloud01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_cloud_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCloud02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+				Graphic="Tilesets\\Baysign\\baysign_cloud_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignCloud03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+				Graphic="Tilesets\\Baysign\\baysign_cloud_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSparkle01"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sparkle_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSparkle02"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sparkle_02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSparkle03"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sparkle_03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTile01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_tile_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTile01_shadow"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_tile_01_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTile02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_tile_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTile02_shadow"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_tile_02_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim01_shadow"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_01_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim02_shadow"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_02_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim04FrontFacing"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignTrim04FrontFacing">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim04Standing"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignTrim04Standing">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim05"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_05">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim06"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_06">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+    Name="BaysignTrim07"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_07">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+    Name="BaysignTrim08"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_08">
+    </Thing>
+  </Obstacle>
+
+
+	<Obstacle
+		Name="BaysignTrim09"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_09">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTrim10"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_trim_10">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignWeathering01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_weathering_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWeathering02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_weathering_02">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BaysignWeathering03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_weathering_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_01"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >            
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_02"
+			VisibleInPlanning="false"
+            >                        
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_03"
+			VisibleInPlanning="false"
+            >
+        </Thing>
+  </Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_04"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+        </Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow05"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_05"
+			VisibleInPlanning="false"
+            >                       
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow06"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+        <Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_06"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+        </Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow06OnOff"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignWindow06OnOff"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow07"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+        <Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_07"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+        </Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignWindow08"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+        <Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_08"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+        </Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow08OnOff"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignWindow08OnOff"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow09"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_09"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow10"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_10"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow11"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_11"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow12"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_12"
+            Material="Default"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWindow12A"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_12A"
+            Material="Default"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+
+
+	<Obstacle
+		Name="BaysignWindowReflection01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_reflection01"
+            Material="Default"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignWindowReflection02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_reflection02"
+            Material="Default"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignWindowReflection03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_window_reflection03"
+            Material="Default"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignStartScreenWindow1"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="StartScreenWindow1"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignStartScreenWindow1_red"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="StartScreenWindow1_red"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignStartScreenWindow2"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="StartScreenWindow2"
+            Material="Emissive"
+			VisibleInPlanning="false"
+            >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWall01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_wall_01">
+		</Thing>
+	</Obstacle>
+	
+
+	<Obstacle
+		Name="BaysignWall02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			OffsetY="-162"
+			Graphic="Tilesets\\Baysign\\baysign_wall_02">
+			<Point X="149" Y="-75"/>
+			<Point X="126" Y="-86"/>
+			<Point X="-154" Y="70"/>
+			<Point X="-137" Y="75"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWall03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignWall03_Shimmer">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWall04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_wall_04">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWall05"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_wall_05">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignWall06"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="BaysignWall06_Shimmer">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignLine01_shadow"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_line_01_shadow">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSquare01_shadow"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_square_01_shadow">
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+    Name="BaysignSlab01"
+    InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			NeverObscuresPlayer="true"
+			Graphic="Tilesets\\Baysign\\baysign_slab_01">
+      <Point X="-454" Y="-6"/>
+      <Point X="-16" Y="241"/>
+      <Point X="434" Y="7"/>
+      <Point X="-13" Y="-232"/>
+    </Thing>
+  </Obstacle>
+  
+	<Obstacle
+		Name="BaysignSlab02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_slab_02"
+			OffsetY="-138">
+			<Point X="-83" Y="19"/>
+			<Point X="-77" Y="35"/>
+			<Point X="-55" Y="49"/>
+			<Point X="80" Y="-17"/>
+			<Point X="51" Y="-33"/>
+		</Thing>
+	</Obstacle>
+
+  <Obstacle
+		Name="BaysignSlab03"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_slab_03">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+	Name="BaysignSlab04"
+	InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_slab_04">
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+    Name="BaysignSlab05"
+    InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_slab_05"
+      >
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+    Name="BaysignSlab06"
+    InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_slab_06"
+      >
+    </Thing>
+  </Obstacle>
+
+	<Obstacle
+	  Name="BaysignSlab06FrontFacing"
+	  InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+				Graphic="BaysignSlab06FrontFacing"
+      >
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+	  Name="BaysignSlab06Standing"
+	  InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+				Graphic="BaysignSlab06Standing"
+      >
+		</Thing>
+	</Obstacle>
+
+
+
+	<Obstacle
+    Name="BaysignSlab07"
+    InheritFrom="1_BaseDecalObstacle"
+		>
+    <Thing
+			Graphic="Tilesets\\Baysign\\baysign_slab_07"
+      >
+    </Thing>
+  </Obstacle>
+
+  <Obstacle
+		Name="BaysignSign01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			AmbientSound="/SFX/World Sounds/NeonBuzz"
+			Graphic="Tilesets\\Baysign\\baysign_sign_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign02"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_02"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign03"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_03"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign04"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_04"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign05"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			AmbientSound="null"
+			Graphic="Tilesets\\Baysign\\baysign_sign_05">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignSign06"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_06">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign07"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_07">7
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign08"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_08">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign09"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_09">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSign10"
+		InheritFrom="BaysignSign01"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_sign_10">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignPoster01"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_poster_01"
+			Scale="0.5">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignPoster02"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_poster_02"
+			Scale="0.5">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignPoster03"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_poster_03"
+			Scale="0.5">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignPoster04"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_poster_04"
+			Scale="0.5">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignPoster05"
+		InheritFrom="1_BaseStandingDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_poster_05"
+			Scale="0.5">
+		</Thing>
+	</Obstacle>
+
+	<!--Lense FLares-->
+	
+	<Obstacle
+		Name="FlareGreen01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_green_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="FlareWarm01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Lensflare\\Flare_warm_01"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="TransistorEyeFlare01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="TransistorEyeFlare"
+			Material="Emissive">
+		</Thing>
+	</Obstacle>
+	
+	<!--Trees-->
+	<Obstacle
+		Name="BaysignTree01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-85"
+			Graphic="Tilesets\\Baysign\\baysign_tree_01"
+			NeverObscuresPlayer="true">
+			<Point X="-75" Y="10"/>
+			<Point X="8" Y="47"/>
+			<Point X="79" Y="-7"/>
+			<Point X="-10" Y="-39"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="BaysignTree02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-118"
+			Graphic="BaysignTree02"
+			NeverObscuresPlayer="true">
+			<Point X="-89" Y="-11"/>
+			<Point X="-51" Y="64"/>
+			<Point X="78" Y="63"/>
+			<Point X="87" Y="-43"/>
+			<Point X="-38" Y="-54"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTree03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			OffsetY="-164"
+			Graphic="Tilesets\\Baysign\\baysign_tree_03"
+			NeverObscuresPlayer="true">
+			<Point X="-46" Y="12"/>
+			<Point X="-30" Y="33"/>
+			<Point X="35" Y="33"/>
+			<Point X="46" Y="1"/>
+			<Point X="-7" Y="-25"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignBush01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_bush_01">
+			<Point X="-4" Y="27"/>
+			<Point X="60" Y="-4"/>
+			<Point X="0" Y="-39"/>
+			<Point X="-71" Y="-9"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignBush02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_bush_02">
+			<Point X="-4" Y="27"/>
+			<Point X="60" Y="-4"/>
+			<Point X="0" Y="-39"/>
+			<Point X="-71" Y="-9"/>
+		</Thing>
+	</Obstacle>
+	
+	<!--Awnings-->
+	<Obstacle
+		Name="BaysignAwning01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_awning_01"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignAwning02"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_awning_02"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignAwning03"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_awning_03"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignAwning04"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_awning_04"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	
+	<Obstacle
+		Name="BaysignUmbrella01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_umbrella_01"
+			NeverObscuresPlayer="false">
+		</Thing>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BaysignLampost01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+			>
+		<Thing
+			Graphic="Tilesets\\Baysign\\baysign_lampost_01"
+			OffsetY="-192"
+			NeverObscuresPlayer="false">
+			<Point X="-86" Y="20"/>
+			<Point X="-42" Y="66"/>
+			<Point X="67" Y="8"/>
+			<Point X="16" Y="-34"/>
+		</Thing>
+	</Obstacle>
+
+	
+	<!-- Miscellaneous-->
+	
+	<Obstacle
+		Name="BaysignTelescope01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="0.12"
+			Graphic="Tilesets\\Baysign\\baysign_telescope_01"
+			OffsetY="-258"
+			NeverObscuresPlayer="false">
+			<Point X="-268" Y="95"/>
+			<Point X="-21" Y="148"/>
+			<Point X="51" Y="-12"/>
+			<Point X="-236" Y="-46"/>
+		</Thing>
+		<Interact
+			Distance="150"
+			AutoUseDistance="100"
+			Cooldown="3.0"
+			UserFaceTarget="true"
+			AudioFx="ButtonPress"
+			OffsetY="-45"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignMotorcycle01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="0.35"
+			Graphic="Tilesets\\Baysign\\baysign_cycle_01A"
+			NeverObscuresPlayer="true"
+			OffsetY="-61"
+			VisibleInPlanning="true">
+			<Point X="-69" Y="189"/>
+			<Point X="467" Y="-46"/>
+			<Point X="359" Y="-198"/>
+			<Point X="-179" Y="37"/>
+		</Thing>
+		<Interact
+			Distance="135"
+			AutoUseDistance="80"
+			OffsetX="50"
+			OffsetY="-35"
+			UserFaceTarget="true"
+			Cooldown="3.0"
+			AudioFx="/SFX/World Sounds/LightOn"
+			VisualFx="MotorcycleLightsOn"
+			UseableInPlanning="false"
+		></Interact>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="BaysignBoat01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="1.68"
+			Graphic="BoatIdle"
+			NeverObscuresPlayer="true">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignMotorcycleLights01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Scale="0.35"
+			Graphic="Tilesets\\Baysign\\baysign_cycle_01B">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTerminal01"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="0.5"
+			Graphic="Tilesets\\Baysign\\baysign_terminal_01A"
+			OffsetY="-179"
+			NeverObscuresPlayer="true">
+			<Point X="-135" Y="17"/>
+			<Point X="-11" Y="79"/>
+			<Point X="122" Y="8"/>
+			<Point X="-1" Y="-59"/>
+			<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+		</Thing>
+		<Interact
+			Distance="150"
+			AutoUseDistance="85"
+			UserFx="null"
+			UserFaceTarget="true"
+			AudioFx="null"
+			VisualFx="null"
+			UseableInPlanning="false"
+			Cooldown="0.5"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSocket01A"
+		InheritFrom="1_BaseTerrainDecalObstacle"
+		>
+		<Thing
+			Scale="1"
+			Graphic="Tilesets\\Baysign\\baysign_socket_01A"
+			OffsetY="-200"
+			NeverObscuresPlayer="true">
+			<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+			<Point X="-136" Y="4"/>
+			<Point X="-4" Y="72"/>
+			<Point X="144" Y="0"/>
+			<Point X="9" Y="-70"/>
+		</Thing>
+		<Interact
+			Distance="150"
+			UserFx="null"
+			UserFaceTarget="true"
+			Cooldown="3.0"
+			AudioFx="null"
+			VisualFx="null"
+			UseableInPlanning="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSocket01B"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="1"
+			Graphic="Tilesets\\Baysign\\baysign_socket_01B"
+			OffsetY="0"
+			NeverObscuresPlayer="true">
+			<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignSocket01C"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="1"
+			Graphic="Tilesets\\Baysign\\baysign_socket_01C"
+			OffsetY="0"
+			NeverObscuresPlayer="true">
+			<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="BaysignTestSocketActive"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Scale="1"
+			Graphic="SocketClosed"
+			OffsetY="-200"
+			NeverObscuresPlayer="true">
+			<Point X="-136" Y="4"/>
+			<Point X="-4" Y="72"/>
+			<Point X="144" Y="0"/>
+			<Point X="9" Y="-70"/>
+		</Thing>
+		<Interact
+			Distance="150"
+			UserFx="null"
+			UserFaceTarget="true"
+			Cooldown="3.0"
+			AudioFx="null"
+			VisualFx="null"
+			UseableInPlanning="false"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="SocketSword"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Scale="0.65"
+			Graphic="SocketSword"
+			NeverObscuresPlayer="true">
+			<Material Ambient="0.25" Diffuse="0.5" Directionality="0.5"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CameraFlash"
+		InheritFrom="1_BaseFlyingDecalObstacle"
+		>
+		<Thing
+			Graphic="CameraFlash"
+		>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="CameraFlashSilent"
+		InheritFrom="CameraFlash"
+		>
+		<Thing
+			Graphic="CameraFlashSilent"
+		>
+		</Thing>
+	</Obstacle>
+
+
+
+
+</Obstacles>
+

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Animations>
+
+	<Animation
+		Name="LoadSpinner" Type="CONSTANT" FilePath="Launch\\load_spinner"
+		Material="Unlit"
+		Rotate="true"
+		RotationSpeed="-240"
+		OffsetY="-30"
+		>
+	</Animation>
+
+	<Animation
+		Name="BootImage" Type="CONSTANT" FilePath="Launch\\load_bg"
+		Duration="1.0"
+		Material="Unlit"
+		ChainTo="BootFade">		
+	</Animation>
+
+	<Animation
+		Name="BootFade" Type="CONSTANT" FilePath="Launch\\load_bg"
+		Duration="0.125" StartOpacity="1.0" EndOpacity="0.5"
+		StartRed="1"
+		EndRed="0.5"
+		Material="Unlit"
+		ChainTo="BootFade2">		
+	</Animation>
+
+
+	<Animation
+		Name="BootFade2" Type="CONSTANT" FilePath="Launch\\load_bg"
+		Duration="0.125" StartOpacity="0.5" EndOpacity="0.0"
+		StartRed="0.5" EndRed="0"
+		StartGreen="1"
+		EndGreen="0"
+		Material="Unlit"
+		ChainTo="TransistorLogoIntro">
+	</Animation>
+	
+	<Animation
+		Name="TransistorLogoIntro" Type="BOOK" FilePath="Screens\\TransistorLogoIntro\\TransistorLogoIntro"
+		NumFrames="30" PlaySpeed="30"
+		VideoTexture="TransistorLogoIntro"
+		ChainTo="TransistorLogoLoop"
+		Material="Unlit"
+		>
+	</Animation>
+	
+	<Animation
+		Name="TransistorLogoLoop" Type="BOOK" FilePath="Screens\\TransistorLogoLoop\\TransistorLogoLoop"
+		NumFrames="60" PlaySpeed="24"
+		VideoTexture="TransistorLogoLoop"
+		Material="Unlit"
+		Loop="true"
+		ChainTo="TransistorLogoOutro"		
+		>
+	</Animation>
+
+	<Animation
+		Name="TransistorLogoOutro" Type="BOOK" FilePath="Screens\\TransistorLogoOutro\\TransistorLogoOutro"
+		NumFrames="10" PlaySpeed="30"
+		VideoTexture="TransistorLogoOutro"
+		Material="Unlit"
+		>
+	</Animation>
+
+</Animations>

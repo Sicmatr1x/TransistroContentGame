@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DeathScreens>
+
+	<DeathScreen
+		Platform="default"
+		OpenSound="null"
+		CloseSound="null"
+		SelectionSound="null"
+		TransitionOnTime="0.0"
+		TransitionOffTime="0.0">
+
+		<Back Justification="Left" Red="0.0" Green="0.0" Blue="0.0" Alpha="0.0"/>
+
+		<ContinueWithoutLimiters
+			Name="ContinueWithoutLimiters"
+			X="876" Y="840" Justification="Center" VerticalJustification="Center"
+			Graphic="MouseButtonGlitch" SelectedGraphic="MouseButtonGlitchOver"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.1" FadeDelayMax="0.1" FadeSpeed="10.0"
+			Width="80" Height="80"/>
+
+		<ContinueWithLimiters
+			Name="ContinueWithLimiters"
+			X="876" Y="930"  Justification="Center" VerticalJustification="Center"
+			Graphic="MouseButtonGlitch" SelectedGraphic="MouseButtonGlitchOver"
+			FadeOpacity="0.0" FadeTarget="1.0" FadeDelayMin="0.1" FadeDelayMax="0.1" FadeSpeed="10.0"
+			Width="80" Height="80"/>
+		
+	</DeathScreen>
+
+</DeathScreens>

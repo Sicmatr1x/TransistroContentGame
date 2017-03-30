@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+	
+	<Npc
+		Name="Priest"
+		InheritFrom="1_BaseAttacker"
+		ScoreValue="0"
+		PhaseInTimeMin="1.0"
+		PhaseInTimeMax="1.0"
+		PhaseInGraphic="PriestEmerge"
+		PhaseInFx="null"
+		PhaseInSound="/SFX/Enemy Sounds/Priest/PriestOnSpawn"
+		VisionRange="1000"
+		RotationSpeed="0"
+		SpawnFacingPlayer="false"
+		IgnoreTargetCollision="false"
+		CollideWithUnits="false"
+		CheckShadow="false"
+		OnDeathWeapon="PriestEggSpawn"
+		FootprintFx="null"
+		DamageField="PriestDamageField"
+		OnFiredAtWeapon="PriestSelfStun"
+		EnemyStatName="Priest"
+		NoHighlightWhileActivating="false"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Thing
+			Graphic="PriestIdle"
+			AmbientSound="/SFX/Enemy Sounds/Priest/PriestAmbience"
+			FlyingGraphic="null"
+			OverheadOffset="155"
+			SelectionWidth="120"
+			SelectionHeight="220"
+            SelectionShiftY="30"
+			FallSpeedMultiplier="16.0"
+			Grip="999999.0"
+			OffsetZ="0"
+			RotateGeometry="false"
+			Scale="1.0"
+			OcclusionOutlineRadius="0.002"
+			OcclusionOutlineThreshold="0.5"
+			OutlineAllAnims="false"
+			>
+			<Point X="-50" Y="5"/>
+			<Point X="3" Y="38"/>
+			<Point X="55" Y="7"/>
+			<Point X="0" Y="-20"/>
+		</Thing>
+		<Life
+			Health="50"
+			Armor="0.0"
+			ArmorCoverage="0"			
+			HitGraphic="PriestGlitch"
+			DeathFx="EnemyDeathSplatter"
+			DeathSound="/SFX/Enemy Sounds/Priest/PriestOnDeath"
+			Decal="null"
+			DeathShakeSpeed="150"
+			DeathShakeDistance="5"
+			DamageShakeDistance="0.0"
+			Material="METAL"
+			DamageFlashMin="0.9"
+			DamageFlashMax="1.0"
+			NumDeathLines="12"
+			ProjectileHealModifier="0"
+			>
+		</Life>		
+		<Weapon Name="PriestHealAura"/>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="FRIENDS"
+			TargetAcquiredSound="null"
+			RequiresCanAttack="false"
+			RequiresCanAttackIfImmobile="true"
+			MaxDistance="1200"
+			IgnoreFullHealth="true"
+			IgnoreSameType="true"
+			Retaliate="false">
+			<SortType Heuristic="LOWEST_HEALTH"/>
+		</TargetAI>
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			CanAttackWhileMoving="true">
+		</AttackAI>
+
+		<!-- Old, Pretty Broken Priest Upgrades
+		<Upgrade Name="PriestLevel2">
+			<Rank>
+				<Change HelpTextId="PriestLevel2"/>
+				<Change ValueChangeType="ADD"/>
+				<Change OnHitWeapon="PriestHide"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="PriestLevel3">
+			<Rank>
+				<Change HelpTextId="PriestLevel3"/>
+				<Change ValueChangeType="REPLACE_IF_NULL" ContinuousWeapon="PriestDuplicate"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+		-->
+
+		<Upgrade Name="PriestLevel2">
+			<Rank>
+				<Change HelpTextId="PriestLevel2"/>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PriestLevel3">
+			<Rank>
+				<Change HelpTextId="PriestLevel3"/>
+				<Change OnHitWeapon="PriestOnHitMultiply"/>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="PriestLevel4">
+			<Rank>
+				<Change HelpTextId="PriestLevel4"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>			
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="10"/>
+			</Rank>
+		</Upgrade>
+		
+	</Npc>
+
+	<Npc
+		Name="PriestNoUpgrades"
+		InheritFrom="Priest"
+		OnDeathWeapon="null"
+		FootprintFx="null"
+		DamageField="PriestDamageField"
+		OnHitWeapon="null"
+		ClearUpgrades="true">
+	</Npc>
+
+	<Npc
+		Name="PriestEggless"
+		InheritFrom="Priest"
+		OnDeathWeapon="null"
+		ClearWeapons="true">
+		<Weapon Name="PriestHealAura"/>
+	</Npc>
+
+	<Npc
+		Name="Amplifier"
+		InheritFrom="Priest"
+		Speed="100.0"
+		ClearWeapons="true"
+		ClearTargetAI="true"
+		OnDeathWeapon="PriestEggSpawn">
+		<Thing
+			PermaFlash="Blue"
+			>
+		</Thing>
+		<Weapon Name="AmplifierTouch"/>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="FRIENDS"
+			RequiresCanAttack="false"
+			RequiresCanAttackIfImmobile="true"
+			RequiresLoS="false"
+			MaxDistance="1200"
+			Retaliate="false">
+			<SortType Heuristic="LOWEST_DAMAGE_OUTPUT"/>
+		</TargetAI>
+	</Npc>	
+
+</Npcs>

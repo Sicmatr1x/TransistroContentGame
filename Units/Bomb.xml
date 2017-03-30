@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Bomb Unit / "Parcel" -->
+
+	<Npc
+		Name="BombUnit"
+		InheritFrom="1_BaseAttacker"
+		PhaseInSound="null"
+		Speed="0"
+		Flyer="true"
+		ScoreValue="0"
+		PhaseInGraphic="null"
+        PhaseInTimeMin="0.01"
+        PhaseInTimeMax="0.01"
+		SpawnFacingPlayer="false"
+		VisionRange="900"
+		OnHitWeapon="null"
+		FootprintFx="null"
+        CloakFx="null"
+		OnDeathWeapon="BombExplode"
+		DeathWeaponSuppressedFx="null"
+		ImmuneToDeathWeaponSuppression="true"
+		SquadName="BOMBS"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		>
+		<Thing
+			Grip="5.0"
+			ActivateGraphic="null"
+			Graphic="LoadBomb"
+			AmbientSound="/SFX/Player Sounds/Weapon_Bomb_Ambience"
+			UpwardVelocityGhostInterval="0.0"
+			UpwardVelocityGhostDuration="0.0"
+			ClearGeometry="true"
+			OverheadOffset="80"
+			SelectionWidth="140"
+			SelectionHeight="175"
+            SelectionShiftY="30"
+			OffsetZ="70"
+			PermaFlash="null"
+			ShowEstimatedForce="true"
+			OcclusionOutlineRadius="0.0017"
+			OcclusionOutlineThreshold="0.5"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="28"/>
+			<Point X="48" Y="0"/>
+			<Point X="0" Y="-28"/>
+			<Point X="-48" Y="0"/>
+		</Thing>
+		<Life
+			Health="10"
+			HitSound="/SFX/Enemy Sounds/EnemyOnHitAlt"
+			DeathSound="SFX/Player Sounds/Weapon_Bomb_Fuse"
+			Decal="Decals\\Health_Circle_Medium"
+			DamageDecal="null"
+			HitGraphic="null"
+			DeathGraphic="null"
+			DeathShakeSpeed="250"
+			DeathShakeDistance="5"
+			Material="HUMANOID"
+			LowHealthTransitionEffect="null"
+			DamageFlashMin="0.0"
+			DamageFlashMax="0.0"
+			NumDeathLines="8"
+			ProjectileHealModifier="0.0"
+			>
+		</Life>
+		<Weapon Name="BombUnitWeapon"/>
+
+		<Upgrade Name="BombBlink" HelpTextId="Blink_Bomb_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" HealthRegen="-10000"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="BombOrb" HelpTextId="Orb_Bomb_Upgrade">
+			<Rank>
+				<Change ValueChangeType="ABSOLUTE" ContinuousWeapon="BombBlastWave"/>
+				<Change ValueChangeType="ABSOLUTE" HealthRegen="-100"/>
+			</Rank>
+		</Upgrade>
+
+
+	</Npc>
+
+	<Npc
+		Name="BombUnitAdvanced"
+		InheritFrom="BombUnit"
+		OnDeathWeapon="BombExplodeAdvanced"
+		Speed="1000"
+		>
+	</Npc>
+
+	<Npc
+		Name="BombUnitMini"
+		InheritFrom="BombUnit"
+		OnDeathWeapon="BombExplodeMini"
+		Speed="0"
+		>
+		<Thing
+			Scale="0.75"
+			SelectionWidth="155"
+			SelectionHeight="190"
+            SelectionShiftY="30">	
+		</Thing>
+	</Npc>
+	
+	<Npc
+		Name="BombUnitRoyce"
+		InheritFrom="BombUnit"
+		ClearWeapons="true"
+		OnDeathWeapon="RoyceBombExplode"
+		Speed="0"
+		PlayerOwned="true"
+		FriendlyFx="null"
+		>
+		<Thing
+			Scale="0.75">	
+		</Thing>
+		<Life
+			HealthRegen="-100000"
+			>
+		</Life>
+		<Weapon Name="BombUnitWeapon"/>
+	</Npc>
+
+
+</Npcs>

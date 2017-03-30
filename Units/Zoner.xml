@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+	
+	<Npc
+        Name="Zoner"
+        InheritFrom="1_BaseAttacker"
+		ClearWeapons="true"
+		ClearAI="true"		
+		RotationSpeed="1000"
+		CollideWithUnits="true"
+		Speed="310.0"
+		Acceleration="1000"
+		Deceleration="1000"
+		IndependentMoveDirection="true"
+		StopOnDime="false"
+        VisionRange="1200"
+		SquadName="SHOOTERS"
+		ScoreValue="0"
+		OnHitWeapon="null"
+		CollisionWeapon="null"
+		OnDeathWeapon="ZonerEggSpawn"
+		AlertFriendsOnDeathDistance="1200"
+		FootprintFx="null"
+		FacedByTargetWeapon="ZonerFlash"
+		RagDollOnDeath="false"
+		EnemyStatName="Zoner"
+		OnFiredAtWeapon="ZonerDodge"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Life
+			Health="250"
+			HitGraphic="ZonerGlitch"
+			ImpactGraphicOffset="30" 
+			HitSound="/SFX/Enemy Sounds/Zoner/ZonerOnHit"
+			DeathSound="/SFX/Enemy Sounds/Zoner/ZonerOnDeath"
+			Decal="Decals\\Health_Circle_Large"
+			OverPitDecal="Decals\\Dotted_Circle_Large"
+			DeathFx="EnemyDeathSplatter"
+			ArmorCoverage="240"
+			Vulnerability="1.5">
+		</Life>
+		<Thing
+			Graphic="ZonerIdle"
+			ActivateGraphic="ZonerPhaseIn"
+			OnTouchdownFxAnim="null"
+			AmbientSound="/SFX/Enemy Sounds/Priest/PriestAmbience"
+			TouchdownSound="null"
+			Scale="0.4"
+			OverheadOffset="135"
+			Grip="5.0"
+			OffsetZ="70"
+            SelectionWidth="275"
+			SelectionHeight="340"
+            SelectionShiftY="-45"
+			SpinFactor="0.0"
+			PlayerNearFxDistance="0"
+			PlayerNearFx="GapGeneratorFx"
+			PlayerFarFx="GapGeneratorFx">
+			<Point X="0" Y="64"/>
+			<Point X="96" Y="0"/>
+			<Point X="0" Y="-64"/>
+			<Point X="-96" Y="0"/>
+		</Thing>
+		<TargetAI
+			TargetAcquiredSound="/SFX/Enemy Sounds/Zoner/ZonerTargetSighted"
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			TargetAcquiredDisable="0.6"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredFx="null"
+			TargetAcquiredGraphic="null"
+			TargetLostDisable="0.6"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="null"
+			TargetLostGraphic="null"
+			MaxDistance="2000"
+			RequiredNearbyFriends="0"
+			FindHealerHealthFraction="0.5">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+		
+		<MoveAI
+			Algorithm="CIRCLE"
+			NeighborhoodDistance="600"
+			CrowdingDistance="100"
+			SuccessDistance="450"
+			RetreatFromDistance="300"
+			RelaxDistance="100"
+			SpeedFraction="1.0"
+			StopToAttack="false"
+			MaxChasers="2">
+		</MoveAI>
+
+		<MoveAI
+			Name="ZonerPathfind"
+			Algorithm="PATHFIND"
+			NodeSuccessDistance="16"
+			StopToAttack="false"
+			RequiresLoS="false"
+			SuccessDistance="50"
+			LookAheadDistance="512"
+			>
+		</MoveAI>
+		
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			LeadTarget="true"
+			RequiresLoS="true"
+			CanAttackWhileMoving="true"
+			CanAttackWhileRetreating="false"
+			MustCompleteAttack="true"
+			AimWhileCompletingAttack="true">
+		</AttackAI>
+		
+		<Weapon Name="ZonerGun"/>
+		<Using>TestSnapshot02</Using>
+		
+		<Upgrade Name="ZonerLevel2">
+			<Rank>
+				<Change HelpTextId="ZonerLevel2"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ZonerLevel3">
+			<Rank>
+				<Change HelpTextId="ZonerLevel3"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+				<Change ValueChangeType="ABSOLUTE" PlayerNearFxDistance="275"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ZonerLevel4">
+			<Rank>
+				<Change HelpTextId="ZonerLevel4"/>
+				<Change ValueChangeType="ADD" Health="50"/>
+			</Rank>
+		</Upgrade>
+		
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>			
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+		
+	</Npc>
+
+</Npcs>

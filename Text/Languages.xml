@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HelpTexts>
+
+	<HelpText lang="zh-CN">
+		<Text Id="LanguageScreen_Title" DisplayName="语言"/>
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="ja">
+		<Text Id="LanguageScreen_Title" DisplayName="言語" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="de">
+		<Text Id="LanguageScreen_Title" DisplayName="Sprachen" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="es">
+		<Text Id="LanguageScreen_Title" DisplayName="Idiomas" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="fr">
+		<Text Id="LanguageScreen_Title" DisplayName="Langues" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="it">
+		<Text Id="LanguageScreen_Title" DisplayName="Lingue" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="ru">
+		<Text Id="LanguageScreen_Title" DisplayName="Языки" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="pl">
+		<Text Id="LanguageScreen_Title" DisplayName="Jezyki" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="pt-BR">
+		<Text Id="LanguageScreen_Title" DisplayName="Idiomas" />
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+	<HelpText lang="en">
+		<Text Id="LanguageScreen_Title" DisplayName="Languages"/>
+		<Text Id="en" DisplayName="English"/>
+		<Text Id="de" DisplayName="Deutsch"/>
+		<Text Id="es" DisplayName="EspaÑol"/>
+		<Text Id="fr" DisplayName="Français"/>
+		<Text Id="it" DisplayName="Italiano"/>
+		<Text Id="ru" DisplayName="Русский"/>
+		<Text Id="pl" DisplayName="Polski"/>
+		<Text Id="pt-BR" DisplayName="Português - BR"/>
+		<Text Id="ja" DisplayName="日本語"/>
+		<Text Id="zh-CN" DisplayName="简体中文"/>
+	</HelpText>
+
+</HelpTexts>

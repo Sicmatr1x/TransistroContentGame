@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+
+	<!-- Flusher -->
+
+	<Npc
+		Name="Flusher"
+		InheritFrom="1_BaseAttacker"
+		PhaseInSound="/SFX/Enemy Sounds/Flusher/FlusherOnSpawn"
+		Speed="450"
+		RotationSpeed="620"
+		Flyer="true"
+		ScoreValue="0"
+		PhaseInGraphic="null"
+		PhaseInTimeMin="0.5"
+		PhaseInTimeMax="0.5"
+		MoveGraphic="FlusherRun"
+		SpawnFacingPlayer="false"
+		VisionRange="750"
+		OnHitWeapon="null"
+		FootprintFx="null"
+		CloakFx="null"
+		OnDeathWeapon="FlusherEggSpawn"
+		SquadName="MELEE"
+		IgnoreTargetCollision="false"
+		EnemyStatName="Flusher"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Thing
+			Grip="5.0"
+			ActivateGraphic="FlusherPhaseIn"
+			HatchGraphic="null"
+			Graphic="FlusherIdle"
+			AmbientSound="/SFX/Enemy Sounds/Priest/PriestAmbience"
+			ClearGeometry="true"
+			OverheadOffset="70"
+			SelectionWidth="280"
+			SelectionHeight="220"
+            SelectionShiftY="70"
+			OcclusionOutlineRadius="0.008"
+			OcclusionOutlineThreshold="0.99"
+			PermaFlash="null"
+			MinScale="0.575"
+			MaxScale="0.575">
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="-32" Y="38"/>
+			<Point X="32" Y="38"/>
+			<Point X="60" Y="0"/>
+			<Point X="32" Y="-38"/>
+			<Point X="-32" Y="-38"/>
+			<Point X="-60" Y="0"/>
+		</Thing>
+		<Life
+			Health="500"
+			HitSound="/SFX/Enemy Sounds/Flusher/FlusherOnHit"
+			DeathSound="/SFX/Enemy Sounds/Flusher/FlusherOnDeath"
+			Decal="null"
+			DamageDecal="null"
+			HitGraphic="FlusherGlitch"
+			DeathGraphic="null"
+			DeathFx="EnemyDeathSplatter"
+			DeathShakeSpeed="250"
+			DeathShakeDistance="5"
+			Material="METAL"
+			LowHealthTransitionEffect="null"
+			NumDeathLines="8"
+			ArmorCoverage="240"
+			Vulnerability="1.5"
+			>
+		</Life>
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="ENEMIES"
+			RequiresCanAttack="false"
+			RequiresLoS="false"
+			TargetLock="false"
+			MaxDistance="2000"
+			TargetAcquiredDisable="0.0"
+			TargetAcquiredFlash="0.0"
+			TargetAcquiredSound="/SFX/Enemy Sounds/Flusher/FlusherTargetSighted"
+			TargetAcquiredFx="TargetAcquiredIndicator"
+			TargetAcquiredGraphic="null"
+			TargetAcquiredGraphicPrereq="null"
+			TargetLostDisable="0.5"
+			TargetLostFlash="0.0"
+			TargetLostSound="null"
+			TargetLostFx="TargetLostIndicator"
+			FindHealerHealthFraction="0.5">
+			<SortType Heuristic="CLOSEST"/>
+		</TargetAI>
+
+		<MoveAI
+			Algorithm="PATHFIND"
+			TargetHeadingShift="0"
+			StopToAttack="false"
+			RequiresLoS="true"
+			LookAheadDistance="512"
+			MaxChasers="1"
+			DisengageTime="0.0"
+			StopWhenDisengaged="true"
+			CoverSearchWhenDisengaged="0"
+			OldTargetLocationWhenDisengaged="0.0"
+			FlankDistanceWhenDisengaged="0"
+			FinishAtGoal="true"
+			>
+		</MoveAI>
+
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			RequiresLoS="true"
+			MustCompleteAttack="false"
+			AimWhileCompletingAttack="false"
+			CanAttackWhileMoving="true"
+			OnlyAimAtDestination="true"
+			RangeBufferMin="0.6"
+			RangeBufferMax="0.6">
+		</AttackAI>
+		<Weapon Name="Bark"/>
+
+		<Upgrade Name="FlusherLevel2">
+			<Rank>
+				<Change HelpTextId="FlusherLevel2"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+				<Change ValueChangeType="ADD" ContinuousWeapon="FlusherHide"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="FlusherLevel3">
+			<Rank>
+				<Change HelpTextId="FlusherLevel3"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+				<Change ValueChangeType="ADD" MaxChasers="1"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="FlusherLevel4">
+			<Rank>
+				<Change HelpTextId="FlusherLevel4"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="40"/>
+			</Rank>
+		</Upgrade>
+		
+
+	</Npc>
+
+
+
+
+	<Npc
+		Name="FlusherFriendly"
+		InheritFrom="Flusher"
+		OnDeathWeapon="null"
+		SquadName="FRIENDS"
+		Speed="300"
+		ClearUpgrades="true"
+		ClearWeapons="true"
+		PlayerControlled="false"
+		PlayerOwned="true"
+		>
+		<Thing
+			ActivateGraphic="null"
+			AmbientSound="null"
+			MinScale="0.425"
+			MaxScale="0.425">
+			<Color Red="1.0" Green="0.7" Blue="0.1" Opacity="1.0"/>
+		</Thing>
+		<Interact
+			Distance="150"
+			UserFaceTarget="true"
+			UseableInPlanning="false"
+			NumUses="999999"
+			DeleteOnUse="false"
+			AutoActivate="false"
+		>
+		</Interact>
+		<Weapon Name="BarkFriendly"/>
+	</Npc>
+
+</Npcs>

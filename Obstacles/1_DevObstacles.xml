@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+	
+	<!-- Base Obstacles -->
+
+	<!-- DisplayInEditor="false" -->
+	<Obstacle
+		Name="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="true"
+		StopsProjectiles="true"
+		Tallness="85.0"
+		>
+		<Thing
+			Graphic="Obstacles\\3DWall45"
+			TouchdownSound="ObjectFall"
+			OnTouchdownFxAnim="null"
+			Grip="999999"
+			FallInShadow="ObstacleFallInShadow"
+			MeshType="Vertical">
+		</Thing>
+		<Life
+			Invulnerable="true"
+			Material="INVINCIBLE"
+			ShowDamageNumbers="false"
+			ReflectFx="BlockSparks3"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="1_BaseInvulnerablePassableObstacle"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+	</Obstacle>
+
+	<Obstacle
+		Name="1_BaseInvulnerableLowObstacle"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="true"
+		StopsProjectiles="false"
+		>
+	</Obstacle>
+
+	<Obstacle
+		Name="1_BaseDecalObstacle"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			NeverObscuresPlayer="true"
+			DefaultDrawLayer="TERRAIN"
+			Grip="999999"
+			MeshType="Flat">
+		</Thing>
+	</Obstacle>
+
+    <Obstacle
+		Name="1_BaseTerrainDecalObstacle"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+        <Thing
+			NeverObscuresPlayer="true"
+			DefaultDrawLayer="TERRAIN"
+			Grip="999999"
+			MeshType="Flat">
+        </Thing>
+    </Obstacle>
+
+	<Obstacle
+		Name="1_BaseFlyingDecalObstacle"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+		<Thing
+			NeverObscuresPlayer="true"
+			DefaultDrawLayer="FLYING"
+			Grip="999999"
+			MeshType="Flat">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="1_BaseStandingDecalObstacle"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+        <Thing
+			NeverObscuresPlayer="true"
+			DefaultDrawLayer="GROUND"
+			Grip="999999"
+			MeshType="Vertical">
+        </Thing>
+    </Obstacle>
+
+    <Obstacle
+		Name="1_BaseImpassableDecalObstacle"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="true"
+		StopsProjectiles="false"
+		>
+		<Thing
+			DefaultDrawLayer="TERRAIN"
+			Grip="999999"
+			MeshType="Flat">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+        Name="1_BaseVulnerableObstacle"
+		DisplayInEditor="false"
+        StopsUnits="true"
+		StopsProjectiles="true"
+		>
+		<Thing
+			Graphic="Obstacles\\3DWall45"
+			TouchdownSound="ObjectFall"
+			OnTouchdownFxAnim="null"
+			Grip="999999"
+			MeshType="Vertical">
+		</Thing>
+		<Life
+			Health="10"
+			DamageFlashSpeed="5.0"
+			DamageFlashSeconds="0.2"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="null"
+			LowHealthTransitionEffect="null"
+			DeathFx="null"
+			DeathSound="MolotovExplode"
+			Material="NONE"
+			ShowDamageNumbers="false"
+			DeathLineGraphic="Particles\\particle_line_03"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="1_BaseVulnerablePassableObstacle"
+		InheritFrom="1_BaseVulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		>
+	</Obstacle>
+
+	<Obstacle
+		Name="1_BaseVulnerableLowObstacle"
+		InheritFrom="1_BaseVulnerableObstacle"
+		DisplayInEditor="false"
+		StopsUnits="true"
+		StopsProjectiles="false"
+		>
+	</Obstacle>
+
+	<!-- Impassability Obstacles -->
+
+	<Obstacle
+		Name="BaseImpassable"
+		DisplayInEditor="false"
+		StopsUnits="true"
+		StopsProjectiles="false"
+		Tallness="999999.0"
+		>
+		<Thing
+			Graphic="Obstacles\\_Impassable"
+			Invisible="true"
+			Grip="999999.0"
+			MeshType="Vertical">
+		</Thing>
+		<Life
+			Invulnerable="true"
+			Material="INVINCIBLE"
+			ShowDamageNumbers="false">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="InvisibleWall"
+		InheritFrom="BaseImpassable"
+		StopsProjectiles="true">
+		<Thing
+			Graphic="Obstacles\\_Impassable_Tile64Iso"
+			RotateGeometry="true">
+			<Point X="0" Y="32"/>
+			<Point X="64" Y="0"/>
+			<Point X="0" Y="-32"/>
+			<Point X="-64" Y="0"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="InvisibleWallLow"
+		InheritFrom="InvisibleWall"
+		StopsProjectiles="false"
+		Tallness="85"
+		>
+		<Color Red="0.0" Green="0.0" Blue="1.0" Opacity="1.0"/>
+	</Obstacle>
+
+	<Obstacle
+		Name="InvisibleWallVeryLow"
+		InheritFrom="InvisibleWallLow"
+		Tallness="5"
+		>
+	</Obstacle>
+
+	<Obstacle
+		Name="_Impassable"
+		InheritFrom="BaseImpassable"
+		>
+		<Thing Graphic="Obstacles\\_Impassable"></Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="_Impassable_Large"
+		InheritFrom="BaseImpassable"
+		>
+		<Thing Graphic="Obstacles\\_Impassable_Large"></Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="_Impassable_Giant"
+		InheritFrom="BaseImpassable"
+		>
+		<Thing Graphic="Obstacles\\_Impassable_Giant"></Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="_Impassable_Diamond"
+		InheritFrom="BaseImpassable"
+		>
+		<Thing
+			Graphic="Obstacles\\_Impassable_Diamond"
+			>
+			<Point X="0" Y="32"/>
+			<Point X="32" Y="0"/>
+			<Point X="0" Y="-32"/>
+			<Point X="-32" Y="0"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="_Impassable_MapBorder"
+		InheritFrom="BaseImpassable"
+		Tallness="999999.0"
+		>
+		<Thing
+			Graphic="Obstacles\\_Impassable"
+			Width="9999"
+			Height="9999"
+			Flying="true"
+			>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+        Name="_Impassable_Tile64Iso"
+		InheritFrom="BaseImpassable"
+		>
+		<Thing
+			Graphic="Obstacles\\_Impassable_Tile64Iso"
+			Material="Unlit"
+			RotateGeometry="true"
+			MeshType="Flat">
+			<Point X="0" Y="32"/>
+			<Point X="64" Y="0"/>
+			<Point X="0" Y="-32"/>
+			<Point X="-64" Y="0"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="_Impassable_Long"
+		InheritFrom="BaseImpassable"
+		StopsProjectiles="false">
+		<Thing
+			Graphic="Obstacles\\_Impassable_Long"
+			RotateGeometry="true">
+			<Point X="-5" Y="50"/>
+			<Point X="5" Y="50"/>
+			<Point X="5" Y="-50"/>
+			<Point X="-5" Y="-50"/>
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+        Name="Test-Tile64-Iso"
+        StopsUnits="false"
+        StopsProjectiles="false"
+		>
+		<Thing
+			Graphic="Obstacles\\Tile64-Iso"
+			MeshType="Flat"
+			>
+			<Point X="0" Y="32"/>
+			<Point X="64" Y="0"/>
+			<Point X="0" Y="-32"/>
+			<Point X="-64" Y="0"/>
+		</Thing>
+		<Life
+			Invulnerable="true"
+			ShowDamageNumbers="false">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="InvisibleTarget"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		Tallness="0.0"
+		>
+		<Thing
+			Graphic="Dev\\InvisibleTarget"
+			Material="Unlit"
+			Grip="99999999.0"
+			Invisible="true"
+			MeshType="Vertical"
+			VisibleInPlanning="false">
+		</Thing>
+		<Life
+			Invulnerable="true"
+			ShowDamageNumbers="false">
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="InvisibleArtBox"
+		InheritFrom="InvisibleTarget"
+		StopsUnits="false"
+		StopsProjectiles="false"
+		Tallness="0.0"
+		>
+		<Thing
+			Graphic="Dev\\WhiteBox"
+			Material="Unlit"
+			Grip="99999999.0"
+			Invisible="true"
+			MeshType="Vertical"
+			VisibleInPlanning="false">
+		</Thing>
+		<Life
+			Invulnerable="true"
+			ShowDamageNumbers="false">
+		</Life>
+	</Obstacle>
+
+    <Obstacle
+        Name="InvisibleLine"
+        StopsUnits="false"
+		StopsProjectiles="false"
+		Tallness="0.0"
+		>
+		<Thing
+			Graphic="Tilesets\\Virus\\virus_ditch_04"
+			Material="Unlit"
+			Grip="99999999.0"
+			Invisible="true">
+            <Point X="76" Y="57"/>
+            <Point X="107" Y="39"/>
+            <Point X="-77" Y="-57"/>
+            <Point X="-106" Y="-41"/>
+        </Thing>
+    </Obstacle>
+
+    <Obstacle
+        Name="InvisibleLineStraight"
+        StopsUnits="false"
+        StopsProjectiles="false"
+        Tallness="0.0"
+		>
+        <Thing
+			Graphic="Tilesets\\Virus\\virus_ditch_05"
+			Material="Unlit"
+			Grip="99999999.0"
+			Invisible="true">
+            <Point X="76" Y="57"/>
+            <Point X="107" Y="39"/>
+            <Point X="-77" Y="-57"/>
+            <Point X="-106" Y="-41"/>
+        </Thing>
+    </Obstacle>
+
+
+
+    <Obstacle
+		Name="VisibleTarget"
+		InheritFrom="InvisibleTarget"
+		>
+		<Thing
+			Invisible="false">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="TestButton"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+	<Thing
+		Graphic="Dev\\TestButton"
+		Material="Unlit"
+		OverheadOffset="0"
+		MeshType="Vertical">
+	</Thing>
+	<Interact
+		Distance="100"
+		VisualFx="TransistorInteractTarget"
+	></Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="InvisibleButton"
+		InheritFrom="TestButton"
+		>
+		<Thing
+			Invisible="true">
+		</Thing>
+		<Interact
+			Distance="130"
+			AutoUseDistance="120"
+			UseableInPlanning="false"
+			UserFaceTarget="false"
+			VisualFx="null">
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+	Name="InvisibleButtonShortDistance"
+	InheritFrom="TestButton"
+		>
+		<Thing
+			Invisible="true">
+		</Thing>
+		<Interact
+			Distance="100"
+			UseableInPlanning="false"
+			UserFaceTarget="false"
+			VisualFx="null">
+		</Interact>
+	</Obstacle>
+	
+	<Obstacle
+		Name="InvisibleButtonSlightlyLonger"
+		InheritFrom="TestButton"
+		>
+		<Thing
+			Invisible="true">
+		</Thing>
+		<Interact
+			Distance="150"
+			UseableInPlanning="false"
+			UserFaceTarget="false"
+			VisualFx="null">
+		</Interact>
+	</Obstacle>
+	
+	
+	<Obstacle
+		Name="InvisibleButtonGenerousDistance"
+		InheritFrom="TestButton"
+		>
+		<Thing
+			Invisible="true">
+		</Thing>
+		<Interact
+			Distance="280"
+			UseableInPlanning="false"
+			UserFaceTarget="false"
+			VisualFx="null">
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="InvisibleButton02"
+		InheritFrom="InvisibleButton"
+		>
+		<Thing
+			Invisible="true">
+		</Thing>
+		<Interact
+			Distance="190"
+			UserFaceTarget="true"
+			VisualFx="null"
+	></Interact>
+	</Obstacle>
+
+
+	<Obstacle
+		Name="VisibleButtonMouseDeathScreen"
+		InheritFrom="TestButton"
+		>
+		<Thing
+			Graphic="MouseButtonGlitch"
+			Invisible="false">
+		</Thing>
+		<Interact
+			Distance="100"
+			UseableInPlanning="true"
+			CursorOnly="true"
+			VisualFx="null">
+		</Interact>
+	</Obstacle>
+
+	<Obstacle
+		Name="TestButtonExtendedRange"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Dev\\TestButton"
+			Material="Unlit">
+		</Thing>
+		<Interact
+			CursorOnly="true"
+			VisualFx="TransistorInteractTarget"
+		></Interact>
+	</Obstacle>
+
+	<Obstacle
+        Name="3DWall0"
+        StopsUnits="true"
+		InheritFrom="1_BaseVulnerableObstacle"
+		>
+		<Thing
+			Graphic="Obstacles\\3DWall0"
+			>
+		</Thing>
+		<Life
+			Health="11"
+			Material="STONE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+        Name="3DWall45"
+		InheritFrom="1_BaseVulnerableObstacle"
+        StopsUnits="true"
+		>
+		<Thing
+			Graphic="Obstacles\\3DWall45"
+			>
+			<Point X=  "0" Y= "73"/>
+			<Point X= "66" Y= "40"/>
+			<Point X= "0"  Y=  "6"/>
+			<Point X="-66" Y= "40"/>
+		</Thing>
+		<Life
+			Health="11"
+			LowHealthThreshold="0.75"
+			LowHealthGraphic="Obstacles\\3DWall45Damaged"
+			Material="STONE"
+			>
+			<Loot TableName="Obstacle_Standard" DropChance="0.1"/>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="3DWall45_Invincible"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		StopsUnits="true"
+		>
+		<Thing
+			Graphic="Obstacles\\3DWall45"
+			>
+			<Color Red="0.45" Green="0.65" Blue="1.0" Opacity="1.0"/>
+			<Point X=  "0" Y= "73"/>
+			<Point X= "66" Y= "40"/>
+			<Point X= "0"  Y=  "6"/>
+			<Point X="-66" Y= "40"/>
+		</Thing>
+		<Life
+			Material="STONE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="3DWall_Transparent"
+		InheritFrom="1_BaseVulnerableObstacle"
+		StopsUnits="true"
+		>
+		<Thing
+			Graphic="Obstacles\\3DWall45-Transparent"
+			>
+			<Point X=  "0" Y= "73"/>
+			<Point X= "66" Y= "40"/>
+			<Point X= "0"  Y=  "6"/>
+			<Point X="-66" Y= "40"/>
+		</Thing>
+		<Life
+			Health="7"
+			>
+			<Loot TableName="Obstacle_Standard" DropChance="0.1"/>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="3DWall_Ghost"
+		InheritFrom="1_BaseVulnerableObstacle"
+		StopsUnits="true"
+		>
+		<Thing
+			Graphic="Obstacles\\3DWall45-Transparent"
+			>
+			<Color Red="0.75" Green="0.5" Blue="1.0" Opacity="0.4"/>
+			<Point X=  "0" Y= "73"/>
+			<Point X= "66" Y= "40"/>
+			<Point X= "0"  Y=  "6"/>
+			<Point X="-66" Y= "40"/>
+		</Thing>
+		<Life
+			Health="7"
+			>
+			<Loot TableName="Obstacle_Standard" DropChance="0.1"/>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+		Name="3DBarrier0"
+		InheritFrom="1_BaseVulnerableObstacle"
+		StopsUnits="true"
+		StopsProjectiles="false"
+		Tallness="50.0"
+		>
+		<Thing
+			Graphic="Obstacles\\3DBarrier0"
+			>
+		</Thing>
+		<Life
+			Health="20"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+        Name="3DBarrier45"
+		InheritFrom="1_BaseVulnerableObstacle"
+        StopsUnits="true"
+        StopsProjectiles="false"
+		Tallness="50.0"
+		>
+		<Thing
+			Graphic="Obstacles\\3DBarrier45"
+			>
+			<Point X=  "0" Y= "44"/>
+			<Point X= "66" Y= "12"/>
+			<Point X= "0"  Y="-20"/>
+			<Point X="-66" Y= "12"/>
+		</Thing>
+		<Life
+			Health="20"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+        Name="SummonedWall"
+		InheritFrom="1_BaseVulnerableObstacle"
+        StopsUnits="true"
+		StopsProjectiles="true"
+		>
+		<Thing
+			Graphic="VirusColumn02"
+			>
+			<Point X="0" Y="73"/>
+			<Point X="66" Y="40"/>
+			<Point X="0" Y="6"/>
+			<Point X="-66" Y= "40"/>
+            <Color Red="1.0" Green="0.35" Blue="0.1" Opacity="1.0"/>
+		</Thing>
+		<Life
+			Health="100"
+			LowHealthThreshold="0.25"
+			LowHealthGraphic="Obstacles\\3DWall45Damaged"
+			Material="STONE"
+			>
+		</Life>
+	</Obstacle>
+
+	<Obstacle
+        Name="ClampWall_Vertical"
+		InheritFrom="1_BaseInvulnerableObstacle"
+        StopsUnits="true"
+		StopsProjectiles="false"
+		CollisionFx="ClampWallCollision"
+		>
+		<Thing
+			Invisible="true"
+			>
+			<Point X="-4" Y="-1080"/>
+			<Point X="-4" Y="1080"/>
+			<Point X="4" Y="1080"/>
+			<Point X="4" Y="-1080"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+        Name="ClampWall_Horizontal"
+		InheritFrom="1_BaseInvulnerableObstacle"
+        StopsUnits="true"
+		StopsProjectiles="false"
+		CollisionFx="ClampWallCollision"
+		>
+		<Thing
+			Invisible="true"
+			>
+			<Point X="-1920" Y="-4"/>
+			<Point X="-1920" Y="4"/>
+			<Point X="1920" Y="4"/>
+			<Point X="1920" Y="-4"/>
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name ="TestPaths"
+		InheritFrom="1_BaseInvulnerableObstacle"
+		>
+		<Thing
+			Graphic="LivePathMarker2"
+			>
+			
+		</Thing>
+		
+	</Obstacle>
+
+	<!-- for wall collision
+        CollisionDamage="0"
+		CollisionKnockback="800"
+		CollisionFx="PlayerHit"
+		MinCollisionInterval="1.0"-->
+
+</Obstacles>

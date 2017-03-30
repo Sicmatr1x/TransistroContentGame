@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obstacles>
+
+	<Obstacle
+		Name="Crack_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Tileset_Decals\\crack_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Moss_Line01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Tileset_Decals\\moss_line01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Moss_Line02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Tileset_Decals\\moss_line02">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Stain_Line01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Tileset_Decals\\stain_lines01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Worn_Holes01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Tileset_Decals\\worn_holes01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Feather_Straight01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Fx\\craven_feathers\\feather_straight">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Feather_Curled01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Fx\\craven_feathers\\feather_curled">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Feather_Spike01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Projectiles\\craven_spike">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Crater_01"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Crater_01">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Crater_02"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Crater_02">
+		</Thing>
+	</Obstacle>
+	
+	<Obstacle
+		Name="Crater_03"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Crater_03">
+		</Thing>
+	</Obstacle>
+
+	<Obstacle
+		Name="Crater_04"
+		InheritFrom="1_BaseDecalObstacle"
+		>
+		<Thing
+			Graphic="Decals\\Crater_04">
+		</Thing>
+	</Obstacle>
+
+</Obstacles>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Npcs>
+	
+	<Npc
+		Name="Shielder"
+		InheritFrom="1_BaseAttacker"
+		ClearWeapons="true"
+		ClearAI="true"
+		MoveGraphic="ShielderDish"
+		WalkLegs="ShielderBase"
+		RotationSpeed="420"
+		CollideWithUnits="false"
+		PhaseInSound="/SFX/Enemy Sounds/Shielder/ShielderOnSpawn"
+		Speed="350.0"
+		Acceleration="300"
+		Deceleration="300"
+		VisionRange="1500"
+		ScoreValue="0"
+		OnHitWeapon="null"
+		CollisionWeapon="null"
+		OnDeathWeapon="ShielderEggSpawn"
+		FootprintFx="null"
+		ImmuneToStun="false"
+		DestroyProjectilesOnDeath="true"
+		EnemyStatName="Shielder"
+		ClearUpgrade="Limiter_DeathPenalty, Egg_MultiSpawn, Limiter_NoRecycles, Limiter_SupplyPenalty, Egg_Shield, Egg_HatchExplosion, Limiter_NoAutoFocus, Egg_HatchTime, Egg_FakeSpawn, Limiter_EscalatingFights">
+		<Thing
+			Graphic="ShielderIdle"
+			ActivateGraphic="ShielderPhaseIn"
+			AmbientSound="/SFX/Enemy Sounds/Priest/PriestAmbience"
+			Grip="5.0"
+			OffsetZ="0"
+			OverheadOffset="66"
+			Scale="0.555"
+            SelectionWidth="220"
+			SelectionHeight="220"
+            SelectionShiftY="45"
+			OcclusionOutlineRadius="0.0011"
+			>
+			<Color Red="1.0" Green="1.0" Blue="1.0" Opacity="1.0"/>
+			<Point X="0" Y="32"/>
+			<Point X="64" Y="0"/>
+			<Point X="0" Y="-32"/>
+			<Point X="-64" Y="0"/>
+		</Thing>
+		<Life
+			Health="200"
+			HitGraphic="ShielderGlitch"
+			HitSound="/SFX/Enemy Sounds/Shielder/ShielderOnHit"
+			DeathGraphic="ShielderDeath"
+			DeathFx="ShielderDish1"
+			ImpactGraphicOffset="50"
+			DeathSound="/SFX/Enemy Sounds/Shielder/ShielderOnDeath"
+			Decal="Decals\\Health_Circle_Large"
+			DamageDecal="null"
+			DeathShakeSpeed="250"
+			DeathShakeDistance="5"
+			Material="METAL"
+			ProjectileHealDamageDelay="0.25"
+			>
+		</Life>
+
+		<TargetAI
+			ThingSet="UNITS"
+			Allegiance="FRIENDS"
+			TargetAcquiredSound="SFX/Enemy Sounds/EnemyTargetAcquired"
+			RequiresCanAttack="false"
+			RequiresCanAttackIfImmobile="true"
+			MaxDistance="1500"
+			IgnoreFullHealth="false"
+			Retaliate="false"
+			CanBeAlertedByFriend="false"
+			PreferVulnerable="true">
+			<SortType Heuristic="NAMED"></SortType>
+			<TargetName>Berserker</TargetName>
+			<TargetName>Berserker2</TargetName>
+			<TargetName>Berserker3</TargetName>
+			<TargetName>Berserker4</TargetName>
+			<TargetName>Summoner</TargetName>
+			<TargetName>HaunterShooter</TargetName>
+			<TargetName>HaunterHealer</TargetName>
+			<TargetName>HaunterMover</TargetName>
+			<TargetName>HaunterCloaker</TargetName>
+			<TargetName>Popper</TargetName>
+			<TargetName>Demolisher</TargetName>
+			<TargetName>Flusher</TargetName>
+			<TargetName>Suppressor</TargetName>
+			<TargetName>Lobber</TargetName>
+			<TargetName>Zoner</TargetName>
+			<TargetName>Speeder</TargetName>
+			<TargetName>Priest</TargetName>
+			<TargetName>_PlayerUnit</TargetName>
+		</TargetAI>
+		
+		<AttackAI
+			Algorithm="ON_SIGHT"
+			CanAttackWhileMoving="true"
+			CanAttackWhileRetreating="true"
+			MustCompleteAttack="false"
+			AimWhileCompletingAttack="true">
+		</AttackAI>
+
+		<MoveAI
+			Algorithm="RANDOM"
+			RandomTurnIntervalMin="1.6"
+			RandomTurnIntervalMax="2.9"
+			SpeedFraction="0.33"
+			TetherDistance="250"
+			RetreatFromDistance="300"
+			RetreatToDistance="375"
+			StopToAttack="false"
+			FootprintSpawnInterval="0.5"
+			FootprintBlockDistance="78">
+			<RetreatFromUnit Name="_PlayerUnit"/>
+		</MoveAI>
+
+		<MoveAI
+			Algorithm="PATHFIND"
+			StayOnTerrain="true"
+			NodeDistance="10"
+			LookAheadDistance="256"
+			LookBehindDistance="128"
+			StopToAttack="true"
+			>
+		</MoveAI>
+		
+		<Weapon Name="Shielder"/>
+
+		<Upgrade Name="ShielderLevel2">
+			<Rank>
+				<Change HelpTextId="ShielderLevel2"/>
+				<Change ValueChangeType="ADD" Health="0"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ShielderLevel3">
+			<Rank>
+				<Change HelpTextId="ShielderLevel3"/>
+				<Change ValueChangeType="ADD" Health="0"/>
+				<Change ValueChangeType="ABSOLUTE" ContinuousWeapon="ShielderShieldPulse"/>
+				<Change ApplyToAllWeapons="true"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="ShielderLevel4">
+			<Rank>
+				<Change HelpTextId="ShielderLevel4"/>
+				<Change ValueChangeType="ADD" Health="100"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_DeathPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_MultiSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoRecycles">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_SupplyPenalty">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_Shield">
+			<Rank>
+				<Change ValueChangeType="ADD"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchExplosion">
+			<Rank>
+				<Change ValueChangeType="ADD" DamageOutputMultiplier="1.0"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_NoAutoFocus">
+			<Rank>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_HatchTime">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Egg_FakeSpawn">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+
+		<Upgrade Name="Limiter_EscalatingFights">
+			<Rank>
+				<Change ApplyToAllWeapons="true"/>
+				<Change ValueChangeType="ADD" Health="20"/>
+			</Rank>
+		</Upgrade>
+		
+	</Npc>
+
+</Npcs>
