@@ -4032,7 +4032,7 @@
 		>
 	</Projectile>
 
-	<!-- Heal a.k.a. Tap()? 不是Help()-->
+	<!-- Heal a.k.a. Tap()-->
 	
 	<Weapon
 		Name="Heal"
